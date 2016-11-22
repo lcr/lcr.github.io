@@ -8,16 +8,28 @@ body {
     margin: 0;
     padding: 0;
     height: 100%;
-    color: #fff;
     font-family: Helvetica, Arial, "宋体", sans-serif;
     font-size: 16px;
+    color: #fff;
 }
 
 a {
     text-decoration: none;
+    outline: none;
     color: #fff;
-    outline:none;
 }
+
+.header {
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    min-height: 100%;
+    min-width: 1024px;
+    width: 100%;
+    height: auto;
+}
+
 @-webkit-keyframes header {
     0% {
         -webkit-transform: translate3d(0, 5em, 0);
@@ -112,13 +124,12 @@ a {
         opacity: 1;
     }
 }
+
 header {
-    background-color: rgba(0, 0, 0, 0.5);
-    text-align: center;
-    font-weight: bold;
-    letter-spacing: 0.1em;
-    font-size: 1.5em;
+    position: relative;
     height: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, .5);
     -webkit-animation: header .75s 1s forwards;
     -moz-animation: header .75s 1s forwards;
     -ms-animation: header .75s 1s forwards;
@@ -136,24 +147,12 @@ header {
     opacity: 0;
 }
 
-.header {
-    position: fixed;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    min-height: 100%;
-    min-width: 1024px;
-    width: 100%;
-    height: auto;
-}
-
 .profile {
     position: absolute;
     top: 15%;
-    width: 300px;
     left: 50%;
-    margin-left: -150px;
-    text-align: center;
+    width: 100%;
+    margin-left: -50%;
     -webkit-animation: header 1s 1.5s forwards;
     -moz-animation: header 1s 1.5s forwards;
     -ms-animation: header 1s 1.5s forwards;
@@ -188,16 +187,19 @@ header {
     -moz-transition: 500ms;
     -o-transition: 500ms;
     transition: 500ms;
-    height: 200px;
+    border-color: rgba(0, 0, 0, .3);
 }
 
 .title {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 300px;
-    margin-left: -150px;
-    text-align: center;
+    width: 100%;
+    margin-left: -50%;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    font-size: 1.6em;
+    text-shadow: .1em 1px  1px rgb(0, 0, 0);
     -webkit-animation: header 1.5s 1.75s forwards;
     -moz-animation: header 1.5s 1.75s forwards;
     -ms-animation: header 1.5s 1.75s forwards;
@@ -217,12 +219,11 @@ header {
 
 .arrow {
     position: absolute;
-    bottom: 5%;
+    bottom: 6%;
     left: 50%;
     width: 60px;
     height: 60px;
     margin-left: -30px;
-    text-align: center;
     -webkit-border-radius: 100%;
     -moz-border-radius: 100%;
     border-radius: 100%;
@@ -333,29 +334,36 @@ header {
     height: 80%;
     text-align: center;
     background: rgba(0, 0, 0, .7);
-    margin: 0;
-    padding: 0;
 }
-.contact,.mail,.contact-icon{
+
+.contact, .mail, .contact-icon, .top, .copyright {
     position: absolute;
     left: 50%;
-    width: 80%;
-    margin-left: -40%;
+    width: 100%;
+    margin-left: -50%;
     padding: 0;
 }
-.contact{
+
+.contact {
     top: 10%;
     font-size: 2.5em;
     letter-spacing: 1px;
 }
-.mail{
+
+.mail {
     top: 35%;
     font-size: 2.5em;
     letter-spacing: 1px;
 }
-.mail a:hover{
-    color: rgba(255, 255, 255, 0.55);
+
+.mail a:hover {
+    -webkit-transition: 500ms;
+    -moz-transition: 500ms;
+    -o-transition: 500ms;
+    transition: 500ms;
+    color: rgba(255, 255, 255, .55);
 }
+
 .contact-icon {
     top: 65%;
 }
@@ -382,26 +390,18 @@ header {
 }
 
 @media screen and (max-width: 736px) {
-    #section3 {
-        position: relative;
-    }
-    .contact,.mail,.contact-icon{
-        position: absolute;
-        left: 50%;
-        width: 80%;
-        margin-left: -40%;
-    }
-    .contact{
+    .contact {
         top: 2%;
-        font-size:2em;
+        font-size: 2em;
     }
-    .mail{
+
+    .mail {
         top: 15%;
         font-size: 1.5em;
     }
 
     .contact-icon {
-        top: 25%;
+        top: 28%;
     }
 
     .contact-icon li {
@@ -409,7 +409,8 @@ header {
         border-radius: 8px;
         display: block;
         text-align: left;
-        padding: 3px 40px;
+        margin: 6px 40px;
+        padding: 3px 50px;
         list-style: none;
     }
 
@@ -423,21 +424,14 @@ header {
 footer {
     position: relative;
     height: 20%;
+    text-align: center;
     background: rgba(0, 0, 0, .7);
-    font-size: 20px;
-    word-spacing: 3px;
-    letter-spacing: 1px;
-    margin: 0;
-    padding: 0;
 }
 
 .top {
-    position: absolute;
     bottom: 45%;
-    left: 50%;
-    width: 48px;
-    margin-left: -24px;
 }
+
 .top a {
     font-size: 0;
 }
@@ -447,13 +441,12 @@ footer {
 }
 
 .copyright {
-    position: absolute;
     bottom: 20%;
-    left: 50%;
-    width: 300px;
-    margin-left: -150px;
+    font-size: 1.25em;
+    word-spacing: 3px;
+    letter-spacing: 1px;
 }
 
 .copyright a:hover {
-    color: rgba(255, 255, 255, 0.55);
+    color: rgba(255, 255, 255, .55);
 }
