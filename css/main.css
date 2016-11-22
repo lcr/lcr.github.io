@@ -17,6 +17,7 @@ a {
     text-decoration: none;
     outline: none;
     color: #fff;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 .header {
@@ -196,7 +197,7 @@ header {
     font-weight: bold;
     letter-spacing: 0.1em;
     font-size: 1.6em;
-    text-shadow: .1em 1px  1px rgb(0, 0, 0);
+    text-shadow: .1em 1px 1px rgb(0, 0, 0);
     -webkit-animation: header 1.5s 1.75s forwards;
     -moz-animation: header 1.5s 1.75s forwards;
     -ms-animation: header 1.5s 1.75s forwards;
@@ -427,9 +428,12 @@ footer {
 
 .top {
     bottom: 50%;
+    background-color: transparent;
 }
+
 .top:after {
     content: url(../img/rocket.png);
+    background-color: transparent;
 }
 
 .copyright {
