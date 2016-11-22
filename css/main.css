@@ -263,7 +263,7 @@ header {
     animation-name: myfirst;
 }
 
-@keyframes myfirst {
+@-webkit-keyframes myfirst {
     0% {
         top: 0;
     }
@@ -287,7 +287,7 @@ header {
     }
 }
 
-@-webkit-keyframes myfirst {
+@-ms-keyframes myfirst {
     0% {
         top: 0;
     }
@@ -311,6 +311,18 @@ header {
     }
 }
 
+@keyframes myfirst {
+    0% {
+        top: 0;
+    }
+    50% {
+        top: 8px;
+    }
+    100% {
+        top: 0;
+    }
+}
+
 #section2 {
     background: url(../img/body-bg.png) #fff;
     height: 100%;
@@ -321,21 +333,37 @@ header {
     height: 80%;
     text-align: center;
     background: rgba(0, 0, 0, .7);
+    margin: 0;
+    padding: 0;
 }
-
-.contact-icon {
+.contact,.mail,.contact-icon{
     position: absolute;
     left: 50%;
-    width: 720px;
-    margin-left: -360px;
-    bottom: 10%;
+    width: 80%;
+    margin-left: -40%;
     padding: 0;
+}
+.contact{
+    top: 10%;
+    font-size: 2.5em;
+    letter-spacing: 1px;
+}
+.mail{
+    top: 35%;
+    font-size: 2.5em;
+    letter-spacing: 1px;
+}
+.mail a:hover{
+    color: rgba(255, 255, 255, 0.55);
+}
+.contact-icon {
+    top: 65%;
 }
 
 .contact-icon li {
     display: inline-block;
     margin: 16px;
-    padding: 15px;
+    padding: 16px;
     -webkit-border-radius: 100%;
     -moz-border-radius: 100%;
     border-radius: 100%;
@@ -353,17 +381,27 @@ header {
     display: none;
 }
 
-@media (max-width: 450px) {
+@media screen and (max-width: 736px) {
     #section3 {
         position: relative;
     }
+    .contact,.mail,.contact-icon{
+        position: absolute;
+        left: 50%;
+        width: 80%;
+        margin-left: -40%;
+    }
+    .contact{
+        top: 2%;
+        font-size:2em;
+    }
+    .mail{
+        top: 15%;
+        font-size: 1.5em;
+    }
 
     .contact-icon {
-        position: absolute;
-        top: 5px;
-        left: 50%;
-        width: 300px;
-        margin-left: -150px;
+        top: 25%;
     }
 
     .contact-icon li {
@@ -371,14 +409,14 @@ header {
         border-radius: 8px;
         display: block;
         text-align: left;
-        padding: 5px 40px;
+        padding: 3px 40px;
         list-style: none;
     }
 
     .description {
         display: inline-block;
         margin-left: 20px;
-        font-size: 1.5em;
+        font-size: 1em;
     }
 }
 
@@ -389,16 +427,17 @@ footer {
     font-size: 20px;
     word-spacing: 3px;
     letter-spacing: 1px;
+    margin: 0;
+    padding: 0;
 }
 
 .top {
     position: absolute;
     bottom: 45%;
     left: 50%;
-    width: 64px;
-    margin-left: -32px;
+    width: 48px;
+    margin-left: -24px;
 }
-
 .top a {
     font-size: 0;
 }
@@ -409,7 +448,7 @@ footer {
 
 .copyright {
     position: absolute;
-    bottom: 25%;
+    bottom: 20%;
     left: 50%;
     width: 300px;
     margin-left: -150px;
