@@ -147,12 +147,12 @@ header {
     opacity: 0;
 }
 
-.profile {
+.pro {
     position: absolute;
     top: 15%;
     left: 50%;
-    width: 100%;
-    margin-left: -50%;
+    width: 180px;
+    margin-left: -90px;
     -webkit-animation: header 1s 1.5s forwards;
     -moz-animation: header 1s 1.5s forwards;
     -ms-animation: header 1s 1.5s forwards;
@@ -168,9 +168,6 @@ header {
     -o-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
     opacity: 0;
-}
-
-.pro {
     -webkit-transition: 500ms;
     -moz-transition: 500ms;
     -o-transition: 500ms;
@@ -429,14 +426,9 @@ footer {
 }
 
 .top {
-    bottom: 45%;
+    bottom: 50%;
 }
-
-.top a {
-    font-size: 0;
-}
-
-.top a:after {
+.top:after {
     content: url(../img/rocket.png);
 }
 
