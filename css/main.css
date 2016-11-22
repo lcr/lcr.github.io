@@ -8,7 +8,7 @@ body {
     margin: 0;
     padding: 0;
     height: 100%;
-    font-family: Helvetica, Arial, "宋体", sans-serif;
+    font-family: Helvetica, Arial, "宋体", sans-serif ;
     font-size: 16px;
     color: #fff;
 }
@@ -148,7 +148,7 @@ header {
     opacity: 0;
 }
 
-.pro {
+.profile {
     position: absolute;
     top: 15%;
     left: 50%;
@@ -180,7 +180,7 @@ header {
     border: 3px solid;
 }
 
-.pro:hover {
+.profile:hover {
     -webkit-transition: 500ms;
     -moz-transition: 500ms;
     -o-transition: 500ms;
@@ -323,8 +323,8 @@ header {
 }
 
 #section2 {
-    background: url(../img/body-bg.png) #fff;
     height: 100%;
+    background: url(../img/body-bg.png) #fff;
 }
 
 #section3 {
@@ -334,7 +334,11 @@ header {
     background: rgba(0, 0, 0, .7);
 }
 
-.contact, .mail, .contact-icon, .top, .copyright {
+.contact,
+.mail,
+.contact-icon,
+.backtop,
+.copyright {
     position: absolute;
     left: 50%;
     width: 100%;
@@ -426,14 +430,12 @@ footer {
     background: rgba(0, 0, 0, .7);
 }
 
-.top {
+.backtop {
     bottom: 50%;
-    background-color: transparent;
 }
 
-.top:after {
+.backtop:after {
     content: url(../img/rocket.png);
-    background-color: transparent;
 }
 
 .copyright {
