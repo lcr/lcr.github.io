@@ -337,7 +337,7 @@ header {
 .contact,
 .mail,
 .contact-icon,
-.backtop,
+.gotop,
 .copyright {
     position: absolute;
     left: 50%;
@@ -430,11 +430,11 @@ footer {
     background: rgba(0, 0, 0, .7);
 }
 
-.backtop {
+.gotop {
     bottom: 50%;
 }
 
-.backtop:after {
+.gotop:after {
     content: url(../img/rocket.png);
 }
 
