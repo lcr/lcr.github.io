@@ -29,7 +29,6 @@ a:hover {
 
     -webkit-transition: 500ms;
     -moz-transition: 500ms;
-    -ms-transition: 500ms;
     -o-transition: 500ms;
     transition: 500ms;
 }
@@ -44,6 +43,26 @@ a:hover {
     min-width: 1024px;
     height: auto;
     min-height: 100%;
+}
+
+header {
+    position: relative;
+
+    height: 100%;
+
+    text-align: center;
+
+    background-color: rgba(0, 0, 0, .5);
+
+    opacity: 0;
+
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-animation: header .75s 1s forwards;
+    animation: header .75s 1s forwards;
 }
 
 @-webkit-keyframes header {
@@ -68,27 +87,6 @@ a:hover {
 }
 
 @-moz-keyframes header {
-    0% {
-        opacity: 0;
-
-        -webkit-transform: translate3d(0, 5em, 0);
-        -moz-transform: translate3d(0, 5em, 0);
-        -ms-transform: translate3d(0, 5em, 0);
-        -o-transform: translate3d(0, 5em, 0);
-        transform: translate3d(0, 5em, 0);
-    }
-    100% {
-        opacity: 1;
-
-        -webkit-transform: translate3d(0, 0, 0);
-        -moz-transform: translate3d(0, 0, 0);
-        -ms-transform: translate3d(0, 0, 0);
-        -o-transform: translate3d(0, 0, 0);
-        transform: translate3d(0, 0, 0);
-    }
-}
-
-@-ms-keyframes header {
     0% {
         opacity: 0;
 
@@ -151,35 +149,7 @@ a:hover {
     }
 }
 
-header {
-    position: relative;
-
-    height: 100%;
-
-    text-align: center;
-
-    background-color: rgba(0, 0, 0, .5);
-
-    opacity: 0;
-
-    -webkit-transform: translate3d(0, 0, 0);
-    -moz-transform: translate3d(0, 0, 0);
-    -ms-transform: translate3d(0, 0, 0);
-    -o-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-    -webkit-animation: header .75s 1s forwards;
-    -moz-animation: header .75s 1s forwards;
-    -ms-animation: header .75s 1s forwards;
-    -o-animation: header .75s 1s forwards;
-    animation: header .75s 1s forwards;
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    -ms-backface-visibility: hidden;
-    -o-backface-visibility: hidden;
-    backface-visibility: hidden;
-}
-
-.profile {
+.header-profile {
     position: absolute;
     top: 15%;
     left: 50%;
@@ -196,7 +166,6 @@ header {
 
     -webkit-transition: 500ms;
     -moz-transition: 500ms;
-    -ms-transition: 500ms;
     -o-transition: 500ms;
     transition: 500ms;
     -webkit-transform: translate3d(0, 0, 0);
@@ -205,30 +174,21 @@ header {
     -o-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
     -webkit-animation: header 1s 1.5s forwards;
-    -moz-animation: header 1s 1.5s forwards;
-    -ms-animation: header 1s 1.5s forwards;
-    -o-animation: header 1s 1.5s forwards;
     animation: header 1s 1.5s forwards;
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    -ms-backface-visibility: hidden;
-    -o-backface-visibility: hidden;
-    backface-visibility: hidden;
 }
 
-.profile:hover {
+.header-profile:hover {
     border-color: rgba(0, 0, 0, .3);
 
     -webkit-transition: 500ms;
     -moz-transition: 500ms;
-    -ms-transition: 500ms;
     -o-transition: 500ms;
     transition: 500ms;
 }
 
 .header-title {
     position: absolute;
-    top: 55%;
+    top: 50%;
     left: 50%;
 
     margin-left: -50%;
@@ -246,15 +206,18 @@ header {
     -o-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
     -webkit-animation: header 1.5s 1.75s forwards;
-    -moz-animation: header 1.5s 1.75s forwards;
-    -ms-animation: header 1.5s 1.75s forwards;
-    -o-animation: header 1.5s 1.75s forwards;
     animation: header 1.5s 1.75s forwards;
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    -ms-backface-visibility: hidden;
-    -o-backface-visibility: hidden;
-    backface-visibility: hidden;
+
+    cursor: default;
+}
+
+.header-title:hover {
+    color: rgba(255, 255, 255, .55);
+
+    -webkit-transition: 500ms;
+    -moz-transition: 500ms;
+    -o-transition: 500ms;
+    transition: 500ms;
 }
 
 .arrow {
@@ -278,15 +241,7 @@ header {
     -o-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
     -webkit-animation: header 1.75s 2s forwards;
-    -moz-animation: header 1.75s 2s forwards;
-    -ms-animation: header 1.75s 2s forwards;
-    -o-animation: header 1.75s 2s forwards;
     animation: header 1.75s 2s forwards;
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    -ms-backface-visibility: hidden;
-    -o-backface-visibility: hidden;
-    backface-visibility: hidden;
 }
 
 .arrow:hover {
@@ -296,16 +251,12 @@ header {
 .down:after {
     position: relative;
 
-    -webkit-animation: myfirst 2s linear 1s infinite alternate;
-    -moz-animation: myfirst 2s linear 1s infinite alternate;
-    -ms-animation: myfirst 2s linear 1s infinite alternate;
-    -o-animation: myfirst 2s linear 1s infinite alternate;
-    animation: myfirst 2s linear 1s infinite alternate;
-
+    -webkit-animation: arrow-down 2s linear 1s infinite alternate;
+    animation: arrow-down 2s linear 1s infinite alternate;
     content: url("../img/arrow-down.png");
 }
 
-@-webkit-keyframes myfirst {
+@-webkit-keyframes arrow-down {
     0% {
         top: 16px;
     }
@@ -317,43 +268,7 @@ header {
     }
 }
 
-@-moz-keyframes myfirst {
-    0% {
-        top: 16px;
-    }
-    50% {
-        top: 24px;
-    }
-    100% {
-        top: 16px;
-    }
-}
-
-@-ms-keyframes myfirst {
-    0% {
-        top: 16px;
-    }
-    50% {
-        top: 24px;
-    }
-    100% {
-        top: 16px;
-    }
-}
-
-@-o-keyframes myfirst {
-    0% {
-        top: 16px;
-    }
-    50% {
-        top: 24px;
-    }
-    100% {
-        top: 16px;
-    }
-}
-
-@keyframes myfirst {
+@keyframes arrow-down {
     0% {
         top: 16px;
     }
@@ -371,7 +286,7 @@ header {
     background: url(../img/body-bg.png) #fff;
 }
 
-#section3 {
+#contact {
     position: relative;
     height: 80%;
 
@@ -380,35 +295,40 @@ header {
     background: rgba(0, 0, 0, .7);
 }
 
-.contact,
-.mail,
-.contact-icon,
-.gotop,
-.copyright {
+.contact-title {
     position: absolute;
+    top: 10%;
     left: 50%;
 
     margin-left: -50%;
     padding: 0;
     width: 100%;
-}
-
-.contact {
-    top: 10%;
 
     font-size: 2.5em;
     letter-spacing: 1px;
 }
 
-.mail {
+.contact-mail {
+    position: absolute;
     top: 35%;
+    left: 50%;
+
+    margin-left: -50%;
+    padding: 0;
+    width: 100%;
 
     font-size: 3em;
     letter-spacing: 1px;
 }
 
 .contact-icon {
+    position: absolute;
     top: 65%;
+    left: 50%;
+
+    margin-left: -50%;
+    padding: 0;
+    width: 100%;
 }
 
 .contact-icon li {
@@ -429,20 +349,38 @@ header {
     -moz-transition: 500ms;
     transition: 500ms;
 }
+.icon-weibo:before{
+    content: url("../img/weibo.png");
+}
 
-.description {
-    display: none;
+.icon-facebook:before{
+    content: url("../img/facebook.png");
+}
+
+.icon-github:before{
+    content: url("../img/github.png");
+}
+
+.icon-instagram:before{
+    content: url("../img/instagram.png");
+}
+
+.icon-twitter:before{
+    content: url("../img/twitter.png");
+}
+.icon-description {
+    font-size: 0;
 }
 
 @media screen and (max-width: 736px) {
-    .contact {
+    .contact-title {
         top: 2%;
 
         font-size: 2em;
     }
 
-    .mail {
-        top: 15%;
+    .contact-mail {
+        top: 20%;
 
         font-size: 1.5em;
     }
@@ -464,17 +402,22 @@ header {
         text-align: left;
     }
 
-    .description {
-        display: inline-block;
+    .icon-weibo:before,
+    .icon-facebook:before,
+    .icon-github:before,
+    .icon-instagram:before,
+    .icon-twitter:before{
+        margin-right: 18px;
+    }
 
-        margin-left: 20px;
-
+    .icon-description {
         font-size: 1em;
     }
 }
 
 footer {
     position: relative;
+
     height: 20%;
 
     text-align: center;
@@ -482,16 +425,28 @@ footer {
     background: rgba(0, 0, 0, .7);
 }
 
-.gotop {
+.back-top {
+    position: absolute;
     bottom: 50%;
+    left: 50%;
+
+    margin-left: -50%;
+    padding: 0;
+    width: 100%;
 }
 
-.gotop:after {
+.back-top:after {
     content: url(../img/rocket.png);
 }
 
 .copyright {
-    bottom: 20%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+
+    margin-left: -50%;
+    padding: 0;
+    width: 100%;
 
     font-size: 1.25em;
     letter-spacing: 1px;
