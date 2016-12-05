@@ -196,7 +196,7 @@ header {
 
     font-size: 3.5em;
     font-weight: bold;
-    letter-spacing: 0.1em;
+    letter-spacing: .1em;
 
     opacity: 0;
 
@@ -283,7 +283,7 @@ header {
 #section2 {
     height: 100%;
 
-    background: url(../img/body-bg.png) #fff;
+    background: url("../img/body-bg.png") #fff;
 }
 
 #contact {
@@ -436,7 +436,7 @@ footer {
 }
 
 .back-top:after {
-    content: url(../img/rocket.png);
+    content: url("../img/rocket.png");
 }
 
 .copyright {
