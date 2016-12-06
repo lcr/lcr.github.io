@@ -445,12 +445,12 @@ footer {
 
 .icon-back-top:after {
     position: absolute;
-    bottom: 50%;
+    bottom: 40%;
     left: 50%;
 
-    margin-left: -50%;
-    width: 100%;
-    font-size: 32px;
+    margin-left: -24px;
+    width: 48px;
+    font-size: 48px;
 
     content: "\e900";
 }
