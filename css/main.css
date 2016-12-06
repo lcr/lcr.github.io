@@ -14,10 +14,11 @@ body {
 
     color: rgba(255, 255, 255, .55);
 }
+
 @font-face {
     font-family: 'icomoon';
-    src:  url('../fonts/icomoon.eot?yo2ssl');
-    src:  url('../fonts/icomoon.eot?yo2ssl#iefix') format('embedded-opentype'),
+    src: url('../fonts/icomoon.eot?yo2ssl');
+    src: url('../fonts/icomoon.eot?yo2ssl#iefix') format('embedded-opentype'),
     url('../fonts/icomoon.ttf?yo2ssl') format('truetype'),
     url('../fonts/icomoon.woff?yo2ssl') format('woff'),
     url('../fonts/icomoon.svg?yo2ssl#icomoon') format('svg');
@@ -39,6 +40,7 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+
 a {
     text-decoration: none;
 
@@ -234,8 +236,9 @@ header {
 
     cursor: default;
 }
+
 @media screen and (max-width: 736px) {
-    .header-title{
+    .header-title {
         font-size: 2.5em;
     }
 }
@@ -312,6 +315,7 @@ header {
     background: url("../img/body-bg.png") #fff;
 
 }
+
 #contact {
     position: relative;
     height: 80%;
@@ -363,35 +367,37 @@ header {
     -moz-transition: 500ms;
     transition: 500ms;
 }
-.icon-weibo:before{
+
+.icon-weibo:before {
     font-size: 32px;
 
     content: "\ea9a";
 }
 
-.icon-facebook:before{
+.icon-facebook:before {
     font-size: 32px;
 
     content: "\ea90";
 }
 
-.icon-github:before{
+.icon-github:before {
     font-size: 32px;
 
     content: "\eab0";
 }
 
-.icon-instagram:before{
+.icon-instagram:before {
     font-size: 32px;
 
     content: "\ea92";
 }
 
-.icon-twitter:before{
+.icon-twitter:before {
     font-size: 32px;
 
     content: "\ea96";
 }
+
 .icon-description {
     font-size: 0;
 }
@@ -424,7 +430,7 @@ header {
     .icon-facebook:before,
     .icon-github:before,
     .icon-instagram:before,
-    .icon-twitter:before{
+    .icon-twitter:before {
         margin-right: 18px;
     }
 
