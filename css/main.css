@@ -1,20 +1,3 @@
-html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-
-    font-family: Helvetica, Arial, "宋体", sans-serif;
-    font-size: 16px;
-
-    color: rgba(255, 255, 255, .55);
-}
-
 @font-face {
     font-family: 'icomoon';
     src: url('../fonts/icomoon.eot?yo2ssl');
@@ -27,7 +10,6 @@ body {
 }
 
 [class^="icon-"], [class*=" icon-"] {
-    /* use !important to prevent issues with browser extensions that change fonts */
     font-family: 'icomoon' !important;
     speak: none;
     font-style: normal;
@@ -36,9 +18,25 @@ body {
     text-transform: none;
     line-height: 1;
 
-    /* Better Font Rendering =========== */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 16px;
+
+    color: rgba(255, 255, 255, .55);
 }
 
 a {
@@ -221,8 +219,6 @@ header {
     width: 100%;
 
     font-size: 3.5em;
-    font-weight: bold;
-    letter-spacing: .1em;
 
     opacity: 0;
 
@@ -335,7 +331,6 @@ header {
     width: 100%;
 
     font-size: 2.5em;
-    letter-spacing: 1px;
 }
 
 .contact-icon {
@@ -471,6 +466,4 @@ footer {
     width: 100%;
 
     font-size: 1.25em;
-    letter-spacing: 1px;
-    word-spacing: 3px;
 }
