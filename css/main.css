@@ -17,7 +17,6 @@
     font-variant: normal;
     text-transform: none;
     line-height: 1;
-
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -32,25 +31,20 @@ body {
     margin: 0;
     padding: 0;
     height: 100%;
-
     font-family: Helvetica, Arial, sans-serif;
     font-size: 16px;
-
     color: rgba(255, 255, 255, .55);
 }
 
 a {
     text-decoration: none;
-
     color: rgba(255, 255, 255, .55);
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-
     outline: none;
 }
 
 a:hover {
     color: #fff;
-
     -webkit-transition: 500ms;
     -moz-transition: 500ms;
     -o-transition: 500ms;
@@ -62,7 +56,6 @@ a:hover {
     top: 0;
     left: 0;
     z-index: -1;
-
     width: 100%;
     min-width: 1024px;
     height: auto;
@@ -71,28 +64,14 @@ a:hover {
 
 header {
     position: relative;
-
     height: 100%;
-
     text-align: center;
-
     background-color: rgba(0, 0, 0, .5);
-
-    opacity: 0;
-
-    -webkit-transform: translate3d(0, 0, 0);
-    -moz-transform: translate3d(0, 0, 0);
-    -ms-transform: translate3d(0, 0, 0);
-    -o-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-    -webkit-animation: header .75s 1s forwards;
-    animation: header .75s 1s forwards;
 }
 
 @-webkit-keyframes header {
     0% {
         opacity: 0;
-
         -webkit-transform: translate3d(0, -5em, 0);
         -moz-transform: translate3d(0, -5em, 0);
         -ms-transform: translate3d(0, -5em, 0);
@@ -101,7 +80,6 @@ header {
     }
     100% {
         opacity: 1;
-
         -webkit-transform: translate3d(0, 0, 0);
         -moz-transform: translate3d(0, 0, 0);
         -ms-transform: translate3d(0, 0, 0);
@@ -113,7 +91,6 @@ header {
 @-moz-keyframes header {
     0% {
         opacity: 0;
-
         -webkit-transform: translate3d(0, -5em, 0);
         -moz-transform: translate3d(0, -5em, 0);
         -ms-transform: translate3d(0, -5em, 0);
@@ -122,7 +99,6 @@ header {
     }
     100% {
         opacity: 1;
-
         -webkit-transform: translate3d(0, 0, 0);
         -moz-transform: translate3d(0, 0, 0);
         -ms-transform: translate3d(0, 0, 0);
@@ -134,7 +110,6 @@ header {
 @-o-keyframes header {
     0% {
         opacity: 0;
-
         -webkit-transform: translate3d(0, -5em, 0);
         -moz-transform: translate3d(0, -5em, 0);
         -ms-transform: translate3d(0, -5em, 0);
@@ -143,7 +118,6 @@ header {
     }
     100% {
         opacity: 1;
-
         -webkit-transform: translate3d(0, 0, 0);
         -moz-transform: translate3d(0, 0, 0);
         -ms-transform: translate3d(0, 0, 0);
@@ -155,7 +129,6 @@ header {
 @keyframes header {
     0% {
         opacity: 0;
-
         -webkit-transform: translate3d(0, -5em, 0);
         -moz-transform: translate3d(0, -5em, 0);
         -ms-transform: translate3d(0, -5em, 0);
@@ -164,7 +137,6 @@ header {
     }
     100% {
         opacity: 1;
-
         -webkit-transform: translate3d(0, 0, 0);
         -moz-transform: translate3d(0, 0, 0);
         -ms-transform: translate3d(0, 0, 0);
@@ -177,7 +149,6 @@ header {
     position: absolute;
     top: 15%;
     left: 50%;
-
     margin-left: -90px;
     border: 3px solid;
     -webkit-border-radius: 100%;
@@ -185,9 +156,7 @@ header {
     border-radius: 100%;
     width: 180px;
     height: 180px;
-
     opacity: 0;
-
     -webkit-transition: 500ms;
     -moz-transition: 500ms;
     -o-transition: 500ms;
@@ -203,7 +172,6 @@ header {
 
 .header-profile:hover {
     border-color: #fff;
-
     -webkit-transition: 500ms;
     -moz-transition: 500ms;
     -o-transition: 500ms;
@@ -214,14 +182,10 @@ header {
     position: absolute;
     top: 50%;
     left: 50%;
-
     margin-left: -50%;
     width: 100%;
-
     font-size: 3.5em;
-
     opacity: 0;
-
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
     -ms-transform: translate3d(0, 0, 0);
@@ -229,7 +193,6 @@ header {
     transform: translate3d(0, 0, 0);
     -webkit-animation: header 1s 1.5s forwards;
     animation: header 1s 1.5s forwards;
-
     cursor: default;
 }
 
@@ -243,7 +206,6 @@ header {
     position: absolute;
     bottom: 6%;
     left: 50%;
-
     margin-left: -30px;
     border: 3px solid;
     -webkit-border-radius: 100%;
@@ -251,9 +213,7 @@ header {
     border-radius: 100%;
     width: 60px;
     height: 60px;
-
     opacity: 0;
-
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
     -ms-transform: translate3d(0, 0, 0);
@@ -269,9 +229,7 @@ header {
 
 .icon-down:after {
     position: relative;
-
     font-size: 32px;
-
     -webkit-animation: down 2s linear 1s infinite alternate;
     animation: down 2s linear 1s infinite alternate;
     content: "\e901";
@@ -303,21 +261,15 @@ header {
 
 #section2 {
     position: relative;
-
     text-align: center;
-
     height: 100%;
-
     background: url("../img/body-bg.png") #fff;
-
 }
 
 #contact {
     position: relative;
     height: 80%;
-
     text-align: center;
-
     background: rgba(0, 0, 0, .7);
 }
 
@@ -325,11 +277,9 @@ header {
     position: absolute;
     top: 30%;
     left: 50%;
-
     margin-left: -50%;
     padding: 0;
     width: 100%;
-
     font-size: 2.5em;
 }
 
@@ -337,7 +287,6 @@ header {
     position: absolute;
     top: 65%;
     left: 50%;
-
     margin-left: -50%;
     padding: 0;
     width: 100%;
@@ -345,7 +294,6 @@ header {
 
 .contact-icon li {
     display: inline-block;
-
     margin: 16px;
     border: 2px solid;
     -webkit-border-radius: 100%;
@@ -357,7 +305,6 @@ header {
 .contact-icon li:hover {
     border-color: #fff;
     background-color: rgba(0, 0, 0, .5);
-
     -webkit-transition: 500ms;
     -moz-transition: 500ms;
     transition: 500ms;
@@ -365,31 +312,26 @@ header {
 
 .icon-weibo:before {
     font-size: 32px;
-
     content: "\ea9a";
 }
 
 .icon-facebook:before {
     font-size: 32px;
-
     content: "\ea90";
 }
 
 .icon-github:before {
     font-size: 32px;
-
     content: "\eab0";
 }
 
 .icon-instagram:before {
     font-size: 32px;
-
     content: "\ea92";
 }
 
 .icon-twitter:before {
     font-size: 32px;
-
     content: "\ea96";
 }
 
@@ -400,7 +342,6 @@ header {
 @media screen and (max-width: 736px) {
     .contact-mail {
         top: 15%;
-
         font-size: 1.5em;
     }
 
@@ -410,14 +351,11 @@ header {
 
     .contact-icon li {
         display: block;
-
         list-style: none;
-
         margin: 6px 40px;
         border-radius: 8px;
         padding: 3px 50px;
         width: auto;
-
         text-align: left;
     }
 
@@ -436,11 +374,8 @@ header {
 
 footer {
     position: relative;
-
     height: 20%;
-
     text-align: center;
-
     background: rgba(0, 0, 0, .7);
 }
 
@@ -448,11 +383,9 @@ footer {
     position: absolute;
     bottom: 40%;
     left: 50%;
-
     margin-left: -24px;
     width: 48px;
     font-size: 48px;
-
     content: "\e900";
 }
 
@@ -460,10 +393,8 @@ footer {
     position: absolute;
     bottom: 0;
     left: 50%;
-
     margin-left: -50%;
     padding: 0;
     width: 100%;
-
     font-size: 1.25em;
 }
