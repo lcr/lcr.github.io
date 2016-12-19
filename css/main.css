@@ -1,15 +1,17 @@
+/*=============== icon fonts start ===============*/
 @font-face {
     font-family: 'icomoon';
-    src: url('../fonts/icomoon.eot?yo2ssl');
-    src: url('../fonts/icomoon.eot?yo2ssl#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?yo2ssl') format('truetype'),
-    url('../fonts/icomoon.woff?yo2ssl') format('woff'),
-    url('../fonts/icomoon.svg?yo2ssl#icomoon') format('svg');
+    src: url('../fonts/icomoon.eot?u9qk7z');
+    src: url('../fonts/icomoon.eot?u9qk7z#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?u9qk7z') format('truetype'),
+    url('../fonts/icomoon.woff?u9qk7z') format('woff'),
+    url('../fonts/icomoon.svg?u9qk7z#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
 [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
     font-family: 'icomoon' !important;
     speak: none;
     font-style: normal;
@@ -17,20 +19,27 @@
     font-variant: normal;
     text-transform: none;
     line-height: 1;
+
+    /* Better Font Rendering =========== */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
+/*=============== icon fonts end ===============*/
+
+/*=============== main start ===============*/
 html {
     margin: 0;
     padding: 0;
     height: 100%;
+    width: 100%;
 }
 
 body {
     margin: 0;
     padding: 0;
     height: 100%;
+    width: 100%;
     font-family: Helvetica, Arial, sans-serif;
     font-size: 16px;
     color: rgba(255, 255, 255, .55);
@@ -65,84 +74,9 @@ a:hover {
 header {
     position: relative;
     height: 100%;
+    width: 100%;
     text-align: center;
     background-color: rgba(0, 0, 0, .5);
-}
-
-@-webkit-keyframes header {
-    0% {
-        opacity: 0;
-        -webkit-transform: translate3d(0, -5em, 0);
-        -moz-transform: translate3d(0, -5em, 0);
-        -ms-transform: translate3d(0, -5em, 0);
-        -o-transform: translate3d(0, -5em, 0);
-        transform: translate3d(0, -5em, 0);
-    }
-    100% {
-        opacity: 1;
-        -webkit-transform: translate3d(0, 0, 0);
-        -moz-transform: translate3d(0, 0, 0);
-        -ms-transform: translate3d(0, 0, 0);
-        -o-transform: translate3d(0, 0, 0);
-        transform: translate3d(0, 0, 0);
-    }
-}
-
-@-moz-keyframes header {
-    0% {
-        opacity: 0;
-        -webkit-transform: translate3d(0, -5em, 0);
-        -moz-transform: translate3d(0, -5em, 0);
-        -ms-transform: translate3d(0, -5em, 0);
-        -o-transform: translate3d(0, -5em, 0);
-        transform: translate3d(0, -5em, 0);
-    }
-    100% {
-        opacity: 1;
-        -webkit-transform: translate3d(0, 0, 0);
-        -moz-transform: translate3d(0, 0, 0);
-        -ms-transform: translate3d(0, 0, 0);
-        -o-transform: translate3d(0, 0, 0);
-        transform: translate3d(0, 0, 0);
-    }
-}
-
-@-o-keyframes header {
-    0% {
-        opacity: 0;
-        -webkit-transform: translate3d(0, -5em, 0);
-        -moz-transform: translate3d(0, -5em, 0);
-        -ms-transform: translate3d(0, -5em, 0);
-        -o-transform: translate3d(0, -5em, 0);
-        transform: translate3d(0, -5em, 0);
-    }
-    100% {
-        opacity: 1;
-        -webkit-transform: translate3d(0, 0, 0);
-        -moz-transform: translate3d(0, 0, 0);
-        -ms-transform: translate3d(0, 0, 0);
-        -o-transform: translate3d(0, 0, 0);
-        transform: translate3d(0, 0, 0);
-    }
-}
-
-@keyframes header {
-    0% {
-        opacity: 0;
-        -webkit-transform: translate3d(0, -5em, 0);
-        -moz-transform: translate3d(0, -5em, 0);
-        -ms-transform: translate3d(0, -5em, 0);
-        -o-transform: translate3d(0, -5em, 0);
-        transform: translate3d(0, -5em, 0);
-    }
-    100% {
-        opacity: 1;
-        -webkit-transform: translate3d(0, 0, 0);
-        -moz-transform: translate3d(0, 0, 0);
-        -ms-transform: translate3d(0, 0, 0);
-        -o-transform: translate3d(0, 0, 0);
-        transform: translate3d(0, 0, 0);
-    }
 }
 
 .header-profile {
@@ -156,18 +90,11 @@ header {
     border-radius: 100%;
     width: 180px;
     height: 180px;
-    opacity: 0;
     -webkit-transition: 500ms;
     -moz-transition: 500ms;
     -o-transition: 500ms;
     transition: 500ms;
-    -webkit-transform: translate3d(0, 0, 0);
-    -moz-transform: translate3d(0, 0, 0);
-    -ms-transform: translate3d(0, 0, 0);
-    -o-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-    -webkit-animation: header 1.5s 1.75s forwards;
-    animation: header 1.5s 1.75s forwards;
+    visibility: hidden;
 }
 
 .header-profile:hover {
@@ -185,15 +112,8 @@ header {
     margin-left: -50%;
     width: 100%;
     font-size: 3.5em;
-    opacity: 0;
-    -webkit-transform: translate3d(0, 0, 0);
-    -moz-transform: translate3d(0, 0, 0);
-    -ms-transform: translate3d(0, 0, 0);
-    -o-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-    -webkit-animation: header 1s 1.5s forwards;
-    animation: header 1s 1.5s forwards;
     cursor: default;
+    visibility: hidden;
 }
 
 @media screen and (max-width: 736px) {
@@ -207,68 +127,27 @@ header {
     bottom: 6%;
     left: 50%;
     margin-left: -30px;
-    border: 3px solid;
-    -webkit-border-radius: 100%;
-    -moz-border-radius: 100%;
-    border-radius: 100%;
     width: 60px;
     height: 60px;
-    opacity: 0;
-    -webkit-transform: translate3d(0, 0, 0);
-    -moz-transform: translate3d(0, 0, 0);
-    -ms-transform: translate3d(0, 0, 0);
-    -o-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-    -webkit-animation: header 1.75s 2s forwards;
-    animation: header 1.75s 2s forwards;
-}
-
-.down:hover {
-    border-color: #fff;
 }
 
 .icon-down:after {
-    position: relative;
-    font-size: 32px;
-    -webkit-animation: down 2s linear 1s infinite alternate;
-    animation: down 2s linear 1s infinite alternate;
-    content: "\e901";
-}
-
-@-webkit-keyframes down {
-    0% {
-        top: 12px;
-    }
-    50% {
-        top: 20px;
-    }
-    100% {
-        top: 12px;
-    }
-}
-
-@keyframes down {
-    0% {
-        top: 12px;
-    }
-    50% {
-        top: 20px;
-    }
-    100% {
-        top: 12px;
-    }
+    font-size: 48px;
+    content: "\e900";
 }
 
 #section2 {
     position: relative;
     text-align: center;
     height: 100%;
+    width: 100%;
     background: url("../img/body-bg.png") #fff;
 }
 
 #contact {
     position: relative;
     height: 80%;
+    width: 100%;
     text-align: center;
     background: rgba(0, 0, 0, .7);
 }
@@ -277,9 +156,9 @@ header {
     position: absolute;
     top: 30%;
     left: 50%;
-    margin-left: -50%;
+    margin-left: -150px;
     padding: 0;
-    width: 100%;
+    width: 300px;
     font-size: 2.5em;
 }
 
@@ -365,7 +244,7 @@ header {
     .icon-github:before,
     .icon-instagram:before,
     .icon-twitter:before {
-        margin-right: 18px;
+        margin-right: 12px;
     }
 
     .icon-description {
@@ -380,14 +259,14 @@ footer {
     background: rgba(0, 0, 0, .7);
 }
 
-.icon-back-top:after {
+.icon-backtop:after {
     position: absolute;
     bottom: 40%;
     left: 50%;
     margin-left: -24px;
     width: 48px;
     font-size: 48px;
-    content: "\e900";
+    content: "\e902";
 }
 
 .copyright {
@@ -399,3 +278,5 @@ footer {
     width: 100%;
     font-size: 1.25em;
 }
+
+/*=============== main end ===============*/

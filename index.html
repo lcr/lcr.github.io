@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     <title>赖灿荣Leslie</title>
     <meta name="keywords" content="赖灿荣,Leslie Lai,赖灿荣Leslie,html,css,javascript">
     <meta name="author" content="Leslie Lai,lcrc@foxmail.com">
@@ -15,38 +15,36 @@
 <header id="header">
     <img class="header-profile" src="img/profile.jpg" alt="profile picture">
     <h1 class="header-title">我是赖灿荣</h1>
-    <a class="down  icon-down" href="#section2" title="下一页"></a>
+    <a class="down icon-down" href="#section2" title="下一页"></a>
 </header>
 <section id="section2">
-    <a class="down  icon-down" href="#contact" title="下一页"></a>
 </section>
 <section id="contact">
     <a class="contact-mail" href="mailto:lcrc@foxmail.com" title="发送邮件">lcrc@foxmail.com</a>
     <ul class="contact-icon">
-        <li onclick="document.getElementById('weibo').click();">
-            <a class="icon-weibo  icon-description" id="weibo" href="http://weibo.com/675911728" title="微博">weibo</a>
+        <li class="sr-weibo" onclick="document.getElementById('weibo').click();" title="微博">
+            <a class="icon-weibo  icon-description" id="weibo" href="http://weibo.com/675911728">weibo</a>
         </li>
-        <li onclick="document.getElementById('facebook').click();">
-            <a class="icon-facebook  icon-description" id="facebook" href="https://www.facebook.com/laicanrong"
-               title="Facebook">Facebook</a>
+        <li class="sr-facebook" onclick="document.getElementById('facebook').click();" title="Facebook">
+            <a class="icon-facebook  icon-description" id="facebook"
+               href="https://www.facebook.com/laicanrong">Facebook</a>
         </li>
-        <li onclick="document.getElementById('github').click();">
-            <a class="icon-github  icon-description" id="github" href="https://github.com/laicanrong" title="GitHub">GitHub</a>
+        <li class="sr-github" onclick="document.getElementById('github').click();" title="GitHub">
+            <a class="icon-github  icon-description" id="github" href="https://github.com/laicanrong">GitHub</a>
         </li>
-        <li onclick="document.getElementById('instagram').click();">
-            <a class="icon-instagram  icon-description" id="inatagram" href="https://www.instagram.com/laicanrong"
-               title="Instagram">Instagram</a>
+        <li class="sr-instagram" onclick="document.getElementById('instagram').click();" title="Instagram">
+            <a class="icon-instagram  icon-description" id="inatagram" href="https://www.instagram.com/laicanrong">Instagram</a>
         </li>
-        <li onclick="document.getElementById('twitter').click();">
-            <a class="icon-twitter  icon-description" id="twitter" href="https://twitter.com/laicanrong"
-               title="twitter">twitter</a>
+        <li class="sr-twitter" onclick="document.getElementById('twitter').click();" title="twitter">
+            <a class="icon-twitter  icon-description" id="twitter" href="https://twitter.com/laicanrong">twitter</a>
         </li>
     </ul>
 </section>
 <footer>
-    <a class="icon-back-top" href="#header" title="返回顶部"></a>
+    <a class="icon-backtop" href="#header" title="返回顶部"></a>
     <p class="copyright">&copy; <a href="https://laicanrong.github.io">laicanrong.github.io</a> 2016</p>
 </footer>
+<script src="js/scrollreveal.min.js"></script>
 <script src="js/jquery.min.js"></script>
 <script src="js/main.js"></script>
 </body>
