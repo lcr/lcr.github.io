@@ -16,7 +16,7 @@ $(document).ready(function () {
 });
 window.sr = ScrollReveal({reset: true});
 sr.reveal('.header-profile', {delay: 800, origin: 'top', distance: '500px'});
-sr.reveal('.header-title', {delay: 1000, distance: '0', rotate: {y: 360}});
+sr.reveal('.header-title', {duration: 1000,delay: 1000, distance: '0', rotate: {y: 360}});
 sr.reveal('.down', {delay: 300, distance: '0'});
 sr.reveal('.icon-name', {delay: 300, origin: 'left', rotate: {x: 100}, distance: '50px'});
 sr.reveal('.icon-school', {delay: 600, origin: 'left', rotate: {x: 100}, distance: '50px'});
@@ -27,4 +27,3 @@ sr.reveal('.sr-facebook', {delay: 500, origin: 'left'});
 sr.reveal('.sr-github', {delay: 500, distance: '0'});
 sr.reveal('.sr-instagram', {delay: 500, origin: 'right'});
 sr.reveal('.sr-mail', {delay: 500, origin: 'right', distance: '50px'});
-//text
