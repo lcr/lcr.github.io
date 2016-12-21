@@ -15,6 +15,8 @@ $(document).ready(function () {
     });
 });
 window.sr = ScrollReveal({reset: true});
+/*The Starting Defaults
+sr.reveal('.foo', { origin: 'bottom',distance: '20px',duration: 500,delay: 0,rotate: { x: 0, y: 0, z: 0 },});*/
 sr.reveal('.header-profile', {delay: 800, origin: 'top', distance: '500px'});
 sr.reveal('.header-title', {duration: 1000,delay: 1000, distance: '0', rotate: {y: 360}});
 sr.reveal('.down', {delay: 300, distance: '0'});
