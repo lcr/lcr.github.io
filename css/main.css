@@ -297,9 +297,9 @@ header {
     content: "\ea92";
 }
 
-.icon-mail:before {
+.icon-linkedin:before {
     font-size: 32px;
-    content: "\e901";
+    content: "\eaca";
 }
 
 .icon-description {
@@ -330,7 +330,7 @@ header {
     .icon-facebook:before,
     .icon-github:before,
     .icon-instagram:before,
-    .icon-mail:before {
+    .icon-linkedin:before {
         margin-right: 18px;
     }
 

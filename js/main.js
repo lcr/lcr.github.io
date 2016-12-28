@@ -26,4 +26,4 @@ sr.reveal('.sr-weibo', {delay: 500, origin: 'left', distance: '50px'});
 sr.reveal('.sr-facebook', {delay: 500, origin: 'left'});
 sr.reveal('.sr-github', {delay: 500, distance: '0'});
 sr.reveal('.sr-instagram', {delay: 500, origin: 'right'});
-sr.reveal('.sr-mail', {delay: 500, origin: 'right', distance: '50px'});
+sr.reveal('.sr-linkedin', {delay: 500, origin: 'right', distance: '50px'});
