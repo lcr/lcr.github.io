@@ -230,24 +230,28 @@ header {
 #page2 a:hover {
     color: #000;
 }
+
 #page3 {
     position: relative;
     height: 100%;
-    background: url("../img/page3-bg.jpg") no-repeat;
+    background: url("../img/page-bg.jpg") no-repeat;
     background-size: 100% 100%;
 }
-#page3 h1{
+
+.page3-title {
     position: absolute;
     top: 3%;
     right: 5%;
     color: #666;
     font-size: 2.5em;
 }
-@media screen and (max-width: 736px){
-    #page3 h1{
-        font-size:1em;
+
+@media screen and (max-width: 736px) {
+    #page3 h1 {
+        font-size: 1em;
     }
 }
+
 #page3 a {
     color: #555;
 }
@@ -255,6 +259,7 @@ header {
 #page3 a:hover {
     color: #000;
 }
+
 #page4 {
     position: relative;
     height: 100%;
@@ -269,6 +274,7 @@ header {
     left: 5%;
     font-size: 2.5em;
 }
+
 .page4-ul {
     position: absolute;
     top: 35%;
@@ -309,21 +315,25 @@ header {
 #page4 a:hover {
     color: #000;
 }
-@media screen and (max-width: 736px){
-    .page4-title{
-        font-size:1.5em;
+
+@media screen and (max-width: 736px) {
+    .page4-title {
+        font-size: 1.5em;
     }
-    .page4-ul li{
+
+    .page4-ul li {
         padding: 1em;
-        font-size:.6em;
+        font-size: .6em;
         margin: .1em;
     }
+
     .icon-html,
     .icon-css,
-    .icon-js{
-        font-size:.5em;
+    .icon-js {
+        font-size: .5em;
     }
 }
+
 #contact {
     position: relative;
     height: 80%;

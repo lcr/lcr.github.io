@@ -16,7 +16,7 @@ $(document).ready(function () {
 });
 window.sr = ScrollReveal({reset: true});
 sr.reveal('.header-profile', {delay: 800, origin: 'top', distance: '500px'});
-sr.reveal('.header-title', {duration: 2000,delay: 1000, distance: '0', rotate: {y: 360}});
+sr.reveal('.header-title', {duration: 2000, delay: 1000, distance: '0', rotate: {y: 360}});
 sr.reveal('.down', {delay: 300, distance: '0'});
 sr.reveal('.icon-name', {delay: 300, origin: 'left', rotate: {x: 100}, distance: '50px'});
 sr.reveal('.icon-school', {delay: 600, origin: 'left', rotate: {x: 100}, distance: '50px'});
@@ -27,3 +27,5 @@ sr.reveal('.sr-facebook', {delay: 500, origin: 'left'});
 sr.reveal('.sr-github', {delay: 500, distance: '0'});
 sr.reveal('.sr-instagram', {delay: 500, origin: 'right'});
 sr.reveal('.sr-linkedin', {delay: 500, origin: 'right', distance: '50px'});
+sr.reveal('.page3-title', {delay: 500, origin: 'left', distance: '140px'});
+sr.reveal('.page4-title', {delay: 500, origin: 'right', distance: '140px'});
