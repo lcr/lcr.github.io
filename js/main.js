@@ -27,5 +27,5 @@ sr.reveal('.sr-facebook', {delay: 500, origin: 'left'});
 sr.reveal('.sr-github', {delay: 500, distance: '0'});
 sr.reveal('.sr-instagram', {delay: 500, origin: 'right'});
 sr.reveal('.sr-linkedin', {delay: 500, origin: 'right', distance: '50px'});
-sr.reveal('.page3-title', {delay: 500, origin: 'left', distance: '140px'});
-sr.reveal('.page4-title', {delay: 500, origin: 'right', distance: '140px'});
+sr.reveal('.page3-title', {delay: 500, origin: 'right', distance: '100px'});
+sr.reveal('.page4-title', {delay: 500, origin: 'top', distance: '140px'});

@@ -234,14 +234,14 @@ header {
 #page3 {
     position: relative;
     height: 100%;
-    background: url("../img/page-bg.jpg") no-repeat;
+    background: url("../img/page3-bg.jpg") no-repeat;
     background-size: 100% 100%;
 }
 
 .page3-title {
     position: absolute;
     top: 3%;
-    right: 5%;
+    left: 5%;
     color: #666;
     font-size: 2.5em;
 }
@@ -271,7 +271,9 @@ header {
 .page4-title {
     position: absolute;
     top: 8%;
-    left: 5%;
+    left: 50%;
+    margin-left: -150px;
+    width: 300px;
     font-size: 2.5em;
 }
 
