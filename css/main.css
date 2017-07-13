@@ -141,7 +141,7 @@ header {
 #page2 {
     position: relative;
     height: 100%;
-    background: url("http://ot0tkpeg8.bkt.clouddn.com/body-bg.png") #fff;
+    background: url("../img/body-bg.png") #fff;
     color: #666;
     font-size: 3em;
     text-align: center;
@@ -233,7 +233,7 @@ header {
 #page3 {
     position: relative;
     height: 100%;
-    background: url("http://ot0tkpeg8.bkt.clouddn.com/page3-bg.jpg") no-repeat;
+    background: url("../img/page3-bg.jpg") no-repeat;
     background-size: 100% 100%;
     text-align: center;
 }
@@ -250,7 +250,7 @@ header {
     #page3 {
         position: relative;
         height: 100%;
-        background: url("http://ot0tkpeg8.bkt.clouddn.com/page3-bg2.jpg") no-repeat;
+        background: url("../img/page3-bg-mini.jpg") no-repeat;
         background-size: 100% 100%;
     }
 
@@ -270,7 +270,7 @@ header {
 #page4 {
     position: relative;
     height: 100%;
-    background: url("http://ot0tkpeg8.bkt.clouddn.com/body-bg.png") #fff;
+    background: url("../img/body-bg.png") #fff;
     color: #666;
     text-align: center;
 }
@@ -346,7 +346,7 @@ header {
 #page5 {
     position: relative;
     height: 100%;
-    background: url("http://ot0tkpeg8.bkt.clouddn.com/page5-bg.jpg");
+    background: url("../img/page5-bg.jpg");
     background-size: 100% 100%;
     text-align: center;
 }
@@ -368,7 +368,7 @@ header {
     }
 }
 
-.page5-img2 {
+.page5-img1 {
     width: 250px;
     height: 188px;
     position: absolute;
@@ -378,7 +378,7 @@ header {
 }
 
 @media screen and (max-width: 736px) {
-    .page5-img2 {
+    .page5-img1 {
         width: 125px;
         height: 98px;
         position: absolute;
@@ -387,7 +387,7 @@ header {
     }
 }
 
-.page5-img3 {
+.page5-img2 {
     width: 250px;
     height: 188px;
     position: absolute;
@@ -397,7 +397,7 @@ header {
 }
 
 @media screen and (max-width: 736px) {
-    .page5-img3 {
+    .page5-img2 {
         width: 125px;
         height: 98px;
         clear: left;
@@ -408,7 +408,7 @@ header {
     }
 }
 
-.page5-img4 {
+.page5-img3 {
     width: 250px;
     height: 188px;
     position: absolute;
@@ -419,13 +419,32 @@ header {
 }
 
 @media screen and (max-width: 736px) {
-    .page5-img4 {
+    .page5-img3 {
         width: 125px;
         height: 98px;
         position: absolute;
         left: 50%;
         margin-left: -63px;
         top: 45%;
+    }
+}
+
+.page5-img4 {
+    width: 250px;
+    height: 188px;
+    position: absolute;
+    bottom: 35%;
+    right: 10%;
+    z-index: 1;
+}
+
+@media screen and (max-width: 736px) {
+    .page5-img4 {
+        width: 125px;
+        height: 98px;
+        position: absolute;
+        top: 60%;
+        right: 0;
     }
 }
 
@@ -446,25 +465,6 @@ header {
         top: 60%;
         right: auto;
         left: 0;
-    }
-}
-
-.page5-img6 {
-    width: 250px;
-    height: 188px;
-    position: absolute;
-    bottom: 35%;
-    right: 10%;
-    z-index: 1;
-}
-
-@media screen and (max-width: 736px) {
-    .page5-img6 {
-        width: 125px;
-        height: 98px;
-        position: absolute;
-        top: 60%;
-        right: 0;
     }
 }
 
