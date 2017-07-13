@@ -80,8 +80,6 @@ header {
     left: 50%;
     margin-left: -90px;
     border: 3px solid;
-    -webkit-border-radius: 100%;
-    -moz-border-radius: 100%;
     border-radius: 100%;
     width: 180px;
     height: 180px;
@@ -502,8 +500,6 @@ header {
     display: inline-block;
     margin: 16px;
     border: 2px solid;
-    -webkit-border-radius: 100%;
-    -moz-border-radius: 100%;
     border-radius: 100%;
     padding: 16px;
 }
@@ -513,6 +509,7 @@ header {
     background-color: rgba(0, 0, 0, .5);
     -webkit-transition: 500ms;
     -moz-transition: 500ms;
+    -o-transition: 500ms;
     transition: 500ms;
     cursor: pointer;
 }
