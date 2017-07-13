@@ -8,7 +8,7 @@ $(document).ready(function () {
                 $('html,body').animate({
                         scrollTop: targetOffset
                     },
-                    8000);
+                    800);
                 return false;
             }
         }
