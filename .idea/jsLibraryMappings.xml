@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="JavaScriptLibraryMappings">
-    <file url="PROJECT" libraries="{autoprefixer-core-DefinitelyTyped, bootstrap-DefinitelyTyped, colors-DefinitelyTyped, css-DefinitelyTyped, css-modules-require-hook-DefinitelyTyped, fullpage.js-DefinitelyTyped, http-errors-DefinitelyTyped, jQuery-2.0.0, jquery-DefinitelyTyped, less-DefinitelyTyped}" />
-    <includedPredefinedLibrary name="ECMAScript 6" />
-    <includedPredefinedLibrary name="Node.js Core" />
-    <includedPredefinedLibrary name="WebGL" />
-  </component>
-</project>
