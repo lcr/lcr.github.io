@@ -1,11 +1,11 @@
 /*=============== icon fonts start ===============*/
 @font-face {
     font-family: 'icomoon';
-    src: url('http://otwt42wq8.bkt.clouddn.com/icomoon.eot?u9qk7z');
-    src: url('http://otwt42wq8.bkt.clouddn.com/icomoon.eot?u9qk7z#iefix') format('embedded-opentype'),
-    url('http://otwt42wq8.bkt.clouddn.com/icomoon.ttf?u9qk7z') format('truetype'),
-    url('http://otwt42wq8.bkt.clouddn.com/icomoon.woff?u9qk7z') format('woff'),
-    url('http://otwt42wq8.bkt.clouddn.com/icomoon.svg?u9qk7z#icomoon') format('svg');
+    src: url('../fonts/icomoon.eot?u9qk7z');
+    src: url('../fonts/icomoon.eot?u9qk7z#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?u9qk7z') format('truetype'),
+    url('../fonts/icomoon.woff?u9qk7z') format('woff'),
+    url('../fonts/icomoon.svg?u9qk7z#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
 }
