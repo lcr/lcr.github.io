@@ -1,11 +1,11 @@
 /*=============== icon fonts start ===============*/
 @font-face {
     font-family: 'icomoon';
-    src: url('../fonts/icomoon.eot?u9qk7z');
-    src: url('../fonts/icomoon.eot?u9qk7z#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?u9qk7z') format('truetype'),
-    url('../fonts/icomoon.woff?u9qk7z') format('woff'),
-    url('../fonts/icomoon.svg?u9qk7z#icomoon') format('svg');
+    src: url('http://otwt42wq8.bkt.clouddn.com/icomoon.eot?u9qk7z');
+    src: url('http://otwt42wq8.bkt.clouddn.com/icomoon.eot?u9qk7z#iefix') format('embedded-opentype'),
+    url('http://otwt42wq8.bkt.clouddn.com/icomoon.ttf?u9qk7z') format('truetype'),
+    url('http://otwt42wq8.bkt.clouddn.com/icomoon.woff?u9qk7z') format('woff'),
+    url('http://otwt42wq8.bkt.clouddn.com/icomoon.svg?u9qk7z#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -141,7 +141,7 @@ header {
 #page2 {
     position: relative;
     height: 100%;
-    background: url("../img/body-bg.png") #fff;
+    background: url("http://otwt42wq8.bkt.clouddn.com/body-bg.png") #fff;
     color: #666;
     font-size: 3em;
     text-align: center;
@@ -233,7 +233,7 @@ header {
 #page3 {
     position: relative;
     height: 100%;
-    background: url("../img/page3-bg.jpg") no-repeat;
+    background: url("http://otwt42wq8.bkt.clouddn.com/page3-bg.jpg") no-repeat;
     background-size: 100% 100%;
     text-align: center;
 }
@@ -250,7 +250,7 @@ header {
     #page3 {
         position: relative;
         height: 100%;
-        background: url("../img/page3-bg-mini.jpg") no-repeat;
+        background: url("http://otwt42wq8.bkt.clouddn.com/page3-bg-mini.jpg") no-repeat;
         background-size: 100% 100%;
     }
 
@@ -270,7 +270,7 @@ header {
 #page4 {
     position: relative;
     height: 100%;
-    background: url("../img/body-bg.png") #fff;
+    background: url("http://otwt42wq8.bkt.clouddn.com/body-bg.png") #fff;
     color: #666;
     text-align: center;
 }
@@ -346,7 +346,7 @@ header {
 #page5 {
     position: relative;
     height: 100%;
-    background: url("../img/page5-bg.jpg");
+    background: url("http://otwt42wq8.bkt.clouddn.com/page5-bg.jpg");
     background-size: 100% 100%;
     text-align: center;
 }
