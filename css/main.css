@@ -233,7 +233,7 @@ header {
 #page3 {
     position: relative;
     height: 100%;
-    background: url("../img/page3-bg.jpg") no-repeat;
+    background: url("https://ws1.sinaimg.cn/large/9289b242gy1fi2eh7w4n7j21kw11xq3f.jpg") no-repeat;
     background-size: 100% 100%;
     text-align: center;
 }
@@ -250,7 +250,7 @@ header {
     #page3 {
         position: relative;
         height: 100%;
-        background: url("../img/page3-bg-mini.jpg") no-repeat;
+        background: url("https://ws1.sinaimg.cn/large/9289b242gy1fi2eh7xuhsj20ku0svgm3.jpg") no-repeat;
         background-size: 100% 100%;
     }
 
@@ -346,7 +346,7 @@ header {
 #page5 {
     position: relative;
     height: 100%;
-    background: url("../img/page5-bg.jpg");
+    background: url("https://ws1.sinaimg.cn/large/9289b242gy1fi2eh82wg1j23y527ead5.jpg");
     background-size: 100% 100%;
     text-align: center;
 }
