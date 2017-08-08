@@ -21,8 +21,11 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-
 /*=============== icon fonts end ===============*/
+
+
+
+
 
 /*=============== main start ===============*/
 html {
@@ -603,5 +606,4 @@ footer {
     width: 100%;
     font-size: 1.25em;
 }
-
 /*=============== main end ===============*/
