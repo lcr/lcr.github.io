@@ -17,7 +17,7 @@ $(document).ready(function () {
 window.sr = ScrollReveal({reset: true});
 sr.reveal('.header-profile', {delay: 800, origin: 'top', distance: '0',duration:1500});
 sr.reveal('.header-title', {duration: 3000, delay: 1000, distance: '0'});
-sr.reveal('.down', {delay: 300, distance: '0'});
+sr.reveal('.down', {delay: 1000, distance: '0'});
 sr.reveal('.icon-name', {delay: 300, origin: 'left', rotate: {x: 100}, distance: '50px'});
 sr.reveal('.icon-school', {delay: 600, origin: 'left', rotate: {x: 100}, distance: '50px'});
 sr.reveal('.icon-learn', {delay: 900, origin: 'left', rotate: {x: 100}, distance: '50px'});
