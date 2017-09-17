@@ -21,16 +21,11 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+
 /*=============== icon fonts end ===============*/
-
-
-
-
 
 /*=============== main start ===============*/
 html {
-    margin: 0;
-    padding: 0;
     height: 100%;
     width: 100%;
 }
@@ -43,30 +38,30 @@ body {
     font-size: 100%;
 }
 
+li {
+    list-style: none;
+}
 a {
     text-decoration: none;
-    color: rgba(255, 255, 255, .55);
+    color: #999;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     outline: none;
 }
 
+
 a:hover {
-    color: #fff;
+    color: #000;
     -webkit-transition: 500ms;
     -moz-transition: 500ms;
     -o-transition: 500ms;
     transition: 500ms;
 }
 
-.body-bg {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -1;
+.header-bg {
     width: 100%;
-    min-width: 1024px;
-    height: auto;
     min-height: 100%;
+    vertical-align:middle;
+    object-fit: cover;
 }
 
 header {
@@ -76,40 +71,6 @@ header {
     background-color: rgba(0, 0, 0, .5);
     color: rgba(255, 255, 255, .55);
 }
-
-.header-profile {
-    position: absolute;
-    top: 15%;
-    left: 50%;
-    margin-left: -90px;
-    border: 3px solid;
-    border-radius: 100%;
-    width: 180px;
-    height: 180px;
-    -webkit-transition: 500ms;
-    -moz-transition: 500ms;
-    -o-transition: 500ms;
-    transition: 500ms;
-    visibility: hidden;
-}
-
-@media screen and (max-width: 736px) {
-    .header-profile {
-        left: 50%;
-        margin-left: -70px;
-        width: 140px;
-        height: 140px;
-    }
-}
-
-.header-profile:hover {
-    border-color: #fff;
-    -webkit-transition: 500ms;
-    -moz-transition: 500ms;
-    -o-transition: 500ms;
-    transition: 500ms;
-}
-
 .header-title {
     position: absolute;
     top: 45%;
@@ -118,7 +79,6 @@ header {
     width: 100%;
     font-size: 4.5em;
     cursor: default;
-    visibility: hidden;
 }
 
 @media screen and (max-width: 736px) {
@@ -127,158 +87,14 @@ header {
     }
 }
 
-.down {
-    position: absolute;
-    bottom: 5%;
-    left: 50%;
-    margin-left: -30px;
-    width: 60px;
-    height: 60px;
-}
-
-.icon-down:after {
-    font-size: 48px;
-    content: "\e900";
-}
-
-#page2 {
+#learning {
     position: relative;
     height: 100%;
-    background: url("../img/body-bg.png") #fff;
-    color: #666;
-    font-size: 3em;
     text-align: center;
+    color: #999;
 }
 
-.icon-name {
-    position: absolute;
-    top: 15%;
-    left: 25%;
-    display: block;
-}
-
-.icon-school {
-    position: absolute;
-    top: 30%;
-    left: 25%;
-}
-
-.icon-learn {
-    position: absolute;
-    top: 45%;
-    left: 25%;
-
-}
-
-.icon-name:before,
-.icon-school:before,
-.icon-learn:before {
-    display: inline-block;
-    width: 48px;
-    height: 48px;
-    border: 2px solid;
-    -webkit-border-radius: 100%;
-    -moz-border-radius: 100%;
-    border-radius: 100%;
-    text-align: center;
-    line-height: 48px;
-    margin-bottom: -54px;
-    margin-right: 32px;
-    font-size: 32px;
-}
-
-.icon-name:before {
-    content: "\e903";
-}
-
-.icon-school:before {
-    content: "\e904";
-}
-
-.icon-learn:before {
-    content: "\e920";
-}
-
-@media screen and (max-width: 960px) {
-    #page2 {
-        font-size: 1em;
-        text-align: center;
-    }
-
-    .icon-name,
-    .icon-school,
-    .icon-learn {
-        left: 50%;
-        margin-left: -50%;
-        width: 100%;
-    }
-
-    .icon-name:before,
-    .icon-school:before,
-    .icon-learn:before {
-        font-size: 16px;
-        width: 20px;
-        height: 20px;
-        line-height: 20px;
-        margin-bottom: -20px;
-        margin-right: 3px;
-    }
-}
-
-#page2 a {
-    color: #555;
-}
-
-#page2 a:hover {
-    color: #000;
-}
-
-#page3 {
-    position: relative;
-    height: 100%;
-    background: url("https://ws1.sinaimg.cn/large/9289b242gy1fi2eh7w4n7j21kw11xq3f.jpg") no-repeat;
-    background-size: 100% 100%;
-    text-align: center;
-}
-
-.page3-title {
-    position: absolute;
-    top: 3%;
-    left: 5%;
-    color: #666;
-    font-size: 2.5em;
-}
-
-@media screen and (max-width: 736px) {
-    #page3 {
-        position: relative;
-        height: 100%;
-        background: url("https://ws1.sinaimg.cn/large/9289b242gy1fi2eh7xuhsj20ku0svgm3.jpg") no-repeat;
-        background-size: 100% 100%;
-    }
-
-    #page3 h1 {
-        font-size: 1em;
-    }
-}
-
-#page3 a {
-    color: #555;
-}
-
-#page3 a:hover {
-    color: #000;
-}
-
-#page4 {
-    position: relative;
-    height: 100%;
-    background: url("../img/body-bg.png") #fff;
-    color: #666;
-    text-align: center;
-}
-
-.page4-title {
+.learning-title {
     position: absolute;
     top: 8%;
     left: 50%;
@@ -287,7 +103,7 @@ header {
     font-size: 2.5em;
 }
 
-.page4-ul {
+.learning-ul {
     position: absolute;
     top: 35%;
     left: 50%;
@@ -296,7 +112,7 @@ header {
     width: 100%;
 }
 
-.page4-ul li {
+.learning-ul li {
     display: inline-block;
     padding: 3em;
     margin: .5em;
@@ -320,20 +136,12 @@ header {
     content: "\e901";
 }
 
-#page4 a {
-    color: #555;
-}
-
-#page4 a:hover {
-    color: #000;
-}
-
 @media screen and (max-width: 736px) {
-    .page4-title {
+    .learning-title {
         font-size: 1.5em;
     }
 
-    .page4-ul li {
+    .learning-ul li {
         padding: 1em;
         font-size: .6em;
         margin: .1em;
@@ -346,137 +154,11 @@ header {
     }
 }
 
-#page5 {
-    position: relative;
-    height: 100%;
-    background-image: url("https://ws1.sinaimg.cn/large/9289b242gy1fi2eh82wg1j23y527ead5.jpg");
-    background-size: 100% 100%;
-    text-align: center;
-}
-
-.page5-title {
-    position: absolute;
-    top: 8%;
-    left: 50%;
-    margin-left: -150px;
-    padding: 0;
-    width: 300px;
-    font-size: 2em;
-    color: rgba(255, 255, 255, .55);
-}
-
-@media screen and (max-width: 736px) {
-    .page5-title {
-        font-size: 1.5em;
-    }
-}
-
-.page5-img1 {
-    width: 250px;
-    height: 188px;
-    position: absolute;
-    bottom: 35%;
-    left: 10%;
-    z-index: 1;
-}
-
-@media screen and (max-width: 736px) {
-    .page5-img1 {
-        width: 125px;
-        height: 98px;
-        position: absolute;
-        top: 30%;
-        left: 0;
-    }
-}
-
-.page5-img2 {
-    width: 250px;
-    height: 188px;
-    position: absolute;
-    bottom: 40%;
-    left: 25%;
-    z-index: 2;
-}
-
-@media screen and (max-width: 736px) {
-    .page5-img2 {
-        width: 125px;
-        height: 98px;
-        clear: left;
-        position: absolute;
-        top: 30%;
-        left: auto;
-        right: 0;
-    }
-}
-
-.page5-img3 {
-    width: 250px;
-    height: 188px;
-    position: absolute;
-    bottom: 45%;
-    left: 50%;
-    margin-left: -125px;
-    z-index: 3;
-}
-
-@media screen and (max-width: 736px) {
-    .page5-img3 {
-        width: 125px;
-        height: 98px;
-        position: absolute;
-        left: 50%;
-        margin-left: -63px;
-        top: 45%;
-    }
-}
-
-.page5-img4 {
-    width: 250px;
-    height: 188px;
-    position: absolute;
-    bottom: 35%;
-    right: 10%;
-    z-index: 1;
-}
-
-@media screen and (max-width: 736px) {
-    .page5-img4 {
-        width: 125px;
-        height: 98px;
-        position: absolute;
-        top: 60%;
-        right: 0;
-    }
-}
-
-.page5-img5 {
-    width: 250px;
-    height: 188px;
-    position: absolute;
-    bottom: 40%;
-    right: 25%;
-    z-index: 2;
-}
-
-@media screen and (max-width: 736px) {
-    .page5-img5 {
-        width: 125px;
-        height: 98px;
-        position: absolute;
-        top: 60%;
-        right: auto;
-        left: 0;
-    }
-}
-
 #contact {
     position: relative;
     height: 80%;
     text-align: center;
-    background: rgba(0, 0, 0, .7);
-    color: rgba(255, 255, 255, .55);
+    color: #999;
     z-index: 5;
 }
 
@@ -508,8 +190,8 @@ header {
 }
 
 .contact-icon li:hover {
-    border-color: #fff;
-    background-color: rgba(0, 0, 0, .5);
+    border-color: #000;
+    background-color: rgba(0, 0, 0, 0.2);
     -webkit-transition: 500ms;
     -moz-transition: 500ms;
     -o-transition: 500ms;
@@ -582,28 +264,14 @@ header {
 footer {
     position: relative;
     height: 20%;
+    color: #999;
     text-align: center;
-    background: rgba(0, 0, 0, .7);
-    color: rgba(255, 255, 255, .55);
 }
-
-.icon-backtop:after {
-    position: absolute;
-    bottom: 40%;
-    left: 50%;
-    margin-left: -24px;
-    width: 48px;
-    font-size: 48px;
-    content: "\e902";
-}
-
 .copyright {
     position: absolute;
     bottom: 0;
-    left: 50%;
-    margin-left: -50%;
-    padding: 0;
     width: 100%;
     font-size: 1.25em;
 }
+
 /*=============== main end ===============*/
