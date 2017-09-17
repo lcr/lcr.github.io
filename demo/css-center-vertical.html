@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS布局-垂直居中</title>
+    <style>
+        .parent1{
+            height: 100px;
+            line-height: 100px;
+            background-color: #f0f0f0;
+        }
+        .parent2{
+            height: 100px;
+            background-color: #f0f0f0;
+            display: table-cell;
+            vertical-align: middle;
+        }
+        .parent3{
+            height: 100px;
+            background-color: #f0f0f0;
+            display: flex;
+            align-items:center;
+        }
+        .parent4{
+            height: 100px;
+            background-color: #f0f0f0;
+            position: relative;
+        }
+        .child4{
+            background-color: #cacaca;
+            position: absolute;
+            /*position: fixed;*/
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            width: 500px;
+            height: 50px;
+            margin: auto 0;
+        }
+        .parent5{
+            position: relative;
+            height: 100px;
+            background-color: #f0f0f0;
+        }
+        .child5{
+            position: absolute;
+            top: 50%;
+            height: 50px;
+            width: 500px;
+            margin-top: -25px;
+            background-color: #b1b1b1;
+        }
+    </style>
+</head>
+<body>
+<div class="parent1">内联元素 line-height值=height值  如有n行文字 line-height为height的n分之一</div>
+<br>
+<div class="parent2">父元素固定 子元素为多行内联文本<br>父元素display:table-cell;vertical-align:middle</div>
+<br>
+<div class="parent3">flex布局 display:flex; align-items:center
+</div>
+<br>
+<div class="parent4">
+    <div class="child4">块状元素:设置子元素position:fixed（absolute），然后设置margin:auto;</div>
+</div>
+<br>
+<div class="parent5">
+    <div class="child5">一大一小块级元素 大容器relative，小容器absolute，沿y轴下移50%，margin-top上移本身高度的50%</div>
+</div>
+</body>
+</html>
