@@ -28,18 +28,19 @@
 html {
     height: 100%;
     width: 100%;
+    overflow: hidden;
 }
 
 body {
     margin: 0;
     padding: 0;
     height: 100%;
-    width: 100%;
+    width: calc(100% + 18px);
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     font-size: 100%;
     color: #999;
+    overflow-y:scroll;
 }
-
 li {
     list-style: none;
 }
@@ -83,7 +84,7 @@ header h1 {
     cursor: default;
 }
 
-div.down {
+a.down {
     position: absolute;
     bottom: 8px;
     left: 50%;
@@ -264,7 +265,15 @@ footer {
     display: flex;
     justify-content: center;
 }
-
+footer a{
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    right: 40px;
+    bottom: 40px;
+    background-color: #999;
+    display: none;
+}
 .copyright {
     position: absolute;
     bottom: 0;

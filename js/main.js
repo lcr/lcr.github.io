@@ -15,4 +15,19 @@ $(document).ready(function () {
         }
     });
 });
-
+var btn = document.getElementById('backTop');
+var winH = document.documentElement.clientHeight;
+var timer = null;
+var isTop = true;
+window.onscroll = function () {
+    var toTop = document.body.scrollTop || document.documentElement.scrollTop;
+    if (toTop >= winH) {
+        btn.style.display = 'block';
+    } else {
+        btn.style.display = 'none';
+    }
+    if (!isTop) {
+        clearInterval(timer);
+    }
+    isTop = false;
+};
