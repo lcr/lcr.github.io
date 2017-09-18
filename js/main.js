@@ -15,19 +15,28 @@ $(document).ready(function () {
         }
     });
 });
-var btn = document.getElementById('backTop');
-var winH = document.documentElement.clientHeight;
-var timer = null;
-var isTop = true;
-window.onscroll = function () {
-    var toTop = document.body.scrollTop || document.documentElement.scrollTop;
-    if (toTop >= winH) {
-        btn.style.display = 'block';
-    } else {
-        btn.style.display = 'none';
-    }
-    if (!isTop) {
-        clearInterval(timer);
-    }
-    isTop = false;
+window.onload = function () {
+    var btn = document.getElementById('backTop');
+    // 获取视界高度；
+    var winH = document.documentElement.clientHeight;
+    // 定义计时器；
+    var timer = null;
+    // 定义是否抵达顶部布尔值判断；
+    var isTop = true;
+    // 设置滚动事件；
+    window.onscroll = function () {
+        var toTop = document.body.scrollTop || document.documentElement.scrollTop;
+        // 判断是否到了第二屏，若是，显示按钮；
+        if (toTop >= winH) {
+            btn.style.display = 'block';
+        } else {
+            btn.style.display = 'none';
+        }
+        // 判断是否抵达顶部，若否，停止计时器；
+        if (!isTop) {
+            clearInterval(timer);
+        }
+        // 重置布值判断；
+        isTop = false;
+    };
 };

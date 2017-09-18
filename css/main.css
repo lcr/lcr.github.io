@@ -76,7 +76,7 @@ header img {
 
 header h1 {
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 5em;
@@ -84,13 +84,55 @@ header h1 {
     cursor: default;
 }
 
-a.down {
+header a.down {
     position: absolute;
-    bottom: 8px;
+    bottom: 16px;
     left: 50%;
     transform: translate(-50%, -50%);
 }
-
+header a.down:after{
+    font-size: 32px;
+    content: "\eab0";
+    position: relative;
+    animation:myfirst 2s linear 1s infinite alternate;
+    -moz-animation:myfirst 2s linear 1s infinite alternate;	/* Firefox: */
+    -webkit-animation:myfirst 2s linear 1s infinite alternate;/* Safari and Chrome: */
+    -o-animation:myfirst 2s linear 1s infinite alternate;	/* Opera: */
+}
+@keyframes myfirst {
+    0% {
+        top:0;
+        color: rgba(240, 240, 240, 0.02);
+    }
+    50% {
+        top:8px;
+    }
+    100% {
+        top:0;
+    }
+}
+@-moz-keyframes myfirst {
+    0% {
+        top:0;
+    }
+    50% {
+        top:8px;
+    }
+    100% {
+        top:0;
+    }
+}
+@-o-keyframes myfirst {
+    0% {
+        top:0;
+    }
+    50% {
+        top:8px;
+    }
+    100% {
+        top:0;
+    }
+}
 @media screen and (max-width: 736px) {
     header h1 {
         font-size: 2em;
@@ -102,18 +144,24 @@ a.down {
     height: 100%;
     width: 100%;
     color: #999;
+    text-align: center;
 }
 
 .learning-title {
     position: absolute;
     top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     font-size: 2.5em;
 }
 
 .learning-ul {
     position: absolute;
-    top: 40%;
+    top: 35%;
+    left: 50%;
+    margin-left: -50%;
     padding: 0;
+    width: 100%;
 }
 
 .learning-ul li {
@@ -143,7 +191,6 @@ a.down {
     .learning-title {
         font-size: 1.5em;
     }
-
     .learning-ul li {
         padding: 1em;
         font-size: .6em;
@@ -160,11 +207,14 @@ a.down {
 #contact {
     position: relative;
     height: 80%;
+    text-align: center;
 }
 
 .contact-title {
     position: absolute;
     top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     padding: 0;
     font-size: 2.5em;
 }
@@ -172,7 +222,10 @@ a.down {
 .contact-icon {
     position: absolute;
     top: 65%;
+    left: 50%;
+    margin-left: -50%;
     padding: 0;
+    width: 100%;
 }
 
 .contact-icon li {
@@ -262,8 +315,6 @@ footer {
     position: relative;
     height: 20%;
     color: #999;
-    display: flex;
-    justify-content: center;
 }
 footer a{
     position: fixed;
@@ -277,6 +328,8 @@ footer a{
 .copyright {
     position: absolute;
     bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
     font-size: 1.25em;
 }
 
