@@ -36,18 +36,19 @@ body {
     height: 100%;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     font-size: 100%;
+    color: #999;
 }
 
 li {
     list-style: none;
 }
+
 a {
     text-decoration: none;
-    color: #999;
+    color: inherit;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     outline: none;
 }
-
 
 a:hover {
     color: #000;
@@ -57,27 +58,24 @@ a:hover {
     transition: 500ms;
 }
 
-.header-bg {
-    width: 100%;
-    min-height: 100%;
-    vertical-align:middle;
-    object-fit: cover;
-}
-
 header {
     position: relative;
     height: 100%;
-    text-align: center;
-    background-color: rgba(0, 0, 0, .5);
-    color: rgba(255, 255, 255, .55);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.header-bg {
+    width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+}
+
 .header-title {
     position: absolute;
-    top: 45%;
-    left: 50%;
-    margin-left: -50%;
-    width: 100%;
     font-size: 4.5em;
+    color: #e6e6e6;
     cursor: default;
 }
 
@@ -90,33 +88,27 @@ header {
 #learning {
     position: relative;
     height: 100%;
-    text-align: center;
+    display: flex;
+    justify-content: center;
     color: #999;
 }
 
 .learning-title {
     position: absolute;
-    top: 8%;
-    left: 50%;
-    margin-left: -150px;
-    width: 300px;
+    top: 10%;
     font-size: 2.5em;
 }
 
 .learning-ul {
     position: absolute;
-    top: 35%;
-    left: 50%;
-    margin-left: -50%;
+    top: 40%;
     padding: 0;
-    width: 100%;
 }
 
 .learning-ul li {
     display: inline-block;
     padding: 3em;
     margin: .5em;
-    background-color: #fff;
     box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.05), inset 0 1px 3px 0 rgba(0, 0, 0, 0.1);
     font-size: 1.2em;
 }
@@ -157,41 +149,38 @@ header {
 #contact {
     position: relative;
     height: 80%;
-    text-align: center;
-    color: #999;
+    display: flex;
+    justify-content: center;
     z-index: 5;
 }
 
 .contact-title {
     position: absolute;
-    top: 20%;
-    left: 50%;
-    margin-left: -150px;
+    top: 10%;
     padding: 0;
-    width: 300px;
     font-size: 2.5em;
 }
 
 .contact-icon {
     position: absolute;
     top: 65%;
-    left: 50%;
-    margin-left: -50%;
     padding: 0;
-    width: 100%;
 }
 
 .contact-icon li {
-    display: inline-block;
-    margin: 16px;
-    border: 2px solid;
-    border-radius: 100%;
-    padding: 16px;
+    display: inline;
 }
 
-.contact-icon li:hover {
-    border-color: #000;
-    background-color: rgba(0, 0, 0, 0.2);
+.contact-icon li a {
+    display: inline-block;
+    margin: 16px;
+    padding: 16px;
+    border: 2px solid;
+    border-radius: 100%;
+
+}
+
+.contact-icon li a:hover {
     -webkit-transition: 500ms;
     -moz-transition: 500ms;
     -o-transition: 500ms;
@@ -238,7 +227,7 @@ header {
         top: 28%;
     }
 
-    .contact-icon li {
+    .contact-icon li a {
         display: block;
         list-style: none;
         margin: 6px 40px;
@@ -265,12 +254,13 @@ footer {
     position: relative;
     height: 20%;
     color: #999;
-    text-align: center;
+    display: flex;
+    justify-content: center;
 }
+
 .copyright {
     position: absolute;
     bottom: 0;
-    width: 100%;
     font-size: 1.25em;
 }
 
