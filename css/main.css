@@ -1,8 +1,8 @@
 /*=============== icon fonts start ===============*/
 @font-face {
     font-family: 'icomoon';
-    src:  url('../fonts/icomoon.eot?roh96k');
-    src:  url('../fonts/icomoon.eot?roh96k#iefix') format('embedded-opentype'),
+    src: url('../fonts/icomoon.eot?roh96k');
+    src: url('../fonts/icomoon.eot?roh96k#iefix') format('embedded-opentype'),
     url('../fonts/icomoon.ttf?roh96k') format('truetype'),
     url('../fonts/icomoon.woff?roh96k') format('woff'),
     url('../fonts/icomoon.svg?roh96k#icomoon') format('svg');
@@ -20,11 +20,10 @@
     text-transform: none;
     line-height: 1;
 
-    /* Better Font Rendering =========== */
+    /* Better Font Rendering */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-
 
 /*=============== icon fonts end ===============*/
 
@@ -43,14 +42,16 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     font-size: 100%;
     color: #999;
-    overflow-y:scroll;
+    overflow-y: scroll;
     overflow-x: hidden;
 }
+
 @media screen and (max-width: 736px) {
-    body{
-        width: 100%;
+    body {
+        width: 100vw;
     }
 }
+
 li {
     list-style: none;
 }
@@ -93,55 +94,65 @@ header h1 {
     color: #e6e6e6;
     cursor: default;
 }
-header a:hover{
-    color: #fff;
-}
-.icon-down {
-    position: absolute;
-    bottom:10px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-.icon-down:before{
-    font-size: 32px;
-    content: "\e902";
-    position: relative;
-    -moz-animation:myfirst 1s linear 1s infinite alternate;	/* Firefox: */
-    -webkit-animation:myfirst 1s linear 1s infinite alternate;/* Safari and Chrome: */
-    -o-animation:myfirst 1s linear 1s infinite alternate;	/* Opera: */
-    animation:myfirst 1s linear 1s infinite alternate;
-}
-@keyframes myfirst {
-    0% {
-        top:5px;
 
-    }
-    100% {
-        top:0;
-        color: rgba(255, 255, 255, 0);
-    }
-}
-@-moz-keyframes myfirst {
-    0% {
-        top:5px;
-    }
-    100% {
-        top:0;
-        color: rgba(255, 255, 255, 0);
-    }
-}
-@-o-keyframes myfirst {
-    0% {
-        top:5px;
-    }
-    100% {
-        top:0;
-        color: rgba(255, 255, 255, 0);
-    }
-}
 @media screen and (max-width: 736px) {
     header h1 {
         font-size: 2em;
+    }
+}
+
+.icon-down:hover {
+    color: #fff;
+}
+
+.icon-down {
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.icon-down:before {
+    font-size: 32px;
+    content: "\e902";
+    position: relative;
+    -webkit-animation: icon-down-animations 2s ease-in 1s infinite alternate;
+    animation: icon-down-animations 2s ease-in 1s infinite alternate;
+}
+
+@-webkit-keyframes icon-down-animations {
+    0% {
+        top: 6px;
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    75% {
+        top: 0;
+        opacity: 0;
+    }
+    100% {
+        top: 0;
+        opacity: 0;
+    }
+}
+
+@keyframes icon-down-animations {
+    0% {
+        top: 6px;
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    75% {
+        top: 0;
+        opacity: 0;
+    }
+    100% {
+        top: 0;
+        opacity: 0;
     }
 }
 
@@ -161,6 +172,12 @@ header a:hover{
     font-size: 2.5em;
 }
 
+@media screen and (max-width: 736px) {
+    .learning-title {
+        font-size: 1.5em;
+    }
+}
+
 .learning-ul {
     position: absolute;
     top: 35%;
@@ -176,6 +193,14 @@ header a:hover{
     margin: .5em;
     box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.05), inset 0 1px 3px 0 rgba(0, 0, 0, 0.1);
     font-size: 1.2em;
+}
+
+@media screen and (max-width: 736px) {
+    .learning-ul li {
+        padding: 1em;
+        font-size: .6em;
+        margin: .1em;
+    }
 }
 
 .icon-html:before {
@@ -194,15 +219,6 @@ header a:hover{
 }
 
 @media screen and (max-width: 736px) {
-    .learning-title {
-        font-size: 1.5em;
-    }
-    .learning-ul li {
-        padding: 1em;
-        font-size: .6em;
-        margin: .1em;
-    }
-
     .icon-html,
     .icon-css,
     .icon-js {
@@ -225,6 +241,13 @@ header a:hover{
     font-size: 2.5em;
 }
 
+@media screen and (max-width: 736px) {
+    .contact-title {
+        top: 10%;
+        font-size: 1.5em;
+    }
+}
+
 .contact-icon {
     position: absolute;
     top: 65%;
@@ -232,6 +255,12 @@ header a:hover{
     margin-left: -50%;
     padding: 0;
     width: 100%;
+}
+
+@media screen and (max-width: 736px) {
+    .contact-icon {
+        top: 28%;
+    }
 }
 
 .contact-icon li {
@@ -245,6 +274,18 @@ header a:hover{
     border: 2px solid;
     border-radius: 100%;
 
+}
+
+@media screen and (max-width: 736px) {
+    .contact-icon li a {
+        display: block;
+        list-style: none;
+        margin: 6px 36px;
+        border-radius: 8px;
+        padding: 3px 50px;
+        width: auto;
+        text-align: left;
+    }
 }
 
 .contact-icon li a:hover {
@@ -285,31 +326,12 @@ header a:hover{
 }
 
 @media screen and (max-width: 736px) {
-    .contact-title {
-        top: 10%;
-        font-size: 1.5em;
-    }
-
-    .contact-icon {
-        top: 28%;
-    }
-
-    .contact-icon li a {
-        display: block;
-        list-style: none;
-        margin: 6px 36px;
-        border-radius: 8px;
-        padding: 3px 50px;
-        width: auto;
-        text-align: left;
-    }
-
     .icon-weibo:before,
     .icon-facebook:before,
     .icon-github:before,
     .icon-instagram:before,
     .icon-linkedin:before {
-        margin-right: 18px;
+        margin-right: 16px;
     }
 
     .icon-description {
@@ -322,15 +344,7 @@ footer {
     height: 20%;
     color: #999;
 }
-.icon-up{
-    display: none;
-    position: fixed;
-    width: 40px;
-    height: 40px;
-    right: 40px;
-    bottom: 40px;
-    background-color: #999;
-}
+
 .copyright {
     position: absolute;
     bottom: 0;
