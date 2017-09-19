@@ -16,7 +16,7 @@ $(document).ready(function () {
     });
 });
 window.onload = function () {
-    var btn = document.getElementById('backTop');
+    var btn = document.getElementById('backtothetop');
     // 获取视界高度；
     var winH = document.documentElement.clientHeight;
     // 定义计时器；
