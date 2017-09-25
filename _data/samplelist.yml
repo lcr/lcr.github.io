@@ -2,7 +2,7 @@ docs_list_title: ACME Documentation
 docs:
 
 - title: Home
-  url: /_includes/home.html/
+  permalink: /home/
 
 - title: About
-  url: /about.html/
+  permalink: /about/
