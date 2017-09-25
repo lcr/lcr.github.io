@@ -2,7 +2,7 @@
 title: "CSS水平居中"
 ---
 
-#### 1.行内元素的水平居中
+#### 1.行内元素的水平居中 
 ```css
 .parent {
     text-align:center;
@@ -53,3 +53,5 @@ title: "CSS水平居中"
     margin-left: -400px;
 }
 ```
+
+<a href="/demo/css-horizontal-center.html" target="_blank">Demo</a>
