@@ -204,6 +204,10 @@ pre {
   }
 }
 
+svg:hover path {
+  fill: $text-color;
+}
+
 .social-media-list {
   .icon {
     padding-right: 5px;
@@ -213,7 +217,6 @@ pre {
     padding-top: 5px;
   }
 }
-
 
 
 /**
