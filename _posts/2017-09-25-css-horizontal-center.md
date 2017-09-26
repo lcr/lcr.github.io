@@ -54,5 +54,4 @@ title: "CSS水平居中"
 }
 ```
 
-<a href="/demo/css-horizontal-center.html" target="_blank">Demo</a>  
-[Demo](/demo/css-horizontal-center.html){:target="_blank"}
+[Demo](/demo/css-horizontal-center.html){:target="_blank"}  
