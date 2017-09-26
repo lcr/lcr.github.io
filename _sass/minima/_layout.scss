@@ -143,10 +143,10 @@
         text-decoration: none;
         &:after {
           display: block;
-          margin: auto;
+          margin: 0 auto;
           width: 0;
           height: 2px;
-          transition: width .5s ease-in-out, background-color .5s ease-in-out;
+          transition: width .5s ease, background-color .5s ease;
           content: '';
         }
         &:hover:after {
