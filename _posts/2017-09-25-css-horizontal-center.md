@@ -34,7 +34,9 @@ title: "CSS水平居中"
 
 ```css
 .parent {
+    display: -webkit-flex;
     display: flex;
+    -webkit-justify-content:center;
     justify-content: center;
 }
 ```

@@ -23,6 +23,10 @@
     color: $grey-color-dark;
   }
 }
+.site-logo{
+  margin-right: 15px;
+  margin-bottom: 5px;
+}
 
 .site-nav {
   float: right;
@@ -106,7 +110,9 @@
  * Site footer
  */
 .site-footer {
+  display: -webkit-flex;
   display: flex;
+  -webkit-justify-content:center;
   justify-content: center;
   border-top: 1px solid $grey-color-light;
   padding: $spacing-unit 0;
