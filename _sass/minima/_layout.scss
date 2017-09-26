@@ -137,9 +137,9 @@
     margin-bottom: $spacing-unit;
     > h2 {
       display: inline-block;
+      margin-bottom: 0;
       > a {
         display: inline-block;
-        position: relative;
         text-decoration: none;
         &:after {
           display: block;
@@ -150,7 +150,7 @@
           content: '';
         }
         &:hover:after {
-          width: 100%;
+          width: 90%;
           background: $text-color;
         }
       }
@@ -160,14 +160,15 @@
 
 .post-meta {
   display: block;
+  margin-bottom: 8px;
   font-size: $small-font-size;
   color: $grey-color;
 }
 
-.post-link {
-  display: block;
-  @include relative-font-size(1.5);
-}
+//.post-link {
+//  display: block;
+//  @include relative-font-size(1.5);
+//}
 
 /**
  * Posts

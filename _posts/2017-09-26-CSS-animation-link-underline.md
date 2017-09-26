@@ -12,7 +12,6 @@ css:
  ```css
 a {
     display: inline-block;
-    position: relative;
     text-decoration: none;
 }
 
