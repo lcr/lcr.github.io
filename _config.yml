@@ -3,6 +3,7 @@ description: Leslie's Notes
 baseurl: ""
 url: "https://lcr.github.io"
 github_username:  lcr
+google_analytics: UA-107157614-1
 disqus:
    shortname: lcrccr
 
