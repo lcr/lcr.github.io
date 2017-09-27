@@ -9,6 +9,8 @@ disqus:
 markdown: kramdown
 plugins:
   - jekyll-feed
+paginate: 5
+paginate_path: "/page:num/"
 defaults:
   - scope:
       path: ""
