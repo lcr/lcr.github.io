@@ -135,6 +135,7 @@
 
   > li {
     margin-bottom: $spacing-unit;
+    border-bottom: 1px solid $grey-color-light;
     > h2 {
       display: inline-block;
       margin-bottom: 0;

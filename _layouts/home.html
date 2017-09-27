@@ -13,6 +13,7 @@ layout: default
             {% assign date_format = site.date_format | default: "%Y %m %-d " %}
             <span class="post-meta">{{ post.date | date: date_format }}</span>
             {{ post.excerpt }}
+            <a href="{{ post.url | relative_url  }}" class="more-link btn">Read more &raquo;</a>
         </li>
         {% endfor %}
     </ul>
