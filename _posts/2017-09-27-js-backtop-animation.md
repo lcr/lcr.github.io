@@ -12,7 +12,6 @@ css:
 ```css
 #backTop {
     display: none;
-    position: fixed;
 }
 ```
 
