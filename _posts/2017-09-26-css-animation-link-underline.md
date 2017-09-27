@@ -7,6 +7,8 @@ html:
 <a href="">CSS link underline animation</a>
 ```
 
+<!-- more -->
+
 css:
 
  ```css

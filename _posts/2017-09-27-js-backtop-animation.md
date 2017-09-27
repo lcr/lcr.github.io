@@ -15,6 +15,8 @@ css:
 }
 ```
 
+<!-- more -->
+
 js:
 
 ```javascript

@@ -24,4 +24,12 @@ layout: default
     {% if site.disqus.shortname %}
     {% include disqus_comments.html %}
     {% endif %}
+    <div class="post-recent">
+        {% if page.next %}
+        <a class="next" href="{{ page.next.url | prepend: site.baseurl }}">&laquo;{{ page.next.title }}</a>
+        {% endif %}
+        {% if page.previous %}
+        <a class="prev" href="{{ page.previous.url | prepend: site.baseurl }}">{{ page.previous.title }}&raquo;</a>
+        {% endif %}
+    </div>
 </article>

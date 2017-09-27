@@ -18,3 +18,5 @@ defaults:
     values:
       layout: post
       author: Leslie Lai
+
+excerpt_separator: "<!-- more -->"
