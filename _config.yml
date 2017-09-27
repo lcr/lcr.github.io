@@ -3,6 +3,8 @@ description: Leslie's Notes
 baseurl: ""
 url: "https://lcr.github.io"
 github_username:  lcr
+disqus:
+   shortname: lcrccr
 
 markdown: kramdown
 plugins:

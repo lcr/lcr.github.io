@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript导航栏底部滚动到顶部吸附</title>
+    <style>
+        /*被吸附的元素*/
+        #nav {
+            width: 100%;
+            height: 40px;
+            background-color: #050505;
+            position: absolute;
+            bottom: 0;
+        }
+
+        /*被吸附时帮忙占位的元素*/
+        #div {
+            display: none;
+        }
+    </style>
+    <script>
+        //定义一个函数
+        //封装一个 获取物体离浏览器可视窗口的距离 的函数
+        function getPos(obj) {
+            //定义两个变量，并且初始值为0
+            var bodyLeft = 0;
+            var bodyTop = 0;
+            //在这里使用while循环,参数为obj
+            // 因为语句执行到最后，obj获取的是body和其父级的距离，而这个值因为body本身是最外层，所以值为0
+            // 而为0的时候条件为false，所以函数停止执行
+            while (obj) {
+                bodyLeft += obj.offsetLeft;//获取物体离body左边的距离
+                bodyTop += obj.offsetTop;//获取物体离body顶部的距离
+                obj = obj.offsetParent;//最后变量成为其有定位的祖先元素
+                // 当条件满足时（有祖先定位元素），然后继续循环叠加，重复执行，直到加到祖先为body为止
+            }
+            return {left: bodyLeft, top: bodyTop};//设置函数返回值(注意是json格式）
+        }
+
+        //当页面加载完毕时
+        window.onload = function () {
+            //获取要吸附的元素
+            var oDiv1 = document.getElementById('nav');
+            //获取被吸附时，原位置占位的元素，以免影响其他元素布局（占位元素样式一致，背景透明，初始不可见）
+            var oDiv2 = document.getElementById('div');
+            //设置一个变量存储元素到顶部的距离
+            var divT = getPos(oDiv1).top;//调用json里的数据对应top的值
+            //当滚动条变化时，执行函数
+            window.onscroll = function () {
+                //定义一个变量，获取并存储滚动条纵向移动的距离
+                var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+                //判断吸顶条效果产生时需要的条件是否成立（当滚动距离大于或者等于元素离顶部距离的时候，吸附效果呈现）
+                if (scrollTop >= divT) {
+                    //设置css样式产生吸附效果
+                    oDiv1.style.position = 'fixed';
+                    oDiv1.style.top = '0';
+                    //并且让占位元素显示
+                    oDiv2.style.display = 'block';
+
+                }
+                //当条件不成立时，物体返回原位（还原之前的的样式）
+                else {
+                    //取消定位
+                    oDiv1.style.position = 'absolute';
+                    oDiv1.style.top = 'auto';
+                    //并且让占位元素隐藏
+                    oDiv2.style.display = 'none';
+                }
+            };
+        };
+    </script>
+</head>
+<body>
+<script>
+    for (var i = 0; i <= 100; i++) {
+        document.write(i + "<br />")
+    }
+</script>
+<nav id="nav"></nav>
+<div id="div"></div>
+</body>
+</html>
