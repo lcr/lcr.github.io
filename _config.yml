@@ -6,11 +6,9 @@ github_username:  lcr
 google_analytics: UA-107157614-1
 disqus:
    shortname: lcrccr
-
 markdown: kramdown
 plugins:
   - jekyll-feed
-
 defaults:
   - scope:
       path: ""
