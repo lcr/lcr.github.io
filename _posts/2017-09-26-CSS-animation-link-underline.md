@@ -2,7 +2,7 @@
 title: "CSS超链接下划线动画"
 ---
 
-HTML：
+html:
 ```html
 <a href="">CSS link underline animation</a>
 ```
