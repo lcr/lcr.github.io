@@ -19,8 +19,6 @@ title: "CSS垂直居中"
 }
 ```
 
-<!-- more -->
-
 #### 3.flex布局实现垂直居中
 
 ```css
@@ -29,6 +27,8 @@ title: "CSS垂直居中"
     align-items: center;
 }
 ```
+
+<!-- more -->
 
 #### 4.定宽块级元素的垂直居中
 

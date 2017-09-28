@@ -15,8 +15,6 @@ css:
 }
 ```
 
-<!-- more -->
-
 js:
 
 ```javascript
@@ -51,4 +49,9 @@ window.onload = function () {
 };
 ```
 
-[Demo](/demo/js-backtop-animation.html){:target="_blank"}
+[Demo](/demo/js-backtop-animation.html){:target="_blank"}  
+  
+  
+  
+  
+  

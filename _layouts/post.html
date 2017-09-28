@@ -21,9 +21,6 @@ layout: default
         {{ content }}
     </div>
 
-    {% if site.disqus.shortname %}
-    {% include disqus_comments.html %}
-    {% endif %}
     <div class="post-recent">
         {% if page.next %}
         <a class="next" href="{{ page.next.url | prepend: site.baseurl }}">&laquo;{{ page.next.title }}</a>
