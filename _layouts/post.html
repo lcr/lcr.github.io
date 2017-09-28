@@ -20,22 +20,8 @@ layout: default
     <div class="post-content" itemprop="articleBody">
         {{ content }}
     </div>
-    <form method="POST" action="https://api.staticman.net/v2/entry/lcr/lcr.github.io/master/comments">
-        <input name="options[redirect]" type="hidden" value="https://my-site.com">
-        <!-- e.g. "2016-01-02-this-is-a-post" -->
-        <input name="options[slug]" type="hidden" value="{{ page.slug }}">
-        <label><input name="fields[name]" type="text">Name</label>
-        <label><input name="fields[email]" type="email">E-mail</label>
-        <label><textarea name="fields[message]"></textarea>Message</label>
 
-        <button type="submit">Go!</button>
-    </form>
-    <div class="post-recent">
-        {% if page.next %}
-        <a class="next" href="{{ page.next.url | prepend: site.baseurl }}">&laquo;{{ page.next.title }}</a>
-        {% endif %}
-        {% if page.previous %}
-        <a class="prev" href="{{ page.previous.url | prepend: site.baseurl }}">{{ page.previous.title }}&raquo;</a>
-        {% endif %}
-    </div>
+    {% include comments.html %}
+
+    {% include post-recent.html %}
 </article>
