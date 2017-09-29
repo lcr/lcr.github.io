@@ -295,6 +295,10 @@ a.pagination-link:hover {
   border-bottom: 1px solid $grey-color-light;
   margin-top: $spacing-unit;
   padding-bottom: $spacing-unit / 2;
+  > span{
+    color: $link-color;
+  }
+
 }
 
 .comment-name {
