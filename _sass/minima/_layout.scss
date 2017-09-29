@@ -287,3 +287,17 @@ a.pagination-link:hover {
     float: left;
   }
 }
+
+/**
+ * Comments
+ */
+.comment-size{
+  border-bottom: 1px solid $grey-color-light;
+  margin-top: $spacing-unit;
+  padding-bottom: $spacing-unit / 2;
+}
+.comment-name{
+  display: block;
+  font-size: $base-font-size*1.2;
+  margin-top: $spacing-unit;
+}

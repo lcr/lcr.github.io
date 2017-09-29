@@ -1,35 +1,25 @@
 <form method="POST" action="https://api.staticman.net/v2/entry/lcr/lcr.github.io/master/comments">
     <input name="options[redirect]" type="hidden" value="https://lcr.github.io">
-    <!-- e.g. "2016-01-02-this-is-a-post" -->
     <input name="options[slug]" type="hidden" value="{{ page.slug }}">
-    <label><input name="fields[name]" type="text" value="Name"></label>
-    <label><input name="fields[email]" type="email" value="Email">E-mail</label>
-    <label><textarea name="fields[message]" >Comment</textarea></label>
-
+    <label><input name="fields[name]" type="text" placeholder="Name"></label>
+    <label><input name="fields[email]" type="email" placeholder="Email"></label>
+    <label><textarea name="fields[message]" placeholder="Comment"></textarea></label>
     <input type="submit" value="Send">
 </form>
+
 {% if site.data.comments[page.slug] %}
-
-<p>
-<h3>
-    {% if site.data.comments[page.slug].size > 1 %}
-    {{ site.data.comments[page.slug] | size }}
+<h2 class="comment-size">
+    {% if site.data.comments[page.slug].size >= 1 %}
+    {{ site.data.comments[page.slug] | size }} Comments
+    {% else %} no comment
     {% endif %}
-    Comments:
-</h3>
-</p>
-
-<hr>
+</h2>
 
 {% assign comments = site.data.comments[page.slug] | sort %}
-
-<p>
     {% for comment in comments %}
-    <br>
-    <legend><strong>{{ comment[1].name }}</strong></legend>
+    <span class="comment-name">{{ comment[1].name }}</span>
     <em>{{ comment[1].date | date: "%B %d, %Y" }}</em>
 <p>{{ comment[1].message | markdownify }}</p>
 <hr>
 {% endfor %}
-</p>
 {% endif %}
