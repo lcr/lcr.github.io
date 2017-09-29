@@ -1,17 +1,16 @@
 {% if site.data.comments[page.slug] %}
 <h2 class="comment-size">
-    {% if site.data.comments[page.slug].size >= 1 %}
+    {% if site.data.comments[page.slug].size > 1 %}
     <span>{{ site.data.comments[page.slug] | size }}</span> Comments
-    {% else %} no comment
+    {% elsif site.data.comments[page.slug].size = 1 %}1 comment
+    {% else %}0 comment
     {% endif %}
 </h2>
-
 {% assign comments = site.data.comments[page.slug] | sort %}
-    {% for comment in comments %}
+{% for comment in comments %}
     <span class="comment-name">{{ comment[1].name }}</span>
     <em>{{ comment[1].date | date: "%B %d, %Y" }}</em>
-<p>{{ comment[1].message | markdownify }}</p>
-<hr>
+     <p>{{ comment[1].message | markdownify }}</p>
 {% endfor %}
 {% endif %}
 <form method="POST" action="https://api.staticman.net/v2/entry/lcr/lcr.github.io/master/comments">
