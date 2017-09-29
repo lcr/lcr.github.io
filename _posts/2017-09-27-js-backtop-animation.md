@@ -1,5 +1,5 @@
 ---
-title: "JavaScript弹性动画返回顶部"
+title: "JavaScript back to the top"
 ---
 
 html:
@@ -50,8 +50,3 @@ window.onload = function () {
 ```
 
 [Demo](/demo/js-backtop-animation.html){:target="_blank"}  
-  
-  
-  
-  
-  

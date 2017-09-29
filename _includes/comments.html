@@ -1,12 +1,3 @@
-<form method="POST" action="https://api.staticman.net/v2/entry/lcr/lcr.github.io/master/comments">
-    <input name="options[redirect]" type="hidden" value="{{ page.url | absolute_url }}">
-    <input name="options[slug]" type="hidden" value="{{ page.url | absolute_url }}">
-    <label><input name="fields[name]" type="text" placeholder="Name"></label>
-    <label><input name="fields[email]" type="email" placeholder="Email"></label>
-    <label><textarea name="fields[message]" placeholder="Comment"></textarea></label>
-    <input type="submit" value="Send">
-</form>
-
 {% if site.data.comments[page.slug] %}
 <h2 class="comment-size">
     {% if site.data.comments[page.slug].size >= 1 %}
@@ -23,3 +14,11 @@
 <hr>
 {% endfor %}
 {% endif %}
+<form method="POST" action="https://api.staticman.net/v2/entry/lcr/lcr.github.io/master/comments">
+    <input name="options[redirect]" type="hidden" value="https://lcr.github.io/">
+    <input name="options[slug]" type="hidden" value="{{ page.slug }}">
+    <label><input name="fields[name]" type="text" placeholder="Name"></label>
+    <label><input name="fields[email]" type="email" placeholder="Email"></label>
+    <label><textarea name="fields[message]" placeholder="Comment"></textarea></label>
+    <input type="submit" value="Send">
+</form>
