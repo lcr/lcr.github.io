@@ -295,14 +295,87 @@ a.pagination-link:hover {
   border-bottom: 1px solid $grey-color-light;
   margin-top: $spacing-unit;
   padding-bottom: $spacing-unit / 2;
-  > span{
-    color: $link-color;
-  }
-
 }
 
 .comment-name {
   display: block;
   font-size: $base-font-size*1.2;
   margin-top: $spacing-unit;
+}
+.comment-form{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.comment-text {
+  border-radius: $spacing-unit / 5;
+  width: 45%;
+  height: $spacing-unit*1.5;
+  margin-top: $spacing-unit;
+  border: 0;
+  background-color: #cacaca;
+  font-size: $base-font-size*1.5;
+}
+
+.comment-text:focus {
+  outline: none
+}
+
+@media screen and (max-width: 750px) {
+  .comment-text {
+    width: 100%;
+  }
+}
+
+.comment-email {
+  border-radius: $spacing-unit / 5;
+  width: 45%;
+  height: $spacing-unit*1.5;
+  margin-left: 9%;
+  margin-top: $spacing-unit;
+  border: 0;
+  background-color: #cacaca;
+  font-size: $base-font-size*1.5;
+}
+.comment-email:focus {
+  outline: none
+}
+
+@media screen and (max-width: 750px) {
+  .comment-email {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+.comment-message {
+  border-radius: $spacing-unit / 5;
+  width: 100%;
+  height: $spacing-unit * 8;
+  margin-top: $spacing-unit;
+  border: 0;
+  background-color: #cacaca;
+  font-size: $base-font-size*1.5;
+}
+.comment-message:focus {
+  outline: none
+}
+.comment-submit {
+  border-radius: $spacing-unit;
+  border: 0.1rem solid $link-color;
+  font-size: $base-font-size;
+  height: $spacing-unit * 1.8;
+  margin-top: $spacing-unit;
+  margin-bottom: $spacing-unit*2;
+  padding: 0 $spacing-unit;
+  background-color: $background-color;
+  color: $link-color;
+}
+
+.comment-submit:hover {
+  color: $background-color;
+  background-color: $link-color;
+}
+.comment-submit:focus {
+  outline: none
 }
