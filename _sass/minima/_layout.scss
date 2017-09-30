@@ -9,7 +9,6 @@
 .site-header {
   border-bottom: 1px solid $grey-color-light;
   min-height: $spacing-unit * 1.865;
-
   // Positioning context for the mobile navigation icon
   position: relative;
 }
@@ -77,10 +76,10 @@
     .menu-icon {
       display: block;
       float: right;
+      padding-top: 15px;
       width: 36px;
       height: 26px;
       line-height: 0;
-      padding-top: 10px;
       text-align: center;
 
       > svg path {
@@ -89,8 +88,8 @@
     }
 
     input ~ .trigger {
-      clear: both;
       display: none;
+      clear: both;
     }
 
     input:checked ~ .trigger {
@@ -120,6 +119,10 @@
   justify-content: center;
   border-top: 1px solid $grey-color-light;
   padding: $spacing-unit 0;
+}
+
+.icon-github:hover path {
+  fill: $text-color;
 }
 
 /**
@@ -174,23 +177,22 @@
 }
 
 .post-readmore {
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-radius: $spacing-unit;
-  border: 0.1rem solid $link-color;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  font-size: $base-font-size;
-  height: $spacing-unit * 1.8;
+  -webkit-box-align: center;
+  align-items: center;
   margin-top: $spacing-unit;
   margin-bottom: $spacing-unit*2;
+  border: 0.1rem solid $link-color;
+  border-radius: $spacing-unit;
   padding: 0 $spacing-unit;
+  height: $spacing-unit * 1.8;
+  font-size: $base-font-size;
 }
 
 a.post-readmore {
-  color: $link-color;
   text-decoration: none;
+  color: $link-color;
 }
 
 a.post-readmore:hover {
@@ -225,15 +227,29 @@ a.pagination-link:hover {
   display: flex;
   -webkit-justify-content: center;
   justify-content: center;
-  color: $background-color;
-  background-color: $link-color;
-  border-radius: 50%;
   margin: 0 $spacing-unit / 2;
+  border-radius: 50%;
   width: $spacing-unit*1.6;
   height: 100%;
   font-size: $base-font-size*2;
+  color: $background-color;
+  background-color: $link-color;
 }
 
+.icon-left-link:hover path {
+  fill: $link-color;
+}
+
+.icon-left:hover path {
+  fill: rgba(233, 77, 80, 0.3);
+}
+.icon-right-link:hover path {
+  fill: $link-color;
+}
+
+.icon-right:hover path {
+  fill: rgba(233, 77, 80, 0.3);
+}
 /**
  * Posts
  */
@@ -280,102 +296,117 @@ a.pagination-link:hover {
 }
 
 .post-recent {
+  margin-top:$spacing-unit * 3;
+  margin-bottom:$spacing-unit * 3;
+  font-size: $base-font-size * 1.5;
   .prev {
     float: right;
+    &:hover{
+      color: $link-color;
+    }
   }
   .next {
     float: left;
+    &:hover{
+    color: $link-color;
+  }
+  }
+  svg{
+    width: 18px;
+    height: 18px;
   }
 }
-
 /**
  * Comments
  */
 .comment-size {
-  border-bottom: 1px solid $grey-color-light;
-  margin-top: $spacing-unit;
+  margin-top: $spacing-unit * 2;
+  border-bottom: 2px solid $grey-color-light;
   padding-bottom: $spacing-unit / 2;
+  font-size: $base-font-size * 2;
 }
 
 .comment-name {
-  display: block;
-  font-size: $base-font-size*1.2;
-  margin-top: $spacing-unit;
+  margin-top: $spacing-unit * 1.5;
+  font-size: $base-font-size * 1.2;
 }
-.comment-form{
-  display: flex;
-  justify-content: center;
-  width: 100%;
+
+.comment-date {
+  margin-top: $spacing-unit / 3;
+  margin-bottom: $spacing-unit / 3;
 }
+
+.comment-comment {
+  margin-bottom: $spacing-unit;
+  border-bottom: 1px solid $grey-color-light;
+}
+
+.comment-title {
+  margin-top: $spacing-unit*2;
+  font-size: $base-font-size*2;
+}
+
 .comment-text {
-  border-radius: $spacing-unit / 5;
-  width: 45%;
-  height: $spacing-unit*1.5;
+  float: left;
   margin-top: $spacing-unit;
   border: 0;
-  background-color: #cacaca;
+  border-radius: $spacing-unit / 5;
+  width: 48%;
+  height: $spacing-unit*1.5;
   font-size: $base-font-size*1.5;
-}
-
-.comment-text:focus {
-  outline: none
-}
-
-@media screen and (max-width: 750px) {
-  .comment-text {
+  background-color: #cacaca;
+  @include media-query($on-palm) {
     width: 100%;
+  }
+  &:focus {
+    outline: none
   }
 }
 
 .comment-email {
-  border-radius: $spacing-unit / 5;
-  width: 45%;
-  height: $spacing-unit*1.5;
-  margin-left: 9%;
+  float: right;
   margin-top: $spacing-unit;
   border: 0;
-  background-color: #cacaca;
+  border-radius: $spacing-unit / 5;
+  width: 48%;
+  height: $spacing-unit*1.5;
   font-size: $base-font-size*1.5;
-}
-.comment-email:focus {
-  outline: none
-}
-
-@media screen and (max-width: 750px) {
-  .comment-email {
+  background-color: #cacaca;
+  @include media-query($on-palm) {
     width: 100%;
-    margin-left: 0;
+  }
+  &:focus {
+    outline: none
   }
 }
 
 .comment-message {
+  margin-top: $spacing-unit;
+  border: 0;
   border-radius: $spacing-unit / 5;
   width: 100%;
   height: $spacing-unit * 8;
-  margin-top: $spacing-unit;
-  border: 0;
-  background-color: #cacaca;
   font-size: $base-font-size*1.5;
-}
-.comment-message:focus {
-  outline: none
-}
-.comment-submit {
-  border-radius: $spacing-unit;
-  border: 0.1rem solid $link-color;
-  font-size: $base-font-size;
-  height: $spacing-unit * 1.8;
-  margin-top: $spacing-unit;
-  margin-bottom: $spacing-unit*2;
-  padding: 0 $spacing-unit;
-  background-color: $background-color;
-  color: $link-color;
+  background-color: #cacaca;
+  &:focus {
+    outline: none
+  }
 }
 
-.comment-submit:hover {
-  color: $background-color;
-  background-color: $link-color;
-}
-.comment-submit:focus {
-  outline: none
+.comment-submit {
+  margin-top: $spacing-unit;
+  border: 0.1rem solid $link-color;
+  border-radius: $spacing-unit;
+  padding: 0 $spacing-unit;
+  height: $spacing-unit * 1.8;
+  font-size: $base-font-size;
+  color: $link-color;
+  background-color: $background-color;
+  &:hover {
+    color: $background-color;
+    background-color: $link-color;
+  }
+  &:focus {
+    outline: none
+  }
 }

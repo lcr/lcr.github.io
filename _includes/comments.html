@@ -1,19 +1,18 @@
 {% if site.data.comments[page.slug] %}
 <h2 class="comment-size">
     {% if site.data.comments[page.slug].size >= 1 %}
-    <span>{{ site.data.comments[page.slug] | size }}</span> Comments
+    <span>{{ site.data.comments[page.slug] | size }}</span> COMMENTS
     {% endif %}
 </h2>
 {% assign comments = site.data.comments[page.slug] | sort %}
-
 {% for comment in comments %}
-<span class="comment-name">{{ comment[1].name }}</span>
-<span>{{ comment[1].date | date: "%B %d, %Y" }}</span>
-<p>{{ comment[1].message | markdownify }}</p>
-
+<div class="comment-name">{{ comment[1].name }}</div>
+<div class="comment-date">{{ comment[1].date | date: "%B %d, %Y" }}</div>
+<div class="comment-comment">{{ comment[1].message | markdownify }}</div>
 {% endfor %}
 {% endif %}
 
+<h2 class="comment-title">Get IN TOUCH</h2>
 <form method="POST" action="https://api.staticman.net/v2/entry/lcr/lcr.github.io/master/comments">
     <input name="options[redirect]" type="hidden" value="https://lcr.github.io/">
     <input name="options[slug]" type="hidden" value="{{ page.slug }}">
@@ -22,5 +21,3 @@
     <label><textarea class="comment-message" name="fields[message]" placeholder="Comment"></textarea></label>
     <input class="comment-submit" type="submit" value="Send">
 </form>
-
-

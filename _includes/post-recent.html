@@ -1,8 +1,8 @@
 <div class="post-recent">
     {% if page.next %}
-    <a class="next" href="{{ page.next.url | prepend: site.baseurl }}">&laquo;{{ page.next.title }}</a>
+    <a class="next next-icon-left icon-left-link" href="{{ page.next.url | prepend: site.baseurl }}" title="{{ page.next.title }}">{% include icon-left.svg %}Prev</a>
     {% endif %}
     {% if page.previous %}
-    <a class="prev" href="{{ page.previous.url | prepend: site.baseurl }}">{{ page.previous.title }}&raquo;</a>
+    <a class="prev icon-right-link" href="{{ page.previous.url | prepend: site.baseurl }}" title="{{ page.previous.title }}">Next{% include icon-right.svg %}</a>
     {% endif %}
 </div>

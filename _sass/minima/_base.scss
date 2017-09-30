@@ -91,8 +91,8 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-  color: $brand-color;
   text-decoration: none;
+  color: $brand-color;
 
   &:visited {
     color: darken($brand-color, 15%);
@@ -100,14 +100,14 @@ a {
 
   &:hover {
     color: $text-color;
-    text-decoration: underline;
+    text-decoration: none;
   }
 
   .social-media-list &:hover {
     text-decoration: none;
 
     .username {
-      text-decoration: underline;
+      text-decoration: none;
     }
   }
 }
@@ -185,9 +185,9 @@ pre {
  * Clearfix
  */
 %clearfix:after {
-  content: "";
   display: table;
   clear: both;
+  content: "";
 }
 
 
@@ -198,14 +198,6 @@ pre {
 .icon > svg {
   display: inline-block;
   vertical-align: middle;
-
-  path {
-    fill: $grey-color;
-  }
-}
-
-svg:hover path {
-  fill: $text-color;
 }
 
 .social-media-list {
