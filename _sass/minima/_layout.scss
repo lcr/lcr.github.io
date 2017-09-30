@@ -9,6 +9,7 @@
 .site-header {
   border-bottom: 1px solid $grey-color-light;
   min-height: $spacing-unit * 1.865;
+
   // Positioning context for the mobile navigation icon
   position: relative;
 }
@@ -113,26 +114,19 @@
  * Site footer
  */
 .site-footer {
-  //display: -webkit-flex;
-  //display: flex;
-  //-webkit-justify-content: center;
-  //justify-content: center;
-  //border-top: 1px solid $grey-color-light;
-  //padding: $spacing-unit 0;
-  height: $spacing-unit*8;
-  background: $liner-color;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  border-top: 1px solid $grey-color-light;
+  padding: $spacing-unit 0;
 }
-.border-topleft{
-  width: 0;
-  height: 0;
-  border-top: 40px solid #fff;
-  border-right: calc(100vw - 18px) solid transparent;
-  @include media-query($on-palm){
-    border-right: 100vw solid transparent;
+
+.icon-github {
+  fill: #828282;
+  &:hover path {
+    fill: $text-color;
   }
-}
-.icon-github:hover path {
-  fill: $text-color;
 }
 
 /**
@@ -253,6 +247,7 @@ a.pagination-link:hover {
 .icon-left:hover path {
   fill: rgba(233, 77, 80, 0.3);
 }
+
 .icon-right-link:hover path {
   fill: $link-color;
 }
@@ -260,6 +255,7 @@ a.pagination-link:hover {
 .icon-right:hover path {
   fill: rgba(233, 77, 80, 0.3);
 }
+
 /**
  * Posts
  */
@@ -306,28 +302,29 @@ a.pagination-link:hover {
 }
 
 .post-recent {
-  margin-top:$spacing-unit * 3;
-  margin-bottom:$spacing-unit * 3;
+  margin-top: $spacing-unit * 3;
+  margin-bottom: $spacing-unit * 3;
   font-size: $base-font-size * 1.5;
   .prev {
     float: right;
-    &:hover{
+    &:hover {
       color: $link-color;
     }
   }
   .next {
     float: left;
-    &:hover{
-    color: $link-color;
+    &:hover {
+      color: $link-color;
+    }
   }
-  }
-  svg{
+  svg {
     width: 18px;
     height: 18px;
   }
 }
+
 /**
- * Comments
+ * Comment
  */
 .comment-size {
   margin-top: $spacing-unit * 2;
