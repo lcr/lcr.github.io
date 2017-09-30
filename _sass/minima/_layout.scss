@@ -113,14 +113,24 @@
  * Site footer
  */
 .site-footer {
-  display: -webkit-flex;
-  display: flex;
-  -webkit-justify-content: center;
-  justify-content: center;
-  border-top: 1px solid $grey-color-light;
-  padding: $spacing-unit 0;
+  //display: -webkit-flex;
+  //display: flex;
+  //-webkit-justify-content: center;
+  //justify-content: center;
+  //border-top: 1px solid $grey-color-light;
+  //padding: $spacing-unit 0;
+  height: $spacing-unit*8;
+  background: $liner-color;
 }
-
+.border-topleft{
+  width: 0;
+  height: 0;
+  border-top: 40px solid #fff;
+  border-right: calc(100vw - 18px) solid transparent;
+  @include media-query($on-palm){
+    border-right: 100vw solid transparent;
+  }
+}
 .icon-github:hover path {
   fill: $text-color;
 }
