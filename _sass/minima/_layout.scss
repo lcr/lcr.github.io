@@ -118,10 +118,41 @@
   display: flex;
   -webkit-justify-content: center;
   justify-content: center;
-  border-top: 1px solid $grey-color-light;
-  padding: $spacing-unit 0;
-}
+  //border-top: 1px solid $grey-color-light;
+  //padding: $spacing-unit 0;
+  height: 40vh;
+  background: $liner-color;
 
+}
+.paginator-border{
+  position: absolute;
+  z-index: 4;
+  width: 0;
+  height: 0;
+  border-top: 100px solid $background-color;
+  border-right: calc(100vw - 17px) solid transparent;
+  @media screen and(max-device-width : 1024px) {
+    border-right: 100vw solid transparent;
+  }
+}
+.content-border{
+  width: 0;
+  height: 0;
+  border-bottom: 100px solid $blue-color;
+  border-left: calc(100vw - 17px) solid transparent;
+  @media screen and(max-device-width : 1024px) {
+    border-right: 100vw solid transparent;
+  }
+}
+.footer-border{
+  width: 0;
+  height: 0;
+  border-top: 100px solid $blue-color;
+  border-right: calc(100vw - 17px) solid transparent;
+  @media screen and(max-device-width : 1024px) {
+    border-right: 100vw solid transparent;
+  }
+}
 .icon-github {
   fill: #828282;
   &:hover path {
@@ -134,8 +165,8 @@
  */
 .page-content {
   padding: $spacing-unit 0;
-}
 
+}
 .page-heading {
   @include relative-font-size(1.25);
 }
@@ -207,16 +238,16 @@ a.post-readmore:hover {
   -o-transition: 500ms;
   transition: 500ms;
 }
+.pagination-bg{
+  background-color: $blue-color;
 
+}
 .pagination {
   display: -webkit-flex;
   display: flex;
   -webkit-justify-content: center;
   justify-content: center;
-  margin-top: $spacing-unit*3;
-  margin-bottom: $spacing-unit*3;
 }
-
 .pagination-link {
   margin: 0 $spacing-unit / 2;
   font-size: $base-font-size*2;
@@ -326,6 +357,10 @@ a.pagination-link:hover {
 /**
  * Comment
  */
+.comment{
+  color: $background-color;
+  background-color: $blue-color;
+}
 .comment-size {
   margin-top: $spacing-unit * 2;
   border-bottom: 2px solid $grey-color-light;
@@ -361,7 +396,7 @@ a.pagination-link:hover {
   width: 48%;
   height: $spacing-unit*1.5;
   font-size: $base-font-size*1.5;
-  background-color: #cacaca;
+  background-color: $grey-color;
   @include media-query($on-palm) {
     width: 100%;
   }
@@ -378,7 +413,7 @@ a.pagination-link:hover {
   width: 48%;
   height: $spacing-unit*1.5;
   font-size: $base-font-size*1.5;
-  background-color: #cacaca;
+  background-color: $grey-color;
   @include media-query($on-palm) {
     width: 100%;
   }
@@ -394,7 +429,8 @@ a.pagination-link:hover {
   width: 100%;
   height: $spacing-unit * 8;
   font-size: $base-font-size*1.5;
-  background-color: #cacaca;
+  background-color: $grey-color;
+  overflow: hidden;
   &:focus {
     outline: none
   }
@@ -408,9 +444,9 @@ a.pagination-link:hover {
   height: $spacing-unit * 1.8;
   font-size: $base-font-size;
   color: $link-color;
-  background-color: $background-color;
+  background-color: $blue-color;
   &:hover {
-    color: $background-color;
+    color: $blue-color;
     background-color: $link-color;
   }
   &:focus {

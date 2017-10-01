@@ -1,5 +1,5 @@
 {% if paginator.total_pages >= 1 %}
-<div class="pagination">
+<div class="pagination id=pagin">
     {% if paginator.previous_page %}
     <a class="pagination-link icon-left-link"
        href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">{% include icon-left.svg %}</a>
@@ -27,3 +27,4 @@
     {% endif %}
 </div>
 {% endif %}
+<div class="paginator-border"></div>
