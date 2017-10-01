@@ -399,6 +399,7 @@ a.pagination-link:hover {
   background-color: $grey-color;
   @include media-query($on-palm) {
     width: 100%;
+    float:none;
   }
   &:focus {
     outline: none
@@ -416,6 +417,7 @@ a.pagination-link:hover {
   background-color: $grey-color;
   @include media-query($on-palm) {
     width: 100%;
+    float:none;
   }
   &:focus {
     outline: none

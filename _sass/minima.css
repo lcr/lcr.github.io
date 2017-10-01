@@ -489,7 +489,8 @@ a.pagination-link:hover {
   background-color: #4f5155; }
   @media screen and (max-width: 600px) {
     .comment-text {
-      width: 100%; } }
+      width: 100%;
+      float: none; } }
   .comment-text:focus {
     outline: none; }
 
@@ -504,7 +505,8 @@ a.pagination-link:hover {
   background-color: #4f5155; }
   @media screen and (max-width: 600px) {
     .comment-email {
-      width: 100%; } }
+      width: 100%;
+      float: none; } }
   .comment-email:focus {
     outline: none; }
 
