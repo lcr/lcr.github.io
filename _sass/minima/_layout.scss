@@ -141,7 +141,7 @@
   border-bottom: 100px solid $blue-color;
   border-left: calc(100vw - 17px) solid transparent;
   @media screen and(max-device-width : 1024px) {
-    border-right: 100vw solid transparent;
+    border-left: 100vw solid transparent;
   }
 }
 .footer-border{

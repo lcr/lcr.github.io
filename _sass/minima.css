@@ -278,7 +278,7 @@ table {
   border-left: calc(100vw - 17px) solid transparent; }
   @media screen and (max-device-width: 1024px) {
     .content-border {
-      border-right: 100vw solid transparent; } }
+      border-left: 100vw solid transparent; } }
 
 .footer-border {
   width: 0;
