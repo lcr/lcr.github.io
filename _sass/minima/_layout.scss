@@ -197,6 +197,10 @@ a.pagination-link:hover {
   fill: $link-color;
 }
 
+.icon-left path{
+  fill: rgba(0, 0, 0, 0.2);
+}
+
 .icon-left:hover path {
   fill: rgba(233, 77, 80, 0.3);
 }
@@ -204,7 +208,9 @@ a.pagination-link:hover {
 .icon-right-link:hover path {
   fill: $link-color;
 }
-
+.icon-right path{
+  fill: rgba(0, 0, 0, 0.2);
+}
 .icon-right:hover path {
   fill: rgba(233, 77, 80, 0.3);
 }
@@ -323,10 +329,10 @@ a.pagination-link:hover {
   height: $spacing-unit*1.5;
   font-size: $base-font-size*1.5;
   color: $background-color;
-  background-color: $grey-color;
+  background-color: #27292d;
   @include media-query($on-palm) {
     width: 100%;
-    float: none;
+    clear: both;
   }
   &:focus {
     outline: none
@@ -342,10 +348,10 @@ a.pagination-link:hover {
   height: $spacing-unit*1.5;
   font-size: $base-font-size*1.5;
   color: $background-color;
-  background-color: $grey-color;
+  background-color: #27292d;
   @include media-query($on-palm) {
     width: 100%;
-    float: none;
+    clear: both;
   }
   &:focus {
     outline: none
@@ -360,7 +366,7 @@ a.pagination-link:hover {
   height: $spacing-unit * 8;
   font-size: $base-font-size*1.5;
   color: $background-color;
-  background-color: $grey-color;
+  background-color: #27292d;
   overflow: hidden;
   &:focus {
     outline: none
@@ -377,7 +383,7 @@ a.pagination-link:hover {
   color: $link-color;
   background-color: $blue-color;
   &:hover {
-    color: $blue-color;
+    color: $background-color;
     background-color: $link-color;
   }
   &:focus {

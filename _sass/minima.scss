@@ -10,15 +10,15 @@ $base-line-height: 1.5 !default;
 
 $spacing-unit:     30px !default;
 
-$text-color:       #1c1c1c !default;
+$text-color:       #000 !default;
 $background-color: #fff !default;
 $brand-color:      #1c1c1c !default;
 $grey-color:       #4f5155 !default;
 $grey-color-light: lighten($grey-color, 40%) !default;
 $grey-color-dark:  darken($grey-color, 25%) !default;
-$blue-color:       #232531 !default;
-$link-color:       #e94d50;
-$liner-color:      linear-gradient(45deg, #e94d50, #904aad);
+$blue-color:       #1f2125 !default;
+$link-color:       #e95250;
+$liner-color:      linear-gradient(45deg, #e95250, #954aad);
 
 $table-text-align: left !default;
 

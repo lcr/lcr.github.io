@@ -12,7 +12,7 @@ dl, dd, ol, ul, figure {
  */
 body {
   font: 400 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #1c1c1c;
+  color: #000;
   background-color: #fff;
   -webkit-text-size-adjust: 100%;
   -webkit-font-feature-settings: "kern" 1;
@@ -72,7 +72,7 @@ a {
   a:visited {
     color: black; }
   a:hover {
-    color: #1c1c1c;
+    color: #000;
     text-decoration: none; }
   .social-media-list a:hover {
     text-decoration: none; }
@@ -157,7 +157,7 @@ table {
   margin-bottom: 30px;
   width: 100%;
   text-align: left;
-  color: #4a4a4a;
+  color: #2e2e2e;
   border-collapse: collapse;
   border: 1px solid #b5b7bb; }
   table tr:nth-child(even) {
@@ -176,7 +176,7 @@ table {
  */
 .site-head-line {
   height: 10px;
-  background: linear-gradient(45deg, #e94d50, #904aad); }
+  background: linear-gradient(45deg, #e95250, #954aad); }
 
 .site-header {
   border-bottom: 1px solid #b5b7bb;
@@ -198,10 +198,10 @@ table {
  */
 .site-footer {
   height: 40vh;
-  background: linear-gradient(45deg, #e94d50, #904aad); }
+  background: linear-gradient(45deg, #e95250, #954aad); }
 
 .footer-border {
-  border-top: 100px solid #232531;
+  border-top: 100px solid #1f2125;
   border-right: calc(100vw - 17px) solid transparent;
   width: 0;
   height: 0; }
@@ -217,7 +217,7 @@ table {
   padding-top: 30px; }
 
 .content-border {
-  border-bottom: 100px solid #232531;
+  border-bottom: 100px solid #1f2125;
   border-left: calc(100vw - 17px) solid transparent;
   width: 0;
   height: 0; }
@@ -252,12 +252,12 @@ table {
           margin: 0 auto;
           width: 0;
           height: 2px;
-          background: linear-gradient(45deg, #e94d50, #904aad);
+          background: linear-gradient(45deg, #e95250, #954aad);
           transition: width .5s ease, background-color .5s ease;
           content: ''; }
         .post-list > li > h2 > a:hover:after {
           width: 100%;
-          background: linear-gradient(45deg, #e94d50, #904aad); }
+          background: linear-gradient(45deg, #e95250, #954aad); }
 
 .post-meta {
   display: block;
@@ -273,7 +273,7 @@ table {
   align-items: center;
   margin-top: 30px;
   margin-bottom: 60px;
-  border: 0.1rem solid #e94d50;
+  border: 0.1rem solid #e95250;
   border-radius: 30px;
   padding: 0 30px;
   height: 54px;
@@ -281,17 +281,17 @@ table {
 
 a.post-readmore {
   text-decoration: none;
-  color: #e94d50; }
+  color: #e95250; }
   a.post-readmore:hover {
     color: #fff;
-    background-color: #e94d50;
+    background-color: #e95250;
     -webkit-transition: 500ms;
     -moz-transition: 500ms;
     -o-transition: 500ms;
     transition: 500ms; }
 
 .pagination-bg {
-  background-color: #232531; }
+  background-color: #1f2125; }
 
 .paginator-border {
   position: absolute;
@@ -315,7 +315,7 @@ a.post-readmore {
   font-size: 32px; }
 
 a.pagination-link:hover {
-  color: #e94d50; }
+  color: #e95250; }
 
 .pagination-link-active {
   display: -webkit-flex;
@@ -328,16 +328,22 @@ a.pagination-link:hover {
   height: 100%;
   font-size: 32px;
   color: #fff;
-  background-color: #e94d50; }
+  background-color: #e95250; }
 
 .icon-left-link:hover path {
-  fill: #e94d50; }
+  fill: #e95250; }
+
+.icon-left path {
+  fill: rgba(0, 0, 0, 0.2); }
 
 .icon-left:hover path {
   fill: rgba(233, 77, 80, 0.3); }
 
 .icon-right-link:hover path {
-  fill: #e94d50; }
+  fill: #e95250; }
+
+.icon-right path {
+  fill: rgba(0, 0, 0, 0.2); }
 
 .icon-right:hover path {
   fill: rgba(233, 77, 80, 0.3); }
@@ -382,12 +388,12 @@ a.pagination-link:hover {
     float: right;
     color: #fff; }
     .post-recent .prev:hover {
-      color: #e94d50; }
+      color: #e95250; }
   .post-recent .next {
     float: left;
     color: #fff; }
     .post-recent .next:hover {
-      color: #e94d50; }
+      color: #e95250; }
   .post-recent svg {
     width: 18px;
     height: 18px;
@@ -398,7 +404,7 @@ a.pagination-link:hover {
  */
 .comment {
   color: #fff;
-  background-color: #232531; }
+  background-color: #1f2125; }
 
 .comment-size {
   margin-top: 60px;
@@ -431,11 +437,11 @@ a.pagination-link:hover {
   height: 45px;
   font-size: 24px;
   color: #fff;
-  background-color: #4f5155; }
+  background-color: #27292d; }
   @media screen and (max-width: 600px) {
     .comment-text {
       width: 100%;
-      float: none; } }
+      clear: both; } }
   .comment-text:focus {
     outline: none; }
 
@@ -448,11 +454,11 @@ a.pagination-link:hover {
   height: 45px;
   font-size: 24px;
   color: #fff;
-  background-color: #4f5155; }
+  background-color: #27292d; }
   @media screen and (max-width: 600px) {
     .comment-email {
       width: 100%;
-      float: none; } }
+      clear: both; } }
   .comment-email:focus {
     outline: none; }
 
@@ -464,23 +470,23 @@ a.pagination-link:hover {
   height: 240px;
   font-size: 24px;
   color: #fff;
-  background-color: #4f5155;
+  background-color: #27292d;
   overflow: hidden; }
   .comment-message:focus {
     outline: none; }
 
 .comment-submit {
   margin-top: 30px;
-  border: 0.1rem solid #e94d50;
+  border: 0.1rem solid #e95250;
   border-radius: 30px;
   padding: 0 30px;
   height: 54px;
   font-size: 16px;
-  color: #e94d50;
-  background-color: #232531; }
+  color: #e95250;
+  background-color: #1f2125; }
   .comment-submit:hover {
-    color: #232531;
-    background-color: #e94d50; }
+    color: #fff;
+    background-color: #e95250; }
   .comment-submit:focus {
     outline: none; }
 
@@ -490,7 +496,7 @@ a.pagination-link:hover {
 .icon-github {
   fill: #fff; }
   .icon-github:hover path {
-    fill: #1c1c1c; }
+    fill: #000; }
 
 /**
  * Syntax highlighting styles
