@@ -4,6 +4,8 @@
        title="{{ page.next.title }}">{% include icon-left.svg %}Prev</a>
     {% endif %}
 
+    <a class="post-recent-home" href="{{ "/" | relative_url }}">Home</a>
+
     {% if page.previous %}
     <a class="prev icon-right-link" href="{{ page.previous.url | prepend: site.baseurl }}"
        title="{{ page.previous.title }}">Next{% include icon-right.svg %}</a>
