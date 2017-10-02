@@ -1,0 +1,36 @@
+{% if paginator.total_pages >= 1 %}
+<div class="pagination id=pagin">
+
+    {% if paginator.previous_page %}
+    <a class="pagination-link icon-left-link"
+       href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">{% include icon-left.svg
+        %}</a>
+    {% else %}
+    <span class="pagination-link icon-left">{% include icon-left.svg %}</span>
+    {% endif %}
+
+    {% for page in (1..paginator.total_pages) %}
+    {% if page == paginator.page %}
+    <span class="pagination-link-active">{{ page }}</span>
+    {% elsif page == 1 %}
+    <a class="pagination-link"
+       href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+    {% else %}
+    <a class="pagination-link"
+       href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page
+        }}</a>
+    {% endif %}
+    {% endfor %}
+
+    {% if paginator.next_page %}
+    <a class="pagination-link icon-right-link"
+       href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">{% include icon-right.svg
+        %}</a>
+    {% else %}
+    <span class="pagination-link  icon-right">{% include icon-right.svg %}</span>
+    {% endif %}
+
+</div>
+{% endif %}
+
+<div class="paginator-border"></div>

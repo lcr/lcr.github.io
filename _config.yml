@@ -1,0 +1,29 @@
+title: Leslie Lai's writings
+
+description: Leslie Lai's writings
+
+baseurl: ""
+
+url: "https://lcr.github.io"
+
+github_username:  lcr
+
+google_analytics: UA-107157614-1
+
+markdown: kramdown
+
+plugins:
+  - jekyll-feed
+
+paginate: 5
+paginate_path: "/page:num/"
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      author: Leslie Lai
+
+excerpt_separator: "<!-- more -->"
