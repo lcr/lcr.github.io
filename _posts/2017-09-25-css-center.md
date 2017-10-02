@@ -1,5 +1,5 @@
 ---
-title: "CSS CENTER"
+title: "CSS Center"
 ---
 
 ### CSS水平居中
