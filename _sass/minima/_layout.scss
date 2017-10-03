@@ -33,7 +33,7 @@
 }
 
 .header-border {
-  border-top: 100px solid #f7f7f7;
+  border-top: 100px solid $gray-color;
   border-right: calc(100vw - 17px) solid transparent;
   @media screen and(max-device-width: 1024px) {
     border-right: 100vw solid transparent;
@@ -133,6 +133,7 @@ a.header-home {
   margin-top: $spacing-unit / 2;
   margin-bottom: $spacing-unit / 2;
   font-size: $small-font-size;
+  font-style: italic;
   color: $grey-color;
 }
 
@@ -188,7 +189,7 @@ a.post-readmore {
 
 .pagination-link {
   margin: 0 $spacing-unit / 2;
-  font-size: $base-font-size*2;
+  font-size: $base-font-size * 2;
 }
 
 a.pagination-link:hover {
@@ -202,9 +203,9 @@ a.pagination-link:hover {
   justify-content: center;
   margin: 0 $spacing-unit / 2;
   border-radius: 50%;
-  width: $spacing-unit*1.6;
+  width: $spacing-unit * 1.6;
   height: 100%;
-  font-size: $base-font-size*2;
+  font-size: $base-font-size * 2;
   color: $background-color;
   background-color: $link-color;
   cursor: default;
@@ -219,14 +220,14 @@ a.pagination-link:hover {
 }
 
 .icon-left {
-  fill: rgba(0, 0, 0, 0.2);
+  fill: rgba(0, 0, 0, 0.3);
   &:hover path {
     fill: rgba(233, 77, 80, 0.3);
   }
 }
 
 .icon-right {
-  fill: rgba(0, 0, 0, 0.2);
+  fill: rgba(0, 0, 0, 0.3);
   &:hover path {
     fill: rgba(233, 77, 80, 0.3);
   }
@@ -280,10 +281,10 @@ a.pagination-link:hover {
       @include relative-font-size(1.125);
     }
   }
-  a{
+  a {
     color: rgba(233, 82, 80, 0.7);
     font-size: $base-font-size * 1.2;
-    &:hover{
+    &:hover {
       color: $link-color;
     }
   }
@@ -322,6 +323,7 @@ a.pagination-link:hover {
 .comment-date {
   margin-top: $spacing-unit / 3;
   margin-bottom: $spacing-unit / 3;
+  font-style: italic;
 }
 
 .comment-comment {
@@ -330,8 +332,8 @@ a.pagination-link:hover {
 }
 
 .comment-title {
-  margin-top: $spacing-unit*2;
-  font-size: $base-font-size*2;
+  margin-top: $spacing-unit * 2;
+  font-size: $base-font-size * 2;
 }
 
 .comment-text {
@@ -340,8 +342,8 @@ a.pagination-link:hover {
   border: 0;
   border-radius: $spacing-unit / 5;
   width: 48%;
-  height: $spacing-unit*1.5;
-  font-size: $base-font-size*1.5;
+  height: $spacing-unit * 1.5;
+  font-size: $base-font-size * 1.5;
   color: $background-color;
   background-color: #27292d;
   @include media-query($on-palm) {
@@ -359,8 +361,8 @@ a.pagination-link:hover {
   border: 0;
   border-radius: $spacing-unit / 5;
   width: 48%;
-  height: $spacing-unit*1.5;
-  font-size: $base-font-size*1.5;
+  height: $spacing-unit * 1.5;
+  font-size: $base-font-size * 1.5;
   color: $background-color;
   background-color: #27292d;
   @include media-query($on-palm) {
@@ -378,7 +380,7 @@ a.pagination-link:hover {
   border-radius: $spacing-unit / 5;
   width: 100%;
   height: $spacing-unit * 8;
-  font-size: $base-font-size*1.5;
+  font-size: $base-font-size * 1.5;
   color: $background-color;
   background-color: #27292d;
   overflow: hidden;
