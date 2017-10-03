@@ -12,7 +12,7 @@ layout: default
                         <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
                     </h2>
 
-                    {% assign date_format = site.date_format | default: "%Y %m %-d " %}
+                    {% assign date_format = site.date_format | default: "%B %d. %Y" %}
                     <span class="post-meta">{{ post.date | date: date_format }}</span>
 
                     {% if post.excerpt != post.content %}

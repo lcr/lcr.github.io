@@ -317,13 +317,14 @@ a.pagination-link:hover {
 
 .comment-name {
   margin-top: $spacing-unit * 1.5;
-  font-size: $base-font-size * 1.2;
+  font-size: $base-font-size * 1.5;
 }
 
 .comment-date {
   margin-top: $spacing-unit / 3;
   margin-bottom: $spacing-unit / 3;
   font-style: italic;
+  font-size: $small-font-size;
 }
 
 .comment-comment {
