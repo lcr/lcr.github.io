@@ -338,7 +338,7 @@ a.pagination-link:hover {
 }
 
 .comment-text {
-  display: inline;
+  position: relative;
   float: left;
   margin-top: $spacing-unit;
   border: 0;
@@ -349,8 +349,8 @@ a.pagination-link:hover {
   color: $background-color;
   background-color: #27292d;
   @include media-query($on-palm) {
-    width: 100%;
     float: none;
+    width: 100%;
   }
   &:focus {
     outline: none
@@ -358,7 +358,7 @@ a.pagination-link:hover {
 }
 
 .comment-email {
-  display: inline;
+  position: relative;
   float: right;
   margin-top: $spacing-unit;
   border: 0;
@@ -369,8 +369,8 @@ a.pagination-link:hover {
   color: $background-color;
   background-color: #27292d;
   @include media-query($on-palm) {
-    width: 100%;
     float: none;
+    width: 100%;
   }
   &:focus {
     outline: none
