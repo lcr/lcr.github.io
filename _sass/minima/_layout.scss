@@ -2,16 +2,21 @@
  * Site header
  */
 .site-head-line {
-  height: $spacing-unit / 3;
+  height: $spacing-unit / 5;
   background: $liner-color;
 }
 
 .site-header {
-  min-height: $spacing-unit * 1.865;
   height: 40vh;
-  background-color: #f7f7f7;
+  background-color: $gray-color;
   // Positioning context for the mobile navigation icon
   position: relative;
+}
+
+.site-title-position {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: $spacing-unit;
 }
 
 .site-title {
@@ -26,11 +31,6 @@
   }
 }
 
-.site-title-position {
-  position: absolute;
-  bottom: 0;
-  margin-bottom: $spacing-unit;
-}
 
 .header-border {
   border-top: 100px solid $gray-color;
@@ -47,40 +47,6 @@ a.header-home {
   font-size: $base-font-size * 1.5;
   &:hover {
     color: $link-color;
-  }
-}
-
-/**
- * Site footer
- */
-.site-footer {
-  height: 40vh;
-  background: $liner-color;
-
-}
-
-.footer-border {
-  border-top: 100px solid $blue-color;
-  border-right: calc(100vw - 17px) solid transparent;
-  @media screen and(max-device-width: 1024px) {
-    border-right: 100vw solid transparent;
-  }
-  width: 0;
-  height: 0;
-}
-
-.footer-content {
-  display: -webkit-flex;
-  display: flex;
-  -webkit-justify-content: center;
-  justify-content: center;
-  padding-top: $spacing-unit;
-}
-
-.icon-github {
-  fill: $background-color;
-  &:hover path {
-    fill: $text-color;
   }
 }
 
@@ -234,6 +200,41 @@ a.pagination-link:hover {
 }
 
 /**
+ * Site footer
+ */
+.site-footer {
+  height: 30vh;
+  background: $liner-color;
+
+}
+
+.footer-border {
+  border-top: 100px solid $blue-color;
+  border-right: calc(100vw - 17px) solid transparent;
+  @media screen and(max-device-width: 1024px) {
+    border-right: 100vw solid transparent;
+  }
+  width: 0;
+  height: 0;
+}
+
+.footer-content {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.icon-github {
+  fill: $background-color;
+  &:hover path {
+    fill: $text-color;
+  }
+}
+
+/**
  * Posts
  */
 
@@ -338,7 +339,6 @@ a.pagination-link:hover {
 }
 
 .comment-text {
-  position: relative;
   float: left;
   margin-top: $spacing-unit;
   border: 0;
@@ -358,7 +358,6 @@ a.pagination-link:hover {
 }
 
 .comment-email {
-  position: relative;
   float: right;
   margin-top: $spacing-unit;
   border: 0;
