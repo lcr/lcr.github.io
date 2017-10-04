@@ -339,6 +339,7 @@ a.pagination-link:hover {
 
 .comment-text {
   float: left;
+  overflow: hidden;
   margin-top: $spacing-unit;
   border: 0;
   border-radius: $spacing-unit / 5;
@@ -349,7 +350,6 @@ a.pagination-link:hover {
   background-color: #27292d;
   @include media-query($on-palm) {
     width: 100%;
-    clear: both;
   }
   &:focus {
     outline: none
@@ -358,6 +358,7 @@ a.pagination-link:hover {
 
 .comment-email {
   float: right;
+  overflow: hidden;
   margin-top: $spacing-unit;
   border: 0;
   border-radius: $spacing-unit / 5;
@@ -368,7 +369,6 @@ a.pagination-link:hover {
   background-color: #27292d;
   @include media-query($on-palm) {
     width: 100%;
-    clear: both;
   }
   &:focus {
     outline: none
