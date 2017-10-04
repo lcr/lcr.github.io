@@ -338,8 +338,8 @@ a.pagination-link:hover {
 }
 
 .comment-text {
+  display: inline;
   float: left;
-  overflow: hidden;
   margin-top: $spacing-unit;
   border: 0;
   border-radius: $spacing-unit / 5;
@@ -351,7 +351,6 @@ a.pagination-link:hover {
   @include media-query($on-palm) {
     width: 100%;
     float: none;
-    overflow: hidden;
   }
   &:focus {
     outline: none
@@ -359,8 +358,8 @@ a.pagination-link:hover {
 }
 
 .comment-email {
+  display: inline;
   float: right;
-  overflow: hidden;
   margin-top: $spacing-unit;
   border: 0;
   border-radius: $spacing-unit / 5;
@@ -372,7 +371,6 @@ a.pagination-link:hover {
   @include media-query($on-palm) {
     width: 100%;
     float: none;
-    overflow: hidden;
   }
   &:focus {
     outline: none
