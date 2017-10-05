@@ -1,12 +1,12 @@
 {% if paginator.total_pages >= 1 %}
-<div class="pagination id=pagin">
+<div class="pagination">
 
     {% if paginator.previous_page %}
     <a class="pagination-link icon-left-link"
        href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">{% include icon-left.svg
         %}</a>
     {% else %}
-    <span class="pagination-link icon-left">{% include icon-left.svg %}</span>
+    <span class="pagination-link icon-left-lighten">{% include icon-left.svg %}</span>
     {% endif %}
 
     {% for page in (1..paginator.total_pages) %}
@@ -27,7 +27,7 @@
        href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">{% include icon-right.svg
         %}</a>
     {% else %}
-    <span class="pagination-link  icon-right">{% include icon-right.svg %}</span>
+    <span class="pagination-link  icon-right-lighten">{% include icon-right.svg %}</span>
     {% endif %}
 
 </div>

@@ -10,7 +10,7 @@ layout: default
             <header class="post-header">
                 <h1 class="post-title">{{ page.title | escape }}</h1>
 
-                <p class="post-meta">
+                <span class="post-meta">
                     <time datetime="{{ page.date | date_to_xmlschema }}">
                         {% assign date_format = site.date_format | default: "%B %d. %Y" %}
                         {{ page.date | date: date_format }}
@@ -19,7 +19,7 @@ layout: default
                     {% if page.author %}
                     &nbsp;•&nbsp; {{ page.author }}
                     {% endif %}
-                </p>
+                </span>
             </header>
 
             <div class="post-content">
@@ -29,17 +29,13 @@ layout: default
         </div>
     </main>
 
-    <div class="content-border"></div>
+    <div class="post-border"></div>
 
-    <div class="comment">
-        <main class="page-content" aria-label="Content">
-            <div class="wrapper">
-                {% include comments.html %}
 
-                {% include post-recent.html %}
-            </div>
-        </main>
-    </div>
+    {% include comments.html %}
+
+    {% include post-recent.html %}
+
 
 </article>
 

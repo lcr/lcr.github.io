@@ -13,7 +13,7 @@ layout: default
                     </h2>
 
                     {% assign date_format = site.date_format | default: "%B %d. %Y" %}
-                    <span class="post-meta">{{ post.date | date: date_format }}</span>
+                    <span class="post-list-meta">{{ post.date | date: date_format }}</span>
 
                     {% if post.excerpt != post.content %}
                     {{ post.excerpt }}
