@@ -8,9 +8,6 @@ url: "https://lcr.github.io"
 
 markdown: kramdown
 
-plugins:
-  - jekyll-feed
-
 paginate: 5
 paginate_path: "/page:num/"
 
