@@ -1,5 +1,5 @@
 ---
-title: "JavaScript back to the top"
+title: "JS back to top"
 ---
 
 html:

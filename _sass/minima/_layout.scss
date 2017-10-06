@@ -13,19 +13,13 @@
 
   .site-title-position {
     position: absolute;
-    bottom: 0;
-    margin-bottom: $spacing-unit;
+    top: 0;
+    margin-top: 20vh;
 
     .site-title {
-      margin-bottom: 0;
       @include relative-font-size(3);
-      font-weight: 300;
       line-height: $base-line-height * $base-font-size * 2.25;
       letter-spacing: -1px;
-      &,
-      &:visited {
-        color: $grey-color-dark;
-      }
     }
   }
 }
@@ -403,16 +397,16 @@
   color: $background-color;
   background-color: $blue-color;
 
-  .post-recent-prev {
-    float: right;
+  .post-recent-newer {
+    float: left;
     color: $background-color;
     &:hover {
       color: $link-color;
     }
   }
 
-  .post-recent-next {
-    float: left;
+  .post-recent-older {
+    float: right;
     color: $background-color;
     &:hover {
       color: $link-color;

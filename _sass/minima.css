@@ -183,16 +183,12 @@ table {
   position: relative; }
   .site-header .site-title-position {
     position: absolute;
-    bottom: 0;
-    margin-bottom: 30px; }
+    top: 0;
+    margin-top: 20vh; }
     .site-header .site-title-position .site-title {
-      margin-bottom: 0;
       font-size: 48px;
-      font-weight: 300;
       line-height: 54px;
       letter-spacing: -1px; }
-      .site-header .site-title-position .site-title, .site-header .site-title-position .site-title:visited {
-        color: #121213; }
 
 .header-border {
   border-top: 100px solid #f7f7f7;
@@ -479,15 +475,15 @@ table {
   text-align: center;
   color: #fff;
   background-color: #1f2125; }
-  .post-recent .post-recent-prev {
-    float: right;
-    color: #fff; }
-    .post-recent .post-recent-prev:hover {
-      color: #e95250; }
-  .post-recent .post-recent-next {
+  .post-recent .post-recent-newer {
     float: left;
     color: #fff; }
-    .post-recent .post-recent-next:hover {
+    .post-recent .post-recent-newer:hover {
+      color: #e95250; }
+  .post-recent .post-recent-older {
+    float: right;
+    color: #fff; }
+    .post-recent .post-recent-older:hover {
       color: #e95250; }
   .post-recent svg {
     width: 18px;
