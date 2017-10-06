@@ -16,8 +16,8 @@ comments:
       options:
         format: "timestamp-seconds"
 
-  #moderation: false
-  moderation: true
+  moderation: false
+  #moderation: true
 
 
   name: "eduardoboucas.com"
