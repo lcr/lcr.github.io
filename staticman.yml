@@ -4,7 +4,7 @@ comments:
 
   branch: "master"
 
-  commitMessage: "Add Staticman data"
+  commitMessage: "new comment"
 
   filename: "entry{@timestamp}"
 
@@ -14,12 +14,11 @@ comments:
     date:
       type: date
       options:
-        format: "iso8601"
-#        format: "timestamp-seconds"
+        format: "timestamp-seconds"
 
   moderation: false
 
-  name: "eduardoboucas.com"
+  name: "lcr.github.io"
 
   path: "_data/comments/{options.slug}"
 

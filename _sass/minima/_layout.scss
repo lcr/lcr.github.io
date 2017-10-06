@@ -156,18 +156,6 @@
   }
 }
 
-.paginator-border {
-  position: absolute;
-  z-index: 5;
-  border-top: 100px solid $background-color;
-  border-right: calc(100vw - 17px) solid transparent;
-  @media screen and(max-device-width: 1024px) {
-    border-right: 100vw solid transparent;
-  }
-  width: 0;
-  height: 0;
-}
-
 /**
  * Site footer
  */
@@ -175,8 +163,8 @@
   height: 30vh;
   background: $liner-color;
 
-  .footer-border {
-    border-top: 100px solid $blue-color;
+  .footer-topleft-border {
+    border-top: 100px solid $background-color;
     border-right: calc(100vw - 17px) solid transparent;
     @media screen and(max-device-width: 1024px) {
       border-right: 100vw solid transparent;
@@ -262,7 +250,7 @@
     }
   }
 
-  .post-border {
+  .post-content-bottomright-border {
     border-bottom: 100px solid $blue-color;
     border-left: calc(100vw - 17px) solid transparent;
     @media screen and(max-device-width: 1024px) {
@@ -277,30 +265,30 @@
  * Comment
  */
 
-.comment {
+.comments {
   padding-top: $spacing-unit * 1.5;
   color: $background-color;
   background-color: $blue-color;
 
-  .comment-size {
+  .comments-size {
     border-bottom: 2px solid $grey-color-light;
     padding-bottom: $spacing-unit / 2;
     font-size: $base-font-size * 2;
   }
 
-  .comment-name {
+  .comments-name {
     margin-top: $spacing-unit * 1.5;
     font-size: $base-font-size * 1.5;
   }
 
-  .comment-date {
+  .comments-date {
     margin-top: $spacing-unit / 3;
     margin-bottom: $spacing-unit / 3;
     font-style: italic;
     font-size: $small-font-size;
   }
 
-  .comment-comment {
+  .comments-message {
     margin-bottom: $spacing-unit;
     border-bottom: 1px solid $grey-color-light;
   }
@@ -428,6 +416,18 @@
     height: 18px;
     fill: $background-color;
   }
+}
+
+.post-recent-bottomleft-border {
+  position: absolute;
+  z-index: 5;
+  border-top: 100px solid $blue-color;
+  border-right: calc(100vw - 17px) solid transparent;
+  @media screen and(max-device-width: 1024px) {
+    border-right: 100vw solid transparent;
+  }
+  width: 0;
+  height: 0;
 }
 
 .icon-left-link:hover path {

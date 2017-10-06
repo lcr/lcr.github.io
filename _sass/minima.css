@@ -292,30 +292,19 @@ table {
     .pagination .icon-right-lighten:hover path {
       fill: rgba(233, 77, 80, 0.3); }
 
-.paginator-border {
-  position: absolute;
-  z-index: 5;
-  border-top: 100px solid #fff;
-  border-right: calc(100vw - 17px) solid transparent;
-  width: 0;
-  height: 0; }
-  @media screen and (max-device-width: 1024px) {
-    .paginator-border {
-      border-right: 100vw solid transparent; } }
-
 /**
  * Site footer
  */
 .site-footer {
   height: 30vh;
   background: linear-gradient(45deg, #e95250, #954aad); }
-  .site-footer .footer-border {
-    border-top: 100px solid #1f2125;
+  .site-footer .footer-topleft-border {
+    border-top: 100px solid #fff;
     border-right: calc(100vw - 17px) solid transparent;
     width: 0;
     height: 0; }
     @media screen and (max-device-width: 1024px) {
-      .site-footer .footer-border {
+      .site-footer .footer-topleft-border {
         border-right: 100vw solid transparent; } }
   .site-footer .footer-content {
     display: -webkit-flex;
@@ -369,35 +358,35 @@ table {
       font-size: 19.2px; }
       .post .post-content a:hover {
         color: #e95250; }
-  .post .post-border {
+  .post .post-content-bottomright-border {
     border-bottom: 100px solid #1f2125;
     border-left: calc(100vw - 17px) solid transparent;
     width: 0;
     height: 0; }
     @media screen and (max-device-width: 1024px) {
-      .post .post-border {
+      .post .post-content-bottomright-border {
         border-left: 100vw solid transparent; } }
 
 /**
  * Comment
  */
-.comment {
+.comments {
   padding-top: 45px;
   color: #fff;
   background-color: #1f2125; }
-  .comment .comment-size {
+  .comments .comments-size {
     border-bottom: 2px solid #b5b7bb;
     padding-bottom: 15px;
     font-size: 32px; }
-  .comment .comment-name {
+  .comments .comments-name {
     margin-top: 45px;
     font-size: 24px; }
-  .comment .comment-date {
+  .comments .comments-date {
     margin-top: 10px;
     margin-bottom: 10px;
     font-style: italic;
     font-size: 14px; }
-  .comment .comment-comment {
+  .comments .comments-message {
     margin-bottom: 30px;
     border-bottom: 1px solid #b5b7bb; }
 
@@ -496,6 +485,17 @@ table {
     width: 18px;
     height: 18px;
     fill: #fff; }
+
+.post-recent-bottomleft-border {
+  position: absolute;
+  z-index: 5;
+  border-top: 100px solid #1f2125;
+  border-right: calc(100vw - 17px) solid transparent;
+  width: 0;
+  height: 0; }
+  @media screen and (max-device-width: 1024px) {
+    .post-recent-bottomleft-border {
+      border-right: 100vw solid transparent; } }
 
 .icon-left-link:hover path {
   fill: #e95250; }
