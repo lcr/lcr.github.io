@@ -156,8 +156,6 @@
   }
 }
 
-
-
 .paginator-border {
   position: absolute;
   z-index: 5;
@@ -276,12 +274,14 @@
 }
 
 /**
- * Comments
+ * Comment
  */
+
 .comment {
   padding-top: $spacing-unit * 1.5;
   color: $background-color;
   background-color: $blue-color;
+
   .comment-size {
     border-bottom: 2px solid $grey-color-light;
     padding-bottom: $spacing-unit / 2;
@@ -304,15 +304,26 @@
     margin-bottom: $spacing-unit;
     border-bottom: 1px solid $grey-color-light;
   }
+}
 
-  .comment-title {
-    margin-top: $spacing-unit * 2;
+/**
+ * Comment new
+ */
+
+.comment-new {
+  padding-top: $spacing-unit * 1.5;
+  color: $background-color;
+  background-color: $blue-color;
+
+  .comment-new-title {
     font-size: $base-font-size * 2;
   }
-  .comment-form {
+
+  .comment-new-form {
     margin: 0;
     padding: 0;
-    .comment-text {
+
+    .comment-new-text {
       float: left;
       margin-top: $spacing-unit;
       border: 0;
@@ -331,7 +342,7 @@
       }
     }
 
-    .comment-email {
+    .comment-new-email {
       float: right;
       margin-top: $spacing-unit;
       border: 0;
@@ -350,7 +361,7 @@
       }
     }
 
-    .comment-message {
+    .comment-new-message {
       margin-top: $spacing-unit;
       border: 0;
       border-radius: $spacing-unit / 5;
@@ -365,7 +376,7 @@
       }
     }
 
-    .comment-submit {
+    .comment-new-submit {
       margin-top: $spacing-unit;
       border: 0.1rem solid $link-color;
       border-radius: $spacing-unit;
@@ -383,7 +394,6 @@
       }
     }
   }
-
 }
 
 /**
