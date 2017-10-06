@@ -116,16 +116,16 @@ pre {
  * Wrapper
  */
 .wrapper {
-  max-width: -webkit-calc(960px - (30px * 2));
-  max-width: calc(960px - (30px * 2));
+  max-width: -webkit-calc(900px - (30px * 2));
+  max-width: calc(900px - (30px * 2));
   margin-right: auto;
   margin-left: auto;
   padding-right: 30px;
   padding-left: 30px; }
   @media screen and (max-width: 800px) {
     .wrapper {
-      max-width: -webkit-calc(960px - (30px));
-      max-width: calc(960px - (30px));
+      max-width: -webkit-calc(900px - (30px));
+      max-width: calc(900px - (30px));
       padding-right: 15px;
       padding-left: 15px; } }
 
@@ -488,10 +488,6 @@ table {
     float: left;
     color: #fff; }
     .post-recent .post-recent-next:hover {
-      color: #e95250; }
-  .post-recent .post-recent-home {
-    color: #fff; }
-    .post-recent .post-recent-home:hover {
       color: #e95250; }
   .post-recent svg {
     width: 18px;

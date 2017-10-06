@@ -1,15 +1,13 @@
 <div class="post-recent">
     <div class="wrapper">
         {% if page.next %}
-        <a class="post-recent-next  icon-left-link" href="{{ page.next.url | prepend: site.baseurl }}"
-           title="{{ page.next.title }}">{% include icon-left.svg %}Prev</a>
+        <a class="post-recent-next  icon-left-link" href="{{ page.next.url | prepend: site.baseurl }}">
+            {% include icon-left.svg %}{{ page.next.title }}</a>
         {% endif %}
 
-        <a class="post-recent-home" href="{{ "/" | relative_url }}">Home</a>
-
         {% if page.previous %}
-        <a class="post-recent-prev  icon-right-link" href="{{ page.previous.url | prepend: site.baseurl }}"
-           title="{{ page.previous.title }}">Next{% include icon-right.svg %}</a>
+        <a class="post-recent-prev  icon-right-link" href="{{ page.previous.url | prepend: site.baseurl }}">
+            {{page.previous.title }}{% include icon-right.svg %}</a>
         {% endif %}
     </div>
 </div>
