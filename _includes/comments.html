@@ -24,7 +24,7 @@
 
         <div class="comment-form">
             <form method="POST" action="https://api.staticman.net/v2/entry/lcr/lcr.github.io/master/comments">
-                <input name="options[redirect]" type="hidden" value="{{ post.url | relative_url }}">
+                <input name="options[redirect]" type="hidden" value="https://lcr.github.io/">
                 <input name="options[slug]" type="hidden" value="{{ page.slug }}">
 
                 <label><input class="comment-text" name="fields[name]" type="text" placeholder="Name"></label>
