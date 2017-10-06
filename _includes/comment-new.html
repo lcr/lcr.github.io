@@ -4,19 +4,51 @@
         <h2 class="comment-new-title">LEAVE A REPLY</h2>
 
         <div class="comment-new-form">
-            <form method="POST" action="https://api.staticman.net/v2/entry/lcr/lcr.github.io/master/comments">
-                <input name="options[redirect]" type="hidden" value="https://lcr.github.io/">
-                <input name="options[slug]" type="hidden" value="{{ page.slug }}">
+            <!--<form method="POST" action="https://api.staticman.net/v2/entry/lcr/lcr.github.io/master/comments">-->
+                <!--<input name="options[redirect]" type="hidden" value="https://lcr.github.io/">-->
+                <!--<input name="options[slug]" type="hidden" value="{{ page.slug }}">-->
 
-                <label><input class="comment-new-text" name="fields[name]" type="text" placeholder="Name"></label>
+                <!--<label><input class="comment-new-text" name="fields[name]" type="text" placeholder="Name"></label>-->
 
-                <label><input class="comment-new-email" name="fields[email]" type="email" placeholder="Email"></label>
+                <!--<label><input class="comment-new-email" name="fields[email]" type="email" placeholder="Email"></label>-->
 
-                <label><textarea class="comment-new-message" name="fields[message]"
-                                 placeholder="Message"></textarea></label>
+                <!--<label><textarea class="comment-new-message" name="fields[message]"-->
+                                 <!--placeholder="Message"></textarea></label>-->
 
-                <input class="comment-new-submit" type="submit" value="Send">
+                <!--<input class="comment-new-submit" type="submit" value="Send">-->
+            <!--</form>-->
+            <form class="js-form form" method="post" action="https://api.staticman.net/v2/entry/lcr/lcr.github.io/master/comments" autocomplete="off">
+                <input type="hidden" name="options[origin]" value="{{ page.url | absolute_url }}">
+                <input type="hidden" name="options[parent]" value="{{ page.url | absolute_url }}">
+                <input type="hidden" id="comment-replying-to" name="fields[replying_to]" value="">
+                <input type="hidden" name="options[slug]" value="{{ post_slug }}">
+
+                <fieldset>
+                    <div class="textfield">
+                        <textarea class="textfield__input" name="fields[message]" type="text" ></textarea>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <div class="textfield">
+                        <input class="textfield__input" name="fields[name]" type="text" placeholder="Your name"/>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <div class="textfield">
+                        <input class="textfield__input" type="email" name="fields[email]"  placeholder="Your email (optional, used only to send comments.)"/>
+                    </div>
+                </fieldset>
+
+
+                <fieldset>
+                    <button class="button">
+                        Submit
+                    </button>
+                </fieldset>
             </form>
+
         </div>
 
     </div>
