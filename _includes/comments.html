@@ -24,15 +24,16 @@
 
         <div class="comment-form">
             <form method="POST" action="https://api.staticman.net/v2/entry/lcr/lcr.github.io/master/comments">
-                <input name="options[redirect]" type="hidden" value="https://lcr.github.io/">
-                <input name="options[slug]" type="hidden" value="{{ page.slug }}">
-
-                <label><input class="comment-text" name="fields[name]" type="text" placeholder="Name"></label>
+                <!--<input name="options[redirect]" type="hidden" value="https://lcr.github.io/">-->
+                <!--<input name="options[slug]" type="hidden" value="{{ page.slug }}">-->
+                <input type="hidden" name="options[origin]" value="{{ page.url | absolute_url }}">
+                <input type="hidden" name="options[parent]" value="{{ page.url | absolute_url }}">
+                <input type="hidden" name="options[slug]" value="{{ post_slug }}">
+                <label><input class="comment-text" name="fields[name]" type="text" placeholder="Name*"></label>
 
                 <label><input class="comment-email" name="fields[email]" type="email" placeholder="Email"></label>
 
-                <label><textarea class="comment-message" name="fields[message]"
-                                 placeholder="Message"></textarea></label>
+                <label><textarea class="comment-message" name="fields[message]" placeholder="Message*"></textarea></label>
 
                 <input class="comment-submit" type="submit" value="Send">
             </form>
