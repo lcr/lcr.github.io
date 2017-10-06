@@ -503,65 +503,6 @@ table {
 .icon-right-link:hover path {
   fill: #e95250; }
 
-.show-modal {
-  overflow: hidden;
-  position: relative; }
-
-.show-modal:before {
-  position: absolute;
-  content: '';
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 999;
-  background-color: rgba(255, 255, 255, 0.85); }
-
-.show-modal .modal {
-  display: block; }
-
-.form {
-  position: relative; }
-
-.form--loading:before {
-  content: ''; }
-
-.form--loading .form__spinner {
-  display: block; }
-
-.form:before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(255, 255, 255, 0.7);
-  z-index: 10; }
-
-.form__spinner {
-  display: none;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  z-index: 11; }
-
-.field-group {
-  display: block; }
-
-.mdl-card__supporting-text {
-  padding-top: 0; }
-
-.modal {
-  display: none;
-  position: fixed;
-  width: 300px;
-  top: 50%;
-  left: 50%;
-  margin-left: -150px;
-  margin-top: -150px;
-  min-height: 0;
-  z-index: 9999; }
-
 /**
  * Syntax highlighting styles
  */
