@@ -278,6 +278,7 @@
   background-color: $blue-color;
 
   .comments-size {
+    margin-bottom: 0;
     border-bottom: 2px solid $grey-color-light;
     padding-bottom: $spacing-unit / 3;
     font-size: $base-font-size * 2;

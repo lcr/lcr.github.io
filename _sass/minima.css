@@ -383,6 +383,7 @@ table {
   color: #fff;
   background-color: #1f2125; }
   .comments .comments-size {
+    margin-bottom: 0;
     border-bottom: 2px solid #b5b7bb;
     padding-bottom: 10px;
     font-size: 32px; }
