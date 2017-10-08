@@ -192,6 +192,7 @@ table {
 
 .header-border {
   border-top: 100px solid #f7f7f7;
+  border-right: -webkit-calc(100vw - 17px) solid transparent;
   border-right: calc(100vw - 17px) solid transparent;
   width: 0;
   height: 0; }
@@ -238,7 +239,8 @@ table {
           background: linear-gradient(45deg, #e95250, #954aad); }
     .post-list > li .post-list-meta {
       display: block;
-      margin: 15px 0;
+      padding-top: 10px;
+      padding-bottom: 10px;
       font-size: 14px;
       font-style: italic;
       color: #4f5155; }
@@ -275,7 +277,8 @@ table {
     .pagination .pagination-link:hover {
       color: #e95250; }
   .pagination .pagination-link-active {
-    margin: 0 15px;
+    margin-left: 15px;
+    margin-right: 15px;
     border-radius: 50%;
     width: 48px;
     height: 100%;
@@ -301,6 +304,7 @@ table {
   background: linear-gradient(45deg, #e95250, #954aad); }
   .site-footer .footer-topleft-border {
     border-top: 100px solid #fff;
+    border-right: -webkit-calc(100vw - 17px) solid transparent;
     border-right: calc(100vw - 17px) solid transparent;
     width: 0;
     height: 0; }
@@ -333,12 +337,14 @@ table {
         font-size: 36px; } }
   .post .post-header .post-meta {
     display: block;
-    margin: 15px 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
     font-size: 14px;
     font-style: italic;
     color: #4f5155; }
   .post .post-content {
-    margin-bottom: 30px; }
+    padding-top: 15px;
+    padding-bottom: 30px; }
     .post .post-content h2 {
       font-size: 32px; }
       @media screen and (max-width: 800px) {
@@ -361,6 +367,7 @@ table {
         color: #e95250; }
   .post .post-content-bottomright-border {
     border-bottom: 100px solid #1f2125;
+    border-left: -webkit-calc(100vw - 17px) solid transparent;
     border-left: calc(100vw - 17px) solid transparent;
     width: 0;
     height: 0; }
@@ -372,30 +379,29 @@ table {
  * Comment
  */
 .comments {
-  padding-top: 45px;
+  padding-top: 60px;
   color: #fff;
   background-color: #1f2125; }
   .comments .comments-size {
     border-bottom: 2px solid #b5b7bb;
-    padding-bottom: 15px;
+    padding-bottom: 10px;
     font-size: 32px; }
   .comments .comments-name {
-    margin-top: 45px;
+    padding-top: 30px;
     font-size: 24px; }
   .comments .comments-date {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     font-style: italic;
     font-size: 14px; }
   .comments .comments-message {
-    margin-bottom: 30px;
     border-bottom: 1px solid #b5b7bb; }
 
 /**
  * Comment new
  */
 .comment-new {
-  padding-top: 45px;
+  padding-top: 60px;
   color: #fff;
   background-color: #1f2125; }
   .comment-new .comment-new-title {
@@ -491,6 +497,7 @@ table {
   position: absolute;
   z-index: 5;
   border-top: 100px solid #1f2125;
+  border-right: -webkit-calc(100vw - 17px) solid transparent;
   border-right: calc(100vw - 17px) solid transparent;
   width: 0;
   height: 0; }

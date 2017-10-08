@@ -26,6 +26,7 @@
 
 .header-border {
   border-top: 100px solid $gray-color;
+  border-right: -webkit-calc(100vw - 17px) solid transparent;
   border-right: calc(100vw - 17px) solid transparent;
   @media screen and(max-device-width: 1024px) {
     border-right: 100vw solid transparent;
@@ -84,7 +85,8 @@
 
     .post-list-meta {
       display: block;
-      margin: $spacing-unit / 2 0;
+      padding-top: $spacing-unit / 3;
+      padding-bottom: $spacing-unit / 3;
       font-size: $small-font-size;
       font-style: italic;
       color: $grey-color;
@@ -130,7 +132,8 @@
   }
 
   .pagination-link-active {
-    margin: 0 $spacing-unit / 2;
+    margin-left: $spacing-unit / 2;
+    margin-right: $spacing-unit / 2;
     border-radius: 50%;
     width: $spacing-unit * 1.6;
     height: 100%;
@@ -165,6 +168,7 @@
 
   .footer-topleft-border {
     border-top: 100px solid $background-color;
+    border-right: -webkit-calc(100vw - 17px) solid transparent;
     border-right: calc(100vw - 17px) solid transparent;
     @media screen and(max-device-width: 1024px) {
       border-right: 100vw solid transparent;
@@ -208,7 +212,8 @@
     }
     .post-meta {
       display: block;
-      margin: $spacing-unit / 2 0;
+      padding-top: $spacing-unit / 3;
+      padding-bottom: $spacing-unit / 3;
       font-size: $small-font-size;
       font-style: italic;
       color: $grey-color;
@@ -216,7 +221,8 @@
   }
 
   .post-content {
-    margin-bottom: $spacing-unit;
+    padding-top: $spacing-unit / 2;
+    padding-bottom: $spacing-unit;
 
     h2 {
       @include relative-font-size(2);
@@ -252,6 +258,7 @@
 
   .post-content-bottomright-border {
     border-bottom: 100px solid $blue-color;
+    border-left: -webkit-calc(100vw - 17px) solid transparent;
     border-left: calc(100vw - 17px) solid transparent;
     @media screen and(max-device-width: 1024px) {
       border-left: 100vw solid transparent;
@@ -266,30 +273,29 @@
  */
 
 .comments {
-  padding-top: $spacing-unit * 1.5;
+  padding-top: $spacing-unit * 2;
   color: $background-color;
   background-color: $blue-color;
 
   .comments-size {
     border-bottom: 2px solid $grey-color-light;
-    padding-bottom: $spacing-unit / 2;
+    padding-bottom: $spacing-unit / 3;
     font-size: $base-font-size * 2;
   }
 
   .comments-name {
-    margin-top: $spacing-unit * 1.5;
+    padding-top: $spacing-unit;
     font-size: $base-font-size * 1.5;
   }
 
   .comments-date {
-    margin-top: $spacing-unit / 3;
-    margin-bottom: $spacing-unit / 3;
+    padding-top: $spacing-unit / 3;
+    padding-bottom: $spacing-unit / 3;
     font-style: italic;
     font-size: $small-font-size;
   }
 
   .comments-message {
-    margin-bottom: $spacing-unit;
     border-bottom: 1px solid $grey-color-light;
   }
 }
@@ -299,7 +305,7 @@
  */
 
 .comment-new {
-  padding-top: $spacing-unit * 1.5;
+  padding-top: $spacing-unit * 2;
   color: $background-color;
   background-color: $blue-color;
 
@@ -422,6 +428,7 @@
   position: absolute;
   z-index: 5;
   border-top: 100px solid $blue-color;
+  border-right: -webkit-calc(100vw - 17px) solid transparent;
   border-right: calc(100vw - 17px) solid transparent;
   @media screen and(max-device-width: 1024px) {
     border-right: 100vw solid transparent;
