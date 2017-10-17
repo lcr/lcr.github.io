@@ -318,6 +318,10 @@ table {
     justify-content: center;
     -webkit-align-items: center;
     align-items: center; }
+    .site-footer .footer-content .icon-github {
+      fill: #b5b7bb; }
+      .site-footer .footer-content .icon-github:hover path {
+        fill: #fff; }
 
 /**
  * Posts

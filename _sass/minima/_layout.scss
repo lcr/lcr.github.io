@@ -184,6 +184,12 @@
     justify-content: center;
     -webkit-align-items: center;
     align-items: center;
+    .icon-github {
+      fill: $grey-color-light;
+      &:hover path {
+        fill: $background-color;
+      }
+    }
   }
 }
 
