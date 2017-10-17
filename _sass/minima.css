@@ -318,10 +318,6 @@ table {
     justify-content: center;
     -webkit-align-items: center;
     align-items: center; }
-    .site-footer .footer-content .icon-github {
-      fill: #fff; }
-      .site-footer .footer-content .icon-github:hover path {
-        fill: #000; }
 
 /**
  * Posts
@@ -407,67 +403,64 @@ table {
   background-color: #1f2125; }
   .comment-new .comment-new-title {
     font-size: 32px; }
-  .comment-new .comment-new-form {
-    margin: 0;
-    padding: 0; }
-    .comment-new .comment-new-form .comment-new-text {
-      float: left;
-      margin-top: 30px;
-      border: 0;
-      border-radius: 6px;
-      width: 48%;
-      height: 45px;
-      font-size: 24px;
+  .comment-new .comment-new-text {
+    float: left;
+    margin-top: 30px;
+    border: 0;
+    border-radius: 6px;
+    width: 48%;
+    height: 45px;
+    font-size: 24px;
+    color: #fff;
+    background-color: #27292d; }
+    @media screen and (max-width: 600px) {
+      .comment-new .comment-new-text {
+        float: none;
+        width: 100%; } }
+    .comment-new .comment-new-text:focus {
+      outline: none; }
+  .comment-new .comment-new-email {
+    float: right;
+    margin-top: 30px;
+    border: 0;
+    border-radius: 6px;
+    width: 48%;
+    height: 45px;
+    font-size: 24px;
+    color: #fff;
+    background-color: #27292d; }
+    @media screen and (max-width: 600px) {
+      .comment-new .comment-new-email {
+        float: none;
+        width: 100%; } }
+    .comment-new .comment-new-email:focus {
+      outline: none; }
+  .comment-new .comment-new-message {
+    margin-top: 30px;
+    border: 0;
+    border-radius: 6px;
+    width: 100%;
+    height: 240px;
+    font-size: 24px;
+    color: #fff;
+    background-color: #27292d;
+    overflow: hidden; }
+    .comment-new .comment-new-message:focus {
+      outline: none; }
+  .comment-new .comment-new-submit {
+    margin-top: 30px;
+    border: 0.1rem solid #e95250;
+    border-radius: 30px;
+    padding: 0 30px;
+    height: 54px;
+    font-size: 16px;
+    color: #e95250;
+    background-color: #1f2125; }
+    .comment-new .comment-new-submit:hover {
       color: #fff;
-      background-color: #27292d; }
-      @media screen and (max-width: 600px) {
-        .comment-new .comment-new-form .comment-new-text {
-          float: none;
-          width: 100%; } }
-      .comment-new .comment-new-form .comment-new-text:focus {
-        outline: none; }
-    .comment-new .comment-new-form .comment-new-email {
-      float: right;
-      margin-top: 30px;
-      border: 0;
-      border-radius: 6px;
-      width: 48%;
-      height: 45px;
-      font-size: 24px;
-      color: #fff;
-      background-color: #27292d; }
-      @media screen and (max-width: 600px) {
-        .comment-new .comment-new-form .comment-new-email {
-          float: none;
-          width: 100%; } }
-      .comment-new .comment-new-form .comment-new-email:focus {
-        outline: none; }
-    .comment-new .comment-new-form .comment-new-message {
-      margin-top: 30px;
-      border: 0;
-      border-radius: 6px;
-      width: 100%;
-      height: 240px;
-      font-size: 24px;
-      color: #fff;
-      background-color: #27292d;
-      overflow: hidden; }
-      .comment-new .comment-new-form .comment-new-message:focus {
-        outline: none; }
-    .comment-new .comment-new-form .comment-new-submit {
-      margin-top: 30px;
-      border: 0.1rem solid #e95250;
-      border-radius: 30px;
-      padding: 0 30px;
-      height: 54px;
-      font-size: 16px;
-      color: #e95250;
-      background-color: #1f2125; }
-      .comment-new .comment-new-form .comment-new-submit:hover {
-        color: #fff;
-        background-color: #e95250; }
-      .comment-new .comment-new-form .comment-new-submit:focus {
-        outline: none; }
+      background-color: #e95250; }
+    .comment-new .comment-new-submit:focus {
+      outline: none; }
 
 /**
  * post recent

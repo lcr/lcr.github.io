@@ -20,8 +20,8 @@ __bold__ **bold** `__bold__ **bold**`
 Horizontal rule: `---`
 
 ---  
-
- code `'code'`  `...`
+  
+code `'code'`  `...`
 
 ```html
 '''html

@@ -184,12 +184,6 @@
     justify-content: center;
     -webkit-align-items: center;
     align-items: center;
-    .icon-github {
-      fill: $background-color;
-      &:hover path {
-        fill: $text-color;
-      }
-    }
   }
 }
 
@@ -314,79 +308,74 @@
     font-size: $base-font-size * 2;
   }
 
-  .comment-new-form {
-    margin: 0;
-    padding: 0;
-
-    .comment-new-text {
-      float: left;
-      margin-top: $spacing-unit;
-      border: 0;
-      border-radius: $spacing-unit / 5;
-      width: 48%;
-      height: $spacing-unit * 1.5;
-      font-size: $base-font-size * 1.5;
-      color: $background-color;
-      background-color: #27292d;
-      @include media-query($on-palm) {
-        float: none;
-        width: 100%;
-      }
-      &:focus {
-        outline: none
-      }
-    }
-
-    .comment-new-email {
-      float: right;
-      margin-top: $spacing-unit;
-      border: 0;
-      border-radius: $spacing-unit / 5;
-      width: 48%;
-      height: $spacing-unit * 1.5;
-      font-size: $base-font-size * 1.5;
-      color: $background-color;
-      background-color: #27292d;
-      @include media-query($on-palm) {
-        float: none;
-        width: 100%;
-      }
-      &:focus {
-        outline: none
-      }
-    }
-
-    .comment-new-message {
-      margin-top: $spacing-unit;
-      border: 0;
-      border-radius: $spacing-unit / 5;
+  .comment-new-text {
+    float: left;
+    margin-top: $spacing-unit;
+    border: 0;
+    border-radius: $spacing-unit / 5;
+    width: 48%;
+    height: $spacing-unit * 1.5;
+    font-size: $base-font-size * 1.5;
+    color: $background-color;
+    background-color: #27292d;
+    @include media-query($on-palm) {
+      float: none;
       width: 100%;
-      height: $spacing-unit * 8;
-      font-size: $base-font-size * 1.5;
-      color: $background-color;
-      background-color: #27292d;
-      overflow: hidden;
-      &:focus {
-        outline: none
-      }
     }
+    &:focus {
+      outline: none
+    }
+  }
 
-    .comment-new-submit {
-      margin-top: $spacing-unit;
-      border: 0.1rem solid $link-color;
-      border-radius: $spacing-unit;
-      padding: 0 $spacing-unit;
-      height: $spacing-unit * 1.8;
-      font-size: $base-font-size;
-      color: $link-color;
-      background-color: $blue-color;
-      &:hover {
-        color: $background-color;
-        background-color: $link-color;
-      }
-      &:focus {
-        outline: none
-      }
+  .comment-new-email {
+    float: right;
+    margin-top: $spacing-unit;
+    border: 0;
+    border-radius: $spacing-unit / 5;
+    width: 48%;
+    height: $spacing-unit * 1.5;
+    font-size: $base-font-size * 1.5;
+    color: $background-color;
+    background-color: #27292d;
+    @include media-query($on-palm) {
+      float: none;
+      width: 100%;
+    }
+    &:focus {
+      outline: none
+    }
+  }
+
+  .comment-new-message {
+    margin-top: $spacing-unit;
+    border: 0;
+    border-radius: $spacing-unit / 5;
+    width: 100%;
+    height: $spacing-unit * 8;
+    font-size: $base-font-size * 1.5;
+    color: $background-color;
+    background-color: #27292d;
+    overflow: hidden;
+    &:focus {
+      outline: none
+    }
+  }
+
+  .comment-new-submit {
+    margin-top: $spacing-unit;
+    border: 0.1rem solid $link-color;
+    border-radius: $spacing-unit;
+    padding: 0 $spacing-unit;
+    height: $spacing-unit * 1.8;
+    font-size: $base-font-size;
+    color: $link-color;
+    background-color: $blue-color;
+    &:hover {
+      color: $background-color;
+      background-color: $link-color;
+    }
+    &:focus {
+      outline: none
     }
   }
 }

@@ -49,4 +49,4 @@ window.onload = function () {
 };
 ```
 
-[Demo](/demo/js-backtop-animation.html){:target="_blank"}  
+[Demo](/demo/js-back-to-top.html){:target="_blank"}  
