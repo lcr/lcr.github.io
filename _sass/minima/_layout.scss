@@ -185,7 +185,7 @@
     -webkit-align-items: center;
     align-items: center;
     .icon-github {
-      fill: $grey-color-light;
+      fill: darken($gray-color, 15%);
       &:hover path {
         fill: $background-color;
       }
