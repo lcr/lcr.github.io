@@ -56,6 +56,8 @@ css
 }
 ```
 
+<!-- more -->
+
 [Demo](/demo/css-animation-down.html){:target="_blank"}
 
 ### 应用icon font 和:before的方式
