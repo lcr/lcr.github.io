@@ -5,7 +5,7 @@
 
         <h2 class="comments-size">
             {% if site.data.comments[page.slug].size >= 1 %}
-            <span>{{ site.data.comments[page.slug] | size }}</span> COMMENTS
+            COMMENTS (<span>{{ site.data.comments[page.slug] | size }}</span>)
             {% endif %}
         </h2>
 

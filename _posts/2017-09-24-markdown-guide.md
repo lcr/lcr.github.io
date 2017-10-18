@@ -1,5 +1,5 @@
 ---
-title: "Markdown Style Guide"
+title: "Markdown Guide"
 ---
 
 ```
