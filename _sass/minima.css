@@ -98,7 +98,7 @@ blockquote {
 pre,
 code {
   font-size: 15px;
-  border-radius: 5px;
+  border-radius: 6px;
   background-color: #f7f7f7; }
 
 code {
@@ -175,7 +175,7 @@ table {
  */
 .site-head-line {
   height: 5px;
-  background: linear-gradient(45deg, #e95250, #954aad); }
+  background: linear-gradient(45deg, #e55, #909); }
 
 .site-header {
   height: 40vh;
@@ -204,7 +204,7 @@ table {
   float: right;
   font-size: 24px; }
   .header-home:hover {
-    color: #e95250; }
+    color: #e55; }
 
 /**
  * Page content
@@ -217,8 +217,7 @@ table {
   list-style: none; }
   .post-list > li {
     border-bottom: 1px solid #b5b7bb;
-    padding-top: 60px;
-    padding-bottom: 60px; }
+    padding: 60px 0; }
     .post-list > li > h2 {
       display: inline-block;
       margin-bottom: 0;
@@ -231,16 +230,15 @@ table {
           margin: 0 auto;
           width: 0;
           height: 2px;
-          background: linear-gradient(45deg, #e95250, #954aad);
+          background: linear-gradient(45deg, #e55, #909);
           transition: width .5s ease, background-color .5s ease;
           content: ''; }
         .post-list > li > h2 > a:hover:after {
           width: 100%;
-          background: linear-gradient(45deg, #e95250, #954aad); }
+          background: linear-gradient(45deg, #e55, #909); }
     .post-list > li .post-list-meta {
       display: block;
-      padding-top: 10px;
-      padding-bottom: 10px;
+      padding: 10px 0;
       font-size: 14px;
       font-style: italic;
       color: #4f5155; }
@@ -250,16 +248,17 @@ table {
       -webkit-box-align: center;
       align-items: center;
       margin-top: 15px;
-      border: 0.1rem solid #e95250;
+      border: 0.1rem solid #e55;
       border-radius: 30px;
       padding: 0 30px;
       height: 54px;
       font-size: 16px;
       text-decoration: none;
-      color: #e95250; }
+      color: #e55; }
       .post-list > li .post-list-readmore:hover {
+        border: 0.1rem solid #1c1c1c;
         color: #fff;
-        background-color: #e95250;
+        background-color: #1c1c1c;
         -webkit-transition: 500ms;
         -moz-transition: 500ms;
         -o-transition: 500ms;
@@ -275,17 +274,16 @@ table {
     margin: 0 15px;
     font-size: 32px; }
     .pagination .pagination-link:hover {
-      color: #e95250; }
+      color: #e55; }
   .pagination .pagination-link-active {
-    margin-left: 15px;
-    margin-right: 15px;
+    margin: 0 15px;
     border-radius: 50%;
     width: 48px;
     height: 100%;
     font-size: 32px;
     text-align: center;
     color: #fff;
-    background-color: #e95250;
+    background-color: #e55;
     cursor: default; }
   .pagination .icon-left-lighten {
     fill: rgba(0, 0, 0, 0.3); }
@@ -301,7 +299,7 @@ table {
  */
 .site-footer {
   height: 30vh;
-  background: linear-gradient(45deg, #e95250, #954aad); }
+  background: linear-gradient(45deg, #e55, #909); }
   .site-footer .footer-topleft-border {
     border-top: 100px solid #fff;
     border-right: -webkit-calc(100vw - 17px) solid transparent;
@@ -337,14 +335,12 @@ table {
         font-size: 36px; } }
   .post .post-header .post-meta {
     display: block;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px 0;
     font-size: 14px;
     font-style: italic;
     color: #4f5155; }
   .post .post-content {
-    padding-top: 15px;
-    padding-bottom: 30px; }
+    padding: 15px 0; }
     .post .post-content h2 {
       font-size: 32px; }
       @media screen and (max-width: 800px) {
@@ -364,7 +360,7 @@ table {
       color: rgba(233, 82, 80, 0.7);
       font-size: 19.2px; }
       .post .post-content a:hover {
-        color: #e95250; }
+        color: #e55; }
   .post .post-content-bottomright-border {
     border-bottom: 100px solid #1f2125;
     border-left: -webkit-calc(100vw - 17px) solid transparent;
@@ -391,8 +387,7 @@ table {
     padding-top: 30px;
     font-size: 24px; }
   .comments .comments-date {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px 0;
     font-style: italic;
     font-size: 14px; }
   .comments .comments-message {
@@ -453,16 +448,16 @@ table {
       outline: none; }
   .comment-new .comment-new-submit {
     margin-top: 30px;
-    border: 0.1rem solid #e95250;
+    border: 0.1rem solid #e55;
     border-radius: 30px;
     padding: 0 30px;
     height: 54px;
     font-size: 16px;
-    color: #e95250;
+    color: #e55;
     background-color: #1f2125; }
     .comment-new .comment-new-submit:hover {
       color: #fff;
-      background-color: #e95250; }
+      background-color: #e55; }
     .comment-new .comment-new-submit:focus {
       outline: none; }
 
@@ -470,8 +465,7 @@ table {
  * post recent
  */
 .post-recent {
-  padding-top: 60px;
-  padding-bottom: 45px;
+  padding: 60px 0;
   font-size: 24px;
   text-align: center;
   color: #fff;
@@ -480,12 +474,12 @@ table {
     float: left;
     color: #fff; }
     .post-recent .post-recent-newer:hover {
-      color: #e95250; }
+      color: #e55; }
   .post-recent .post-recent-older {
     float: right;
     color: #fff; }
     .post-recent .post-recent-older:hover {
-      color: #e95250; }
+      color: #e55; }
   .post-recent svg {
     width: 18px;
     height: 18px;
@@ -504,10 +498,10 @@ table {
       border-right: 100vw solid transparent; } }
 
 .icon-left-link:hover path {
-  fill: #e95250; }
+  fill: #e55; }
 
 .icon-right-link:hover path {
-  fill: #e95250; }
+  fill: #e55; }
 
 /**
  * Syntax highlighting styles
