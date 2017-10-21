@@ -2,11 +2,11 @@
  * Syntax highlighting styles
  */
 .highlight {
+  border-radius: $spacing-unit / 5;
   background: $background-color;
   @extend %vertical-rhythm;
 
   .highlighter-rouge & {
-    border-radius: $spacing-unit / 5;
     background: $gray-color;
   }
 

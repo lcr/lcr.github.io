@@ -507,9 +507,9 @@ table {
  * Syntax highlighting styles
  */
 .highlight {
+  border-radius: 6px;
   background: #fff; }
   .highlighter-rouge .highlight {
-    border-radius: 6px;
     background: #f7f7f7; }
   .highlight .c {
     color: #998;
