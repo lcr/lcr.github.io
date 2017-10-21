@@ -98,7 +98,8 @@ blockquote {
 pre,
 code {
   font-size: 15px;
-  border-radius: 30px;
+  border: 1px solid #f7f7f7;
+  border-radius: 6px;
   background-color: #f7f7f7; }
 
 code {

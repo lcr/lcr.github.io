@@ -121,7 +121,8 @@ blockquote {
 pre,
 code {
   @include relative-font-size(0.9375);
-  border-radius: $spacing-unit;
+  border: 1px solid $gray-color;
+  border-radius: $spacing-unit / 5;
   background-color: $gray-color;
 }
 
