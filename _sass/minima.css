@@ -105,7 +105,6 @@ code {
   padding: 1px 5px; }
 
 pre {
-  border-radius: 6px;
   padding: 8px 12px;
   overflow-x: auto; }
   pre > code {
@@ -510,6 +509,7 @@ table {
 .highlight {
   background: #fff; }
   .highlighter-rouge .highlight {
+    border-radius: 6px;
     background: #f7f7f7; }
   .highlight .c {
     color: #998;
