@@ -122,7 +122,7 @@ pre,
 code {
   @include relative-font-size(0.9375);
   border: 1px solid $gray-color;
-  border-radius: $spacing-unit / 5;
+  border-radius: 8px;
   background-color: $gray-color;
 }
 
