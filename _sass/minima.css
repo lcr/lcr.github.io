@@ -414,12 +414,13 @@ table {
     background-color: #27292d; }
     @media screen and (max-width: 600px) {
       .comment-new .comment-new-text {
+        float: none;
         width: 100%; } }
     .comment-new .comment-new-text:focus {
       outline: none; }
   .comment-new .comment-new-email {
-    float: right;
     margin-top: 30px;
+    margin-left: 4%;
     border: 0;
     border-radius: 6px;
     width: 48%;
@@ -429,17 +430,10 @@ table {
     background-color: #27292d; }
     @media screen and (max-width: 600px) {
       .comment-new .comment-new-email {
+        margin-left: 0;
         width: 100%; } }
     .comment-new .comment-new-email:focus {
       outline: none; }
-  .comment-new .clearfix:before,
-  .comment-new .clearfix:after {
-    display: table;
-    content: " "; }
-  .comment-new .clearfix:after {
-    clear: both; }
-  .comment-new .clearfix {
-    *zoom: 1; }
   .comment-new .comment-new-message {
     margin-top: 30px;
     border: 0;

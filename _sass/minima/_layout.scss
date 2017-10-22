@@ -320,6 +320,7 @@
     color: $background-color;
     background-color: #27292d;
     @include media-query($on-palm) {
+      float: none;
       width: 100%;
     }
     &:focus {
@@ -328,8 +329,8 @@
   }
 
   .comment-new-email {
-    float: right;
     margin-top: $spacing-unit;
+    margin-left: 4%;
     border: 0;
     border-radius: $spacing-unit / 5;
     width: 48%;
@@ -338,23 +339,12 @@
     color: $background-color;
     background-color: #27292d;
     @include media-query($on-palm) {
+      margin-left: 0;
       width: 100%;
     }
     &:focus {
       outline: none
     }
-  }
-
-  .clearfix:before,
-  .clearfix:after {
-    display: table;
-    content: " ";
-  }
-  .clearfix:after {
-    clear: both;
-  }
-  .clearfix {
-    *zoom: 1;
   }
 
   .comment-new-message {
