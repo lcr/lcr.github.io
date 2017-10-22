@@ -419,8 +419,8 @@ table {
     .comment-new .comment-new-text:focus {
       outline: none; }
   .comment-new .comment-new-email {
+    float: right;
     margin-top: 30px;
-    margin-left: 4%;
     border: 0;
     border-radius: 6px;
     width: 48%;
@@ -430,7 +430,7 @@ table {
     background-color: #27292d; }
     @media screen and (max-width: 600px) {
       .comment-new .comment-new-email {
-        margin-left: 0;
+        float: none;
         width: 100%; } }
     .comment-new .comment-new-email:focus {
       outline: none; }
