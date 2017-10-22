@@ -321,7 +321,7 @@
     background-color: #27292d;
     @include media-query($on-palm) {
       //float: none;
-      width: 100%;
+      width: 80%;
     }
     &:focus {
       outline: none

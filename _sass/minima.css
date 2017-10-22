@@ -413,7 +413,7 @@ table {
     background-color: #27292d; }
     @media screen and (max-width: 600px) {
       .comment-new .comment-new-text {
-        width: 100%; } }
+        width: 80%; } }
     .comment-new .comment-new-text:focus {
       outline: none; }
   .comment-new .comment-new-email {
