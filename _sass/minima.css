@@ -160,11 +160,11 @@ table {
   border-collapse: collapse;
   border: 1px solid #b5b7bb; }
   table tr:nth-child(even) {
-    background-color: #c5c7c9; }
+    background-color: #f7f8f8; }
   table th, table td {
     padding: 10px 15px; }
   table th {
-    background-color: #bdbfc2;
+    background-color: #d0d1d3;
     border: 1px solid #abadb1;
     border-bottom-color: #96989d; }
   table td {
@@ -403,7 +403,6 @@ table {
   .comment-new .comment-new-title {
     font-size: 32px; }
   .comment-new .comment-new-text {
-    float: left;
     margin-top: 30px;
     border: 0;
     border-radius: 6px;
@@ -414,12 +413,10 @@ table {
     background-color: #27292d; }
     @media screen and (max-width: 600px) {
       .comment-new .comment-new-text {
-        float: none;
         width: 100%; } }
     .comment-new .comment-new-text:focus {
       outline: none; }
   .comment-new .comment-new-email {
-    float: right;
     margin-top: 30px;
     border: 0;
     border-radius: 6px;
@@ -430,7 +427,6 @@ table {
     background-color: #27292d; }
     @media screen and (max-width: 600px) {
       .comment-new .comment-new-email {
-        float: none;
         width: 100%; } }
     .comment-new .comment-new-email:focus {
       outline: none; }
