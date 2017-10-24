@@ -431,7 +431,8 @@ table {
     @media screen and (max-width: 600px) {
       .comment-new .comment-new-email {
         float: none;
-        width: 100%; } }
+        width: -webkit-calc(100vw - 30px);
+        width: calc(100vw - 30px); } }
     .comment-new .comment-new-email:focus {
       outline: none; }
   .comment-new .comment-new-message {
