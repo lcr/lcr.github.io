@@ -407,7 +407,8 @@ table {
     margin-top: 30px;
     border: 0;
     border-radius: 6px;
-    width: 48%;
+    padding-left: 15px;
+    width: 46%;
     height: 45px;
     font-size: 24px;
     color: #fff;
@@ -415,7 +416,7 @@ table {
     @media screen and (max-width: 600px) {
       .comment-new .comment-new-text {
         float: none;
-        width: 100%; } }
+        width: calc(100vw - 45px); } }
     .comment-new .comment-new-text:focus {
       outline: none; }
   .comment-new .comment-new-email {
@@ -423,7 +424,8 @@ table {
     margin-top: 30px;
     border: 0;
     border-radius: 6px;
-    width: 48%;
+    padding-left: 15px;
+    width: 46%;
     height: 45px;
     font-size: 24px;
     color: #fff;
@@ -432,14 +434,15 @@ table {
       .comment-new .comment-new-email {
         float: none;
         width: -webkit-calc(100vw - 30px);
-        width: calc(100vw - 30px); } }
+        width: calc(100vw - 45px); } }
     .comment-new .comment-new-email:focus {
       outline: none; }
   .comment-new .comment-new-message {
     margin-top: 30px;
     border: 0;
     border-radius: 6px;
-    width: 100%;
+    padding-left: 15px;
+    width: calc(100% - 15px);
     height: 240px;
     font-size: 24px;
     color: #fff;

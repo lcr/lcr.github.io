@@ -314,14 +314,15 @@
     margin-top: $spacing-unit;
     border: 0;
     border-radius: $spacing-unit / 5;
-    width: 48%;
+    padding-left: $spacing-unit / 2;
+    width: 46%;
     height: $spacing-unit * 1.5;
     font-size: $base-font-size * 1.5;
     color: $background-color;
     background-color: #27292d;
     @include media-query($on-palm) {
       float: none;
-      width: 100%;
+      width: calc(100vw - 45px);
     }
     &:focus {
       outline: none
@@ -333,7 +334,8 @@
     margin-top: $spacing-unit;
     border: 0;
     border-radius: $spacing-unit / 5;
-    width: 48%;
+    padding-left: $spacing-unit / 2;
+    width: 46%;
     height: $spacing-unit * 1.5;
     font-size: $base-font-size * 1.5;
     color: $background-color;
@@ -341,7 +343,7 @@
     @include media-query($on-palm) {
       float: none;
       width: -webkit-calc(100vw - 30px);
-      width: calc(100vw - 30px);
+      width: calc(100vw - 45px);
     }
     &:focus {
       outline: none
@@ -352,7 +354,8 @@
     margin-top: $spacing-unit;
     border: 0;
     border-radius: $spacing-unit / 5;
-    width: 100%;
+    padding-left: $spacing-unit / 2;
+    width: calc(100% - 15px);
     height: $spacing-unit * 8;
     font-size: $base-font-size * 1.5;
     color: $background-color;
