@@ -12,7 +12,7 @@ dl, dd, ol, ul, figure {
  */
 body {
   font: 400 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #000;
+  color: #222;
   background-color: #fff;
   -webkit-text-size-adjust: 100%;
   -webkit-font-feature-settings: "kern" 1;
@@ -67,12 +67,12 @@ h1, h2, h3, h4, h5, h6 {
  */
 a {
   text-decoration: none;
-  color: #1c1c1c;
+  color: #333;
   -webkit-tap-highlight-color: transparent; }
   a:visited {
-    color: black; }
+    color: #0d0d0d; }
   a:hover {
-    color: #000;
+    color: #222;
     text-decoration: none; }
   .social-media-list a:hover {
     text-decoration: none; }
@@ -99,7 +99,7 @@ pre,
 code {
   font-size: 15px;
   border-radius: 3px;
-  background-color: #f7f7f7; }
+  background-color: #f2f2f2; }
 
 code {
   padding: 1px 5px; }
@@ -156,7 +156,7 @@ table {
   margin-bottom: 30px;
   width: 100%;
   text-align: left;
-  color: #2e2e2e;
+  color: #505050;
   border-collapse: collapse;
   border: 1px solid #b5b7bb; }
   table tr:nth-child(even) {
@@ -179,7 +179,7 @@ table {
 
 .site-header {
   height: 40vh;
-  background-color: #f7f7f7;
+  background-color: #f2f2f2;
   position: relative; }
   .site-header .site-title-position {
     position: absolute;
@@ -191,7 +191,7 @@ table {
       letter-spacing: -1px; }
 
 .header-border {
-  border-top: 100px solid #f7f7f7;
+  border-top: 100px solid #f2f2f2;
   border-right: -webkit-calc(100vw - 17px) solid transparent;
   border-right: calc(100vw - 17px) solid transparent;
   width: 0;
@@ -256,9 +256,9 @@ table {
       text-decoration: none;
       color: #e55; }
       .post-list > li .post-list-readmore:hover {
-        border: 0.1rem solid #1c1c1c;
+        border: 0.1rem solid #333;
         color: #fff;
-        background-color: #1c1c1c;
+        background-color: #333;
         -webkit-transition: 500ms;
         -moz-transition: 500ms;
         -o-transition: 500ms;
@@ -317,7 +317,7 @@ table {
     -webkit-align-items: center;
     align-items: center; }
     .site-footer .footer-content .icon-github {
-      fill: #d1d1d1; }
+      fill: #cccccc; }
       .site-footer .footer-content .icon-github:hover path {
         fill: #fff; }
 
@@ -376,7 +376,7 @@ table {
  */
 .comments {
   padding-top: 60px;
-  color: #fff;
+  color: #bfbfbf;
   background-color: #1f2125; }
   .comments .comments-size {
     margin-bottom: 0;
@@ -398,7 +398,7 @@ table {
  */
 .comment-new {
   padding-top: 60px;
-  color: #fff;
+  color: #bfbfbf;
   background-color: #1f2125; }
   .comment-new .comment-new-title {
     font-size: 32px; }
@@ -412,10 +412,11 @@ table {
     height: 45px;
     font-size: 24px;
     color: #fff;
-    background-color: #27292d; }
+    background-color: #2b2d33; }
     @media screen and (max-width: 600px) {
       .comment-new .comment-new-text {
         float: none;
+        width: -webkit-calc(100vw - 45px);
         width: calc(100vw - 45px); } }
     .comment-new .comment-new-text:focus {
       outline: none; }
@@ -429,11 +430,11 @@ table {
     height: 45px;
     font-size: 24px;
     color: #fff;
-    background-color: #27292d; }
+    background-color: #2b2d33; }
     @media screen and (max-width: 600px) {
       .comment-new .comment-new-email {
         float: none;
-        width: -webkit-calc(100vw - 30px);
+        width: -webkit-calc(100vw - 45px);
         width: calc(100vw - 45px); } }
     .comment-new .comment-new-email:focus {
       outline: none; }
@@ -446,7 +447,7 @@ table {
     height: 240px;
     font-size: 24px;
     color: #fff;
-    background-color: #27292d;
+    background-color: #2b2d33;
     overflow: hidden; }
     .comment-new .comment-new-message:focus {
       outline: none; }
@@ -471,23 +472,21 @@ table {
 .post-recent {
   padding: 60px 0;
   font-size: 24px;
-  text-align: center;
-  color: #fff;
   background-color: #1f2125; }
   .post-recent .post-recent-newer {
     float: left;
-    color: #fff; }
+    color: #bfbfbf; }
     .post-recent .post-recent-newer:hover {
       color: #e55; }
   .post-recent .post-recent-older {
     float: right;
-    color: #fff; }
+    color: #bfbfbf; }
     .post-recent .post-recent-older:hover {
       color: #e55; }
   .post-recent svg {
     width: 18px;
     height: 18px;
-    fill: #fff; }
+    fill: #bfbfbf; }
 
 .post-recent-bottomleft-border {
   position: absolute;
@@ -514,7 +513,7 @@ table {
   border-radius: 6px;
   background: #fff; }
   .highlighter-rouge .highlight {
-    background: #f7f7f7; }
+    background: #f2f2f2; }
   .highlight .c {
     color: #998;
     font-style: italic; }

@@ -3,7 +3,7 @@
  */
 .highlight {
   border-radius: $spacing-unit / 5;
-  background: $background-color;
+  background: $white-color;
   @extend %vertical-rhythm;
 
   .highlighter-rouge & {

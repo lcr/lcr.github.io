@@ -105,7 +105,7 @@
       color: $link-color;
       &:hover {
         border: 0.1rem solid $brand-color;
-        color: $background-color;
+        color: $white-color;
         background-color: $brand-color;
         -webkit-transition: 500ms;
         -moz-transition: 500ms;
@@ -137,7 +137,7 @@
     height: 100%;
     font-size: $base-font-size * 2;
     text-align: center;
-    color: $background-color;
+    color: $white-color;
     background-color: $link-color;
     cursor: default;
   }
@@ -165,7 +165,7 @@
   background: $liner-color;
 
   .footer-topleft-border {
-    border-top: 100px solid $background-color;
+    border-top: 100px solid $white-color;
     border-right: -webkit-calc(100vw - 17px) solid transparent;
     border-right: calc(100vw - 17px) solid transparent;
     @media screen and(max-device-width: 1024px) {
@@ -185,7 +185,7 @@
     .icon-github {
       fill: darken($gray-color, 15%);
       &:hover path {
-        fill: $background-color;
+        fill: $white-color;
       }
     }
   }
@@ -270,7 +270,7 @@
 
 .comments {
   padding-top: $spacing-unit * 2;
-  color: $background-color;
+  color: darken($white-color, 25%);
   background-color: $blue-color;
 
   .comments-size {
@@ -302,7 +302,7 @@
 
 .comment-new {
   padding-top: $spacing-unit * 2;
-  color: $background-color;
+  color: darken($white-color, 25%);
   background-color: $blue-color;
 
   .comment-new-title {
@@ -318,10 +318,11 @@
     width: 46%;
     height: $spacing-unit * 1.5;
     font-size: $base-font-size * 1.5;
-    color: $background-color;
-    background-color: #27292d;
+    color: $white-color;
+    background-color: lighten($blue-color, 5%);
     @include media-query($on-palm) {
       float: none;
+      width: -webkit-calc(100vw - 45px);
       width: calc(100vw - 45px);
     }
     &:focus {
@@ -338,11 +339,11 @@
     width: 46%;
     height: $spacing-unit * 1.5;
     font-size: $base-font-size * 1.5;
-    color: $background-color;
-    background-color: #27292d;
+    color: $white-color;
+    background-color: lighten($blue-color, 5%);
     @include media-query($on-palm) {
       float: none;
-      width: -webkit-calc(100vw - 30px);
+      width: -webkit-calc(100vw - 45px);
       width: calc(100vw - 45px);
     }
     &:focus {
@@ -358,8 +359,8 @@
     width: calc(100% - 15px);
     height: $spacing-unit * 8;
     font-size: $base-font-size * 1.5;
-    color: $background-color;
-    background-color: #27292d;
+    color: $white-color;
+    background-color: lighten($blue-color, 5%);
     overflow: hidden;
     &:focus {
       outline: none
@@ -376,7 +377,7 @@
     color: $link-color;
     background-color: $blue-color;
     &:hover {
-      color: $background-color;
+      color: $white-color;
       background-color: $link-color;
     }
     &:focus {
@@ -391,13 +392,11 @@
 .post-recent {
   padding: ($spacing-unit * 2) 0;
   font-size: $base-font-size * 1.5;
-  text-align: center;
-  color: $background-color;
   background-color: $blue-color;
 
   .post-recent-newer {
     float: left;
-    color: $background-color;
+    color: darken($white-color, 25%);
     &:hover {
       color: $link-color;
     }
@@ -405,7 +404,7 @@
 
   .post-recent-older {
     float: right;
-    color: $background-color;
+    color: darken($white-color, 25%);
     &:hover {
       color: $link-color;
     }
@@ -414,7 +413,7 @@
   svg {
     width: 18px;
     height: 18px;
-    fill: $background-color;
+    fill: darken($white-color, 25%);
   }
 }
 
