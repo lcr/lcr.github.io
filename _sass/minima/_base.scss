@@ -1,4 +1,4 @@
-/**
+/*
  * Reset some basic elements
  */
 body, h1, h2, h3, h4, h5, h6,
@@ -8,7 +8,7 @@ dl, dd, ol, ul, figure {
   padding: 0;
 }
 
-/**
+/*
  * Basic styling
  */
 body {
@@ -23,7 +23,7 @@ body {
   font-kerning: normal;
 }
 
-/**
+/*
  * Set `margin-bottom` to maintain vertical rhythm
  */
 h1, h2, h3, h4, h5, h6,
@@ -33,7 +33,7 @@ ul, ol, dl, figure,
   margin-bottom: $spacing-unit / 2;
 }
 
-/**
+/*
  * Images
  */
 img {
@@ -41,7 +41,7 @@ img {
   vertical-align: middle;
 }
 
-/**
+/*
  * Figures
  */
 figure > img {
@@ -52,7 +52,7 @@ figcaption {
   font-size: $small-font-size;
 }
 
-/**
+/*
  * Lists
  */
 ul, ol {
@@ -66,14 +66,14 @@ li {
   }
 }
 
-/**
+/*
  * Headings
  */
 h1, h2, h3, h4, h5, h6 {
   font-weight: $base-font-weight;
 }
 
-/**
+/*
  * Links
  */
 a {
@@ -99,7 +99,7 @@ a {
   }
 }
 
-/**
+/*
  * Blockquotes
  */
 blockquote {
@@ -115,7 +115,7 @@ blockquote {
   }
 }
 
-/**
+/*
  * Code formatting
  */
 pre,
@@ -140,7 +140,7 @@ pre {
   }
 }
 
-/**
+/*
  * Wrapper
  */
 .wrapper {
@@ -160,7 +160,7 @@ pre {
   }
 }
 
-/**
+/*
  * Clearfix
  */
 %clearfix:after {
@@ -169,7 +169,7 @@ pre {
   content: "";
 }
 
-/**
+/*
  * Icons
  */
 .icon > svg {
@@ -187,7 +187,7 @@ pre {
   }
 }
 
-/**
+/*
  * Tables
  */
 table {

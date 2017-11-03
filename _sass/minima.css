@@ -1,4 +1,4 @@
-/**
+/*
  * Reset some basic elements
  */
 body, h1, h2, h3, h4, h5, h6,
@@ -7,7 +7,7 @@ dl, dd, ol, ul, figure {
   margin: 0;
   padding: 0; }
 
-/**
+/*
  * Basic styling
  */
 body {
@@ -21,7 +21,7 @@ body {
   font-feature-settings: "kern" 1;
   font-kerning: normal; }
 
-/**
+/*
  * Set `margin-bottom` to maintain vertical rhythm
  */
 h1, h2, h3, h4, h5, h6,
@@ -30,14 +30,14 @@ ul, ol, dl, figure,
 .highlight {
   margin-bottom: 15px; }
 
-/**
+/*
  * Images
  */
 img {
   max-width: 100%;
   vertical-align: middle; }
 
-/**
+/*
  * Figures
  */
 figure > img {
@@ -46,7 +46,7 @@ figure > img {
 figcaption {
   font-size: 14px; }
 
-/**
+/*
  * Lists
  */
 ul, ol {
@@ -56,13 +56,13 @@ li > ul,
 li > ol {
   margin-bottom: 0; }
 
-/**
+/*
  * Headings
  */
 h1, h2, h3, h4, h5, h6 {
   font-weight: 400; }
 
-/**
+/*
  * Links
  */
 a {
@@ -79,7 +79,7 @@ a {
     .social-media-list a:hover .username {
       text-decoration: none; }
 
-/**
+/*
  * Blockquotes
  */
 blockquote {
@@ -92,7 +92,7 @@ blockquote {
   blockquote > :last-child {
     margin-bottom: 0; }
 
-/**
+/*
  * Code formatting
  */
 pre,
@@ -112,7 +112,7 @@ pre {
     padding-left: 0;
     padding-right: 0; }
 
-/**
+/*
  * Wrapper
  */
 .wrapper {
@@ -129,7 +129,7 @@ pre {
       padding-right: 15px;
       padding-left: 15px; } }
 
-/**
+/*
  * Clearfix
  */
 .wrapper:after {
@@ -137,7 +137,7 @@ pre {
   clear: both;
   content: ""; }
 
-/**
+/*
  * Icons
  */
 .icon > svg {
@@ -149,7 +149,7 @@ pre {
 .social-media-list li + li {
   padding-top: 5px; }
 
-/**
+/*
  * Tables
  */
 table {
@@ -170,7 +170,7 @@ table {
   table td {
     border: 1px solid #b5b7bb; }
 
-/**
+/*
  * Site header
  */
 .site-head-line {
@@ -206,7 +206,7 @@ table {
   .header-home:hover {
     color: #e55; }
 
-/**
+/*
  * Page content
  */
 .page-content {
@@ -294,7 +294,7 @@ table {
     .pagination .icon-right-lighten:hover path {
       fill: rgba(233, 77, 80, 0.3); }
 
-/**
+/*
  * Site footer
  */
 .site-footer {
@@ -321,7 +321,7 @@ table {
       .site-footer .footer-content .icon-github:hover path {
         fill: #fff; }
 
-/**
+/*
  * Posts
  */
 .post {
@@ -371,7 +371,7 @@ table {
       .post .post-content-bottomright-border {
         border-left: 100vw solid transparent; } }
 
-/**
+/*
  * Comment
  */
 .comments {
@@ -393,7 +393,7 @@ table {
   .comments .comments-message {
     border-bottom: 1px solid #b5b7bb; }
 
-/**
+/*
  * Comment new
  */
 .comment-new {
@@ -465,7 +465,7 @@ table {
     .comment-new .comment-new-submit:focus {
       outline: none; }
 
-/**
+/*
  * post recent
  */
 .post-recent {
@@ -507,7 +507,7 @@ table {
 .icon-right-link:hover path {
   fill: #e55; }
 
-/**
+/*
  * Syntax highlighting styles
  */
 .highlight {
