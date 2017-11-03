@@ -99,7 +99,7 @@ pre,
 code {
   font-size: 15px;
   border-radius: 3px;
-  background-color: #f2f2f2; }
+  background-color: #f5f5f5; }
 
 code {
   padding: 1px 5px; }
@@ -179,7 +179,7 @@ table {
 
 .site-header {
   height: 40vh;
-  background-color: #f2f2f2;
+  background-color: #f5f5f5;
   position: relative; }
   .site-header .site-title-position {
     position: absolute;
@@ -191,7 +191,7 @@ table {
       letter-spacing: -1px; }
 
 .header-border {
-  border-top: 100px solid #f2f2f2;
+  border-top: 100px solid #f5f5f5;
   border-right: -webkit-calc(100vw - 17px) solid transparent;
   border-right: calc(100vw - 17px) solid transparent;
   width: 0;
@@ -317,7 +317,7 @@ table {
     -webkit-align-items: center;
     align-items: center; }
     .site-footer .footer-content .icon-github {
-      fill: #cccccc; }
+      fill: #cfcfcf; }
       .site-footer .footer-content .icon-github:hover path {
         fill: #fff; }
 
@@ -513,7 +513,7 @@ table {
   border-radius: 6px;
   background: #fff; }
   .highlighter-rouge .highlight {
-    background: #f2f2f2; }
+    background: #f5f5f5; }
   .highlight .c {
     color: #998;
     font-style: italic; }
