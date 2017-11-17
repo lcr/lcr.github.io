@@ -13,7 +13,7 @@ dl, dd, ol, ul, figure {
 body {
   font: 400 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #222;
-  background-color: #fff;
+  background: #fff;
   -webkit-text-size-adjust: 100%;
   -webkit-font-feature-settings: "kern" 1;
   -moz-font-feature-settings: "kern" 1;
@@ -99,7 +99,7 @@ pre,
 code {
   font-size: 15px;
   border-radius: 3px;
-  background-color: #f5f5f5; }
+  background: #f5f5f5; }
 
 code {
   padding: 1px 5px; }
@@ -160,11 +160,11 @@ table {
   border-collapse: collapse;
   border: 1px solid #b5b7bb; }
   table tr:nth-child(even) {
-    background-color: #f7f8f8; }
+    background: #f7f8f8; }
   table th, table td {
     padding: 10px 15px; }
   table th {
-    background-color: #d0d1d3;
+    background: #d0d1d3;
     border: 1px solid #abadb1;
     border-bottom-color: #96989d; }
   table td {
@@ -174,21 +174,16 @@ table {
  * Site header
  */
 .site-head-line {
-  height: 5px;
+  height: 6px;
   background: linear-gradient(45deg, #e55, #909); }
 
 .site-header {
-  height: 40vh;
-  background-color: #f5f5f5;
-  position: relative; }
-  .site-header .site-title-position {
-    position: absolute;
-    top: 0;
-    margin-top: 20vh; }
-    .site-header .site-title-position .site-title {
-      font-size: 48px;
-      line-height: 54px;
-      letter-spacing: -1px; }
+  padding: 90px 0;
+  background: #f5f5f5; }
+  .site-header .site-title {
+    font-size: 48px;
+    line-height: 54px;
+    letter-spacing: -1px; }
 
 .header-border {
   border-top: 100px solid #f5f5f5;
@@ -283,7 +278,7 @@ table {
     font-size: 32px;
     text-align: center;
     color: #fff;
-    background-color: #e55;
+    background: #e55;
     cursor: default; }
   .pagination .icon-left-lighten {
     fill: rgba(0, 0, 0, 0.3); }
@@ -298,8 +293,8 @@ table {
  * Site footer
  */
 .site-footer {
-  height: 30vh;
-  background: linear-gradient(45deg, #e55, #909); }
+  background: #f5f5f5;
+  color: #737373; }
   .site-footer .footer-topleft-border {
     border-top: 100px solid #fff;
     border-right: -webkit-calc(100vw - 17px) solid transparent;
@@ -309,17 +304,11 @@ table {
     @media screen and (max-device-width: 1024px) {
       .site-footer .footer-topleft-border {
         border-right: 100vw solid transparent; } }
-  .site-footer .footer-content {
-    display: -webkit-flex;
-    display: flex;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-align-items: center;
-    align-items: center; }
-    .site-footer .footer-content .icon-github {
-      fill: #cfcfcf; }
-      .site-footer .footer-content .icon-github:hover path {
-        fill: #fff; }
+  .site-footer .copyright {
+    padding: 60px 0; }
+    @media screen and (max-width: 600px) {
+      .site-footer .copyright {
+        text-align: center; } }
 
 /*
  * Posts
@@ -377,7 +366,7 @@ table {
 .comments {
   padding-top: 60px;
   color: #bfbfbf;
-  background-color: #1f2125; }
+  background: #1f2125; }
   .comments .comments-size {
     margin-bottom: 0;
     border-bottom: 2px solid #b5b7bb;
@@ -399,7 +388,7 @@ table {
 .comment-new {
   padding-top: 60px;
   color: #bfbfbf;
-  background-color: #1f2125; }
+  background: #1f2125; }
   .comment-new .comment-new-title {
     font-size: 32px; }
   .comment-new .comment-new-text {
@@ -412,7 +401,7 @@ table {
     height: 45px;
     font-size: 24px;
     color: #fff;
-    background-color: #2b2d33; }
+    background: #2b2d33; }
     @media screen and (max-width: 600px) {
       .comment-new .comment-new-text {
         float: none;
@@ -430,7 +419,7 @@ table {
     height: 45px;
     font-size: 24px;
     color: #fff;
-    background-color: #2b2d33; }
+    background: #2b2d33; }
     @media screen and (max-width: 600px) {
       .comment-new .comment-new-email {
         float: none;
@@ -447,7 +436,7 @@ table {
     height: 240px;
     font-size: 24px;
     color: #fff;
-    background-color: #2b2d33;
+    background: #2b2d33;
     overflow: hidden; }
     .comment-new .comment-new-message:focus {
       outline: none; }
@@ -459,10 +448,10 @@ table {
     height: 54px;
     font-size: 16px;
     color: #e55;
-    background-color: #1f2125; }
+    background: #1f2125; }
     .comment-new .comment-new-submit:hover {
       color: #fff;
-      background-color: #e55; }
+      background: #e55; }
     .comment-new .comment-new-submit:focus {
       outline: none; }
 
@@ -472,7 +461,7 @@ table {
 .post-recent {
   padding: 60px 0;
   font-size: 24px;
-  background-color: #1f2125; }
+  background: #1f2125; }
   .post-recent .post-recent-newer {
     float: left;
     color: #bfbfbf; }
@@ -488,17 +477,13 @@ table {
     height: 18px;
     fill: #bfbfbf; }
 
-.post-recent-bottomleft-border {
-  position: absolute;
-  z-index: 5;
-  border-top: 100px solid #1f2125;
-  border-right: -webkit-calc(100vw - 17px) solid transparent;
-  border-right: calc(100vw - 17px) solid transparent;
-  width: 0;
-  height: 0; }
-  @media screen and (max-device-width: 1024px) {
-    .post-recent-bottomleft-border {
-      border-right: 100vw solid transparent; } }
+.post-footer {
+  padding: 60px 0;
+  background: #1f2125;
+  color: #737373; }
+  @media screen and (max-width: 600px) {
+    .post-footer {
+      text-align: center; } }
 
 .icon-left-link:hover path {
   fill: #e55; }

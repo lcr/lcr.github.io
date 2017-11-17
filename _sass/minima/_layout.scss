@@ -2,25 +2,18 @@
  * Site header
  */
 .site-head-line {
-  height: $spacing-unit / 6;
+  height: $spacing-unit / 5;
   background: $liner-color;
 }
 
 .site-header {
-  height: 40vh;
-  background-color: $gray-color;
-  position: relative;
+  padding: ($spacing-unit * 3) 0;
+  background: $gray-color;
 
-  .site-title-position {
-    position: absolute;
-    top: 0;
-    margin-top: 20vh;
-
-    .site-title {
-      @include relative-font-size(3);
-      line-height: $base-line-height * $base-font-size * 2.25;
-      letter-spacing: -1px;
-    }
+  .site-title {
+    @include relative-font-size(3);
+    line-height: $base-line-height * $base-font-size * 2.25;
+    letter-spacing: -1px;
   }
 }
 
@@ -138,7 +131,7 @@
     font-size: $base-font-size * 2;
     text-align: center;
     color: $white-color;
-    background-color: $link-color;
+    background: $link-color;
     cursor: default;
   }
 
@@ -161,8 +154,8 @@
  * Site footer
  */
 .site-footer {
-  height: 30vh;
-  background: $liner-color;
+  background: $gray-color;
+  color: darken($white-color, 55%);
 
   .footer-topleft-border {
     border-top: 100px solid $white-color;
@@ -174,19 +167,10 @@
     width: 0;
     height: 0;
   }
-
-  .footer-content {
-    display: -webkit-flex;
-    display: flex;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-align-items: center;
-    align-items: center;
-    .icon-github {
-      fill: darken($gray-color, 15%);
-      &:hover path {
-        fill: $white-color;
-      }
+  .copyright {
+    padding: ($spacing-unit *2) 0;
+    @include media-query($on-palm) {
+      text-align: center;
     }
   }
 }
@@ -271,7 +255,7 @@
 .comments {
   padding-top: $spacing-unit * 2;
   color: darken($white-color, 25%);
-  background-color: $blue-color;
+  background: $blue-color;
 
   .comments-size {
     margin-bottom: 0;
@@ -303,7 +287,7 @@
 .comment-new {
   padding-top: $spacing-unit * 2;
   color: darken($white-color, 25%);
-  background-color: $blue-color;
+  background: $blue-color;
 
   .comment-new-title {
     font-size: $base-font-size * 2;
@@ -319,7 +303,7 @@
     height: $spacing-unit * 1.5;
     font-size: $base-font-size * 1.5;
     color: $white-color;
-    background-color: lighten($blue-color, 5%);
+    background: lighten($blue-color, 5%);
     @include media-query($on-palm) {
       float: none;
       width: -webkit-calc(100vw - 45px);
@@ -340,7 +324,7 @@
     height: $spacing-unit * 1.5;
     font-size: $base-font-size * 1.5;
     color: $white-color;
-    background-color: lighten($blue-color, 5%);
+    background: lighten($blue-color, 5%);
     @include media-query($on-palm) {
       float: none;
       width: -webkit-calc(100vw - 45px);
@@ -360,7 +344,7 @@
     height: $spacing-unit * 8;
     font-size: $base-font-size * 1.5;
     color: $white-color;
-    background-color: lighten($blue-color, 5%);
+    background: lighten($blue-color, 5%);
     overflow: hidden;
     &:focus {
       outline: none
@@ -375,10 +359,10 @@
     height: $spacing-unit * 1.8;
     font-size: $base-font-size;
     color: $link-color;
-    background-color: $blue-color;
+    background: $blue-color;
     &:hover {
       color: $white-color;
-      background-color: $link-color;
+      background: $link-color;
     }
     &:focus {
       outline: none
@@ -392,7 +376,7 @@
 .post-recent {
   padding: ($spacing-unit * 2) 0;
   font-size: $base-font-size * 1.5;
-  background-color: $blue-color;
+  background: $blue-color;
 
   .post-recent-newer {
     float: left;
@@ -417,17 +401,14 @@
   }
 }
 
-.post-recent-bottomleft-border {
-  position: absolute;
-  z-index: 5;
-  border-top: 100px solid $blue-color;
-  border-right: -webkit-calc(100vw - 17px) solid transparent;
-  border-right: calc(100vw - 17px) solid transparent;
-  @media screen and(max-device-width: 1024px) {
-    border-right: 100vw solid transparent;
+.post-footer {
+  padding: ($spacing-unit * 2) 0;
+  background: $blue-color;
+  color: darken($white-color, 55%);
+  @include media-query($on-palm) {
+    text-align: center;
   }
-  width: 0;
-  height: 0;
+
 }
 
 .icon-left-link:hover path {
