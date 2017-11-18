@@ -2,9 +2,9 @@
 
 <header class="site-header" role="banner">
     <div class="wrapper">
-            {% assign default_paths = site.pages | map: "path" %}
-            {% assign page_paths = site.header_pages | default: default_paths %}
-            <a class="site-title" href="{{ "/" | relative_url }}">Leslie Lai's writings</a>
+        {% assign default_paths = site.pages | map: "path" %}
+        {% assign page_paths = site.header_pages | default: default_paths %}
+        <a class="site-title" href="{{ "/" | relative_url }}">Leslie Lai's writings</a>
     </div>
 </header>
 

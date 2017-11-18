@@ -178,7 +178,7 @@ table {
   background: linear-gradient(45deg, #e55, #909); }
 
 .site-header {
-  padding: 90px 0;
+  padding: 90px 0 45px 0;
   background: #f5f5f5; }
   .site-header .site-title {
     font-size: 48px;
@@ -205,7 +205,7 @@ table {
  * Page content
  */
 .page-content {
-  padding-top: 30px; }
+  padding-top: 10px; }
 
 .post-list {
   margin-left: 0;
@@ -253,7 +253,7 @@ table {
       .post-list > li .post-list-readmore:hover {
         border: 0.1rem solid #333;
         color: #fff;
-        background-color: #333;
+        background: #333;
         -webkit-transition: 500ms;
         -moz-transition: 500ms;
         -o-transition: 500ms;
@@ -305,7 +305,7 @@ table {
       .site-footer .footer-topleft-border {
         border-right: 100vw solid transparent; } }
   .site-footer .copyright {
-    padding: 60px 0; }
+    padding: 30px 0; }
     @media screen and (max-width: 600px) {
       .site-footer .copyright {
         text-align: center; } }
@@ -478,7 +478,7 @@ table {
     fill: #bfbfbf; }
 
 .post-footer {
-  padding: 60px 0;
+  padding: 30px 0;
   background: #1f2125;
   color: #737373; }
   @media screen and (max-width: 600px) {
