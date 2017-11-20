@@ -3,7 +3,7 @@
 
     {% if paginator.previous_page %}
     <a class="pagination-link icon-left-link"
-       href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">{% include icon-left.svg
+       href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" title="Previous">{% include icon-left.svg
         %}</a>
     {% else %}
     <span class="pagination-link icon-left-lighten">{% include icon-left.svg %}</span>
@@ -24,7 +24,7 @@
 
     {% if paginator.next_page %}
     <a class="pagination-link icon-right-link"
-       href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">{% include icon-right.svg
+       href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" title="Next">{% include icon-right.svg
         %}</a>
     {% else %}
     <span class="pagination-link  icon-right-lighten">{% include icon-right.svg %}</span>
