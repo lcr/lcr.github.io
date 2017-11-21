@@ -1,9 +1,7 @@
 title: Leslie Lai's writings
-
-description: Leslie Lai's writings.Frontend Development
+description: Leslie Lai's writings
 
 baseurl: ""
-
 url: "https://lcr.github.io"
 
 markdown: kramdown
