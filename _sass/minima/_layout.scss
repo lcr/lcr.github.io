@@ -7,7 +7,8 @@
 }
 
 .site-header {
-  padding: ($spacing-unit * 3) 0 ($spacing-unit * 1.5) 0;
+  height: 20vh;
+  padding-top: ($spacing-unit * 3);
   background: $gray-color;
 
   .site-title {
@@ -28,11 +29,28 @@
   height: 0;
 }
 
-.header-home {
+a.header-home {
+  margin-top: -$spacing-unit * 1.5;
   float: right;
+  text-align: right;
+  line-height: 1;
   font-size: $base-font-size * 1.5;
-  &:hover {
-    color: $link-color;
+  color: lighten($grey-color, 5%);
+  @include media-query($on-palm) {
+    font-size: $base-font-size * 1.2;
+  }
+  .front-end {
+    display: block;
+  }
+  .development {
+    display: block;
+  }
+  .leslie {
+    color: lighten($grey-color, 5%);
+    font-size: $base-font-size * 3;
+    @include media-query($on-palm) {
+      font-size: $base-font-size * 2;
+    }
   }
 }
 
@@ -136,16 +154,16 @@
   }
 
   .icon-left-lighten {
-    fill: rgba(0, 0, 0, 0.3);
+    fill: lighten($black-color, 50%);
     &:hover path {
-      fill: rgba(233, 77, 80, 0.3);
+      fill: lighten($link-color, 15%)
     }
   }
 
   .icon-right-lighten {
-    fill: rgba(0, 0, 0, 0.3);
+    fill: lighten($black-color, 50%);
     &:hover path {
-      fill: rgba(233, 77, 80, 0.3);
+      fill: lighten($link-color, 15%)
     }
   }
 }
@@ -179,73 +197,80 @@
  * Posts
  */
 
-.post {
-  padding-top: $spacing-unit * 2;
+a.post-home {
+  display: inline-block;
+  padding-top: ($spacing-unit / 2);
+  color: lighten($grey-color, 5%);
+  font-size: $base-font-size * 1.8;
+  @include media-query($on-palm) {
+    padding-top: ($spacing-unit / 3);
+    font-size: $base-font-size * 1.2;
+  }
+}
 
-  .post-header {
-    .post-title {
-      @include relative-font-size(2.425);
-      letter-spacing: -1px;
-      line-height: 1;
+.post-header {
+  .post-title {
+    @include relative-font-size(2.425);
+    letter-spacing: -1px;
+    line-height: 1;
 
-      @include media-query($on-laptop) {
-        @include relative-font-size(2.25);
-      }
+    @include media-query($on-laptop) {
+      @include relative-font-size(2.25);
     }
-    .post-meta {
-      display: block;
-      padding: ($spacing-unit / 3) 0;
-      font-size: $small-font-size;
-      font-style: italic;
-      color: $grey-color;
+  }
+  .post-meta {
+    display: block;
+    padding: ($spacing-unit / 3) 0;
+    font-size: $small-font-size;
+    font-style: italic;
+    color: $grey-color;
+  }
+}
+
+.post-content {
+  padding: ($spacing-unit * 2) 0;
+
+  h2 {
+    @include relative-font-size(2);
+
+    @include media-query($on-laptop) {
+      @include relative-font-size(1.75);
     }
   }
 
-  .post-content {
-    padding: ($spacing-unit / 2) 0;
+  h3 {
+    @include relative-font-size(1.625);
 
-    h2 {
-      @include relative-font-size(2);
-
-      @include media-query($on-laptop) {
-        @include relative-font-size(1.75);
-      }
-    }
-
-    h3 {
-      @include relative-font-size(1.625);
-
-      @include media-query($on-laptop) {
-        @include relative-font-size(1.375);
-      }
-    }
-
-    h4 {
-      @include relative-font-size(1.25);
-
-      @include media-query($on-laptop) {
-        @include relative-font-size(1.125);
-      }
-    }
-    a {
-      color: rgba(233, 82, 80, 0.7);
-      font-size: $base-font-size * 1.2;
-      &:hover {
-        color: $link-color;
-      }
+    @include media-query($on-laptop) {
+      @include relative-font-size(1.375);
     }
   }
 
-  .post-content-bottomright-border {
-    border-bottom: 100px solid $blue-color;
-    border-left: -webkit-calc(100vw - 17px) solid transparent;
-    border-left: calc(100vw - 17px) solid transparent;
-    @media screen and(max-device-width: 1024px) {
-      border-left: 100vw solid transparent;
+  h4 {
+    @include relative-font-size(1.25);
+
+    @include media-query($on-laptop) {
+      @include relative-font-size(1.125);
     }
-    width: 0;
-    height: 0;
   }
+  a {
+    color: lighten($link-color, 10%);
+    font-size: $base-font-size * 1.2;
+    &:hover {
+      color: $link-color;
+    }
+  }
+}
+
+.post-content-bottomright-border {
+  border-bottom: 100px solid $blue-color;
+  border-left: -webkit-calc(100vw - 17px) solid transparent;
+  border-left: calc(100vw - 17px) solid transparent;
+  @media screen and(max-device-width: 1024px) {
+    border-left: 100vw solid transparent;
+  }
+  width: 0;
+  height: 0;
 }
 
 /*

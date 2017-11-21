@@ -178,7 +178,8 @@ table {
   background: linear-gradient(45deg, #e55, #909); }
 
 .site-header {
-  padding: 90px 0 45px 0;
+  height: 20vh;
+  padding-top: 90px;
   background: #f5f5f5; }
   .site-header .site-title {
     font-size: 48px;
@@ -195,11 +196,26 @@ table {
     .header-border {
       border-right: 100vw solid transparent; } }
 
-.header-home {
+a.header-home {
+  margin-top: -45px;
   float: right;
-  font-size: 24px; }
-  .header-home:hover {
-    color: #e55; }
+  text-align: right;
+  line-height: 1;
+  font-size: 24px;
+  color: #5b5e62; }
+  @media screen and (max-width: 600px) {
+    a.header-home {
+      font-size: 19.2px; } }
+  a.header-home .front-end {
+    display: block; }
+  a.header-home .development {
+    display: block; }
+  a.header-home .leslie {
+    color: #5b5e62;
+    font-size: 48px; }
+    @media screen and (max-width: 600px) {
+      a.header-home .leslie {
+        font-size: 32px; } }
 
 /*
  * Page content
@@ -281,13 +297,13 @@ table {
     background: #e55;
     cursor: default; }
   .pagination .icon-left-lighten {
-    fill: rgba(0, 0, 0, 0.3); }
+    fill: #a2a2a2; }
     .pagination .icon-left-lighten:hover path {
-      fill: rgba(233, 77, 80, 0.3); }
+      fill: #f59b9b; }
   .pagination .icon-right-lighten {
-    fill: rgba(0, 0, 0, 0.3); }
+    fill: #a2a2a2; }
     .pagination .icon-right-lighten:hover path {
-      fill: rgba(233, 77, 80, 0.3); }
+      fill: #f59b9b; }
 
 /*
  * Site footer
@@ -313,52 +329,62 @@ table {
 /*
  * Posts
  */
-.post {
-  padding-top: 60px; }
-  .post .post-header .post-title {
-    font-size: 38.8px;
-    letter-spacing: -1px;
-    line-height: 1; }
+a.post-home {
+  display: inline-block;
+  padding-top: 15px;
+  color: #5b5e62;
+  font-size: 28.8px; }
+  @media screen and (max-width: 600px) {
+    a.post-home {
+      padding-top: 10px;
+      font-size: 19.2px; } }
+
+.post-header .post-title {
+  font-size: 38.8px;
+  letter-spacing: -1px;
+  line-height: 1; }
+  @media screen and (max-width: 800px) {
+    .post-header .post-title {
+      font-size: 36px; } }
+.post-header .post-meta {
+  display: block;
+  padding: 10px 0;
+  font-size: 14px;
+  font-style: italic;
+  color: #4f5155; }
+
+.post-content {
+  padding: 60px 0; }
+  .post-content h2 {
+    font-size: 32px; }
     @media screen and (max-width: 800px) {
-      .post .post-header .post-title {
-        font-size: 36px; } }
-  .post .post-header .post-meta {
-    display: block;
-    padding: 10px 0;
-    font-size: 14px;
-    font-style: italic;
-    color: #4f5155; }
-  .post .post-content {
-    padding: 15px 0; }
-    .post .post-content h2 {
-      font-size: 32px; }
-      @media screen and (max-width: 800px) {
-        .post .post-content h2 {
-          font-size: 28px; } }
-    .post .post-content h3 {
-      font-size: 26px; }
-      @media screen and (max-width: 800px) {
-        .post .post-content h3 {
-          font-size: 22px; } }
-    .post .post-content h4 {
-      font-size: 20px; }
-      @media screen and (max-width: 800px) {
-        .post .post-content h4 {
-          font-size: 18px; } }
-    .post .post-content a {
-      color: rgba(233, 82, 80, 0.7);
-      font-size: 19.2px; }
-      .post .post-content a:hover {
-        color: #e55; }
-  .post .post-content-bottomright-border {
-    border-bottom: 100px solid #1f2125;
-    border-left: -webkit-calc(100vw - 17px) solid transparent;
-    border-left: calc(100vw - 17px) solid transparent;
-    width: 0;
-    height: 0; }
-    @media screen and (max-device-width: 1024px) {
-      .post .post-content-bottomright-border {
-        border-left: 100vw solid transparent; } }
+      .post-content h2 {
+        font-size: 28px; } }
+  .post-content h3 {
+    font-size: 26px; }
+    @media screen and (max-width: 800px) {
+      .post-content h3 {
+        font-size: 22px; } }
+  .post-content h4 {
+    font-size: 20px; }
+    @media screen and (max-width: 800px) {
+      .post-content h4 {
+        font-size: 18px; } }
+  .post-content a {
+    color: #f38383;
+    font-size: 19.2px; }
+    .post-content a:hover {
+      color: #e55; }
+
+.post-content-bottomright-border {
+  border-bottom: 100px solid #263238;
+  border-left: -webkit-calc(100vw - 17px) solid transparent;
+  border-left: calc(100vw - 17px) solid transparent;
+  width: 0;
+  height: 0; }
+  @media screen and (max-device-width: 1024px) {
+    .post-content-bottomright-border {
+      border-left: 100vw solid transparent; } }
 
 /*
  * Comment
@@ -366,7 +392,7 @@ table {
 .comments {
   padding-top: 60px;
   color: #bfbfbf;
-  background: #1f2125; }
+  background: #263238; }
   .comments .comments-size {
     margin-bottom: 0;
     border-bottom: 2px solid #b5b7bb;
@@ -388,7 +414,7 @@ table {
 .comment-new {
   padding-top: 60px;
   color: #bfbfbf;
-  background: #1f2125; }
+  background: #263238; }
   .comment-new .comment-new-title {
     font-size: 32px; }
   .comment-new .comment-new-text {
@@ -401,7 +427,7 @@ table {
     height: 45px;
     font-size: 24px;
     color: #fff;
-    background: #2b2d33; }
+    background: #304047; }
     @media screen and (max-width: 600px) {
       .comment-new .comment-new-text {
         float: none;
@@ -419,7 +445,7 @@ table {
     height: 45px;
     font-size: 24px;
     color: #fff;
-    background: #2b2d33; }
+    background: #304047; }
     @media screen and (max-width: 600px) {
       .comment-new .comment-new-email {
         float: none;
@@ -436,7 +462,7 @@ table {
     height: 240px;
     font-size: 24px;
     color: #fff;
-    background: #2b2d33;
+    background: #304047;
     overflow: hidden; }
     .comment-new .comment-new-message:focus {
       outline: none; }
@@ -448,7 +474,7 @@ table {
     height: 54px;
     font-size: 16px;
     color: #e55;
-    background: #1f2125; }
+    background: #263238; }
     .comment-new .comment-new-submit:hover {
       color: #fff;
       background: #e55; }
@@ -461,7 +487,7 @@ table {
 .post-recent {
   padding: 60px 0;
   font-size: 24px;
-  background: #1f2125; }
+  background: #263238; }
   .post-recent .post-recent-newer {
     float: left;
     color: #bfbfbf; }
@@ -479,7 +505,7 @@ table {
 
 .post-footer {
   padding: 30px 0;
-  background: #1f2125;
+  background: #263238;
   color: #737373; }
   @media screen and (max-width: 600px) {
     .post-footer {

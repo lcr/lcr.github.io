@@ -17,7 +17,7 @@ $gray-color:       #f5f5f5 !default;
 $grey-color:       #4f5155 !default;
 $grey-color-light: lighten($grey-color, 40%) !default;
 $grey-color-dark:  darken($grey-color, 25%) !default;
-$blue-color:       #1f2125 !default;
+$blue-color:       #263238 !default;
 $link-color:       #e55 !default;
 $liner-color:      linear-gradient(45deg, #e55, #909) !default;
 
@@ -25,8 +25,8 @@ $table-text-align: left !default;
 
 // Width of the content area
 $content-width:    900px !default;
-$on-palm:          600px !default;
 $on-laptop:        800px !default;
+$on-palm:          600px !default;
 
 // Use media queries like this:
 // @include media-query($on-palm) {

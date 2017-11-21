@@ -4,12 +4,16 @@
     <div class="wrapper">
         {% assign default_paths = site.pages | map: "path" %}
         {% assign page_paths = site.header_pages | default: default_paths %}
-        <a class="site-title" href="{{ "/" | relative_url }}">Leslie Lai's writings</a>
+        <a class="site-title" href="{{ '/' | relative_url }}">Leslie Lai's writings</a>
     </div>
 </header>
 
 <div class="header-border"></div>
 
 <div class="wrapper">
-    <a class="header-home" href="{{ "/" | relative_url }}">Home</a>
+    <a class="header-home" href="{{ '/' | relative_url }}">
+        <span class="front-end">Frontend</span>
+        <span class="development">Development</span>
+        By<span class="leslie"> Leslie Lai</span>
+    </a>
 </div>
