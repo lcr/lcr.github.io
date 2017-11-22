@@ -10,8 +10,11 @@
   height: 20vh;
   padding: ($spacing-unit * 3) 0;
   background: linear-gradient(-4deg, transparent 100px, $gray-color 0);
+  @include relative-font-size(1.75);
+  @include media-query($on-laptop) {
+    @include relative-font-size(1.25);
+  }
   line-height: 1;
-  font-size: $base-font-size * 3;
   letter-spacing: -1px;
 }
 
