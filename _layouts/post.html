@@ -9,30 +9,30 @@ layout: default
     <div class="site-header" role="banner">
         {% assign default_paths = site.pages | map: "path" %}
         {% assign page_paths = site.header_pages | default: default_paths %}
-        <div class="post-header">
-            <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
 
-            <span class="post-meta">
-                    <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-                        {% assign date_format = site.date_format | default: "%d %b. %Y" %}
-                        {{ page.date | date: date_format }}
-                    </time>
-                </span>
-        </div>
+        <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
+
+        <span class="post-meta">
+            <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+                {% assign date_format = site.date_format | default: "%d %b. %Y" %}
+                {{ page.date | date: date_format }}
+            </time>
+        </span>
+
     </div>
 
-    <div class="page-content" aria-label="Content">
-        <a class="post-home" href="{{ '/' | relative_url }}"><span>Home</span></a>
+    <nav class="site-nav">
+        <a class="post-home" href="{{ '/' | relative_url }}">Home</a>
 
         <a class="header-home" href="{{ '/' | relative_url }}" title="Home">
             <span class="front-end">Frontend</span>
             <span class="development">Development</span>
             By<span class="leslie"> Leslie Lai</span>
         </a>
-        <div class="post-content" itemprop="articleBody">
-            {{ content }}
-        </div>
+    </nav>
 
+    <div class="post-content" aria-label="Content" itemprop="articleBody">
+        {{ content }}
     </div>
 
     <div class="post-blue-bg">
@@ -41,6 +41,8 @@ layout: default
         {% include comment-new.html %}
 
         {% include post-recent.html %}
+
+        {% include post-footer.html %}
     </div>
 </article>
 

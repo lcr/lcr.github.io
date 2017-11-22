@@ -1,3 +1,17 @@
+.site-header,
+.site-nav,
+.page-content,
+.post-content,
+.post-blue-bg,
+.site-footer {
+  padding-left: calc(50% - 450px);
+  padding-right: calc(50% - 450px);
+  @include media-query($on-laptop) {
+    padding-left: $spacing-unit / 3;
+    padding-right: $spacing-unit / 3;
+  }
+}
+
 /*
  * Site header
  */
@@ -8,72 +22,63 @@
 
 .site-header {
   height: 20vh;
-  padding: ($spacing-unit * 3) calc(50% - 450px);
+  padding-top: $spacing-unit * 3;
+  padding-bottom: $spacing-unit * 3;
   background: linear-gradient(-4deg, transparent 100px, $gray-color 0);
-  @include relative-font-size(1.75);
-  @include media-query($on-laptop) {
-    padding: ($spacing-unit * 3) ($spacing-unit / 2);
-    @include relative-font-size(1.25);
-  }
-  line-height: 1;
-  letter-spacing: -1px;
-}
-
-a.header-home {
-  display: inline-block;
-  float: right;
-  margin-top: -$spacing-unit * 1.5;
-  padding: 0 calc(50% - 450px);
-  @include media-query($on-laptop) {
-    padding: 0 ($spacing-unit / 2);
-  }
-  text-align: right;
-  line-height: 1;
-  font-size: $base-font-size * 1.5;
-  color: lighten($grey-color, 5%);
-  @include media-query($on-palm) {
-    margin-top: -$spacing-unit * 2.5;
-    font-size: $base-font-size * 1.2;
-  }
-  .front-end {
-    display: block;
-  }
-  .development {
-    display: block;
-  }
-  .leslie {
-    color: lighten($grey-color, 5%);
-    font-size: $base-font-size * 3;
-    @include media-query($on-palm) {
-      font-size: $base-font-size * 2;
+  .site-title {
+    @include relative-font-size(3);
+    letter-spacing: -1px;
+    line-height: 1;
+    @include media-query($on-laptop) {
+      @include relative-font-size(2.5);
     }
   }
 }
 
-a.post-home {
-  display: inline-block;
-  float: left;
-  margin-top: $spacing-unit / 3;
-  color: lighten($grey-color, 5%);
-  font-size: $base-font-size * 1.8;
-  @include media-query($on-palm) {
-    margin-top: -$spacing-unit;
+/*
+ * Site nav
+ */
+.site-nav {
+  font-size: $base-font-size * 1.5;
+  @include media-query($on-palm){
     font-size: $base-font-size * 1.2;
+  }
+
+  a{
+    color: lighten($grey-color, 5%);
+  }
+
+  .header-home {
+    float: right;
+    margin-top: -$spacing-unit * 2;
+    text-align: right;
+    line-height: 1;
+    .front-end ,
+    .development{
+      display: block;
+    }
+    .leslie {
+      font-size: $base-font-size * 3;
+      @include media-query($on-palm) {
+        font-size: $base-font-size * 2;
+      }
+    }
+  }
+
+  .post-home {
+    float: left;
+    @include media-query($on-palm) {
+      margin-top: -$spacing-unit / 2;
+    }
   }
 }
 
 /*
  * Page content
  */
-.page-content {
-  padding: ($spacing-unit / 3) calc(50% - 450px);
-  @include media-query($on-laptop) {
-    padding: ($spacing-unit / 3) ($spacing-unit / 2);
-  }
-}
-
 .post-list {
   margin-left: 0;
+  padding-top: $spacing-unit * 3;
   list-style: none;
 
   > li {
@@ -182,27 +187,27 @@ a.post-home {
 /*
  * Posts
  */
-.post-header {
-  .post-title {
-    @include relative-font-size(2.425);
-    letter-spacing: -1px;
-    line-height: 1;
 
-    @include media-query($on-laptop) {
-      @include relative-font-size(2.25);
-    }
-  }
-  .post-meta {
-    display: block;
-    padding: ($spacing-unit / 3) 0;
-    font-size: $small-font-size;
-    font-style: italic;
-    color: $grey-color;
+.post-title {
+  @include relative-font-size(2.425);
+  letter-spacing: -1px;
+  line-height: 1;
+
+  @include media-query($on-laptop) {
+    @include relative-font-size(2.25);
   }
 }
 
+.post-meta {
+  display: block;
+  padding: ($spacing-unit / 3) 0;
+  font-size: $small-font-size;
+  font-style: italic;
+  color: $grey-color;
+}
+
 .post-content {
-  padding: ($spacing-unit * 4) 0;
+  padding-top: $spacing-unit * 5;
 
   h2 {
     @include relative-font-size(2);
@@ -240,23 +245,19 @@ a.post-home {
  * Comments
  */
 .post-blue-bg {
-  padding: ($spacing-unit * 5) calc(50% - 450px) 0;
-  @include media-query($on-laptop) {
-    padding: ($spacing-unit * 5) ($spacing-unit / 2) 0;
-  }
+  padding-top: $spacing-unit * 5;
   color: darken($white-color, 25%);
   background: linear-gradient(176deg, transparent 100px, $blue-color 0);
 }
 
 .comments-size {
-  margin-bottom: 0;
   border-bottom: 2px solid $grey-color-light;
   padding-bottom: $spacing-unit / 3;
   font-size: $base-font-size * 2;
 }
 
 .comments-name {
-  padding-top: $spacing-unit;
+  padding-top: $spacing-unit / 2;
   font-size: $base-font-size * 1.5;
 }
 
@@ -284,16 +285,15 @@ a.post-home {
   margin-top: $spacing-unit;
   border: 0;
   border-radius: $spacing-unit / 5;
-  padding-left: $spacing-unit / 2;
-  width: 46%;
+  width: 48%;
   height: $spacing-unit * 1.5;
   font-size: $base-font-size * 1.5;
+  text-indent: $spacing-unit / 2;
   color: $white-color;
   background: lighten($blue-color, 5%);
   @include media-query($on-palm) {
     float: none;
-    width: -webkit-calc(100vw - 45px);
-    width: calc(100vw - 45px);
+    width: 100%;
   }
   &:focus {
     outline: none
@@ -305,16 +305,15 @@ a.post-home {
   margin-top: $spacing-unit;
   border: 0;
   border-radius: $spacing-unit / 5;
-  padding-left: $spacing-unit / 2;
-  width: 46%;
+  width: 48%;
   height: $spacing-unit * 1.5;
   font-size: $base-font-size * 1.5;
+  text-indent: $spacing-unit / 2;
   color: $white-color;
   background: lighten($blue-color, 5%);
   @include media-query($on-palm) {
     float: none;
-    width: -webkit-calc(100vw - 45px);
-    width: calc(100vw - 45px);
+    width: 100%;
   }
   &:focus {
     outline: none
@@ -325,10 +324,10 @@ a.post-home {
   margin-top: $spacing-unit;
   border: 0;
   border-radius: $spacing-unit / 5;
-  padding-left: $spacing-unit / 2;
-  width: calc(100% - 15px);
+  width: 100%;
   height: $spacing-unit * 8;
   font-size: $base-font-size * 1.5;
+  text-indent: $spacing-unit / 2;
   color: $white-color;
   background: lighten($blue-color, 5%);
   overflow: hidden;
@@ -405,10 +404,8 @@ a.post-home {
  * Site footer
  */
 .site-footer {
-  padding: ($spacing-unit * 5)  calc(50% - 450px) ($spacing-unit * 2);
-  @include media-query($on-laptop) {
-    padding: ($spacing-unit * 5) ($spacing-unit / 2) ($spacing-unit * 2);
-  }
+  padding-top: $spacing-unit * 5;
+  padding-bottom: $spacing-unit * 2;
   color: darken($white-color, 55%);
   background: linear-gradient(176deg, transparent 100px, $gray-color 0);
   @include media-query($on-palm) {

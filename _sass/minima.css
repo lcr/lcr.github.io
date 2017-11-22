@@ -72,8 +72,8 @@ a {
   a:visited {
     color: #0d0d0d; }
   a:hover {
-    color: #222;
-    text-decoration: none; }
+    text-decoration: none;
+    color: #222; }
   .social-media-list a:hover {
     text-decoration: none; }
     .social-media-list a:hover .username {
@@ -145,6 +145,24 @@ table {
   table td {
     border: 1px solid #b5b7bb; }
 
+.site-header,
+.site-nav,
+.page-content,
+.post-content,
+.post-blue-bg,
+.site-footer {
+  padding-left: calc(50% - 450px);
+  padding-right: calc(50% - 450px); }
+  @media screen and (max-width: 800px) {
+    .site-header,
+    .site-nav,
+    .page-content,
+    .post-content,
+    .post-blue-bg,
+    .site-footer {
+      padding-left: 10px;
+      padding-right: 10px; } }
+
 /*
  * Site header
  */
@@ -154,65 +172,52 @@ table {
 
 .site-header {
   height: 20vh;
-  padding: 90px calc(50% - 450px);
-  background: linear-gradient(-4deg, transparent 100px, #f5f5f5 0);
-  font-size: 28px;
-  line-height: 1;
-  letter-spacing: -1px; }
-  @media screen and (max-width: 800px) {
-    .site-header {
-      padding: 90px 15px;
-      font-size: 20px; } }
+  padding-top: 90px;
+  padding-bottom: 90px;
+  background: linear-gradient(-4deg, transparent 100px, #f5f5f5 0); }
+  .site-header .site-title {
+    font-size: 48px;
+    letter-spacing: -1px;
+    line-height: 1; }
+    @media screen and (max-width: 800px) {
+      .site-header .site-title {
+        font-size: 40px; } }
 
-a.header-home {
-  display: inline-block;
-  float: right;
-  margin-top: -45px;
-  padding: 0 calc(50% - 450px);
-  text-align: right;
-  line-height: 1;
-  font-size: 24px;
-  color: #5b5e62; }
-  @media screen and (max-width: 800px) {
-    a.header-home {
-      padding: 0 15px; } }
+/*
+ * Site nav
+ */
+.site-nav {
+  font-size: 24px; }
   @media screen and (max-width: 600px) {
-    a.header-home {
-      margin-top: -75px;
+    .site-nav {
       font-size: 19.2px; } }
-  a.header-home .front-end {
-    display: block; }
-  a.header-home .development {
-    display: block; }
-  a.header-home .leslie {
-    color: #5b5e62;
-    font-size: 48px; }
+  .site-nav a {
+    color: #5b5e62; }
+  .site-nav .header-home {
+    float: right;
+    margin-top: -60px;
+    text-align: right;
+    line-height: 1; }
+    .site-nav .header-home .front-end,
+    .site-nav .header-home .development {
+      display: block; }
+    .site-nav .header-home .leslie {
+      font-size: 48px; }
+      @media screen and (max-width: 600px) {
+        .site-nav .header-home .leslie {
+          font-size: 32px; } }
+  .site-nav .post-home {
+    float: left; }
     @media screen and (max-width: 600px) {
-      a.header-home .leslie {
-        font-size: 32px; } }
-
-a.post-home {
-  display: inline-block;
-  float: left;
-  margin-top: 10px;
-  color: #5b5e62;
-  font-size: 28.8px; }
-  @media screen and (max-width: 600px) {
-    a.post-home {
-      margin-top: -30px;
-      font-size: 19.2px; } }
+      .site-nav .post-home {
+        margin-top: -15px; } }
 
 /*
  * Page content
  */
-.page-content {
-  padding: 10px calc(50% - 450px); }
-  @media screen and (max-width: 800px) {
-    .page-content {
-      padding: 10px 15px; } }
-
 .post-list {
   margin-left: 0;
+  padding-top: 90px;
   list-style: none; }
   .post-list > li {
     border-bottom: 1px solid #b5b7bb;
@@ -296,14 +301,15 @@ a.post-home {
 /*
  * Posts
  */
-.post-header .post-title {
+.post-title {
   font-size: 38.8px;
   letter-spacing: -1px;
   line-height: 1; }
   @media screen and (max-width: 800px) {
-    .post-header .post-title {
+    .post-title {
       font-size: 36px; } }
-.post-header .post-meta {
+
+.post-meta {
   display: block;
   padding: 10px 0;
   font-size: 14px;
@@ -311,7 +317,7 @@ a.post-home {
   color: #4f5155; }
 
 .post-content {
-  padding: 120px 0; }
+  padding-top: 150px; }
   .post-content h2 {
     font-size: 32px; }
     @media screen and (max-width: 800px) {
@@ -337,21 +343,17 @@ a.post-home {
  * Comments
  */
 .post-blue-bg {
-  padding: 150px calc(50% - 450px) 0;
+  padding-top: 150px;
   color: #bfbfbf;
   background: linear-gradient(176deg, transparent 100px, #1f2125 0); }
-  @media screen and (max-width: 800px) {
-    .post-blue-bg {
-      padding: 150px 15px 0; } }
 
 .comments-size {
-  margin-bottom: 0;
   border-bottom: 2px solid #b5b7bb;
   padding-bottom: 10px;
   font-size: 32px; }
 
 .comments-name {
-  padding-top: 30px;
+  padding-top: 15px;
   font-size: 24px; }
 
 .comments-date {
@@ -374,17 +376,16 @@ a.post-home {
   margin-top: 30px;
   border: 0;
   border-radius: 6px;
-  padding-left: 15px;
-  width: 46%;
+  width: 48%;
   height: 45px;
   font-size: 24px;
+  text-indent: 15px;
   color: #fff;
   background: #2b2d33; }
   @media screen and (max-width: 600px) {
     .comment-new-text {
       float: none;
-      width: -webkit-calc(100vw - 45px);
-      width: calc(100vw - 45px); } }
+      width: 100%; } }
   .comment-new-text:focus {
     outline: none; }
 
@@ -393,17 +394,16 @@ a.post-home {
   margin-top: 30px;
   border: 0;
   border-radius: 6px;
-  padding-left: 15px;
-  width: 46%;
+  width: 48%;
   height: 45px;
   font-size: 24px;
+  text-indent: 15px;
   color: #fff;
   background: #2b2d33; }
   @media screen and (max-width: 600px) {
     .comment-new-email {
       float: none;
-      width: -webkit-calc(100vw - 45px);
-      width: calc(100vw - 45px); } }
+      width: 100%; } }
   .comment-new-email:focus {
     outline: none; }
 
@@ -411,10 +411,10 @@ a.post-home {
   margin-top: 30px;
   border: 0;
   border-radius: 6px;
-  padding-left: 15px;
-  width: calc(100% - 15px);
+  width: 100%;
   height: 240px;
   font-size: 24px;
+  text-indent: 15px;
   color: #fff;
   background: #2b2d33;
   overflow: hidden; }
@@ -474,12 +474,10 @@ a.post-home {
  * Site footer
  */
 .site-footer {
-  padding: 150px calc(50% - 450px) 60px;
+  padding-top: 150px;
+  padding-bottom: 60px;
   color: #737373;
   background: linear-gradient(176deg, transparent 100px, #f5f5f5 0); }
-  @media screen and (max-width: 800px) {
-    .site-footer {
-      padding: 150px 15px 60px; } }
   @media screen and (max-width: 600px) {
     .site-footer {
       text-align: center; } }
