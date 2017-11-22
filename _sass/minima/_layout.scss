@@ -22,8 +22,8 @@
 
 .site-header {
   height: 20vh;
-  padding-top: $spacing-unit * 3;
-  padding-bottom: $spacing-unit * 3;
+  padding-top: $spacing-unit * 2.5;
+  padding-bottom: $spacing-unit * 3.5;
   background: linear-gradient(-4deg, transparent 100px, $gray-color 0);
   .site-title {
     @include relative-font-size(3);
@@ -78,7 +78,7 @@
  */
 .post-list {
   margin-left: 0;
-  padding-top: $spacing-unit * 3;
+  padding-top: $spacing-unit * 2;
   list-style: none;
 
   > li {
@@ -199,7 +199,6 @@
 }
 
 .post-meta {
-  display: block;
   padding: ($spacing-unit / 3) 0;
   font-size: $small-font-size;
   font-style: italic;
@@ -207,7 +206,7 @@
 }
 
 .post-content {
-  padding-top: $spacing-unit * 5;
+  padding-top: $spacing-unit * 4;
 
   h2 {
     @include relative-font-size(2);
