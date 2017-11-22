@@ -8,10 +8,11 @@
 
 .site-header {
   height: 20vh;
-  padding: ($spacing-unit * 3) 0;
+  padding: ($spacing-unit * 3) calc(50% - 450px);
   background: linear-gradient(-4deg, transparent 100px, $gray-color 0);
   @include relative-font-size(1.75);
   @include media-query($on-laptop) {
+    padding: ($spacing-unit * 3) ($spacing-unit / 2);
     @include relative-font-size(1.25);
   }
   line-height: 1;
@@ -19,8 +20,13 @@
 }
 
 a.header-home {
+  display: inline-block;
   float: right;
   margin-top: -$spacing-unit * 1.5;
+  padding: 0 calc(50% - 450px);
+  @include media-query($on-laptop) {
+    padding: 0 ($spacing-unit / 2);
+  }
   text-align: right;
   line-height: 1;
   font-size: $base-font-size * 1.5;
@@ -60,7 +66,10 @@ a.post-home {
  * Page content
  */
 .page-content {
-  padding-top: $spacing-unit / 3;
+  padding: ($spacing-unit / 3) calc(50% - 450px);
+  @include media-query($on-laptop) {
+    padding: ($spacing-unit / 3) ($spacing-unit / 2);
+  }
 }
 
 .post-list {
@@ -231,7 +240,10 @@ a.post-home {
  * Comments
  */
 .post-blue-bg {
-  padding-top: $spacing-unit * 5;
+  padding: ($spacing-unit * 5) calc(50% - 450px) 0;
+  @include media-query($on-laptop) {
+    padding: ($spacing-unit * 5) ($spacing-unit / 2) 0;
+  }
   color: darken($white-color, 25%);
   background: linear-gradient(176deg, transparent 100px, $blue-color 0);
 }
@@ -393,7 +405,10 @@ a.post-home {
  * Site footer
  */
 .site-footer {
-  padding: ($spacing-unit * 5) 0 ($spacing-unit * 2) 0;
+  padding: ($spacing-unit * 5)  calc(50% - 450px) ($spacing-unit * 2);
+  @include media-query($on-laptop) {
+    padding: ($spacing-unit * 5) ($spacing-unit / 2) ($spacing-unit * 2);
+  }
   color: darken($white-color, 55%);
   background: linear-gradient(176deg, transparent 100px, $gray-color 0);
   @include media-query($on-palm) {
