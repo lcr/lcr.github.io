@@ -8,35 +8,22 @@
 
 .site-header {
   height: 20vh;
-  padding-top: ($spacing-unit * 3);
-  background: $gray-color;
-
-  .site-title {
-    @include relative-font-size(3);
-    line-height: $base-line-height * $base-font-size * 2.25;
-    letter-spacing: -1px;
-  }
-}
-
-.header-border {
-  border-top: 100px solid $gray-color;
-  border-right: -webkit-calc(100vw - 17px) solid transparent;
-  border-right: calc(100vw - 17px) solid transparent;
-  @media screen and(max-device-width: 1024px) {
-    border-right: 100vw solid transparent;
-  }
-  width: 0;
-  height: 0;
+  padding: ($spacing-unit * 3) 0;
+  background: linear-gradient(-4deg, transparent 100px, $gray-color 0);
+  line-height: 1;
+  font-size: $base-font-size * 3;
+  letter-spacing: -1px;
 }
 
 a.header-home {
-  margin-top: -$spacing-unit * 1.5;
   float: right;
+  margin-top: -$spacing-unit * 1.5;
   text-align: right;
   line-height: 1;
   font-size: $base-font-size * 1.5;
   color: lighten($grey-color, 5%);
   @include media-query($on-palm) {
+    margin-top: -$spacing-unit * 2.5;
     font-size: $base-font-size * 1.2;
   }
   .front-end {
@@ -51,6 +38,18 @@ a.header-home {
     @include media-query($on-palm) {
       font-size: $base-font-size * 2;
     }
+  }
+}
+
+a.post-home {
+  display: inline-block;
+  float: left;
+  margin-top: $spacing-unit / 3;
+  color: lighten($grey-color, 5%);
+  font-size: $base-font-size * 1.8;
+  @include media-query($on-palm) {
+    margin-top: -$spacing-unit;
+    font-size: $base-font-size * 1.2;
   }
 }
 
@@ -169,45 +168,8 @@ a.header-home {
 }
 
 /*
- * Site footer
- */
-.site-footer {
-  background: $gray-color;
-  color: darken($white-color, 55%);
-
-  .footer-topleft-border {
-    border-top: 100px solid $white-color;
-    border-right: -webkit-calc(100vw - 17px) solid transparent;
-    border-right: calc(100vw - 17px) solid transparent;
-    @media screen and(max-device-width: 1024px) {
-      border-right: 100vw solid transparent;
-    }
-    width: 0;
-    height: 0;
-  }
-  .copyright {
-    padding: $spacing-unit 0;
-    @include media-query($on-palm) {
-      text-align: center;
-    }
-  }
-}
-
-/*
  * Posts
  */
-
-a.post-home {
-  display: inline-block;
-  padding-top: ($spacing-unit / 2);
-  color: lighten($grey-color, 5%);
-  font-size: $base-font-size * 1.8;
-  @include media-query($on-palm) {
-    padding-top: ($spacing-unit / 3);
-    font-size: $base-font-size * 1.2;
-  }
-}
-
 .post-header {
   .post-title {
     @include relative-font-size(2.425);
@@ -228,7 +190,7 @@ a.post-home {
 }
 
 .post-content {
-  padding: ($spacing-unit * 2) 0;
+  padding: ($spacing-unit * 4) 0;
 
   h2 {
     @include relative-font-size(2);
@@ -262,136 +224,119 @@ a.post-home {
   }
 }
 
-.post-content-bottomright-border {
-  border-bottom: 100px solid $blue-color;
-  border-left: -webkit-calc(100vw - 17px) solid transparent;
-  border-left: calc(100vw - 17px) solid transparent;
-  @media screen and(max-device-width: 1024px) {
-    border-left: 100vw solid transparent;
-  }
-  width: 0;
-  height: 0;
+/*
+ * Comments
+ */
+.post-blue-bg {
+  padding-top: $spacing-unit * 5;
+  color: darken($white-color, 25%);
+  background: linear-gradient(176deg, transparent 100px, $blue-color 0);
 }
 
-/*
- * Comment
- */
+.comments-size {
+  margin-bottom: 0;
+  border-bottom: 2px solid $grey-color-light;
+  padding-bottom: $spacing-unit / 3;
+  font-size: $base-font-size * 2;
+}
 
-.comments {
-  padding-top: $spacing-unit * 2;
-  color: darken($white-color, 25%);
-  background: $blue-color;
+.comments-name {
+  padding-top: $spacing-unit;
+  font-size: $base-font-size * 1.5;
+}
 
-  .comments-size {
-    margin-bottom: 0;
-    border-bottom: 2px solid $grey-color-light;
-    padding-bottom: $spacing-unit / 3;
-    font-size: $base-font-size * 2;
-  }
+.comments-date {
+  padding: ($spacing-unit / 3) 0;
+  font-style: italic;
+  font-size: $small-font-size;
+}
 
-  .comments-name {
-    padding-top: $spacing-unit;
-    font-size: $base-font-size * 1.5;
-  }
-
-  .comments-date {
-    padding: ($spacing-unit / 3) 0;
-    font-style: italic;
-    font-size: $small-font-size;
-  }
-
-  .comments-message {
-    border-bottom: 1px solid $grey-color-light;
-  }
+.comments-message {
+  border-bottom: 1px solid $grey-color-light;
 }
 
 /*
  * Comment new
  */
 
-.comment-new {
+.comment-new-title {
   padding-top: $spacing-unit * 2;
-  color: darken($white-color, 25%);
+  font-size: $base-font-size * 2;
+}
+
+.comment-new-text {
+  float: left;
+  margin-top: $spacing-unit;
+  border: 0;
+  border-radius: $spacing-unit / 5;
+  padding-left: $spacing-unit / 2;
+  width: 46%;
+  height: $spacing-unit * 1.5;
+  font-size: $base-font-size * 1.5;
+  color: $white-color;
+  background: lighten($blue-color, 5%);
+  @include media-query($on-palm) {
+    float: none;
+    width: -webkit-calc(100vw - 45px);
+    width: calc(100vw - 45px);
+  }
+  &:focus {
+    outline: none
+  }
+}
+
+.comment-new-email {
+  float: right;
+  margin-top: $spacing-unit;
+  border: 0;
+  border-radius: $spacing-unit / 5;
+  padding-left: $spacing-unit / 2;
+  width: 46%;
+  height: $spacing-unit * 1.5;
+  font-size: $base-font-size * 1.5;
+  color: $white-color;
+  background: lighten($blue-color, 5%);
+  @include media-query($on-palm) {
+    float: none;
+    width: -webkit-calc(100vw - 45px);
+    width: calc(100vw - 45px);
+  }
+  &:focus {
+    outline: none
+  }
+}
+
+.comment-new-message {
+  margin-top: $spacing-unit;
+  border: 0;
+  border-radius: $spacing-unit / 5;
+  padding-left: $spacing-unit / 2;
+  width: calc(100% - 15px);
+  height: $spacing-unit * 8;
+  font-size: $base-font-size * 1.5;
+  color: $white-color;
+  background: lighten($blue-color, 5%);
+  overflow: hidden;
+  &:focus {
+    outline: none
+  }
+}
+
+.comment-new-submit {
+  margin-top: $spacing-unit;
+  border: 0.1rem solid $link-color;
+  border-radius: $spacing-unit;
+  padding: 0 $spacing-unit;
+  height: $spacing-unit * 1.8;
+  font-size: $base-font-size;
+  color: $link-color;
   background: $blue-color;
-
-  .comment-new-title {
-    font-size: $base-font-size * 2;
-  }
-
-  .comment-new-text {
-    float: left;
-    margin-top: $spacing-unit;
-    border: 0;
-    border-radius: $spacing-unit / 5;
-    padding-left: $spacing-unit / 2;
-    width: 46%;
-    height: $spacing-unit * 1.5;
-    font-size: $base-font-size * 1.5;
+  &:hover {
     color: $white-color;
-    background: lighten($blue-color, 5%);
-    @include media-query($on-palm) {
-      float: none;
-      width: -webkit-calc(100vw - 45px);
-      width: calc(100vw - 45px);
-    }
-    &:focus {
-      outline: none
-    }
+    background: $link-color;
   }
-
-  .comment-new-email {
-    float: right;
-    margin-top: $spacing-unit;
-    border: 0;
-    border-radius: $spacing-unit / 5;
-    padding-left: $spacing-unit / 2;
-    width: 46%;
-    height: $spacing-unit * 1.5;
-    font-size: $base-font-size * 1.5;
-    color: $white-color;
-    background: lighten($blue-color, 5%);
-    @include media-query($on-palm) {
-      float: none;
-      width: -webkit-calc(100vw - 45px);
-      width: calc(100vw - 45px);
-    }
-    &:focus {
-      outline: none
-    }
-  }
-
-  .comment-new-message {
-    margin-top: $spacing-unit;
-    border: 0;
-    border-radius: $spacing-unit / 5;
-    padding-left: $spacing-unit / 2;
-    width: calc(100% - 15px);
-    height: $spacing-unit * 8;
-    font-size: $base-font-size * 1.5;
-    color: $white-color;
-    background: lighten($blue-color, 5%);
-    overflow: hidden;
-    &:focus {
-      outline: none
-    }
-  }
-
-  .comment-new-submit {
-    margin-top: $spacing-unit;
-    border: 0.1rem solid $link-color;
-    border-radius: $spacing-unit;
-    padding: 0 $spacing-unit;
-    height: $spacing-unit * 1.8;
-    font-size: $base-font-size;
-    color: $link-color;
-    background: $blue-color;
-    &:hover {
-      color: $white-color;
-      background: $link-color;
-    }
-    &:focus {
-      outline: none
-    }
+  &:focus {
+    outline: none
   }
 }
 
@@ -401,7 +346,6 @@ a.post-home {
 .post-recent {
   padding: ($spacing-unit * 2) 0;
   font-size: $base-font-size * 1.5;
-  background: $blue-color;
 
   .post-recent-newer {
     float: left;
@@ -426,20 +370,30 @@ a.post-home {
   }
 }
 
-.post-footer {
-  padding: $spacing-unit 0;
-  background: $blue-color;
-  color: darken($white-color, 55%);
-  @include media-query($on-palm) {
-    text-align: center;
-  }
-
-}
-
 .icon-left-link:hover path {
   fill: $link-color;
 }
 
 .icon-right-link:hover path {
   fill: $link-color;
+}
+
+.post-footer {
+  padding: ($spacing-unit * 2) 0;
+  color: darken($white-color, 55%);
+  @include media-query($on-palm) {
+    text-align: center;
+  }
+}
+
+/*
+ * Site footer
+ */
+.site-footer {
+  padding: ($spacing-unit * 5) 0 ($spacing-unit * 2) 0;
+  color: darken($white-color, 55%);
+  background: linear-gradient(176deg, transparent 100px, $gray-color 0);
+  @include media-query($on-palm) {
+    text-align: center;
+  }
 }

@@ -23,8 +23,6 @@ layout: default
         </div>
     </header>
 
-    <div class="header-border"></div>
-
     <div class="wrapper">
 
         <a class="post-home" href="{{ '/' | relative_url }}"><span>Home</span></a>
@@ -35,26 +33,23 @@ layout: default
             By<span class="leslie"> Leslie Lai</span>
         </a>
 
-    </div>
-
-    <main class="page-content" aria-label="Content">
-        <div class="wrapper">
+        <main class="page-content" aria-label="Content">
 
             <div class="post-content" itemprop="articleBody">
                 {{ content }}
             </div>
 
+        </main>
+    </div>
+
+    <div class="post-blue-bg">
+        <div class="wrapper">
+            {% include comments.html %}
+
+            {% include comment-new.html %}
+
+            {% include post-recent.html %}
         </div>
-    </main>
-
-    <div class="post-content-bottomright-border"></div>
-
-    {% include comments.html %}
-
-    {% include comment-new.html %}
-
-    {% include post-recent.html %}
-
-    {% include post-footer.html %}
+    </div>
 </article>
 
