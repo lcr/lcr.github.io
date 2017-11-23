@@ -1,3 +1,6 @@
+/*
+ * Content width
+ */
 .site-header,
 .site-nav,
 .page-content,
@@ -21,7 +24,7 @@
 }
 
 .site-header {
-  height: 20vh;
+  height: 25vh;
   padding-top: $spacing-unit * 2.5;
   padding-bottom: $spacing-unit * 3.5;
   background: linear-gradient(-5deg, transparent 150px, $gray-color 0);
