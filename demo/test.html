@@ -4,46 +4,43 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
-        .header-border {
-            border-top: 100px solid #000;
-            border-right: -webkit-calc(100vw - 17px) solid transparent;
-            border-right: calc(100vw - 17px) solid transparent;
-        /*@media screen and(max-device-width: 1024px) {*/
-            /*border-right: 100vw solid transparent;*/
-        /*}*/
-        width: 0;
-        height: 0;
+        * {
+            margin: 0;
+            padding: 0;
         }
-        .footer-topleft-border {
+
+        .border-topleft {
             border-top: 100px solid #000;
-            border-right: -webkit-calc(100vw - 17px) solid transparent;
-            border-right: calc(100vw - 17px) solid transparent;
-        /*@media screen and(max-device-width: 1024px) {*/
-            /*border-right: 100vw solid transparent;*/
-        /*}*/
-        width: 0;
-        height: 0;
+            border-right: 100vw solid transparent;
         }
-        .post-content-bottomright-border {
+
+        .border-bottomright {
             border-bottom: 100px solid #000;
-            border-left: -webkit-calc(100vw - 17px) solid transparent;
-            border-left: calc(100vw - 17px) solid transparent;
-        /*@media screen and(max-device-width: 1024px) {*/
+            border-left: 100vw solid transparent;
+            /*border-left: calc(100vw - 17px) solid transparent;*/
+            /*@media screen and(max-device-width: 1024px) {*/
             /*border-left: 100vw solid transparent;*/
-        /*}*/
-        width: 0;
-        height: 0;
+            /*}*/
+            /*width: 0;*/
+            /*height: 0;*/
         }
-       .deg{
-           height: 200px;
-           background: linear-gradient(176deg,transparent 100px, #000 0);
-       }
+
+        .deg-topleft {
+            height: 200px;
+            background: linear-gradient(177deg, transparent 100px, #000 0);
+        }
+
+        .deg-bottomright {
+            height: 200px;
+            background: linear-gradient(-3deg, transparent 100px, #000 0);
+        }
     </style>
 </head>
 <body>
-<div class="header-border"></div>
-<div class="footer-topleft-border"></div>
-<div class="post-content-bottomright-border"></div>
-<div class="deg"></div>
+<div class="border-topleft"></div>
+<div class="border-bottomright"></div>
+<div class="deg-topleft"></div>
+<br>
+<div class="deg-bottomright"></div>
 </body>
 </html>
