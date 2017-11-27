@@ -10,16 +10,15 @@ $base-line-height: 1.5 !default;
 
 $spacing-unit:     30px !default;
 
-$black-color:      #222 !default;
+$black-color:      #333 !default;
 $white-color:      #fff !default;
-$brand-color:      #333 !default;
 $gray-color:       #f5f5f5 !default;
 $grey-color:       #4f5155 !default;
 $grey-color-light: lighten($grey-color, 40%) !default;
 $grey-color-dark:  darken($grey-color, 25%) !default;
 $blue-color:       #1f2125 !default;
 $link-color:       #e55 !default;
-$liner-color:      linear-gradient(45deg, #e55, #909) !default;
+$linear-color:      linear-gradient(45deg, #e55, #909) !default;
 
 $table-text-align: left !default;
 
@@ -49,5 +48,4 @@ $on-palm:          600px !default;
 @import
   "minima/base",
   "minima/layout",
-  "minima/syntax-highlighting"
-;
+  "minima/syntax-highlighting";

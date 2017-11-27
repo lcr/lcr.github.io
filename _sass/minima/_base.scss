@@ -78,11 +78,11 @@ h1, h2, h3, h4, h5, h6 {
  */
 a {
   text-decoration: none;
-  color: $brand-color;
+  color: $black-color;
   -webkit-tap-highlight-color: transparent;
 
   &:visited {
-    color: darken($brand-color, 15%);
+    color: darken($black-color, 15%);
   }
 
   &:hover {
