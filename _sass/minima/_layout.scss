@@ -296,7 +296,6 @@
   color: $white-color;
   background: lighten($blue-color, 5%);
   @include media-query($on-palm) {
-    float: none;
     width: 100%;
   }
   &:focus {
@@ -316,7 +315,6 @@
   color: $white-color;
   background: lighten($blue-color, 5%);
   @include media-query($on-palm) {
-    float: none;
     width: 100%;
   }
   &:focus {

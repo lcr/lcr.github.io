@@ -388,7 +388,6 @@ table {
   background: #2b2d33; }
   @media screen and (max-width: 600px) {
     .comment-new-text {
-      float: none;
       width: 100%; } }
   .comment-new-text:focus {
     outline: none; }
@@ -406,7 +405,6 @@ table {
   background: #2b2d33; }
   @media screen and (max-width: 600px) {
     .comment-new-email {
-      float: none;
       width: 100%; } }
   .comment-new-email:focus {
     outline: none; }
