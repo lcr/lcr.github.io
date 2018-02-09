@@ -1,58 +1,58 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>CSS水平居中</title>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS水平居中</title>
 
-    <style>
-        .parent1 {
-            height: 50px;
-            text-align: center;
-            background-color: #f0f0f0;
-        }
+  <style>
+    .parent1 {
+      height: 50px;
+      text-align: center;
+      background-color: #f0f0f0;
+    }
 
-        .parent2 {
-            margin: 0 auto;
-            width: 800px;
-            height: 50px;
-            background-color: #f0f0f0;
-        }
+    .parent2 {
+      margin: 0 auto;
+      width: 800px;
+      height: 50px;
+      background-color: #f0f0f0;
+    }
 
-        .parent3 {
-            height: 50px;
-            text-align: center;
-            background-color: #f0f0f0;
-        }
+    .parent3 {
+      height: 50px;
+      text-align: center;
+      background-color: #f0f0f0;
+    }
 
-        .child3 {
-            display: inline;
-        }
+    .child3 {
+      display: inline;
+    }
 
-        .parent4 {
-            display: -webkit-flex;
-            display: flex;
-            -webkit-justify-content:center;
-            justify-content: center;
-            height: 50px;
-            background-color: #f0f0f0;
-        }
+    .parent4 {
+      display: -webkit-flex;
+      display: flex;
+      -webkit-justify-content:center;
+      justify-content: center;
+      height: 50px;
+      background-color: #f0f0f0;
+    }
 
-        .parent5 {
-            position: relative;
-        }
+    .parent5 {
+      position: relative;
+    }
 
-        .child5 {
-            position: absolute;
-            left: 50%;
-            width: 800px;
-            height: 50px;
-            margin-left: -400px;
-            background-color: #f0f0f0;
-        }
-    </style>
+    .child5 {
+      position: absolute;
+      left: 50%;
+      width: 800px;
+      height: 50px;
+      margin-left: -400px;
+      background-color: #f0f0f0;
+    }
+  </style>
 
 </head>
 
@@ -65,7 +65,7 @@
 <br>
 
 <div class="parent3">
-    <div class="child3">不定宽块级元素 子元素display:inline 父元素text-align:center</div>
+  <div class="child3">不定宽块级元素 子元素display:inline 父元素text-align:center</div>
 </div>
 <br>
 
@@ -73,7 +73,7 @@
 <br>
 
 <div class="parent5">
-    <div class="child5">一大一小块级元素 大容器relative，小容器absolute，沿x轴右移50%，margin-left左移本身高度的50%</div>
+  <div class="child5">一大一小块级元素 大容器relative，小容器absolute，沿x轴右移50%，margin-left左移本身高度的50%</div>
 </div>
 
 </body>

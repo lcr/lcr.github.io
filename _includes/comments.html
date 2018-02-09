@@ -1,9 +1,9 @@
 {% if site.data.comments[page.slug] %}
 
 <h2 class="comments-size">
-    {% if site.data.comments[page.slug].size >= 1 %}
-    COMMENTS (<span>{{ site.data.comments[page.slug] | size }}</span>)
-    {% endif %}
+  {% if site.data.comments[page.slug].size >= 1 %}
+  COMMENTS (<span>{{ site.data.comments[page.slug] | size }}</span>)
+  {% endif %}
 </h2>
 
 {% assign comments = site.data.comments[page.slug] | sort %}
