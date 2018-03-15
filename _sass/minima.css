@@ -336,7 +336,9 @@ table {
     .post-content .post-title {
       font-size: 36px; } }
 .post-content .post-meta {
-  padding: 10px 0;
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
   font-size: 14px;
   font-style: italic;
   color: #4f5155; }
@@ -504,6 +506,54 @@ body {
 
 article {
   flex: 1; }
+
+.about-title {
+  font-size: 40px;
+  color: #b5b7bb; }
+  @media screen and (max-width: 800px) {
+    .about-title {
+      text-align: center;
+      font-size: 36px; } }
+
+ul.about {
+  margin-left: 0;
+  margin-top: 60px; }
+  @media screen and (max-width: 800px) {
+    ul.about {
+      margin-top: 30px; } }
+  ul.about li {
+    display: inline;
+    list-style: none; }
+    ul.about li a {
+      display: inline-block;
+      margin-right: 16px;
+      padding-top: 16px;
+      padding-bottom: 12px;
+      padding-left: 18px;
+      padding-right: 18px;
+      border: 2px solid;
+      border-radius: 100%;
+      border-color: #b5b7bb; }
+      @media screen and (max-width: 600px) {
+        ul.about li a {
+          display: block;
+          margin: 6px 36px;
+          padding: 3px 50px;
+          width: auto;
+          border-radius: 8px;
+          text-align: left; } }
+      ul.about li a:link, ul.about li a:visited, ul.about li a:hover, ul.about li a:active {
+        color: #b5b7bb; }
+      ul.about li a:hover {
+        background: #f5f5f5; }
+      ul.about li a svg {
+        fill: #b5b7bb; }
+      ul.about li a span {
+        display: none; }
+        @media screen and (max-width: 600px) {
+          ul.about li a span {
+            display: inline;
+            font-size: 19.2px; } }
 
 /*
  * Syntax highlighting styles
