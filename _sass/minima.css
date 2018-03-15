@@ -169,73 +169,95 @@ table {
 /*
  * Site header
  */
-.site-head-line {
-  height: 6px;
-  background: linear-gradient(45deg, #e55, #909); }
-
 .site-header {
-  height: 25vh;
-  padding-top: 75px;
-  padding-bottom: 105px;
-  background: linear-gradient(-5deg, transparent 150px, #f5f5f5 0); }
-  .site-header .site-title {
-    font-size: 48px;
-    letter-spacing: -1px;
-    line-height: 1; }
-    @media screen and (max-width: 800px) {
-      .site-header .site-title {
-        font-size: 40px; } }
+  position: relative;
+  min-height: 55.95px;
+  background: #1f2125;
+  margin-bottom: 60px; }
 
-/*
- * Site nav
- */
+.site-title {
+  float: left;
+  margin-bottom: 0;
+  font-size: 26px;
+  font-weight: 300;
+  line-height: 54px;
+  letter-spacing: -1px; }
+  .site-title, .site-title:link, .site-title:visited, .site-title:hover, .site-title:active {
+    color: #fff; }
+
 .site-nav {
-  font-size: 24px; }
+  float: right;
+  line-height: 54px; }
+  .site-nav .nav-trigger {
+    display: none; }
+  .site-nav .menu-icon {
+    display: none; }
+  .site-nav .page-link {
+    color: #fff;
+    line-height: 1.5; }
+    .site-nav .page-link:not(:last-child) {
+      margin-right: 20px; }
   @media screen and (max-width: 600px) {
     .site-nav {
-      font-size: 19.2px; } }
-  .site-nav a {
-    color: #5b5e62; }
-  .site-nav .header-home {
-    float: right;
-    margin-top: -90px;
-    text-align: right;
-    line-height: 1; }
-    .site-nav .header-home .frontend,
-    .site-nav .header-home .development {
-      display: block; }
-    .site-nav .header-home .leslie {
-      font-size: 48px; }
-      @media screen and (max-width: 600px) {
-        .site-nav .header-home .leslie {
-          font-size: 32px; } }
-  .site-nav .post-home {
-    float: left;
-    margin-top: -15px; }
-    @media screen and (max-width: 600px) {
-      .site-nav .post-home {
-        margin-top: -45px; } }
+      position: absolute;
+      top: 9px;
+      right: 10px;
+      background-color: #fff;
+      border: 1px solid #b5b7bb;
+      border-radius: 5px;
+      text-align: right; }
+      .site-nav label[for="nav-trigger"] {
+        display: block;
+        float: right;
+        width: 36px;
+        height: 36px;
+        z-index: 2;
+        cursor: pointer; }
+      .site-nav .menu-icon {
+        display: block;
+        float: right;
+        width: 36px;
+        height: 26px;
+        line-height: 0;
+        padding-top: 10px;
+        text-align: center; }
+        .site-nav .menu-icon > svg path {
+          fill: #1f2125; }
+      .site-nav input ~ .trigger {
+        clear: both;
+        display: none; }
+      .site-nav input:checked ~ .trigger {
+        display: block;
+        padding-bottom: 5px; }
+      .site-nav .page-link {
+        display: block;
+        padding: 5px 10px;
+        color: #1f2125; }
+        .site-nav .page-link:not(:last-child) {
+          margin-right: 0; } }
 
 /*
  * Page content
  */
 .post-list {
-  margin-left: 0;
-  padding-top: 60px;
+  margin: 0;
   list-style: none; }
   .post-list > li {
-    border-bottom: 1px solid #b5b7bb;
-    padding: 60px 0; }
+    padding: 60px 0;
+    border-bottom: 1px solid #b5b7bb; }
+    .post-list > li:first-child {
+      margin-top: -60px; }
+    .post-list > li:last-child {
+      border-bottom: none; }
     .post-list > li > h2 {
       display: inline-block;
       margin-bottom: 0;
-      font-size: 32px; }
+      font-size: 26px; }
       .post-list > li > h2 > a {
         display: inline-block;
         text-decoration: none; }
         .post-list > li > h2 > a:after {
           display: block;
-          margin: 0 auto;
           width: 0;
           height: 2px;
           background: linear-gradient(45deg, #e55, #909);
@@ -277,7 +299,8 @@ table {
   display: flex;
   -webkit-justify-content: center;
   justify-content: center;
-  padding: 30px 0; }
+  padding-top: 30px;
+  padding-bottom: 90px; }
   .pagination .pagination-link {
     margin: 0 15px;
     font-size: 32px; }
@@ -305,50 +328,46 @@ table {
 /*
  * Posts
  */
-.post-title {
-  font-size: 38.8px;
+.post-content .post-title {
+  font-size: 26px;
   letter-spacing: -1px;
   line-height: 1; }
   @media screen and (max-width: 800px) {
-    .post-title {
+    .post-content .post-title {
       font-size: 36px; } }
-
-.post-meta {
+.post-content .post-meta {
   padding: 10px 0;
   font-size: 14px;
   font-style: italic;
   color: #4f5155; }
-
-.post-content {
-  padding-top: 120px; }
-  .post-content h2 {
-    font-size: 32px; }
-    @media screen and (max-width: 800px) {
-      .post-content h2 {
-        font-size: 28px; } }
-  .post-content h3 {
-    font-size: 26px; }
-    @media screen and (max-width: 800px) {
-      .post-content h3 {
-        font-size: 22px; } }
-  .post-content h4 {
-    font-size: 20px; }
-    @media screen and (max-width: 800px) {
-      .post-content h4 {
-        font-size: 18px; } }
-  .post-content a {
-    color: #f38383;
-    font-size: 19.2px; }
-    .post-content a:hover {
-      color: #e55; }
+.post-content h2 {
+  font-size: 26px; }
+  @media screen and (max-width: 800px) {
+    .post-content h2 {
+      font-size: 28px; } }
+.post-content h3 {
+  font-size: 26px; }
+  @media screen and (max-width: 800px) {
+    .post-content h3 {
+      font-size: 22px; } }
+.post-content h4 {
+  font-size: 20px; }
+  @media screen and (max-width: 800px) {
+    .post-content h4 {
+      font-size: 18px; } }
+.post-content a {
+  color: #f38383;
+  font-size: 19.2px; }
+  .post-content a:hover {
+    color: #e55; }
 
 /*
  * Comments
  */
 .post-blue-bg {
   padding-top: 150px;
-  color: #bfbfbf;
-  background: linear-gradient(175deg, transparent 150px, #1f2125 0); }
+  color: dimgray;
+  background: linear-gradient(175deg, transparent 150px, #f5f5f5 0); }
 
 .comments-size {
   padding-top: 60px;
@@ -384,8 +403,8 @@ table {
   height: 45px;
   font-size: 24px;
   text-indent: 15px;
-  color: #fff;
-  background: #2b2d33; }
+  color: dimgray;
+  background: #e8e8e8; }
   @media screen and (max-width: 600px) {
     .comment-new-text {
       width: 100%; } }
@@ -401,8 +420,8 @@ table {
   height: 45px;
   font-size: 24px;
   text-indent: 15px;
-  color: #fff;
-  background: #2b2d33; }
+  color: dimgray;
+  background: #e8e8e8; }
   @media screen and (max-width: 600px) {
     .comment-new-email {
       width: 100%; } }
@@ -417,8 +436,8 @@ table {
   height: 240px;
   font-size: 24px;
   text-indent: 15px;
-  color: #fff;
-  background: #2b2d33;
+  color: dimgray;
+  background: #e8e8e8;
   overflow: hidden; }
   .comment-new-message:focus {
     outline: none; }
@@ -431,7 +450,7 @@ table {
   height: 54px;
   font-size: 16px;
   color: #e55;
-  background: #1f2125; }
+  background: #f5f5f5; }
   .comment-new-submit:hover {
     color: #fff;
     background: #e55; }
@@ -442,22 +461,23 @@ table {
  * post recent
  */
 .post-recent {
-  padding: 60px 0;
+  padding-top: 45px;
+  padding-bottom: 90px;
   font-size: 24px; }
   .post-recent .post-recent-newer {
     float: left;
-    color: #bfbfbf; }
+    color: dimgray; }
     .post-recent .post-recent-newer:hover {
       color: #e55; }
   .post-recent .post-recent-older {
     float: right;
-    color: #bfbfbf; }
+    color: dimgray; }
     .post-recent .post-recent-older:hover {
       color: #e55; }
   .post-recent svg {
     width: 18px;
     height: 18px;
-    fill: #bfbfbf; }
+    color: dimgray; }
 
 .icon-left-link:hover path {
   fill: #e55; }
@@ -465,24 +485,25 @@ table {
 .icon-right-link:hover path {
   fill: #e55; }
 
-.post-footer {
-  padding: 60px 0;
-  color: #4f5155; }
-  @media screen and (max-width: 600px) {
-    .post-footer {
-      text-align: center; } }
-
 /*
  * Site footer
  */
 .site-footer {
-  padding-top: 180px;
-  padding-bottom: 60px;
-  color: #4f5155;
-  background: linear-gradient(175deg, transparent 150px, #f5f5f5 0); }
+  padding-top: 45px;
+  padding-bottom: 45px;
+  color: #f5f5f5;
+  background: #1f2125; }
   @media screen and (max-width: 600px) {
     .site-footer {
       text-align: center; } }
+
+body {
+  display: flex;
+  flex-flow: column;
+  min-height: 100vh; }
+
+article {
+  flex: 1; }
 
 /*
  * Syntax highlighting styles

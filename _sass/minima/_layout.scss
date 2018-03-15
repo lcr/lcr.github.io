@@ -18,61 +18,103 @@
 /*
  * Site header
  */
-.site-head-line {
-  height: $spacing-unit / 5;
-  background: $linear-color;
-}
-
 .site-header {
-  height: 25vh;
-  padding-top: $spacing-unit * 2.5;
-  padding-bottom: $spacing-unit * 3.5;
-  background: linear-gradient(-5deg, transparent 150px, $gray-color 0);
-  .site-title {
-    @include relative-font-size(3);
-    letter-spacing: -1px;
-    line-height: 1;
-    @include media-query($on-laptop) {
-      @include relative-font-size(2.5);
-    }
+  // Positioning context for the mobile navigation icon
+  position: relative;
+  min-height: $spacing-unit * 1.865;
+  background: $blue-color;
+  margin-bottom:$spacing-unit * 2;
+}
+
+.site-title {
+  float: left;
+  margin-bottom: 0;
+  @include relative-font-size(1.625);
+  font-weight: 300;
+  line-height: $base-line-height * $base-font-size * 2.25;
+  letter-spacing: -1px;
+
+  &,
+  &:link,
+  &:visited,
+  &:hover,
+  &:active{
+    color: $white-color;
   }
 }
 
-/*
- * Site nav
- */
 .site-nav {
-  font-size: $base-font-size * 1.5;
-  @include media-query($on-palm){
-    font-size: $base-font-size * 1.2;
+  float: right;
+  line-height: $base-line-height * $base-font-size * 2.25;
+
+  .nav-trigger {
+    display: none;
   }
 
-  a{
-    color: lighten($grey-color, 5%);
+  .menu-icon {
+    display: none;
   }
 
-  .header-home {
-    float: right;
-    margin-top: -$spacing-unit * 3;
-    text-align: right;
-    line-height: 1;
-    .frontend ,
-    .development{
-      display: block;
+  .page-link {
+    color: $white-color;
+    line-height: $base-line-height;
+
+    // Gaps between nav items, but not on the last one
+    &:not(:last-child) {
+      margin-right: 20px;
     }
-    .leslie {
-      font-size: $base-font-size * 3;
-      @include media-query($on-palm) {
-        font-size: $base-font-size * 2;
+  }
+
+  @include media-query($on-palm) {
+    position: absolute;
+    top: 9px;
+    right: $spacing-unit / 3;
+    background-color: $white-color;
+    border: 1px solid $grey-color-light;
+    border-radius: 5px;
+    text-align: right;
+
+    label[for="nav-trigger"] {
+      display: block;
+      float: right;
+      width: 36px;
+      height: 36px;
+      z-index: 2;
+      cursor: pointer;
+    }
+
+    .menu-icon {
+      display: block;
+      float: right;
+      width: 36px;
+      height: 26px;
+      line-height: 0;
+      padding-top: 10px;
+      text-align: center;
+
+      > svg path {
+        fill: $blue-color;
       }
     }
-  }
 
-  .post-home {
-    float: left;
-    margin-top: -$spacing-unit / 2;
-    @include media-query($on-palm) {
-      margin-top: -$spacing-unit * 1.5;
+    input ~ .trigger {
+      clear: both;
+      display: none;
+    }
+
+    input:checked ~ .trigger {
+      display: block;
+      padding-bottom: 5px;
+    }
+
+    .page-link {
+      display: block;
+      padding: 5px 10px;
+      color: $blue-color;
+
+      &:not(:last-child) {
+        margin-right: 0;
+      }
     }
   }
 }
@@ -81,25 +123,30 @@
  * Page content
  */
 .post-list {
-  margin-left: 0;
-  padding-top: $spacing-unit * 2;
+  margin: 0;
   list-style: none;
 
   > li {
-    border-bottom: 1px solid $grey-color-light;
+    &:first-child {
+      margin-top: -($spacing-unit * 2);
+    }
     padding: ($spacing-unit * 2) 0;
+    border-bottom: 1px solid $grey-color-light;
+    &:last-child{
+      border-bottom: none;
+  }
+
 
     > h2 {
       display: inline-block;
       margin-bottom: 0;
-      font-size: $base-font-size * 2;
+      @include relative-font-size(1.625);
 
       > a {
         display: inline-block;
         text-decoration: none;
         &:after {
           display: block;
-          margin: 0 auto;
           width: 0;
           height: 2px;
           background: $linear-color;
@@ -152,7 +199,8 @@
   display: flex;
   -webkit-justify-content: center;
   justify-content: center;
-  padding: $spacing-unit 0;
+  padding-top: $spacing-unit;
+  padding-bottom:$spacing-unit * 3;
   .pagination-link {
     margin: 0 ($spacing-unit / 2);
     font-size: $base-font-size * 2;
@@ -192,28 +240,26 @@
  * Posts
  */
 
-.post-title {
-  @include relative-font-size(2.425);
-  letter-spacing: -1px;
-  line-height: 1;
-
-  @include media-query($on-laptop) {
-    @include relative-font-size(2.25);
-  }
-}
-
-.post-meta {
-  padding: ($spacing-unit / 3) 0;
-  font-size: $small-font-size;
-  font-style: italic;
-  color: $grey-color;
-}
-
 .post-content {
-  padding-top: $spacing-unit * 4;
+  .post-title {
+    @include relative-font-size(1.625);
+    letter-spacing: -1px;
+    line-height: 1;
+
+    @include media-query($on-laptop) {
+      @include relative-font-size(2.25);
+    }
+  }
+
+  .post-meta {
+    padding: ($spacing-unit / 3) 0;
+    font-size: $small-font-size;
+    font-style: italic;
+    color: $grey-color;
+  }
 
   h2 {
-    @include relative-font-size(2);
+    @include relative-font-size(1.625);
 
     @include media-query($on-laptop) {
       @include relative-font-size(1.75);
@@ -249,8 +295,8 @@
  */
 .post-blue-bg {
   padding-top: $spacing-unit * 5;
-  color: darken($white-color, 25%);
-  background: linear-gradient(175deg, transparent 150px, $blue-color 0);
+  color: darken($gray-color, 55%);
+  background: linear-gradient(175deg, transparent 150px, $gray-color 0);
 }
 
 .comments-size {
@@ -293,8 +339,8 @@
   height: $spacing-unit * 1.5;
   font-size: $base-font-size * 1.5;
   text-indent: $spacing-unit / 2;
-  color: $white-color;
-  background: lighten($blue-color, 5%);
+  color: darken($gray-color, 55%);
+  background: darken($gray-color, 5%);
   @include media-query($on-palm) {
     width: 100%;
   }
@@ -312,8 +358,8 @@
   height: $spacing-unit * 1.5;
   font-size: $base-font-size * 1.5;
   text-indent: $spacing-unit / 2;
-  color: $white-color;
-  background: lighten($blue-color, 5%);
+  color: darken($gray-color, 55%);
+  background: darken($gray-color, 5%);
   @include media-query($on-palm) {
     width: 100%;
   }
@@ -330,8 +376,8 @@
   height: $spacing-unit * 8;
   font-size: $base-font-size * 1.5;
   text-indent: $spacing-unit / 2;
-  color: $white-color;
-  background: lighten($blue-color, 5%);
+  color: darken($gray-color, 55%);
+  background: darken($gray-color, 5%);
   overflow: hidden;
   &:focus {
     outline: none
@@ -346,7 +392,7 @@
   height: $spacing-unit * 1.8;
   font-size: $base-font-size;
   color: $link-color;
-  background: $blue-color;
+  background: $gray-color;
   &:hover {
     color: $white-color;
     background: $link-color;
@@ -360,12 +406,13 @@
  * post recent
  */
 .post-recent {
-  padding: ($spacing-unit * 2) 0;
+  padding-top: $spacing-unit * 1.5;
+  padding-bottom: $spacing-unit * 3;
   font-size: $base-font-size * 1.5;
 
   .post-recent-newer {
     float: left;
-    color: darken($white-color, 25%);
+    color: darken($gray-color, 55%);
     &:hover {
       color: $link-color;
     }
@@ -373,7 +420,7 @@
 
   .post-recent-older {
     float: right;
-    color: darken($white-color, 25%);
+    color: darken($gray-color, 55%);
     &:hover {
       color: $link-color;
     }
@@ -382,7 +429,7 @@
   svg {
     width: 18px;
     height: 18px;
-    fill: darken($white-color, 25%);
+    color: darken($gray-color, 55%);
   }
 }
 
@@ -394,23 +441,24 @@
   fill: $link-color;
 }
 
-.post-footer {
-  padding: ($spacing-unit * 2) 0;
-  color: $grey-color;
+/*
+ * Site footer
+ */
+.site-footer {
+  padding-top: $spacing-unit * 1.5;
+  padding-bottom: $spacing-unit * 1.5;
+  color: $gray-color;
+  background: $blue-color;
   @include media-query($on-palm) {
     text-align: center;
   }
 }
 
-/*
- * Site footer
- */
-.site-footer {
-  padding-top: $spacing-unit * 6;
-  padding-bottom: $spacing-unit * 2;
-  color: $grey-color;
-  background: linear-gradient(175deg, transparent 150px, $gray-color 0);
-  @include media-query($on-palm) {
-    text-align: center;
-  }
+body{
+  display: flex;
+  flex-flow: column;
+  min-height:100vh;
+}
+article{
+  flex: 1;
 }

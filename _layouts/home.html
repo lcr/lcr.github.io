@@ -2,8 +2,6 @@
 layout: default
 ---
 
-{% include header.html %}
-
 <div class="page-content" aria-label="Content">
   <ul class="post-list">
     {% for post in paginator.posts %}
@@ -27,5 +25,3 @@ layout: default
 </div>
 
 {% include pagination.html %}
-
-{% include footer.html %}
