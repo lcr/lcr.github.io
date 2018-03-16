@@ -210,7 +210,7 @@
 
   .pagination-link-active {
     margin: 0 ($spacing-unit / 2);
-    border-radius: 50%;
+    border-radius: 100%;
     width: $spacing-unit * 1.6;
     height: 100%;
     font-size: $base-font-size * 2;
@@ -485,10 +485,10 @@ ul.about{
     a{
       display: inline-block;
       margin-right: 16px;
-      padding-top: 16px;
-      padding-bottom: 12px;
-      padding-left: 18px;
-      padding-right: 18px;
+      width:$spacing-unit * 2;
+      height: $spacing-unit * 2;
+      text-align: center;
+      line-height:$spacing-unit * 2.5;
       border: 2px solid;
       border-radius: 100%;
       border-color: $grey-color-light;
