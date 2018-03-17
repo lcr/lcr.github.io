@@ -325,7 +325,13 @@
 /*
  * Comment new
  */
-
+.comment-new::after{
+  @include media-query($on-palm){
+      content: "";
+      display: block;
+      clear: both;
+  }
+}
 .comment-new-title {
   padding-top: $spacing-unit * 2;
   font-size: $base-font-size * 2;
@@ -343,6 +349,7 @@
   color: darken($gray-color, 55%);
   background: darken($gray-color, 5%);
   @include media-query($on-palm) {
+    float: none;
     width: 100%;
   }
   &:focus {
@@ -362,6 +369,7 @@
   color: darken($gray-color, 55%);
   background: darken($gray-color, 5%);
   @include media-query($on-palm) {
+    float: none;
     width: 100%;
   }
   &:focus {

@@ -392,6 +392,12 @@ table {
 /*
  * Comment new
  */
+@media screen and (max-width: 600px) {
+  .comment-new::after {
+    content: "";
+    display: block;
+    clear: both; } }
+
 .comment-new-title {
   padding-top: 60px;
   font-size: 32px; }
@@ -409,6 +415,7 @@ table {
   background: #e8e8e8; }
   @media screen and (max-width: 600px) {
     .comment-new-text {
+      float: none;
       width: 100%; } }
   .comment-new-text:focus {
     outline: none; }
@@ -426,6 +433,7 @@ table {
   background: #e8e8e8; }
   @media screen and (max-width: 600px) {
     .comment-new-email {
+      float: none;
       width: 100%; } }
   .comment-new-email:focus {
     outline: none; }
