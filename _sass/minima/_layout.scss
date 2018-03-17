@@ -495,7 +495,7 @@ ul.about{
       @include media-query($on-palm) {
         display: block;
         margin: 6px 24px;
-        padding: 3px 50px;
+        padding-left: 50px;
         width: auto;
         border-radius: 8px;
         text-align: left;

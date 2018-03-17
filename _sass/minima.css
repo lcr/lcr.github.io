@@ -308,7 +308,7 @@ table {
       color: #e55; }
   .pagination .pagination-link-active {
     margin: 0 15px;
-    border-radius: 10%;
+    border-radius: 100%;
     width: 48px;
     height: 100%;
     font-size: 32px;
@@ -538,7 +538,7 @@ ul.about {
         ul.about li a {
           display: block;
           margin: 6px 24px;
-          padding: 3px 50px;
+          padding-left: 50px;
           width: auto;
           border-radius: 8px;
           text-align: left; } }
