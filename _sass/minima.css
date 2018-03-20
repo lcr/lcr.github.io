@@ -500,13 +500,27 @@ table {
     .site-footer {
       text-align: center; } }
 
-body {
+/*body {
   display: flex;
   flex-flow: column;
-  min-height: 100vh; }
+  min-height: 100vh;
+}
 
 article {
-  flex: 1; }
+  flex: 1;
+}*/
+.about-hello {
+  font-size: 40px;
+  color: #b5b7bb; }
+  @media screen and (max-width: 600px) {
+    .about-hello {
+      font-size: 24px; } }
+  .about-hello hr {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: none;
+    height: 1px;
+    background: #d0d1d3; }
 
 .about-title {
   font-size: 40px;
@@ -514,14 +528,12 @@ article {
   @media screen and (max-width: 600px) {
     .about-title {
       text-align: center;
-      font-size: 36px; } }
+      font-size: 28px; } }
 
 ul.about {
   margin-left: 0;
-  margin-top: 60px; }
-  @media screen and (max-width: 600px) {
-    ul.about {
-      margin-top: 30px; } }
+  margin-top: 30px;
+  margin-bottom: 60px; }
   ul.about li {
     display: inline;
     list-style: none; }

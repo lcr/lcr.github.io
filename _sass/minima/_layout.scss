@@ -454,7 +454,7 @@
   }
 }
 
-body {
+/*body {
   display: flex;
   flex-flow: column;
   min-height: 100vh;
@@ -462,24 +462,35 @@ body {
 
 article {
   flex: 1;
+}*/
+.about-hello{
+  @include relative-font-size(2.5);
+  @include media-query($on-palm) {
+    @include relative-font-size(1.5);
+  }
+  color: $grey-color-light;
+  hr{
+    margin-top:$spacing-unit;
+    margin-bottom:$spacing-unit;
+    border: none;
+    height: 1px;
+    background: lighten($grey-color , 50%);
+  }
 }
-
 .about-title {
   @include relative-font-size(2.5);
   color: $grey-color-light;
 
   @include media-query($on-palm) {
     text-align: center;
-    @include relative-font-size(2.25);
+    @include relative-font-size(1.75);
   }
 }
 
 ul.about {
   margin-left: 0;
-  margin-top: $spacing-unit * 2;
-  @include media-query($on-palm) {
-    margin-top: $spacing-unit;
-  }
+  margin-top: $spacing-unit;
+  margin-bottom:$spacing-unit * 2;
   li {
     display: inline;
     list-style: none;
