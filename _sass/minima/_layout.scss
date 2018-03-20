@@ -238,12 +238,10 @@
 /*
  * Posts
  */
-
 .post-content {
   .post-title {
     @include relative-font-size(1.625);
     letter-spacing: -1px;
-    line-height: 1;
 
     @include media-query($on-laptop) {
       @include relative-font-size(2.25);
@@ -252,7 +250,7 @@
 
   .post-meta {
     display: block;
-    padding-top: $spacing-unit / 3;
+    margin-top: -3px;
     padding-bottom: $spacing-unit / 3;
     font-size: $small-font-size;
     font-style: italic;
@@ -465,7 +463,8 @@ body {
 article {
   flex: 1;
 }
-.about-title{
+
+.about-title {
   @include relative-font-size(2.5);
   color: $grey-color-light;
 
@@ -474,22 +473,23 @@ article {
     @include relative-font-size(2.25);
   }
 }
-ul.about{
-  margin-left:0;
-  margin-top:$spacing-unit * 2;
+
+ul.about {
+  margin-left: 0;
+  margin-top: $spacing-unit * 2;
   @include media-query($on-palm) {
-    margin-top:$spacing-unit;
+    margin-top: $spacing-unit;
   }
-  li{
+  li {
     display: inline;
     list-style: none;
-    a{
+    a {
       display: inline-block;
       margin-right: 16px;
-      width:$spacing-unit * 2;
+      width: $spacing-unit * 2;
       height: $spacing-unit * 2;
       text-align: center;
-      line-height:$spacing-unit * 2.5;
+      line-height: $spacing-unit * 2.5;
       border: 2px solid;
       border-radius: 100%;
       border-color: $grey-color-light;
@@ -504,16 +504,16 @@ ul.about{
       &:link,
       &:visited,
       &:hover,
-      &:active{
+      &:active {
         color: $grey-color-light;
       }
-      &:hover{
+      &:hover {
         background: $gray-color;
       }
-      svg{
+      svg {
         fill: $grey-color-light;
       }
-      span{
+      span {
         display: none;
         @include media-query($on-palm) {
           display: inline;

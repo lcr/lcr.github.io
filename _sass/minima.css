@@ -330,14 +330,13 @@ table {
  */
 .post-content .post-title {
   font-size: 26px;
-  letter-spacing: -1px;
-  line-height: 1; }
+  letter-spacing: -1px; }
   @media screen and (max-width: 800px) {
     .post-content .post-title {
       font-size: 36px; } }
 .post-content .post-meta {
   display: block;
-  padding-top: 10px;
+  margin-top: -3px;
   padding-bottom: 10px;
   font-size: 14px;
   font-style: italic;
