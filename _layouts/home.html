@@ -10,7 +10,7 @@ layout: default
         <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
       </h2>
 
-      {% assign date_format = site.date_format | default: "%B %d. %Y" %}
+      {% assign date_format = site.date_format | default: "%d %b. %Y" %}
       <span class="post-list-meta">{{ post.date | date: date_format }}</span>
 
       {% if post.excerpt != post.content %}
