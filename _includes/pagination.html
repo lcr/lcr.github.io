@@ -1,5 +1,5 @@
 {% if paginator.total_pages >= 1 %}
-<div class="pagination">
+<article class="pagination">
 
   {% if paginator.previous_page %}
   <a class="pagination-link icon-left-link"
@@ -30,5 +30,5 @@
   <span class="pagination-link  icon-right-lighten">{% include icon-right.svg %}</span>
   {% endif %}
 
-</div>
+</article>
 {% endif %}

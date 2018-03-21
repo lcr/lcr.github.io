@@ -1,72 +1,67 @@
-.about-hello{
-  @include relative-font-size(2.5);
-  @include media-query($on-palm) {
-    @include relative-font-size(1.5);
-  }
+/*
+ * page-about
+ */
+.page-about {
   color: $grey-color-light;
-  hr{
-    margin-top:$spacing-unit;
-    margin-bottom:$spacing-unit;
+  p {
+    @include relative-font-size(2);
+    @include media-query($on-laptop) {
+      @include relative-font-size(1.75);
+    }
+  }
+  hr {
+    margin-top: $spacing-unit;
+    margin-bottom: $spacing-unit;
     border: none;
     height: 1px;
-    background: lighten($grey-color , 50%);
+    background: lighten($grey-color, 50%);
   }
-}
-.about-title {
-  @include relative-font-size(2.5);
-  color: $grey-color-light;
-
-  @include media-query($on-palm) {
-    text-align: center;
-    @include relative-font-size(1.75);
-  }
-}
-
-ul.about {
-  margin-left: 0;
-  margin-top: $spacing-unit;
-  margin-bottom:$spacing-unit * 2;
-  li {
-    display: inline;
-    list-style: none;
-    a {
-      display: inline-block;
-      margin-right: 16px;
-      width: $spacing-unit * 2;
-      height: $spacing-unit * 2;
-      text-align: center;
-      line-height: $spacing-unit * 2.5;
-      border: 2px solid;
-      border-radius: 100%;
-      border-color: $grey-color-light;
-      @include media-query($on-palm) {
-        display: block;
-        margin: 6px 24px;
-        padding-left: 50px;
-        width: auto;
-        border-radius: 8px;
-        text-align: left;
-      }
-      &:link,
-      &:visited,
-      &:hover,
-      &:active {
-        color: $grey-color-light;
-      }
-      &:hover {
-        background: $gray-color;
-      }
-      svg {
-        fill: $grey-color-light;
-      }
-      span {
-        display: none;
+  ul {
+    margin-left: 0;
+    margin-top: $spacing-unit / 3;
+    margin-bottom: $spacing-unit * 2;
+    li {
+      display: inline;
+      list-style: none;
+      a {
+        display: inline-block;
+        margin-right: 16px;
+        width: $spacing-unit * 2;
+        height: $spacing-unit * 2;
+        text-align: center;
+        line-height: $spacing-unit * 2.5;
+        border: 2px solid;
+        border-radius: 100%;
         @include media-query($on-palm) {
-          display: inline;
-          margin-left: $spacing-unit / 6;
-          font-size: $base-font-size * 1.2;
+          display: block;
+          margin: 6px 0;
+          padding-left: $spacing-unit * 2;
+          width: auto;
+          border-radius: 8px;
+          text-align: left;
+        }
+        &:link,
+        &:visited,
+        &:hover,
+        &:active {
+          color: $grey-color-light;
+        }
+        &:hover {
+          background: $gray-color;
+        }
+        svg {
+          fill: $grey-color-light;
+        }
+        span {
+          display: none;
+          @include media-query($on-palm) {
+            display: inline;
+            margin-left: $spacing-unit / 6;
+            font-size: $base-font-size * 1.2;
+          }
         }
       }
     }
   }
 }
+

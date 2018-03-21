@@ -139,7 +139,7 @@
     > h2 {
       display: inline-block;
       margin-bottom: 0;
-      @include relative-font-size(1.625);
+      //@include relative-font-size(1.625);
 
       > a {
         display: inline-block;
@@ -240,17 +240,11 @@
  */
 .post-content {
   .post-title {
-    @include relative-font-size(1.625);
     letter-spacing: -1px;
-
-    @include media-query($on-laptop) {
-      @include relative-font-size(2.25);
-    }
   }
 
   .post-meta {
     display: block;
-    margin-top: -3px;
     padding-bottom: $spacing-unit / 3;
     font-size: $small-font-size;
     font-style: italic;
@@ -258,7 +252,7 @@
   }
 
   h2 {
-    @include relative-font-size(1.625);
+    @include relative-font-size(2);
 
     @include media-query($on-laptop) {
       @include relative-font-size(1.75);
@@ -302,7 +296,6 @@
   padding-top: $spacing-unit * 2;
   border-bottom: 2px solid $grey-color-light;
   padding-bottom: $spacing-unit / 3;
-  font-size: $base-font-size * 2;
 }
 
 .comments-name {
@@ -325,7 +318,6 @@
  */
 .comment-new-title {
   padding-top: $spacing-unit * 2;
-  font-size: $base-font-size * 2;
 }
 
 .comment-new-text {
@@ -403,7 +395,7 @@
 }
 
 /*
- * post recent
+ * post-recent
  */
 .post-recent {
   padding-top: $spacing-unit * 1.5;
@@ -442,7 +434,7 @@
 }
 
 /*
- * Site footer
+ * Site-footer
  */
 .site-footer {
   padding-top: $spacing-unit * 1.5;
