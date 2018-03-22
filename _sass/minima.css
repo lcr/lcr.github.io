@@ -1,6 +1,315 @@
+/*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0; }
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */ }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent; }
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */ }
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder; }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */ }
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible; }
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none; }
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button; }
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em; }
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */ }
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline; }
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */ }
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */ }
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block; }
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item; }
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none; }
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none; }
+
 /*
  * Reset some basic elements
  */
+/*
+body {
+  display: flex;
+  flex-flow: column;
+  min-height: 100vh;
+}
+*/
+article {
+  min-height: calc(100vh - 221px); }
+
 body, h1, h2, h3, h4, h5, h6,
 p, blockquote, pre, hr,
 dl, dd, ol, ul, figure {
@@ -206,6 +515,9 @@ h4 {
   font-weight: 300;
   line-height: 54px;
   letter-spacing: -1px; }
+  @media screen and (max-width: 800px) {
+    .site-title {
+      font-size: 20px; } }
   .site-title, .site-title:link, .site-title:visited, .site-title:hover, .site-title:active {
     color: #fff; }
 
@@ -216,10 +528,15 @@ h4 {
     display: none; }
   .site-nav .menu-icon {
     display: none; }
-  .site-nav .page-link {
-    color: #fff;
+  .site-nav a.page-link {
     line-height: 1.5; }
-    .site-nav .page-link:not(:last-child) {
+    .site-nav a.page-link:link, .site-nav a.page-link:visited {
+      color: #fff; }
+    .site-nav a.page-link:hover {
+      color: #b5b7bb; }
+    .site-nav a.page-link:active {
+      color: #fff; }
+    .site-nav a.page-link:not(:last-child) {
       margin-right: 20px; }
   @media screen and (max-width: 600px) {
     .site-nav {
@@ -253,336 +570,240 @@ h4 {
       .site-nav input:checked ~ .trigger {
         display: block;
         padding-bottom: 5px; }
-      .site-nav .page-link {
+      .site-nav a.page-link {
         display: block;
-        padding: 5px 10px;
-        color: #24292e; }
-        .site-nav .page-link:not(:last-child) {
+        padding: 5px 10px; }
+        .site-nav a.page-link:link, .site-nav a.page-link:visited, .site-nav a.page-link:hover, .site-nav a.page-link:active {
+          color: #24292e; }
+        .site-nav a.page-link:not(:last-child) {
           margin-right: 0; } }
 
 /*
  * Page content
  */
+/*
 .post-list {
   margin: 0;
-  list-style: none; }
-  .post-list > li {
-    padding: 60px 0;
-    border-bottom: 1px solid #b5b7bb; }
-    .post-list > li:first-child {
-      margin-top: -60px; }
-    .post-list > li:last-child {
-      border-bottom: none; }
-    .post-list > li > h2 {
+  list-style: none;
+
+  > li {
+    &:first-child {
+      margin-top: -($spacing-unit * 2);
+    }
+    padding: ($spacing-unit * 2) 0;
+    border-bottom: 1px solid $grey-color-light;
+    &:last-child {
+      border-bottom: none;
+    }
+
+    > h2 {
       display: inline-block;
-      margin-bottom: 0; }
-      .post-list > li > h2 > a {
+      margin-bottom: 0;
+      //@include relative-font-size(1.625);
+
+      > a {
         display: inline-block;
-        text-decoration: none; }
-        .post-list > li > h2 > a:after {
+        text-decoration: none;
+        &:after {
           display: block;
           width: 0;
           height: 2px;
-          background: linear-gradient(45deg, #e55, #909);
+          background: $linear-color;
           transition: width .5s ease, background-color .5s ease;
-          content: ''; }
-        .post-list > li > h2 > a:hover:after {
+          content: '';
+        }
+        &:hover:after {
           width: 100%;
-          background: linear-gradient(45deg, #e55, #909); }
-    .post-list > li .post-list-meta {
+          background: $linear-color;
+        }
+      }
+    }
+
+    .post-list-meta {
       display: block;
-      padding: 10px 0;
-      font-size: 14px;
+      padding: ($spacing-unit / 3) 0;
+      font-size: $small-font-size;
       font-style: italic;
-      color: #4f5155; }
-    .post-list > li .post-list-readmore {
+      color: $grey-color;
+    }
+
+    .post-list-readmore {
       display: -ms-inline-flexbox;
       display: inline-flex;
       -webkit-box-align: center;
       align-items: center;
-      margin-top: 15px;
-      border: 0.1rem solid #e55;
-      border-radius: 30px;
-      padding: 0 30px;
-      height: 54px;
-      font-size: 16px;
+      margin-top: $spacing-unit / 2;
+      border: 0.1rem solid $link-color;
+      border-radius: $spacing-unit;
+      padding: 0 $spacing-unit;
+      height: $spacing-unit * 1.8;
+      font-size: $base-font-size;
       text-decoration: none;
-      color: #e55; }
-      .post-list > li .post-list-readmore:hover {
-        border: 0.1rem solid #333;
-        color: #fff;
-        background: #333;
+      color: $link-color;
+      &:hover {
+        border: 0.1rem solid $black-color;
+        color: $white-color;
+        background: $black-color;
         -webkit-transition: 500ms;
         -moz-transition: 500ms;
         -o-transition: 500ms;
-        transition: 500ms; }
+        transition: 500ms;
+      }
+    }
+  }
+}
 
 .pagination {
   display: -webkit-flex;
   display: flex;
   -webkit-justify-content: center;
   justify-content: center;
-  padding-top: 30px;
-  padding-bottom: 90px; }
-  .pagination .pagination-link {
-    margin: 0 15px;
-    font-size: 32px; }
-    .pagination .pagination-link:hover {
-      color: #e55; }
-  .pagination .pagination-link-active {
-    margin: 0 15px;
-    border-radius: 100%;
-    width: 48px;
-    height: 100%;
-    font-size: 32px;
-    text-align: center;
-    color: #fff;
-    background: #e55;
-    cursor: default; }
-  .pagination .icon-left-lighten {
-    fill: #b3b3b3; }
-    .pagination .icon-left-lighten:hover path {
-      fill: #f59b9b; }
-  .pagination .icon-right-lighten {
-    fill: #b3b3b3; }
-    .pagination .icon-right-lighten:hover path {
-      fill: #f59b9b; }
+  padding-top: $spacing-unit;
+  padding-bottom: $spacing-unit * 3;
+  .pagination-link {
+    margin: 0 ($spacing-unit / 2);
+    font-size: $base-font-size * 2;
+    &:hover {
+      color: $link-color;
+    }
+  }
 
+  .pagination-link-active {
+    margin: 0 ($spacing-unit / 2);
+    border-radius: 100%;
+    width: $spacing-unit * 1.6;
+    height: 100%;
+    font-size: $base-font-size * 2;
+    text-align: center;
+    color: $white-color;
+    background: $link-color;
+    cursor: default;
+  }
+
+  .icon-left-lighten {
+    fill: lighten($black-color, 50%);
+    &:hover path {
+      fill: lighten($link-color, 15%)
+    }
+  }
+
+  .icon-right-lighten {
+    fill: lighten($black-color, 50%);
+    &:hover path {
+      fill: lighten($link-color, 15%)
+    }
+  }
+}
+*/
 /*
  * Posts
  */
-.post-content .post-title {
-  letter-spacing: -1px; }
-.post-content .post-meta {
-  display: block;
-  padding-bottom: 10px;
-  font-size: 14px;
-  font-style: italic;
-  color: #4f5155; }
-.post-content h2 {
-  font-size: 32px; }
-  @media screen and (max-width: 800px) {
-    .post-content h2 {
-      font-size: 28px; } }
-.post-content h3 {
-  font-size: 26px; }
-  @media screen and (max-width: 800px) {
-    .post-content h3 {
-      font-size: 22px; } }
-.post-content h4 {
-  font-size: 20px; }
-  @media screen and (max-width: 800px) {
-    .post-content h4 {
-      font-size: 18px; } }
-.post-content a {
-  color: #f38383;
-  font-size: 19.2px; }
-  .post-content a:hover {
-    color: #e55; }
+/*.post-content {
+  .post-title {
+    letter-spacing: -1px;
+  }
 
-/*
- * Comments
- */
-.post-blue-bg {
-  padding-top: 150px;
-  color: dimgray;
-  background: linear-gradient(175deg, transparent 150px, #f5f5f5 0); }
+  .post-meta {
+    display: block;
+    padding-bottom: $spacing-unit / 3;
+    font-size: $small-font-size;
+    font-style: italic;
+    color: $grey-color;
+  }
 
-.comments-size {
-  padding-top: 60px;
-  border-bottom: 2px solid #b5b7bb;
-  padding-bottom: 10px; }
+  h2 {
+    @include relative-font-size(2);
 
-.comments-name {
-  padding-top: 15px;
-  font-size: 24px; }
+    @include media-query($on-laptop) {
+      @include relative-font-size(1.75);
+    }
+  }
 
-.comments-date {
-  padding: 10px 0;
-  font-style: italic;
-  font-size: 14px; }
+  h3 {
+    @include relative-font-size(1.625);
 
-.comments-message {
-  border-bottom: 1px solid #b5b7bb; }
+    @include media-query($on-laptop) {
+      @include relative-font-size(1.375);
+    }
+  }
 
-/*
- * Comment new
- */
-.comment-new-title {
-  padding-top: 60px; }
+  h4 {
+    @include relative-font-size(1.25);
 
-.comment-new-text {
-  float: left;
-  margin-top: 30px;
-  border: 0;
-  border-radius: 6px;
-  width: 48%;
-  height: 45px;
-  font-size: 24px;
-  text-indent: 15px;
-  color: dimgray;
-  background: #e8e8e8; }
-  @media screen and (max-width: 600px) {
-    .comment-new-text {
-      float: none;
-      width: 100%; } }
-  .comment-new-text:focus {
-    outline: none; }
-
-.comment-new-email {
-  float: right;
-  margin-top: 30px;
-  border: 0;
-  border-radius: 6px;
-  width: 48%;
-  height: 45px;
-  font-size: 24px;
-  text-indent: 15px;
-  color: dimgray;
-  background: #e8e8e8; }
-  @media screen and (max-width: 600px) {
-    .comment-new-email {
-      float: none;
-      width: 100%; } }
-  .comment-new-email:focus {
-    outline: none; }
-
-.comment-new-message {
-  margin-top: 30px;
-  border: 0;
-  border-radius: 6px;
-  width: 100%;
-  height: 240px;
-  font-size: 24px;
-  text-indent: 15px;
-  color: dimgray;
-  background: #e8e8e8;
-  overflow: hidden; }
-  .comment-new-message:focus {
-    outline: none; }
-
-.comment-new-submit {
-  margin-top: 30px;
-  border: 0.1rem solid #e55;
-  border-radius: 30px;
-  padding: 0 30px;
-  height: 54px;
-  font-size: 16px;
-  color: #e55;
-  background: #f5f5f5; }
-  .comment-new-submit:hover {
-    color: #fff;
-    background: #e55; }
-  .comment-new-submit:focus {
-    outline: none; }
-
-/*
- * post-recent
- */
-.post-recent {
-  padding-top: 45px;
-  padding-bottom: 90px;
-  font-size: 24px; }
-  .post-recent .post-recent-newer {
-    float: left;
-    color: dimgray; }
-    .post-recent .post-recent-newer:hover {
-      color: #e55; }
-  .post-recent .post-recent-older {
-    float: right;
-    color: dimgray; }
-    .post-recent .post-recent-older:hover {
-      color: #e55; }
-  .post-recent svg {
-    width: 18px;
-    height: 18px;
-    color: dimgray; }
-
-.icon-left-link:hover path {
-  fill: #e55; }
-
-.icon-right-link:hover path {
-  fill: #e55; }
-
+    @include media-query($on-laptop) {
+      @include relative-font-size(1.125);
+    }
+  }
+  a {
+    color: lighten($link-color, 10%);
+    font-size: $base-font-size * 1.2;
+    &:hover {
+      color: $link-color;
+    }
+  }
+}*/
 /*
  * Site-footer
  */
 .site-footer {
   padding-top: 45px;
-  padding-bottom: 45px;
+  height: 60px;
   color: #f5f5f5;
   background: #24292e; }
   @media screen and (max-width: 600px) {
     .site-footer {
       text-align: center; } }
 
-body {
-  display: flex;
-  flex-flow: column;
-  min-height: 100vh; }
+/*
+ *page-tuoluo
+ */
+.page-tuoluo {
+  color: #4f5155; }
+  .page-tuoluo ul {
+    margin-left: 0; }
+    @media screen and (max-width: 600px) {
+      .page-tuoluo ul {
+        margin-left: auto; } }
+    .page-tuoluo ul li {
+      display: inline-block;
+      margin: 5px;
+      margin-left: 0;
+      padding: 5px;
+      box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1), 0 0 0 0 rgba(0, 0, 0, 0.5); }
+      @media screen and (max-width: 600px) {
+        .page-tuoluo ul li {
+          margin: 5px auto; } }
+      .page-tuoluo ul li img {
+        width: 280px;
+        height: 280px; }
+      .page-tuoluo ul li span {
+        display: block;
+        text-align: center;
+        color: #4f5155; }
+        .page-tuoluo ul li span:hover {
+          color: #e55; }
 
-article {
-  flex: 1; }
-
+/*
+ * page-demo
+ */
 /*
  * page-about
  */
 .page-about {
-  color: #b5b7bb; }
+  color: #4f5155; }
   .page-about p {
-    font-size: 32px; }
+    margin-left: 3em;
+    text-indent: -3em;
+    font-size: 24px; }
     @media screen and (max-width: 800px) {
       .page-about p {
-        font-size: 28px; } }
+        font-size: 20px; } }
   .page-about hr {
     margin-top: 30px;
     margin-bottom: 30px;
     border: none;
     height: 1px;
     background: #d0d1d3; }
-  .page-about ul {
-    margin-left: 0;
-    margin-top: 10px;
-    margin-bottom: 60px; }
-    .page-about ul li {
-      display: inline;
-      list-style: none; }
-      .page-about ul li a {
-        display: inline-block;
-        margin-right: 16px;
-        width: 60px;
-        height: 60px;
-        text-align: center;
-        line-height: 75px;
-        border: 2px solid;
-        border-radius: 100%; }
-        @media screen and (max-width: 600px) {
-          .page-about ul li a {
-            display: block;
-            margin: 6px 0;
-            padding-left: 60px;
-            width: auto;
-            border-radius: 8px;
-            text-align: left; } }
-        .page-about ul li a:link, .page-about ul li a:visited, .page-about ul li a:hover, .page-about ul li a:active {
-          color: #b5b7bb; }
-        .page-about ul li a:hover {
-          background: #f5f5f5; }
-        .page-about ul li a svg {
-          fill: #b5b7bb; }
-        .page-about ul li a span {
-          display: none; }
-          @media screen and (max-width: 600px) {
-            .page-about ul li a span {
-              display: inline;
-              margin-left: 5px;
-              font-size: 19.2px; } }
-
-/*
- * page-demo
- */
-.page-demo h1 {
-  color: #b5b7bb; }
 
 /*
  * Syntax highlighting styles

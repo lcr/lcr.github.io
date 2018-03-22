@@ -1,6 +1,6 @@
-# My personal blog
+# Website
 
-[https://lcr.github.io](https://lcr.github.io)
+[https://www.bxeyichuang.com](https://www.bxeyichuang.com)
 
 ---
 
@@ -8,7 +8,7 @@
 
 MIT License
 
-Copyright (c) 2017 Leslie Lai
+Copyright (c) 2018 bxeyichuang.com
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

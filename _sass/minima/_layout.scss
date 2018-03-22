@@ -30,6 +30,9 @@
   float: left;
   margin-bottom: 0;
   @include relative-font-size(1.625);
+  @include media-query($on-laptop) {
+    @include relative-font-size(1.25);
+  }
   font-weight: 300;
   line-height: $base-line-height * $base-font-size * 2.25;
   letter-spacing: -1px;
@@ -55,10 +58,18 @@
     display: none;
   }
 
-  .page-link {
-    color: $white-color;
+  a.page-link {
     line-height: $base-line-height;
-
+    &:link,
+    &:visited {
+      color: $white-color;
+    }
+    &:hover {
+      color: $grey-color-light;
+    }
+    &:active {
+      color: $white-color;
+    }
     // Gaps between nav items, but not on the last one
     &:not(:last-child) {
       margin-right: 20px;
@@ -107,10 +118,15 @@
       padding-bottom: 5px;
     }
 
-    .page-link {
+    a.page-link {
       display: block;
       padding: 5px 10px;
-      color: $blue-color;
+      &:link,
+      &:visited,
+      &:hover,
+      &:active{
+        color: $blue-color;
+      }
 
       &:not(:last-child) {
         margin-right: 0;
@@ -122,6 +138,7 @@
 /*
  * Page content
  */
+/*
 .post-list {
   margin: 0;
   list-style: none;
@@ -234,11 +251,12 @@
     }
   }
 }
+*/
 
 /*
  * Posts
  */
-.post-content {
+/*.post-content {
   .post-title {
     letter-spacing: -1px;
   }
@@ -281,177 +299,19 @@
       color: $link-color;
     }
   }
-}
+}*/
 
-/*
- * Comments
- */
-.post-blue-bg {
-  padding-top: $spacing-unit * 5;
-  color: darken($gray-color, 55%);
-  background: linear-gradient(175deg, transparent 150px, $gray-color 0);
-}
-
-.comments-size {
-  padding-top: $spacing-unit * 2;
-  border-bottom: 2px solid $grey-color-light;
-  padding-bottom: $spacing-unit / 3;
-}
-
-.comments-name {
-  padding-top: $spacing-unit / 2;
-  font-size: $base-font-size * 1.5;
-}
-
-.comments-date {
-  padding: ($spacing-unit / 3) 0;
-  font-style: italic;
-  font-size: $small-font-size;
-}
-
-.comments-message {
-  border-bottom: 1px solid $grey-color-light;
-}
-
-/*
- * Comment new
- */
-.comment-new-title {
-  padding-top: $spacing-unit * 2;
-}
-
-.comment-new-text {
-  float: left;
-  margin-top: $spacing-unit;
-  border: 0;
-  border-radius: $spacing-unit / 5;
-  width: 48%;
-  height: $spacing-unit * 1.5;
-  font-size: $base-font-size * 1.5;
-  text-indent: $spacing-unit / 2;
-  color: darken($gray-color, 55%);
-  background: darken($gray-color, 5%);
-  @include media-query($on-palm) {
-    float: none;
-    width: 100%;
-  }
-  &:focus {
-    outline: none
-  }
-}
-
-.comment-new-email {
-  float: right;
-  margin-top: $spacing-unit;
-  border: 0;
-  border-radius: $spacing-unit / 5;
-  width: 48%;
-  height: $spacing-unit * 1.5;
-  font-size: $base-font-size * 1.5;
-  text-indent: $spacing-unit / 2;
-  color: darken($gray-color, 55%);
-  background: darken($gray-color, 5%);
-  @include media-query($on-palm) {
-    float: none;
-    width: 100%;
-  }
-  &:focus {
-    outline: none
-  }
-}
-
-.comment-new-message {
-  margin-top: $spacing-unit;
-  border: 0;
-  border-radius: $spacing-unit / 5;
-  width: 100%;
-  height: $spacing-unit * 8;
-  font-size: $base-font-size * 1.5;
-  text-indent: $spacing-unit / 2;
-  color: darken($gray-color, 55%);
-  background: darken($gray-color, 5%);
-  overflow: hidden;
-  &:focus {
-    outline: none
-  }
-}
-
-.comment-new-submit {
-  margin-top: $spacing-unit;
-  border: 0.1rem solid $link-color;
-  border-radius: $spacing-unit;
-  padding: 0 $spacing-unit;
-  height: $spacing-unit * 1.8;
-  font-size: $base-font-size;
-  color: $link-color;
-  background: $gray-color;
-  &:hover {
-    color: $white-color;
-    background: $link-color;
-  }
-  &:focus {
-    outline: none
-  }
-}
-
-/*
- * post-recent
- */
-.post-recent {
-  padding-top: $spacing-unit * 1.5;
-  padding-bottom: $spacing-unit * 3;
-  font-size: $base-font-size * 1.5;
-
-  .post-recent-newer {
-    float: left;
-    color: darken($gray-color, 55%);
-    &:hover {
-      color: $link-color;
-    }
-  }
-
-  .post-recent-older {
-    float: right;
-    color: darken($gray-color, 55%);
-    &:hover {
-      color: $link-color;
-    }
-  }
-
-  svg {
-    width: 18px;
-    height: 18px;
-    color: darken($gray-color, 55%);
-  }
-}
-
-.icon-left-link:hover path {
-  fill: $link-color;
-}
-
-.icon-right-link:hover path {
-  fill: $link-color;
-}
 
 /*
  * Site-footer
  */
 .site-footer {
   padding-top: $spacing-unit * 1.5;
-  padding-bottom: $spacing-unit * 1.5;
+  //padding-bottom: $spacing-unit * 1.5;
+  height:$spacing-unit * 2;
   color: $gray-color;
   background: $blue-color;
   @include media-query($on-palm) {
     text-align: center;
   }
-}
-
-body {
-  display: flex;
-  flex-flow: column;
-  min-height: 100vh;
-}
-
-article {
-  flex: 1;
 }
