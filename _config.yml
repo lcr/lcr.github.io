@@ -1,5 +1,5 @@
-title: Leslie Lai's writings
-description: Leslie Lai's personal blog
+title: 深圳市弈创电子商务有限公司
+description: 弈创 玩具 陀螺 电子产品
 
 baseurl: ""
 url: "https://lcr.github.io"
@@ -15,6 +15,6 @@ defaults:
       type: posts
     values:
       layout: post
-      author: Leslie Lai
+      author: Peng
 
 excerpt_separator: "<!-- more -->"
