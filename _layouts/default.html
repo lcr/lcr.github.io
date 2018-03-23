@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: 'zh-Hans' }}">
+
+{% include head.html %}
+
+<body>
+
+{%- include header.html -%}
+
+{{ content }}
+
+{% include google-analytics.html %}
+
+{% include footer.html %}
+
+</body>
+</html>

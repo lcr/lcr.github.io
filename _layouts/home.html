@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+<article class="page-content" aria-label="Content">
+  <ul class="post-list">
+    {% for post in paginator.posts %}
+    <li>
+      <h2>
+        <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+      </h2>
+
+      {% assign date_format = site.date_format | default: "%d %b. %Y" %}
+      <span class="post-list-meta">{{ post.date | date: date_format }}</span>
+
+      {% if post.excerpt != post.content %}
+      {{ post.excerpt }}
+      <a class="post-list-readmore" href="{{ post.url | relative_url }}">Read more</a>
+      {% else %}
+      {{ post.content }}
+      {% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+</article>
+
+{% include pagination.html %}
