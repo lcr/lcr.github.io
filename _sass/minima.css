@@ -516,14 +516,6 @@ h4 {
     .site-footer {
       text-align: center; } }
 
-body {
-  display: flex;
-  flex-flow: column;
-  min-height: 100vh; }
-
-article {
-  flex: 1; }
-
 /*
  * page-about
  */
@@ -577,12 +569,6 @@ article {
               display: inline;
               margin-left: 5px;
               font-size: 19.2px; } }
-
-/*
- * page-demo
- */
-.page-demo h1 {
-  color: #b5b7bb; }
 
 /*
  * Syntax highlighting styles
