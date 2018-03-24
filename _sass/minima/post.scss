@@ -1,0 +1,86 @@
+/*
+ * Post
+ */
+.post-content {
+  .post-title {
+    letter-spacing: -1px;
+  }
+
+  .post-meta {
+    display: block;
+    padding-bottom: $spacing-unit / 3;
+    font-size: $small-font-size;
+    font-style: italic;
+    color: $grey-color;
+  }
+
+  h2 {
+    @include relative-font-size(2);
+
+    @include media-query($on-laptop) {
+      @include relative-font-size(1.75);
+    }
+  }
+
+  h3 {
+    @include relative-font-size(1.625);
+
+    @include media-query($on-laptop) {
+      @include relative-font-size(1.375);
+    }
+  }
+
+  h4 {
+    @include relative-font-size(1.25);
+
+    @include media-query($on-laptop) {
+      @include relative-font-size(1.125);
+    }
+  }
+  a {
+    color: lighten($link-color, 10%);
+    font-size: $base-font-size * 1.2;
+    &:hover {
+      color: $link-color;
+    }
+  }
+}
+
+/*
+ * post-recent
+ */
+.post-recent {
+  padding-top: $spacing-unit * 1.5;
+  padding-bottom: $spacing-unit * 3;
+  font-size: $base-font-size * 1.5;
+
+  .post-recent-newer {
+    float: left;
+    color: darken($gray-color, 55%);
+    &:hover {
+      color: $link-color;
+    }
+  }
+
+  .post-recent-older {
+    float: right;
+    color: darken($gray-color, 55%);
+    &:hover {
+      color: $link-color;
+    }
+  }
+
+  svg {
+    width: 18px;
+    height: 18px;
+    color: darken($gray-color, 55%);
+  }
+}
+
+.icon-left-link:hover path {
+  fill: $link-color;
+}
+
+.icon-right-link:hover path {
+  fill: $link-color;
+}
