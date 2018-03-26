@@ -2,7 +2,7 @@
  * page-about
  */
 .page-about {
-  color: $grey-color-light;
+  color: $grey-color-dark;
   p {
     @include relative-font-size(2);
     @include media-query($on-laptop) {
@@ -14,7 +14,7 @@
     margin-bottom: $spacing-unit;
     border: none;
     height: 1px;
-    background: lighten($grey-color, 50%);
+    background: $grey-color-dark;
   }
   ul {
     margin-left: 0;
@@ -44,13 +44,13 @@
         &:visited,
         &:hover,
         &:active {
-          color: $grey-color-light;
+          color: $grey-color-dark;
         }
         &:hover {
-          background: $gray-color;
+          background: $grey-color;
         }
         svg {
-          fill: $grey-color-light;
+          fill: $grey-color-dark;
         }
         span {
           display: none;

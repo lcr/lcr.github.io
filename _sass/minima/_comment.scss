@@ -1,15 +1,15 @@
 /*
  * Comments
  */
-.post-blue-bg {
+.comment-bg {
   padding-top: $spacing-unit * 5;
-  color: darken($gray-color, 55%);
-  background: linear-gradient(175deg, transparent 150px, $gray-color 0);
+  color: darken($grey-color, 55%);
+  background: linear-gradient(175deg, transparent 150px, $grey-color 0);
 }
 
 .comments-size {
   padding-top: $spacing-unit * 2;
-  border-bottom: 2px solid $grey-color-light;
+  border-bottom: 2px solid $grey-color-dark;
   padding-bottom: $spacing-unit / 3;
 }
 
@@ -25,7 +25,7 @@
 }
 
 .comments-message {
-  border-bottom: 1px solid $grey-color-light;
+  border-bottom: 1px solid $grey-color-dark;
 }
 
 /*
@@ -44,8 +44,8 @@
   height: $spacing-unit * 1.5;
   font-size: $base-font-size * 1.5;
   text-indent: $spacing-unit / 2;
-  color: darken($gray-color, 55%);
-  background: darken($gray-color, 5%);
+  color: darken($grey-color, 55%);
+  background: darken($grey-color, 5%);
   @include media-query($on-palm) {
     width: calc(100vw - 20px);
   }
@@ -64,8 +64,8 @@
   height: $spacing-unit * 1.5;
   font-size: $base-font-size * 1.5;
   text-indent: $spacing-unit / 2;
-  color: darken($gray-color, 55%);
-  background: darken($gray-color, 5%);
+  color: darken($grey-color, 55%);
+  background: darken($grey-color, 5%);
   @include media-query($on-palm) {
     margin-left: 0;
     width: calc(100vw - 20px);
@@ -83,8 +83,8 @@
   height: $spacing-unit * 8;
   font-size: $base-font-size * 1.5;
   text-indent: $spacing-unit / 2;
-  color: darken($gray-color, 55%);
-  background: darken($gray-color, 5%);
+  color: darken($grey-color, 55%);
+  background: darken($grey-color, 5%);
   overflow: hidden;
   @include media-query($on-palm) {
     width: calc(100vw - 20px);
@@ -102,7 +102,7 @@
   height: $spacing-unit * 1.8;
   font-size: $base-font-size;
   color: $link-color;
-  background: $gray-color;
+  background: $grey-color;
   &:hover {
     color: $white-color;
     background: $link-color;
@@ -110,4 +110,43 @@
   &:focus {
     outline: none
   }
+}
+
+/*
+ * post-recent
+ */
+.post-recent {
+  padding-top: $spacing-unit * 1.5;
+  padding-bottom: $spacing-unit * 3;
+  font-size: $base-font-size * 1.5;
+
+  .post-recent-newer {
+    float: left;
+    color: darken($grey-color, 55%);
+    &:hover {
+      color: $link-color;
+    }
+  }
+
+  .post-recent-older {
+    float: right;
+    color: darken($grey-color, 55%);
+    &:hover {
+      color: $link-color;
+    }
+  }
+
+  svg {
+    width: 18px;
+    height: 18px;
+    color: darken($grey-color, 55%);
+  }
+}
+
+.icon-left-link:hover path {
+  fill: $link-color;
+}
+
+.icon-right-link:hover path {
+  fill: $link-color;
 }

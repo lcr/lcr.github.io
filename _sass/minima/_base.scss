@@ -9,6 +9,16 @@ dl, dd, ol, ul, figure {
 }
 
 /*
+ * Set `margin-bottom` to maintain vertical rhythm
+ */
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+ul, ol, dl, figure,
+%vertical-rhythm {
+  margin-bottom: $spacing-unit / 2;
+}
+
+/*
  * Basic styling
  */
 body {
@@ -21,16 +31,6 @@ body {
   -o-font-feature-settings: "kern" 1;
   font-feature-settings: "kern" 1;
   font-kerning: normal;
-}
-
-/*
- * Set `margin-bottom` to maintain vertical rhythm
- */
-h1, h2, h3, h4, h5, h6,
-p, blockquote, pre,
-ul, ol, dl, figure,
-%vertical-rhythm {
-  margin-bottom: $spacing-unit / 2;
 }
 
 /*
@@ -57,6 +57,38 @@ figcaption {
  */
 h1, h2, h3, h4, h5, h6 {
   font-weight: $base-font-weight;
+}
+
+h1 {
+  @include relative-font-size(2.5);
+
+  @include media-query($on-laptop) {
+    @include relative-font-size(2.25);
+  }
+}
+
+h2 {
+  @include relative-font-size(2);
+
+  @include media-query($on-laptop) {
+    @include relative-font-size(1.75);
+  }
+}
+
+h3 {
+  @include relative-font-size(1.625);
+
+  @include media-query($on-laptop) {
+    @include relative-font-size(1.375);
+  }
+}
+
+h4 {
+  @include relative-font-size(1.25);
+
+  @include media-query($on-laptop) {
+    @include relative-font-size(1.125);
+  }
 }
 
 /*
@@ -108,7 +140,7 @@ pre,
 code {
   @include relative-font-size(0.9375);
   border-radius: 3px;
-  background: $gray-color;
+  background: $grey-color;
 }
 
 code {
@@ -149,7 +181,7 @@ pre {
 table {
   margin-bottom: $spacing-unit;
   width: 100%;
-  text-align: $table-text-align;
+  text-align: left;
   color: lighten($black-color, 18%);
   border-collapse: collapse;
   border: 1px solid $grey-color-light;
@@ -170,34 +202,7 @@ table {
     border: 1px solid $grey-color-light;
   }
 }
-h1 {
-  @include relative-font-size(2.5);
 
-  @include media-query($on-laptop) {
-    @include relative-font-size(2.25);
-  }
-}
-
-h2 {
-  @include relative-font-size(2);
-
-  @include media-query($on-laptop) {
-    @include relative-font-size(1.75);
-  }
-}
-
-h3 {
-  @include relative-font-size(1.625);
-
-  @include media-query($on-laptop) {
-    @include relative-font-size(1.375);
-  }
-}
-
-h4 {
-  @include relative-font-size(1.25);
-
-  @include media-query($on-laptop) {
-    @include relative-font-size(1.125);
-  }
+li{
+  list-style: none;
 }
