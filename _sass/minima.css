@@ -14,7 +14,7 @@ h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
 ul, ol, dl, figure,
 .highlight {
-  margin-bottom: 15px; }
+  padding-bottom: 15px; }
 
 /*
  * Basic styling
@@ -193,9 +193,7 @@ li {
 
 .site-title {
   float: left;
-  margin-bottom: 0;
   font-size: 26px;
-  font-weight: 300;
   line-height: 60px;
   letter-spacing: -1px; }
   .site-title, .site-title:link, .site-title:visited, .site-title:hover, .site-title:active {
@@ -257,32 +255,32 @@ li {
 /*
  * Page content
  */
-.post-list li {
+.post-list > li {
   padding: 60px 0;
   border-bottom: 1px solid #b5b5b5; }
-  .post-list li:last-child {
+  .post-list > li:last-child {
     border-bottom: none; }
-  .post-list li h2 {
+  .post-list > li > h2 {
     display: inline-block; }
-    .post-list li h2 a {
+    .post-list > li > h2 > a {
       display: inline-block;
       text-decoration: none; }
-      .post-list li h2 a:after {
+      .post-list > li > h2 > a:after {
         display: block;
         width: 0;
         height: 2px;
         background: linear-gradient(45deg, #e55, #909);
         transition: width .5s ease, background-color .5s ease;
         content: ''; }
-      .post-list li h2 a:hover:after {
+      .post-list > li > h2 > a:hover:after {
         width: 100%;
         background: linear-gradient(45deg, #e55, #909); }
-  .post-list li .post-list-meta {
+  .post-list > li .post-list-meta {
     display: block;
     padding-bottom: 10px;
     font-size: 14px;
     font-style: italic; }
-  .post-list li .post-list-readmore {
+  .post-list > li .post-list-readmore {
     display: -ms-inline-flexbox;
     display: inline-flex;
     -webkit-box-align: center;
@@ -295,7 +293,7 @@ li {
     font-size: 16px;
     text-decoration: none;
     color: #e55; }
-    .post-list li .post-list-readmore:hover {
+    .post-list > li .post-list-readmore:hover {
       border: 0.1rem solid #24292e;
       color: #fff;
       background: #24292e;
@@ -513,20 +511,17 @@ li {
 .page-about {
   color: #b5b5b5; }
   .page-about p {
-    font-size: 32px; }
+    font-size: 32px;
+    border-bottom: solid 1px; }
+    .page-about p:not(:first-child) {
+      padding-top: 15px; }
     @media screen and (max-width: 800px) {
       .page-about p {
         font-size: 28px; } }
-  .page-about hr {
-    margin-top: 30px;
-    margin-bottom: 30px;
-    border: none;
-    height: 1px;
-    background: #b5b5b5; }
+  .page-about h2 {
+    padding-top: 15px; }
   .page-about ul {
-    margin-left: 0;
-    margin-top: 10px;
-    margin-bottom: 60px; }
+    padding-bottom: 60px; }
     .page-about ul li {
       display: inline;
       list-style: none; }

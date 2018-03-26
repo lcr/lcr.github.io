@@ -4,22 +4,20 @@
 .page-about {
   color: $grey-color-dark;
   p {
+    &:not(:first-child) {
+      padding-top: $spacing-unit / 2;
+    }
     @include relative-font-size(2);
     @include media-query($on-laptop) {
       @include relative-font-size(1.75);
     }
+    border-bottom: solid 1px;
   }
-  hr {
-    margin-top: $spacing-unit;
-    margin-bottom: $spacing-unit;
-    border: none;
-    height: 1px;
-    background: $grey-color-dark;
+  h2{
+    padding-top: $spacing-unit / 2;
   }
   ul {
-    margin-left: 0;
-    margin-top: $spacing-unit / 3;
-    margin-bottom: $spacing-unit * 2;
+    padding-bottom: $spacing-unit * 2;
     li {
       display: inline;
       list-style: none;
