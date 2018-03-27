@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
  * Reset some basic elements
  */
@@ -14,7 +15,7 @@ h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
 ul, ol, dl, figure,
 .highlight {
-  padding-bottom: 15px; }
+  margin-bottom: 15px; }
 
 /*
  * Basic styling
@@ -94,11 +95,11 @@ a {
       text-decoration: none; }
 
 /*
- * Blockquotes
+ * Blockquotes 寮曠敤
  */
 blockquote {
-  color: #f5f5f5;
-  border-left: 4px solid white;
+  color: #b5b5b5;
+  border-left: 4px solid #b5b5b5;
   padding-left: 15px;
   font-size: 18px;
   letter-spacing: -1px;
@@ -147,17 +148,17 @@ table {
   text-align: left;
   color: #4c5761;
   border-collapse: collapse;
-  border: 1px solid white; }
+  border: 1px solid #b5b5b5; }
   table tr:nth-child(even) {
-    background: white; }
+    background: #f5f5f5; }
   table th, table td {
     padding: 10px 15px; }
   table th {
-    background: white;
-    border: 1px solid whitesmoke;
-    border-bottom-color: #e0e0e0; }
+    background: #cfcfcf;
+    border: 1px solid darkgray;
+    border-bottom-color: #8f8f8f; }
   table td {
-    border: 1px solid white; }
+    border: 1px solid #b5b5b5; }
 
 li {
   list-style: none; }

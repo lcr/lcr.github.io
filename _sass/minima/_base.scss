@@ -15,7 +15,7 @@ h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
 ul, ol, dl, figure,
 %vertical-rhythm {
-  padding-bottom: $spacing-unit / 2;
+  margin-bottom: $spacing-unit / 2;
 }
 
 /*
@@ -118,11 +118,11 @@ a {
 }
 
 /*
- * Blockquotes
+ * Blockquotes 引用
  */
 blockquote {
-  color: $grey-color;
-  border-left: 4px solid $grey-color-light;
+  color: $grey-color-dark;
+  border-left: 4px solid $grey-color-dark;
   padding-left: $spacing-unit / 2;
   @include relative-font-size(1.125);
   letter-spacing: -1px;
@@ -184,22 +184,22 @@ table {
   text-align: left;
   color: lighten($black-color, 18%);
   border-collapse: collapse;
-  border: 1px solid $grey-color-light;
+  border: 1px solid $grey-color-dark;
   tr {
     &:nth-child(even) {
-      background: lighten($grey-color-light, 25%);
+      background: $grey-color;
     }
   }
   th, td {
     padding: ($spacing-unit / 3) ($spacing-unit / 2);
   }
   th {
-    background: lighten($grey-color-light, 10%);
-    border: 1px solid darken($grey-color-light, 4%);
-    border-bottom-color: darken($grey-color-light, 12%);
+    background: lighten($grey-color-dark, 10%);
+    border: 1px solid darken($grey-color-dark, 5%);
+    border-bottom-color: darken($grey-color-dark, 15%);
   }
   td {
-    border: 1px solid $grey-color-light;
+    border: 1px solid $grey-color-dark;
   }
 }
 
