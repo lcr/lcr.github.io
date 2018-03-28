@@ -1,5 +1,5 @@
 ---
-title: "CSS Center"
+title: "CSS居中"
 ---
 
 ### CSS水平居中
@@ -61,7 +61,9 @@ title: "CSS Center"
 }
 ```
 
-[Demo](/demo/css-center-horizontal.html){:target="_blank"}  
+[Demo](/demo/css-center-horizontal.html){:target="_blank"}
+
+---
 
 ### CSS垂直居中
 

@@ -38,6 +38,8 @@ body {
  */
 img {
   max-width: 100%;
+  border: solid 2px $grey-color;
+  padding: 5px;
   vertical-align: middle;
 }
 

@@ -1,5 +1,5 @@
 ---
-title: "Jekyll"
+title: "Jekyll guide"
 ---
 
 ### Install Jekyll on Windows7

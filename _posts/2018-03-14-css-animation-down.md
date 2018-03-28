@@ -1,5 +1,5 @@
 ---
-title: "CSS animation down"
+title: "CSS动画下拉箭头"
 ---
 
 html
@@ -59,6 +59,8 @@ css
 <!-- more -->
 
 [Demo](/demo/css-animation-down.html){:target="_blank"}
+
+---
 
 ### Using icon font and ::before
 

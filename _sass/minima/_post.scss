@@ -2,7 +2,7 @@
  * Post
  */
 .post-content {
-  padding-top: $spacing-unit * 2;
+  padding-top: $spacing-unit * 3;
   .post-title {
     letter-spacing: -1px;
   }
@@ -43,5 +43,8 @@
     &:hover {
       color: $link-color;
     }
+  }
+  hr{
+    margin:($spacing-unit * 3) 0;
   }
 }

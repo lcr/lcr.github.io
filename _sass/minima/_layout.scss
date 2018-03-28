@@ -124,8 +124,8 @@
  */
 .post-list {
   > li {
-    padding: ($spacing-unit * 2) 0;
-    border-bottom: 1px solid $grey-color-dark;
+    padding: ($spacing-unit * 3) 0;
+    border-bottom: 1px solid $grey-color;
     &:last-child {
       border-bottom: none;
     }
@@ -155,6 +155,7 @@
       display: block;
       padding-bottom: $spacing-unit / 3;
       font-size: $small-font-size;
+      line-height: 14px;
       font-style: italic;
     }
 
@@ -230,8 +231,8 @@
  * Site-footer
  */
 .site-footer {
-  height: $spacing-unit * 4;
-  line-height: $spacing-unit * 4;
+  height: $spacing-unit * 5;
+  line-height: $spacing-unit * 5;
   color: $grey-color;
   background: $black-color;
   @include media-query($on-palm) {

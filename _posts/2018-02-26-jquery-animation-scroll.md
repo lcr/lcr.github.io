@@ -1,5 +1,5 @@
 ---
-title: "jQuery animation scroll"
+title: "jQuery锚点弹性滑动"
 ---
 
 ```javascript

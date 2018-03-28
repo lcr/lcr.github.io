@@ -7,7 +7,7 @@ layout: default
   <div class="post-content" aria-label="Content" itemprop="articleBody">
     <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
 
-    <span class="post-meta">
+    <span class="post-meta">{% include icon-clock.svg %}
       <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
                 {% assign date_format = site.date_format | default: "%B %d. %Y" %}
                 {{ page.date | date: date_format }}
