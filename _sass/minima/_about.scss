@@ -15,11 +15,14 @@
     border-bottom: solid 1px $grey-color;
     padding-bottom:$spacing-unit / 2;
   }
+
   ul {
     padding-bottom: $spacing-unit * 2;
+
     li {
       display: inline;
       list-style: none;
+
       a {
         display: inline-block;
         margin-right: 16px;
@@ -46,9 +49,11 @@
         &:hover {
           background: $grey-color;
         }
+
         svg {
           fill: $grey-color-dark;
         }
+
         span {
           display: none;
           @include media-query($on-palm) {

@@ -17,6 +17,24 @@ ul, ol, dl, figure,
 .highlight {
   margin-bottom: 15px; }
 
+h1 {
+  font-size: 32px; }
+  @media screen and (max-width: 800px) {
+    h1 {
+      font-size: 28px; } }
+
+h2 {
+  font-size: 26px; }
+  @media screen and (max-width: 800px) {
+    h2 {
+      font-size: 22px; } }
+
+h3 {
+  font-size: 20px; }
+  @media screen and (max-width: 800px) {
+    h3 {
+      font-size: 18px; } }
+
 /*
  * Basic styling
  */
@@ -59,30 +77,6 @@ figcaption {
 h1, h2, h3, h4, h5, h6 {
   font-weight: 400; }
 
-h1 {
-  font-size: 40px; }
-  @media screen and (max-width: 800px) {
-    h1 {
-      font-size: 36px; } }
-
-h2 {
-  font-size: 32px; }
-  @media screen and (max-width: 800px) {
-    h2 {
-      font-size: 28px; } }
-
-h3 {
-  font-size: 26px; }
-  @media screen and (max-width: 800px) {
-    h3 {
-      font-size: 22px; } }
-
-h4 {
-  font-size: 20px; }
-  @media screen and (max-width: 800px) {
-    h4 {
-      font-size: 18px; } }
-
 /*
  * Links
  */
@@ -93,12 +87,7 @@ a {
   a:visited {
     color: #020303; }
   a:hover {
-    text-decoration: none;
     color: #24292e; }
-  .social-media-list a:hover {
-    text-decoration: none; }
-    .social-media-list a:hover .username {
-      text-decoration: none; }
 
 /*
  * Blockquotes 寮曠敤
@@ -267,26 +256,25 @@ table {
     padding-top: 60px; }
   .post-list > li:last-child {
     border-bottom: none; }
-  .post-list > li > h2 {
+  .post-list > li > h1 {
     display: inline-block; }
-    .post-list > li > h2 > a {
+    .post-list > li > h1 > a {
       display: inline-block;
       text-decoration: none; }
-      .post-list > li > h2 > a:after {
+      .post-list > li > h1 > a:after {
         display: block;
         width: 0;
         height: 2px;
         background: linear-gradient(45deg, #e55, #909);
         transition: width .5s ease, background-color .5s ease;
         content: ''; }
-      .post-list > li > h2 > a:hover:after {
+      .post-list > li > h1 > a:hover:after {
         width: 100%;
         background: linear-gradient(45deg, #e55, #909); }
   .post-list > li .post-list-meta {
     display: block;
     padding-bottom: 10px;
     font-size: 14px;
-    line-height: 14px;
     font-style: italic; }
   .post-list > li .post-list-readmore {
     display: -ms-inline-flexbox;
@@ -358,33 +346,15 @@ table {
  */
 .post-content {
   padding-top: 60px; }
-  .post-content .post-title {
-    letter-spacing: -1px; }
-  .post-content .post-meta {
+  .post-content span.post-meta {
     display: block;
     padding-bottom: 10px;
     font-size: 14px;
     font-style: italic; }
-  .post-content h2 {
-    font-size: 32px; }
-    @media screen and (max-width: 800px) {
-      .post-content h2 {
-        font-size: 28px; } }
-  .post-content h3 {
-    font-size: 26px; }
-    @media screen and (max-width: 800px) {
-      .post-content h3 {
-        font-size: 22px; } }
-  .post-content h4 {
-    font-size: 20px; }
-    @media screen and (max-width: 800px) {
-      .post-content h4 {
-        font-size: 18px; } }
   .post-content a {
-    color: #f38383;
-    font-size: 19.2px; }
+    color: #e55; }
     .post-content a:hover {
-      color: #e55; }
+      color: #b5b5b5; }
   .post-content hr {
     margin: 90px 0;
     border: 0;

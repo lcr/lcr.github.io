@@ -2,9 +2,9 @@
 title: "CSS居中"
 ---
 
-### CSS水平居中
+## CSS水平居中
 
-#### 1.行内元素的水平居中 
+### 1.行内元素的水平居中 
 
 ```css
 .parent {
@@ -12,7 +12,7 @@ title: "CSS居中"
 }
 ```
 
-#### 2.定宽块级元素的水平居中
+### 2.定宽块级元素的水平居中
 
 ```css
 .parent {
@@ -23,7 +23,7 @@ title: "CSS居中"
 
 <!-- more -->
 
-#### 3.不定宽块级元素的水平居中
+### 3.不定宽块级元素的水平居中
 
 ```css
 .parent {
@@ -35,7 +35,7 @@ title: "CSS居中"
 }
 ```
 
-#### 4.flex布局实现水平居中
+### 4.flex布局实现水平居中
 
 ```css
 .parent {
@@ -46,7 +46,7 @@ title: "CSS居中"
 }
 ```
 
-#### 5.一大一小块级元素的水平居中
+### 5.一大一小块级元素的水平居中
 
 ```css
 .parent {
@@ -61,13 +61,13 @@ title: "CSS居中"
 }
 ```
 
-[Demo](/demo/css-center-horizontal.html){:target="_blank"}
+## [Demo](/demo/css-center-horizontal.html){:target="_blank"}
 
 ---
 
-### CSS垂直居中
+## CSS垂直居中
 
-#### 1.行内元素垂直居中  
+### 1.行内元素垂直居中  
 ```css
 .parent {
     height: 100px;
@@ -75,7 +75,7 @@ title: "CSS居中"
 }
 ```
 
-#### 2.父元素固定 子元素为多行内联文本的垂直居中
+### 2.父元素固定 子元素为多行内联文本的垂直居中
 
 ```css
 .parent {
@@ -84,7 +84,7 @@ title: "CSS居中"
 }
 ```
 
-#### 3.flex布局实现垂直居中
+### 3.flex布局实现垂直居中
 
 ```css
 .parent {
@@ -95,7 +95,7 @@ title: "CSS居中"
 
 <!-- more -->
 
-#### 4.定宽块级元素的垂直居中
+### 4.定宽块级元素的垂直居中
 
 ```css
 .parent {
@@ -112,7 +112,7 @@ margin: auto 0;
 }
 ```
 
-#### 5.一大一小块级元素的垂直居中
+### 5.一大一小块级元素的垂直居中
 
 ```css
 .parent {
@@ -127,4 +127,4 @@ height: 50px;
 }
 ```
 
-[Demo](/demo/css-center-vertical.html){:target="_blank"}
+## [Demo](/demo/css-center-vertical.html){:target="_blank"}

@@ -3,49 +3,23 @@
  */
 .post-content {
   padding-top: $spacing-unit * 2;
-  .post-title {
-    letter-spacing: -1px;
-  }
 
-  .post-meta {
+  span.post-meta {
     display: block;
     padding-bottom: $spacing-unit / 3;
     font-size: $small-font-size;
     font-style: italic;
   }
 
-  h2 {
-    @include relative-font-size(2);
-
-    @include media-query($on-laptop) {
-      @include relative-font-size(1.75);
-    }
-  }
-
-  h3 {
-    @include relative-font-size(1.625);
-
-    @include media-query($on-laptop) {
-      @include relative-font-size(1.375);
-    }
-  }
-
-  h4 {
-    @include relative-font-size(1.25);
-
-    @include media-query($on-laptop) {
-      @include relative-font-size(1.125);
-    }
-  }
   a {
-    color: lighten($link-color, 10%);
-    font-size: $base-font-size * 1.2;
+    color: $link-color;
     &:hover {
-      color: $link-color;
+      color: $grey-color-dark;
     }
   }
-  hr{
-    margin:($spacing-unit * 3) 0;
+
+  hr {
+    margin: ($spacing-unit * 3) 0;
     border: 0;
     border-bottom: solid 1px $grey-color;
   }

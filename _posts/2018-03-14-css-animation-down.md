@@ -58,11 +58,11 @@ css
 
 <!-- more -->
 
-[Demo](/demo/css-animation-down.html){:target="_blank"}
+## [Demo](/demo/css-animation-down.html){:target="_blank"}
 
 ---
 
-### Using icon font and ::before
+## Using icon font and ::before
 
 html
 

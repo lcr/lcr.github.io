@@ -31,4 +31,4 @@ a:hover:after {
 }
 ```
 
-[Demo](/demo/css-animation-link-underline.html){:target="_blank"}
+## [Demo](/demo/css-animation-link-underline.html){:target="_blank"}

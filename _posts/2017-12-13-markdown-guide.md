@@ -2,7 +2,7 @@
 title: "Markdown Guide"
 ---
 
-大标题到小标题 依次1-6个#，中间隔一个空格
+## 大标题到小标题 依次1-6个#，中间隔一个空格
 ```
 # h1
 ## h2  
@@ -22,7 +22,7 @@ title: "Markdown Guide"
 
 ---  
   
-### code 
+## code 
 
 `'code'` or `...`
 
@@ -46,7 +46,7 @@ img `![](https://example.jpg)`
 
 <!-- more -->
 
-### Bullet list
+## Bullet list
 
 - First item
 - Second item
@@ -60,7 +60,7 @@ img `![](https://example.jpg)`
 - Fourth item
 ```
 
-### Numbered list:
+## Numbered list:
 
 1. First item
 1. Second item
@@ -74,7 +74,7 @@ img `![](https://example.jpg)`
 1. Fourth item
 ```
 
-#### Tables
+## Tables
 
 Title 1               | Title 2               | Title 3               | Title 4
 --------------------- | --------------------- | --------------------- | ---------------------
@@ -108,7 +108,7 @@ lorem ipsum dolor | lorem ipsum | lorem
 lorem ipsum dolor | lorem ipsum dolor sit | lorem ipsum dolor sit amet 
 ```
 
-#### Quotes
+## Quotes
 
 > 春有百花秋有月  
 > 夏有凉风冬有雪  
@@ -122,7 +122,7 @@ lorem ipsum dolor | lorem ipsum dolor sit | lorem ipsum dolor sit amet
 > 便是人间好时节  
 ```
 
-#### Indentation
+## Indentation
 
     春有百花秋有月  (more than 4 spaces)
       夏有凉风冬有雪  

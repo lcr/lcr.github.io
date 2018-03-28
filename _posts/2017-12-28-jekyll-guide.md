@@ -2,7 +2,7 @@
 title: "Jekyll Guide"
 ---
 
-### Install Jekyll on Windows7
+## Install Jekyll on Windows7
 
 - Install[Ruby2.2.6](https://rubyinstaller.org/downloads/)
 
@@ -14,7 +14,7 @@ title: "Jekyll Guide"
 gem install jekyll bundler
 ```  
 
-#### CMD
+## CMD
 
 To start a new project
 
@@ -49,7 +49,7 @@ jekyll serve
 lekyll s
 ```
 
-browse
+## browse
 
 ```
 http://localhost:4000/

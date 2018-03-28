@@ -2,7 +2,7 @@
 title: "返回顶部的方法"
 ---
 
-### JavaScript弹性返回顶部
+## JavaScript弹性返回顶部
 
 html:
 ```html
@@ -53,11 +53,11 @@ window.onload = function () {
 
 <!-- more -->
 
-[Demo](/demo/js-back-to-top.html){:target="_blank"}
+## [Demo](/demo/js-back-to-top.html){:target="_blank"}
 
 ---
 
-### jQuery弹性返回顶部
+## jQuery弹性返回顶部
 
 html:
 
@@ -93,4 +93,4 @@ $(function () {
 });
 ```
 
-[Demo](/demo/jquery-back-to-top.html){:target="_blank"}
+## [Demo](/demo/jquery-back-to-top.html){:target="_blank"}

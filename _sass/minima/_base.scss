@@ -18,6 +18,27 @@ ul, ol, dl, figure,
   margin-bottom: $spacing-unit / 2;
 }
 
+h1 {
+  @include relative-font-size(2);
+  @include media-query($on-laptop) {
+    @include relative-font-size(1.75);
+  }
+}
+
+h2 {
+  @include relative-font-size(1.625);
+  @include media-query($on-laptop) {
+    @include relative-font-size(1.375);
+  }
+}
+
+h3 {
+  @include relative-font-size(1.25);
+  @include media-query($on-laptop) {
+    @include relative-font-size(1.125);
+  }
+}
+
 /*
  * Basic styling
  */
@@ -65,38 +86,6 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: $base-font-weight;
 }
 
-h1 {
-  @include relative-font-size(2.5);
-
-  @include media-query($on-laptop) {
-    @include relative-font-size(2.25);
-  }
-}
-
-h2 {
-  @include relative-font-size(2);
-
-  @include media-query($on-laptop) {
-    @include relative-font-size(1.75);
-  }
-}
-
-h3 {
-  @include relative-font-size(1.625);
-
-  @include media-query($on-laptop) {
-    @include relative-font-size(1.375);
-  }
-}
-
-h4 {
-  @include relative-font-size(1.25);
-
-  @include media-query($on-laptop) {
-    @include relative-font-size(1.125);
-  }
-}
-
 /*
  * Links
  */
@@ -110,16 +99,7 @@ a {
   }
 
   &:hover {
-    text-decoration: none;
     color: $black-color;
-  }
-
-  .social-media-list &:hover {
-    text-decoration: none;
-
-    .username {
-      text-decoration: none;
-    }
   }
 }
 
