@@ -162,9 +162,6 @@ table {
   table td {
     border: 1px solid #b5b5b5; }
 
-li {
-  list-style: none; }
-
 /*
  * Content width
  */
@@ -260,7 +257,8 @@ li {
  */
 .post-list > li {
   padding: 90px 0;
-  border-bottom: 1px solid #f5f5f5; }
+  border-bottom: 1px solid #f5f5f5;
+  list-style: none; }
   .post-list > li:last-child {
     border-bottom: none; }
   .post-list > li > h2 {
@@ -382,7 +380,9 @@ li {
     .post-content a:hover {
       color: #e55; }
   .post-content hr {
-    margin: 90px 0; }
+    margin: 90px 0;
+    border: 0;
+    border-bottom: solid 1px #f5f5f5; }
 
 /*
  * Comments
@@ -518,7 +518,8 @@ li {
   color: #b5b5b5; }
   .page-about p {
     font-size: 32px;
-    border-bottom: solid 1px;
+    border: 0;
+    border-bottom: solid 1px #f5f5f5;
     padding-bottom: 15px; }
     .page-about p:not(:first-child) {
       margin-top: 15px; }

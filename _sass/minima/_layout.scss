@@ -126,6 +126,7 @@
   > li {
     padding: ($spacing-unit * 3) 0;
     border-bottom: 1px solid $grey-color;
+    list-style: none;
     &:last-child {
       border-bottom: none;
     }
