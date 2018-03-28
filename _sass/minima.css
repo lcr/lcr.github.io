@@ -37,8 +37,12 @@ body {
 img {
   max-width: 100%;
   border: solid 2px #f5f5f5;
+  border-radius: 15px;
   padding: 5px;
   vertical-align: middle; }
+  @media screen and (max-width: 800px) {
+    img {
+      max-width: 90%; } }
 
 /*
  * Figures
@@ -259,6 +263,8 @@ table {
   padding: 90px 0;
   border-bottom: 1px solid #f5f5f5;
   list-style: none; }
+  .post-list > li:first-child {
+    padding-top: 60px; }
   .post-list > li:last-child {
     border-bottom: none; }
   .post-list > li > h2 {
@@ -351,7 +357,7 @@ table {
  * Post
  */
 .post-content {
-  padding-top: 90px; }
+  padding-top: 60px; }
   .post-content .post-title {
     letter-spacing: -1px; }
   .post-content .post-meta {
