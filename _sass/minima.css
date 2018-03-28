@@ -513,14 +513,13 @@ li {
   color: #b5b5b5; }
   .page-about p {
     font-size: 32px;
-    border-bottom: solid 1px; }
+    border-bottom: solid 1px;
+    padding-bottom: 15px; }
     .page-about p:not(:first-child) {
-      padding-top: 15px; }
+      margin-top: 15px; }
     @media screen and (max-width: 800px) {
       .page-about p {
         font-size: 28px; } }
-  .page-about h2 {
-    padding-top: 15px; }
   .page-about ul {
     padding-bottom: 60px; }
     .page-about ul li {
