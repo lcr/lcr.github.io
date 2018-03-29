@@ -53,15 +53,11 @@
   }
 
   .page-link {
+    margin-left: 20px;
+    line-height: $base-line-height;
     color: $white-color;
     &:hover {
       color: $grey-color-dark;
-    }
-    line-height: $base-line-height;
-
-    // Gaps between nav items, but not on the last one
-    &:not(:last-child) {
-      margin-right: 20px;
     }
   }
 
@@ -111,10 +107,8 @@
       display: block;
       padding: 5px 10px;
       color: $black-color;
+      margin-left: 0;
 
-      &:not(:last-child) {
-        margin-right: 0;
-      }
     }
   }
 }
@@ -127,8 +121,8 @@
     padding: ($spacing-unit * 3) 0;
     border-bottom: 1px solid $grey-color;
     list-style: none;
-    &:first-child{
-      padding-top:$spacing-unit * 2;
+    &:first-child {
+      padding-top: $spacing-unit * 2;
     }
     &:last-child {
       border-bottom: none;
