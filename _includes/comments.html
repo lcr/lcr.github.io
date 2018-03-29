@@ -11,7 +11,7 @@
   {% for comment in comments %}
   <div class="comments-name">{{ comment[1].name }}</div>
 
-  <div class="comments-date">{{ comment[1].date | date: "%d %b. %Y" }}</div>
+  <div class="comments-date">{{ comment[1].date | date: "%B %d. %Y" }}</div>
 
   <div class="comments-message">{{ comment[1].message | markdownify }}</div>
   {% endfor %}
