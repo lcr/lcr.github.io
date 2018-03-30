@@ -12,14 +12,16 @@ footer {
     padding-right: $spacing-unit / 3;
   }
 }
+
 .page-content{
   padding-top:$spacing-unit * 2;
 }
+
 /*
  * Site header
  */
 header {
-  // Positioning context for the mobile navigation icon
+  /* Positioning context for the mobile navigation icon */
   position: relative;
   height: $spacing-unit * 2;
   background: $black-color;
@@ -73,18 +75,16 @@ header {
         cursor: pointer;
         span.menu-icon {
           display: block;
-          float: right;
+          padding-top: 10px;
           width: 36px;
           height: 26px;
           line-height: 0;
-          padding-top: 10px;
           text-align: center;
 
           > svg path {
             fill: $black-color;
           }
         }
-
       }
 
       input ~ .trigger {
@@ -128,7 +128,7 @@ header {
       > a {
         display: inline-block;
         text-decoration: none;
-        &:after {
+        :after {
           display: block;
           width: 0;
           height: 2px;
@@ -136,7 +136,7 @@ header {
           transition: width .5s ease, background-color .5s ease;
           content: '';
         }
-        &:hover:after {
+        :hover:after {
           width: 100%;
           background: $linear-color;
         }
@@ -183,6 +183,7 @@ header {
   justify-content: center;
   padding-top: $spacing-unit;
   padding-bottom: $spacing-unit * 3;
+
   .pagination-link {
     margin: 0 ($spacing-unit / 2);
     font-size: $base-font-size * 2;
