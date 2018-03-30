@@ -14,14 +14,19 @@ layout: default
       <span class="post-list-meta">{% include icon-clock.svg %}{{ post.date | date: date_format }}</span>
 
       {% if post.excerpt != post.content %}
+
       {{ post.excerpt }}
       <a class="post-list-readmore" href="{{ post.url | relative_url }}">Read more</a>
+
       {% else %}
       {{ post.content }}
+
       {% endif %}
     </li>
     {% endfor %}
   </ul>
+
+  {% include pagination.html %}
+
 </article>
 
-{% include pagination.html %}

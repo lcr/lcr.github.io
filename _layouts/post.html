@@ -2,28 +2,25 @@
 layout: default
 ---
 
-<article itemscope itemtype="http://schema.org/BlogPosting">
+<article class="page-content  post" itemscope itemtype="http://schema.org/BlogPosting" aria-label="Content"
+         itemprop="articleBody">
+  <h1 itemprop="name headline">{{ page.title | escape }}</h1>
 
-  <div class="post-content" aria-label="Content" itemprop="articleBody">
-    <h1 itemprop="name headline">{{ page.title | escape }}</h1>
-
-    <span class="post-meta">{% include icon-clock.svg %}
+  <span class="post-meta">{% include icon-clock.svg %}
       <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
                 {% assign date_format = site.date_format | default: "%B %d. %Y" %}
                 {{ page.date | date: date_format }}
       </time>
     </span>
 
-    {{ content }}
+  {{ content }}
 
-  </div>
-
-  <div class="comment-bg">
-    {% include comments.html %}
-
-    {% include comment-new.html %}
-
-    {% include post-recent.html %}
-  </div>
 </article>
 
+<article class="comment">
+  {% include comments.html %}
+
+  {% include comment-new.html %}
+
+  {% include post-recent.html %}
+</article>
