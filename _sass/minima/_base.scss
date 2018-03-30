@@ -9,6 +9,22 @@ dl, dd, ol, ul, figure {
 }
 
 /*
+ * Basic styling
+ */
+body {
+  font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
+  color: $black-color;
+  background: $white-color;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-feature-settings: "kern" 1;
+  -moz-font-feature-settings: "kern" 1;
+  -o-font-feature-settings: "kern" 1;
+  font-feature-settings: "kern" 1;
+  font-kerning: normal;
+  overflow-x: hidden; //ie
+}
+
+/*
  * Set `margin-bottom` to maintain vertical rhythm
  */
 h1, h2, h3, h4, h5, h6,
@@ -16,6 +32,13 @@ p, blockquote, pre,
 ul, ol, dl, figure,
 %vertical-rhythm {
   margin-bottom: $spacing-unit / 2;
+}
+
+/*
+ * Headings
+ */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: $base-font-weight;
 }
 
 h1 {
@@ -37,22 +60,6 @@ h3 {
   @include media-query($on-laptop) {
     @include relative-font-size(1.125);
   }
-}
-
-/*
- * Basic styling
- */
-body {
-  font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
-  color: $black-color;
-  background: $white-color;
-  -webkit-text-size-adjust: 100%;
-  -webkit-font-feature-settings: "kern" 1;
-  -moz-font-feature-settings: "kern" 1;
-  -o-font-feature-settings: "kern" 1;
-  font-feature-settings: "kern" 1;
-  font-kerning: normal;
-  overflow-x: hidden; //ie
 }
 
 /*
@@ -81,13 +88,6 @@ figcaption {
 }
 
 /*
- * Headings
- */
-h1, h2, h3, h4, h5, h6 {
-  font-weight: $base-font-weight;
-}
-
-/*
  * Links
  */
 a {
@@ -105,7 +105,7 @@ a {
 }
 
 /*
- * Blockquotes 引用
+ * Blockquotes
  */
 blockquote {
   color: $grey-color-dark;
