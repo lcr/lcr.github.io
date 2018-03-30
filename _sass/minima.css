@@ -495,6 +495,11 @@ footer {
     @media screen and (max-width: 800px) {
       .page-about p {
         font-size: 28px; } }
+  .page-about h2 {
+    font-size: 32px; }
+    @media screen and (max-width: 800px) {
+      .page-about h2 {
+        font-size: 28px; } }
   .page-about ul {
     padding-bottom: 60px; }
     .page-about ul li {

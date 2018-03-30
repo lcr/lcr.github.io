@@ -15,7 +15,12 @@
     border-bottom: solid 1px $grey-color;
     padding-bottom:$spacing-unit / 2;
   }
-
+h2{
+  @include relative-font-size(2);
+  @include media-query($on-laptop) {
+    @include relative-font-size(1.75);
+  }
+}
   ul {
     padding-bottom: $spacing-unit * 2;
 
