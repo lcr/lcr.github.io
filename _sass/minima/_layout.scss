@@ -128,7 +128,7 @@ header {
       > a {
         display: inline-block;
         text-decoration: none;
-        :after {
+        &:after {
           display: block;
           width: 0;
           height: 2px;
@@ -136,7 +136,7 @@ header {
           transition: width .5s ease, background-color .5s ease;
           content: '';
         }
-        :hover:after {
+        &:hover:after {
           width: 100%;
           background: $linear-color;
         }

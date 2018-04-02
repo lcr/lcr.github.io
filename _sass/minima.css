@@ -256,14 +256,14 @@ header {
     .post-list > li > h1 > a {
       display: inline-block;
       text-decoration: none; }
-      .post-list > li > h1 > a :after {
+      .post-list > li > h1 > a:after {
         display: block;
         width: 0;
         height: 2px;
         background: linear-gradient(45deg, #e55, #909);
         transition: width .5s ease, background-color .5s ease;
         content: ''; }
-      .post-list > li > h1 > a :hover:after {
+      .post-list > li > h1 > a:hover:after {
         width: 100%;
         background: linear-gradient(45deg, #e55, #909); }
   .post-list > li span.post-list-meta {
