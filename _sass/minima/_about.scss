@@ -5,7 +5,7 @@
   color: $grey-color-dark;
 
   p {
-    &:not(:first-child) {
+    :not(:first-child) {
       margin-top: $spacing-unit / 2;
     }
     @include relative-font-size(2);
