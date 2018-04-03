@@ -1,5 +1,5 @@
 ---
-title: "CSS animation link underline"
+title: "CSS链接下划线动画效果"
 ---
 
 html:
@@ -27,7 +27,7 @@ a:after {
 
 a:hover:after {
     width: 100%;
-    background-color: #000;
+    background: #000;
 }
 ```
 
