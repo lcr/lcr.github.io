@@ -76,7 +76,7 @@ img `![](https://example.jpg)`
 
 ## Tables
 
-Title 1               | Title 2               | Title 3               | Title 4
+Title 1               | Title 2               | Title 3               | Title 4              
 --------------------- | --------------------- | --------------------- | ---------------------
 hello world           | hello world           | hello world           | hello world 
 hello world           | hello world           | hello world           | hello world 
