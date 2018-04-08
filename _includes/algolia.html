@@ -4,58 +4,47 @@
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch-theme-algolia.min.css">
 
 <script>
-  const search = instantsearch({
+  'use strict';
+
+  var search = instantsearch({
     appId: '{{ site.algolia.application_id }}',
     apiKey: '{{ site.algolia.search_only_api_key }}',
     indexName: '{{ site.algolia.index_name }}'
   });
 
-  const hitTemplate = function(hit) {
-    let date = '';
+  var hitTemplate = function hitTemplate(hit) {
+    var date = '';
     if (hit.date) {
       date = moment.unix(hit.date).format('MMM D, YYYY');
     }
 
-    let url = `{{ site.baseurl }}${hit.url}#${hit.anchor}`;
+    var url = '{{ site.baseurl }}' + hit.url + '#' + hit.anchor;
 
-    const title = hit._highlightResult.title.value;
+    var title = hit._highlightResult.title.value;
 
-    let breadcrumbs = '';
+    var breadcrumbs = '';
     if (hit._highlightResult.headings) {
-      breadcrumbs = hit._highlightResult.headings.map(match => {
-        return `<span class="post-breadcrumb">${match.value}</span>`
-      }).join(' > ')
+      breadcrumbs = hit._highlightResult.headings.map(function (match) {
+        return '<span class="post-breadcrumb">' + match.value + '</span>';
+      }).join(' > ');
     }
 
-    const content = hit._highlightResult.html.value;
+    var content = hit._highlightResult.html.value;
 
-    return `
-    <div class="post-item">
-      <span class="post-meta">${date}</span>
-      <h2><a class="post-link" href="${url}">${title}</a></h2>
-      {{#breadcrumbs}}<a href="${url}" class="post-breadcrumbs">${breadcrumbs}</a>{{/breadcrumbs}}
-      <div class="post-snippet">${content}</div>
-    </div>
-  `;
-  }
+    return '\n    <div class="post-item">\n      <span class="post-meta">' + date + '</span>\n      <h2><a class="post-link" href="' + url + '">' + title + '</a></h2>\n      {{#breadcrumbs}}<a href="' + url + '" class="post-breadcrumbs">' + breadcrumbs + '</a>{{/breadcrumbs}}\n      <div class="post-snippet">' + content + '</div>\n    </div>\n  ';
+  };
 
+  search.addWidget(instantsearch.widgets.searchBox({
+    container: '#search-searchbar',
+    placeholder: 'Search into posts...'
+  }));
 
-  search.addWidget(
-    instantsearch.widgets.searchBox({
-      container: '#search-searchbar',
-      placeholder: 'Search into posts...',
-      poweredBy: true // This is required if you're on the free Community plan
-    })
-  );
-
-  search.addWidget(
-    instantsearch.widgets.hits({
-      container: '#search-hits',
-      templates: {
-        item: hitTemplate
-      }
-    })
-  );
+  search.addWidget(instantsearch.widgets.hits({
+    container: '#search-hits',
+    templates: {
+      item: hitTemplate
+    }
+  }));
 
   search.start();
 </script>

@@ -13,8 +13,8 @@ footer {
   }
 }
 
-.page-content{
-  padding-top:$spacing-unit * 2;
+.page-content {
+  padding-top: $spacing-unit * 2;
 }
 
 /*
@@ -50,11 +50,11 @@ header {
       margin-left: 20px;
       line-height: $base-line-height;
       color: $white-color;
-      &:hover {
-        color: $grey-color-dark;
-      }
+      transition: opacity 0.2s;
     }
-
+    .trigger:hover a.page-link:not(:hover) {
+      opacity: .5;
+    }
     @include media-query($on-palm) {
       position: absolute;
       top: 10px;
@@ -117,7 +117,7 @@ header {
       padding-top: $spacing-unit * 3;
     }
     padding-bottom: $spacing-unit * 3;
-    &:not(:last-child){
+    &:not(:last-child) {
       border-bottom: 1px solid $grey-color;
     }
     list-style: none;
