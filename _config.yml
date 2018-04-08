@@ -22,4 +22,3 @@ algolia:
   application_id: J8DNKCS2CK
   index_name:     jekyll # You can replace that with whatever name you want
   search_only_api_key: 32cc20dc727ba2485243a84198bbb4ab
-  API Key: 32cc20dc727ba2485243a84198bbb4ab
