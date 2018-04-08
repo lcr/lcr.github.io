@@ -17,3 +17,10 @@ defaults:
       layout: post
 
 excerpt_separator: "<!-- more -->"
+
+algolia:
+  application_id: J8DNKCS2CK
+  index_name:     jekyll # You can replace that with whatever name you want
+  search_only_api_key: 32cc20dc727ba2485243a84198bbb4ab
+  adminApiKey: 53dbc56c6a60feb8a3442e9ff8d21601
+  API Key: 32cc20dc727ba2485243a84198bbb4ab
