@@ -5,6 +5,12 @@
     <!--<input name="options[redirect]" type="hidden" value="https://lcr.github.io/">-->
     <input name="options[redirect]" type="hidden" value="{{ page.url | absolute_url }}">
     <input name="options[slug]" type="hidden" value="{{ page.slug }}">
+    <input type="hidden" name="options[origin]" value="{{ page.url | absolute_url }}">
+    <input type="hidden" name="options[parent]" value="{{ page.url | absolute_url }}">
+    <!--<input type="hidden" id="comment-replying-to" name="fields[replying_to]" value="">-->
+    <input type="hidden" name="options[slug]" value="{{ post_slug }}">
+    <input type="hidden" name="options[reCaptcha][siteKey]" value="{{ site.reCaptcha.siteKey }}">
+    <input type="hidden" name="options[reCaptcha][secret]"  value="{{ site.reCaptcha.secret }}">
 
     <label><input class="comment-new-text" name="fields[name]" type="text" placeholder="Name"></label>
 
