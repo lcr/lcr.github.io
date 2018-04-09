@@ -2,7 +2,7 @@
 title: "Markdown Guide"
 ---
 
-## 大标题到小标题 依次1-6个#，中间隔一个空格
+## Headers
 ```
 # h1
 ## h2  
@@ -12,13 +12,13 @@ title: "Markdown Guide"
 ###### h6
 ```
 
-换行 两个空格 `2 spaces`
+break `2 spaces`
 
-斜体 两边各一个下划线或星号  _italic_ *italic*  `_italic_ *italic*`
+_italic_ *italic*  `_italic_ *italic*`
  
-粗体 两边各两个下划线或星号 __bold__ **bold** `__bold__ **bold**`
+__bold__ **bold** `__bold__ **bold**`
  
-水平线 三个中划线Horizontal rule: `---`
+Horizontal rule: `---`
 
 ---  
   

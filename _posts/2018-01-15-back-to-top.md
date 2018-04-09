@@ -1,8 +1,8 @@
 ---
-title: "返回顶部的方法"
+title: "BACK TO TOP"
 ---
 
-## JavaScript弹性返回顶部
+## Use JavaScript
 
 html:
 ```html
@@ -57,7 +57,7 @@ window.onload = function () {
 
 ---
 
-## jQuery弹性返回顶部
+## Use jQuery
 
 html:
 

@@ -1,5 +1,5 @@
 ---
-title: "CSS居中"
+title: "CSS居中的方法"
 ---
 
 ## CSS水平居中

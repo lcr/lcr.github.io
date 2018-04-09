@@ -1,5 +1,5 @@
 ---
-title: "CSS链接下划线动画效果"
+title: "CSS animation link underline"
 ---
 
 html:

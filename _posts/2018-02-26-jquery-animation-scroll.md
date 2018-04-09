@@ -1,6 +1,8 @@
 ---
-title: "jQuery锚点弹性滑动"
+title: "jQuery animation scroll"
 ---
+
+## jquery code
 
 ```javascript
 $(function () {
