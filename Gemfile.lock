@@ -81,6 +81,7 @@ GEM
     tzinfo-data (1.2018.4)
       tzinfo (>= 1.0.0)
     verbal_expressions (0.1.5)
+    wdm (0.1.1)
 
 PLATFORMS
   x64-mingw32
@@ -90,6 +91,7 @@ DEPENDENCIES
   jekyll-algolia
   jekyll-paginate
   tzinfo-data
+  wdm (>= 0.1.0)
 
 BUNDLED WITH
    1.16.1
