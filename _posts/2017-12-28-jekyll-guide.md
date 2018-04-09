@@ -12,7 +12,7 @@ title: "Jekyll Guide"
 gem install jekyll bundler
 ```  
 
-## CMD
+## Command
 
 To start a new project
 
@@ -47,7 +47,7 @@ jekyll serve
 lekyll s
 ```
 
-## browse
+## Browser
 
 ```
 http://localhost:4000/

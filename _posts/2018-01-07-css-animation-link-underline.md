@@ -1,14 +1,14 @@
 ---
-title: "CSS animation link underline"
+title: "CSS hover underline animation"
 ---
 
-html:
+### HTML
 
 ```html
 <a href="">CSS animation link underline</a>
 ```
 
-css:
+### CSS
 
  ```css
 a {
@@ -31,4 +31,9 @@ a:hover:after {
 }
 ```
 
-## [Demo](/demo/css-animation-link-underline.html){:target="_blank"}
+<!-- more -->
+
+### Demo
+
+<iframe height='220' scrolling='no' title='CSS hover underline animation' src='//codepen.io/lcrccr/embed/WzLavq/?height=220&theme-id=0&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/lcrccr/pen/WzLavq/'>CSS hover underline animation</a> by Leslie Lai (<a href='https://codepen.io/lcrccr'>@lcrccr</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>

@@ -5,7 +5,6 @@ title: "CSS居中的方法"
 ## CSS水平居中
 
 ### 1.行内元素的水平居中 
-
 ```css
 .parent {
     text-align:center;
@@ -13,10 +12,9 @@ title: "CSS居中的方法"
 ```
 
 ### 2.定宽块级元素的水平居中
-
 ```css
 .parent {
-    width: 800px;
+    width: 600px;
     margin: 0 auto;
 }
 ```
@@ -24,7 +22,6 @@ title: "CSS居中的方法"
 <!-- more -->
 
 ### 3.不定宽块级元素的水平居中
-
 ```css
 .parent {
     text-align: center;
@@ -36,18 +33,14 @@ title: "CSS居中的方法"
 ```
 
 ### 4.flex布局实现水平居中
-
 ```css
 .parent {
-    display: -webkit-flex;
     display: flex;
-    -webkit-justify-content:center;
     justify-content: center;
 }
 ```
 
 ### 5.一大一小块级元素的水平居中
-
 ```css
 .parent {
     position: relative;
@@ -56,12 +49,15 @@ title: "CSS居中的方法"
 .child {
     position: absolute;
     left: 50%;
-    width: 800px;
-    margin-left: -400px;
+    width: 600px;
+    margin-left: -300px;
 }
 ```
 
-## [Demo](/demo/css-center-horizontal.html){:target="_blank"}
+### Demo
+
+<iframe height='265' scrolling='no' title='CSS center horizontal' src='//codepen.io/lcrccr/embed/yKGRwM/?height=265&theme-id=0&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/lcrccr/pen/yKGRwM/'>CSS center horizontal</a> by Leslie Lai (<a href='https://codepen.io/lcrccr'>@lcrccr</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
 
 ---
 
@@ -76,7 +72,6 @@ title: "CSS居中的方法"
 ```
 
 ### 2.父元素固定 子元素为多行内联文本的垂直居中
-
 ```css
 .parent {
     display: table-cell;
@@ -85,7 +80,6 @@ title: "CSS居中的方法"
 ```
 
 ### 3.flex布局实现垂直居中
-
 ```css
 .parent {
     display: flex;
@@ -93,10 +87,7 @@ title: "CSS居中的方法"
 }
 ```
 
-<!-- more -->
-
 ### 4.定宽块级元素的垂直居中
-
 ```css
 .parent {
     position: relative;
@@ -113,7 +104,6 @@ margin: auto 0;
 ```
 
 ### 5.一大一小块级元素的垂直居中
-
 ```css
 .parent {
 position: relative;
@@ -127,4 +117,7 @@ height: 50px;
 }
 ```
 
-## [Demo](/demo/css-center-vertical.html){:target="_blank"}
+### Demo
+
+<iframe height='265' scrolling='no' title='CSS center vartical' src='//codepen.io/lcrccr/embed/oqJQXm/?height=265&theme-id=0&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/lcrccr/pen/oqJQXm/'>CSS center vartical</a> by Leslie Lai (<a href='https://codepen.io/lcrccr'>@lcrccr</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>

@@ -3,6 +3,7 @@ title: "Markdown Guide"
 ---
 
 ## Headers
+
 ```
 # h1
 ## h2  
@@ -108,7 +109,7 @@ lorem ipsum dolor | lorem ipsum | lorem
 lorem ipsum dolor | lorem ipsum dolor sit | lorem ipsum dolor sit amet 
 ```
 
-## Quotes
+## Quote
 
 > 春有百花秋有月  
 > 夏有凉风冬有雪  

@@ -2,7 +2,7 @@
 title: "CSS animation down"
 ---
 
-html
+### HTML
 
 ```html
 <a class="icon-down">
@@ -12,7 +12,9 @@ html
 </a>
 ```
 
-css
+<!-- more -->
+
+### CSS
 
 ```css
 .icon-down {
@@ -56,21 +58,22 @@ css
 }
 ```
 
-<!-- more -->
+### Demo
 
-## [Demo](/demo/css-animation-down.html){:target="_blank"}
+<iframe height='207' scrolling='no' title='CSS down animation' src='//codepen.io/lcrccr/embed/WzLaEN/?height=207&theme-id=0&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/lcrccr/pen/WzLaEN/'>CSS down animation</a> by Leslie Lai (<a href='https://codepen.io/lcrccr'>@lcrccr</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
 
 ---
 
 ## Using icon font and ::before
 
-html
+### HTML
 
 ```html
 <a class="icon-down"></a>
 ``` 
 
-css
+### CSS
 
 ```css
 .icon-down {
