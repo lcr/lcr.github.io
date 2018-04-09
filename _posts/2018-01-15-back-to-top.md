@@ -2,7 +2,7 @@
 title: "BACK TO TOP"
 ---
 
-## Use JavaScript
+## Using JavaScript
 
 html:
 ```html
@@ -57,7 +57,7 @@ window.onload = function () {
 
 ---
 
-## Use jQuery
+## Using jQuery
 
 html:
 
@@ -73,7 +73,7 @@ css:
 }
 ```
 
-JavaScript
+jQuery
 
 ```javascript
 $(function () {
@@ -93,4 +93,4 @@ $(function () {
 });
 ```
 
-## [Demo](/demo/jquery-back-to-top.html){:target="_blank"}
+## [Demo of back to top using jQuery](/demo/jquery-back-to-top.html){:target="_blank"}
