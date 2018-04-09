@@ -5,8 +5,8 @@ header,
 .page-content,
 .comment,
 footer {
-  padding-left: calc(50% - 450px);
-  padding-right: calc(50% - 450px);
+  padding-left: calc(50vw - 450px);
+  padding-right: calc(50vw - 450px);/*若设置为50%，IE会有水平滚动条*/
   @include media-query($on-laptop) {
     padding-left: $spacing-unit / 3;
     padding-right: $spacing-unit / 3;
@@ -102,7 +102,6 @@ header {
         padding: 5px 10px;
         color: $black-color;
         margin-left: 0;
-
       }
     }
   }
