@@ -1,5 +1,5 @@
 ---
-title: "CSS animation down"
+title: "CSS animation arrow down"
 ---
 
 ### HTML
@@ -60,7 +60,7 @@ title: "CSS animation down"
 
 ### Demo
 
-<iframe height='207' scrolling='no' title='CSS down animation' src='//codepen.io/lcrccr/embed/WzLaEN/?height=207&theme-id=0&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/lcrccr/pen/WzLaEN/'>CSS down animation</a> by Leslie Lai (<a href='https://codepen.io/lcrccr'>@lcrccr</a>) on <a href='https://codepen.io'>CodePen</a>.
+<iframe height='300' scrolling='no' title='CSS animation arrow down' src='//codepen.io/lcrccr/embed/preview/WzLaEN/?height=300&theme-id=33119&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/lcrccr/pen/WzLaEN/'>CSS animation arrow down</a> by Leslie Lai (<a href='https://codepen.io/lcrccr'>@lcrccr</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
 
 ---

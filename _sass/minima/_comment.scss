@@ -50,7 +50,8 @@
     width: calc(100vw - 20px);
   }
   &:focus {
-    outline: none
+    outline: none;
+    box-shadow: 0 0 1px 1px $link-color;
   }
 }
 
@@ -71,7 +72,8 @@
     width: calc(100vw - 20px);
   }
   &:focus {
-    outline: none
+    outline: none;
+    box-shadow: 0 0 1px 1px $link-color;
   }
 }
 
@@ -90,7 +92,8 @@
     width: calc(100vw - 20px);
   }
   &:focus {
-    outline: none
+    outline: none;
+    box-shadow: 0 0 1px 1px $link-color;
   }
 }
 

@@ -56,9 +56,8 @@ title: "CSS居中的方法"
 
 ### Demo
 
-<iframe height='265' scrolling='no' title='CSS center horizontal' src='//codepen.io/lcrccr/embed/yKGRwM/?height=265&theme-id=0&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/lcrccr/pen/yKGRwM/'>CSS center horizontal</a> by Leslie Lai (<a href='https://codepen.io/lcrccr'>@lcrccr</a>) on <a href='https://codepen.io'>CodePen</a>.
+<iframe height='300' scrolling='no' title='CSS center horizontal' src='//codepen.io/lcrccr/embed/yKGRwM/?height=300&theme-id=33119&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/lcrccr/pen/yKGRwM/'>CSS center horizontal</a> by Leslie Lai (<a href='https://codepen.io/lcrccr'>@lcrccr</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
-
 ---
 
 ## CSS垂直居中
@@ -119,5 +118,5 @@ height: 50px;
 
 ### Demo
 
-<iframe height='265' scrolling='no' title='CSS center vartical' src='//codepen.io/lcrccr/embed/oqJQXm/?height=265&theme-id=0&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/lcrccr/pen/oqJQXm/'>CSS center vartical</a> by Leslie Lai (<a href='https://codepen.io/lcrccr'>@lcrccr</a>) on <a href='https://codepen.io'>CodePen</a>.
+<iframe height='300' scrolling='no' title='CSS center vartical' src='//codepen.io/lcrccr/embed/preview/oqJQXm/?height=300&theme-id=33119&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/lcrccr/pen/oqJQXm/'>CSS center vartical</a> by Leslie Lai (<a href='https://codepen.io/lcrccr'>@lcrccr</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>

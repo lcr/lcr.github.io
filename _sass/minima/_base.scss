@@ -72,8 +72,14 @@ img {
   border: solid 1px $grey-color-dark;
   border-radius: 6px;
   padding: 6px;
-  background: $grey-color;
+  //background: $grey-color;
   vertical-align: middle;
+  &:hover{
+    box-shadow:
+            0 0 5px 3px rgba(245, 245, 245, .9),
+            0 0 5px 6px rgba(245, 245, 245, .5),
+            0 0 5px 9px rgba(245, 245, 245, .1);
+  }
 }
 
 /*
