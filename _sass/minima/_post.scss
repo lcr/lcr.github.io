@@ -11,6 +11,9 @@
   }
 
   a {
+    display: flex;
+    align-items: center;
+    vertical-align: center;
     color: $link-color;
     &:hover {
       opacity: 0.8;

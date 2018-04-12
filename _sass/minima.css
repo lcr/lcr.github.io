@@ -356,6 +356,9 @@ footer {
   font-size: 14px;
   font-style: italic; }
 .post a {
+  display: flex;
+  align-items: center;
+  vertical-align: center;
   color: #e55; }
   .post a:hover {
     opacity: 0.8; }

@@ -5,6 +5,21 @@ permalink: /about/
 ---
 
 <article class="page-about">
+  <div class="search hide-on-mobiles">
+    <input type="text" id="docsearch-input" placeholder="Search the docs…">
+  </div>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+  <script type="text/javascript">docsearch({
+          apiKey: '32cc20dc727ba2485243a84198bbb4ab',
+          indexName: 'jekyll',
+          inputSelector: '#docsearch-input',
+          enhancedSearchInput: true,
+          debug: false // Set debug to true if you want to inspect the dropdown
+      });
+  </script>
+
+
   <p>
     Hello there.<br>
     My name is Leslie Lai and I'm a front-end development engineer living in Guangzhou.
