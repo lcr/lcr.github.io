@@ -3,26 +3,25 @@
 // Define defaults for each variable.
 
 $base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !default;
-$base-font-size:   16px !default;
+$base-font-size: 16px !default;
 $base-font-weight: 400 !default;
-$small-font-size:  $base-font-size * 0.875 !default;
+$small-font-size: $base-font-size * 0.875 !default;
 $base-line-height: 1.5 !default;
 
-$spacing-unit:     30px !default;
+$spacing-unit: 30px !default;
 
-$black-color:      #24292e !default;
-$white-color:      #fff !default;
-$grey-color:       #f5f5f5 !default;
+$black-color: #24292e !default;
+$white-color: #fff !default;
+$grey-color: #f5f5f5 !default;
 $grey-color-light: lighten($grey-color, 25%) !default;
-$grey-color-dark:  darken($grey-color, 25%) !default;
-$link-color:       #e55 !default;
-$linear-color:     linear-gradient(45deg, #e55, #909) !default;
-
+$grey-color-dark: darken($grey-color, 25%) !default;
+$link-color: #e55 !default;
+$linear-color: linear-gradient(45deg, #e55, #909) !default;
 
 // Width of the content area
-$content-width:    900px !default;
-$on-laptop:        800px !default;
-$on-palm:          600px !default;
+$content-width: 900px !default;
+$on-laptop: 800px !default;
+$on-palm: 600px !default;
 
 // Use media queries like this:
 // @include media-query($on-palm) {
@@ -42,8 +41,7 @@ $on-palm:          600px !default;
 }
 
 // Import partials.
-@import
-"minima/base",
+@import "minima/base",
 "minima/layout",
 "minima/post",
 "minima/comment",

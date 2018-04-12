@@ -2,16 +2,14 @@
 layout: default
 ---
 
-<article class="page-content  post" itemscope itemtype="http://schema.org/BlogPosting" aria-label="Content"
-         itemprop="articleBody">
+<article class="page-content" itemscope itemtype="http://schema.org/BlogPosting" aria-label="Content" itemprop="articleBody">
   <h1 itemprop="name headline">{{ page.title | escape }}</h1>
 
   <span class="post-meta">{% include icon-clock.svg %}
-      <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-                {% assign date_format = site.date_format | default: "%B %d. %Y" %}
-                {{ page.date | date: date_format }}
-      </time>
-    </span>
+    <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+      {% assign date_format = site.date_format | default: "%B %d. %Y" %}{{ page.date | date: date_format }}
+    </time>
+  </span>
 
   {{ content }}
 

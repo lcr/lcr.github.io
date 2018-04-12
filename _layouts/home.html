@@ -16,6 +16,7 @@ layout: default
       {% if post.excerpt != post.content %}
 
       {{ post.excerpt }}
+
       <a class="post-list-readmore" href="{{ post.url | relative_url }}">Read more</a>
 
       {% else %}

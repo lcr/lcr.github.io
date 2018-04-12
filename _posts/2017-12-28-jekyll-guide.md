@@ -14,10 +14,10 @@ gem install jekyll bundler
 
 ## Command
 
-To start a new project
+Creates a new Jekyll site scaffold in PATH
 
 ```
-jekyll new new-site
+jekyll new
 ```
 
 Change into your new directory
@@ -32,16 +32,16 @@ change Gemfile and _config.yml，  run
 bundle install
 ```
 
-Build the site on the preview server
+Build your site
 
 ```
-jekyll build
+jekyll build  
+jekyll b
 ```
 
-run
+Serve your site locally
 
 ```
-bundle exec jekyll serve
 jekyll server
 jekyll serve
 lekyll s

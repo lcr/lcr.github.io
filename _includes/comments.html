@@ -1,8 +1,7 @@
 {% if site.data.comments[page.slug] %}
 <article>
   <h1 class="comments-size">
-    {% if site.data.comments[page.slug].size != 0 %}
-    COMMENTS (<span>{{ site.data.comments[page.slug] | size }}</span>)
+    {% if site.data.comments[page.slug].size != 0 %} COMMENTS (<span>{{ site.data.comments[page.slug] | size }}</span>)
     {% endif %}
   </h1>
 

@@ -350,19 +350,19 @@ footer {
 /*
  * Post
  */
-.post span.post-meta {
+.post-content span.post-meta {
   display: block;
   padding-bottom: 10px;
   font-size: 14px;
   font-style: italic; }
-.post a {
+.post-content a {
   display: flex;
   align-items: center;
   vertical-align: center;
   color: #e55; }
-  .post a:hover {
+  .post-content a:hover {
     opacity: 0.8; }
-.post hr {
+.post-content hr {
   margin: 90px 0;
   border: 0;
   border-bottom: solid 1px #f5f5f5; }

@@ -5,7 +5,7 @@
   border-radius: $spacing-unit / 5;
   background: $white-color;
   @extend %vertical-rhythm;
-
+  
   .highlighter-rouge & {
     background: $grey-color;
   }

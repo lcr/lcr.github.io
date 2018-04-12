@@ -6,7 +6,7 @@ header,
 .comment,
 footer {
   padding-left: calc(50vw - 450px);
-  padding-right: calc(50vw - 450px);/*若设置为50%，IE会有水平滚动条*/
+  padding-right: calc(50vw - 450px); /*若设置为50%，IE会有水平滚动条*/
   @include media-query($on-laptop) {
     padding-left: $spacing-unit / 3;
     padding-right: $spacing-unit / 3;
@@ -25,7 +25,7 @@ header {
   position: relative;
   height: $spacing-unit * 2;
   background: $black-color;
-
+  
   a.site-title {
     float: left;
     @include relative-font-size(1.625);
@@ -33,19 +33,19 @@ header {
     letter-spacing: -1px;
     color: $white-color;
   }
-
+  
   nav {
     float: right;
     line-height: $spacing-unit * 2;
-
+    
     input.nav-trigger {
       display: none;
     }
-
+    
     span.menu-icon {
       display: none;
     }
-
+    
     a.page-link {
       margin-left: 20px;
       line-height: $base-line-height;
@@ -65,7 +65,7 @@ header {
       border-radius: 5px;
       text-align: right;
       background: $white-color;
-
+      
       label[for="nav-trigger"] {
         display: block;
         float: right;
@@ -80,23 +80,23 @@ header {
           height: 26px;
           line-height: 0;
           text-align: center;
-
+          
           > svg path {
             fill: $black-color;
           }
         }
       }
-
+      
       input ~ .trigger {
         clear: both;
         display: none;
       }
-
+      
       input:checked ~ .trigger {
         display: block;
         padding-bottom: 5px;
       }
-
+      
       a.page-link {
         display: block;
         padding: 5px 10px;
@@ -120,10 +120,10 @@ header {
       border-bottom: 1px solid $grey-color;
     }
     list-style: none;
-
+    
     > h1 {
       display: inline-block;
-
+      
       > a {
         display: inline-block;
         text-decoration: none;
@@ -142,14 +142,14 @@ header {
         }
       }
     }
-
+    
     span.post-list-meta {
       display: block;
       padding-bottom: $spacing-unit / 3;
       font-size: $small-font-size;
       font-style: italic;
     }
-
+    
     a.post-list-readmore {
       display: -ms-inline-flexbox;
       display: inline-flex;
@@ -183,7 +183,7 @@ header {
   justify-content: center;
   padding-top: $spacing-unit;
   padding-bottom: $spacing-unit * 3;
-
+  
   .pagination-link {
     margin: 0 ($spacing-unit / 2);
     font-size: $base-font-size * 2;
@@ -192,7 +192,7 @@ header {
       color: $link-color;
     }
   }
-
+  
   .pagination-link-active {
     margin: 0 ($spacing-unit / 2);
     border-radius: 100%;
@@ -204,14 +204,14 @@ header {
     background: $link-color;
     cursor: default;
   }
-
+  
   .icon-left-lighten {
     fill: lighten($black-color, 50%);
     &:hover path {
       fill: lighten($link-color, 15%)
     }
   }
-
+  
   .icon-right-lighten {
     fill: lighten($black-color, 50%);
     &:hover path {

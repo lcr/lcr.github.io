@@ -74,11 +74,10 @@ img {
   padding: 6px;
   //background: $grey-color;
   vertical-align: middle;
-  &:hover{
-    box-shadow:
-            0 0 5px 3px rgba(245, 245, 245, .9),
-            0 0 5px 6px rgba(245, 245, 245, .5),
-            0 0 5px 9px rgba(245, 245, 245, .1);
+  &:hover {
+    box-shadow: 0 0 5px 3px rgba(245, 245, 245, .9),
+    0 0 5px 6px rgba(245, 245, 245, .5),
+    0 0 5px 9px rgba(245, 245, 245, .1);
   }
 }
 
@@ -100,11 +99,11 @@ a {
   text-decoration: none;
   color: $black-color;
   -webkit-tap-highlight-color: transparent;
-
+  
   &:visited {
     color: darken($black-color, 15%);
   }
-
+  
   &:hover {
     color: $black-color;
   }
@@ -120,7 +119,7 @@ blockquote {
   @include relative-font-size(1.125);
   letter-spacing: -1px;
   font-style: italic;
-
+  
   > :last-child {
     margin-bottom: 0;
   }

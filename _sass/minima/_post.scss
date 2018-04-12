@@ -1,15 +1,15 @@
 /*
  * Post
  */
-.post {
-
+.post-content{
+  
   span.post-meta {
     display: block;
     padding-bottom: $spacing-unit / 3;
     font-size: $small-font-size;
     font-style: italic;
   }
-
+  
   a {
     display: flex;
     align-items: center;
@@ -19,7 +19,7 @@
       opacity: 0.8;
     }
   }
-
+  
   hr {
     margin: ($spacing-unit * 3) 0;
     border: 0;
