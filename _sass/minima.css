@@ -410,6 +410,8 @@ footer {
   background: #e8e8e8; }
   @media screen and (max-width: 600px) {
     .comment-new-text {
+      padding-left: 0;
+      text-indent: 0;
       width: calc(100vw - 20px); } }
   .comment-new-text:focus {
     outline: none;
@@ -418,6 +420,8 @@ footer {
 .comment-new-email {
   margin-top: 30px;
   margin-left: 30px;
+  padding-left: 0;
+  text-indent: 0;
   border: 0;
   border-radius: 6px;
   width: 300px;
