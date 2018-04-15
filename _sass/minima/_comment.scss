@@ -45,6 +45,7 @@
   font-size: $base-font-size * 1.5;
   text-indent: $spacing-unit / 2;
   color: darken($grey-color, 55%);
+  overflow: hidden;
   background: darken($grey-color, 5%);
   @include media-query($on-palm) {
     width: calc(100vw - 20px);
