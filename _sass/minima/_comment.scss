@@ -72,6 +72,7 @@
   color: darken($grey-color, 55%);
   background: darken($grey-color, 5%);
   @include media-query($on-palm) {
+    display: block;
     padding-left: 0;
     text-indent: 0;
     margin-left: 0;
