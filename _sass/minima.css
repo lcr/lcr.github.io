@@ -432,6 +432,8 @@ footer {
   background: #e8e8e8; }
   @media screen and (max-width: 600px) {
     .comment-new-email {
+      padding-left: 0;
+      text-indent: 0;
       margin-left: 0;
       width: calc(100vw - 20px); } }
   .comment-new-email:focus {
@@ -451,6 +453,8 @@ footer {
   overflow: hidden; }
   @media screen and (max-width: 600px) {
     .comment-new-message {
+      padding-left: 0;
+      text-indent: 0;
       width: calc(100vw - 20px); } }
   .comment-new-message:focus {
     outline: none;
