@@ -17,8 +17,3 @@ defaults:
       layout: post
 
 excerpt_separator: "<!-- more -->"
-
-algolia:
-  application_id: J8DNKCS2CK
-  search_only_api_key: 32cc20dc727ba2485243a84198bbb4ab
-  index_name: jekyll

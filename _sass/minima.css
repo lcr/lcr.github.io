@@ -432,6 +432,7 @@ footer {
   background: #e8e8e8; }
   @media screen and (max-width: 600px) {
     .comment-new-email {
+      display: block;
       padding-left: 0;
       text-indent: 0;
       margin-left: 0;
