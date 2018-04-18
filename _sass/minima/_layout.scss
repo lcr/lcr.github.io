@@ -3,6 +3,7 @@
  */
 header,
 .page-content,
+.post-content,
 .comment,
 footer {
   padding-left: calc(50vw - 450px);
@@ -13,16 +14,13 @@ footer {
   }
 }
 
-.page-content {
-  padding-top: $spacing-unit * 2;
-}
-
 /*
  * Site header
  */
 header {
   /* Positioning context for the mobile navigation icon */
   position: relative;
+  margin-bottom: $spacing-unit * 2;
   height: $spacing-unit * 2;
   background: $black-color;
   

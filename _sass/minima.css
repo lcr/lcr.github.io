@@ -148,6 +148,7 @@ table {
  */
 header,
 .page-content,
+.post-content,
 .comment,
 footer {
   padding-left: calc(50vw - 450px);
@@ -156,13 +157,11 @@ footer {
   @media screen and (max-width: 800px) {
     header,
     .page-content,
+    .post-content,
     .comment,
     footer {
       padding-left: 10px;
       padding-right: 10px; } }
-
-.page-content {
-  padding-top: 60px; }
 
 /*
  * Site header
@@ -170,6 +169,7 @@ footer {
 header {
   /* Positioning context for the mobile navigation icon */
   position: relative;
+  margin-bottom: 60px;
   height: 60px;
   background: #24292e; }
   header a.site-title {
@@ -332,7 +332,7 @@ footer {
  */
 .post-content span.post-meta {
   display: block;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
   font-size: 14px;
   font-style: italic; }
 .post-content a {
