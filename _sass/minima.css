@@ -395,7 +395,7 @@ footer {
       width: calc(100vw - 20px); } }
   .comment-new-text:focus {
     outline: none;
-    box-shadow: 0 0 1px 1px #e55; }
+    box-shadow: 0 0 1px 1px #b5b5b5; }
 
 .comment-new-email {
   margin-top: 30px;
@@ -419,7 +419,7 @@ footer {
       width: calc(100vw - 20px); } }
   .comment-new-email:focus {
     outline: none;
-    box-shadow: 0 0 1px 1px #e55; }
+    box-shadow: 0 0 1px 1px #b5b5b5; }
 
 .comment-new-message {
   margin-top: 30px;
@@ -439,7 +439,7 @@ footer {
       width: calc(100vw - 20px); } }
   .comment-new-message:focus {
     outline: none;
-    box-shadow: 0 0 1px 1px #e55; }
+    box-shadow: 0 0 1px 1px #b5b5b5; }
 
 .comment-new-submit {
   margin-top: 30px;
