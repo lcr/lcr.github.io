@@ -14,8 +14,6 @@ title: GitHub回收闲置用户名
 
 ![](/img/20180328/change-github-username3.jpg)
 
-&
-
 ![](/img/20180328/change-github-username4.jpg)
 
 几分钟后，惊喜的收到了GitHub的好消息
