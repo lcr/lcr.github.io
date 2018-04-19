@@ -239,7 +239,7 @@ header {
   .post-list > li:not(:first-child) {
     padding-top: 90px; }
   .post-list > li:not(:last-child) {
-    border-bottom: 1px solid #f5f5f5; }
+    border-bottom: 1px solid #b5b5b5; }
   .post-list > li > h1 {
     display: inline-block; }
     .post-list > li > h1 > a {
@@ -288,7 +288,6 @@ header {
   display: flex;
   -webkit-justify-content: center;
   justify-content: center;
-  padding-top: 30px;
   padding-bottom: 90px; }
   .pagination .pagination-link {
     margin: 0 15px;
@@ -460,8 +459,8 @@ footer {
  * post-recent
  */
 .post-recent {
-  padding-top: 45px;
-  padding-bottom: 90px;
+  padding-top: 60px;
+  padding-bottom: 120px;
   font-size: 24px; }
   .post-recent .post-recent-newer {
     float: left;
@@ -505,7 +504,7 @@ footer {
       .page-about h2 {
         font-size: 28px; } }
   .page-about ul {
-    padding-bottom: 60px; }
+    padding-bottom: 90px; }
     .page-about ul li {
       display: inline;
       list-style: none; }

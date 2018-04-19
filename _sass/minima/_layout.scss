@@ -115,7 +115,7 @@ header {
     }
     padding-bottom: $spacing-unit * 3;
     &:not(:last-child) {
-      border-bottom: 1px solid $grey-color;
+      border-bottom: 1px solid $grey-color-dark;
     }
     list-style: none;
     
@@ -179,7 +179,6 @@ header {
   display: flex;
   -webkit-justify-content: center;
   justify-content: center;
-  padding-top: $spacing-unit;
   padding-bottom: $spacing-unit * 3;
   
   .pagination-link {
