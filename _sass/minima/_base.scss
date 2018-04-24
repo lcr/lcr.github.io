@@ -27,9 +27,11 @@ body {
  * Content width
  */
 header,
-.page-content,
+.post-list,
 .post-content,
+.pagination,
 .comment,
+.page-about,
 footer {
   padding-left: calc(50vw - 450px);
   padding-right: calc(50vw - 450px); /*若设置为50%，IE会有水平滚动条*/

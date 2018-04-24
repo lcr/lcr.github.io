@@ -2,11 +2,9 @@
  * pagination
  */
 .pagination {
-  display: -webkit-flex;
   display: flex;
-  -webkit-justify-content: center;
   justify-content: center;
-  padding-bottom: $spacing-unit * 3;
+  margin-bottom: $spacing-unit * 3;
   
   .pagination-link {
     margin: 0 ($spacing-unit / 2);
