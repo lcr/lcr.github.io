@@ -1,34 +1,4 @@
 /*
- * Comments
- */
-.comment {
-  padding-top: $spacing-unit * 5;
-  color: darken($grey-color, 55%);
-  background: linear-gradient(177deg, transparent 150px, $grey-color 0);
-}
-
-.comments-size {
-  padding-top: $spacing-unit * 2;
-  border-bottom: 2px solid $grey-color-dark;
-  padding-bottom: $spacing-unit / 3;
-}
-
-.comments-name {
-  padding-top: $spacing-unit / 2;
-  font-size: $base-font-size * 1.5;
-}
-
-.comments-date {
-  padding: ($spacing-unit / 3) 0;
-  font-style: italic;
-  font-size: $small-font-size;
-}
-
-.comments-message {
-  border-bottom: 1px solid $grey-color-dark;
-}
-
-/*
  * Comment new
  */
 .comment-new-title {
@@ -60,7 +30,6 @@
   margin-top: $spacing-unit;
   margin-left: $spacing-unit;
   padding-left: 0;
-  text-indent: 0;
   border: 0;
   border-radius: $spacing-unit / 5;
   width: $spacing-unit * 10;
@@ -120,43 +89,4 @@
   &:focus {
     outline: none
   }
-}
-
-/*
- * post-recent
- */
-.post-recent {
-  padding-top: $spacing-unit * 2;
-  padding-bottom: $spacing-unit * 4;
-  font-size: $base-font-size * 1.5;
-  
-  .post-recent-newer {
-    float: left;
-    color: darken($grey-color, 55%);
-    &:hover {
-      color: $link-color;
-    }
-  }
-  
-  .post-recent-older {
-    float: right;
-    color: darken($grey-color, 55%);
-    &:hover {
-      color: $link-color;
-    }
-  }
-  
-  svg {
-    width: 18px;
-    height: 18px;
-    color: darken($grey-color, 55%);
-  }
-}
-
-.icon-left-link:hover path {
-  fill: $link-color;
-}
-
-.icon-right-link:hover path {
-  fill: $link-color;
 }

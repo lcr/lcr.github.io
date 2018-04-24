@@ -1,0 +1,45 @@
+/*
+ * pagination
+ */
+.pagination {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  padding-bottom: $spacing-unit * 3;
+  
+  .pagination-link {
+    margin: 0 ($spacing-unit / 2);
+    font-size: $base-font-size * 2;
+    color: $black-color;
+    &:hover {
+      color: $link-color;
+    }
+  }
+  
+  .pagination-link-active {
+    margin: 0 ($spacing-unit / 2);
+    border-radius: 100%;
+    width: $spacing-unit * 1.6;
+    height: 100%;
+    font-size: $base-font-size * 2;
+    text-align: center;
+    color: $white-color;
+    background: $link-color;
+    cursor: default;
+  }
+  
+  .icon-left-lighten {
+    fill: lighten($black-color, 50%);
+    &:hover path {
+      fill: lighten($link-color, 15%)
+    }
+  }
+  
+  .icon-right-lighten {
+    fill: lighten($black-color, 50%);
+    &:hover path {
+      fill: lighten($link-color, 15%)
+    }
+  }
+}

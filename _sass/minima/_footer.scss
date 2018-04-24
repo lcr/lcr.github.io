@@ -1,0 +1,12 @@
+/*
+ * footer
+ */
+footer {
+  height: $spacing-unit * 4;
+  line-height: $spacing-unit * 4;
+  color: $grey-color;
+  background: $black-color;
+  @include media-query($on-palm) {
+    text-align: center;
+  }
+}

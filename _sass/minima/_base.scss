@@ -24,6 +24,22 @@ body {
 }
 
 /*
+ * Content width
+ */
+header,
+.page-content,
+.post-content,
+.comment,
+footer {
+  padding-left: calc(50vw - 450px);
+  padding-right: calc(50vw - 450px); /*若设置为50%，IE会有水平滚动条*/
+  @include media-query($on-laptop) {
+    padding-left: $spacing-unit / 3;
+    padding-right: $spacing-unit / 3;
+  }
+}
+
+/*
  * Set `margin-bottom` to maintain vertical rhythm
  */
 h1, h2, h3, h4, h5, h6,

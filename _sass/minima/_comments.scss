@@ -1,0 +1,29 @@
+/*
+ * Comments
+ */
+.comment {
+  padding-top: $spacing-unit * 5;
+  color: darken($grey-color, 55%);
+  background: linear-gradient(177deg, transparent 150px, $grey-color 0);
+}
+
+.comments-size {
+  padding-top: $spacing-unit * 2;
+  border-bottom: 2px solid $grey-color-dark;
+  padding-bottom: $spacing-unit / 3;
+}
+
+.comments-name {
+  padding-top: $spacing-unit / 2;
+  font-size: $base-font-size * 1.5;
+}
+
+.comments-date {
+  padding: ($spacing-unit / 3) 0;
+  font-style: italic;
+  font-size: $small-font-size;
+}
+
+.comments-message {
+  border-bottom: 1px solid $grey-color-dark;
+}
