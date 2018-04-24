@@ -62,7 +62,7 @@
           @include media-query($on-palm) {
             display: inline;
             margin-left: $spacing-unit / 6;
-            font-size: $base-font-size * 1.2;
+            font-size: $base-font-size * 1.25;
           }
         }
       }

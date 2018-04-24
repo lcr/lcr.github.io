@@ -1,8 +1,8 @@
 @charset "utf-8";
 
-/*
- * Define defaults for each variable.
- */
+
+// Define defaults for each variable
+
 $base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 $base-font-size: 16px !default;
 $base-font-weight: 400 !default;
@@ -19,9 +19,7 @@ $grey-color-dark: darken($grey-color, 25%) !default;
 $link-color: #e55 !default;
 $linear-color: linear-gradient(45deg, #e55, #909) !default;
 
-/*
- * Width of the content area
- */
+// Width of the content area
 $content-width: 900px !default;
 $on-laptop: 800px !default;
 $on-palm: 600px !default;
@@ -35,18 +33,16 @@ $on-palm: 600px !default;
   font-size: $base-font-size * $ratio;
 }
 
-/*
- * Import partials.
- */
+// Import partials
 @import
 "minima/base",
 "minima/header",
 "minima/post-list",
 "minima/pagination",
 "minima/footer",
-"minima/post",
+"minima/syntax-highlighting",
+"minima/post-content",
 "minima/comments",
 "minima/comment-new",
 "minima/post-recent",
-"minima/about",
-"minima/syntax-highlighting";
+"minima/about";
