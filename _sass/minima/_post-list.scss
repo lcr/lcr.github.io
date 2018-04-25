@@ -42,17 +42,12 @@
     }
     
     a.post-list-readmore {
-      display: -ms-inline-flexbox;
       display: inline-flex;
-      -webkit-box-align: center;
       align-items: center;
       margin-top: $spacing-unit / 2;
       border: 0.1rem solid $link-color;
       border-radius: $spacing-unit;
-      padding: 0 $spacing-unit;
-      height: $spacing-unit * 1.8;
-      font-size: $base-font-size;
-      text-decoration: none;
+      padding: ($spacing-unit / 1.875) $spacing-unit;
       color: $link-color;
       &:hover {
         border: 0.1rem solid $black-color;

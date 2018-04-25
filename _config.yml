@@ -7,7 +7,7 @@ url: "https://lcr.github.io"
 permalink: /:categories/:title
 
 paginate: 5
-paginate_path: "/page:num/"
+paginate_path: "/page:num"
 
 defaults:
   - scope:
@@ -19,3 +19,7 @@ defaults:
 excerpt_separator: "<!-- more -->"
 
 markdown: kramdown
+
+header_pages:
+  - home.html
+  - about.html

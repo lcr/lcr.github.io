@@ -266,17 +266,12 @@ header {
     font-size: 14px;
     font-style: italic; }
   .post-list > li a.post-list-readmore {
-    display: -ms-inline-flexbox;
     display: inline-flex;
-    -webkit-box-align: center;
     align-items: center;
     margin-top: 15px;
     border: 0.1rem solid #e55;
     border-radius: 30px;
-    padding: 0 30px;
-    height: 54px;
-    font-size: 16px;
-    text-decoration: none;
+    padding: 16px 30px;
     color: #e55; }
     .post-list > li a.post-list-readmore:hover {
       border: 0.1rem solid #24292e;
@@ -293,30 +288,27 @@ header {
 .pagination {
   display: flex;
   justify-content: center;
-  margin-bottom: 90px; }
+  margin-bottom: 90px;
+  font-size: 32px; }
   .pagination .pagination-link {
     margin: 0 15px;
-    font-size: 32px;
     color: #24292e; }
     .pagination .pagination-link:hover {
       color: #e55; }
+    .pagination .pagination-link:hover path {
+      fill: #e55; }
   .pagination .pagination-link-active {
     margin: 0 15px;
     border-radius: 100%;
     width: 48px;
-    height: 100%;
-    font-size: 32px;
+    height: 48px;
     text-align: center;
     color: #fff;
     background: #e55;
     cursor: default; }
-  .pagination .icon-left-lighten {
+  .pagination .icon-lighten {
     fill: #9ea9b3; }
-    .pagination .icon-left-lighten:hover path {
-      fill: #f59b9b; }
-  .pagination .icon-right-lighten {
-    fill: #9ea9b3; }
-    .pagination .icon-right-lighten:hover path {
+    .pagination .icon-lighten:hover path {
       fill: #f59b9b; }
 
 /*
@@ -537,11 +529,11 @@ footer {
   @media screen and (max-width: 600px) {
     .comment-new-text {
       padding-left: 0;
-      text-indent: 0;
-      width: calc(100vw - 20px); } }
+      width: calc(100vw - 20px);
+      text-indent: 0; } }
   .comment-new-text:focus {
-    outline: none;
-    box-shadow: 0 0 1px 1px #b5b5b5; }
+    box-shadow: 0 0 1px 1px #b5b5b5;
+    outline: none; }
 
 .comment-new-email {
   margin-top: 30px;
@@ -558,10 +550,10 @@ footer {
   @media screen and (max-width: 600px) {
     .comment-new-email {
       display: block;
-      padding-left: 0;
-      text-indent: 0;
       margin-left: 0;
-      width: calc(100vw - 20px); } }
+      padding-left: 0;
+      width: calc(100vw - 20px);
+      text-indent: 0; } }
   .comment-new-email:focus {
     outline: none;
     box-shadow: 0 0 1px 1px #b5b5b5; }
@@ -608,26 +600,19 @@ footer {
   padding-top: 60px;
   padding-bottom: 120px;
   font-size: 24px; }
+  .post-recent a {
+    color: dimgray; }
+    .post-recent a:hover {
+      color: #e55; }
+    .post-recent a:hover path {
+      fill: #e55; }
   .post-recent .post-recent-newer {
-    float: left;
-    color: dimgray; }
-    .post-recent .post-recent-newer:hover {
-      color: #e55; }
+    float: left; }
   .post-recent .post-recent-older {
-    float: right;
-    color: dimgray; }
-    .post-recent .post-recent-older:hover {
-      color: #e55; }
+    float: right; }
   .post-recent svg {
     width: 18px;
-    height: 18px;
-    color: dimgray; }
-
-.icon-left-link:hover path {
-  fill: #e55; }
-
-.icon-right-link:hover path {
-  fill: #e55; }
+    height: 18px; }
 
 /*
  * page-about

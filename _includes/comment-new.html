@@ -1,16 +1,14 @@
-<article>
-  <h1 class="comment-new-title">LEAVE A REPLY</h1>
+<h1 class="comment-new-title">LEAVE A REPLY</h1>
 
-  <form method="POST" action="https://api.staticman.net/v2/entry/lcr/lcr.github.io/master/comments">
-    <input name="options[redirect]" type="hidden" value="{{ page.url | absolute_url }}">
-    <input name="options[slug]" type="hidden" value="{{ page.slug }}">
+<form method="POST" action="https://api.staticman.net/v2/entry/lcr/lcr.github.io/master/comments">
+  <input name="options[redirect]" type="hidden" value="{{ page.url | absolute_url }}">
+  <input name="options[slug]" type="hidden" value="{{ page.slug }}">
 
-    <label><input class="comment-new-text" name="fields[name]" type="text" placeholder="Name"></label>
+  <label><input class="comment-new-text" name="fields[name]" type="text" placeholder="Name"></label>
 
-    <label><input class="comment-new-email" name="fields[email]" type="email" placeholder="Email (optional)"></label>
+  <label><input class="comment-new-email" name="fields[email]" type="email" placeholder="Email (optional)"></label>
 
-    <label><textarea class="comment-new-message" name="fields[message]" placeholder="Message"></textarea></label>
+  <label><textarea class="comment-new-message" name="fields[message]" placeholder="Message"></textarea></label>
 
-    <input class="comment-new-submit" type="submit" value="Send">
-  </form>
-</article>
+  <input class="comment-new-submit" type="submit" value="Send">
+</form>

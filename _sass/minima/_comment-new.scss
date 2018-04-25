@@ -17,12 +17,12 @@
   background: darken($grey-color, 5%);
   @include media-query($on-palm) {
     padding-left: 0;
-    text-indent: 0;
     width: calc(100vw - 20px);
+    text-indent: 0;
   }
   &:focus {
-    outline: none;
     box-shadow: 0 0 1px 1px $grey-color-dark;
+    outline: none;
   }
 }
 
@@ -40,10 +40,10 @@
   background: darken($grey-color, 5%);
   @include media-query($on-palm) {
     display: block;
-    padding-left: 0;
-    text-indent: 0;
     margin-left: 0;
+    padding-left: 0;
     width: calc(100vw - 20px);
+    text-indent: 0;
   }
   &:focus {
     outline: none;
