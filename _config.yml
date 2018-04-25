@@ -4,7 +4,7 @@ description: Leslie Lai's personal blog
 baseurl: ""
 url: "https://lcr.github.io"
 
-markdown: kramdown
+permalink: /:categories/:title/
 
 paginate: 5
 paginate_path: "/page:num/"
@@ -17,3 +17,5 @@ defaults:
       layout: post
 
 excerpt_separator: "<!-- more -->"
+
+markdown: kramdown
