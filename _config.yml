@@ -4,7 +4,7 @@ description: Leslie Lai's personal blog
 baseurl: ""
 url: "https://lcr.github.io"
 
-permalink: /:categories/:title/
+permalink: /:categories/:title
 
 paginate: 5
 paginate_path: "/page:num/"
