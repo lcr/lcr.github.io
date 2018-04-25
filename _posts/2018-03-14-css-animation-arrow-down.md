@@ -19,25 +19,7 @@ title: "CSS animation arrow down"
 ```css
 .icon-down {
     position: relative;
-    -webkit-animation: icon-down-animations 2s ease-in 1s infinite alternate;
     animation: icon-down-animations 2s ease-in 1s infinite alternate;
-}
-@-webkit-keyframes icon-down-animations {
-    0% {
-        top: 6px;
-        opacity: 1;
-    }
-    50% {
-        opacity: 0.5;
-    }
-    75% {
-        top: 0;
-        opacity: 0;
-    }
-    100% {
-        top: 0;
-        opacity: 0;
-    }
 }
 @keyframes icon-down-animations {
     0% {
@@ -84,27 +66,9 @@ title: "CSS animation arrow down"
 }
 .icon-down:before {
     position: relative;
-    -webkit-animation: icon-down-animations 2s ease-in 1s infinite alternate;
     animation: icon-down-animations 2s ease-in 1s infinite alternate;
     font-size: 32px;
     content: "\e902"; /*icon font code here*/
-}
-@-webkit-keyframes icon-down-animations {
-    0% {
-        top: 6px;
-        opacity: 1;
-    }
-    50% {
-        opacity: 0.5;
-    }
-    75% {
-        top: 0;
-        opacity: 0;
-    }
-    100% {
-        top: 0;
-        opacity: 0;
-    }
 }
 @keyframes icon-down-animations {
     0% {
