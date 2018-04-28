@@ -750,9 +750,6 @@ input[type="search"]::-ms-reveal {
     height: 32px;
     fill: #f5f5f5; }
 
-.hide {
-  display: none; }
-
 .aa-dropdown-menu {
   margin-top: 16px;
   width: 100%;
@@ -766,5 +763,18 @@ input[type="search"]::-ms-reveal {
     background: #2f363c; }
   .aa-suggestion em {
     color: #e55; }
+
+.hide {
+  display: none; }
+
+/*
+ *search-nav
+ */
+.search-nav {
+  margin-top: 15px; }
+  .search-nav a {
+    display: block;
+    color: #f5f5f5;
+    font-size: 48px; }
 
 /*# sourceMappingURL=minima.css.map */

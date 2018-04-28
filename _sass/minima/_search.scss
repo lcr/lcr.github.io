@@ -20,7 +20,7 @@
     border: 0;
     color: $grey-color;
     cursor: pointer;
-    svg{
+    svg {
       pointer-events: none;
     }
   }
@@ -55,11 +55,13 @@
   font-size: 48px;
   width: 100%; //搜索框百分百
 }
+
 /* 清除IE搜索框默认右端的X */
 input[type="search"]::-ms-clear,
 input[type="search"]::-ms-reveal {
   display: none;
 }
+
 /* 清除Chrome搜索框默认右端的X */
 .searchbox__input::-webkit-search-decoration,
 .searchbox__input::-webkit-search-cancel-button,
@@ -93,10 +95,6 @@ input[type="search"]::-ms-reveal {
   }
 }
 
-.hide {
-  display: none;
-}
-
 .aa-dropdown-menu {
   margin-top: 16px;
   width: 100%;
@@ -105,12 +103,28 @@ input[type="search"]::-ms-reveal {
 
 .aa-suggestion {
   padding: 4px;
-  border-bottom: lighten($black-color,5%) 1px solid;
+  border-bottom: lighten($black-color, 5%) 1px solid;
   /* 鼠标键盘选中的背景色*/
   &.aa-cursor {
-    background: lighten($black-color,5%);
+    background: lighten($black-color, 5%);
   }
   em {
     color: $link-color;
+  }
+}
+
+.hide {
+  display: none;
+}
+
+/*
+ *search-nav
+ */
+.search-nav {
+  margin-top: $spacing-unit / 2;
+  a {
+    display: block;
+    color: $grey-color;
+    font-size: $base-font-size * 3;
   }
 }

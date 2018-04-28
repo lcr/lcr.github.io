@@ -33,3 +33,13 @@ document.querySelector("#search-input").addEventListener("keyup", function () {
     reset.classList.remove('hide');
   }
 });
+
+document.querySelector("#search-input").addEventListener("keyup", function () {
+  var searchbox = document.querySelector(".aa-input");
+  var searchnav = document.querySelector(".search-nav");
+  if (searchbox.value.length > 0) {
+    searchnav.classList.add("hide");
+  } else {
+    searchnav.classList.remove('hide');
+  }
+});
