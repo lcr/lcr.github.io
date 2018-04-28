@@ -1,0 +1,16 @@
+<div id="search">
+  <button type="button" class="search-close" title="Close">{% include icon-cross.svg %}</button>
+
+  <form novalidate="novalidate" onsubmit="return false;" class="searchbox" role="search">
+    <input id="search-input" type="search" name="search" placeholder="Search..." autocomplete="off" required="required" class="searchbox__input">
+
+    <button type="reset" class="searchbox__reset hide" title="Search Clear">{% include icon-cross.svg %}</button>
+  </form>
+
+</div>
+
+<script src="/assets/jquery.min.js"></script>
+<script src="/assets/algoliasearch.min.js"></script>
+<script src="/assets/autocomplete.min.js"></script>
+<script src="/assets/search-show.js"></script>
+<script src="/assets/search.js"></script>
