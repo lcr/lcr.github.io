@@ -18,6 +18,24 @@ var myAutocomplete = autocomplete('#search-input', {hint: false}, [
   location.href = suggestion.url;
 });
 
+//点击重置，清空搜索框
+document.querySelector(".searchbox [type='reset']").addEventListener("click", function () {
+  document.querySelector(".aa-input").focus();
+  this.classList.add("hide");
+  myAutocomplete.autocomplete.setVal("");
+});
+
+//键盘清空搜索框，隐藏搜索结果
+document.querySelector("#search-input").addEventListener("keyup", function () {
+  var searchbox = document.querySelector(".aa-input");
+  var reset = document.querySelector(".searchbox [type='reset']");
+  if (searchbox.value.length === 0) {
+    reset.classList.add("hide");
+  } else {
+    reset.classList.remove('hide');
+  }
+});
+
 //点击重置，显示导航栏
 document.querySelector(".searchbox [type='reset']").addEventListener("click", function () {
   var searchbox = document.querySelector(".aa-input");
@@ -37,23 +55,5 @@ document.querySelector("#search-input").addEventListener("keyup", function () {
     searchnav.classList.add("hide");
   } else {
     searchnav.classList.remove('hide');
-  }
-});
-
-//点击重置，清空搜索框
-document.querySelector(".searchbox [type='reset']").addEventListener("click", function () {
-  document.querySelector(".aa-input").focus();
-  this.classList.add("hide");
-  myAutocomplete.autocomplete.setVal("");
-});
-
-//键盘清空搜索框，隐藏搜索结果
-document.querySelector("#search-input").addEventListener("keyup", function () {
-  var searchbox = document.querySelector(".aa-input");
-  var reset = document.querySelector(".searchbox [type='reset']");
-  if (searchbox.value.length === 0) {
-    reset.classList.add("hide");
-  } else {
-    reset.classList.remove('hide');
   }
 });
