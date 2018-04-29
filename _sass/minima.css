@@ -686,8 +686,9 @@ footer {
     right: 80px;
     background: none;
     border: 0;
-    color: #f5f5f5;
     cursor: pointer; }
+    #search .search-close:focus, #search .search-close:active {
+      outline: 0; }
     #search .search-close svg {
       pointer-events: none; }
   #search.search-open {
@@ -745,10 +746,6 @@ input[type="search"]::-ms-reveal {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none; }
-  .searchbox__reset svg {
-    width: 32px;
-    height: 32px;
-    fill: #f5f5f5; }
 
 .aa-dropdown-menu {
   margin-top: 16px;

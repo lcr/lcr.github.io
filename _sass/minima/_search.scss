@@ -18,8 +18,11 @@
     right: 80px;
     background: none;
     border: 0;
-    color: $grey-color;
     cursor: pointer;
+    &:focus,
+    &:active{
+      outline: 0;
+    }
     svg {
       pointer-events: none;
     }
@@ -88,11 +91,6 @@ input[type="search"]::-ms-reveal {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  svg {
-    width: 32px;
-    height: 32px;
-    fill: $grey-color;
-  }
 }
 
 .aa-dropdown-menu {
