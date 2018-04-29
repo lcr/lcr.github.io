@@ -7,10 +7,10 @@ $(function () {
       $("#search-input").focus();
     }
   });
-  
+ 
   $("#search, button.search-close").on("click keyup", function (event) {
     if (
-      event.target === this || event.target.className === "search-close" || event.keyCode === 27
+      event.target.className === "search-close" || event.keyCode === 27
     ) {
       $(this).removeClass("search-open");
       $("body").css("overflow-y", "visible");

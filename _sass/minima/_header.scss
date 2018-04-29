@@ -70,8 +70,8 @@ header {
       }
       
       input ~ .trigger {
-        clear: both;
         display: none;
+        clear: both;
       }
       
       input:checked ~ .trigger {
