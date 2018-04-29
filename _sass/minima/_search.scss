@@ -99,6 +99,12 @@ input[type="search"]::-ms-reveal {
   margin-top: 16px;
   width: 100%;
   color: $grey-color;
+  code {
+    background: $black-color;
+  }
+  a {
+    color: $grey-color;
+  }
 }
 
 .aa-suggestion {
@@ -126,5 +132,8 @@ input[type="search"]::-ms-reveal {
     display: block;
     color: $grey-color;
     font-size: $base-font-size * 3;
+    &:hover {
+      background: lighten($black-color, 5%);
+    }
   }
 }

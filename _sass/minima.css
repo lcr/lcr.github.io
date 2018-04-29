@@ -754,6 +754,10 @@ input[type="search"]::-ms-reveal {
   margin-top: 16px;
   width: 100%;
   color: #f5f5f5; }
+  .aa-dropdown-menu code {
+    background: #24292e; }
+  .aa-dropdown-menu a {
+    color: #f5f5f5; }
 
 .aa-suggestion {
   padding: 4px;
@@ -776,5 +780,7 @@ input[type="search"]::-ms-reveal {
     display: block;
     color: #f5f5f5;
     font-size: 48px; }
+    .search-nav a:hover {
+      background: #2f363c; }
 
 /*# sourceMappingURL=minima.css.map */
