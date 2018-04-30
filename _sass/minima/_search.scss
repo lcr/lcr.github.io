@@ -1,15 +1,12 @@
 #search {
-  display: flex;
-  vertical-align: center;
   position: fixed;
   top: 0;
   left: 0;
-  padding-top: 15vh;
   width: calc(100vw + 17px);
-  height: 100%;
+  height: 100vh;
   background: $black-color;
   transition: all 0.5s ease-in-out;
-  transform: translate(0px, -100%) scale(0, 0);
+  transform: translate(100%, -100%) scale(0, 0);
   overflow-x: hidden;
   @include media-query($on-palm) {
     width: 100vw;
@@ -17,17 +14,21 @@
   
   .search-close {
     position: fixed;
-    top: 3vh;
-    right: 3vw;
+    top: 40px;
+    right: 57px;
     background: none;
     border: 0;
     cursor: pointer;
     &:focus,
-    &:active{
+    &:active {
       outline: 0;
     }
     svg {
       pointer-events: none;
+    }
+    @include media-query($on-palm) {
+      top: 24px;
+      right: 16px;
     }
   }
   
@@ -37,12 +38,14 @@
 }
 
 .searchbox {
-  display: inline-block;
-  margin: 0 auto;
   position: relative;
-  width: 95vw;
+  margin: ($spacing-unit * 3) auto 0;
+  width: 70vw;
   height: 60px;
   border-bottom: 2px $grey-color solid;
+  @include media-query($on-palm) {
+    width: 95vw;
+  }
   .algolia-autocomplete {
     display: block;
     width: 100%;
