@@ -182,17 +182,18 @@ header {
     color: #fff; }
   header nav {
     float: right; }
-    header nav .page-link {
+    header nav a.page-link {
+      display: inline-block;
       margin-left: 20px;
       color: #fff; }
-      header nav .page-link:hover {
+      header nav a.page-link:hover {
         color: #b5b5b5; }
-    header nav .search-palm {
+    header nav a.search-palm {
       display: none; }
     @media screen and (max-width: 600px) {
-      header nav .page-link {
+      header nav a.page-link {
         display: none; }
-      header nav .search-palm {
+      header nav a.search-palm {
         display: block;
         margin-top: 5px;
         margin-right: 5px; } }
