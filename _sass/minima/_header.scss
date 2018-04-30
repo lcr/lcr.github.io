@@ -17,11 +17,13 @@ header {
   nav {
     float: right;
     .page-link {
+      display: inline-block;
       &:not(:last-child){
         margin-right: 20px;
       }
       color: $white-color;
-      &:hover {
+      @include relative-font-size(1.125);
+      &:hover{
         color: $grey-color-dark;
       }
       svg{
