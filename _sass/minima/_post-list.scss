@@ -11,7 +11,9 @@
       border-bottom: 1px solid $grey-color;
     }
     list-style: none;
-    
+    a{
+      color: $red-color;
+    }
     > h1 {
       display: inline-block;
       
@@ -32,6 +34,7 @@
           background: $red-purple-color;
         }
       }
+      
     }
     
     span.post-list-meta {
