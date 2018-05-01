@@ -3,7 +3,7 @@ $(function () {
     event.preventDefault();
     $("#search").addClass("search-open");
     $("body").css("overflow-y", "hidden");
-    if(innerWidth > 650){
+    if(innerWidth > 600){
       $("#search-input").focus();
     }
   });

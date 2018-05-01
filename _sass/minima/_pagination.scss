@@ -11,10 +11,8 @@
     margin: 0 ($spacing-unit / 2);
     color: $black-color;
     &:hover {
-      color: $link-color;
-    }
-    &:hover path{
-      fill:$link-color;
+      color: $red-color;
+      fill: $red-color;
     }
   }
   
@@ -25,14 +23,14 @@
     height: $spacing-unit * 1.6;
     text-align: center;
     color: $white-color;
-    background: $link-color;
+    background: $red-color;
     cursor: default;
   }
   
   .icon-lighten {
     fill: lighten($black-color, 50%);
-    &:hover path {
-      fill: lighten($link-color, 15%)
+    &:hover {
+      fill: lighten($red-color, 15%)
     }
   }
 }

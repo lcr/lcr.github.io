@@ -2,7 +2,6 @@
  * Post-content
  */
 .post-content {
-  
   span.post-meta {
     display: block;
     margin-bottom: $spacing-unit / 3;
@@ -11,18 +10,15 @@
   }
   
   a {
-    display: flex;
-    align-items: center;
-    vertical-align: center;
-    color: $link-color;
+    color: $red-color;
     &:hover {
-      opacity: 0.8;
+      opacity: 0.5;
     }
   }
   
   hr {
-    margin: ($spacing-unit * 3) 0;
+    margin: ($spacing-unit * 2) 0;
     border: 0;
-    border-bottom: solid 1px $grey-color-dark;
+    border-bottom: 1px solid $grey-color;
   }
 }

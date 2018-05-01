@@ -1,6 +1,5 @@
 @charset "utf-8";
 
-
 // Define defaults for each variable
 
 $base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !default;
@@ -11,13 +10,13 @@ $base-line-height: 1.5 !default;
 
 $spacing-unit: 30px !default;
 
-$black-color: #24292e !default;
+$black-color: #000 !default;
 $white-color: #fff !default;
-$grey-color: #f5f5f5 !default;
-$grey-color-light: lighten($grey-color, 25%) !default;
-$grey-color-dark: darken($grey-color, 25%) !default;
-$link-color: #e55 !default;
-$linear-color: linear-gradient(45deg, #e55, #909) !default;
+$deep-grey-color: #212121 !default;
+$grey-color: #9E9E9E !default;
+$light-grey-color: #fafafa !default;
+$red-color: #F44336 !default;
+$red-purple-color: linear-gradient(45deg, #F44336, #9C27B0) !default;
 
 // Width of the content area
 $content-width: 900px !default;
@@ -29,13 +28,13 @@ $on-palm: 600px !default;
     @content;
   }
 }
+
 @mixin relative-font-size($ratio) {
   font-size: $base-font-size * $ratio;
 }
 
 // Import partials
-@import
-"minima/base",
+@import "minima/base",
 "minima/header",
 "minima/post-list",
 "minima/pagination",

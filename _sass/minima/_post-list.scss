@@ -8,7 +8,7 @@
     }
     padding-bottom: $spacing-unit * 3;
     &:not(:last-child) {
-      border-bottom: 1px solid $grey-color-dark;
+      border-bottom: 1px solid $grey-color;
     }
     list-style: none;
     
@@ -23,13 +23,13 @@
           display: block;
           width: 0;
           height: 2px;
-          background: $linear-color;
+          background: $red-purple-color;
           transition: width .5s ease, background-color .5s ease;
           content: '';
         }
         &:hover:after {
           width: 100%;
-          background: $linear-color;
+          background: $red-purple-color;
         }
       }
     }
@@ -45,14 +45,14 @@
       display: inline-flex;
       align-items: center;
       margin-top: $spacing-unit / 2;
-      border: 0.1rem solid $link-color;
+      border: 0.1rem solid $red-color;
       border-radius: $spacing-unit;
       padding: ($spacing-unit / 1.875) $spacing-unit;
-      color: $link-color;
+      color: $red-color;
       &:hover {
-        border: 0.1rem solid $black-color;
+        border: 0.1rem solid $deep-grey-color;
         color: $white-color;
-        background: $black-color;
+        background: $deep-grey-color;
         -webkit-transition: 500ms;
         -moz-transition: 500ms;
         -o-transition: 500ms;

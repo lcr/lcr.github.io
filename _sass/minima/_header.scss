@@ -5,7 +5,7 @@ header {
   margin-bottom: $spacing-unit * 2;
   height: $spacing-unit * 2.5;
   line-height: $spacing-unit * 2.5;
-  background: $black-color;
+  background: $deep-grey-color;
   
   .site-title {
     float: left;
@@ -24,7 +24,7 @@ header {
       color: $white-color;
       @include relative-font-size(1.125);
       &:hover{
-        color: $grey-color-dark;
+        color: $grey-color;
       }
       svg{
          display: none;
