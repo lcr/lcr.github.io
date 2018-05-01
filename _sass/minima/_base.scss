@@ -45,7 +45,7 @@ footer {
  * Set `margin-bottom` to maintain vertical rhythm
  */
 h1, h2, h3, h4, h5, h6,
-p, ul, ol, dl,table, blockquote,
+p, ul, ol, dl, table, blockquote,
 pre, figure, %vertical-rhythm {
   margin-bottom: $spacing-unit / 2;
 }
@@ -112,16 +112,11 @@ a {
  * Blockquotes
  */
 blockquote {
+  border-left: 4px solid $grey-color;
   padding-left: $spacing-unit / 2;
-  border-left: 5px solid $light-grey-color;
-  color: $grey-color;
-  @include relative-font-size(1.125);
-  letter-spacing: -1px;
+  background: $light-grey-color;
   font-style: italic;
-  
-  > :last-child {
-    margin-bottom: 0;
-  }
+  letter-spacing: -1px;
 }
 
 /*
