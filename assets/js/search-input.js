@@ -1,3 +1,29 @@
+/*
+ * search-open
+ */
+$(function () {
+  $('a[href="#search"]').on("click", function (event) {
+    event.preventDefault();
+    $("#search").addClass("search-open");
+    $("body").css("overflow-y", "hidden");
+    if(innerWidth > 600){
+      $("#search-input").focus();
+    }
+  });
+  
+  $("#search, button.search-close").on("click keyup", function (event) {
+    if (
+      event.target.className === "search-close" || event.keyCode === 27
+    ) {
+      $(this).removeClass("search-open");
+      $("body").css("overflow-y", "visible");
+    }
+  });
+});
+
+/*
+ * search-input
+ */
 var client = algoliasearch('4X0L5EZUHF', '2c3e03751f5b259ae833fe039896ad2e');
 var index = client.initIndex('jekyll');
 var myAutocomplete = autocomplete('#search-input', {hint: false}, [
