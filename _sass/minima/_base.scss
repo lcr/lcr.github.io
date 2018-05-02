@@ -165,3 +165,9 @@ table {
     border: 1px solid $grey-color;
   }
 }
+
+.clearfix::after {
+  display: block;
+  content: '';
+  clear: both;
+}

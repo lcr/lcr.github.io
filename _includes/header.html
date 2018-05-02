@@ -1,4 +1,5 @@
-<header>
+<header class="clearfix">
+
   {%- assign default_paths = site.pages | map: "path" -%}
   {%- assign page_paths = site.header_pages | default: default_paths -%}
   <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title | escape }}</a>
@@ -14,4 +15,5 @@
       <a class="page-link" href="#search"><span class="nav-hide">Search</span>{% include icon-menu.svg %}</a>
   </nav>
   {%- endif -%}
+
 </header>
