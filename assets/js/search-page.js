@@ -2,28 +2,27 @@
  * search-open
  */
 var searchopen = document.querySelector("#search");
-var bodyhidden = document.querySelector("body");
 var searchfocus = document.querySelector("#search-input");
 document.querySelector("a[href='#search']").addEventListener("click", function (event) {
   event.preventDefault();
   searchopen.classList.add("search-open");
-  bodyhidden.style.cssText += 'overflow-y:hidden;';
   if (window.innerWidth > 650) {
     searchfocus.focus();
   }
+  document.body.style.overflowY = 'hidden';
 });
 
 document.querySelector(".search-close").addEventListener("click", function (event) {
   event.preventDefault();
   searchopen.classList.remove("search-open");
-  bodyhidden.style.cssText += 'overflow-y:visible;';
+  document.body.style.overflowY = 'visible';
 });
 
 document.querySelector("#search").addEventListener("keyup", function (event) {
   event.preventDefault();
   if (event.keyCode === 27) {
     searchopen.classList.remove("search-open");
-    bodyhidden.style.cssText += 'overflow-y:visible';
+    document.body.style.overflowY = 'visible';
   }
 });
 
