@@ -7,7 +7,7 @@ var searchfocus = document.querySelector("#search-input");
 document.querySelector("a[href='#search']").addEventListener("click", function (event) {
   event.preventDefault();
   searchopen.classList.add("search-open");
-  bodyhidden.style.cssText += 'width:calc(100vw - 17px);overflow-y:hidden;';
+  bodyhidden.style.cssText += 'overflow-y:hidden;';
   if (window.innerWidth > 650) {
     searchfocus.focus();
   }
@@ -16,8 +16,7 @@ document.querySelector("a[href='#search']").addEventListener("click", function (
 document.querySelector(".search-close").addEventListener("click", function (event) {
   event.preventDefault();
   searchopen.classList.remove("search-open");
-  bodyhidden.style.cssText += 'overflow-y:visible';
-  
+  bodyhidden.style.cssText += 'overflow-y:visible;';
 });
 
 document.querySelector("#search").addEventListener("keyup", function (event) {
