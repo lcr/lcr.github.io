@@ -8,9 +8,7 @@
   transition: all 0.5s ease-in-out;
   transform: translate(100%, -100%) scale(0, 0);
   overflow-x: hidden;
-  @include media-query($on-palm) {
-    width: 100vw;
-  }
+ 
   
   .search-close {
     position: fixed;

@@ -1,11 +1,10 @@
 /*
  * search-open
  */
-
+var searchopen = document.querySelector("#search");
+var bodyhidden = document.querySelector("body");
+var searchfocus = document.querySelector("#search-input");
 document.querySelector("a[href='#search']").addEventListener("click", function (event) {
-  var searchopen = document.querySelector("#search");
-  var bodyhidden = document.querySelector("body");
-  var searchfocus = document.querySelector("#search-input");
   event.preventDefault();
   searchopen.classList.add("search-open");
   bodyhidden.style.cssText += 'width:calc(100vw - 17px);overflow-y:hidden;';
@@ -15,8 +14,6 @@ document.querySelector("a[href='#search']").addEventListener("click", function (
 });
 
 document.querySelector(".search-close").addEventListener("click", function (event) {
-  var searchopen = document.querySelector("#search");
-  var bodyhidden = document.querySelector("body");
   event.preventDefault();
   searchopen.classList.remove("search-open");
   bodyhidden.style.cssText += 'overflow-y:visible';
@@ -24,34 +21,12 @@ document.querySelector(".search-close").addEventListener("click", function (even
 });
 
 document.querySelector("#search").addEventListener("keyup", function (event) {
-  var searchopen = document.querySelector("#search");
-  var bodyhidden = document.querySelector("body");
   event.preventDefault();
   if (event.keyCode === 27) {
     searchopen.classList.remove("search-open");
     bodyhidden.style.cssText += 'overflow-y:visible';
   }
 });
-
-/*$(function () {
-  $('a[href="#search"]').on("click", function (event) {
-    event.preventDefault();
-    $("#search").addClass("search-open");
-    $("body").css("overflow-y", "hidden");
-    if(innerWidth > 600){
-      $("#search-input").focus();
-    }
-  });
-  
-  $("#search, button.search-close").on("click keyup", function (event) {
-    if (
-      event.target.className === "search-close" || event.keyCode === 27
-    ) {
-      $(this).removeClass("search-open");
-      $("body").css("overflow-y", "visible");
-    }
-  });
-});*/
 
 
 /*
@@ -77,10 +52,13 @@ var myAutocomplete = autocomplete('#search-input', {hint: false}, [
   location.href = suggestion.url;
 });
 
-//点击重置，清空搜索框，显示导航栏
+
+var searchbox = document.querySelector(".aa-input");
+var searchnav = document.querySelector(".search-nav");
+var reset = document.querySelector(".searchbox [type='reset']");
+
+/* 点击重置，清空搜索框，显示导航栏 */
 document.querySelector(".searchbox [type='reset']").addEventListener("click", function () {
-  var searchbox = document.querySelector(".aa-input");
-  var searchnav = document.querySelector(".search-nav");
   searchbox.focus();
   this.classList.add("hide");
   myAutocomplete.autocomplete.setVal("");
@@ -91,19 +69,16 @@ document.querySelector(".searchbox [type='reset']").addEventListener("click", fu
   }
 });
 
-//键盘清空搜索框，隐藏搜索结果，显示导航栏
+/* 键盘清空搜索框，隐藏搜索结果，显示导航栏 */
 document.querySelector("#search-input").addEventListener("keyup", function () {
-  var searchbox = document.querySelector(".aa-input");
-  var reset = document.querySelector(".searchbox [type='reset']");
-  var searchnav = document.querySelector(".search-nav");
-  if (searchbox.value.length === 0) {
-    reset.classList.add("hide");
-  } else {
-    reset.classList.remove('hide');
-  }
   if (searchbox.value.length > 0) {
     searchnav.classList.add("hide");
   } else {
     searchnav.classList.remove('hide');
+  }
+  if (searchbox.value.length === 0) {
+    reset.classList.add("hide");
+  } else {
+    reset.classList.remove('hide');
   }
 });
