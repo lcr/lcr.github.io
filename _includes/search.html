@@ -1,10 +1,10 @@
 <div id="search">
-  <button type="button" class="search-close" title="Close">{% include icon-cross.svg %}</button>
+  <button class="search-close" type="button" title="Close">{% include icon-cross.svg %}</button>
 
-  <form novalidate="novalidate" onsubmit="return false;" class="searchbox" role="search">
-    <input id="search-input" type="search" name="search" placeholder="Search..." autocomplete="off" required="required" class="searchbox__input">
+  <form class="searchbox" novalidate="novalidate" onsubmit="return false;" role="search">
+    <input class="searchbox-input" id="search-input" type="search" name="search" placeholder="Search..." autocomplete="off" required="required">
 
-    <button type="reset" class="searchbox__reset hide" title="Search Clear">{% include icon-cross.svg %}</button>
+    <button class="searchbox-reset hide" type="reset" title="Search Clear">{% include icon-cross.svg %}</button>
 
     <div class="search-nav">
       {%- for path in page_paths -%}
@@ -14,9 +14,7 @@
       {%- endif -%}
       {% endfor -%}
     </div>
-
   </form>
-
 </div>
 
 <script src="/assets/js/algoliasearch.min.js"></script>

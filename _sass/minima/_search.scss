@@ -5,15 +5,12 @@
   width: 100vw;
   height: 100vh;
   background: $deep-grey-color;
-  transition: all 0.5s linear;
+  transition: all 0.3s linear;
   transform: translate(0, -100%) scale(100, 0);
-  
   .search-close {
     position: fixed;
     top: 40px;
     right: 40px;
-    float: right;
-    width: 40px;
     background: none;
     border: 0;
     cursor: pointer;
@@ -31,7 +28,7 @@
   }
   
   &.search-open {
-    transform: translate(0px, 0px) scale(1, 1);
+    transform: translate(0, 0) scale(1, 1);
   }
 }
 
@@ -51,7 +48,7 @@
   }
 }
 
-.searchbox__input {
+.searchbox-input {
   display: inline-block;
   -webkit-transition: box-shadow .4s ease, background .4s ease;
   transition: box-shadow .4s ease, background .4s ease;
@@ -68,20 +65,20 @@ input[type="search"]::-ms-reveal {
   display: none; /* 清除IE搜索框默认右端的X */
 }
 
-.searchbox__input::-webkit-search-decoration,
-.searchbox__input::-webkit-search-cancel-button,
-.searchbox__input::-webkit-search-results-button,
-.searchbox__input::-webkit-search-results-decoration {
+.searchbox-input::-webkit-search-decoration,
+.searchbox-input::-webkit-search-cancel-button,
+.searchbox-input::-webkit-search-results-button,
+.searchbox-input::-webkit-search-results-decoration {
   display: none; /* 清除IE和Chrome搜索框默认右端的X */
 }
 
-.searchbox__input:focus,
-.searchbox__input:active,
-.searchbox__reset:focus {
+.searchbox-input:focus,
+.searchbox-input:active,
+.searchbox-reset:focus {
   outline: 0;
 }
 
-.searchbox__reset {
+.searchbox-reset {
   position: absolute;
   top: 16px;
   right: 5px;
