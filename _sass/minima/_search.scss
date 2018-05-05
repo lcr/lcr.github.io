@@ -5,8 +5,8 @@
   width: 100vw;
   height: 100vh;
   background: $deep-grey-color;
-  transition: all 0.3s linear;
-  transform: translate(0, -100%) scale(100, 0);
+  transition: all 0.5s linear;
+  transform: translate(100%, -100%) scale(0, 0);
   .search-close {
     position: fixed;
     top: 40px;
