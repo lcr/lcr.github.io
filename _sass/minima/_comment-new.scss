@@ -34,7 +34,7 @@
   color: darken($grey-color, 25%);
   background: lighten($grey-color, 25%);
   @include media-query($on-palm) {
-    float: none;
+    //float: none;
     width: 100%;
     //width: calc(100vw - 20px);
     text-indent: 0;
