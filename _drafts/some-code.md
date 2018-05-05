@@ -1,8 +1,14 @@
 ---
-title: Some code
+title: Code Tips
 ---
 
-JavaScript隐藏浏览器滚动条
+隐藏浏览器滚动条
+
+```css
+body {
+  overflow-y: hidden;
+}
+```
 
 ```javascript
 document.body.style.overflowY = 'hidden';
