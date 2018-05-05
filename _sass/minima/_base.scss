@@ -1,3 +1,11 @@
+html{
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 /*
  * Reset some basic elements
  */
@@ -32,7 +40,8 @@ footer,
 .pagination,
 .post-content,
 .comment,
-.page-about {
+.page-about,
+#search {
   padding: 0 calc(50vw - 450px); /*若设置为50%，IE会有水平滚动条*/
   @include media-query($on-laptop) {
     padding: 0 $spacing-unit / 3;

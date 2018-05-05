@@ -5,25 +5,17 @@
   width: 100vw;
   height: 100vh;
   background: $deep-grey-color;
-  transition: all 0.5s linear;
   transform: translate(100%, -100%) scale(0, 0);
+  transition: all 0.5s linear;
   .search-close {
-    position: fixed;
-    top: 40px;
-    right: 40px;
+    float: right;
+    margin-top: 20px;
     background: none;
     border: 0;
     cursor: pointer;
     &:focus,
     &:active {
       outline: 0;
-    }
-    svg {
-      pointer-events: none;
-    }
-    @include media-query($on-palm) {
-      top: 24px;
-      right: 10px;
     }
   }
   
@@ -34,13 +26,8 @@
 
 .searchbox {
   position: relative;
-  margin: ($spacing-unit * 3) auto 0;
-  width: 70vw;
+  margin-top: $spacing-unit * 3;
   height: 60px;
-  border-bottom: 2px $grey-color solid;
-  @include media-query($on-palm) {
-    width: 95vw;
-  }
   .algolia-autocomplete {
     display: block;
     width: 100%;
@@ -50,9 +37,8 @@
 
 .searchbox-input {
   display: inline-block;
-  -webkit-transition: box-shadow .4s ease, background .4s ease;
-  transition: box-shadow .4s ease, background .4s ease;
   border: 0;
+  border-bottom: 2px $grey-color solid;
   background: $deep-grey-color;
   color: $white-color;
   white-space: normal; /* 连续的空白符会被合并，换行符会被当作空白符来处理 */
@@ -81,7 +67,7 @@ input[type="search"]::-ms-reveal {
 .searchbox-reset {
   position: absolute;
   top: 16px;
-  right: 5px;
+  right: 0;
   border: 0;
   background: none;
   cursor: pointer;

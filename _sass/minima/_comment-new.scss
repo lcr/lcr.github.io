@@ -1,16 +1,6 @@
 /*
  * Comment new
  */
-input[type='text'],
-input[type='email']{
-  box-sizing: border-box;
-}
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
 .comment-new-title {
   margin-top: $spacing-unit * 2;
 }
