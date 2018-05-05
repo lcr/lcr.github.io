@@ -151,6 +151,10 @@ pre {
 /*
  * Tables
  */
+.table-wrapper {
+  overflow-x: auto;
+}
+
 table {
   border: 1px solid $grey-color;
   border-collapse: collapse; /* 合并表格边框*/
@@ -177,4 +181,5 @@ table {
   content: '';
   display: block;
   clear: both;
+  
 }
