@@ -27,17 +27,15 @@ body {
  * Content width
  */
 header,
+footer,
 .post-list,
-.post-content,
 .pagination,
+.post-content,
 .comment,
-.page-about,
-footer {
-  padding-left: calc(50vw - 450px);
-  padding-right: calc(50vw - 450px); /*若设置为50%，IE会有水平滚动条*/
+.page-about {
+  padding: 0 calc(50vw - 450px); /*若设置为50%，IE会有水平滚动条*/
   @include media-query($on-laptop) {
-    padding-left: $spacing-unit / 3;
-    padding-right: $spacing-unit / 3;
+    padding: 0 $spacing-unit / 3;
   }
 }
 
@@ -167,7 +165,7 @@ table {
 }
 
 .clearfix::after {
-  display: block;
   content: '';
+  display: block;
   clear: both;
 }
