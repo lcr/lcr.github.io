@@ -37,12 +37,14 @@
 
 .searchbox-input {
   display: inline-block;
+  -webkit-transition: box-shadow .4s ease, background .4s ease;
+  transition: box-shadow .4s ease, background .4s ease;
   border: 0;
   border-bottom: 2px $grey-color solid;
   background: $deep-grey-color;
   color: $white-color;
   white-space: normal; /* 连续的空白符会被合并，换行符会被当作空白符来处理 */
-  font-size: 48px;
+  font-size: $base-font-size * 3;
   width: 100%; /* 搜索框百分百 */
 }
 
