@@ -28,3 +28,5 @@ algolia:
    algolia_api_key: 2c3e03751f5b259ae833fe039896ad2e
    application_id:  4X0L5EZUHF
    index_name:      jekyll
+   settings:
+      searchableAttributes: title,html,headings,unordered(content),collection,categories,tags
