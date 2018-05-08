@@ -52,6 +52,7 @@
   font-size: $base-font-size;
   color: $red-color;
   background: $light-grey-color;
+  cursor: pointer;
   &:hover {
     background: $red-color;
     color: $white-color;
