@@ -5,9 +5,8 @@
   width: 100vw;
   height: 100vh;
   background: $deep-grey-color;
-  transform: translate(100%, -100%) scale(0, 0);
-  transition: all 0.5s linear;
-  opacity: 0;
+  transform: translate(100vw, -100vh) scale(0, 0);
+  transition: 0.5s linear;
   .search-close {
     float: right;
     margin-top: 20px;
@@ -21,8 +20,7 @@
   }
   
   &.search-open {
-    transform: translate(0, 0) scale(1, 1);
-    opacity: 1;
+    transform: translate(0px, 0px) scale(1, 1);
   }
 }
 
