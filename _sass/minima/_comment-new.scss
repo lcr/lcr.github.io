@@ -30,7 +30,7 @@
   margin-top: $spacing-unit;
   border: 0;
   border-radius: $spacing-unit / 5;
-  font-size: $base-font-size * 1.5;
+  font-size: $large-font-size;
   text-indent: $spacing-unit / 2;
   color: darken($grey-color, 25%);
   background: lighten($grey-color, 25%);
@@ -50,7 +50,7 @@
   border-radius: $spacing-unit;
   padding: ($spacing-unit / 2) $spacing-unit;
   //height: $spacing-unit * 2;
-  font-size: $base-font-size * 1.25;
+  font-size: $large-font-size;
   color: $red-color;
   background: $light-grey-color;
   cursor: pointer;

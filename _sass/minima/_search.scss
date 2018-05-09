@@ -5,8 +5,9 @@
   width: 100vw;
   height: 100vh;
   background: $deep-grey-color;
-  transform: translate(100vw, -100vh) scale(0, 0);
-  transition: 0.5s linear;
+  //transform: translate(100vw, -100vh) scale(0, 0);
+  //transition: 0.5s linear;
+  display: none;
   .search-close {
     float: right;
     margin-top: 20px;
@@ -19,9 +20,9 @@
     }
   }
   
-  &.search-open {
+/*  &.search-open {
     transform: translate(0px, 0px) scale(1, 1);
-  }
+  }*/
 }
 
 .searchbox {

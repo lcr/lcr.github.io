@@ -5,7 +5,8 @@ var searchopen = document.querySelector("#search");
 var searchfocus = document.querySelector("#search-input");
 document.querySelector("a[href='#search']").addEventListener("click", function (event) {
   event.preventDefault();
-  searchopen.classList.add("search-open");
+  // searchopen.classList.add("search-open");
+  searchopen.style.display='block';
   if (window.innerWidth > 650) {
     searchfocus.focus();
   }
@@ -14,14 +15,16 @@ document.querySelector("a[href='#search']").addEventListener("click", function (
 
 document.querySelector(".search-close").addEventListener("click", function (event) {
   event.preventDefault();
-  searchopen.classList.remove("search-open");
+  // searchopen.classList.remove("search-open");
+  searchopen.style.display='';
   document.body.style.overflowY = 'visible';
 });
 
 document.querySelector("#search").addEventListener("keyup", function (event) {
   event.preventDefault();
   if (event.keyCode === 27) {
-    searchopen.classList.remove("search-open");
+    // searchopen.classList.remove("search-open");
+    searchopen.style.display='';
     document.body.style.overflowY = 'visible';
   }
 });
