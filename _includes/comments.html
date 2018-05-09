@@ -1,7 +1,7 @@
 {% if site.data.comments[page.slug] %}
 
 {% if site.data.comments[page.slug].size != 0 %}
-<h1 class="comments-size">COMMENTS ({{ site.data.comments[page.slug] | size }})</h1>
+<h1 class="comments-size">Comments ({{ site.data.comments[page.slug] | size }})</h1>
 {% endif %}
 
 {% assign comments = site.data.comments[page.slug] | sort %}
@@ -10,9 +10,5 @@
 <div class="comments-date">{{ comment[1].date | date: "%B %d. %Y" }}</div>
 <div class="comments-message">{{ comment[1].message | markdownify }}</div>
 {% endfor %}
-
-{% else %}
-<h1 class="comments-size">COMMENTS</h1>
-<P class="comments-no-comment">No comments yet.</P>
 
 {% endif %}

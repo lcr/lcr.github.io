@@ -1,4 +1,12 @@
-<h1 class="comment-new-title">LEAVE A COMMENT</h1>
+{% if site.data.comments[page.slug] %}
+
+{% if site.data.comments[page.slug].size != 0 %}
+<h1 class="comment-new-title">Leave a comment</h1>
+{% endif %}
+
+{% else %}
+<h1 class="comment-new-title">No comments yet, be the first to comment</h1>
+{% endif %}
 
 <form method="POST" action="https://api.staticman.net/v2/entry/lcr/lcr.github.io/master/comments">
   <input name="options[redirect]" type="hidden" value="{{ page.url | absolute_url }}">
@@ -6,7 +14,7 @@
 
   <label><input class="comment-new-text" name="fields[name]" type="text" placeholder="Name"></label>
 
-  <label><input class="comment-new-email" name="fields[email]" type="email" placeholder="Email (optional)"></label>
+  <label><input class="comment-new-email" name="fields[email]" type="email" placeholder="Email (optional)" pattern="/^([A-Za-z0-9_\-\.\u4e00-\u9fa5])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,8})$/"></label>
 
   <label><textarea class="comment-new-message" name="fields[message]" placeholder="Message (Markdown supported)"></textarea></label>
 
