@@ -3,6 +3,7 @@
  */
 .comment-new-title {
   margin-top: $spacing-unit * 2;
+  margin-bottom: -($spacing-unit / 3);
 }
 
 .comment-new-text {
@@ -47,9 +48,9 @@
   margin-top: $spacing-unit;
   border: 2px solid $red-color;
   border-radius: $spacing-unit;
-  padding: 0 $spacing-unit;
-  height: $spacing-unit * 1.6;
-  font-size: $base-font-size;
+  padding: ($spacing-unit / 2) $spacing-unit;
+  //height: $spacing-unit * 2;
+  font-size: $base-font-size * 1.25;
   color: $red-color;
   background: $light-grey-color;
   cursor: pointer;
