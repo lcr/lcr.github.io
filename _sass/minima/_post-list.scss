@@ -10,9 +10,12 @@
     &:not(:last-child) {
       border-bottom: 1px solid $grey-color;
     }
-    list-style: none;
-    a{
+    list-style: none; /* 去掉标题的圆点 */
+    a {
       color: $red-color;
+    }
+    li {
+      list-style: none; /* 去掉预览内容中的圆圈*/
     }
     > h1 {
       display: inline-block;

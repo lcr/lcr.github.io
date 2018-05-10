@@ -2,7 +2,7 @@
 title: "jQuery animation scroll"
 ---
 
-## jQuery
+### jQuery
 ```javascript
 $(function () {
     $('a[href*=#],area[href*=#]').click(function () {

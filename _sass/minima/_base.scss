@@ -183,3 +183,59 @@ table {
   clear: both;
   
 }
+
+h3[id="html"],
+h3[id="html-1"],
+h3[id="html-2"],
+h3[id="css"],
+h3[id="css-1"],
+h3[id="css-2"],
+h3[id="javascript"],
+h3[id="javascript-1"],
+h3[id="javascript-2"],
+h3[id="jquery"],
+h3[id="jquery-1"],
+h3[id="jquery-2"],
+h3[id="markdown"],
+h3[id="demo"],
+h3[id="demo-1"],
+h3[id="demo-2"]{
+  display: inline-block;
+  margin-bottom: 2px;
+  border-radius: 4px;
+  padding: 2px 5px 1px;
+  color: $white-color;
+  font-size: $base-font-size;
+}
+
+h3[id="html"],
+h3[id="html-1"],
+h3[id="html-2"],
+h3[id="markdown"]{
+  background: linear-gradient(135deg,#ff4c9f,#ff7b74);
+}
+
+h3[id="css"],
+h3[id="css-1"],
+h3[id="css-1"]{
+  background: linear-gradient(135deg,#7983ff,#5f9de9);
+}
+
+h3[id="javascript"],
+h3[id="javascript-1"],
+h3[id="javascript-2"],
+h3[id="jquery"],
+h3[id="jquery-1"],
+h3[id="jquery-2"]{
+  background: linear-gradient(135deg,#ffb000,#f58818);
+}
+
+h3[id="demo"],
+h3[id="demo-1"],
+h3[id="demo-2"]{
+  background: linear-gradient(135deg,#607D8B,#78909C);
+}
+
+.hide{
+  overflow-y: hidden;
+}

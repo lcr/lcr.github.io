@@ -63,19 +63,22 @@ window.onload = function () {
 
 ## Using jQuery
 
-HTML
+### HTML
+
 ```html
 <a id="backTop"></a>
 ```
     
-CSS
+### CSS
+
 ```css
 #backTop {
     display: none;
 }
 ```
 
-jQuery
+### jQuery
+
 ```javascript
 $(function () {
     $(window).scroll(function () {

@@ -10,7 +10,7 @@ Jekyll网页中，使用Markdown table会产生一个问题：
 
 注意：div与table之间需要有空行   
 
-Markdown
+### Markdown
 
 ```html
 <\div class="table-wrapper" markdown="block"\>
@@ -25,7 +25,7 @@ lorem ipsum dolor | lorem ipsum dolor sit | lorem ipsum dolor sit amet
 <\/div\>  
 ```
 
-CSS
+### CSS
 
 ```css
 .table-wrapper {

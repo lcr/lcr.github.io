@@ -7,10 +7,15 @@
   font-size: $base-font-size * 2;
   
   .post-recent-newer {
+    display:block;
     float: left;
+    width: 50%;
   }
   .post-recent-older {
+    display:block;
     float: right;
+    width: 50%;
+    text-align: right;
   }
   
   a {
