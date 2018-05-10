@@ -79,10 +79,13 @@ input[type="search"]::-ms-reveal {
 }
 
 .aa-dropdown-menu {
+  position: absolute;
   margin-top: 16px;
+  height: 70vh;
   width: 100%;
   color: $white-color;
   cursor: pointer;
+  overflow: auto;
   code {
     background: $deep-grey-color;
   }
