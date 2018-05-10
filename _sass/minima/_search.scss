@@ -7,7 +7,7 @@
   top: 0;
   left: 0;
   width: 100vw;
-  min-height: 100vh;
+  height: 100vh;
   background: $deep-grey-color;
   .search-close {
     float: right;
@@ -81,11 +81,17 @@ input[type="search"]::-ms-reveal {
 .aa-dropdown-menu {
   position: absolute;
   margin-top: 16px;
-  height: 70vh;
+  height: calc(100vh - 166px);
   width: 100%;
   color: $white-color;
   cursor: pointer;
   overflow: auto;
+  h2{
+    margin-bottom: 0;
+  }
+  p{
+    margin-bottom: $spacing-unit / 3;
+  }
   code {
     background: $deep-grey-color;
   }
