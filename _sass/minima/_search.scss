@@ -1,13 +1,14 @@
+/*
+ * search
+ */
 #search {
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
   background: $deep-grey-color;
-  //transform: translate(100vw, -100vh) scale(0, 0);
-  //transition: 0.5s linear;
-  display: none;
   .search-close {
     float: right;
     margin-top: 20px;
@@ -19,10 +20,6 @@
       outline: 0;
     }
   }
-  
-/*  &.search-open {
-    transform: translate(0px, 0px) scale(1, 1);
-  }*/
 }
 
 .searchbox {
@@ -68,6 +65,7 @@ input[type="search"]::-ms-reveal {
 }
 
 .searchbox-reset {
+  display: none;
   position: absolute;
   top: 16px;
   right: 0;
@@ -105,13 +103,6 @@ input[type="search"]::-ms-reveal {
   }
 }
 
-.hide {
-  display: none;
-}
-
-/*
- *search-nav
- */
 .search-nav {
   margin-top: $spacing-unit / 2;
   a {
