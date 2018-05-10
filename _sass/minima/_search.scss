@@ -86,6 +86,7 @@ input[type="search"]::-ms-reveal {
   color: $white-color;
   cursor: pointer;
   overflow: auto;
+  padding-bottom: $spacing-unit * 2;
   h2 {
     margin-bottom: 0;
   }
