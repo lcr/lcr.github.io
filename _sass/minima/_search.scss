@@ -86,10 +86,10 @@ input[type="search"]::-ms-reveal {
   color: $white-color;
   cursor: pointer;
   overflow: auto;
-  h2{
+  h2 {
     margin-bottom: 0;
   }
-  p{
+  p {
     margin-bottom: $spacing-unit / 3;
   }
   code {
