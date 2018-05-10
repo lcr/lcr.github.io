@@ -38,7 +38,7 @@ var myAutocomplete = autocomplete('#search-input', {hint: false}, [
     displayKey: 'title',
     templates: {
       suggestion: function (suggestion) {
-        var sugTemplate = "<h2>" + suggestion._highlightResult.title.value + "</h2>" + "<p>" + suggestion._highlightResult.html.value + "</p>";
+        var sugTemplate = "<h2>" + suggestion._highlightResult.title.value + "</h2>" + "<p>" + suggestion._highlightResult.content.value + "</p>" || "<h2>" + suggestion._highlightResult.title.value + "</h2>" + "<p>" + suggestion._highlightResult.headings.value + "</p>";
         return sugTemplate;
       },
       empty: function (data) {

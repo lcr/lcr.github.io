@@ -4,14 +4,14 @@ title: "CSS居中的方法"
 
 ## CSS水平居中
 
-### 1.行内元素的水平居中 
+1.行内元素的水平居中 
 ```css
 .parent {
     text-align:center;
 }
 ```
 
-### 2.定宽块级元素的水平居中
+2.定宽块级元素的水平居中
 ```css
 .parent {
     width: 600px;
@@ -21,7 +21,7 @@ title: "CSS居中的方法"
 
 <!-- more -->
 
-### 3.不定宽块级元素的水平居中
+3.不定宽块级元素的水平居中
 ```css
 .parent {
     text-align: center;
@@ -32,7 +32,7 @@ title: "CSS居中的方法"
 }
 ```
 
-### 4.flex布局实现水平居中
+4.flex布局实现水平居中
 ```css
 .parent {
     display: flex;
@@ -40,7 +40,7 @@ title: "CSS居中的方法"
 }
 ```
 
-### 5.一大一小块级元素的水平居中
+5.一大一小块级元素的水平居中
 ```css
 .parent {
     position: relative;
@@ -63,7 +63,7 @@ title: "CSS居中的方法"
 
 ## CSS垂直居中
 
-### 1.行内元素垂直居中  
+1.行内元素垂直居中  
 ```css
 .parent {
     height: 100px;
@@ -71,7 +71,7 @@ title: "CSS居中的方法"
 }
 ```
 
-### 2.父元素固定 子元素为多行内联文本的垂直居中
+2.父元素固定 子元素为多行内联文本的垂直居中
 ```css
 .parent {
     display: table-cell;
@@ -79,7 +79,7 @@ title: "CSS居中的方法"
 }
 ```
 
-### 3.flex布局实现垂直居中
+3.flex布局实现垂直居中
 ```css
 .parent {
     display: flex;
@@ -87,7 +87,7 @@ title: "CSS居中的方法"
 }
 ```
 
-### 4.定宽块级元素的垂直居中
+4.定宽块级元素的垂直居中
 ```css
 .parent {
     position: relative;
@@ -103,7 +103,7 @@ margin: auto 0;
 }
 ```
 
-### 5.一大一小块级元素的垂直居中
+5.一大一小块级元素的垂直居中
 ```css
 .parent {
 position: relative;
