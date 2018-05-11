@@ -20,11 +20,13 @@ excerpt_separator: "<!-- more -->"
 
 markdown: kramdown
 
+# If you want to link only specific pages in your header, uncomment
+# this and add the path to the pages in order as they should show up
 header_pages:
   - home.html
   - about.html
 
 algolia:
-   algolia_api_key: 2c3e03751f5b259ae833fe039896ad2e
-   application_id:  4X0L5EZUHF
-   index_name:      jekyll
+  algolia_api_key: 2c3e03751f5b259ae833fe039896ad2e
+  application_id:  4X0L5EZUHF
+  index_name:      jekyll
