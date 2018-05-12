@@ -9,8 +9,7 @@ permalink: /archive
   <div class="archive-group" id="accordion">
     {% capture category_name %}{{ category | first }}{% endcapture %}
     <input type="checkbox" class="category-head" id="#{{ category_name | slugify }}">
-    <label name="{{ category_name | slugify }}" id="{{ category_name | slugify }}" for="#{{ category_name | slugify }}">{% include icon-arrow.svg %}{{ category_name }}<span>{{ category | last | size }}</span></label>
-    <!--<a name="{{ category_name | slugify }}" id="{{ category_name | slugify }}"></a>-->
+    <label for="#{{ category_name | slugify }}">{% include icon-arrow.svg %}{{ category_name }}<span>{{ category | last | size }}</span></label>
     {% for post in site.categories[category_name] %}
     <div class="archive-item">
       <a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a>
@@ -19,13 +18,3 @@ permalink: /archive
   </div>
   {% endfor %}
 </div>
-
-<script>
-  var src_0=location.href;//获取当前页面的网址
-  var s=src_0.split("#");//以#分割网址
-  var id_0=s[1];//获取#后的id名
-  if(id_0.length>0){//判断id是否存在
-    var display_0=document.getElementById(id_0);//找到此id
-    display_0.style.display="block";//将其display的值便为block
-  }
-</script>
