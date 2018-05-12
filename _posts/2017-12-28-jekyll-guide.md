@@ -1,5 +1,6 @@
 ---
 title: "Jekyll Guide"
+categories: Jekyll
 ---
 
 ## Install Jekyll on Windows7

@@ -1,5 +1,6 @@
 ---
 title: Markdown table 横向滚动条
+categories: Markdown
 ---
 
 Jekyll网页中，使用Markdown table会产生一个问题：  

@@ -1,5 +1,6 @@
 ---
 title: "CSS animation arrow down"
+categories: CSS/SCSS
 ---
 
 CSS动画箭头向下

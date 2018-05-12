@@ -13,6 +13,19 @@ layout: default
 
   {{ content }}
 
+  <div class="post-categories">
+    {% if post %}
+    {% assign categories = post.categories %}
+    {% else %}
+    {% assign categories = page.categories %}
+    {% endif %}
+    {% for category in categories %}
+    <p>Category</p>
+    <a href="{{site.baseurl}}/archive/#{{category|slugize}}">{{category}}</a>
+    {% unless forloop.last %}&nbsp;{% endunless %}
+    {% endfor %}
+  </div>
+
 </article>
 
 <article class="comment">

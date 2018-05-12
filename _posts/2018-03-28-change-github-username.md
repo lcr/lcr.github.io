@@ -1,5 +1,6 @@
 ---
 title: GitHub回收闲置用户名
+categories: GitHub
 ---
 
 新加入GitHub时，我的用户名还是`laicanrong`，本想要简短一点的，可是`lcr`已被抢注了。  

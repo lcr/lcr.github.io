@@ -1,5 +1,6 @@
 ---
 title: "Markdown Guide"
+categories: Markdown
 ---
 
 ## Headers

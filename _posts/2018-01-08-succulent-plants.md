@@ -1,5 +1,6 @@
 ---
 title: Succulent Plants
+categories: Plants
 ---
 
 记录一下目前阳台的多肉植物

@@ -1,5 +1,6 @@
 ---
 title: "Back to top"
+categories: JavaScript
 ---
 
 返回顶部的方法

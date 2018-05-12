@@ -1,5 +1,6 @@
 ---
 title: "CSS animation hover underline"
+categories: CSS/SCSS
 ---
 
 CSS 下划线动画

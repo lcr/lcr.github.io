@@ -10,12 +10,18 @@
     display:block;
     float: left;
     width: 50%;
+    svg{
+      transform: rotate(90deg);
+    }
   }
   .post-recent-older {
     display:block;
     float: right;
     width: 50%;
     text-align: right;
+    svg{
+      transform: rotate(270deg);
+    }
   }
   
   a {
