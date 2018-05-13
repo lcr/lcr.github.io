@@ -1,4 +1,6 @@
 .page-archive {
+  margin-bottom: $spacing-unit * 2;
+  
   .archive-group {
     &:not(:last-child) {
       border-bottom: 1px solid $grey-color;

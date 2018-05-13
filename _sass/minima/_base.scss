@@ -35,13 +35,11 @@ body {
  * Content width
  */
 header,
-footer,
 .post-list,
 .pagination,
+.page-archive,
 .post-content,
 .comment,
-.page-about,
-.page-archive,
 #search {
   padding: 0 calc(50vw - 450px); /*若设置为50%，IE会有水平滚动条*/
   @include media-query($on-laptop) {

@@ -24,6 +24,9 @@ header {
       color: $white-color;
       @include relative-font-size(1.125);
       &:hover{
+        color: $red-color;
+      }
+      &:active{
         color: $grey-color;
       }
       svg{

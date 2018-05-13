@@ -11,7 +11,14 @@ document.querySelector("a[href='#search']").addEventListener("click", function (
   }
   document.body.style.overflowY = 'hidden';
 });
-
+document.querySelector("a[href='#footer-search']").addEventListener("click", function (event) {
+  event.preventDefault();
+  searchopen.style.display = 'block';
+  if (window.innerWidth > 650) {
+    searchfocus.focus();
+  }
+  document.body.style.overflowY = 'hidden';
+});
 document.querySelector(".search-close").addEventListener("click", function (event) {
   event.preventDefault();
   searchopen.style.display = '';
