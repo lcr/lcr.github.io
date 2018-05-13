@@ -14,13 +14,13 @@ layout: default
   {{ content }}
 
   <div class="post-categories">
+    <p>Category</p>
     {% if post %}
     {% assign categories = post.categories %}
     {% else %}
     {% assign categories = page.categories %}
     {% endif %}
     {% for category in categories %}
-    <p>Category</p>
     <a href="{{site.baseurl}}/archive/#{{category|slugify}}">{{category}}</a>
     {% unless forloop.last %}&nbsp;{% endunless %}
     {% endfor %}
