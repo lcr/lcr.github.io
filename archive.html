@@ -7,8 +7,8 @@ permalink: /archive/
 <div class="page-archive">
   {% for category in site.categories %}
   <div class="archive-group" id="accordion">
-    <a name="{{ category_name | slugize }}" id="{{ category_name | slugify }}"></a>
     {% capture category_name %}{{ category | first }}{% endcapture %}
+    <!--<a name="{{ category_name | slugize }}" id="{{ category_name | slugify }}"></a>-->
     <input type="checkbox" class="category-head" id="#{{ category_name | slugify }}">
     <label for="#{{ category_name | slugify }}">{% include icon-arrow.svg %}{{ category_name }}<span>{{ category | last | size }}</span></label>
     {% for post in site.categories[category_name] %}
@@ -19,3 +19,11 @@ permalink: /archive/
   </div>
   {% endfor %}
 </div>
+
+<script>
+  var hash = window.location.hash;
+  if(hash.length>0){
+    var inputChecked=document.getElementById(hash);
+    inputChecked.checked=true;
+  }
+</script>
