@@ -1,12 +1,13 @@
 ---
 layout: page
 title: Archive
-permalink: /archive
+permalink: /archive/
 ---
 
 <div class="page-archive">
   {% for category in site.categories %}
   <div class="archive-group" id="accordion">
+    <a name="{{ category_name | slugize }}" id="{{ category_name | slugify }}"></a>
     {% capture category_name %}{{ category | first }}{% endcapture %}
     <input type="checkbox" class="category-head" id="#{{ category_name | slugify }}">
     <label for="#{{ category_name | slugify }}">{% include icon-arrow.svg %}{{ category_name }}<span>{{ category | last | size }}</span></label>
