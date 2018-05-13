@@ -4,4 +4,4 @@
 
 # Licensing
 
-## &copy;2018. All rights reserved
+&copy;2018. All rights reserved
