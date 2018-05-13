@@ -2,12 +2,13 @@
  * footer
  */
 footer {
-  padding: ($spacing-unit * 2) 0;
+  padding: ($spacing-unit * 3) 0;
   text-align: center;
   color: $white-color;
   background: $deep-grey-color;
   
   ul {
+    margin-bottom: $spacing-unit;
     li {
       display: inline-block;
       margin: 0 10px;
@@ -38,7 +39,15 @@ footer {
     }
   }
   
+  p{
+    margin-bottom: 0;
+  }
+  p.author{
+    letter-spacing: 1px;
+  }
+  
   nav {
+    margin-top: $spacing-unit;
     a {
       display: inline-block;
       margin:0 ($spacing-unit / 2);
