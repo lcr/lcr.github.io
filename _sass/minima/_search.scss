@@ -87,7 +87,6 @@ input[type="search"]::-ms-reveal {
   color: $white-color;
   cursor: pointer;
   overflow: auto;
-  padding-bottom: $spacing-unit * 2;
   h2 {
     margin-bottom: 0;
   }
@@ -118,7 +117,7 @@ input[type="search"]::-ms-reveal {
   margin-top: $spacing-unit / 2;
 }
 
-.search-nav-title{
+.search-nav-title {
   display: block;
   color: $white-color;
   font-size: $base-font-size * 3;

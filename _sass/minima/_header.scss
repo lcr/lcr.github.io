@@ -21,28 +21,28 @@ header {
 
 .header-nav-title {
   display: inline-block;
-  &:not(:last-child){
+  &:not(:last-child) {
     margin-right: 20px;
   }
   color: $white-color;
   @include relative-font-size(1.125);
-  &:hover{
+  &:hover {
     color: $red-color;
   }
-  &:active{
+  &:active {
     color: $grey-color;
   }
   
-  svg{
+  svg {
     display: none;
-    @include media-query($on-palm){
+    @include media-query($on-palm) {
       display: inline-block;
       margin-top: 24px;
     }
   }
 }
 
-.header-nav-title-hide{
+.header-nav-title-hide {
   @include media-query($on-palm) {
     display: none;
   }

@@ -1,34 +1,41 @@
 /*
  * search-open
  */
-var searchopen = document.querySelector("#search");
-var searchfocus = document.querySelector("#search-input");
+var searchOpen = document.querySelector("#search");
+var searchFocus = document.querySelector("#search-input");
+
+/* header nav 点击search，打开搜索页面*/
 document.querySelector("a[href='#search']").addEventListener("click", function (event) {
   event.preventDefault();
-  searchopen.style.display = 'block';
+  searchOpen.style.display = 'block';
   if (window.innerWidth > 650) {
-    searchfocus.focus();
+    searchFocus.focus();
   }
   document.body.style.overflowY = 'hidden';
 });
+
+/* footer nav 点击search，打开搜索页面*/
 document.querySelector("a[href='#footer-search']").addEventListener("click", function (event) {
   event.preventDefault();
-  searchopen.style.display = 'block';
+  searchOpen.style.display = 'block';
   if (window.innerWidth > 650) {
-    searchfocus.focus();
+    searchFocus.focus();
   }
   document.body.style.overflowY = 'hidden';
 });
+
+/* 鼠标点击X,关闭搜索页面 */
 document.querySelector(".search-close").addEventListener("click", function (event) {
   event.preventDefault();
-  searchopen.style.display = '';
+  searchOpen.style.display = '';
   document.body.style.overflowY = 'visible';
 });
 
+/* Esc键关闭搜索页面 */
 document.querySelector("#search").addEventListener("keyup", function (event) {
   event.preventDefault();
   if (event.keyCode === 27) {
-    searchopen.style.display = '';
+    searchOpen.style.display = '';
     document.body.style.overflowY = 'visible';
   }
 });
@@ -60,42 +67,42 @@ var myAutocomplete = autocomplete('#search-input', {hint: false}, [
 /*
  * search-reset
  */
-var searchbox = document.querySelector(".aa-input");
-var searchnav = document.querySelector(".search-nav");
-var reset = document.querySelector(".searchbox [type='reset']");
+var searchBox = document.querySelector(".aa-input");
+var searchNav = document.querySelector(".search-nav");
+var searchReset = document.querySelector(".searchbox [type='reset']");
 
 /* 点击重置，清空搜索框，显示导航栏 */
 document.querySelector(".searchbox [type='reset']").addEventListener("click", function () {
-  searchbox.focus();
+  searchBox.focus();
   this.style.display = 'none';
   myAutocomplete.autocomplete.setVal("");
-  if (searchbox.value.length > 0) {
-    searchnav.style.display = 'none';
+  if (searchBox.value.length > 0) {
+    searchNav.style.display = 'none';
   } else {
-    searchnav.style.display = 'block';
+    searchNav.style.display = 'block';
   }
 });
 
 /* 键盘清空搜索框，隐藏搜索结果，显示导航栏 */
 document.querySelector("#search-input").addEventListener("keyup", function () {
-  if (searchbox.value.length > 0) {
-    searchnav.style.display = 'none';
+  if (searchBox.value.length > 0) {
+    searchNav.style.display = 'none';
   } else {
-    searchnav.style.display = 'block';
+    searchNav.style.display = 'block';
   }
-  if (searchbox.value.length === 0) {
-    reset.style.display = 'none';
+  if (searchBox.value.length === 0) {
+    searchReset.style.display = 'none';
   } else {
-    reset.style.display = 'block';
+    searchReset.style.display = 'block';
   }
 });
 
 /*
  * Accordion Check
  */
-var hash = window.location.hash;
-if (hash.length > 0) {
-  var inputCheck = document.getElementById(hash);
+var urlHash = window.location.hash;
+if (urlHash.length > 0) {
+  var inputCheck = document.getElementById(urlHash);
   inputCheck.checked = true;
 }
 

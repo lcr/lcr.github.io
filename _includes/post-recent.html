@@ -1,9 +1,7 @@
-<article class="post-recent">
-  {% if page.next %}
-  <a class="post-recent-newer" href="{{ page.next.url | prepend: site.baseurl }}" title="{{ page.next.title }}">{% include icon-arrow.svg %}Newer</a>
-  {% endif %}
+{% if page.next %}
+<a class="post-recent post-recent-newer" href="{{ page.next.url | prepend: site.baseurl }}" title="{{ page.next.title }}">{% include icon-arrow.svg %}Newer</a>
+{% endif %}
 
-  {% if page.previous %}
-  <a class="post-recent-older" href="{{ page.previous.url | prepend: site.baseurl }}" title="{{ page.previous.title }}">Older {% include icon-arrow.svg %}</a>
-  {% endif %}
-</article>
+{% if page.previous %}
+<a class="post-recent post-recent-older" href="{{ page.previous.url | prepend: site.baseurl }}" title="{{ page.previous.title }}">Older {% include icon-arrow.svg %}</a>
+{% endif %}

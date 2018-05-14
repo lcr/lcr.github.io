@@ -2,7 +2,8 @@
  * footer
  */
 footer {
-  padding: ($spacing-unit * 3) 0;
+  padding-top: $spacing-unit * 3;
+  padding-bottom: $spacing-unit * 2;
   text-align: center;
   color: $white-color;
   background: $deep-grey-color;
@@ -10,6 +11,7 @@ footer {
 
 .footer-social {
   margin-bottom: $spacing-unit;
+  
   li {
     display: inline-block;
     margin: 0 10px;
@@ -40,24 +42,25 @@ footer {
   }
 }
 
-.copyright{
+.copyright {
   margin-bottom: 0;
 }
 
-.author{
+.author {
+  margin-bottom: 0;
   letter-spacing: 1px;
-  margin-bottom: $spacing-unit;
 }
 
 .footer-nav-title {
   display: inline-block;
-  margin:0 ($spacing-unit / 2);
+  margin: 0 ($spacing-unit / 2);
+  padding: $spacing-unit 0;
   color: $white-color;
   @include relative-font-size(1.125);
   &:hover {
     color: $red-color;
   }
-  &:active{
+  &:active {
     color: $grey-color;
   }
 }
