@@ -35,15 +35,15 @@ $on-palm: 600px !default;
 }
 
 // Import partials
-@import "minima/base",
+@import
+"minima/base",
 "minima/header",
-"minima/post-list",
+"minima/home",
 "minima/pagination",
 "minima/footer",
 "minima/syntax-highlighting",
-"minima/post-content",
+"minima/post",
 "minima/comments",
-"minima/comment-new",
 "minima/post-recent",
 "minima/archive",
 "minima/search";

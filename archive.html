@@ -8,12 +8,11 @@ permalink: /archive/
   {% for category in site.categories %}
   <div class="archive-group" id="accordion">
     {% capture category_name %}{{ category | first }}{% endcapture %}
-    <!--<a name="{{ category_name | slugize }}" id="{{ category_name | slugify }}"></a>-->
     <input type="checkbox" class="category-head" id="#{{ category_name | slugify }}">
-    <label for="#{{ category_name | slugify }}">{% include icon-arrow.svg %}{{ category_name }}<span>{{ category | last | size }}</span></label>
+    <label for="#{{ category_name | slugify }}">{% include icon-arrow.svg %}{{ category_name }}<span class="archive-number">{{ category | last | size }}</span></label>
     {% for post in site.categories[category_name] %}
     <div class="archive-item">
-      <a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a>
+      <a class="archive-post-title" href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a>
     </div>
     {% endfor %}
   </div>

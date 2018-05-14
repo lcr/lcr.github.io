@@ -9,7 +9,8 @@ permalink: /:title/
 paginate: 5
 paginate_path: "/page:num/"
 
-#定义文章的layout默认为post，就不用每次在yaml里面填写layout：post
+#reset post's layout to post
+#OR: every post yaml [layout：post]
 defaults:
   - scope:
       path: ""

@@ -6,37 +6,39 @@
   justify-content: center;
   margin-bottom: $spacing-unit * 3;
   font-size: $base-font-size * 2;
-  
-  .pagination-link {
-    margin: 0 ($spacing-unit / 2);
-    color: $black-color;
-    &:hover {
-      color: $red-color;
-      fill: $red-color;
-    }
+}
+
+.pagination-link {
+  margin: 0 ($spacing-unit / 2);
+  color: $black-color;
+  &:hover {
+    color: $red-color;
+    fill: $red-color;
   }
-  
-  .pagination-link-active {
-    margin: 0 ($spacing-unit / 2);
-    border-radius: 100%;
-    width: $spacing-unit * 1.6;
-    height: $spacing-unit * 1.6;
-    text-align: center;
-    color: $white-color;
-    background: $red-color;
-    cursor: default;
+}
+
+.pagination-link-active {
+  margin: 0 ($spacing-unit / 2);
+  border-radius: 100%;
+  width: $spacing-unit * 1.6;
+  height: $spacing-unit * 1.6;
+  text-align: center;
+  color: $white-color;
+  background: $red-color;
+  cursor: default;
+}
+
+.icon-lighten {
+  fill: lighten($black-color, 50%);
+  &:hover {
+    fill: lighten($red-color, 15%)
   }
-  
-  .icon-lighten {
-    fill: lighten($black-color, 50%);
-    &:hover {
-      fill: lighten($red-color, 15%)
-    }
-  }
-  .svg-left svg {
-    transform: rotate(90deg);
-  }
-  .svg-right svg {
-    transform: rotate(270deg);
-  }
+}
+
+.arrow-left svg {
+  transform: rotate(90deg);
+}
+
+.arrow-right svg {
+  transform: rotate(270deg);
 }

@@ -2,9 +2,9 @@
 <article class="pagination">
 
   {% if paginator.previous_page %}
-  <a class="pagination-link svg-left" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" title="Previous">{% include icon-arrow.svg %}</a>
+  <a class="pagination-link arrow-left" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" title="Previous">{% include icon-arrow.svg %}</a>
   {% else %}
-  <span class="pagination-link  icon-lighten svg-left">{% include icon-arrow.svg %}</span>
+  <span class="pagination-link  icon-lighten arrow-left">{% include icon-arrow.svg %}</span>
   {% endif %}
 
   {% for page in (1..paginator.total_pages) %}
@@ -18,9 +18,9 @@
   {% endfor %}
 
   {% if paginator.next_page %}
-  <a class="pagination-link svg-right" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" title="Next">{% include icon-arrow.svg %}</a>
+  <a class="pagination-link arrow-right" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" title="Next">{% include icon-arrow.svg %}</a>
   {% else %}
-  <span class="pagination-link  icon-lighten svg-right">{% include icon-arrow.svg %}</span>
+  <span class="pagination-link  icon-lighten arrow-right">{% include icon-arrow.svg %}</span>
   {% endif %}
 
 </article>

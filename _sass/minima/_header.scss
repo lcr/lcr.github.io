@@ -6,43 +6,45 @@ header {
   height: $spacing-unit * 2.5;
   line-height: $spacing-unit * 2.5;
   background: $deep-grey-color;
-  
-  .site-title {
-    float: left;
-    @include relative-font-size(1.625);
-    letter-spacing: -1px;
-    color: $white-color;
+}
+
+.site-title {
+  float: left;
+  letter-spacing: -1px;
+  color: $white-color;
+  @include relative-font-size(1.625);
+}
+
+.header-nav {
+  float: right;
+}
+
+.header-nav-title {
+  display: inline-block;
+  &:not(:last-child){
+    margin-right: 20px;
+  }
+  color: $white-color;
+  @include relative-font-size(1.125);
+  &:hover{
+    color: $red-color;
+  }
+  &:active{
+    color: $grey-color;
   }
   
-  nav {
-    float: right;
-    .page-link {
+  svg{
+    display: none;
+    @include media-query($on-palm){
       display: inline-block;
-      &:not(:last-child){
-        margin-right: 20px;
-      }
-      color: $white-color;
-      @include relative-font-size(1.125);
-      &:hover{
-        color: $red-color;
-      }
-      &:active{
-        color: $grey-color;
-      }
-      svg{
-         display: none;
-       }
-    }
-    @include media-query($on-palm) {
-      .page-link {
-        svg{
-          display: inline-block;
-          margin-top: 24px;
-        }
-      }
-      .nav-hide{
-        display: none;
-      }
+      margin-top: 24px;
     }
   }
 }
+
+.header-nav-title-hide{
+  @include media-query($on-palm) {
+    display: none;
+  }
+}
+

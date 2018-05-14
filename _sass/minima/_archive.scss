@@ -1,57 +1,60 @@
 .page-archive {
   margin-bottom: $spacing-unit * 2;
+}
+
+.archive-group {
+  &:not(:last-child) {
+    border-bottom: 1px solid $grey-color;
+  }
   
-  .archive-group {
-    &:not(:last-child) {
-      border-bottom: 1px solid $grey-color;
+  input {
+    display: none;
+  }
+  
+  label {
+    display: block;
+    padding: 16px 0;
+    font-size: $base-font-size * 2;
+    cursor: pointer;
+    &:hover {
+      color: $red-color;
+      fill: $red-color;
     }
     
-    input {
-      display: none;
+    svg {
+      transition: all .5s linear;
     }
-    
-    label {
-      display: block;
-      padding: 16px 0;
-      font-size: $base-font-size * 2;
-      cursor: pointer;
-      span {
-        float: right;
-        color: $deep-grey-color;
-      }
-      svg {
-        transition: all .5s linear;
-      }
-      &:hover {
-        color: $red-color;
-        fill: $red-color;
-      }
+  }
+  
+  input:checked ~ .archive-item {
+    height: auto;
+  }
+  
+  input:checked + label {
+    svg {
+      transform: rotate(180deg);
+      fill: $red-color;
     }
-    
-    input:checked + label {
-      svg {
-        transform: rotate(180deg);
-        fill: $red-color;
-      }
-    }
-    
-    input:checked ~ .archive-item {
-      height: auto;
-    }
-    
-    .archive-item {
-      margin-left: $spacing-unit;
-      height: 0;
-      overflow: hidden;
-      a {
-        display: block;
-        margin-bottom: $spacing-unit / 2;
-        font-size: $large-font-size;
-        color: $black-color;
-        &:hover {
-          color: $red-color;
-        }
-      }
-    }
+  }
+}
+
+.archive-number {
+  float: right;
+  color: $deep-grey-color;
+}
+
+.archive-item {
+  margin-left: $spacing-unit;
+  height: 0;
+  overflow: hidden;
+}
+
+.archive-post-title {
+  display: block;
+  margin-bottom: $spacing-unit / 2;
+  font-size: $large-font-size;
+  color: $black-color;
+  &:hover {
+    color: $red-color;
   }
 }

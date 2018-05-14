@@ -1,0 +1,44 @@
+/*
+ * Post-content
+ */
+.post {
+  a {
+    color: $red-color;
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+  
+  hr {
+    margin: ($spacing-unit * 2) 0;
+    border: 0;
+    border-bottom: 1px solid $grey-color;
+  }
+  
+  li {
+    margin-left: 1em;
+  }
+}
+
+.post-date {
+  display: block;
+  margin-bottom: $spacing-unit / 3;
+  font-size: $small-font-size;
+  font-style: italic;
+}
+
+.post-categories {
+  float: right;
+  font-size: $large-font-size;
+}
+
+.post-categories-title {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.container-grey {
+  padding-top: $spacing-unit * 3;
+  color: darken($grey-color, 25%);
+  background: linear-gradient(177deg, transparent 100px, $light-grey-color 0);
+}

@@ -6,59 +6,58 @@ footer {
   text-align: center;
   color: $white-color;
   background: $deep-grey-color;
-  
-  ul {
-    margin-bottom: $spacing-unit;
-    li {
-      display: inline-block;
-      margin: 0 10px;
-     
-      a {
-        fill: $white-color;
-      }
-      a[title="github"] {
-        &:hover {
-          fill: #56abe4;
-        }
-      }
-      a[title="linkedin"] {
-        &:hover {
-          fill: #0073b1;
-        }
-      }
-      a[title="weibo"] {
-        &:hover {
-          fill: #f46443;
-        }
-      }
-      a[title="facebook"] {
-        &:hover {
-          fill: #3b5998;
-        }
-      }
-    }
-  }
-  
-  p{
-    margin-bottom: 0;
-  }
-  p.author{
-    letter-spacing: 1px;
-  }
-  
-  nav {
-    margin-top: $spacing-unit;
+}
+
+.footer-social {
+  margin-bottom: $spacing-unit;
+  li {
+    display: inline-block;
+    margin: 0 10px;
+    
     a {
-      display: inline-block;
-      margin:0 ($spacing-unit / 2);
-      color: $white-color;
-      @include relative-font-size(1.125);
+      fill: $white-color;
+    }
+    a[title="github"] {
       &:hover {
-        color: $red-color;
-      }
-      &:active{
-        color: $grey-color;
+        fill: #56abe4;
       }
     }
+    a[title="linkedin"] {
+      &:hover {
+        fill: #0073b1;
+      }
+    }
+    a[title="weibo"] {
+      &:hover {
+        fill: #f4384a;
+      }
+    }
+    a[title="facebook"] {
+      &:hover {
+        fill: #3b5998;
+      }
+    }
+  }
+}
+
+.copyright{
+  margin-bottom: 0;
+}
+
+.author{
+  letter-spacing: 1px;
+  margin-bottom: $spacing-unit;
+}
+
+.footer-nav-title {
+  display: inline-block;
+  margin:0 ($spacing-unit / 2);
+  color: $white-color;
+  @include relative-font-size(1.125);
+  &:hover {
+    color: $red-color;
+  }
+  &:active{
+    color: $grey-color;
   }
 }

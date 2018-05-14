@@ -1,3 +1,6 @@
+/*
+ * Box-sizing reset
+ */
 html{
   box-sizing: border-box;
 }
@@ -6,6 +9,7 @@ html{
 *::after {
   box-sizing: inherit;
 }
+
 /*
  * Reset some basic elements
  */
@@ -35,11 +39,11 @@ body {
  * Content width
  */
 header,
-.post-list,
+.page-posts,
 .pagination,
 .page-archive,
-.post-content,
-.comment,
+.post,
+.container-grey,
 #search {
   padding: 0 calc(50vw - 450px); /*若设置为50%，IE会有水平滚动条*/
   @include media-query($on-laptop) {
@@ -130,9 +134,9 @@ blockquote {
  */
 pre,
 code {
-  @include relative-font-size(0.9375);
   border-radius: 2px;
   background: $light-grey-color;
+  @include relative-font-size(0.9375);
 }
 
 code {
@@ -176,13 +180,18 @@ table {
   }
 }
 
+/*
+ * Clearfix
+ */
 .clearfix::after {
   content: '';
   display: block;
   clear: both;
-  
 }
 
+/*
+ * code header background
+ */
 h3[id="html"],
 h3[id="html-1"],
 h3[id="html-2"],

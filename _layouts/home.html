@@ -3,15 +3,16 @@ layout: default
 ---
 
 <article aria-label="Content">
-  <ul class="post-list">
+  <ul class="page-posts">
     {% for post in paginator.posts %}
-    <li>
+    <li class="post-list">
+
       <h1>
-        <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+        <a class="post-list-title" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
       </h1>
 
       {% assign date_format = site.date_format | default: "%b %d. %Y" %}
-      <span class="post-list-meta">{% include icon-clock.svg %}{{ post.date | date: date_format }}</span>
+      <span class="post-list-date">{% include icon-clock.svg %}{{ post.date | date: date_format }}</span>
 
       {% if post.excerpt != post.content %}
 

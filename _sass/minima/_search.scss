@@ -9,16 +9,17 @@
   width: 100vw;
   height: 100vh;
   background: $deep-grey-color;
-  .search-close {
-    float: right;
-    margin-top: 20px;
-    background: none;
-    border: 0;
-    cursor: pointer;
-    &:focus,
-    &:active {
-      outline: 0;
-    }
+}
+
+.search-close {
+  float: right;
+  margin-top: 20px;
+  background: none;
+  border: 0;
+  cursor: pointer;
+  &:focus,
+  &:active {
+    outline: 0;
   }
 }
 
@@ -26,7 +27,7 @@
   position: relative;
   margin-top: $spacing-unit * 3;
   height: 60px;
-  .algolia-autocomplete {
+  .algolia-autocomplete { //iPhone 搜索框问题可能在这
     display: block;
     width: 100%;
     height: 100%;
@@ -105,22 +106,23 @@ input[type="search"]::-ms-reveal {
 .aa-suggestion {
   padding: 4px;
   border-bottom: lighten($deep-grey-color, 5%) 1px solid;
-  &.aa-cursor {
-    background: lighten($deep-grey-color, 5%); /* 鼠标键盘选中的背景色*/
-  }
   em {
     color: $red-color;
+  }
+  &.aa-cursor {
+    background: lighten($deep-grey-color, 5%); /* 鼠标键盘选中的背景色*/
   }
 }
 
 .search-nav {
   margin-top: $spacing-unit / 2;
-  a {
-    display: block;
-    color: $white-color;
-    font-size: $base-font-size * 3;
-    &:hover {
-      background: lighten($deep-grey-color, 5%);
-    }
+}
+
+.search-nav-title{
+  display: block;
+  color: $white-color;
+  font-size: $base-font-size * 3;
+  &:hover {
+    background: lighten($deep-grey-color, 5%);
   }
 }

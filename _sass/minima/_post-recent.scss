@@ -5,25 +5,6 @@
   padding-top: $spacing-unit * 2;
   padding-bottom: $spacing-unit * 4;
   font-size: $base-font-size * 2;
-  
-  .post-recent-newer {
-    display:block;
-    float: left;
-    width: 50%;
-    svg{
-      transform: rotate(90deg);
-    }
-  }
-  .post-recent-older {
-    display:block;
-    float: right;
-    width: 50%;
-    text-align: right;
-    svg{
-      transform: rotate(270deg);
-    }
-  }
-  
   a {
     color: darken($grey-color, 25%);
     fill: darken($grey-color, 25%);
@@ -31,5 +12,24 @@
       color: $red-color;
       fill: $red-color;
     }
+  }
+}
+
+.post-recent-newer {
+  display:block;
+  float: left;
+  width: 50%;
+  svg{
+    transform: rotate(90deg);
+  }
+}
+
+.post-recent-older {
+  display:block;
+  float: right;
+  width: 50%;
+  text-align: right;
+  svg{
+    transform: rotate(270deg);
   }
 }
