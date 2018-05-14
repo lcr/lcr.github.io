@@ -22,16 +22,17 @@
     border-bottom: 1px solid $grey-color;
   }
   
-  li{
+  li {
     margin-left: 1em;
   }
   
-  .post-categories{
+  .post-categories {
     float: right;
     font-size: $large-font-size;
-  }
-  p{
-    margin-top: 10px;
-    margin-bottom: 0;
+    
+    p {
+      margin-top: 10px;
+      margin-bottom: 0;
+    }
   }
 }

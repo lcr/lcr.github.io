@@ -48,15 +48,16 @@
     }
     
     a.post-list-readmore {
-      display: inline-flex;
-      align-items: center;
-      margin-top: $spacing-unit / 2;
-      border: 0.1rem solid $red-color;
+      display: inline-block;
+      margin-top: $spacing-unit;
+      border: 2px solid;
       border-radius: $spacing-unit;
-      padding: ($spacing-unit / 1.875) $spacing-unit;
+      padding: ($spacing-unit / 3) $spacing-unit;
+      font-size: $large-font-size;
+      letter-spacing: -1px;
       color: $red-color;
       &:hover {
-        border: 0.1rem solid $deep-grey-color;
+        border-color: $deep-grey-color;
         color: $white-color;
         background: $deep-grey-color;
         -webkit-transition: 500ms;
