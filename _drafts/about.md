@@ -1,15 +1,9 @@
-Hello there.
-My name is Leslie Lai and I'm a front-end development engineer living in Guangzhou.
-
-I like to play roller skating and planting,and I have great swimming.
-
 ```html
 ---
 layout: page
 title: About
 permalink: /about/
 ---
-
 <article class="page-about">
   <p>
     Hello there.<br> My name is Leslie Lai and I'm a front-end development engineer living in Guangzhou.

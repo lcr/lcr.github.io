@@ -2,31 +2,27 @@
 layout: default
 ---
 
-<article aria-label="Content">
-  <ul class="page-posts">
-    {% for post in paginator.posts %}
-    <li class="post-list">
+<ul class="page-posts content-width" aria-label="Content">
+  {% for post in paginator.posts %}
+  <li class="post-list">
 
-      <h1>
-        <a class="post-list-title" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-      </h1>
+    <h1>
+      <a class="post-list-title" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+    </h1>
 
-      {% assign date_format = site.date_format | default: "%b %d. %Y" %}
-      <span class="post-list-date">{% include icon-clock.svg %}{{ post.date | date: date_format }}</span>
+    {% assign date_format = site.date_format | default: "%b %d. %Y" %} <span class="post-list-date">{% include icon-clock.svg %}{{ post.date | date: date_format }}</span>
 
-      {% if post.excerpt != post.content %}
+    {% if post.excerpt != post.content %}
 
-      {{ post.excerpt }}
+    {{ post.excerpt }}
 
-      <a class="post-list-readmore" href="{{ post.url | relative_url }}">Read more</a>
+    <a class="post-list-readmore" href="{{ post.url | relative_url }}">Read more</a>
 
-      {% else %}
-      {{ post.content }}
+    {% else %} {{ post.content }}
 
-      {% endif %}
-    </li>
-    {% endfor %}
-  </ul>
-</article>
+    {% endif %}
+  </li>
+  {% endfor %}
+</ul>
 
 {% include pagination.html %}

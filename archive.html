@@ -4,7 +4,7 @@ title: Archive
 permalink: /archive/
 ---
 
-<div class="page-archive">
+<article class="page-archive content-width">
   {% for category in site.categories %}
   <div class="archive-group" id="accordion">
     {% capture category_name %}{{ category | first }}{% endcapture %}
@@ -17,4 +17,4 @@ permalink: /archive/
     {% endfor %}
   </div>
   {% endfor %}
-</div>
+</article>

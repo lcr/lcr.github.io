@@ -39,13 +39,7 @@ body {
 /*
  * Content width
  */
-header,
-.page-posts,
-.pagination,
-.page-archive,
-.post,
-.container-grey,
-#search {
+.content-width {
   padding: 0 calc(50vw - 450px); /*若设置为50%，IE会有水平滚动条*/
   @include media-query($on-laptop) {
     padding: 0 $spacing-unit / 3;
