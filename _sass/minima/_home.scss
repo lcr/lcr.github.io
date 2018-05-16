@@ -16,21 +16,25 @@
 }
 
 .post-list-title {
-  display: inline-block;
-  text-decoration: none;
-  color: $black-color;
-  &:after {
-    display: block;
-    width: 0;
-    height: 2px;
-    background: $red-purple-color;
-    transition: width .5s ease, background-color .5s ease;
-    content: '';
+  display: block;
+  color: $deep-grey-color;
+ 
+  span{
+    display: inline-block;
+    &:after {
+      display: block;
+      width: 0;
+      height: 2px;
+      background: $red-purple-color;
+      transition: width .5s ease, background-color .5s ease;
+      content: '';
+    }
+    &:hover:after {
+      width: 100%;
+      background: $red-purple-color;
+    }
   }
-  &:hover:after {
-    width: 100%;
-    background: $red-purple-color;
-  }
+  
 }
 
 .post-list-date {
@@ -41,21 +45,25 @@
 }
 
 .post-list-readmore {
-  display: inline-block;
-  margin-top: $spacing-unit;
-  border: 2px solid;
-  border-radius: $spacing-unit;
-  padding: ($spacing-unit / 3) $spacing-unit;
-  font-size: $large-font-size;
-  letter-spacing: -1px;
-  color: $red-color;
-  &:hover {
-    border-color: $red-color;
-    background: $red-color;
-    color: $white-color;
-    -webkit-transition: 500ms;
-    -moz-transition: 500ms;
-    transition: 500ms;
+  display: block;
+  
+  span{
+    display: inline-block;
+    margin-top: $spacing-unit;
+    border: 2px solid;
+    border-radius: $spacing-unit;
+    padding: ($spacing-unit / 3) $spacing-unit;
+    font-size: $large-font-size;
+    letter-spacing: -1px;
+    color: $red-color;
+    &:hover {
+      border-color: $red-color;
+      background: $red-color;
+      color: $white-color;
+      -webkit-transition: 500ms;
+      -moz-transition: 500ms;
+      transition: 500ms;
+    }
   }
 }
 

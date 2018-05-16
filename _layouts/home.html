@@ -7,7 +7,7 @@ layout: default
   <li class="post-list">
 
     <h1>
-      <a class="post-list-title" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+      <a class="post-list-title" href="{{ post.url | relative_url }}"><span>{{ post.title | escape }}</span></a>
     </h1>
 
     {% assign date_format = site.date_format | default: "%b %d. %Y" %} <span class="post-list-date">{% include icon-clock.svg %}{{ post.date | date: date_format }}</span>
@@ -16,7 +16,7 @@ layout: default
 
     {{ post.excerpt }}
 
-    <a class="post-list-readmore" href="{{ post.url | relative_url }}">Read more</a>
+    <a class="post-list-readmore" href="{{ post.url | relative_url }}"><span>Read more</span></a>
 
     {% else %} {{ post.content }}
 
