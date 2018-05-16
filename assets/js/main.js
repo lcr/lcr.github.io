@@ -5,7 +5,7 @@ var searchOpen = document.querySelector("#search");
 var searchFocus = document.querySelector("#search-input");
 
 /* header nav 点击search，打开搜索页面*/
-document.querySelector("a[href='#search']").addEventListener("click", function (event) {
+document.querySelector('a[href="#search"]').addEventListener("click", function (event) {
   event.preventDefault();
   searchOpen.style.display = 'block';
   if (window.innerWidth > 650) {
@@ -15,7 +15,7 @@ document.querySelector("a[href='#search']").addEventListener("click", function (
 });
 
 /* footer nav 点击search，打开搜索页面*/
-document.querySelector("a[href='#footer-search']").addEventListener("click", function (event) {
+document.querySelector('a[href="#footer-search"]').addEventListener("click", function (event) {
   event.preventDefault();
   searchOpen.style.display = 'block';
   if (window.innerWidth > 650) {
