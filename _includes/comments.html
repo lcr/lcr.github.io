@@ -28,7 +28,7 @@
 <h1 class="comment-new-title">No comments yet, be the first to comment</h1>
 {% endif %}
 
-<form id="comment-form" name="comment-form" novalidate="novalidate">
+<form method="POST" action="https://api.staticman.net/v2/entry/lcr/lcr.github.io/master/comments">
   <input name="options[redirect]" type="hidden" value="{{ page.url | absolute_url }}">
   <input name="options[slug]" type="hidden" value="{{ page.slug }}">
 
@@ -38,5 +38,5 @@
 
   <label><textarea class="comment-new-message" name="fields[message]" placeholder="Message (HTML and Markdown supported)" required></textarea></label>
 
-  <input class="comment-new-submit" type="submit" onclick="postComment();return false;" value="Send">
+  <input class="comment-new-submit" type="submit" value="Send">
 </form>

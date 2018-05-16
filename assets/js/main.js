@@ -115,21 +115,3 @@ if (urlHash.length > 0) {
 })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 ga('create', 'UA-107157614-1', 'auto');
 ga('send', 'pageview');
-
-function postComment() {
-  var commentForm = document.getElementById('comment-form');
-  var formData = new FormData(commentForm);
-  
-  $.ajax({
-    method: 'POST',
-    url: 'https://api.staticman.net/v2/entry/zaaaac/comments/master',
-    data: formData,
-    dataType: 'json',
-    contentType: "application/x-www-form-urlencoded",
-    cache: false,
-    processData: false,
-    success: function(data) {
-      alert(data);
-    }
-  })
-}
