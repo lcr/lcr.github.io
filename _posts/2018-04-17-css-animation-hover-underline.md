@@ -3,8 +3,6 @@ title: "CSS animation hover underline"
 categories: CSS/SCSS
 ---
 
-CSS 下划线动画
-
 ### HTML
 
 ```html
@@ -40,3 +38,5 @@ a:hover:after {
 
 <iframe height='300' scrolling='no' title='CSS animation hover underline' src='//codepen.io/lcrccr/embed/preview/WzLavq/?height=300&theme-id=33119&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/lcrccr/pen/WzLavq/'>CSS animation hover underline</a> by Leslie Lai (<a href='https://codepen.io/lcrccr'>@lcrccr</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
+
+-END-

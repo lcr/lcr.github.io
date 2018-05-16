@@ -3,8 +3,6 @@ title: "CSS animation arrow down"
 categories: CSS/SCSS
 ---
 
-CSS动画箭头向下
-
 ### HTML
 
 ```html
@@ -91,3 +89,5 @@ CSS动画箭头向下
     }
 }
 ```
+
+-END-

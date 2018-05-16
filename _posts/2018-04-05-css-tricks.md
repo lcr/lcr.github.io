@@ -1,5 +1,5 @@
 ---
-title: CSS Tips
+title: CSS小技巧
 categories: CSS/SCSS
 ---
 

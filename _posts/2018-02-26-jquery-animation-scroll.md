@@ -3,8 +3,6 @@ title: "jQuery animation scroll"
 categories: jQuery
 ---
 
-jQuery 实现锚点平滑滚动
-
 ### jQuery
 ```javascript
 $(function () {
@@ -24,3 +22,5 @@ $(function () {
     });
 });
 ```
+
+-END-

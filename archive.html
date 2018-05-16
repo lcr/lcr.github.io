@@ -6,7 +6,7 @@ permalink: /archive
 
 <article class="page-archive content-width">
   {% for category in site.categories %}
-  <div class="archive-group" id="accordion">
+  <div class="archive-group">
     {% capture category_name %}{{ category | first }}{% endcapture %}
     <a name="{{ category_name | slugify }}"></a>
     <input type="checkbox" class="category-head" id="#{{ category_name | slugify }}">
