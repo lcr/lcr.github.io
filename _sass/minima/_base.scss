@@ -28,11 +28,7 @@ body {
   font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
   color: $black-color;
   background: $white-color;
-  -webkit-text-size-adjust: 100%;
-  -webkit-font-feature-settings: "kern" 1;
-  -moz-font-feature-settings: "kern" 1;
-  -o-font-feature-settings: "kern" 1;
-  font-feature-settings: "kern" 1;
+  -webkit-text-size-adjust: 100%;/* 启用 浏览器的文本溢出算法，具体用一个百分数来确定文本放大范围 应用在iOS*/
   font-kerning: normal; /* 应用字距调整*/
 }
 
