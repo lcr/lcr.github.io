@@ -7,7 +7,7 @@ categories: Plants
 
 <div class="table-wrapper" markdown="block">
 
-中文名 | 学名Scientific Name | 科Family | 属Genus | 原生地Origin
+中文名 | 学名Scientific Name | 科Family | 属Genus | 原生地Origin | 血统Parentage
 --- | --- | ---| --- | ---
 青星美人 | Pachyphytum 'Dr. Cornelius' | 景天科 Crassulaceae | 厚叶莲属 Pachyphytum | 
 星美人 | Pachyphytum oviferum | 景天科 Crassulaceae | 厚叶莲属 Pachyphytum |  Mexico (San Luis Potosí), rock cliffs, 1200 m.
@@ -22,7 +22,7 @@ categories: Plants
 红宝石 | Echeveria 'Magic Red' | 景天科 Crassulaceae | 石莲花属 Echeveria
 巧克力方砖 | Echeveria 'Melaco' | 景天科 Crassulaceae | 石莲花属 Echeveria
 红粉佳人 | Echeveria 'Pretty in Pink' | 景天科 Crassulaceae | 石莲花属 Echeveria
-姬胧月 | Graptopetalum paraguayense 'Bronze' | 景天科 Crassulaceae | 风车莲属 Graptopetalum
+姬胧月 | x Graptosedum ‘Bronze’ | 景天科 Crassulaceae | x Graptosedum | |Graptopetalum paraguayense x Sedum stahlii (?)
 艾伦 | Graptopetalum 'Ellen' | 景天科 Crassulaceae | 风车莲属 Graptopetalum
 白牡丹 | × Graptoveria 'Titubans' | 景天科 Crassulaceae | 风车石莲属 × Graptoveria
 蒂亚 | × Sedeveria 'Letizia'	 | 景天科 Crassulaceae | 景天石莲属 × Sedeveria
