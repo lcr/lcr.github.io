@@ -19,24 +19,28 @@ footer {
     a {
       fill: $white-color;
     }
+    
     a[title="github"] {
       &:hover {
-        fill: #56abe4;
+        fill: #a5dcef;
       }
     }
+    
     a[title="linkedin"] {
       &:hover {
-        fill: #0073b1;
+        fill: #007ab6;
       }
     }
-    a[title="weibo"] {
-      &:hover {
-        fill: #f4384a;
-      }
-    }
+    
     a[title="facebook"] {
       &:hover {
-        fill: #3b5998;
+        fill: #4267b2;
+      }
+    }
+    
+    a[title="weibo"] {
+      &:hover {
+        fill: #e6162d;
       }
     }
   }
