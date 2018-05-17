@@ -11,7 +11,7 @@ layout: default
     </h1>
 
     {% assign date_format = site.date_format | default: "%b %d. %Y" %}
-    <span class="post-list-date">{% include icon-clock.svg %}{{ post.date | date: date_format }}</span>
+    <div class="post-list-date">{% include icon-clock.svg %}{{ post.date | date: date_format }}</div>
 
     {% if post.excerpt != post.content %}
     {{ post.excerpt }}

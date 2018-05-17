@@ -41,8 +41,7 @@ a.post-list-title {
 }
 
 .post-list-date {
-  display: block;
-  padding-bottom: $spacing-unit / 3;
+  margin-bottom: $spacing-unit / 3;
   font-size: $small-font-size;
   font-style: italic;
 }
