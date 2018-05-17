@@ -55,6 +55,29 @@ footer {
   letter-spacing: 1px;
 }
 
+.heart {
+  display: inline-block;
+  color: hotpink;
+  -webkit-animation: heart .4s infinite alternate;
+  animation: heart .4s infinite alternate;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+}
+
+@-webkit-keyframes heart {
+  100% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+}
+
+@keyframes heart {
+  100% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+}
+
 .footer-nav-title {
   display: inline-block;
   margin: 0 ($spacing-unit / 2);
