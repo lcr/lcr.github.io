@@ -1,9 +1,12 @@
 ---
-title: "jQuery animation scroll"
+title: "锚点平滑滚动"
 categories: jQuery
 ---
 
+jQuery anchor smooth scroll
+
 ### jQuery
+
 ```javascript
 $(function () {
     $('a[href*=#],area[href*=#]').click(function () {
@@ -22,5 +25,3 @@ $(function () {
     });
 });
 ```
-
--END-

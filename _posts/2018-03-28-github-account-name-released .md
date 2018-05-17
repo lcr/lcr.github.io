@@ -1,5 +1,5 @@
 ---
-title: GitHub回收闲置用户名
+title: GitHub用户名重发布
 categories: GitHub
 ---
 

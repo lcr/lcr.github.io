@@ -10,15 +10,15 @@ layout: default
       <a class="post-list-title" href="{{ post.url | relative_url }}"><span>{{ post.title | escape }}</span></a>
     </h1>
 
-    {% assign date_format = site.date_format | default: "%b %d. %Y" %} <span class="post-list-date">{% include icon-clock.svg %}{{ post.date | date: date_format }}</span>
+    {% assign date_format = site.date_format | default: "%b %d. %Y" %}
+    <span class="post-list-date">{% include icon-clock.svg %}{{ post.date | date: date_format }}</span>
 
     {% if post.excerpt != post.content %}
-
     {{ post.excerpt }}
-
     <a class="post-list-readmore" href="{{ post.url | relative_url }}"><span>Read more</span></a>
 
-    {% else %} {{ post.content }}
+    {% else %}
+    {{ post.content }}
 
     {% endif %}
   </li>

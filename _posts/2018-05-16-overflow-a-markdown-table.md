@@ -1,5 +1,5 @@
 ---
-title: Markdown table 横向滚动条
+title: Markdown table 自动隐藏溢出
 categories: Markdown
 ---
 
@@ -14,7 +14,7 @@ Jekyll网页中，使用Markdown table会产生一个问题：
 ### Markdown
 
 ```html
-<\div class="table-wrapper" markdown="block"\>
+<div class="table-wrapper" markdown="block">
 
 Title 1 | Title 2 | Title 3
 --- | --- | --- 
@@ -23,7 +23,7 @@ lorem ipsum dolor sit amet | lorem ipsum dolor sit amet consectetur | lorem ipsu
 lorem ipsum dolor | lorem ipsum | lorem 
 lorem ipsum dolor | lorem ipsum dolor sit | lorem ipsum dolor sit amet 
 
-<\/div\>  
+</div>  
 ```
 
 ### CSS

@@ -1,5 +1,5 @@
 ---
-title: Succulent Plants
+title: 多肉学名
 categories: Plants
 ---
 

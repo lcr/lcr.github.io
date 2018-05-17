@@ -13,13 +13,16 @@
   li {
     margin-left: 1em;
   }
+  a{
+    color: $red-color;
+  }
 }
 
-.post-list-title {
+a.post-list-title {
   display: block;
   color: $deep-grey-color;
- 
-  span{
+  
+  span {
     display: inline-block;
     &:after {
       display: block;
@@ -47,7 +50,7 @@
 .post-list-readmore {
   display: block;
   
-  span{
+  span {
     display: inline-block;
     margin-top: $spacing-unit;
     border: 2px solid;

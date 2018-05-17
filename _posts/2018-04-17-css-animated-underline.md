@@ -1,19 +1,18 @@
 ---
-title: "CSS animation hover underline"
+title: "CSS Animated Underline"
 categories: CSS/SCSS
 ---
 
 ### HTML
 
 ```html
-<a href="">CSS animation hover underline</a>
+<a href="#">Hover me please</a>
 ```
 
 ### CSS
 
  ```css
 a {
-    display: inline-block;
     text-decoration: none;
 }
 

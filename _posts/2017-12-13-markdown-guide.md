@@ -6,13 +6,15 @@ categories: Markdown
 ## Headers
 
 ```
-# h1
-## h2  
-### h3
-#### h4
-##### h5
-###### h6
+# This is an h1
+## This is an h2  
+### This is an h3
+#### This is an h4
+##### This is an h5
+###### This is an h6
 ```
+
+Horizontal line: `---`
 
 break `2 spaces`
 
@@ -20,10 +22,6 @@ _italic_ *italic*  `_italic_ *italic*`
  
 __bold__ **bold** `__bold__ **bold**`
  
-Horizontal rule: `---`
-
----  
-  
 ## code 
 
 `'code'` or `...`
@@ -112,21 +110,21 @@ lorem ipsum dolor | lorem ipsum dolor sit | lorem ipsum dolor sit amet
 
 ## Quotes
 
-> 春有百花秋有月  
-> 夏有凉风冬有雪  
-> 若无闲事挂心头  
-> 便是人间好时节  
+> 春有百花秋有月
+> 夏有凉风冬有雪
+> 若无闲事挂心头
+> 便是人间好时节
 
 ```
-> 春有百花秋有月  
-> 夏有凉风冬有雪  
-> 若无闲事挂心头  
-> 便是人间好时节  
+> 春有百花秋有月
+> 夏有凉风冬有雪
+> 若无闲事挂心头
+> 便是人间好时节
 ```
 
 ## Indentation
 
-    春有百花秋有月  (more than 4 spaces)
-      夏有凉风冬有雪  
-        若无闲事挂心头  
-          便是人间好时节 
+    春有百花秋有月 (more than 4 spaces)
+      夏有凉风冬有雪
+        若无闲事挂心头
+          便是人间好时节

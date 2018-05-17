@@ -41,7 +41,7 @@ categories: CSS/SCSS
 }
 ```
 
-5.一大一小块级元素的水平居中
+5.一大一小块级元素的水平居中,大容器relative，小容器absolute，沿x轴右移50%，margin-left左移本身高度的50%
 ```css
 .parent {
     position: relative;
@@ -55,16 +55,11 @@ categories: CSS/SCSS
 }
 ```
 
-### Demo
-
-<iframe height='300' scrolling='no' title='CSS center horizontal' src='//codepen.io/lcrccr/embed/preview/yKGRwM/?height=300&theme-id=33119&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/lcrccr/pen/yKGRwM/'>CSS center horizontal</a> by Leslie Lai (<a href='https://codepen.io/lcrccr'>@lcrccr</a>) on <a href='https://codepen.io'>CodePen</a>.
-</iframe>
-
 ---
 
 ## CSS垂直居中
 
-1.行内元素垂直居中  
+1.行内元素垂直居中,line-height等于height;如有n行文字,line-height为height的n分之一
 ```css
 .parent {
     height: 100px;
@@ -95,6 +90,7 @@ categories: CSS/SCSS
 }
 
 .child {
+/* position:fixed; */
 position: absolute;
 top: 0;
 left: 0;
@@ -104,7 +100,7 @@ margin: auto 0;
 }
 ```
 
-5.一大一小块级元素的垂直居中
+5.一大一小块级元素的垂直居中,大容器relative，小容器absolute，沿y轴下移50%，margin-top上移本身高度的50%
 ```css
 .parent {
 position: relative;
@@ -118,7 +114,15 @@ height: 50px;
 }
 ```
 
-### Demo
+---
 
-<iframe height='300' scrolling='no' title='CSS center vartical' src='//codepen.io/lcrccr/embed/preview/oqJQXm/?height=300&theme-id=33119&default-tab=result&embed-version=2' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/lcrccr/pen/oqJQXm/'>CSS center vartical</a> by Leslie Lai (<a href='https://codepen.io/lcrccr'>@lcrccr</a>) on <a href='https://codepen.io'>CodePen</a>.
-</iframe>
+## 水平垂直居中
+
+1.flex实现水平垂直居中
+```css
+.parent {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+```
