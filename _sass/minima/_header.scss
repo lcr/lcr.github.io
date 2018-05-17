@@ -26,12 +26,7 @@ header {
   }
   color: $white-color;
   @include relative-font-size(1.125);
-  &:hover {
-    color: $red-color;
-  }
-  &:active {
-    color: $grey-color;
-  }
+  transition: opacity 0.2s;
   
   svg {
     display: none;
@@ -40,6 +35,10 @@ header {
       margin-top: 24px;
     }
   }
+}
+
+.header-nav:hover .header-nav-title:not(:hover){
+  opacity: 0.5;
 }
 
 .header-nav-title-hide {

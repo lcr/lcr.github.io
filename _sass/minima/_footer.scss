@@ -61,10 +61,9 @@ footer {
   padding: $spacing-unit 0;
   color: $white-color;
   @include relative-font-size(1.125);
-  &:hover {
-    color: $red-color;
-  }
-  &:active {
-    color: $grey-color;
-  }
+  transition: opacity 0.2s;
+}
+
+.footer-nav:hover .footer-nav-title:not(:hover){
+  opacity: 0.5;
 }

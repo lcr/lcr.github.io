@@ -55,6 +55,7 @@
   font-size: $large-font-size;
   color: $black-color;
   &:hover {
+    text-decoration: underline;
     color: $red-color;
   }
 }
