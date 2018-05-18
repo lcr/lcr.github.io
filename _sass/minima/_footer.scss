@@ -57,21 +57,21 @@ footer {
 
 .heart {
   display: inline-block;
-  color: hotpink;
-  -webkit-animation: heart .4s infinite alternate;
-  animation: heart .4s infinite alternate;
+  color: #ff69b4;
+  -webkit-animation: beat .4s infinite alternate;
+  animation: beat .4s infinite alternate;
   -webkit-transform-origin: center;
   transform-origin: center;
 }
 
-@-webkit-keyframes heart {
+@-webkit-keyframes beat {
   100% {
     -webkit-transform: scale(1.2);
     transform: scale(1.2);
   }
 }
 
-@keyframes heart {
+@keyframes beat {
   100% {
     -webkit-transform: scale(1.2);
     transform: scale(1.2);

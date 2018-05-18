@@ -1,5 +1,5 @@
 ---
-title: "锚点平滑滚动"
+title: "Anchor smooth scroll"
 categories: jQuery
 ---
 
