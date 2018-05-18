@@ -13,10 +13,29 @@
   li {
     margin-left: 1em;
   }
-  a{
+  a {
     color: $red-color;
   }
 }
+
+/*.post-list-header {
+  position: relative;
+  &:after {
+    border-bottom: 1px solid $deep-grey-color;
+    position: absolute;
+    top: -61px;
+    left: -30rem;
+    width: 100%;
+    -webkit-transition: -webkit-transform 1s;
+    transition: -webkit-transform 1s;
+    -o-transition: transform 1s;
+    transition: transform 1s;
+    content: "";
+  }
+  .post-list:hover &:after {
+    transform: translateX(30rem);
+  }
+}*/
 
 a.post-list-title {
   display: block;
@@ -24,31 +43,31 @@ a.post-list-title {
   
   span {
     display: inline-block;
+    position: relative;
     &:after {
       display: block;
-      width: 0;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
       height: 2px;
       background: $red-purple-color;
-      transition: width .5s ease, background-color .5s ease;
+      transition: transform .3s;
+      transform: scaleX(0);
+      transform-origin: left center;
       content: '';
     }
-    &:hover:after {
-      width: 100%;
-      background: $red-purple-color;
+    .post-list-header:hover & {
+      &::after {
+        transform: scaleX(1);
+      }
     }
   }
-  
-}
-
-.post-list-date {
-  margin-bottom: $spacing-unit / 3;
-  font-size: $small-font-size;
-  font-style: italic;
 }
 
 .post-list-readmore {
   display: block;
-  
+
   span {
     display: inline-block;
     margin-top: $spacing-unit;

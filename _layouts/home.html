@@ -2,16 +2,16 @@
 layout: default
 ---
 
-<ul class="page-posts content-width" aria-label="Content">
+<ul class="content-width" aria-label="Content">
   {% for post in paginator.posts %}
   <li class="post-list">
 
-    <h1>
+    <h1 class="post-list-header">
       <a class="post-list-title" href="{{ post.url | relative_url }}"><span>{{ post.title | escape }}</span></a>
     </h1>
 
     {% assign date_format = site.date_format | default: "%b %d. %Y" %}
-    <div class="post-list-date">{% include icon-clock.svg %}{{ post.date | date: date_format }}</div>
+    <div class="post-date">{% include icon-clock.svg %}{{ post.date | date: date_format }}</div>
 
     {% if post.excerpt != post.content %}
     {{ post.excerpt }}

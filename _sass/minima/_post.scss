@@ -21,9 +21,18 @@
 }
 
 .post-date {
+  display: flex;
+  align-items: center;
   margin-bottom: $spacing-unit / 3;
   font-size: $small-font-size;
   font-style: italic;
+  svg{
+    margin-right: 6px;
+  }
+  span{
+    display: inline-block;
+    vertical-align:middle;
+  }
 }
 
 .post-categories {
