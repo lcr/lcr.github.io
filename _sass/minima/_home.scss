@@ -67,10 +67,10 @@ a.post-list-title {
 
 .post-list-readmore {
   display: block;
-
+  margin-top: $spacing-unit;
+  
   span {
     display: inline-block;
-    margin-top: $spacing-unit;
     border: 2px solid;
     border-radius: $spacing-unit;
     padding: ($spacing-unit / 3) $spacing-unit;

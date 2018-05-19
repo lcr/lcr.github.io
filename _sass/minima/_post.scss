@@ -2,21 +2,21 @@
  * Post-content
  */
 .post {
+  li {
+    margin-left: 1em;
+  }
+  
   a {
     color: $red-color;
     &:hover {
-      opacity: 0.5;
+      opacity: .5;
     }
   }
   
   hr {
     margin: ($spacing-unit * 2) 0;
-    border: 0;
+    border-top: 0;
     border-bottom: 1px solid $grey-color;
-  }
-  
-  li {
-    margin-left: 1em;
   }
 }
 
@@ -24,28 +24,24 @@
   display: flex;
   align-items: center;
   margin-bottom: $spacing-unit / 3;
-  font-size: $small-font-size;
   font-style: italic;
-  svg{
+  font-size: $small-font-size;
+  svg {
     margin-right: 6px;
-  }
-  span{
-    display: inline-block;
-    vertical-align:middle;
   }
 }
 
 .post-categories {
   float: right;
+  padding-top: 10px;
   font-size: $large-font-size;
 }
 
 .post-categories-title {
-  margin-top: 10px;
   margin-bottom: 0;
 }
 
-.container-grey {
+.background-grey {
   padding-top: $spacing-unit * 3;
   color: darken($grey-color, 25%);
   background: linear-gradient(177deg, transparent 100px, $light-grey-color 0);

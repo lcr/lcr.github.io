@@ -84,9 +84,9 @@ footer {
   padding: $spacing-unit 0;
   color: $white-color;
   @include relative-font-size(1.125);
-  transition: opacity 0.2s;
+  transition: opacity .2s;
 }
 
-.footer-nav:hover .footer-nav-title:not(:hover){
-  opacity: 0.5;
+.footer-nav:hover .footer-nav-title:not(:hover) {
+  opacity: .5;
 }

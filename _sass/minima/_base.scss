@@ -28,7 +28,7 @@ body {
   font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
   color: $black-color;
   background: $white-color;
-  -webkit-text-size-adjust: 100%;/* 启用 浏览器的文本溢出算法，具体用一个百分数来确定文本放大范围 应用在iOS*/
+  -webkit-text-size-adjust: 100%; /* 启用 浏览器的文本溢出算法，具体用一个百分数来确定文本放大范围 应用在iOS*/
   font-kerning: normal; /* 应用字距调整*/
 }
 
@@ -38,7 +38,7 @@ body {
 .content-width {
   padding: 0 calc(50vw - 450px); /*若设置为50%，IE会有水平滚动条*/
   @include media-query($on-laptop) {
-    padding: 0 $spacing-unit / 3;
+    padding: 0 ($spacing-unit / 2);
   }
 }
 
