@@ -40,23 +40,23 @@
   transition: box-shadow .4s ease, background .4s ease;
   border: 0;
   border-bottom: 2px $grey-color solid;
-  width: 100%; /* 搜索框百分百 */
+  width: 100%; //搜索框百分百
   background: $deep-grey-color;
   color: $white-color;
-  white-space: normal; /* 连续的空白符会被合并，换行符会被当作空白符来处理 */
+  white-space: normal; // 连续的空白符会被合并，换行符会被当作空白符来处理
   font-size: $base-font-size * 3;
 }
 
 input[type="search"]::-ms-clear,
 input[type="search"]::-ms-reveal {
-  display: none; /* 清除IE搜索框默认右端的X */
+  display: none; // 清除IE搜索框默认右端的X
 }
 
 .searchbox-input::-webkit-search-decoration,
 .searchbox-input::-webkit-search-cancel-button,
 .searchbox-input::-webkit-search-results-button,
 .searchbox-input::-webkit-search-results-decoration {
-  display: none; /* 清除Chrome搜索框默认右端的X */
+  display: none; // 清除Chrome搜索框默认右端的X
 }
 
 .searchbox-input:focus,
@@ -76,7 +76,7 @@ input[type="search"]::-ms-reveal {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-  user-select: none; /* 元素内的文字及其子元素将不会被选中 */
+  user-select: none; // 元素内的文字及其子元素将不会被选中
 }
 
 .aa-dropdown-menu {
@@ -98,7 +98,7 @@ input[type="search"]::-ms-reveal {
   }
   a {
     color: $white-color;
-    pointer-events: none; /* 链接失效*/
+    pointer-events: none; // 链接失效
   }
 }
 
@@ -109,7 +109,7 @@ input[type="search"]::-ms-reveal {
     color: $red-color;
   }
   &.aa-cursor {
-    background: lighten($deep-grey-color, 5%); /* 鼠标键盘选中的背景色*/
+    background: lighten($deep-grey-color, 5%); // 鼠标键盘选中的背景色
   }
 }
 

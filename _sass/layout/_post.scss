@@ -24,8 +24,10 @@
   display: flex;
   align-items: center;
   margin-bottom: $spacing-unit / 3;
-  font-style: italic;
-  font-size: $small-font-size;
+  font: {
+    style: italic;
+    size: $small-font-size;
+  }
   svg {
     margin-right: 6px;
   }

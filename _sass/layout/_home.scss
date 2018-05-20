@@ -9,7 +9,7 @@
     padding-top: $spacing-unit * 3;
   }
   padding-bottom: $spacing-unit * 3;
-  list-style: none; /* 去掉标题的圆点 */
+  list-style: none; // 去掉标题的圆点
   li {
     margin-left: 1em;
   }
@@ -18,24 +18,24 @@
   }
 }
 
-/*.post-list-header {
-  position: relative;
-  &:after {
-    border-bottom: 1px solid $deep-grey-color;
-    position: absolute;
-    top: -61px;
-    left: -30rem;
-    width: 100%;
-    -webkit-transition: -webkit-transform 1s;
-    transition: -webkit-transform 1s;
-    -o-transition: transform 1s;
-    transition: transform 1s;
-    content: "";
-  }
-  .post-list:hover &:after {
-    transform: translateX(30rem);
-  }
-}*/
+//.post-list-header {
+//  position: relative;
+//  &:after {
+//    border-bottom: 1px solid $deep-grey-color;
+//    position: absolute;
+//    top: -61px;
+//    left: -30rem;
+//    width: 100%;
+//    -webkit-transition: -webkit-transform 1s;
+//    transition: -webkit-transform 1s;
+//    -o-transition: transform 1s;
+//    transition: transform 1s;
+//    content: "";
+//  }
+//  .post-list:hover &:after {
+//    transform: translateX(30rem);
+//  }
+//}
 
 a.post-list-title {
   display: block;
@@ -87,4 +87,3 @@ a.post-list-title {
     }
   }
 }
-
