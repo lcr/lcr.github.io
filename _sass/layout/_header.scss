@@ -9,10 +9,23 @@ header {
 }
 
 .site-title {
+  position: relative;
   float: left;
   letter-spacing: -1px;
   color: $white-color;
   @include relative-font-size(1.625);
+  &:after {
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    border-bottom: 2px solid $white-color;
+    width: 100%;
+    transition: transform .3s;
+    content: "";
+  }
+  &:hover:after {
+    transform: translateY(-16px);
+  }
 }
 
 .header-nav {
