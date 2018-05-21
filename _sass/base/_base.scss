@@ -1,27 +1,4 @@
 /*
- * Box-sizing reset
- */
-html {
-  box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
-/*
- * Reset some basic elements
- */
-body, h1, h2, h3, h4, h5, h6,
-p, blockquote, pre, hr,
-dl, dd, ol, ul, figure {
-  margin: 0;
-  padding: 0;
-}
-
-/*
  * Basic styling
  */
 body {
@@ -171,40 +148,56 @@ table {
 }
 
 /*
- * Clearfix
+ * code header background
  */
-.clearfix::after {
-  content: '';
-  display: block;
-  clear: both;
+#html,
+#html-1,
+#html-2,
+#markdown,
+#css,
+#css-1,
+#css-2,
+#javascript,
+#javascript-1,
+#javascript-2,
+#jquery,
+#jquery-1,
+#jquery-2,
+#demo,
+#demo-1,
+#demo-2 {
+  display: inline-block;
+  margin-bottom: 4px;
+  border-radius: 4px;
+  padding: 2px 5px 1px;
+  color: $white-color;
+  font-size: $base-font-size;
 }
-///*
-// * code header background
-// */
-//.heading-html,
-//.heading-css,
-//.heading-js,
-//.heading-demo {
-//  display: inline-block;
-//  margin-bottom: 4px;
-//  border-radius: 4px;
-//  padding: 2px 5px 1px;
-//  color: $white-color;
-//  font-size: $base-font-size;
-//}
-//
-//.heading-html {
-//  background: linear-gradient(135deg, #ff4c9f, #ff7b74);
-//}
-//
-//.heading-css {
-//  background: linear-gradient(135deg, #7983ff, #5f9de9);
-//}
-//
-//.heading-js {
-//  background: linear-gradient(135deg, #ffb000, #f58818);
-//}
-//
-//.heading-demo {
-//  background: linear-gradient(135deg, #0091EA, #00B8D4);
-//}
+
+#html,
+#html-1,
+#html-2,
+#markdown {
+  background: linear-gradient(135deg, #ff4c9f, #ff7b74);
+}
+
+#css,
+#css-1,
+#css-2 {
+  background: linear-gradient(135deg, #7983ff, #5f9de9);
+}
+
+#javascript,
+#javascript-1,
+#javascript-2,
+#jquery,
+#jquery-1,
+#jquery-2 {
+  background: linear-gradient(135deg, #ffb000, #f58818);
+}
+
+#demo,
+#demo-1,
+#demo-2 {
+  background: linear-gradient(135deg, #0091EA, #00B8D4);
+}

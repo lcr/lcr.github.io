@@ -35,8 +35,7 @@
   color: darken($grey-color, 25%);
   background: lighten($grey-color, 25%);
   &:focus {
-    box-shadow: 0 0 1px 1px $grey-color;
-    outline: none;
+    background: lighten($grey-color,20%);
   }
   @include media-query($small) {
     width: 100%;
@@ -58,8 +57,5 @@
     border-color: $red-color;
     background: $red-color;
     color: $white-color;
-  }
-  &:focus {
-    outline: none
   }
 }

@@ -17,10 +17,6 @@
   background: none;
   border: 0;
   cursor: pointer;
-  &:focus,
-  &:active {
-    outline: 0;
-  }
 }
 
 .searchbox {
@@ -57,12 +53,6 @@ input[type="search"]::-ms-reveal {
 .searchbox-input::-webkit-search-results-button,
 .searchbox-input::-webkit-search-results-decoration {
   display: none; // 清除Chrome搜索框默认右端的X
-}
-
-.searchbox-input:focus,
-.searchbox-input:active,
-.searchbox-reset:focus {
-  outline: 0;
 }
 
 .searchbox-reset {
