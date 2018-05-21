@@ -72,7 +72,7 @@ var searchNav = document.querySelector(".search-nav");
 var searchReset = document.querySelector(".searchbox [type='reset']");
 
 /* 点击重置，清空搜索框，显示导航栏 */
-document.querySelector(".searchbox [type='reset']").addEventListener("click", function () {
+document.querySelector(".searchbox-reset").addEventListener("click", function () {
   searchBox.focus();
   this.style.display = 'none';
   myAutocomplete.autocomplete.setVal("");

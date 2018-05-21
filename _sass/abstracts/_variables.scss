@@ -18,9 +18,9 @@ $red-color: #F44336 !default;
 $red-purple-color: linear-gradient(45deg, #F44336, #9C27B0) !default;
 
 // Width of the content area
-$content-width: 900px !default;
-$on-laptop: 800px !default;
-$on-palm: 600px !default;
+$large: 900px !default;
+$medium: 800px !default;
+$small: 600px !default;
 
 @mixin media-query($device) {
   @media screen and (max-width: $device) {

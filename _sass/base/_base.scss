@@ -37,7 +37,7 @@ body {
  */
 .content-width {
   padding: 0 calc(50vw - 450px); //若设置为50%，IE会有水平滚动条
-  @include media-query($on-laptop) {
+  @include media-query($medium) {
     padding: 0 ($spacing-unit / 3);
   }
 }
@@ -60,21 +60,21 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   @include relative-font-size(2);
-  @include media-query($on-laptop) {
+  @include media-query($medium) {
     @include relative-font-size(1.75);
   }
 }
 
 h2 {
   @include relative-font-size(1.625);
-  @include media-query($on-laptop) {
+  @include media-query($medium) {
     @include relative-font-size(1.375);
   }
 }
 
 h3 {
   @include relative-font-size(1.25);
-  @include media-query($on-laptop) {
+  @include media-query($medium) {
     @include relative-font-size(1.125);
   }
 }
@@ -178,58 +178,33 @@ table {
   display: block;
   clear: both;
 }
-
-/*
- * code header background
- */
-h3[id="html"],
-h3[id="html-1"],
-h3[id="html-2"],
-h3[id="css"],
-h3[id="css-1"],
-h3[id="css-2"],
-h3[id="javascript"],
-h3[id="javascript-1"],
-h3[id="javascript-2"],
-h3[id="jquery"],
-h3[id="jquery-1"],
-h3[id="jquery-2"],
-h3[id="markdown"],
-h3[id="demo"],
-h3[id="demo-1"],
-h3[id="demo-2"] {
-  display: inline-block;
-  margin-bottom: 2px;
-  border-radius: 4px;
-  padding: 2px 5px 1px;
-  color: $white-color;
-  font-size: $base-font-size;
-}
-
-h3[id="html"],
-h3[id="html-1"],
-h3[id="html-2"],
-h3[id="markdown"] {
-  background: linear-gradient(135deg, #ff4c9f, #ff7b74);
-}
-
-h3[id="css"],
-h3[id="css-1"],
-h3[id="css-1"] {
-  background: linear-gradient(135deg, #7983ff, #5f9de9);
-}
-
-h3[id="javascript"],
-h3[id="javascript-1"],
-h3[id="javascript-2"],
-h3[id="jquery"],
-h3[id="jquery-1"],
-h3[id="jquery-2"] {
-  background: linear-gradient(135deg, #ffb000, #f58818);
-}
-
-h3[id="demo"],
-h3[id="demo-1"],
-h3[id="demo-2"] {
-  background: linear-gradient(135deg, #0091EA, #00B8D4);
-}
+///*
+// * code header background
+// */
+//.heading-html,
+//.heading-css,
+//.heading-js,
+//.heading-demo {
+//  display: inline-block;
+//  margin-bottom: 4px;
+//  border-radius: 4px;
+//  padding: 2px 5px 1px;
+//  color: $white-color;
+//  font-size: $base-font-size;
+//}
+//
+//.heading-html {
+//  background: linear-gradient(135deg, #ff4c9f, #ff7b74);
+//}
+//
+//.heading-css {
+//  background: linear-gradient(135deg, #7983ff, #5f9de9);
+//}
+//
+//.heading-js {
+//  background: linear-gradient(135deg, #ffb000, #f58818);
+//}
+//
+//.heading-demo {
+//  background: linear-gradient(135deg, #0091EA, #00B8D4);
+//}

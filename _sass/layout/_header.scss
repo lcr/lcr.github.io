@@ -30,7 +30,7 @@ header {
   
   svg {
     display: none;
-    @include media-query($on-palm) {
+    @include media-query($small) {
       display: inline-block;
       margin-top: 24px;
     }
@@ -42,7 +42,7 @@ header {
 }
 
 .header-nav-title-hide {
-  @include media-query($on-palm) {
+  @include media-query($small) {
     display: none;
   }
 }

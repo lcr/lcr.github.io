@@ -38,7 +38,7 @@
     box-shadow: 0 0 1px 1px $grey-color;
     outline: none;
   }
-  @include media-query($on-palm) {
+  @include media-query($small) {
     width: 100%;
     text-indent: 0;
   }

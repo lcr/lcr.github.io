@@ -1,10 +1,10 @@
-<article class="content-width clearfix" id="search">
+<article class="search content-width clearfix" id="search">
   <button class="search-close" type="button" title="Close or Esc key">{% include icon-cross.svg %}</button>
 
   <form class="searchbox" novalidate="novalidate" onsubmit="return false;" role="search">
     <input class="searchbox-input" id="search-input" type="search" name="search" placeholder="Search..." autocomplete="off" required="required">
 
-    <button class="searchbox-reset hide" type="reset" title="Search Clear">{% include icon-cross.svg %}</button>
+    <button class="searchbox-reset" type="reset" title="Search Clear">{% include icon-cross.svg %}</button>
 
     <div class="search-nav">
       {%- for path in page_paths -%}

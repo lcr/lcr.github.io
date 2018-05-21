@@ -1,5 +1,5 @@
 ---
-title: 多肉学名
+title: 阳台的植物
 categories: Plants
 ---
 

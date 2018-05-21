@@ -78,7 +78,9 @@ jQuery back to top
 }
 ```
 
+{:.heading-js}
 ### jQuery
+
 
 ```javascript
 $(function () {
