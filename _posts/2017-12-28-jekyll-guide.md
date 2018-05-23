@@ -47,7 +47,11 @@ jekyll server
 jekyll serve
 lekyll s
 ```
+Preview a draft post
 
+```
+jekyll s --drafts
+```
 ## Browser
 
 ```
