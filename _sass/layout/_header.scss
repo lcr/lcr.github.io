@@ -3,8 +3,8 @@
  */
 header {
   margin-bottom: $spacing-unit * 2;
-  height: $spacing-unit * 2.5;
-  line-height: $spacing-unit * 2.5;
+  height: $spacing-unit * 2;
+  line-height: $spacing-unit * 2;
   background: $deep-grey-color;
 }
 
@@ -32,7 +32,7 @@ header {
     display: none;
     @include media-query($small) {
       display: inline-block;
-      margin-top: 24px;
+      margin-top: 1em;
     }
   }
 }
