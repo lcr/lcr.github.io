@@ -11,7 +11,9 @@ document.querySelector('a[href="#search"]').addEventListener("click", function (
   if (window.innerWidth > 650) {
     searchFocus.focus();
   }
-  document.body.style.overflowY = 'hidden';
+  setTimeout(function () {
+    document.body.style.overflowY = 'hidden';
+  },500);
 });
 
 /* footer nav 点击search，打开搜索页面*/
@@ -21,7 +23,9 @@ document.querySelector('a[href="#footer-search"]').addEventListener("click", fun
   if (window.innerWidth > 650) {
     searchFocus.focus();
   }
-  document.body.style.overflowY = 'hidden';
+  setTimeout(function () {
+    document.body.style.overflowY = 'hidden';
+  },500);
 });
 
 /* 鼠标点击X,关闭搜索页面 */
