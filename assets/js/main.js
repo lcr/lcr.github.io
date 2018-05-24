@@ -7,7 +7,7 @@ var searchFocus = document.querySelector("#search-input");
 /* header nav 点击search，打开搜索页面*/
 document.querySelector('a[href="#search"]').addEventListener("click", function (event) {
   event.preventDefault();
-  searchOpen.style.display = 'block';
+  searchOpen.style.transform = "translateY(100vh)";
   if (window.innerWidth > 650) {
     searchFocus.focus();
   }
@@ -17,7 +17,7 @@ document.querySelector('a[href="#search"]').addEventListener("click", function (
 /* footer nav 点击search，打开搜索页面*/
 document.querySelector('a[href="#footer-search"]').addEventListener("click", function (event) {
   event.preventDefault();
-  searchOpen.style.display = 'block';
+  searchOpen.style.transform = "translateY(100vh)";
   if (window.innerWidth > 650) {
     searchFocus.focus();
   }
@@ -27,7 +27,7 @@ document.querySelector('a[href="#footer-search"]').addEventListener("click", fun
 /* 鼠标点击X,关闭搜索页面 */
 document.querySelector(".search-close").addEventListener("click", function (event) {
   event.preventDefault();
-  searchOpen.style.display = '';
+  searchOpen.style.transform = 'translateY(-100vh)';
   document.body.style.overflowY = 'visible';
 });
 
@@ -35,7 +35,7 @@ document.querySelector(".search-close").addEventListener("click", function (even
 document.querySelector("#search").addEventListener("keyup", function (event) {
   event.preventDefault();
   if (event.keyCode === 27) {
-    searchOpen.style.display = '';
+    searchOpen.style.transform = 'translateY(-100vh)';
     document.body.style.overflowY = 'visible';
   }
 });
@@ -109,9 +109,16 @@ if (urlHash.length > 0) {
 /*
  * Google Analytics
  */
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+(function (i, s, o, g, r, a, m) {
+  i['GoogleAnalyticsObject'] = r;
+  i[r] = i[r] || function () {
+    (i[r].q = i[r].q || []).push(arguments)
+  }, i[r].l = 1 * new Date();
+  a = s.createElement(o),
+    m = s.getElementsByTagName(o)[0];
+  a.async = 1;
+  a.src = g;
+  m.parentNode.insertBefore(a, m)
+})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 ga('create', 'UA-107157614-1', 'auto');
 ga('send', 'pageview');

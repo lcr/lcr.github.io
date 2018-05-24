@@ -2,13 +2,13 @@
  * search
  */
 .search {
-  display: none;
   position: fixed;
-  top: 0;
+  top: -100vh;
   left: 0;
   width: 100vw;
   height: 100vh;
   background: $deep-grey-color;
+  transition: transform .5s;
 }
 
 .search-close {
@@ -17,6 +17,15 @@
   background: none;
   border: 0;
   cursor: pointer;
+  position: relative; //扩大可点击区域
+  &:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: -$spacing-unit;
+  }
 }
 
 .searchbox {
