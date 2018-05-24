@@ -3,6 +3,7 @@
  */
 header {
   margin-bottom: $spacing-unit * 2;
+  @include content-width;
   height: $spacing-unit * 2.5;
   line-height: $spacing-unit * 2.5;
   background: $deep-grey-color;
@@ -26,7 +27,7 @@ header {
   }
   color: $white-color;
   @include relative-font-size(1.125);
-  transition: opacity .2s;
+  transition: opacity $time;
   
   svg {
     display: none;

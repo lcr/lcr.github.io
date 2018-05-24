@@ -5,10 +5,12 @@
   position: fixed;
   top: -100vh;
   left: 0;
+  @include content-width;
+  @include clearfix;
   width: 100vw;
   height: 100vh;
   background: $deep-grey-color;
-  transition: transform .5s;
+  transition: transform $time;
 }
 
 .search-close {
@@ -41,15 +43,15 @@
 
 .searchbox-input {
   display: inline-block;
-  -webkit-transition: box-shadow .4s ease, background .4s ease;
-  transition: box-shadow .4s ease, background .4s ease;
+  -webkit-transition: box-shadow $time ease, background $time ease;
+  transition: box-shadow $time ease, background $time ease;
   border: 0;
   border-bottom: 2px $grey-color solid;
   width: 100%; //搜索框百分百
   background: $deep-grey-color;
   color: $white-color;
   white-space: normal; // 连续的空白符会被合并，换行符会被当作空白符来处理
-  font-size: $base-font-size * 3;
+  @include relative-font-size(3);
 }
 
 input[type="search"]::-ms-clear,
@@ -119,7 +121,7 @@ input[type="search"]::-ms-reveal {
 .search-nav-title {
   display: block;
   color: $white-color;
-  font-size: $base-font-size * 3;
+  @include relative-font-size(3);
   &:hover {
     background: lighten($deep-grey-color, 5%);
   }

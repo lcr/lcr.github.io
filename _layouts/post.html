@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<article class="post content-width" itemscope itemtype="http://schema.org/BlogPosting" aria-label="Content" itemprop="articleBody">
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting" aria-label="Content" itemprop="articleBody">
   <h1 itemprop="name headline">{{ page.title | escape }}</h1>
 
   <div class="post-date">{% include icon-clock.svg %}
@@ -28,7 +28,7 @@ layout: default
 
 </article>
 
-<article class="background-grey content-width clearfix">
+<article class="background-grey">
   {% include comments.html %}
 
   {% include comment-new.html %}

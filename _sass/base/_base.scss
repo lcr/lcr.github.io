@@ -10,16 +10,6 @@ body {
 }
 
 /*
- * Content width
- */
-.content-width {
-  padding: 0 calc(50vw - 450px); //若设置为50%，IE会有水平滚动条
-  @include media-query($medium) {
-    padding: 0 ($spacing-unit / 2);
-  }
-}
-
-/*
  * Set `margin-bottom` to maintain vertical rhythm
  */
 h1, h2, h3, h4, h5, h6,
@@ -171,7 +161,7 @@ table {
   border-radius: 4px;
   padding: 2px 5px 1px;
   color: $white-color;
-  font-size: $base-font-size;
+  @include relative-font-size(1)
 }
 
 #html,

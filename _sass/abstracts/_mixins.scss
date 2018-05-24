@@ -1,0 +1,30 @@
+@mixin media-query($device) {
+  @media screen and (max-width: $device) {
+    @content;
+  }
+}
+
+@mixin relative-font-size($ratio) {
+  font-size: $base-font-size * $ratio;
+}
+
+/*
+ * Content width
+ */
+@mixin content-width {
+  padding: 0 calc(50vw - 450px); //若设置为50%，IE会有水平滚动条
+  @include media-query($medium) {
+    padding: 0 ($spacing-unit / 2);
+  }
+}
+
+/*
+ * Clearfix
+ */
+@mixin clearfix {
+  &::after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}

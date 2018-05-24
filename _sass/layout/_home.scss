@@ -1,6 +1,9 @@
 /*
  * post list
  */
+.post-ul{
+  @include content-width;
+}
 .post-list {
   &:not(:last-child) {
     border-bottom: 1px solid $grey-color;
@@ -52,7 +55,7 @@ a.post-list-title {
       width: 100%;
       height: 2px;
       background: $red-purple-color;
-      transition: transform .3s;
+      transition: transform $time;
       transform: scaleX(0);
       transform-origin: left center;
       content: '';
@@ -81,9 +84,9 @@ a.post-list-title {
       border-color: $red-color;
       background: $red-color;
       color: $white-color;
-      -webkit-transition: 500ms;
-      -moz-transition: 500ms;
-      transition: 500ms;
+      -webkit-transition: $time;
+      -moz-transition: $time;
+      transition: $time;
     }
   }
 }
