@@ -3,6 +3,7 @@
  */
 .pagination {
   margin-bottom: $spacing-unit * 3;
+  @include content-width;
   text-align: center;
   font-size: $base-font-size * 2;
 }
