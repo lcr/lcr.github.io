@@ -73,7 +73,7 @@
       content: '';
     }
     
-    .archive-item:hover & {
+    .archive-item h2:hover & {
       &::before {
         transform: scaleX(1);
       }
