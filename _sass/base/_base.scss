@@ -5,9 +5,11 @@ body {
   font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
   color: $black-color;
   background: $white-color;
-  -webkit-text-size-adjust: 100%; // 启用 浏览器的文本溢出算法，具体用一个百分数来确定文本放大范围 应用在iOS
+  // 启用 浏览器的文本溢出算法，具体用一个百分数来确定文本放大范围 应用在iOS
+  -webkit-text-size-adjust: 100%;
+  // 应用字距调整
   -webkit-font-kerning: normal;
-          font-kerning: normal; // 应用字距调整
+  font-kerning: normal;
 }
 
 /*
@@ -118,7 +120,8 @@ pre {
 
 table {
   border: 1px solid $grey-color;
-  border-collapse: collapse; // 合并表格边框
+  // 合并表格边框
+  border-collapse: collapse;
   width: 100%;
   text-align: left;
   tr {

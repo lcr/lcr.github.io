@@ -21,7 +21,8 @@
   background: none;
   border: 0;
   cursor: pointer;
-  position: relative; //扩大可点击区域
+  //扩大可点击区域
+  position: relative;
   &:before{
     content: '';
     position: absolute;
@@ -36,7 +37,8 @@
   position: relative;
   margin-top: $spacing-unit * 3;
   height: 60px;
-  .algolia-autocomplete { //iPhone 搜索框问题可能在这
+  //iPhone 搜索框问题可能在这
+  .algolia-autocomplete {
     display: block;
     width: 100%;
     height: 100%;
@@ -48,23 +50,26 @@
   transition: box-shadow $time ease, background $time ease;
   border: 0;
   border-bottom: 2px $grey-color solid;
-  width: 100%; // 搜索框百分百
+  // 搜索框百分百
+  width: 100%;
   background: $deep-grey-color;
   color: $white-color;
   white-space: normal;
   @include relative-font-size(3);
 }
 
+// 清除IE搜索框默认右端的X
 input[type="search"]::-ms-clear,
 input[type="search"]::-ms-reveal {
-  display: none; // 清除IE搜索框默认右端的X
+  display: none;
 }
 
+// 清除Chrome搜索框默认右端的X
 .searchbox-input::-webkit-search-decoration,
 .searchbox-input::-webkit-search-cancel-button,
 .searchbox-input::-webkit-search-results-button,
 .searchbox-input::-webkit-search-results-decoration {
-  display: none; // 清除Chrome搜索框默认右端的X
+  display: none;
 }
 
 .searchbox-reset {
@@ -75,10 +80,12 @@ input[type="search"]::-ms-reveal {
   border: 0;
   background: none;
   cursor: pointer;
+  // 元素内的文字及其子元素将不会被选中
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-  user-select: none; // 元素内的文字及其子元素将不会被选中
+  -webkit-user-select: none;
+          user-select: none;
 }
 
 .aa-dropdown-menu {
@@ -100,7 +107,8 @@ input[type="search"]::-ms-reveal {
   }
   a {
     color: $white-color;
-    pointer-events: none; // 链接失效
+    // 链接失效
+    pointer-events: none;
   }
 }
 
@@ -111,7 +119,8 @@ input[type="search"]::-ms-reveal {
     color: $red-color;
   }
   &.aa-cursor {
-    background: lighten($deep-grey-color, 5%); // 鼠标键盘选中的背景色
+    // 鼠标键盘选中的背景色
+    background: lighten($deep-grey-color, 5%);
   }
 }
 
