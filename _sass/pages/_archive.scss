@@ -26,6 +26,12 @@
     }
   }
   
+  input ~ .archive-item {
+    margin-left: $spacing-unit;
+    height: 0;
+    overflow: hidden;
+  }
+  
   input:checked ~ .archive-item {
     height: auto;
   }
@@ -43,20 +49,16 @@
   color: $deep-grey-color;
 }
 
-.archive-item {
-  margin-left: $spacing-unit;
-  height: 0;
-  overflow: hidden;
-}
-
 .archive-post-title {
   display: block;
   margin-bottom: $spacing-unit / 2;
   font-size: $large-font-size;
   color: $black-color;
+  
   span {
     display: inline-block;
     position: relative;
+    
     &::before {
       display: block;
       position: absolute;

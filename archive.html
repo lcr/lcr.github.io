@@ -7,15 +7,18 @@ permalink: /archive
 <article class="page-archive content-width">
   {% for category in site.categories %}
   <div class="archive-group">
-    {% capture category_name %}{{ category | first }}{% endcapture %}
     <a name="{{ category_name | slugify }}"></a>
+
+    {% capture category_name %}{{ category | first }}{% endcapture %}
     <input type="checkbox" class="category-head" id="#{{ category_name | slugify }}">
     <label for="#{{ category_name | slugify }}">{% include icon-arrow.svg %}{{ category_name }}<span class="archive-number">{{ category | last | size }}</span></label>
+
     {% for post in site.categories[category_name] %}
     <div class="archive-item">
       <a class="archive-post-title" href="{{ site.baseurl }}{{ post.url }}"><span>{{post.title}}</span></a>
     </div>
     {% endfor %}
+
   </div>
   {% endfor %}
 </article>
