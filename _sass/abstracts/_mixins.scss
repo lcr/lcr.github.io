@@ -8,9 +8,7 @@
   font-size: $base-font-size * $ratio;
 }
 
-/*
- * Content width
- */
+// Content width
 @mixin content-width {
   padding: 0 calc(50vw - 450px); //若设置为50%，IE会有水平滚动条
   @include media-query($medium) {
@@ -18,9 +16,7 @@
   }
 }
 
-/*
- * Clearfix
- */
+// Clearfix
 @mixin clearfix {
   &::after {
     content: '';

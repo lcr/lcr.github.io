@@ -10,7 +10,9 @@
   width: 100vw;
   height: 100vh;
   background: $deep-grey-color;
+  transition: -webkit-transform $time;
   transition: transform $time;
+  transition: transform $time, -webkit-transform $time;
 }
 
 .search-close {
@@ -43,14 +45,13 @@
 
 .searchbox-input {
   display: inline-block;
-  -webkit-transition: box-shadow $time ease, background $time ease;
   transition: box-shadow $time ease, background $time ease;
   border: 0;
   border-bottom: 2px $grey-color solid;
-  width: 100%; //搜索框百分百
+  width: 100%; // 搜索框百分百
   background: $deep-grey-color;
   color: $white-color;
-  white-space: normal; // 连续的空白符会被合并，换行符会被当作空白符来处理
+  white-space: normal;
   @include relative-font-size(3);
 }
 
