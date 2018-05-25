@@ -38,7 +38,7 @@ __bold__ **bold** `__bold__ **bold**`
 '''
 ```
 
-img `![](https://example.jpg)`
+img `![alt](https://example.jpg)`
 
 [link](https://lcr.github.io/) `[foo](https://example.com/)`  
 

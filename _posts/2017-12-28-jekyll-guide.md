@@ -52,6 +52,7 @@ Preview a draft post
 ```
 jekyll s --drafts
 ```
+
 ## Browser
 
 ```

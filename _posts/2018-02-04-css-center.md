@@ -6,6 +6,7 @@ categories: CSS/SCSS
 ## CSS水平居中
 
 1.行内元素的水平居中 
+
 ```css
 .parent {
     text-align:center;
@@ -13,6 +14,7 @@ categories: CSS/SCSS
 ```
 
 2.定宽块级元素的水平居中
+
 ```css
 .parent {
     width: 600px;
@@ -23,6 +25,7 @@ categories: CSS/SCSS
 <!-- more -->
 
 3.不定宽块级元素的水平居中
+
 ```css
 .parent {
     text-align: center;
@@ -34,6 +37,7 @@ categories: CSS/SCSS
 ```
 
 4.flex布局实现水平居中
+
 ```css
 .parent {
     display: flex;
@@ -42,6 +46,7 @@ categories: CSS/SCSS
 ```
 
 5.一大一小块级元素的水平居中,大容器relative，小容器absolute，沿x轴右移50%，margin-left左移本身高度的50%
+
 ```css
 .parent {
     position: relative;
@@ -60,6 +65,7 @@ categories: CSS/SCSS
 ## CSS垂直居中
 
 1.行内元素垂直居中,line-height等于height;如有n行文字,line-height为height的n分之一
+
 ```css
 .parent {
     height: 100px;
@@ -68,6 +74,7 @@ categories: CSS/SCSS
 ```
 
 2.父元素固定 子元素为多行内联文本的垂直居中
+
 ```css
 .parent {
     display: table-cell;
@@ -76,6 +83,7 @@ categories: CSS/SCSS
 ```
 
 3.flex布局实现垂直居中
+
 ```css
 .parent {
     display: flex;
@@ -84,6 +92,7 @@ categories: CSS/SCSS
 ```
 
 4.定宽块级元素的垂直居中
+
 ```css
 .parent {
     position: relative;
@@ -101,6 +110,7 @@ margin: auto 0;
 ```
 
 5.一大一小块级元素的垂直居中,大容器relative，小容器absolute，沿y轴下移50%，margin-top上移本身高度的50%
+
 ```css
 .parent {
 position: relative;
@@ -119,6 +129,7 @@ height: 50px;
 ## 水平垂直居中
 
 1.flex实现水平垂直居中
+
 ```css
 .parent {
 display: flex;
