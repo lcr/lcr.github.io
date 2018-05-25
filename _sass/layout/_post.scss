@@ -3,10 +3,6 @@
  */
 .post {
   @include content-width;
-  li {
-    margin-left: 1em;
-  }
-  
   a {
     color: $red-color;
     &:hover {
