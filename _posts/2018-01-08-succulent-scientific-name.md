@@ -19,21 +19,21 @@ categories: Plants
 塔洛克 |	Sedum joyce tulloch | 景天科 Crassulaceae | 景天属 Sedum| |probably Sedum versadense x S. lucidum
 奥利维亚 | Echeveria 'Olivia' | 景天科 Crassulaceae |石莲花属 Echeveria
 黑王子 | Echeveria 'Black Prince' | 景天科 Crassulaceae | 石莲花属 Echeveria | |  Echeveria shaviana x Echeveria affinis 
-红宝石 | Sedeveria pink ruby | 景天科 Crassulaceae | 
-巧克力方砖 | Echeveria 'Melaco' | 景天科 Crassulaceae | 石莲花属 Echeveria | Garden
+巧克力方砖 | Echeveria 'Melaco' | 景天科 Crassulaceae | 石莲花属 Echeveria | | Garden
 红粉佳人 | Echeveria 'Pretty in Pink' | 景天科 Crassulaceae | 石莲花属 Echeveria
-姬胧月 | x Graptosedum ‘Bronze’ | 景天科 Crassulaceae | xGraptosedum | |Graptopetalum paraguayense x Sedum stahlii (?)
-艾伦 | Graptopetalum 'Ellen' | 景天科 Crassulaceae | 风车莲属 Graptopetalum
-白牡丹 | × Graptoveria 'Titubans' | 景天科 Crassulaceae | 风车石莲属 ×Graptoveria | | Graptopetalum paraguayense x Echevería derenbergii.
-蒂亚 | × Sedeveria 'Letizia'	 | 景天科 Crassulaceae | 景天石莲属 ×Sedeveria | | Sedum cuspidatum x Echeveria setosa var. ciliata.
-马库斯 |	× Sedeveria 'Markus' | 景天科 Crassulaceae | 景天石莲属 ×Sedeveria
-红稚儿 | Crassula pubescens subsp. radicans (Haw.) Toelken | 景天科 Crassulaceae | 青锁龙属 Crassula | South Africa.
-秋丽 | x Graptosedum ‘Francesco Baldi’ | 景天科 Crassulaceae | xGraptosedum | | Graptopetalum paraguayense x Sedum pachyphyllum.
 尼克莎娜 | Echeveria 'Nicksana' | 景天科 Crassulaceae | 石莲花属 Echeveria
-立田锦 | x scheideckeri 'Albocarinata'			
 蓝鸟 | Echeveria ‘Blue Bird’ | 景天科 Crassulaceae | 石莲花属 Echeveria |	|  Echeveria peacockii hybrid(E. colorata and E. desmetiana maybe)	
+白牡丹 | ×Graptoveria 'Titubans' | 景天科 Crassulaceae | 风车石莲属 ×Graptoveria | | Graptopetalum paraguayense x Echevería derenbergii.
+蒂亚 | ×Sedeveria 'Letizia'	 | 景天科 Crassulaceae | 景天石莲属 ×Sedeveria | | Sedum cuspidatum x Echeveria setosa var. ciliata.
+马库斯 |	×Sedeveria 'Markus' | 景天科 Crassulaceae | 景天石莲属 ×Sedeveria
+红宝石 | xSedeveria pink ruby | 景天科 Crassulaceae | 景天石莲属 ×Sedeveria
+千佛手 |	xSedeveria ‘Harry Butterfield’ | 景天科 Crassulaceae | 景天石莲属 ×Sedeveria | | Sedum morganianum x Echeveria derenbergii.	
+红稚儿 | Crassula pubescens subsp. radicans (Haw.) Toelken | 景天科 Crassulaceae | 青锁龙属 Crassula | South Africa.
+秋丽 | xGraptosedum ‘Francesco Baldi’ | 景天科 Crassulaceae | 风车景天属 xGraptosedum | | Graptopetalum paraguayense x Sedum pachyphyllum.
+姬胧月 | xGraptosedum ‘Bronze’ | 景天科 Crassulaceae | 风车景天属 xGraptosedum | |Graptopetalum paraguayense x Sedum stahlii (?)
+艾伦 | Graptopetalum 'Ellen' | 景天科 Crassulaceae | 风车莲属 Graptopetalum | Mexico
+立田锦 | xPachyveria xScheideckeri 'Albocarinata'			
 青丽	 | 	
-千佛手 |	x Sedeveria ‘Harry Butterfield’ | 景天科 Crassulaceae | 景天石莲属 ×Sedeveria | | Sedum morganianum x Echeveria derenbergii.	
-小松针牡丹 | Portulaca gilliesii | 马齿苋科 Portulacaceae | 马齿苋属 Portulaca
+紫米粒 | Portulaca gilliesii | 马齿苋科 Portulacaceae | 马齿苋属 Portulaca
 
 </div>

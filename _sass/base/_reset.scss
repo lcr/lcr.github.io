@@ -20,6 +20,9 @@ html {
   box-sizing: inherit;
 }
 
+/*
+ * focus outline 0
+ */
 :focus {
   outline: none;
 }
