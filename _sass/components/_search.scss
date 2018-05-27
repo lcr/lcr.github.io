@@ -88,10 +88,7 @@ input[type="search"]::-ms-reveal {
           user-select: none;
 }
 
-textarea,
-input[type="text"],
-input[type="button"],
-input[type="submit"] {
+input[type="search"] {
   -webkit-appearance: none;
   border-radius: 0;
 }
