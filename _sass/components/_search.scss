@@ -49,7 +49,9 @@
   transition: box-shadow $time ease, background $time ease;
   border: 0;
   border-bottom: 2px $grey-color solid;
-  // 搜索框百分百
+  //清除iOS搜索框的圆边框
+  -webkit-appearance: none;
+  border-radius: 0;
   padding-left: 0;
   width: 100%;
   background: $deep-grey-color;
@@ -86,11 +88,6 @@ input[type="search"]::-ms-reveal {
   -ms-user-select: none;
   -webkit-user-select: none;
           user-select: none;
-}
-
-input[type="search"] {
-  -webkit-appearance: none;
-  border-radius: 0;
 }
 
 .aa-dropdown-menu {
