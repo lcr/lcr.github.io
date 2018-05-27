@@ -52,8 +52,9 @@
   border-bottom: 2px $grey-color solid;
   // 搜索框百分百
   width: 100%;
-  background: $deep-grey-color;
+  //background: $deep-grey-color;
   color: $white-color;
+  padding-left: 0;
   white-space: normal;
   @include relative-font-size(3);
 }
