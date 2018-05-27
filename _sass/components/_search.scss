@@ -37,7 +37,6 @@
   position: relative;
   margin-top: $spacing-unit * 3;
   height: 60px;
-  //iPhone 搜索框问题可能在这
   .algolia-autocomplete {
     display: block;
     width: 100%;
@@ -51,10 +50,10 @@
   border: 0;
   border-bottom: 2px $grey-color solid;
   // 搜索框百分百
+  padding: 0;
   width: 100%;
-  //background: $deep-grey-color;
+  background: $deep-grey-color;
   color: $white-color;
-  padding-left: 0;
   white-space: normal;
   @include relative-font-size(3);
 }
