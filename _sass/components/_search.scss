@@ -37,6 +37,7 @@
   position: relative;
   margin-top: $spacing-unit * 3;
   height: 60px;
+  background: $deep-grey-color;
   .algolia-autocomplete {
     display: block;
     width: 100%;
