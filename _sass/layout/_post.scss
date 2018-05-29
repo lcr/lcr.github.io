@@ -3,9 +3,6 @@
  */
 .post {
   @include content-width;
-  a {
-    color: $red-color;
-  }
   
   hr {
     margin: ($spacing-unit * 2) 0;
@@ -35,6 +32,10 @@
 
 .post-categories-title {
   margin-bottom: 0;
+}
+
+.post-categories-category {
+  color: $red-color;
 }
 
 .background-grey {

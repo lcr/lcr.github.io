@@ -55,8 +55,8 @@ footer {
   letter-spacing: 1px;
   svg {
     display: inline-block;
-    -webkit-animation: beat .4s infinite alternate;
-    animation: beat .4s infinite alternate;
+    -webkit-animation: beat $time infinite alternate;
+    animation: beat $time infinite alternate;
     -webkit-transform-origin: center;
     transform-origin: center;
   }

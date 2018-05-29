@@ -15,7 +15,7 @@ document.querySelector('#headerNavSearch').addEventListener("click", function (e
   }
   setTimeout(function () {
     document.body.style.overflowY = 'hidden';
-  }, 300);
+  }, 500);
 });
 
 /* footer nav 点击search，打开搜索页面*/
@@ -27,7 +27,7 @@ document.querySelector('#footerNavSearch').addEventListener("click", function (e
   }
   setTimeout(function () {
     document.body.style.overflowY = 'hidden';
-  }, 300);
+  }, 500);
 });
 
 /* 鼠标点击X,关闭搜索页面 */

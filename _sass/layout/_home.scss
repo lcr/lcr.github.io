@@ -13,12 +13,9 @@
   }
   padding-bottom: $spacing-unit * 3;
   list-style: none;
-  a {
-    color: $red-color;
-  }
 }
 
-a.post-list-title {
+.post-list-title {
   display: block;
   color: $deep-grey-color;
   

@@ -80,6 +80,19 @@ a {
   background-color: transparent;
 }
 
+p > a {
+  color: inherit;
+  border-bottom: 2px dashed $grey-color;
+  margin-left: 6px;
+  &:after{
+    content: url("/assets/img/icon-link.svg");
+    margin-left: 6px;
+  }
+  &:hover{
+    border-bottom:2px solid $red-color;
+  }
+}
+
 /*
  * Blockquotes
  */
