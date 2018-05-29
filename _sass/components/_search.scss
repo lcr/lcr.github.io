@@ -33,7 +33,7 @@
   }
 }
 
-.searchbox {
+.search-box {
   position: relative;
   margin-top: $spacing-unit * 3;
   height: 60px;
@@ -44,7 +44,7 @@
   }
 }
 
-.searchbox-input {
+.search-input {
   display: inline-block;
   transition: box-shadow $time ease, background $time ease;
   border: 0;
@@ -61,20 +61,20 @@
 }
 
 // 清除IE搜索框默认右端的X
-input[type="search"]::-ms-clear,
-input[type="search"]::-ms-reveal {
+.search-input::-ms-clear,
+.search-input::-ms-reveal {
   display: none;
 }
 
 // 清除Chrome搜索框默认右端的X
-.searchbox-input::-webkit-search-decoration,
-.searchbox-input::-webkit-search-cancel-button,
-.searchbox-input::-webkit-search-results-button,
-.searchbox-input::-webkit-search-results-decoration {
+.search-input::-webkit-search-decoration,
+.search-input::-webkit-search-cancel-button,
+.search-input::-webkit-search-results-button,
+.search-input::-webkit-search-results-decoration {
   display: none;
 }
 
-.searchbox-reset {
+.search-reset {
   display: none;
   position: absolute;
   top: 16px;

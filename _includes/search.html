@@ -1,12 +1,12 @@
 <article class="search" id="search">
-  <button class="search-close" type="button" title="Close or Esc key">{% include icon-cross.svg %}</button>
+  <button class="search-close" id="searchClose" type="button" title="Close or Esc key">{% include icon-cross.svg %}</button>
 
-  <form class="searchbox" novalidate="novalidate" onsubmit="return false;" role="search">
-    <input class="searchbox-input" id="search-input" type="search" name="search" placeholder="Search..." autocomplete="off" required="required">
+  <form class="search-box" novalidate="novalidate" onsubmit="return false;" role="search">
+    <input class="search-input" id="searchInput" type="search" name="search" placeholder="Search..." autocomplete="off" required="required">
 
-    <button class="searchbox-reset" type="reset" title="Search Clear">{% include icon-cross.svg %}</button>
+    <button class="search-reset" id="searchReset" type="reset" title="Search Clear">{% include icon-cross.svg %}</button>
 
-    <div class="search-nav">
+    <div class="search-nav" id="searchNav">
       {%- for path in page_paths -%}
       {%- assign my_page = site.pages | where: "path", path | first -%}
       {%- if my_page.title -%}

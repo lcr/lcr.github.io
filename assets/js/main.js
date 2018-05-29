@@ -1,15 +1,17 @@
 /*
- * search-open
+ * search
  */
-var searchOpen = document.querySelector("#search");
-var searchFocus = document.querySelector("#search-input");
+var searchPage = document.querySelector("#search");
+var searchInput = document.querySelector("#searchInput");
+var searchReset = document.querySelector("#searchReset");
+var searchNav = document.querySelector("#searchNav");
 
 /* header nav 点击search，打开搜索页面*/
-document.querySelector('a[href="#search"]').addEventListener("click", function (event) {
+document.querySelector('#headerNavSearch').addEventListener("click", function (event) {
   event.preventDefault();
-  searchOpen.style.transform = "translateY(100vh)";
+  searchPage.style.transform = "translateY(100vh)";
   if (window.innerWidth > 650) {
-    searchFocus.focus();
+    searchInput.focus();
   }
   setTimeout(function () {
     document.body.style.overflowY = 'hidden';
@@ -17,11 +19,11 @@ document.querySelector('a[href="#search"]').addEventListener("click", function (
 });
 
 /* footer nav 点击search，打开搜索页面*/
-document.querySelector('a[href="#footer-search"]').addEventListener("click", function (event) {
+document.querySelector('#footerNavSearch').addEventListener("click", function (event) {
   event.preventDefault();
-  searchOpen.style.transform = "translateY(100vh)";
+  searchPage.style.transform = "translateY(100vh)";
   if (window.innerWidth > 650) {
-    searchFocus.focus();
+    searchInput.focus();
   }
   setTimeout(function () {
     document.body.style.overflowY = 'hidden';
@@ -29,28 +31,50 @@ document.querySelector('a[href="#footer-search"]').addEventListener("click", fun
 });
 
 /* 鼠标点击X,关闭搜索页面 */
-document.querySelector(".search-close").addEventListener("click", function (event) {
+document.querySelector("#searchClose").addEventListener("click", function (event) {
   event.preventDefault();
-  searchOpen.style.transform = 'translateY(-100vh)';
+  searchPage.style.transform = 'translateY(-100vh)';
   document.body.style.overflowY = 'visible';
 });
 
 /* Esc键关闭搜索页面 */
-document.querySelector("#search").addEventListener("keyup", function (event) {
+searchPage.addEventListener("keyup", function (event) {
   event.preventDefault();
   if (event.keyCode === 27) {
-    searchOpen.style.transform = 'translateY(-100vh)';
+    searchPage.style.transform = 'translateY(-100vh)';
     document.body.style.overflowY = 'visible';
   }
 });
 
+/* 点击重置，清空搜索框，显示导航栏 */
+searchReset.addEventListener("click", function () {
+  this.style.display = 'none';
+  searchInput.focus();
+  myAutocomplete.autocomplete.setVal("");
+  if (searchInput.value.length > 0) {
+    searchNav.style.display = 'none';
+  } else {
+    searchNav.style.display = 'block';
+  }
+});
+
+/* 键盘清空搜索框，隐藏搜索结果，显示导航栏 */
+searchInput.addEventListener("keyup", function () {
+  if (searchInput.value.length > 0) {
+    searchReset.style.display = 'block';
+    searchNav.style.display = 'none';
+  } else {
+    searchReset.style.display = 'none';
+    searchNav.style.display = 'block';
+  }
+});
 
 /*
  * search-autocomplete
  */
 var client = algoliasearch('4X0L5EZUHF', '2c3e03751f5b259ae833fe039896ad2e');
 var index = client.initIndex('jekyll');
-var myAutocomplete = autocomplete('#search-input', {hint: false}, [
+var myAutocomplete = autocomplete('#searchInput', {hint: false}, [
   {
     source: autocomplete.sources.hits(index, {hitsPerPage: 100}),
     displayKey: 'title',
@@ -66,39 +90,6 @@ var myAutocomplete = autocomplete('#search-input', {hint: false}, [
   }
 ]).on('autocomplete:selected', function (event, suggestion, dataset) {
   location.href = suggestion.url;
-});
-
-/*
- * search-reset
- */
-var searchBox = document.querySelector(".aa-input");
-var searchNav = document.querySelector(".search-nav");
-var searchReset = document.querySelector(".searchbox [type='reset']");
-
-/* 点击重置，清空搜索框，显示导航栏 */
-document.querySelector(".searchbox-reset").addEventListener("click", function () {
-  searchBox.focus();
-  this.style.display = 'none';
-  myAutocomplete.autocomplete.setVal("");
-  if (searchBox.value.length > 0) {
-    searchNav.style.display = 'none';
-  } else {
-    searchNav.style.display = 'block';
-  }
-});
-
-/* 键盘清空搜索框，隐藏搜索结果，显示导航栏 */
-document.querySelector("#search-input").addEventListener("keyup", function () {
-  if (searchBox.value.length > 0) {
-    searchNav.style.display = 'none';
-  } else {
-    searchNav.style.display = 'block';
-  }
-  if (searchBox.value.length === 0) {
-    searchReset.style.display = 'none';
-  } else {
-    searchReset.style.display = 'block';
-  }
 });
 
 /*
