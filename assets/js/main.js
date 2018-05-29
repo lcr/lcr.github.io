@@ -15,7 +15,7 @@ document.querySelector('#headerNavSearch').addEventListener("click", function (e
   }
   setTimeout(function () {
     document.body.style.overflowY = 'hidden';
-  }, 500);
+  }, 300);
 });
 
 /* footer nav 点击search，打开搜索页面*/
@@ -27,7 +27,7 @@ document.querySelector('#footerNavSearch').addEventListener("click", function (e
   }
   setTimeout(function () {
     document.body.style.overflowY = 'hidden';
-  }, 500);
+  }, 300);
 });
 
 /* 鼠标点击X,关闭搜索页面 */
@@ -61,11 +61,11 @@ searchReset.addEventListener("click", function () {
 /* 键盘清空搜索框，隐藏搜索结果，显示导航栏 */
 searchInput.addEventListener("keyup", function () {
   if (searchInput.value.length > 0) {
-    searchReset.style.display = 'block';
     searchNav.style.display = 'none';
+    searchReset.style.display = 'block';
   } else {
-    searchReset.style.display = 'none';
     searchNav.style.display = 'block';
+    searchReset.style.display = 'none';
   }
 });
 
