@@ -53,30 +53,26 @@ footer {
 .author {
   margin-bottom: 0;
   letter-spacing: 1px;
+  svg {
+    display: inline-block;
+    -webkit-animation: beat .4s infinite alternate;
+    animation: beat .4s infinite alternate;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+  }
 }
-
-.heart {
-  display: inline-block;
-  color: #ff69b4;
-  -webkit-animation: beat .4s infinite alternate;
-          animation: beat .4s infinite alternate;
-  -webkit-transform-origin: center;
-          transform-origin: center;
-}
-
 
 @-webkit-keyframes beat {
   100% {
     -webkit-transform: scale(1.2);
-            transform: scale(1.2);
+    transform: scale(1.2);
   }
 }
-
 
 @keyframes beat {
   100% {
     -webkit-transform: scale(1.2);
-            transform: scale(1.2);
+    transform: scale(1.2);
   }
 }
 
