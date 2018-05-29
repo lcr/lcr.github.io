@@ -9,7 +9,7 @@ body {
   -webkit-text-size-adjust: 100%;
   // 应用字距调整
   -webkit-font-kerning: normal;
-          font-kerning: normal;
+  font-kerning: normal;
 }
 
 /*
@@ -81,15 +81,15 @@ a {
 }
 
 p > a {
-  color: inherit;
-  border-bottom: 2px dashed $grey-color;
   margin-left: 6px;
-  &:after{
+  border-bottom: 2px dashed $grey-color;
+  color: inherit;
+  &:after {
     content: url("/assets/img/icon-link.svg");
     margin-left: 6px;
   }
-  &:hover{
-    border-bottom:2px solid $red-color;
+  &:hover {
+    border-bottom: 2px solid $red-color;
   }
 }
 
@@ -125,10 +125,12 @@ pre {
     padding-left: 0;
   }
 }
-hr{
+
+hr {
   height: 0;
   overflow: hidden;
 }
+
 /*
  * Tables
  */
