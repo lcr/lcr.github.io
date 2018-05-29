@@ -76,6 +76,8 @@ figcaption {
  */
 a {
   text-decoration: none;
+  // Remove the gray background on active links in IE 10.
+  background-color: transparent;
 }
 
 /*
@@ -110,7 +112,10 @@ pre {
     padding-left: 0;
   }
 }
-
+hr{
+  height: 0;
+  overflow: hidden;
+}
 /*
  * Tables
  */
