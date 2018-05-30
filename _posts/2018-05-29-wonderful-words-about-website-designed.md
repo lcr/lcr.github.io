@@ -1,5 +1,5 @@
 ---
-title: 一句很赞的话语
+title: Wonderful words
 categories: rants
 ---
 
