@@ -84,6 +84,7 @@ p > a {
   margin-left: 6px;
   border-bottom: 2px dashed $grey-color;
   color: inherit;
+  transition: all $time ease-in-out;
   &:after {
     content: url("/assets/img/icon-link.svg");
     margin-left: 6px;
