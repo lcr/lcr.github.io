@@ -16,8 +16,8 @@ header {
   right: 0;
   left: 0;
   top: 0;
-  transition: $time ease-in-out;
   z-index: 9;
+  transition: transform $time ease-in-out;
   &--pinned {
     transform: translateY(0%);
   }
