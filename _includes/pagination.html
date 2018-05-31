@@ -1,27 +1,55 @@
 {% if paginator.total_pages > 1 %}
-<article class="pagination">
 
+  {% assign start = paginator.page | minus: 2 %}
+  {% assign end = paginator.page | plus: 2 %}
+
+  {% if start < 1 %}
+  {% assign start = 1 %}
+  {% assign end = start | plus: 4 %}
+  {% elsif end > paginator.total_pages %}
+  {% assign start = paginator.total_pages | minus: 4 %}
+  {% assign end = paginator.total_pages %}
+  {% endif %}
+
+  {% if start < 1 %}
+  {% assign start = 1 %}
+  {% endif %}
+
+  {% if end > paginator.total_pages %}
+  {% assign end = paginator.total_pages %}
+  {% endif %}
+
+<div class="pagination">
   {% if paginator.previous_page %}
   <a class="pagination-link arrow-left" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" title="Previous">{% include icon-arrow.svg %}</a>
   {% else %}
-  <span class="pagination-link  icon-lighten arrow-left">{% include icon-arrow.svg %}</span>
+  <span class="pagination-link arrow-left icon-lighten">{% include icon-arrow.svg %}</span>
   {% endif %}
 
-  {% for page in (1..paginator.total_pages) %}
+  {% if start > 1 %}
+  <a class="pagination-link pagination-first" href="{{ site.baseurl }}/">1</a>
+  <span class="pagination-more">&middot;&middot;&middot;</span>
+  {% endif %}
+
+  {% for page in (start..end) %}
   {% if page == paginator.page %}
-  <span class="pagination-link-active">{{ page }}</span>
+  <span class="pagination-link pagination-link-active">{{ page }}</span>
   {% elsif page == 1 %}
-  <a class="pagination-link" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+  <a class="pagination-link" href="{{ site.baseurl }}/">{{ page }}</a>
   {% else %}
-  <a class="pagination-link" href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+  <a class="pagination-link" href="{{ site.baseurl }}/page{{ page }}/">{{ page }}</a>
   {% endif %}
   {% endfor %}
+
+  {% if end < paginator.total_pages %}
+  <span class="pagination-more">&middot;&middot;&middot;</span>
+  <a class="pagination-link pagination-last" href="{{ site.baseurl }}/page{{ paginator.total_pages }}/">{{ paginator.total_pages }}</a>
+  {% endif %}
 
   {% if paginator.next_page %}
   <a class="pagination-link arrow-right" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" title="Next">{% include icon-arrow.svg %}</a>
   {% else %}
-  <span class="pagination-link  icon-lighten arrow-right">{% include icon-arrow.svg %}</span>
+  <span class="pagination-link arrow-right icon-lighten">{% include icon-arrow.svg %}</span>
   {% endif %}
-
-</article>
+</div>
 {% endif %}

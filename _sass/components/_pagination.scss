@@ -2,9 +2,9 @@
  * pagination
  */
 .pagination {
+  display: flex;
+  justify-content: center;
   margin-bottom: $spacing-unit * 3;
-  @include content-width;
-  text-align: center;
   font-size: $base-font-size * 2;
 }
 
@@ -19,16 +19,28 @@
     fill: $red-color;
   }
 }
+.pagination-link,
+.pagination-more{
+  float: left;
+}
 
 .pagination-link-active {
-  display: inline-block;
   border-radius: 100%;
-  width: $spacing-unit * 1.5;
-  height: $spacing-unit * 1.5;
-  text-align: center;
   color: $white-color;
   background: $red-color;
   cursor: default;
+  &:hover{
+    color: $white-color;
+  }
+}
+
+.pagination-first,
+.pagination-last,
+.pagination-more {
+  display: block;
+  @include media-query($small) {
+    display: none;
+  }
 }
 
 .icon-lighten {
@@ -40,10 +52,10 @@
 
 .arrow-left svg {
   -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 
 .arrow-right svg {
   -webkit-transform: rotate(270deg);
-          transform: rotate(270deg);
+  transform: rotate(270deg);
 }
