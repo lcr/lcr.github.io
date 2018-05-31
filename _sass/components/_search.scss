@@ -5,6 +5,7 @@
   position: fixed;
   top: -100vh;
   left: 0;
+  z-index: 99;
   @include content-width;
   @include clearfix;
   width: 100vw;

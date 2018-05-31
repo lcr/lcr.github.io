@@ -1,4 +1,16 @@
 /*
+ * Headroom
+ */
+var Header = document.querySelector('header');
+var headroom = new Headroom(Header, {
+  "offset": 200,
+  "tolerance": 5,
+});
+headroom.init();
+
+
+
+/*
  * search
  */
 var searchPage = document.querySelector("#search");
@@ -60,6 +72,8 @@ searchInput.addEventListener("keyup", function () {
   }
 });
 
+
+
 /*
  * search-autocomplete
  */
@@ -83,6 +97,8 @@ var myAutocomplete = autocomplete('#searchInput', {hint: false}, [
   location.href = suggestion.url;
 });
 
+
+
 /*
  * Accordion Check
  */
@@ -91,6 +107,8 @@ if (urlHash.length > 0) {
   var inputCheck = document.getElementById(urlHash);
   inputCheck.checked = true;
 }
+
+
 
 /*
  * Google Analytics

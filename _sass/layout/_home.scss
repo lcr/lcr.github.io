@@ -2,6 +2,7 @@
  * post list
  */
 .post-ul{
+  margin-top: $spacing-unit * 4.5;
   @include content-width;
 }
 .post-list {

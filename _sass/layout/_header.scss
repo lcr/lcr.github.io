@@ -5,10 +5,25 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: $spacing-unit * 2;
   @include content-width;
   height: $spacing-unit * 2.5;
+  line-height: $spacing-unit * 2.5;
   background: $deep-grey-color;
+}
+
+.headroom {
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  transition: $time ease-in-out;
+  z-index: 9;
+  &--pinned {
+    transform: translateY(0%);
+  }
+  &--unpinned {
+    transform: translateY(-100%);
+  }
 }
 
 .site-title {
