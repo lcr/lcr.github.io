@@ -5,30 +5,21 @@ var searchPage = document.querySelector("#search");
 var searchInput = document.querySelector("#searchInput");
 var searchReset = document.querySelector("#searchReset");
 var searchNav = document.querySelector("#searchNav");
+var navSearch = document.querySelectorAll("#headerNavSearch,#footerNavSearch");
 
-/* header nav 点击search，打开搜索页面*/
-document.querySelector('#headerNavSearch').addEventListener("click", function (event) {
-  event.preventDefault();
-  searchPage.style.transform = "translateY(100vh)";
-  if (window.innerWidth > 650) {
-    searchInput.focus();
-  }
-  setTimeout(function () {
-    document.body.style.overflowY = 'hidden';
-  }, 500);
-});
-
-/* footer nav 点击search，打开搜索页面*/
-document.querySelector('#footerNavSearch').addEventListener("click", function (event) {
-  event.preventDefault();
-  searchPage.style.transform = "translateY(100vh)";
-  if (window.innerWidth > 650) {
-    searchInput.focus();
-  }
-  setTimeout(function () {
-    document.body.style.overflowY = 'hidden';
-  }, 500);
-});
+/* header nav & footer nav 点击search，打开搜索页面*/
+for (i = 0; i < navSearch.length; i++) {
+  navSearch[i].addEventListener("click", function (event) {
+    event.preventDefault();
+    searchPage.style.transform = "translateY(100vh)";
+    if (window.innerWidth > 650) {
+      searchInput.focus();
+    }
+    setTimeout(function () {
+      document.body.style.overflowY = 'hidden';
+    }, 500);
+  });
+}
 
 /* 鼠标点击X,关闭搜索页面 */
 document.querySelector("#searchClose").addEventListener("click", function (event) {
