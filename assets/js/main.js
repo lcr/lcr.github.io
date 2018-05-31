@@ -3,17 +3,11 @@
  */
 var Header = document.querySelector('header');
 var headroom = new Headroom(Header, {
-  // 在元素没有固定之前，垂直方向的偏移量（以px为单位）
-  "offset": 200,
-  // scroll tolerance in px before state changes
-  "tolerance": 20,
-  // 对于每个状态都可以自定义css classes
+  "offset": 100,
+  "tolerance": 10,
   classes: {
-    // 当元素初始化后所设置的class
     initial: "js-headroom",
-    // 向上滚动时设置的class
     pinned: "js-headroom--pinned",
-    // 向下滚动时所设置的class
     unpinned: "js-headroom--unpinned"
   }
 });
