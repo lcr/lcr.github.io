@@ -4,6 +4,7 @@
 .search {
   position: fixed;
   top: -100vh;
+  right: 0;
   left: 0;
   z-index: 99;
   @include content-width;
@@ -28,11 +29,12 @@
   position: relative;
   margin-top: $spacing-unit * 3;
   height: 60px;
-  .algolia-autocomplete {
-    display: block;
-    width: 100%;
-    height: 100%;
-  }
+}
+
+.algolia-autocomplete {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 .search-input {
@@ -78,7 +80,7 @@
   -moz-user-select: none;
   -ms-user-select: none;
   -webkit-user-select: none;
-          user-select: none;
+  user-select: none;
 }
 
 .aa-dropdown-menu {
@@ -89,15 +91,19 @@
   color: $white-color;
   cursor: pointer;
   overflow: auto;
+  
   h2 {
     margin-bottom: 0;
   }
+  
   p {
     margin-bottom: $spacing-unit / 3;
   }
+  
   code {
     background: $deep-grey-color;
   }
+  
   a {
     color: $white-color;
     // 链接失效
