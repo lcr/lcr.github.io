@@ -12,15 +12,15 @@
   <p class="copyright">&copy;2018&nbsp;&nbsp; All rights reserved</p>
   <p class="author">Written with {% include icon-heart.svg %} by Leslie Lai</p>
 
-  {%- if page_paths -%}
+  {% if page_paths %}
   <nav class="footer-nav">
-    {%- for path in page_paths -%}
-    {%- assign my_page = site.pages | where: "path", path | first -%}
-    {%- if my_page.title -%}
+    {% for path in page_paths %}
+    {% assign my_page = site.pages | where: "path", path | first %}
+    {% if my_page.title %}
     <a class="footer-nav-title" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
-    {%- endif -%}
-    {% endfor -%}
+    {% endif %}
+    {% endfor %}
     <a class="footer-nav-title" id="footerNavSearch" href="#search">Search</a>
   </nav>
-  {%- endif -%}
+  {% endif %}
 </footer>
