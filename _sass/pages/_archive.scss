@@ -46,6 +46,13 @@
   }
 }
 
+.archive-anchor {
+  display: block;
+  position: relative;
+  top: -($spacing-unit * 2.5);
+  visibility: hidden;
+}
+
 .archive-number {
   float: right;
   color: $deep-grey-color;
