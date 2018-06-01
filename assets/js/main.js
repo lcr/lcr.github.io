@@ -17,15 +17,15 @@ headroom.init();
 /*
  * search
  */
+var searchOpen = document.querySelectorAll("#headerSearch,#footerSearch");
 var searchPage = document.querySelector("#search");
 var searchInput = document.querySelector("#searchInput");
 var searchReset = document.querySelector("#searchReset");
 var searchNav = document.querySelector("#searchNav");
-var navSearch = document.querySelectorAll("#headerNavSearch,#footerNavSearch");
 
 /* header nav & footer nav 点击search，打开搜索页面*/
-for (i = 0; i < navSearch.length; i++) {
-  navSearch[i].addEventListener("click", function (event) {
+for (i = 0; i < searchOpen.length; i++) {
+  searchOpen[i].addEventListener("click", function (event) {
     event.preventDefault();
     searchPage.style.transform = "translateY(100vh)";
     if (window.innerWidth > 650) {

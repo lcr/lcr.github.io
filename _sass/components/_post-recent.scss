@@ -1,7 +1,8 @@
 /*
  * post-recent
  */
-.post-recent {
+.post-recent-newer,
+.post-recent-older {
   padding: ($spacing-unit * 2) 0;
   font-size: $base-font-size * 2;
   color: darken($grey-color, 25%);
@@ -19,7 +20,7 @@
   width: 50%;
   svg {
     -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
+    transform: rotate(90deg);
   }
 }
 
@@ -30,6 +31,6 @@
   text-align: right;
   svg {
     -webkit-transform: rotate(270deg);
-            transform: rotate(270deg);
+    transform: rotate(270deg);
   }
 }

@@ -32,7 +32,7 @@ header {
   color: $white-color;
 }
 
-.header-nav-title {
+.header-nav-item {
   display: inline-block;
   &:not(:last-child) {
     margin-right: 20px;
@@ -40,6 +40,7 @@ header {
   color: $white-color;
   @include relative-font-size(1.125);
   transition: opacity $time;
+  cursor: pointer;
   
   svg {
     display: none;
@@ -50,11 +51,11 @@ header {
   }
 }
 
-.header-nav:hover .header-nav-title:not(:hover) {
+.header-nav:hover .header-nav-item:not(:hover) {
   opacity: .5;
 }
 
-.header-nav-title-hide {
+.header-nav-hide {
   @include media-query($small) {
     display: none;
   }

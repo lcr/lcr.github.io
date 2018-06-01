@@ -25,21 +25,21 @@
   }
 }
 
-.post-categories {
+.category {
   float: right;
   padding-top: 10px;
   @include relative-font-size(1.5)
 }
 
-.post-categories-title {
+.category-title {
   margin-bottom: 0;
 }
 
-.post-categories-category {
+.category-item {
   color: $red-color;
 }
 
-.background-grey {
+.container-grey {
   @include content-width;
   @include clearfix;
   padding-top: $spacing-unit * 3;

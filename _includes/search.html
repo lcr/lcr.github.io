@@ -1,10 +1,10 @@
 <article class="search" id="search">
-  <button class="search-close" id="searchClose" type="button" title="Close or Esc key">{% include icon-cross.svg %}</button>
+  <button class="search-close" id="searchClose" type="button" title="Close or Esc key">{% include svg/cross.svg %}</button>
 
   <form class="search-box" novalidate="novalidate" onsubmit="return false;" role="search">
     <input class="search-input" id="searchInput" type="search" name="search" placeholder="Search..." autocomplete="off" required="required">
 
-    <button class="search-reset" id="searchReset" type="reset" title="Search Clear">{% include icon-cross.svg %}</button>
+    <button class="search-reset" id="searchReset" type="reset" title="Search Clear">{% include svg/cross.svg %}</button>
 
     <div class="search-nav" id="searchNav">
       {% for path in page_paths %}

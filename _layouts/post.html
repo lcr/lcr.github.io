@@ -5,30 +5,29 @@ layout: default
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting" aria-label="Content" itemprop="articleBody">
   <h1 itemprop="name headline">{{ page.title | escape }}</h1>
 
-  <div class="post-date">{% include icon-clock.svg %}
-    <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-      {% assign date_format = site.date_format | default: "%B %d. %Y" %}{{ page.date | date: date_format }}
-    </time>
-  </div>
+  {% assign date_format = site.date_format | default: "%B %d. %Y" %}
+  <time class="post-date" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+    {% include svg/clock.svg %}{{ page.date | date: date_format }}
+  </time>
 
   {{ content }}
 
-  <div class="post-categories">
-    <p class="post-categories-title">Category</p>
+  <div class="category">
+    <p class="category-title">Category</p>
     {% if post %}
     {% assign categories = post.categories %}
     {% else %}
     {% assign categories = page.categories %}
     {% endif %}
     {% for category in categories %}
-    <a class="post-categories-category" href="{{site.baseurl}}/archive#{{category | slugify}}">{{category}}</a>
+    <a class="category-item" href="{{site.baseurl}}/archive#{{category | slugify}}">{{category}}</a>
     {% unless forloop.last %}&nbsp;{% endunless %}
     {% endfor %}
   </div>
 
 </article>
 
-<article class="background-grey">
+<article class="container-grey">
   {% include comments.html %}
 
   {% include comment-new.html %}

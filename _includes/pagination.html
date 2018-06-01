@@ -21,35 +21,35 @@
 
 <div class="pagination">
   {% if paginator.previous_page %}
-  <a class="pagination-link arrow-left" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" title="Previous">{% include icon-arrow.svg %}</a>
+  <a class="pagination-item arrow-left" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" title="Previous">{% include svg/arrow.svg %}</a>
   {% else %}
-  <span class="pagination-link arrow-left icon-lighten">{% include icon-arrow.svg %}</span>
+  <span class="pagination-item arrow-left icon-lighten">{% include svg/arrow.svg %}</span>
   {% endif %}
 
   {% if start > 1 %}
-  <a class="pagination-link pagination-first" href="{{ site.baseurl }}/">1</a>
+  <a class="pagination-item pagination-first" href="{{ site.baseurl }}/">1</a>
   <span class="pagination-more">&middot;&middot;&middot;</span>
   {% endif %}
 
   {% for page in (start..end) %}
   {% if page == paginator.page %}
-  <span class="pagination-link pagination-link-active">{{ page }}</span>
+  <span class="pagination-item pagination-item-active">{{ page }}</span>
   {% elsif page == 1 %}
-  <a class="pagination-link" href="{{ site.baseurl }}/">{{ page }}</a>
+  <a class="pagination-item" href="{{ site.baseurl }}/">{{ page }}</a>
   {% else %}
-  <a class="pagination-link" href="{{ site.baseurl }}/page{{ page }}/">{{ page }}</a>
+  <a class="pagination-item" href="{{ site.baseurl }}/page{{ page }}/">{{ page }}</a>
   {% endif %}
   {% endfor %}
 
   {% if end < paginator.total_pages %}
   <span class="pagination-more">&middot;&middot;&middot;</span>
-  <a class="pagination-link pagination-last" href="{{ site.baseurl }}/page{{ paginator.total_pages }}/">{{ paginator.total_pages }}</a>
+  <a class="pagination-item pagination-last" href="{{ site.baseurl }}/page{{ paginator.total_pages }}/">{{ paginator.total_pages }}</a>
   {% endif %}
 
   {% if paginator.next_page %}
-  <a class="pagination-link arrow-right" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" title="Next">{% include icon-arrow.svg %}</a>
+  <a class="pagination-item arrow-right" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" title="Next">{% include svg/arrow.svg %}</a>
   {% else %}
-  <span class="pagination-link arrow-right icon-lighten">{% include icon-arrow.svg %}</span>
+  <span class="pagination-item arrow-right icon-lighten">{% include svg/arrow.svg %}</span>
   {% endif %}
 </div>
 {% endif %}

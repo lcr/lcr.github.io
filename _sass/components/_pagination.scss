@@ -8,7 +8,7 @@
   font-size: $base-font-size * 2;
 }
 
-.pagination-link {
+.pagination-item {
   display: inline-block;
   width: $spacing-unit * 1.5;
   height: $spacing-unit * 1.5;
@@ -19,12 +19,12 @@
     fill: $red-color;
   }
 }
-.pagination-link,
+.pagination-item,
 .pagination-more{
   float: left;
 }
 
-.pagination-link-active {
+.pagination-item-active {
   border-radius: 100%;
   color: $white-color;
   background: $red-color;

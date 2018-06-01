@@ -12,9 +12,9 @@
   <input name="options[redirect]" type="hidden" value="{{ page.url | absolute_url }}">
   <input name="options[slug]" type="hidden" value="{{ page.slug }}">
 
-  <label><input class="comment-new-text" name="fields[name]" type="text" placeholder="Name" required></label>
+  <label><input class="comment-new-text" name="fields[name]" type="text" placeholder="Name" autocomplete="name" required></label>
 
-  <label><input class="comment-new-email" name="fields[email]" type="email" placeholder="Email (optional)" pattern="/^([A-Za-z0-9_\-\.\u4e00-\u9fa5])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,8})$/"></label>
+  <label><input class="comment-new-email" name="fields[email]" type="email" placeholder="Email (optional)" autocomplete="email" pattern="/^([A-Za-z0-9_\-\.\u4e00-\u9fa5])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,8})$/"></label>
 
   <label><textarea class="comment-new-message" name="fields[message]" placeholder="Message (HTML & Markdown supported)" required></textarea></label>
 
