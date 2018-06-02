@@ -86,7 +86,7 @@ p > a {
   color: inherit;
   transition: all $time ease-in-out;
   &:after {
-    content: url("/assets/img/icon-link.svg");
+    content: url("/assets/img/link.svg");
     margin-left: 6px;
   }
   &:hover {
