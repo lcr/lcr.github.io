@@ -91,6 +91,12 @@
   color: $white-color;
   cursor: pointer;
   overflow: auto;
+  // scrollbar hide
+  overflow: -moz-scrollbars-none;
+  -ms-overflow-style: none;
+  &::-webkit-scrollbar{
+    width: 0;
+  }
   
   h2 {
     margin-bottom: 0;
