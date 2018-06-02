@@ -17,18 +17,22 @@
   transition: transform $time, -webkit-transform $time;
 }
 
+.search-close-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: $spacing-unit * 2.5;
+}
+
 .search-close {
-  float: right;
-  margin-top: 20px;
+  border: none;
   background: none;
-  border: 0;
   cursor: pointer;
 }
 
 .search-box {
   position: relative;
-  margin-top: $spacing-unit * 3;
-  height: 60px;
+  height: $spacing-unit * 2;
 }
 
 .algolia-autocomplete {
@@ -45,6 +49,7 @@
   //清除iOS搜索框的圆边框
   -webkit-appearance: none;
   border-radius: 0;
+  // iOS search padding left
   padding-left: 0;
   width: 100%;
   background: $deep-grey-color;
@@ -70,8 +75,8 @@
 .search-reset {
   display: none;
   position: absolute;
-  top: 16px;
   right: 0;
+  bottom: 0;
   border: 0;
   background: none;
   cursor: pointer;
@@ -85,8 +90,7 @@
 
 .aa-dropdown-menu {
   position: absolute;
-  margin-top: 16px;
-  height: calc(100vh - 166px);
+  height: calc(100vh - 135px);
   width: 100%;
   color: $white-color;
   cursor: pointer;
@@ -94,7 +98,7 @@
   // scrollbar hide
   overflow: -moz-scrollbars-none;
   -ms-overflow-style: none;
-  &::-webkit-scrollbar{
+  &::-webkit-scrollbar {
     width: 0;
   }
   
@@ -118,8 +122,7 @@
 }
 
 .aa-suggestion {
-  padding: 4px;
-  border-bottom: lighten($deep-grey-color, 5%) 1px solid;
+  border-bottom: darken($grey-color, 20%) 1px solid;
   em {
     color: $red-color;
   }
@@ -129,11 +132,7 @@
   }
 }
 
-.search-nav {
-  margin-top: $spacing-unit / 2;
-}
-
-.search-nav-title {
+.search-nav-item {
   display: block;
   color: $white-color;
   @include relative-font-size(3);
