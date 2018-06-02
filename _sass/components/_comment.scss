@@ -1,4 +1,32 @@
 /*
+ * Comments
+ */
+.comments-title {
+  margin-top: $spacing-unit * 2;
+  border-bottom: 2px solid $grey-color;
+  padding-bottom: $spacing-unit / 3;
+}
+
+.comments-name {
+  margin-top: $spacing-unit / 2;
+  @include relative-font-size(1.5);
+}
+
+.comments-date {
+  margin: ($spacing-unit / 3) 0;
+  font: {
+    style: italic;
+    size: $small-font-size;
+  }
+}
+
+.comments-message {
+  border-bottom: 1px solid $grey-color;
+}
+
+
+
+/*
  * Comment new
  */
 .comment-new-title {
