@@ -84,13 +84,11 @@
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-  -webkit-user-select: none;
   user-select: none;
 }
 
 .aa-dropdown-menu {
-  //position: absolute;
-  height: calc(100vh - 160px);
+  height: calc(100vh - 135px);
   width: 100%;
   color: $white-color;
   cursor: pointer;
@@ -100,23 +98,6 @@
   -ms-overflow-style: none;
   &::-webkit-scrollbar {
     width: 0;
-  }
-  
-  h2 {
-    margin-bottom: 0;
-  }
-  
-  p {
-    margin-bottom: $spacing-unit / 3;
-  }
-  
-  code {
-    background: $deep-grey-color;
-  }
-  
-  a {
-    color: $white-color;
-    pointer-events: none;
   }
 }
 
