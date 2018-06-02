@@ -46,30 +46,29 @@
   transition: box-shadow $time ease, background $time ease;
   border: 0;
   border-bottom: 2px $grey-color solid;
-  //清除iOS搜索框的圆边框
-  -webkit-appearance: none;
-  border-radius: 0;
-  // iOS search padding left
-  padding-left: 0;
+  
   width: 100%;
   background: $deep-grey-color;
   color: $white-color;
   white-space: normal;
   @include relative-font-size(3);
-}
-
-// 清除IE搜索框默认右端的X
-.search-input::-ms-clear,
-.search-input::-ms-reveal {
-  display: none;
-}
-
-// 清除Chrome搜索框默认右端的X
-.search-input::-webkit-search-decoration,
-.search-input::-webkit-search-cancel-button,
-.search-input::-webkit-search-results-button,
-.search-input::-webkit-search-results-decoration {
-  display: none;
+  //清除iOS搜索框的圆边框
+  -webkit-appearance: none;
+  border-radius: 0;
+  // iOS search padding left
+  padding-left: 0;
+  &::-ms-clear,
+  &::-ms-reveal {
+    //清除IE搜索框默认右端的X
+    display: none;
+  }
+  &::-webkit-search-decoration,
+  &::-webkit-search-cancel-button,
+  &::-webkit-search-results-button,
+  &::-webkit-search-results-decoration {
+    // 清除Chrome搜索框默认右端的X
+    display: none;
+  }
 }
 
 .search-reset {
