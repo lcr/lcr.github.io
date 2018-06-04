@@ -1,6 +1,12 @@
 /*
- * home content
+ * home page
  */
+
+.home-content{
+  margin-top: $spacing-unit * 2;
+  @include content-width;
+}
+
 .post-item {
   &:not(:last-child) {
     border-bottom: 1px solid lighten($grey-color, 25%);
@@ -42,6 +48,19 @@
         transform: scaleX(1);
       }
     }
+  }
+}
+
+.post-date {
+  display: flex;
+  align-items: center;
+  margin-bottom: $spacing-unit / 2;
+  font: {
+    style: italic;
+    size: $small-font-size;
+  }
+  svg {
+    margin-right: 6px;
   }
 }
 

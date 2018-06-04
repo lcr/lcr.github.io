@@ -1,5 +1,5 @@
-<header class="js-headroom">
-
+<header >
+  <div class="js-headroom">
   {% assign default_paths = site.pages | map: "path" %}
   {% assign page_paths = site.header_pages | default: default_paths %}
   <a class="site-title" href="{{ '/' | relative_url }}">{{site.title | upcase}}</a>
@@ -15,5 +15,28 @@
       <a class="header-nav-item" id="headerSearch"><span class="header-nav-hide">Search</span>{% include svg/menu.svg %}</a>
   </nav>
   {% endif %}
+  </div>
 
+  <div class="page-title">
+
+    {% if page.description %}
+    <h1 class="page-title-item">{{ page.description }}</h1>
+    <a class="content-anchor" href="#contentAnchor"><span>{% include svg/arrow.svg %}</span></a>
+
+    {% elsif page.title %}
+    <h1 class="page-title-item" itemprop="name headline">{{ page.title | escape }}</h1>
+    {% assign date_format = site.date_format | default: "%B %d. %Y" %}
+    <time class="page-title-date" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+      {% include svg/date.svg %}{{ page.date | date: date_format }}
+    </time>
+
+    {% else %}
+    <h1 class="page-title-home">Frontend<br>Development<br>& Rants</h1>
+    <a class="content-anchor" href="#contentAnchor"><span>{% include svg/arrow.svg %}</span></a>
+    {% endif %}
+
+
+    <div class="header-angled header-angled-left"></div>
+    <div class="header-angled header-angled-right"></div>
+  </div>
 </header>

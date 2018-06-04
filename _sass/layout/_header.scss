@@ -1,22 +1,19 @@
 /*
  * header
  */
-header {
-  display: flex;
-  justify-content: space-between;
-  //align-items: center;
-  @include content-width;
-  height: $spacing-unit * 2.5;
-  line-height: $spacing-unit * 2.5;
-  background: $deep-grey-color;
-}
-
 .js-headroom {
   position: fixed;
   right: 0;
   left: 0;
   top: 0;
   z-index: 9;
+  display: flex;
+  justify-content: space-between;
+  @include content-width;
+  height: $spacing-unit * 2.5;
+  line-height: $spacing-unit * 2.5;
+  background: $deep-grey-color;
+  box-shadow: 0 1px 2px rgba(0,0,0,.5);
   transition: transform $time ease-in-out;
   &--pinned {
     transform: translateY(0%);
@@ -58,5 +55,89 @@ header {
 .header-nav-hide {
   @include media-query($small) {
     display: none;
+  }
+}
+
+.page-title {
+  position: relative;
+  padding-top: $spacing-unit * 4.5;
+  padding-bottom: $spacing-unit;
+  @include content-width;
+  background: $deep-grey-color;
+  color: white;
+  line-height: 1;
+}
+
+.page-title-home{
+  @include relative-font-size(4);
+  @include media-query($small) {
+    @include relative-font-size(3)
+  }
+}
+
+.page-title-item{
+  @include relative-font-size(2.5);
+  @include media-query($small) {
+    @include relative-font-size(2)
+  }
+}
+
+.page-title-date{
+    display: flex;
+    align-items: center;
+    margin-bottom: $spacing-unit * 3;
+    font: {
+      style: italic;
+      size: $small-font-size;
+    }
+    svg {
+      margin-right: 6px;
+      fill:$white-color;
+    }
+}
+
+.content-anchor{
+  display: block;
+  margin-top: $spacing-unit * 3;
+  text-align: center;
+  span{
+    display: inline-block;
+    width: $spacing-unit * 1.5;
+    height: $spacing-unit * 1.5;
+    line-height: $spacing-unit * 2;
+    border: $grey-color 1px solid;
+    border-radius: 100%;
+    fill: $white-color;
+    &:hover{
+      border: $white-color 1px solid;
+    }
+  }
+}
+
+.header-angled {
+  bottom: 0;
+  z-index: 5;
+  width: 50%;
+  height: 200px;
+  pointer-events: none;
+}
+
+.header-angled-left {
+  @include angled-edge('inside bottom', 'upper right', $white-color, $width: 2000, $height: 200);
+  left: 0;
+  position: absolute;
+  
+  &::after {
+    background-position: right center;
+  }
+}
+
+.header-angled-right {
+  @include angled-edge('inside bottom', 'upper left', $white-color, $width: 2000, $height: 200);
+  position: absolute;
+  right: 0;
+  
+  &::after {
+    background-position: left center;
   }
 }

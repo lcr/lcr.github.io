@@ -2,7 +2,8 @@
 layout: default
 ---
 
-<ul class="post" aria-label="Content">
+<a id="contentAnchor"></a>
+<ul class="home-content" aria-label="Content">
   {% for post in paginator.posts %}
   <li class="post-item">
 
@@ -12,7 +13,7 @@ layout: default
 
     {% assign date_format = site.date_format | default: "%b %d. %Y" %}
     <time class="post-date">
-      {% include svg/clock.svg %}{{ post.date | date: date_format }}
+      {% include svg/date.svg %}{{ post.date | date: date_format }}
     </time>
 
     {% if post.excerpt != post.content %}

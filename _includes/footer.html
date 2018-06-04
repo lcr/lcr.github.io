@@ -1,4 +1,14 @@
 <footer>
+
+  {% if page.date %}
+  <div class="footer-angled footer-angled-left-grey"></div>
+  <div class="footer-angled footer-angled-right-grey"></div>
+
+  {% else %}
+  <div class="footer-angled footer-angled-left"></div>
+  <div class="footer-angled footer-angled-right"></div>
+  {% endif %}
+
   <ul class="social">
     <li><a class="github" href="https://github.com/lcr/" title="Leslie Lai on GitHub">{% include svg/github.svg %}</a></li>
 

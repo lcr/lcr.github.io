@@ -3,7 +3,7 @@
  */
 .post-recent-newer,
 .post-recent-older {
-  padding: ($spacing-unit * 2) 0;
+  padding: $spacing-unit 0;
   font-size: $base-font-size * 2;
   color: darken($grey-color, 25%);
   fill: darken($grey-color, 25%);
