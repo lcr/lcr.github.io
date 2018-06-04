@@ -165,22 +165,12 @@ table {
 /*
  * code header background
  */
-#html,
-#html-1,
-#html-2,
-#markdown,
-#css,
-#css-1,
-#css-2,
-#javascript,
-#javascript-1,
-#javascript-2,
-#jquery,
-#jquery-1,
-#jquery-2,
-#demo,
-#demo-1,
-#demo-2 {
+h3[id^="html"],
+h3[id^="markdown"],
+h3[id^="css"],
+h3[id^="javascript"],
+h3[id^="jquery"],
+h3[id^="demo"] {
   display: inline-block;
   margin-bottom: 2px;
   border-radius: 4px;
@@ -189,30 +179,20 @@ table {
   @include relative-font-size(1)
 }
 
-#html,
-#html-1,
-#html-2,
-#markdown {
+h3[id^="html"],
+h3[id^="markdown"] {
   background: linear-gradient(135deg, #ff4c9f, #ff7b74);
 }
 
-#css,
-#css-1,
-#css-2 {
+h3[id^="css"] {
   background: linear-gradient(135deg, #7983ff, #5f9de9);
 }
 
-#javascript,
-#javascript-1,
-#javascript-2,
-#jquery,
-#jquery-1,
-#jquery-2 {
+h3[id^="javascript"],
+h3[id^="jquery"] {
   background: linear-gradient(135deg, #ffb000, #f58818);
 }
 
-#demo,
-#demo-1,
-#demo-2 {
+h3[id^="demo"] {
   background: linear-gradient(135deg, #0091EA, #00B8D4);
 }

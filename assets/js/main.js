@@ -15,6 +15,19 @@ headroom.init();
 
 
 /*
+ * anchor scroll smooth
+ */
+var anchorLink = document.querySelector(".content-anchor"),
+  target = document.getElementById("contentAnchor");
+anchorLink.addEventListener("click", function (e) {
+  if (window.scrollTo) {
+    e.preventDefault();
+    window.scrollTo({"behavior": "smooth", "top": target.offsetTop});
+  }
+});
+
+
+/*
  * search
  */
 var searchOpen = document.querySelectorAll("#headerSearch,#footerSearch");
@@ -127,12 +140,3 @@ if (urlHash.length > 0) {
 })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 ga('create', 'UA-107157614-1', 'auto');
 ga('send', 'pageview');
-
-var anchorLink = document.querySelector(".content-anchor"),
-  target = document.getElementById("contentAnchor");
-anchorLink.addEventListener("click", function(e) {
-  if (window.scrollTo) {
-    e.preventDefault();
-    window.scrollTo({"behavior": "smooth", "top": target.offsetTop});
-  }
-});
