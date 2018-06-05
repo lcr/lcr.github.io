@@ -17,9 +17,9 @@ headroom.init();
 /*
  * anchor scroll smooth
  */
-var anchorLink = document.querySelector(".content-anchor"),
+var anchor = document.querySelector(".content-anchor"),
   target = document.getElementById("contentAnchor");
-anchorLink.addEventListener("click", function (e) {
+anchor.addEventListener("click", function (e) {
   if (window.scrollTo) {
     e.preventDefault();
     window.scrollTo({"behavior": "smooth", "top": target.offsetTop});

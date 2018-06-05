@@ -15,9 +15,9 @@ categories: [JavaScript,jQuery]
 ### JavaScript
 
 ```javascript
-var anchorLink = document.querySelector(".anchor"),
+var anchor = document.querySelector(".anchor"),
   target = document.getElementById("anchor");
-anchorLink.addEventListener("click", function (e) {
+anchor.addEventListener("click", function (e) {
   if (window.scrollTo) {
     e.preventDefault();
     window.scrollTo({"behavior": "smooth", "top": target.offsetTop});
