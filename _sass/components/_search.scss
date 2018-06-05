@@ -1,5 +1,5 @@
 /*
- * search
+ * Search Page
  */
 .search {
   position: fixed;
@@ -55,7 +55,7 @@
   //清除iOS搜索框的圆边框
   -webkit-appearance: none;
   border-radius: 0;
-  // iOS search padding left
+  // iOS search padding clear
   padding: 0;
   &::-ms-clear,
   &::-ms-reveal {
@@ -92,7 +92,7 @@
   color: $white-color;
   cursor: pointer;
   overflow: auto;
-  // scrollbar hide
+  // Drop down menu scrollbar hide
   overflow: -moz-scrollbars-none;
   -ms-overflow-style: none;
   &::-webkit-scrollbar {
