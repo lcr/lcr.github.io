@@ -85,13 +85,11 @@
 .page-title-date {
   display: flex;
   align-items: center;
+  margin-top: $spacing-unit;
   margin-bottom: $spacing-unit * 3;
-  font: {
-    style: italic;
-    size: $small-font-size;
-  }
+  font-style: italic;
   svg {
-    margin-right: 6px;
+    margin-right: $spacing-unit / 3;
     fill: $white-color;
   }
 }

@@ -13,7 +13,7 @@ layout: default
 
     {% assign date_format = site.date_format | default: "%b %d. %Y" %}
     <time class="post-date">
-      {% include svg/date.svg %}{{ post.date | date: date_format }}
+      {% include svg/calendar.svg %}{{ post.date | date: date_format }}
     </time>
 
     {% if post.excerpt != post.content %}
