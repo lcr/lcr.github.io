@@ -18,23 +18,20 @@
   </div>
 
   <div class="page-title">
-
-    {% if page.description %}
-    <h1 class="page-title-item">{{ page.description }}</h1>
-    <a class="content-anchor" href="#contentAnchor"><span>{% include svg/arrow.svg %}</span></a>
-
-    {% elsif page.title %}
+    {% if page.date %}
     <h1 class="page-title-item" itemprop="name headline">{{ page.title | escape }}</h1>
     {% assign date_format = site.date_format | default: "%B %d. %Y" %}
     <time class="page-title-date" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
       {% include svg/calendar.svg %}{{ page.date | date: date_format }}
     </time>
 
+    {% elsif page.description %}
+    <h1 class="page-title-archive">{{ page.description }}</h1>
+
     {% else %}
     <h1 class="page-title-home">Frontend<br>Development<br>& Rants</h1>
-    <a class="content-anchor" href="#contentAnchor"><span>{% include svg/arrow.svg %}</span></a>
+    <!--<a class="content-anchor" href="#contentAnchor"><span>{% include svg/arrow.svg %}</span></a>-->
     {% endif %}
-
 
     <div class="header-angled header-angled-left"></div>
     <div class="header-angled header-angled-right"></div>

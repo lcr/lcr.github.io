@@ -15,19 +15,6 @@ headroom.init();
 
 
 /*
- * anchor scroll smooth
- */
-var anchor = document.querySelector(".content-anchor"),
-  target = document.getElementById("contentAnchor");
-anchor.addEventListener("click", function (e) {
-  if (window.scrollTo) {
-    e.preventDefault();
-    window.scrollTo({"behavior": "smooth", "top": target.offsetTop});
-  }
-});
-
-
-/*
  * search
  */
 var searchOpen = document.querySelectorAll("#headerSearch,#footerSearch");

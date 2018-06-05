@@ -61,11 +61,18 @@
 .page-title {
   position: relative;
   padding-top: $spacing-unit * 4.5;
-  padding-bottom: $spacing-unit;
+  padding-bottom: $spacing-unit * 4;
   @include content-width;
   background: $deep-grey-color;
   color: white;
   line-height: 1;
+}
+
+.page-title-archive{
+  @include relative-font-size(2.5);
+  @include media-query($small) {
+    @include relative-font-size(2)
+  }
 }
 
 .page-title-home {
@@ -85,8 +92,7 @@
 .page-title-date {
   display: flex;
   align-items: center;
-  margin-top: $spacing-unit;
-  margin-bottom: $spacing-unit * 3;
+  margin-top: $spacing-unit / 2;
   font-style: italic;
   svg {
     margin-right: $spacing-unit / 3;
