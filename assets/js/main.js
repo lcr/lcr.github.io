@@ -28,9 +28,7 @@ for (i = 0; i < searchOpen.length; i++) {
   searchOpen[i].addEventListener("click", function (event) {
     event.preventDefault();
     searchPage.style.transform = "translateY(100vh)";
-    if (window.innerWidth > 650) {
-      searchInput.focus();
-    }
+    searchInput.focus();
     setTimeout(function () {
       document.body.style.overflowY = 'hidden';
     }, 500);
