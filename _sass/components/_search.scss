@@ -51,7 +51,7 @@
   background: $deep-grey-color;
   color: $white-color;
   white-space: normal;
-  @include relative-font-size(3);
+  font-size: $base-font-size * 3;
   //清除iOS搜索框的圆边框
   -webkit-appearance: none;
   border-radius: 0;
@@ -113,7 +113,7 @@
 .search-nav-item {
   display: block;
   color: $white-color;
-  @include relative-font-size(3);
+  font-size: $base-font-size * 3;
   &:hover {
     background: lighten($deep-grey-color, 5%);
   }

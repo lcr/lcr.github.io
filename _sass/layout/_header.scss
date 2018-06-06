@@ -24,7 +24,7 @@
 }
 
 .site-title {
-  @include relative-font-size(2);
+  font-size: $base-font-size * 2;
   letter-spacing: -1px;
   color: $white-color;
 }
@@ -35,7 +35,7 @@
     margin-right: 20px;
   }
   color: $white-color;
-  @include relative-font-size(1.125);
+  font-size: $base-font-size * 1.125;
   transition: opacity $time;
   cursor: pointer;
   
@@ -69,16 +69,16 @@
 }
 
 .page-title-home {
-  @include relative-font-size(4);
+  font-size: $base-font-size * 4;
   @include media-query($small) {
-    @include relative-font-size(3)
+    font-size: $base-font-size * 3;
   }
 }
 
 .page-title-item {
-  @include relative-font-size(2.5);
+  font-size: $base-font-size *2.5;
   @include media-query($small) {
-    @include relative-font-size(2)
+    font-size: $base-font-size * 2;
   }
 }
 

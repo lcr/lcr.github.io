@@ -15,7 +15,7 @@
   label {
     display: block;
     padding: 16px 0;
-    @include relative-font-size(2);
+    font-size: $base-font-size * 2;
     cursor: pointer;
     &:hover {
       color: $red-color;
@@ -60,7 +60,7 @@
 .archive-post-title {
   display: block;
   margin-bottom: $spacing-unit / 2;
-  @include relative-font-size(1.5);
+  font-size: $base-font-size * 1.5;
   color: $black-color;
   
   span {

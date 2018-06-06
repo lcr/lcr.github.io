@@ -15,7 +15,7 @@
 .category {
   float: right;
   padding-top: 10px;
-  @include relative-font-size(1.5)
+  font-size: $base-font-size * 1.5;
 }
 
 .category-title {

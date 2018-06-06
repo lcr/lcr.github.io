@@ -9,14 +9,14 @@
 
 .comments-name {
   margin-top: $spacing-unit / 2;
-  @include relative-font-size(1.5);
+  font-size: $base-font-size * 1.5;
 }
 
 .comments-date {
   margin: ($spacing-unit / 3) 0;
   font: {
     style: italic;
-    size: $small-font-size;
+    size: $base-font-size * 0.875;
   }
 }
 
@@ -58,7 +58,7 @@
   margin-top: $spacing-unit;
   border: 0;
   border-radius: $spacing-unit / 5;
-  font-size: $large-font-size;
+  font-size: $base-font-size * 1.5;
   text-indent: $spacing-unit / 2;
   color: darken($grey-color, 25%);
   background: lighten($grey-color, 25%);
@@ -78,7 +78,7 @@
   border: 2px solid;
   border-radius: $spacing-unit;
   padding: ($spacing-unit / 3) $spacing-unit;
-  @include relative-font-size(1.5);
+  font-size: $base-font-size * 1.5;
   color: $red-color;
   background: $light-grey-color;
   cursor: pointer;

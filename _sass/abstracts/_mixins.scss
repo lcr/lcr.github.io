@@ -5,11 +5,6 @@
   }
 }
 
-//font-size
-@mixin relative-font-size($ratio) {
-  font-size: $base-font-size * $ratio;
-}
-
 // Content width
 @mixin content-width {
   padding-left: calc(50vw - 450px);

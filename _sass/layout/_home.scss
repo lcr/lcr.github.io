@@ -57,7 +57,7 @@
   margin-bottom: $spacing-unit / 2;
   font: {
     style: italic;
-    size: $small-font-size;
+    size: $base-font-size * 0.875;
   }
   svg {
     margin-right: 6px;
@@ -73,7 +73,7 @@
     border: 2px solid;
     border-radius: $spacing-unit;
     padding: ($spacing-unit / 3) $spacing-unit;
-    font-size: $large-font-size;
+    font-size: $base-font-size * 1.5;
     letter-spacing: -1px;
     color: $red-color;
     &:hover {

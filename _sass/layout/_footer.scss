@@ -131,7 +131,7 @@ footer {
   margin: 0 ($spacing-unit / 2);
   padding: $spacing-unit 0;
   color: $white-color;
-  @include relative-font-size(1.125);
+  font-size: $base-font-size * 1.125;
   transition: opacity $time;
   cursor: pointer;
 }
