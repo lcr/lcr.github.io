@@ -63,8 +63,8 @@ header{
 
 .page-title {
   position: relative;
-  padding-top: $spacing-unit * 4;
-  padding-bottom: $spacing-unit * 3;
+  padding-top: $spacing-unit * 4.5;
+  padding-bottom: $spacing-unit * 4;
   @include content-width;
   color: white;
   line-height: 1;
