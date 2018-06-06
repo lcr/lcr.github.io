@@ -103,8 +103,8 @@
 
 .header-angled-left {
   @include angled-edge('inside bottom', 'upper right', $white-color, $width: 2000, $height: 200);
-  left: 0;
   position: absolute;
+  left: 0;
   
   &::after {
     background-position: right center;

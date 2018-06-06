@@ -13,3 +13,4 @@ if (0 < urlHash.length) {
   var inputCheck = document.getElementById(urlHash);
   inputCheck.checked = !0
 }
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;ga('create', '{{ site.google_analytics }}', 'auto');ga('send', 'pageview');

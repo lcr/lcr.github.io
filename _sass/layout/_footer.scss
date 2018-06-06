@@ -22,6 +22,7 @@ footer {
   @include angled-edge('inside top', 'lower right', $white-color, $width: 2000, $height: 200);
   position: absolute;
   left: 0;
+  
   &::after {
     background-position: right center;
   }
@@ -31,6 +32,7 @@ footer {
   @include angled-edge('inside top', 'lower left', $white-color, $width: 2000, $height: 200);
   position: absolute;
   right: 0;
+  
   &::after {
     background-position: left center;
   }
@@ -40,6 +42,7 @@ footer {
   @include angled-edge('inside top', 'lower right', $light-grey-color, $width: 2000, $height: 200);
   position: absolute;
   left: 0;
+
   &::after {
     background-position: right center;
   }
@@ -49,6 +52,7 @@ footer {
   @include angled-edge('inside top', 'lower left', $light-grey-color, $width: 2000, $height: 200);
   position: absolute;
   right: 0;
+
   &::after {
     background-position: left center;
   }

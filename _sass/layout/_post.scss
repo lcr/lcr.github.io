@@ -33,27 +33,3 @@
   color: darken($grey-color, 25%);
   background: linear-gradient(177deg, transparent 100px, $light-grey-color 0);
 }
-
-.post-angled {
-  bottom: 0;
-  z-index: 6;
-  width: 50%;
-  height: 200px;
-  pointer-events: none;
-}
-
-.post-angled-left {
-  @include angled-edge('inside top', 'lower right', $light-grey-color, $width: 2000, $height: 200);
-  float: left;
-  &::after {
-    background-position: right center;
-  }
-}
-
-.post-angled-right {
-  @include angled-edge('inside top', 'lower left', $light-grey-color, $width: 2000, $height: 200);
-  float: right;
-  &::after {
-    background-position: left center;
-  }
-}
