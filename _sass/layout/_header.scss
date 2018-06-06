@@ -1,6 +1,10 @@
 /*
  * Header
  */
+header{
+  margin-bottom: $spacing-unit * 2;
+}
+
 .js-headroom {
   position: fixed;
   right: 0;

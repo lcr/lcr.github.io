@@ -86,7 +86,7 @@ var myAutocomplete = autocomplete('#searchInput', {hint: false}, [
     displayKey: 'title',
     templates: {
       suggestion: function (suggestion) {
-        var sugTemplate = "<h2>" + suggestion._highlightResult.title.value + "</h2>" + "<p>" + suggestion._highlightResult.content.value + "</p>" || "<h2>" + suggestion._highlightResult.title.value + "</h2>" + "<p>" + suggestion._highlightResult.headings.value + "</p>";
+        var sugTemplate = "<h2>" + suggestion._highlightResult.title.value + "</h2>" + "<p>" + suggestion._highlightResult.content.value + "</p>";
         return sugTemplate;
       },
       empty: function (data) {
