@@ -1,8 +1,8 @@
 /*
  * Post Recent
  */
-.post-recent-newer,
-.post-recent-older {
+.post-newer,
+.post-older {
   padding: $spacing-unit 0;
   font-size: $base-font-size * 2;
   color: darken($grey-color, 25%);
@@ -14,7 +14,7 @@
   }
 }
 
-.post-recent-newer {
+.post-newer {
   display: block;
   float: left;
   width: 50%;
@@ -24,7 +24,7 @@
   }
 }
 
-.post-recent-older {
+.post-older {
   display: block;
   float: right;
   width: 50%;

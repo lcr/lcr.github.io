@@ -2,7 +2,7 @@
  * Home Page
  */
 
-.home-content{
+.post-list{
   margin-top: $spacing-unit;
   @include content-width;
 }
@@ -64,20 +64,19 @@
   }
 }
 
-.post-readmore {
+.post-excerpt {
   display: block;
   margin-top: $spacing-unit;
   
   span {
     display: inline-block;
-    border: 2px solid;
+    border: $red-color 2px solid;
     border-radius: $spacing-unit;
     padding: ($spacing-unit / 3) $spacing-unit;
     font-size: $base-font-size * 1.5;
     letter-spacing: -1px;
     color: $red-color;
     &:hover {
-      border-color: $red-color;
       background: $red-color;
       color: $white-color;
       transition: $time;

@@ -38,7 +38,6 @@
   font-size: $base-font-size * 1.125;
   transition: opacity $time;
   cursor: pointer;
-  
   svg {
     display: none;
     @include media-query($small) {
