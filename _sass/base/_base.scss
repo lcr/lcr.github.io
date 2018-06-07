@@ -99,10 +99,13 @@ p > a {
  */
 blockquote {
   border-left: 4px solid $grey-color;
-  padding-left: $spacing-unit / 2;
+  padding: $spacing-unit / 2;
   background: $light-grey-color;
   font-style: italic;
   letter-spacing: -1px;
+  p:last-child{
+    margin-bottom: 0;
+  }
 }
 
 /*

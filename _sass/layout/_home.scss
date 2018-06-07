@@ -15,6 +15,11 @@
   }
   padding-bottom: $spacing-unit * 2;
   list-style: none;
+  
+  li{
+    margin-left: 1em;
+    list-style: disc;
+  }
 }
 
 .post-item-url {

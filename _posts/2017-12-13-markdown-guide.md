@@ -21,6 +21,11 @@ break `2 spaces`
 _italic_ *italic*  `_italic_ *italic*`
  
 __bold__ **bold** `__bold__ **bold**`
+
+img `![alt](https://example.jpg)`
+
+link [link](https://lcr.github.io/) `[foo](https://example.com/)`  or [link _blank](https://lcr.github.io/){:target="_blank"} `[foo](https://example.com/){:target="_blank"}`
+
  
 ## code 
 
@@ -37,12 +42,6 @@ __bold__ **bold** `__bold__ **bold**`
 </html>
 '''
 ```
-
-img `![alt](https://example.jpg)`
-
-[link](https://lcr.github.io/) `[foo](https://example.com/)`  
-
-[link _blank](https://lcr.github.io/){:target="_blank"} `[foo](https://example.com/){:target="_blank"}`
 
 <!-- more -->
 

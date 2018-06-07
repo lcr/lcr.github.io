@@ -1,5 +1,5 @@
 ---
-title: Markdown table 自动隐藏溢出
+title: Overflow a Markdown table
 categories: Markdown
 ---
 

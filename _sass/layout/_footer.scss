@@ -3,7 +3,7 @@
  */
 footer {
   position: relative;
-  padding-top: $spacing-unit * 3;
+  padding-top: $spacing-unit * 4;
   padding-bottom: $spacing-unit * 2;
   text-align: center;
   color: $white-color;
@@ -98,11 +98,13 @@ footer {
 
 .copyright {
   margin-bottom: 0;
+  color: $grey-color;
 }
 
 .author {
   margin-bottom: 0;
   letter-spacing: 1px;
+  color: $grey-color;
   svg {
     display: inline-block;
     -webkit-animation: beat $time infinite alternate;
