@@ -75,7 +75,7 @@
 .comment-new-submit {
   margin-top: $spacing-unit;
   margin-bottom: $spacing-unit;
-  border: 2px solid;
+  border:$red-color 2px solid;
   border-radius: $spacing-unit;
   padding: ($spacing-unit / 3) $spacing-unit;
   font-size: $base-font-size * 1.5;
@@ -83,7 +83,6 @@
   background: $light-grey-color;
   cursor: pointer;
   &:hover {
-    border-color: $red-color;
     background: $red-color;
     color: $white-color;
   }

@@ -5,7 +5,7 @@ categories: Markdown
 
 Jekyll网页中，使用Markdown table会产生一个问题：  
 
-当table超过一定宽度，会在手机端或窄屏产生整个网页的横向滚动条 
+当table超过一定宽度，会在手机端或窄屏产生整个网页的横向滚动条，打破了页面布局，不能忍啊。
 
 解决办法是在Markdown table外围加一层div,然后写相应的CSS,实现table父节点横向滚动条自适应
 
