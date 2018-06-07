@@ -79,13 +79,13 @@ header{
 }
 
 .page-title-item {
-  font-size: $base-font-size *2.5;
+  font-size: $base-font-size *3;
   @include media-query($small) {
     font-size: $base-font-size * 2;
   }
 }
 
-.page-title-date {
+.page-date {
   display: flex;
   align-items: center;
   margin-top: $spacing-unit / 2;

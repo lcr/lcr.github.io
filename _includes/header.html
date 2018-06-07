@@ -21,7 +21,7 @@
     {% if page.date %}
     <h1 class="page-title-item" itemprop="name headline">{{ page.title | escape }}</h1>
     {% assign date_format = site.date_format | default: "%B %d. %Y" %}
-    <time class="page-title-date" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+    <time class="page-date" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
       {% include svg/calendar.svg %}{{ page.date | date: date_format }}
     </time>
 

@@ -7,7 +7,7 @@
     {{ page.title | escape }} - {{ site.title | escape }}
 
     {%- elsif page.description -%}
-    {{ page.description | escape }} - {{ site.title | escape }}
+    {{ page.title | escape }} - {{ site.title | escape }}
 
     {%- else -%}
     {{ site.title | escape }} - {{ site.description | escape }}

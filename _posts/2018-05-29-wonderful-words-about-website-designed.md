@@ -1,6 +1,6 @@
 ---
 title: Wonderful words
-categories: rants
+categories: Rants
 ---
 
 <p style="font-size:32px">Websites promote you 24/7, No employee will do that!</p>
