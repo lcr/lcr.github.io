@@ -99,7 +99,7 @@ p > a {
  */
 blockquote {
   border-left: 4px solid $grey-color;
-  padding: $spacing-unit / 2;
+  padding: 1rem;
   background: $light-grey-color;
   font-style: italic;
   letter-spacing: -1px;
@@ -115,18 +115,17 @@ pre,
 code {
   border-radius: 2px;
   background: $light-grey-color;
-  font-size: $base-font-size * 0.9375;
 }
 
 code {
-  padding: 3px 6px;
+  padding: 2px 6px;
 }
 
 pre {
-  padding: 8px 12px;
+  padding: 1rem;
   overflow-x: auto;
   > code {
-    padding-left: 0;
+    padding: 0;
   }
 }
 
