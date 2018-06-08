@@ -116,7 +116,7 @@ button {
   display: none;
 }
 
-.CommentForm-input {
+.Comment-form-input {
   //@include placeholder(rgba($black, 0.5));
   background: rgba($black-color, 0.03);
   border-radius: 0.4rem;
@@ -131,40 +131,40 @@ button {
   }
 }
 
-.CommentForm-input--catch {
+.Comment-form-input--catch {
   margin-left: -10000px;
   opacity: 0;
   position: absolute;
 }
 
-.CommentForm-input--message {
+.Comment-form-input--message {
   height: 20rem;
 }
 
-.CommentForm-errorMessages {
+.Comment-form-errorMessages {
   color: $red-color;
   margin-bottom: 2rem;
 }
 
-.CommentForm-sendFailed {
+.Comment-form-sendFailed {
   color: $red-color;
   display: none;
   margin-bottom: 2rem;
 }
 
-.CommentForm-sendSucceeded {
+.Comment-form-sendSucceeded {
   display: none;
   margin-bottom: 2rem;
 }
 
-.CommentForm-loader {
+.Comment-form-loader {
   width: 40px;
   height: 40px;
   position: relative;
   margin: 0 auto;
 }
 
-.CommentForm-sendButton {
+.Comment-form-sendButton {
   align-items: center;
   border: 1px solid $red-color;
   border-radius: 2.3rem;
@@ -197,7 +197,7 @@ button {
     }
 }
 
-.CommentForm-loaderElement {
+.Comment-form-loaderElement {
   animation: comment-loader-bounce 2.0s infinite ease-in-out;
   background-color: $red-color;
   border-radius: 50%;
@@ -209,13 +209,8 @@ button {
   width: 100%;
 }
 
-.CommentForm-loaderElement--two {
+.Comment-form-loaderElement--two {
   animation-delay: -1.0s;
   background-color: $deep-grey-color;
 }
-
-.Comments-wrapper {
-  padding-top: 4rem;
-}
-
 

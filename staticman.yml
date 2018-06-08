@@ -1,6 +1,6 @@
 comments:
 
-  allowedFields: ["name", "email", "message","slug"]
+  allowedFields: ["name", "email", "message","slug","catch"]
 
   branch: "master"
 
