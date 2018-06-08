@@ -173,48 +173,48 @@ function post(url, data, callback, errorCallback) {
 if (commentForm) {
   commentForm.addEventListener('submit', (e) => {
     e.preventDefault();
-    errorMessagesDiv.innerHTML = '';
+    // errorMessagesDiv.innerHTML = '';
     sendFailedDiv.style.display = 'none';
     sendSucceededDiv.style.display = 'none';
     
-    const slug = slugInput.value.trim();
-    const optionsSlug = optionsSlugInput.value.trim();
-    const name = nameInput.value.trim();
-    const catchValue = catchInput.value.trim();
-    const email = emailInput.value.trim();
-    const message = messageInput.value.trim();
+    // const slug = slugInput.value.trim();
+    // const optionsSlug = optionsSlugInput.value.trim();
+    // const name = nameInput.value.trim();
+    // const catchValue = catchInput.value.trim();
+    // const email = emailInput.value.trim();
+    // const message = messageInput.value.trim();
     
-    let error = false;
-    let fatalError = false;
-    const messages = [];
+    // let error = false;
+    // let fatalError = false;
+    // const messages = [];
     
-    if (slug === '' || slug !== optionsSlug || catchValue !== '') {
-      fatalError = true;
-    }
+    // if (slug === '' || slug !== optionsSlug || catchValue !== '') {
+    //   fatalError = true;
+    // }
     
-    if (name.length < 2) {
-      error = true;
+    // if (name.length < 2) {
+    //   error = true;
       // messages.push('Please enter name');
-    }
+    // }
     
-    if (email.search(/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/) === -1) {
-      error = true;
+    // if (email.search(/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/) === -1) {
+    //   error = true;
       // messages.push('Please enter valid email');
-    }
+    // }
     
-    if (message.length < 2) {
-      error = true;
+    // if (message.length < 2) {
+    //   error = true;
       // messages.push('Please enter message');
-    }
+    // }
     
-    if (fatalError) {
-      return false;
-    }
+    // if (fatalError) {
+    //   return false;
+    // }
     
-    if (error) {
-      errorMessagesDiv.innerHTML = messages.join('<br>');
-      return false;
-    }
+    // if (error) {
+    //   errorMessagesDiv.innerHTML = messages.join('<br>');
+    //   return false;
+    // }
     
     
     const params = [];
