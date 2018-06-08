@@ -177,20 +177,20 @@ if (commentForm) {
     sendFailedDiv.style.display = 'none';
     sendSucceededDiv.style.display = 'none';
     
-    const slug = slugInput.value.trim();
-    const optionsSlug = optionsSlugInput.value.trim();
+    // const slug = slugInput.value.trim();
+    // const optionsSlug = optionsSlugInput.value.trim();
     // const name = nameInput.value.trim();
-    const catchValue = catchInput.value.trim();
+    // const catchValue = catchInput.value.trim();
     // const email = emailInput.value.trim();
     // const message = messageInput.value.trim();
     
-    let error = false;
-    let fatalError = false;
-    const messages = [];
+    // let error = false;
+    // let fatalError = false;
+    // const messages = [];
     
-    if (slug === '' || slug !== optionsSlug || catchValue !== '') {
-      fatalError = true;
-    }
+    // if (slug === '' || slug !== optionsSlug || catchValue !== '') {
+    //   fatalError = true;
+    // }
     
     // if (name.length < 2) {
     //   error = true;
@@ -207,9 +207,9 @@ if (commentForm) {
     //   messages.push('Please enter message');
     // }
     
-    if (fatalError) {
-      return false;
-    }
+    // if (fatalError) {
+    //   return false;
+    // }
     
     // if (error) {
     //   errorMessagesDiv.innerHTML = messages.join('<br>');
