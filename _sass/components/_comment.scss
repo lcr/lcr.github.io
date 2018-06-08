@@ -88,35 +88,19 @@
   }
 }*/
 
-input,
-textarea {
-  display: block;
-  width: 100%;
-  margin-bottom: 2rem;
-}
-
-button {
-
-}
-
-.Comment-form {
+.comment-form {
   position: relative;
 }
 
-.Comment-form-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
+
+input,
+textarea{
+  display: block;
   width: 100%;
-  height: 100%;
-  background: transparent;
-  z-index: 10;
-  align-items: center;
-  justify-content: center;
-  display: none;
+  margin-bottom: 20px;
 }
 
-.Comment-form-input {
+.comment-form-input {
   //@include placeholder(rgba($black, 0.5));
   background: rgba($black-color, 0.03);
   border-radius: 0.4rem;
@@ -131,40 +115,35 @@ button {
   }
 }
 
-.Comment-form-input--catch {
+.comment-form-input--catch {
   margin-left: -10000px;
   opacity: 0;
   position: absolute;
 }
 
-.Comment-form-input--message {
+.comment-form-input--message {
   height: 20rem;
 }
 
-.Comment-form-errorMessages {
+.comment-form-errorMessages {
   color: $red-color;
   margin-bottom: 2rem;
 }
 
-.Comment-form-sendFailed {
+.comment-form-sendFailed {
   color: $red-color;
   display: none;
   margin-bottom: 2rem;
 }
 
-.Comment-form-sendSucceeded {
+.comment-form-sendSucceeded {
   display: none;
   margin-bottom: 2rem;
 }
 
-.Comment-form-loader {
-  width: 40px;
-  height: 40px;
-  position: relative;
-  margin: 0 auto;
-}
 
-.Comment-form-sendButton {
+
+.comment-form-sendButton {
   align-items: center;
   border: 1px solid $red-color;
   border-radius: 2.3rem;
@@ -189,15 +168,27 @@ button {
   }
 }
 
-@keyframes comment-loader-bounce {
-  0%, 100% {
-    transform: scale(0);
-  } 50% {
-      transform: scale(1);
-    }
+.comment-form-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: transparent;
 }
 
-.Comment-form-loaderElement {
+.comment-form-loader {
+  position: relative;
+  margin: 0 auto;
+  width: 40px;
+  height: 40px;
+}
+
+.comment-form-loaderElement {
   animation: comment-loader-bounce 2.0s infinite ease-in-out;
   background-color: $red-color;
   border-radius: 50%;
@@ -209,8 +200,15 @@ button {
   width: 100%;
 }
 
-.Comment-form-loaderElement--two {
+.comment-form-loaderElement--two {
   animation-delay: -1.0s;
   background-color: $deep-grey-color;
 }
 
+@keyframes comment-loader-bounce {
+  0%, 100% {
+    transform: scale(0);
+  } 50% {
+      transform: scale(1);
+    }
+}

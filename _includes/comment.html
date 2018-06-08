@@ -28,32 +28,32 @@
   <!--<input class="comment-new-submit" type="submit" value="Send">-->
 <!--</form>-->
 
-<form class="Comment-form" data-action="https://api.staticman.net/v2/entry/lcr/lcr.github.io/master/comments" novalidate="novalidate">
+<form class="comment-form" data-action="https://api.staticman.net/v2/entry/lcr/lcr.github.io/master/comments" novalidate="novalidate">
 
-  <input name="fields[slug]" type="hidden" value="{{ page.slug }}" class="Comment-form-input Comment-form-input--slug">
+  <input name="fields[slug]" type="hidden" value="{{ page.slug }}" class="comment-form-input comment-form-input--slug">
 
-  <input name="options[slug]" type="hidden" value="{{ page.slug }}" class="Comment-form-input Comment-form-input--optionsSlug">
+  <input name="options[slug]" type="hidden" value="{{ page.slug }}" class="comment-form-input comment-form-input--optionsSlug">
 
-  <input name="fields[name]" type="text" placeholder="Name" class="Comment-form-input Comment-form-input--name">
+  <input name="fields[name]" type="text" placeholder="Name" class="comment-form-input comment-form-input--name">
 
-  <input name="fields[catch]" type="text" tabindex="-1" placeholder="Last name" class="Comment-form-input--catch">
+  <!--<input name="fields[catch]" type="text" tabindex="-1" placeholder="Last name" class="comment-form-input&#45;&#45;catch">-->
 
-  <input name="fields[email]" type="email" placeholder="Email" class="Comment-form-input Comment-form-input--email">
+  <input name="fields[email]" type="email" placeholder="Email" class="comment-form-input comment-form-input--email">
 
-  <textarea name="fields[message]" placeholder="Comment" class="Comment-form-input Comment-form-input--message"></textarea>
+  <textarea name="fields[message]" placeholder="Comment" class="comment-form-input comment-form-input--message"></textarea>
 
-  <div class="Comment-form-errorMessages"></div>
-  <div class="Comment-form-sendFailed">
-    Sending failed, please try again.
-  </div>
-  <div class="Comment-form-sendSucceeded">Thank you! Your comment is sent. Please note that all of the comments go through moderation.</div>
+  <div class="comment-form-errorMessages"></div>
 
-  <button class="Comment-form-sendButton" type="submit">Send</button>
+  <div class="comment-form-sendFailed">Sending failed, please try again.</div>
 
-  <div class="Comment-form-overlay">
-    <div class="Comment-form-loader">
-      <div class="Comment-form-loaderElement"></div>
-      <div class="Comment-form-loaderElement Comment-form-loaderElement--two"></div>
+  <div class="comment-form-sendSucceeded">Thank you! Your comment is sent. Please note that all of the comments go through moderation.</div>
+
+  <button class="comment-form-sendButton" type="submit">Send</button>
+
+  <div class="comment-form-overlay">
+    <div class="comment-form-loader">
+      <div class="comment-form-loaderElement"></div>
+      <div class="comment-form-loaderElement comment-form-loaderElement--two"></div>
     </div>
   </div>
 </form>
