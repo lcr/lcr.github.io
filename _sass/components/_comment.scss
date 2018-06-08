@@ -87,3 +87,19 @@
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   }
 }
+
+.CommentForm-errorMessages {
+  color: $red-color;
+  margin-bottom: 2rem;
+}
+
+.CommentForm-sendFailed {
+  color: $red-color;
+  display: none;
+  margin-bottom: 2rem;
+}
+
+.CommentForm-sendSucceeded {
+  display: none;
+  margin-bottom: 2rem;
+}

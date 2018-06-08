@@ -15,15 +15,30 @@
   <h1 class="comment-new-title">No comments yet, be the first to comment</h1>
 {% endif %}
 
-<form method="POST" action="https://api.staticman.net/v2/entry/lcr/lcr.github.io/master/comments">
-  <input name="options[redirect]" type="hidden" value="{{ page.url | absolute_url }}">
-  <input name="options[slug]" type="hidden" value="{{ page.slug }}">
+<form class="CommentForm" data-action="https://api.staticman.net/v2/entry/lcr/lcr.github.io/master/comments" novalidate="novalidate">
+  <div class="CommentForm-overlay">
+    <div class="CommentForm-loader">
+      <div class="CommentForm-loaderElement"></div>
+      <div class="CommentForm-loaderElement CommentForm-loaderElement--two"></div>
+    </div>
+  </div>
+  <input class="CommentForm-input CommentForm-input--slug" name="options[redirect]" type="hidden" value="{{ page.url | absolute_url }}">
+  <input class="CommentForm-input CommentForm-input--optionsSlug" name="options[slug]" type="hidden" value="{{ page.slug }}">
 
-  <label><input class="comment-new-text" name="fields[name]" type="text" placeholder="Name*" autocomplete="name" required></label>
+  <label><input class="CommentForm-input comment-new-text CommentForm-input--name" name="fields[name]" type="text" placeholder="Name*" autocomplete="name" required></label>
 
-  <label><input class="comment-new-email" name="fields[email]" type="email" placeholder="Email" autocomplete="email" pattern="/^([A-Za-z0-9_\-\.\u4e00-\u9fa5])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,8})$/"></label>
+  <label><input class="CommentForm-input comment-new-email CommentForm-input--email" name="fields[email]" type="email" placeholder="Email" autocomplete="email" pattern="/^([A-Za-z0-9_\-\.\u4e00-\u9fa5])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,8})$/"></label>
 
-  <label><textarea class="comment-new-message" name="fields[message]" placeholder="Message*" required></textarea></label>
+  <label><textarea class="CommentForm-input comment-new-message CommentForm-input--message" name="fields[message]" placeholder="Message*" required></textarea></label>
 
-  <input class="comment-new-submit" type="submit" value="Send">
+  <div class="CommentForm-errorMessages"></div>
+  <div class="CommentForm-sendFailed">
+    Sending failed, please try again.
+  </div>
+  <div class="CommentForm-sendSucceeded">
+    Thank you! Your comment is sent.
+    Please note that all of the comments go through moderation.
+  </div>
+
+  <button class="comment-new-submit CommentForm-sendButton" type="submit" value="Send"></button>
 </form>
