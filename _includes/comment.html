@@ -28,32 +28,31 @@
   <!--<input class="comment-new-submit" type="submit" value="Send">-->
 <!--</form>-->
 
-<form class="comment-form" data-action="https://api.staticman.net/v2/entry/lcr/lcr.github.io/master/comments" novalidate="novalidate">
+<form class="comment-form" data-action="https://api.staticman.net/v1/entry/Stanko/Stanko.github.io/master" novalidate="novalidate">
 
-  <input name="fields[slug]" type="hidden" value="{{ page.slug }}" class="comment-form-input comment-form-input--slug">
-
-  <input name="options[slug]" type="hidden" value="{{ page.slug }}" class="comment-form-input comment-form-input--optionsSlug">
-
-  <input name="fields[name]" type="text" placeholder="Name" class="comment-form-input comment-form-input--name">
-
-  <!--<input name="fields[catch]" type="text" tabindex="-1" placeholder="Last name" class="comment-form-input&#45;&#45;catch">-->
-
-  <input name="fields[email]" type="email" placeholder="Email" class="comment-form-input comment-form-input--email">
-
-  <textarea name="fields[message]" placeholder="Comment" class="comment-form-input comment-form-input--message"></textarea>
-
-  <div class="comment-form-errorMessages"></div>
-
-  <div class="comment-form-sendFailed">Sending failed, please try again.</div>
-
-  <div class="comment-form-sendSucceeded">Thank you! Your comment is sent. Please note that all of the comments go through moderation.</div>
-
-  <button class="comment-form-sendButton" type="submit">Send</button>
-
-  <div class="comment-form-overlay">
-    <div class="comment-form-loader">
-      <div class="comment-form-loaderElement"></div>
-      <div class="comment-form-loaderElement comment-form-loaderElement--two"></div>
+  <div class="comment-overlay">
+    <div class="comment-loader">
+      <div class="comment-loaderElement"></div>
+      <div class="comment-loaderElement comment-loaderElement--two"></div>
     </div>
   </div>
+
+  <input class="comment-input comment-input-slug" name="fields[slug]" type="hidden" value="{{ page.slug }}">
+
+  <input class="comment-input comment-input-optionsSlug" name="options[slug]" type="hidden" value="{{ page.slug }}">
+
+  <input class="comment-input-catch" name="fields[catch]" type="text" tabindex="-1" placeholder="Last name" >
+
+  <input class="comment-input comment-input-name" name="fields[name]" type="text" placeholder="Name*">
+
+  <input class="comment-input comment-input-email" name="fields[email]" type="email" placeholder="Email">
+
+  <textarea class="comment-input comment-input-message" name="fields[message]" placeholder="Message*"></textarea>
+
+  <div class="comment-errorMessages"></div>
+  <div class="comment-sendFailed">Sending failed, please try again.</div>
+  <div class="comment-sendSucceeded">Thank you! Your comment is sent.</div>
+
+  <button class="comment-input-send" type="submit">Send</button>
+
 </form>

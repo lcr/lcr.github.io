@@ -144,18 +144,17 @@ ga('send', 'pageview');
 
 
 const commentForm = document.querySelector('.comment-form');
-
-const commentFormInputs = document.querySelectorAll('.comment-form-input');
-const slugInput = document.querySelector('.comment-form-input--slug');
-const optionsSlugInput = document.querySelector('.comment-form-input--optionsSlug');
-const nameInput = document.querySelector('.comment-form-input--name');
-const catchInput = document.querySelector('.comment-form-input--catch');
-const emailInput = document.querySelector('.comment-form-input--email');
-const messageInput = document.querySelector('.comment-form-input--message');
-const errorMessagesDiv = document.querySelector('.comment-form-errorMessages');
-const sendFailedDiv = document.querySelector('.comment-form-sendFailed');
-const sendSucceededDiv = document.querySelector('.comment-form-sendSucceeded');
-const overlayDiv = document.querySelector('.comment-form-overlay');
+const commentFormInputs = document.querySelectorAll('.comment-input');
+const slugInput = document.querySelector('.comment-input-slug');
+const optionsSlugInput = document.querySelector('.comment-input-optionsSlug');
+const catchInput = document.querySelector('.comment-input-catch');
+const nameInput = document.querySelector('.comment-input-name');
+const emailInput = document.querySelector('.comment-input-email');
+const messageInput = document.querySelector('.comment-input-message');
+const sendFailedDiv = document.querySelector('.comment-sendFailed');
+const errorMessagesDiv = document.querySelector('.comment-errorMessages');
+const sendSucceededDiv = document.querySelector('.comment-sendSucceeded');
+const overlayDiv = document.querySelector('.comment-overlay');
 
 function post(url, data, callback, errorCallback) {
   const xhr = new XMLHttpRequest();
@@ -193,20 +192,20 @@ if (commentForm) {
       fatalError = true;
     }
     
-    // if (name.length < 2) {
-    //   error = true;
-    //   messages.push('Please enter name');
-    // }
-    //
-    // if (email.search(/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/) === -1) {
-    //   error = true;
-    //   messages.push('Please enter valid email');
-    // }
-    //
-    // if (message.length < 2) {
-    //   error = true;
-    //   messages.push('Please enter message');
-    // }
+    if (name.length < 2) {
+      error = true;
+      messages.push('Please enter name');
+    }
+    
+    if (email.search(/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/) === -1) {
+      error = true;
+      messages.push('Please enter valid email');
+    }
+    
+    if (message.length < 2) {
+      error = true;
+      messages.push('Please enter message');
+    }
     
     if (fatalError) {
       return false;
