@@ -1,6 +1,6 @@
 comments:
 
-  allowedFields: ["name", "email", "message"]
+  allowedFields: ["name", "email", "message","slug","catch"]
 
   branch: "master"
 
@@ -22,7 +22,7 @@ comments:
 
   path: "_data/comments/{options.slug}"
 
-  requiredFields: ["name", "message"]
+  requiredFields: ["name", "email","message"]
 
   transforms:
     email: md5
