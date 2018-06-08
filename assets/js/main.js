@@ -179,10 +179,10 @@ if (commentForm) {
     
     const slug = slugInput.value.trim();
     const optionsSlug = optionsSlugInput.value.trim();
-    // const name = nameInput.value.trim();
+    const name = nameInput.value.trim();
     const catchValue = catchInput.value.trim();
-    // const email = emailInput.value.trim();
-    // const message = messageInput.value.trim();
+    const email = emailInput.value.trim();
+    const message = messageInput.value.trim();
     
     let error = false;
     let fatalError = false;
