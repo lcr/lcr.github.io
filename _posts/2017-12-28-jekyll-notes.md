@@ -1,5 +1,5 @@
 ---
-title: "Jekyll Guide"
+title: "Jekyll Notes"
 categories: Jekyll
 ---
 

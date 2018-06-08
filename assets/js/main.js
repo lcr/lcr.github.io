@@ -3,8 +3,8 @@
  */
 var Header = document.querySelector('.js-headroom');
 var headroom = new Headroom(Header, {
-  "offset": 100,
-  "tolerance": 10,
+  "offset": 50,
+  "tolerance": 5,
   classes: {
     initial: "js-headroom",
     pinned: "js-headroom--pinned",
@@ -17,23 +17,21 @@ headroom.init();
 /*
  * search
  */
-var searchOpen = document.querySelectorAll("#headerSearch,#footerSearch");
+var searchOpen = document.querySelector("#headerSearch");
 var searchPage = document.querySelector("#search");
 var searchInput = document.querySelector("#searchInput");
 var searchReset = document.querySelector("#searchReset");
 var searchNav = document.querySelector("#searchNav");
 
 /* Search Open*/
-for (i = 0; i < searchOpen.length; i++) {
-  searchOpen[i].addEventListener("click", function (event) {
-    event.preventDefault();
-    searchPage.style.transform = "translateY(100vh)";
-    searchInput.focus();
-    setTimeout(function () {
-      document.body.style.overflowY = 'hidden';
-    }, 500);
-  });
-}
+searchOpen.addEventListener("click", function (event) {
+  event.preventDefault();
+  searchPage.style.transform = "translateY(100vh)";
+  searchInput.focus();
+  setTimeout(function () {
+    document.body.style.overflowY = 'hidden';
+  }, 500);
+});
 
 /* Search Close by click */
 document.querySelector("#searchClose").addEventListener("click", function (event) {
@@ -99,6 +97,31 @@ autocomplete('#searchInput', {hint: false}, [
 
 
 /*
+ * back to top
+ */
+var backTop = document.getElementById("backTop");
+var timer = null;
+var isTop = true;
+window.onscroll = function () {
+  if (!isTop) {
+    clearInterval(timer);
+  }
+  isTop = false;
+};
+backTop.onclick = function () {
+  timer = setInterval(function () {
+    var toTop = document.body.scrollTop || document.documentElement.scrollTop;
+    var speed = Math.ceil(toTop / 10);
+    document.documentElement.scrollTop = document.body.scrollTop = toTop - speed;
+    isTop = true;
+    if (toTop === 0) {
+      clearInterval(timer);
+    }
+  }, 20);
+};
+
+
+/*
  * Archive page Accordion Check
  */
 var urlHash = window.location.hash;
@@ -106,6 +129,7 @@ if (urlHash.length > 0) {
   var inputCheck = document.getElementById(urlHash);
   inputCheck.checked = true;
 }
+
 
 /*
  * google analytics

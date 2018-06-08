@@ -1,5 +1,5 @@
 ---
-title: "Markdown Guide"
+title: "Markdown Notes"
 categories: Markdown
 ---
 
@@ -18,13 +18,13 @@ Horizontal line: `---`
 
 break `2 spaces`
 
-_italic_ *italic*  `_italic_ *italic*`
- 
-__bold__ **bold** `__bold__ **bold**`
+_italic_ `_italic_` or `*italic*`
+
+__bold__ `__bold__` or `**bold**`
 
 img `![alt](https://example.jpg)`
 
-link [link](https://lcr.github.io/) `[foo](https://example.com/)`  or [link _blank](https://lcr.github.io/){:target="_blank"} `[foo](https://example.com/){:target="_blank"}`
+link [link](https://lcr.github.io/) `[link](https://example.com/)`  or  `[link](https://example.com/){:target="_blank"}`
 
  
 ## code 

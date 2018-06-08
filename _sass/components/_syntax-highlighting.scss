@@ -4,7 +4,7 @@
 .highlight {
   border-radius: $spacing-unit / 5;
   background: $white-color;
-  @extend %vertical-rhythm;
+  //@extend %vertical-rhythm;
   
   .highlighter-rouge & {
     background: $light-grey-color;

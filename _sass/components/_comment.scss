@@ -59,7 +59,7 @@
   border: 0;
   border-radius: $spacing-unit / 5;
   font-size: $base-font-size * 1.5;
-  text-indent: $spacing-unit / 2;
+  text-indent: $spacing-unit / 3;
   color: darken($grey-color, 25%);
   background: lighten($grey-color, 25%);
   &:focus {
@@ -68,7 +68,6 @@
   
   @include media-query($small) {
     width: 100%;
-    text-indent: 0;
   }
 }
 
