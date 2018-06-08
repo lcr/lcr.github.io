@@ -24,6 +24,8 @@
   border-bottom: 1px solid $grey-color;
 }
 
+
+
 /*
  * Comment new
  */
@@ -32,27 +34,27 @@
   margin-bottom: -15px;
 }
 
-.comment-input-name {
+.comment-new-text {
   float: left;
   width: 48%;
   height: $spacing-unit * 1.6;
 }
 
-.comment-input-email {
+.comment-new-email {
   float: right;
   width: 48%;
   height: $spacing-unit * 1.6;
 }
 
-.comment-input-message {
+.comment-new-message {
   width: 100%;
   height: $spacing-unit * 8;
   overflow: hidden;
 }
 
-.comment-input-name,
-.comment-input-email,
-.comment-input-message {
+.comment-new-text,
+.comment-new-email,
+.comment-new-message {
   margin-top: $spacing-unit;
   border: 0;
   border-radius: $spacing-unit / 5;
@@ -63,37 +65,16 @@
   &:focus {
     background: lighten($grey-color, 20%);
   }
-
+  
   @include media-query($small) {
     width: 100%;
   }
 }
 
-.comment-form {
-  position: relative;
-}
-
-.comment-input-catch {
-  position: absolute;
-  margin-left: -10000px;
-  opacity: 0;
-}
-
-.comment-sendFailed {
-  color: $red-color;
-  display: none;
-  margin-bottom: 2rem;
-}
-
-.comment-sendSucceeded {
-  display: none;
-  margin-bottom: 2rem;
-}
-
-.comment-input-send {
+.comment-new-submit {
   margin-top: $spacing-unit;
   margin-bottom: $spacing-unit;
-  border: $red-color 2px solid;
+  border:$red-color 2px solid;
   border-radius: $spacing-unit;
   padding: ($spacing-unit / 3) $spacing-unit;
   font-size: $base-font-size * 1.5;
@@ -103,52 +84,6 @@
   &:hover {
     background: $red-color;
     color: $white-color;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   }
-}
-
-.comment-overlay {
-  display: none;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 10;
-  background: transparent;
-}
-
-.comment-loader {
-  position: relative;
-  margin: 0 auto;
-  width: 40px;
-  height: 40px;
-}
-
-.comment-loaderElement {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  background-color: $red-color;
-  animation: comment-loader-bounce 2.0s infinite ease-in-out;
-  opacity: 0.6;
-}
-
-@keyframes comment-loader-bounce {
-  0%, 100% {
-    transform: scale(0);
-  }
-  50% {
-    transform: scale(1);
-  }
-}
-
-.comment-loaderElement--two {
-  background-color: $deep-grey-color;
-  animation-delay: -1.0s;
 }
