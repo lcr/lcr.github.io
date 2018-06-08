@@ -28,32 +28,32 @@
   <!--<input class="comment-new-submit" type="submit" value="Send">-->
 <!--</form>-->
 
-<form data-action="https://api.staticman.net/v2/entry/lcr/lcr.github.io/master/comments" class="CommentForm" novalidate="novalidate">
+<form class="Comment-form" data-action="https://api.staticman.net/v2/entry/lcr/lcr.github.io/master/comments" novalidate="novalidate">
 
-  <div class="CommentForm-overlay">
-    <div class="CommentForm-loader">
-      <div class="CommentForm-loaderElement"></div>
-      <div class="CommentForm-loaderElement CommentForm-loaderElement--two"></div>
-    </div>
-  </div>
+  <input name="fields[slug]" type="hidden" value="{{ page.slug }}" class="Comment-form-input Comment-form-input--slug">
 
-  <input name="fields[slug]" type="hidden" value="{{ page.slug }}" class="CommentForm-input CommentForm-input--slug">
+  <input name="options[slug]" type="hidden" value="{{ page.slug }}" class="Comment-form-input Comment-form-input--optionsSlug">
 
-  <input name="options[slug]" type="hidden" value="{{ page.slug }}" class="CommentForm-input CommentForm-input--optionsSlug">
+  <input name="fields[name]" type="text" placeholder="Name" class="Comment-form-input Comment-form-input--name">
 
-  <input name="fields[name]" type="text" placeholder="Name" class="CommentForm-input CommentForm-input--name">
+  <!--<input name="fields[catch]" type="text" tabindex="-1" placeholder="Last name" class="Comment-form-input&#45;&#45;catch">-->
 
-  <input name="fields[catch]" type="text" tabindex="-1" placeholder="Last name" class="CommentForm-input--catch">
+  <input name="fields[email]" type="email" placeholder="Email" class="Comment-form-input Comment-form-input--email">
 
-  <input name="fields[email]" type="email" placeholder="Email" class="CommentForm-input CommentForm-input--email">
+  <textarea name="fields[message]" placeholder="Comment" class="Comment-form-input Comment-form-input--message"></textarea>
 
-  <textarea name="fields[message]" placeholder="Comment" class="CommentForm-input CommentForm-input--message"></textarea>
-
-  <div class="CommentForm-errorMessages"></div>
-  <div class="CommentForm-sendFailed">
+  <div class="Comment-form-errorMessages"></div>
+  <div class="Comment-form-sendFailed">
     Sending failed, please try again.
   </div>
-  <div class="CommentForm-sendSucceeded">Thank you! Your comment is sent. Please note that all of the comments go through moderation.</div>
+  <div class="Comment-form-sendSucceeded">Thank you! Your comment is sent. Please note that all of the comments go through moderation.</div>
 
-  <button class="CommentForm-sendButton" type="submit">Send</button>
+  <button class="Comment-form-sendButton" type="submit">Send</button>
+
+  <div class="Comment-form-overlay">
+    <div class="Comment-form-loader">
+      <div class="Comment-form-loaderElement"></div>
+      <div class="Comment-form-loaderElement Comment-form-loaderElement--two"></div>
+    </div>
+  </div>
 </form>

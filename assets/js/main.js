@@ -141,18 +141,19 @@ ga.l = +new Date;
 ga('create', '{{ site.google_analytics }}', 'auto');
 ga('send', 'pageview');
 
-const commentForm = document.querySelector('.CommentForm');
-const commentFormInputs = document.querySelectorAll('.CommentForm-input');
-const slugInput = document.querySelector('.CommentForm-input--slug');
-const optionsSlugInput = document.querySelector('.CommentForm-input--optionsSlug');
-const nameInput = document.querySelector('.CommentForm-input--name');
-const catchInput = document.querySelector('.CommentForm-input--catch');
-const emailInput = document.querySelector('.CommentForm-input--email');
-const messageInput = document.querySelector('.CommentForm-input--message');
-const errorMessagesDiv = document.querySelector('.CommentForm-errorMessages');
-const sendFailedDiv = document.querySelector('.CommentForm-sendFailed');
-const sendSucceededDiv = document.querySelector('.CommentForm-sendSucceeded');
-const overlayDiv = document.querySelector('.CommentForm-overlay');
+const commentForm = document.querySelector('.Comment-form');
+const commentFormInputs = document.querySelectorAll('.Comment-form-input');
+const slugInput = document.querySelector('.Comment-form-input--slug');
+const optionsSlugInput = document.querySelector('.Comment-form-input--optionsSlug');
+// const nameInput = document.querySelector('.Comment-form-input--name');
+// const catchInput = document.querySelector('.Comment-form-input--catch');
+// const emailInput = document.querySelector('.Comment-form-input--email');
+// const messageInput = document.querySelector('.Comment-form-input--message');
+
+const errorMessagesDiv = document.querySelector('.Comment-form-errorMessages');
+const sendFailedDiv = document.querySelector('.Comment-form-sendFailed');
+const sendSucceededDiv = document.querySelector('.Comment-form-sendSucceeded');
+const overlayDiv = document.querySelector('.Comment-form-overlay');
 
 function post(url, data, callback, errorCallback) {
   const xhr = new XMLHttpRequest();
@@ -175,44 +176,44 @@ if (commentForm) {
     sendFailedDiv.style.display = 'none';
     sendSucceededDiv.style.display = 'none';
     
-    const slug = slugInput.value.trim();
-    const optionsSlug = optionsSlugInput.value.trim();
-    const name = nameInput.value.trim();
-    const catchValue = catchInput.value.trim();
-    const email = emailInput.value.trim();
-    const message = messageInput.value.trim();
+    // const slug = slugInput.value.trim();
+    // const optionsSlug = optionsSlugInput.value.trim();
+    // const name = nameInput.value.trim();
+    // const catchValue = catchInput.value.trim();
+    // const email = emailInput.value.trim();
+    // const message = messageInput.value.trim();
     
-    let error = false;
-    let fatalError = false;
-    const messages = [];
+    // let error = false;
+    // let fatalError = false;
+    // const messages = [];
+    //
+    // if (slug === '' || slug !== optionsSlug) {
+    //   fatalError = true;
+    // }
     
-    if (slug === '' || slug !== optionsSlug || catchValue !== '') {
-      fatalError = true;
-    }
+    // if (name.length < 2) {
+    //   error = true;
+    //   messages.push('Please enter name');
+    // }
+    //
+    // if (email.search(/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/) === -1) {
+    //   error = true;
+    //   messages.push('Please enter valid email');
+    // }
+    //
+    // if (message.length < 2) {
+    //   error = true;
+    //   messages.push('Please enter message');
+    // }
     
-    if (name.length < 2) {
-      error = true;
-      messages.push('Please enter name');
-    }
-    
-    if (email.search(/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/) === -1) {
-      error = true;
-      messages.push('Please enter valid email');
-    }
-    
-    if (message.length < 2) {
-      error = true;
-      messages.push('Please enter message');
-    }
-    
-    if (fatalError) {
-      return false;
-    }
-    
-    if (error) {
-      errorMessagesDiv.innerHTML = messages.join('<br>');
-      return false;
-    }
+    // if (fatalError) {
+    //   return false;
+    // }
+    //
+    // if (error) {
+    //   errorMessagesDiv.innerHTML = messages.join('<br>');
+    //   return false;
+    // }
     
     
     const params = [];
