@@ -15,7 +15,7 @@
 <h1 class="comment-new-title">No comments yet, be the first to comment</h1>
 {% endif %}
 
-<!--<form method="POST" action="https://api.staticman.net/v2/entry/lcr/lcr.github.io/master/comments">-->
+<!--<form method="POST" action="https://api.staticman.net/v2/entry/lcr/lcr.github.io/master/comments"  novalidate="novalidate">-->
   <!--<input name="options[redirect]" type="hidden" value="{{ page.url | absolute_url }}">-->
   <!--<input name="options[slug]" type="hidden" value="{{ page.slug }}">-->
 
@@ -28,14 +28,7 @@
   <!--<input class="comment-new-submit" type="submit" value="Send">-->
 <!--</form>-->
 
-<form class="comment-form" data-action="https://api.staticman.net/v1/entry/Stanko/Stanko.github.io/master" novalidate="novalidate">
-
-  <div class="comment-overlay">
-    <div class="comment-loader">
-      <div class="comment-loaderElement"></div>
-      <div class="comment-loaderElement comment-loaderElement--two"></div>
-    </div>
-  </div>
+<form class="comment-form" data-action="https://api.staticman.net/v2/entry/lcr/lcr.github.io/master/comments">
 
   <input class="comment-input comment-input-slug" name="fields[slug]" type="hidden" value="{{ page.slug }}">
 
@@ -43,16 +36,23 @@
 
   <input class="comment-input-catch" name="fields[catch]" type="text" tabindex="-1" placeholder="Last name" >
 
-  <input class="comment-input comment-input-name" name="fields[name]" type="text" placeholder="Name*">
+  <input class="comment-input comment-input-name" name="fields[name]" type="text" placeholder="Name*" autocomplete="name" required>
 
-  <input class="comment-input comment-input-email" name="fields[email]" type="email" placeholder="Email">
+  <input class="comment-input comment-input-email" name="fields[email]" type="email" placeholder="Email" autocomplete="email" pattern="/^([A-Za-z0-9_\-\.\u4e00-\u9fa5])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,8})$/">
 
-  <textarea class="comment-input comment-input-message" name="fields[message]" placeholder="Message*"></textarea>
+  <textarea class="comment-input comment-input-message" name="fields[message]" placeholder="Message*" required></textarea>
 
   <div class="comment-errorMessages"></div>
   <div class="comment-sendFailed">Sending failed, please try again.</div>
   <div class="comment-sendSucceeded">Thank you! Your comment is sent.</div>
 
   <button class="comment-input-send" type="submit">Send</button>
+
+  <div class="comment-overlay">
+    <div class="comment-loader">
+      <div class="comment-loaderElement"></div>
+      <div class="comment-loaderElement comment-loaderElement--two"></div>
+    </div>
+  </div>
 
 </form>

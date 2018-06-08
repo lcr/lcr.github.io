@@ -194,17 +194,17 @@ if (commentForm) {
     
     if (name.length < 2) {
       error = true;
-      messages.push('Please enter name');
+      // messages.push('Please enter name');
     }
     
     if (email.search(/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/) === -1) {
       error = true;
-      messages.push('Please enter valid email');
+      // messages.push('Please enter valid email');
     }
     
     if (message.length < 2) {
       error = true;
-      messages.push('Please enter message');
+      // messages.push('Please enter message');
     }
     
     if (fatalError) {
