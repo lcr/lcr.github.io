@@ -22,7 +22,7 @@ comments:
 
   path: "_data/comments/{options.slug}"
 
-  requiredFields: ["name", "message"]
+  requiredFields: ["name","message"]
 
   transforms:
     email: md5
