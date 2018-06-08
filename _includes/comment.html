@@ -15,15 +15,80 @@
 <h1 class="comment-new-title">No comments yet, be the first to comment</h1>
 {% endif %}
 
-<form method="POST" action="https://api.staticman.net/v2/entry/lcr/lcr.github.io/master/comments">
-  <input name="options[redirect]" type="hidden" value="{{ page.url | absolute_url }}">
-  <input name="options[slug]" type="hidden" value="{{ page.slug }}">
+<!--<form method="POST" action="https://api.staticman.net/v2/entry/lcr/lcr.github.io/master/comments">-->
+  <!--<input name="options[redirect]" type="hidden" value="{{ page.url | absolute_url }}">-->
+  <!--<input name="options[slug]" type="hidden" value="{{ page.slug }}">-->
 
-  <label><input class="comment-new-text" name="fields[name]" type="text" placeholder="Name*" autocomplete="name" required></label>
+  <!--<label><input class="comment-new-text" name="fields[name]" type="text" placeholder="Name*" autocomplete="name" required></label>-->
 
-  <label><input class="comment-new-email" name="fields[email]" type="email" placeholder="Email" autocomplete="email" pattern="/^([A-Za-z0-9_\-\.\u4e00-\u9fa5])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,8})$/"></label>
+  <!--<label><input class="comment-new-email" name="fields[email]" type="email" placeholder="Email" autocomplete="email" pattern="/^([A-Za-z0-9_\-\.\u4e00-\u9fa5])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,8})$/"></label>-->
 
-  <label><textarea class="comment-new-message" name="fields[message]" placeholder="Message*" required></textarea></label>
+  <!--<label><textarea class="comment-new-message" name="fields[message]" placeholder="Message*" required></textarea></label>-->
 
-  <input class="comment-new-submit" type="submit" value="Send">
+  <!--<input class="comment-new-submit" type="submit" value="Send">-->
+<!--</form>-->
+
+<form
+  data-action="https://api.staticman.net/v2/entry/lcr/lcr.github.io/master/comments"
+  class="CommentForm"
+  novalidate="novalidate">
+  <div class="CommentForm-overlay">
+    <div class="CommentForm-loader">
+      <div class="CommentForm-loaderElement"></div>
+      <div class="CommentForm-loaderElement CommentForm-loaderElement--two"></div>
+    </div>
+  </div>
+
+  <input
+    name="fields[slug]"
+    type="hidden"
+    value="{{ page.slug }}"
+    class="CommentForm-input CommentForm-input--slug">
+  <input
+    name="options[slug]"
+    type="hidden"
+    value="{{ page.slug }}"
+    class="CommentForm-input CommentForm-input--optionsSlug">
+
+  <div class="Grid">
+    <div class="Col--md-4">
+      <input
+        name="fields[name]"
+        type="text"
+        placeholder="Name"
+        class="CommentForm-input CommentForm-input--name">
+      <input
+        name="fields[catch]"
+        type="text"
+        tabindex="-1"
+        placeholder="Last name"
+        class="CommentForm-input--catch">
+    </div>
+    <div class="Col--md-4">
+      <input
+        name="fields[email]"
+        type="email"
+        placeholder="Email"
+        class="CommentForm-input CommentForm-input--email">
+    </div>
+  </div>
+  <textarea
+    name="fields[message]"
+    placeholder="Comment"
+    class="CommentForm-input CommentForm-input--message"></textarea>
+
+  <div class="CommentForm-errorMessages"></div>
+  <div class="CommentForm-sendFailed">
+    Sending failed, please try again.
+  </div>
+  <div class="CommentForm-sendSucceeded">
+    Thank you! Your comment is sent.
+    Please note that all of the comments go through moderation.
+  </div>
+
+  <button class="CommentForm-sendButton" type="submit">Send</button>
 </form>
+
+</div>
+</div>
+</div>
