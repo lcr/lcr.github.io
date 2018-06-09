@@ -17,6 +17,7 @@
 
 <form method="POST" action="https://api.staticman.net/v2/entry/lcr/lcr.github.io/master/comments">
   <input name="options[redirect]" type="hidden" value="{{ page.url | absolute_url }}">
+
   <input name="options[slug]" type="hidden" value="{{ page.slug }}">
 
   <label><input class="comment-new-text" name="fields[name]" type="text" placeholder="Name*" autocomplete="name" required></label>
@@ -25,5 +26,5 @@
 
   <label><textarea class="comment-new-message" name="fields[message]" placeholder="Message*" required></textarea></label>
 
-  <input class="comment-new-submit" type="submit" value="Send">
+  <button class="comment-new-submit" type="submit">Send</button>
 </form>
