@@ -75,12 +75,12 @@
 .comment-form-sendFailed {
   display: none;
   color: $red-color;
-  margin-bottom: 2rem;
+  margin-bottom: $spacing-unit;
 }
 
 .comment-form-sendSucceeded {
   display: none;
-  margin-bottom: 2rem;
+  margin-bottom: $spacing-unit;
 }
 
 .comment-form-sendButton {
