@@ -144,10 +144,10 @@ ga('send', 'pageview');
 
 const commentForm = document.querySelector('.CommentForm');
 const commentFormInputs = document.querySelectorAll('.CommentForm-input');
-const slugInput = document.querySelector('.CommentForm-input--slug');
-const optionsSlugInput = document.querySelector('.CommentForm-input--optionsSlug');
+// const slugInput = document.querySelector('.CommentForm-input--slug');
+// const optionsSlugInput = document.querySelector('.CommentForm-input--optionsSlug');
                 // const nameInput = document.querySelector('.CommentForm-input--name');
-const catchInput = document.querySelector('.CommentForm-input--catch');
+// const catchInput = document.querySelector('.CommentForm-input--catch');
                // const emailInput = document.querySelector('.CommentForm-input--email');
                // const messageInput = document.querySelector('.CommentForm-input--message');
                     // const errorMessagesDiv = document.querySelector('.CommentForm-errorMessages');
