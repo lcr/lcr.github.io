@@ -27,19 +27,15 @@ header{
   }
 }
 
-.site-logo{
-  display: inline-block;
-  margin-top: -6px;
-  margin-right: 10px;
-  border: 0;
-  padding: 0;
-  border-radius: 0;
-}
-
 .site-title {
+  display: inline-flex;
+  align-items: center;
   font-size: $base-font-size * 1.75;
   letter-spacing: -1px;
   color: $white-color;
+  svg{
+    margin-right: 10px;
+  }
 }
 
 .header-nav-item {
