@@ -27,3 +27,12 @@ permalink: /archive/
   </div>
   {% endfor %}
 </article>
+
+<script>
+  /* Archive page Accordion Check */
+  var urlHash = window.location.hash;
+  if (urlHash.length > 0) {
+    var inputCheck = document.getElementById(urlHash);
+    inputCheck.checked = true;
+  }
+</script>
