@@ -1,6 +1,6 @@
 ---
 title: 阳台的植物
-categories: Plants
+categories: Succulents
 ---
 
 记录一下目前阳台的多肉植物

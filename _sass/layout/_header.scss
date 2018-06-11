@@ -70,7 +70,7 @@ header{
   }
 }
 
-.page-title {
+.header-title {
   position: relative;
   padding-top: $spacing-unit * 4.5;
   padding-bottom: $spacing-unit * 4;
@@ -80,7 +80,7 @@ header{
   background: $deep-grey-color;
 }
 
-.page-title-home {
+.page-title {
   font-size: $base-font-size * 4;
   @include media-query($small) {
     font-size: $base-font-size * 3;

@@ -1,6 +1,6 @@
 ---
 title: 多肉于2017年冬
-categories: Plants
+categories: Succulents
 ---
 
 乙女心

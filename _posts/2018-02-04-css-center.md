@@ -1,6 +1,6 @@
 ---
 title: "CSS居中的方法"
-categories: CSS/SCSS
+categories: CSS
 ---
 
 ## CSS水平居中
