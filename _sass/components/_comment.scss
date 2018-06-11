@@ -24,8 +24,6 @@
   border-bottom: 1px solid $grey-color;
 }
 
-
-
 /*
  * Comment new
  */
@@ -33,6 +31,8 @@
   margin-top: $spacing-unit * 2;
   margin-bottom: -15px;
 }
+
+/*
 
 .comment-new-text {
   float: left;
@@ -86,4 +86,130 @@
     color: $white-color;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   }
+}*/
+
+.CommentForm {
+  position: relative;
+}
+
+.CommentForm-input--catch {
+  margin-left: -10000px;
+  opacity: 0;
+  position: absolute;
+}
+
+.CommentForm-input--name {
+  float: left;
+  width: 48%;
+  height: $spacing-unit * 1.6;
+}
+
+.CommentForm-input--email {
+  float: right;
+  width: 48%;
+  height: $spacing-unit * 1.6;
+}
+
+.CommentForm-input--message {
+  width: 100%;
+  height: $spacing-unit * 8;
+  overflow: hidden;
+}
+
+.CommentForm-input--name,
+.CommentForm-input--email,
+.CommentForm-input--message {
+  margin-top: $spacing-unit;
+  border: 0;
+  border-radius: $spacing-unit / 5;
+  font-size: $base-font-size * 1.5;
+  text-indent: $spacing-unit / 3;
+  color: darken($grey-color, 25%);
+  background: lighten($grey-color, 25%);
+  &:focus {
+    background: lighten($grey-color, 20%);
+  }
+  
+  @include media-query($small) {
+    width: 100%;
+  }
+}
+
+.CommentForm-errorMessages {
+  color: $red-color;
+  margin-bottom: 2rem;
+}
+
+.CommentForm-sendFailed {
+  color: $red-color;
+  display: none;
+  margin-bottom: 2rem;
+}
+
+.CommentForm-sendSucceeded {
+  display: none;
+  margin-bottom: 2rem;
+}
+
+.CommentForm-sendButton {
+  margin-top: $spacing-unit;
+  margin-bottom: $spacing-unit;
+  border: $red-color 2px solid;
+  border-radius: $spacing-unit;
+  padding: ($spacing-unit / 3) $spacing-unit;
+  font-size: $base-font-size * 1.5;
+  color: $red-color;
+  background: $light-grey-color;
+  cursor: pointer;
+  &:hover {
+    background: $red-color;
+    color: $white-color;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+}
+
+.CommentForm-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  z-index: 10;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+.CommentForm-loader {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.CommentForm-loaderElement {
+  animation: comment-loader-bounce 2.0s infinite ease-in-out;
+  background-color: $red-color;
+  border-radius: 50%;
+  height: 100%;
+  left: 0;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+@keyframes comment-loader-bounce {
+  0%, 100% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+  }
+}
+
+.CommentForm-loaderElement--two {
+  animation-delay: -1.0s;
+  background-color: $grey-color;
 }

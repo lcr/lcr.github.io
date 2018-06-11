@@ -12,9 +12,10 @@
 
 
 {% else %}
-<h1 class="comment-new-title">No comments yet, be the first to comment</h1>
+<h1 class="comment-new-title">No comments yet, leave a comment</h1>
 {% endif %}
 
+<!--
 <form method="POST" action="https://api.staticman.net/v2/entry/lcr/lcr.github.io/master/comments">
   <input name="options[redirect]" type="hidden" value="{{ page.url | absolute_url }}">
 
@@ -27,4 +28,36 @@
   <label><textarea class="comment-new-message" name="fields[message]" placeholder="Message*" required></textarea></label>
 
   <button class="comment-new-submit" type="submit">Send</button>
+</form>-->
+
+<!--<form class="CommentForm" data-action="https://api.staticman.net/v2/entry/lcr/lcr.github.io/master/comments" novalidate="novalidate">-->
+
+<form class="CommentForm" data-action="https://api.staticman.net/v2/entry/lcr/lcr.github.io/master/comments">
+
+
+  <input class="CommentForm-input CommentForm-input--slug" name="fields[slug]" type="hidden" value="{{ page.slug }}">
+
+  <input class="CommentForm-input CommentForm-input--optionsSlug" name="options[slug]" type="hidden" value="{{ page.slug }}">
+
+  <input class="CommentForm-input CommentForm-input--name" name="fields[name]" type="text" placeholder="Name*" autocomplete="name" required>
+
+  <input class="CommentForm-input--catch" name="fields[catch]" type="text" tabindex="-1" placeholder="Last name">
+
+  <input class="CommentForm-input CommentForm-input--email" name="fields[email]" type="email" placeholder="Email" autocomplete="email" pattern="/^([A-Za-z0-9_\-\.\u4e00-\u9fa5])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,8})$/">
+
+  <textarea class="CommentForm-input CommentForm-input--message" name="fields[message]" placeholder="Message*" required></textarea>
+
+  <!--<div class="CommentForm-errorMessages"></div>-->
+  <div class="CommentForm-sendFailed">Sending failed, please try again.</div>
+  <div class="CommentForm-sendSucceeded">Thank you! Your comment is sent.</div>
+
+  <button class="CommentForm-sendButton" type="submit">Send</button>
+
+  <div class="CommentForm-overlay">
+    <div class="CommentForm-loader">
+      <div class="CommentForm-loaderElement"></div>
+      <div class="CommentForm-loaderElement CommentForm-loaderElement--two"></div>
+    </div>
+  </div>
+
 </form>
