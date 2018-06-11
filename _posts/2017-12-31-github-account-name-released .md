@@ -9,19 +9,19 @@ categories: GitHub
 
 后来发现`lcr`这个账号好几年没动静了，于是给GitHub管理员写了封信，希望能把这用户名给我用，
 
-![Mail to GitHub](/assets/img/20180328/change-github-username1.png)
+![Mail to GitHub](/assets/img/20171231/change-github-username1.png)
 
 <!-- more -->
 
 并附上截图：
 
-![Screenshots-1](/assets/img/20180328/change-github-username3.jpg)
+![Screenshots-1](/assets/img/20171231/change-github-username3.jpg)
 
-![Screenshots-2](/assets/img/20180328/change-github-username4.jpg)
+![Screenshots-2](/assets/img/20171231/change-github-username4.jpg)
 
 几分钟后，惊喜的收到了GitHub的好消息
 
-![Good new from Github](/assets/img/20180328/change-github-username2.png)
+![Good new from Github](/assets/img/20171231/change-github-username2.png)
 
 收到回信后莫名的激动，马上就把用户名修改了。
 

@@ -2,7 +2,7 @@
   <div class="js-headroom">
   {% assign default_paths = site.pages | map: "path" %}
   {% assign page_paths = site.header_pages | default: default_paths %}
-  <a class="site-title" href="{{ '/' | relative_url }}">{{site.title | upcase}}</a>
+  <a class="site-title" href="{{ '/' | relative_url }}"><img class="site-logo" src="/assets/img/site-logo.png" alt="site-logo">{{site.title | upcase}}</a>
 
   {% if page_paths %}
   <nav class="header-nav">
@@ -29,7 +29,7 @@
     <h1 class="page-title-home">{{ page.description }}</h1>
 
     {% else %}
-    <h1 class="page-title-home">Frontend<br>Development<br>& Plants</h1>
+    <h1 class="page-title-home">Frontend<br>Development<br>& Rants</h1>
     {% endif %}
 
     <div class="header-angled header-angled-left"></div>

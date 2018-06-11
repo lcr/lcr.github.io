@@ -27,8 +27,17 @@ header{
   }
 }
 
+.site-logo{
+  display: inline-flex;
+  margin-top: -6px;
+  margin-right: 10px;
+  border: 0;
+  padding: 0;
+  border-radius: 0;
+}
+
 .site-title {
-  font-size: $base-font-size * 2;
+  font-size: $base-font-size * 1.75;
   letter-spacing: -1px;
   color: $white-color;
 }
@@ -39,7 +48,7 @@ header{
     margin-right: 20px;
   }
   color: $white-color;
-  font-size: $base-font-size * 1.125;
+  font-size: $base-font-size * 1.25;
   transition: opacity $time;
   cursor: pointer;
   svg {
