@@ -126,6 +126,8 @@
 .bouncing-loader {
   display: flex;
   justify-content: center;
+  position: relative;
+  margin: 0 auto;
 }
 .bouncing-loader > div {
   width: 1rem;
