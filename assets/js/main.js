@@ -142,11 +142,11 @@ ga('create', '{{ site.google_analytics }}', 'auto');
 ga('send', 'pageview');
 
 
-const commentForm = document.querySelector('.CommentForm');
-const commentFormInputs = document.querySelectorAll('.CommentForm-input');
-const sendFailedDiv = document.querySelector('.CommentForm-sendFailed');
-const sendSucceededDiv = document.querySelector('.CommentForm-sendSucceeded');
-const overlayDiv = document.querySelector('.CommentForm-overlay');
+const commentForm = document.querySelector('.comment-form');
+const commentFormInputs = document.querySelectorAll('.comment-form-input');
+const sendFailedDiv = document.querySelector('.comment-form-sendFailed');
+const sendSucceededDiv = document.querySelector('.comment-form-sendSucceeded');
+const overlayDiv = document.querySelector('.comment-form-overlay');
 
 function post(url, data, callback, errorCallback) {
   const xhr = new XMLHttpRequest();

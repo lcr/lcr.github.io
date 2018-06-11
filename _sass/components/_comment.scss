@@ -25,44 +25,38 @@
 }
 
 /*
- * Comment new
+ * Comment form
  */
-.comment-new-title {
+.comment-form-title {
   margin-top: $spacing-unit * 2;
   margin-bottom: -15px;
 }
 
-.CommentForm {
+.comment-form {
   position: relative;
 }
 
-.CommentForm-input--catch {
-  margin-left: -10000px;
-  opacity: 0;
-  position: absolute;
-}
-
-.CommentForm-input--name {
+.comment-form-input--name {
   float: left;
   width: 48%;
   height: $spacing-unit * 1.6;
 }
 
-.CommentForm-input--email {
+.comment-form-input--email {
   float: right;
   width: 48%;
   height: $spacing-unit * 1.6;
 }
 
-.CommentForm-input--message {
+.comment-form-input--message {
   width: 100%;
   height: $spacing-unit * 8;
   overflow: hidden;
 }
 
-.CommentForm-input--name,
-.CommentForm-input--email,
-.CommentForm-input--message {
+.comment-form-input--name,
+.comment-form-input--email,
+.comment-form-input--message {
   margin-top: $spacing-unit;
   border: 0;
   border-radius: $spacing-unit / 5;
@@ -73,29 +67,23 @@
   &:focus {
     background: lighten($grey-color, 20%);
   }
-  
   @include media-query($small) {
     width: 100%;
   }
 }
 
-.CommentForm-errorMessages {
-  color: $red-color;
-  margin-bottom: 2rem;
-}
-
-.CommentForm-sendFailed {
+.comment-form-sendFailed {
   color: $red-color;
   display: none;
   margin-bottom: 2rem;
 }
 
-.CommentForm-sendSucceeded {
+.comment-form-sendSucceeded {
   display: none;
   margin-bottom: 2rem;
 }
 
-.CommentForm-sendButton {
+.comment-form-sendButton {
   margin-top: $spacing-unit;
   margin-bottom: $spacing-unit;
   border: $red-color 2px solid;
@@ -112,7 +100,7 @@
   }
 }
 
-.CommentForm-overlay {
+.comment-form-overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -125,35 +113,31 @@
   display: none;
 }
 
-.CommentForm-loader {
-  width: 40px;
-  height: 40px;
-  position: relative;
-  margin: 0 auto;
+@keyframes bouncing-loader {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0.1;
+    transform: translateY(-1rem);
+  }
 }
-
-.CommentForm-loaderElement {
-  animation: comment-loader-bounce 2.0s infinite ease-in-out;
-  background-color: $red-color;
+.bouncing-loader {
+  display: flex;
+  justify-content: center;
+}
+.bouncing-loader > div {
+  width: 1rem;
+  height: 1rem;
+  margin: 3rem 0.2rem;
+  background: $red-color;
   border-radius: 50%;
-  height: 100%;
-  left: 0;
-  opacity: 0.6;
-  position: absolute;
-  top: 0;
-  width: 100%;
+  animation: bouncing-loader 0.6s infinite alternate;
 }
-
-@keyframes comment-loader-bounce {
-  0%, 100% {
-    transform: scale(0);
-  }
-  50% {
-    transform: scale(1);
-  }
+.bouncing-loader > div:nth-child(2) {
+  animation-delay: 0.2s;
 }
-
-.CommentForm-loaderElement--two {
-  animation-delay: -1.0s;
-  background-color: $grey-color;
+.bouncing-loader > div:nth-child(3) {
+  animation-delay: 0.4s;
 }
