@@ -1,37 +1,26 @@
 {% if site.data.comments[page.slug] %}
 <h1 class="comments-title">Comments ({{ site.data.comments[page.slug] | size }})</h1>
-
 {% assign comments = site.data.comments[page.slug] | sort %}
 {% for comment in comments %}
 <div class="comments-name">{{ comment[1].name }}</div>
 <time class="comments-date">{{ comment[1].date | date: "%B %d. %Y" }}</time>
 <div class="comments-message">{{ comment[1].message | markdownify }}</div>
 {% endfor %}
-
 <h1 class="comment-form-title">Leave a comment</h1>
-
 
 {% else %}
 <h1 class="comment-form-title">No comments yet, leave a comment</h1>
 {% endif %}
 
 <form class="comment-form" data-action="https://api.staticman.net/v2/entry/lcr/lcr.github.io/master/comments">
-
   <input class="comment-form-input comment-form-input--slug" name="fields[slug]" type="hidden" value="{{ page.slug }}">
-
   <input class="comment-form-input comment-form-input--optionsSlug" name="options[slug]" type="hidden" value="{{ page.slug }}">
-
   <label><input class="comment-form-input comment-form-input--name" name="fields[name]" type="text" placeholder="Name*" autocomplete="name" required></label>
-
   <label><input class="comment-form-input comment-form-input--email" name="fields[email]" type="email" placeholder="Email" autocomplete="email" pattern="/^([A-Za-z0-9_\-\.\u4e00-\u9fa5])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,8})$/"></label>
-
   <label><textarea class="comment-form-input comment-form-input--message" name="fields[message]" placeholder="Message*" required></textarea></label>
-
   <div class="comment-form-sendFailed">Sending failed, please try again.</div>
   <div class="comment-form-sendSucceeded">Sending succeeded! It will be displayed in one minute, please refresh.</div>
-
   <button class="comment-form-sendButton" type="submit">Send</button>
-
   <div class="comment-form-overlay">
     <div class="bouncing-loader">
       <div></div>
@@ -39,5 +28,4 @@
       <div></div>
     </div>
   </div>
-
 </form>

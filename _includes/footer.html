@@ -1,26 +1,18 @@
 <footer>
-
   {% if page.date %}
   <div class="footer-angled footer-angled-left-grey"></div>
   <div class="footer-angled footer-angled-right-grey"></div>
-
   {% else %}
   <div class="footer-angled footer-angled-left"></div>
   <div class="footer-angled footer-angled-right"></div>
   {% endif %}
-
   <a class="back-top" id="backTop" href="javascript:" title="Back to top">{% include svg/arrow.svg %}</a>
-
   <ul class="social">
     <li><a class="github" href="https://github.com/lcr/" title="Leslie Lai on GitHub">{% include svg/github.svg %}</a></li>
-
     <li><a class="linkedin" href="https://cn.linkedin.com/in/lcrccr/" title="Leslie Lai on LinkedIn">{% include svg/linkedin.svg %}</a></li>
-
     <li><a class="facebook" href="https://www.facebook.com/laicanrong/" title="Leslie Lai on Facebook">{% include svg/facebook.svg %}</a></li>
-
     <li><a class="weibo" href="https://weibo.com/675911728/" title="Leslie Lai on Weibo">{% include svg/weibo.svg %}</a></li>
   </ul>
-
   <p class="copyright">&copy;2018&nbsp;&nbsp; All rights reserved</p>
   <p class="author">Made with {% include svg/heart.svg %} by {{ site.author }}</p>
 </footer>

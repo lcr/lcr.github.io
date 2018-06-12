@@ -121,6 +121,14 @@ backTop.onclick = function () {
 };
 
 
+/* Archive page Accordion Check */
+var urlHash = window.location.hash;
+if (urlHash.length > 0) {
+  var inputCheck = document.getElementById(urlHash);
+  inputCheck.checked = true;
+}
+
+
 /*
  * google analytics
  */
