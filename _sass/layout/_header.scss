@@ -39,7 +39,8 @@ header{
 }
 
 .header-nav-item {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
   &:not(:last-child) {
     margin-right: 20px;
   }
@@ -50,7 +51,7 @@ header{
   svg {
     display: none;
     @include media-query($small) {
-      display: inline-block;
+      display: inline-flex;
       margin-top: 20px;
     }
   }
