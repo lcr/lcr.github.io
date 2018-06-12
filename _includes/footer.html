@@ -1,11 +1,11 @@
 <footer>
-  {% if page.date %}
+  {%- if page.date -%}
   <div class="footer-angled footer-angled-left-grey"></div>
   <div class="footer-angled footer-angled-right-grey"></div>
-  {% else %}
+  {%- else -%}
   <div class="footer-angled footer-angled-left"></div>
   <div class="footer-angled footer-angled-right"></div>
-  {% endif %}
+  {%- endif -%}
   <a class="back-top" id="backTop" href="javascript:" title="Back to top">{% include svg/arrow.svg %}</a>
   <ul class="social">
     <li><a class="github" href="https://github.com/lcr/" title="Leslie Lai on GitHub">{% include svg/github.svg %}</a></li>
