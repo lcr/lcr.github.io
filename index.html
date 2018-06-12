@@ -6,15 +6,9 @@ title: Home
 <ul class="post-list" aria-label="Content">
   {% for post in paginator.posts %}
   <li class="post-item">
-
-    <h1 class="post-item-title">
-      <a class="post-item-url" href="{{ post.url | relative_url }}"><span>{{ post.title | escape }}</span></a>
-    </h1>
-
+    <h1 class="post-item-title"><a class="post-item-url" href="{{ post.url | relative_url }}"><span>{{ post.title | escape }}</span></a></h1>
     {% assign date_format = site.date_format | default: "%b %d. %Y" %}
-    <time class="post-date">
-      {% include svg/calendar.svg %}{{ post.date | date: date_format }}
-    </time>
+    <time class="post-date">{% include svg/calendar.svg %}{{ post.date | date: date_format }}</time>
 
     {% if post.excerpt != post.content %}
     {{ post.excerpt }}
@@ -25,5 +19,4 @@ title: Home
   </li>
   {% endfor %}
 </ul>
-
 {% include pagination.html %}
