@@ -1,6 +1,7 @@
-{%- if page.next -%}
+{% if page.next %}
 <a class="post-newer" href="{{ page.next.url | prepend: site.baseurl }}" title="{{ page.next.title }}">{% include svg/arrow.svg %}Newer</a>
-{%- endif -%}
-{%- if page.previous -%}
+{% endif %}
+
+{% if page.previous %}
 <a class="post-older" href="{{ page.previous.url | prepend: site.baseurl }}" title="{{ page.previous.title }}">Older {% include svg/arrow.svg %}</a>
-{%- endif -%}
+{% endif %}

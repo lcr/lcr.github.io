@@ -1,11 +1,19 @@
 <!DOCTYPE html>
+
 <html lang="zh-Hans">
-{%- include head.html -%}
+
+{% include head.html %}
+
 <body>
-{%- include header.html -%}
+
+{% include header.html %}
+
 {{ content }}
-{%- include footer.html -%}
-{%- include search.html -%}
+
+{% include footer.html %}
+
+{% include search.html %}
+
 <script src="/assets/js/headroom.js"></script>
 <script src="/assets/js/algoliasearch.js"></script>
 <script src="/assets/js/autocomplete.js"></script>

@@ -3,22 +3,28 @@ layout: default
 ---
 
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting" aria-label="Content" itemprop="articleBody">
+
   {{ content }}
+
   <div class="category">
     <p class="category-title">Category</p>
-    {%- if post -%}
-    {%- assign categories = post.categories -%}
-    {%- else -%}
-    {%- assign categories = page.categories -%}
-    {%- endif -%}
-    {%- for category in categories -%}
+    {% if post %}
+    {% assign categories = post.categories %}
+    {% else %}
+    {% assign categories = page.categories %}
+    {% endif %}
+    {% for category in categories %}
     <a class="category-item" href="{{site.baseurl}}/archive#{{category | slugify}}">{{category}}</a>
-    {%- unless forloop.last %}&nbsp;{% endunless -%}
-    {%- endfor -%}
+    {% unless forloop.last %}&nbsp;{% endunless %}
+    {% endfor %}
   </div>
+
 </article>
+
 <div class="container-grey">
-  {%- include comment.html -%}
-  {%- include post-recent.html -%}
+  {% include comment.html %}
+
+  {% include post-recent.html %}
 </div>
+
 <script src="/assets/js/comment.js"></script>
