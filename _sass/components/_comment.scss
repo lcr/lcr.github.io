@@ -93,6 +93,7 @@
   color: $red-color;
   background: $light-grey-color;
   cursor: pointer;
+  transition: all $time;
   &:hover {
     background: $red-color;
     color: $white-color;
