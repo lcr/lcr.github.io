@@ -21,7 +21,7 @@
     {% if page.title == "Home" %}
     <h1 class="page-title">Frontend<br>Development<br>& Rants</h1>
     {% elsif page.title == "Archive" %}
-    <h1 class="page-title">The Archive</h1>
+    <h1 class="page-title-item">{{ site.posts | size }} posts sorted in<br>{{ site.categories | size }} categories</h1>
     {% else %}
     <h1 class="page-title-item" itemprop="name headline">{{ page.title | escape }}</h1>
     {% assign date_format = site.date_format | default: "%B %d. %Y" %}
