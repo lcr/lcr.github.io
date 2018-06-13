@@ -1,11 +1,11 @@
 ---
-title: Overflow a Markdown table
+title: Markdown table 自动显示滚动条
 categories: Markdown
 ---
 
-Jekyll网页中，使用Markdown table会产生一个问题：当table超过一定宽度，会在手机端或窄屏产生整个网页的横向滚动条，打破了页面布局，不能忍啊。
+Jekyll网页中，使用Markdown table会产生一个问题：当table超过一定宽度，会在手机端或窄屏产生整个网页的横向滚动条，打破了整体页面布局，简直不能忍。
 
-解决办法：在Markdown table外围加一层div,然后写相应的CSS,实现table父节点横向自动溢出隐藏并产生滚动条
+解决办法：在Markdown table外围加一层div,然后写相应的CSS,实现table父节点自动修剪溢出并显示滚动条
 
 注意：div与table之间需要有空行   
 

@@ -1,5 +1,5 @@
 ---
-title: 纯CSS制作的手风琴
+title: 纯CSS手风琴垂直导航
 categories: CSS
 ---
 
