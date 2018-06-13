@@ -81,7 +81,6 @@ a {
 }
 
 p > a {
-  margin-left: 6px;
   border-bottom: 2px dashed $grey-color;
   color: inherit;
   transition: all $time ease-in-out;
@@ -101,8 +100,6 @@ blockquote {
   border-left: 4px solid $grey-color;
   padding: 1rem;
   background: $light-grey-color;
-  font-style: italic;
-  letter-spacing: -1px;
   p:last-child{
     margin-bottom: 0;
   }

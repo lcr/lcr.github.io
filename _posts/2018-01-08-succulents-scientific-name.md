@@ -1,9 +1,9 @@
 ---
-title: 阳台的植物
+title: 多肉植物的学名
 categories: Succulents
 ---
 
-记录一下目前阳台的多肉植物
+归类一下目前阳台多肉植物的学名、科、属、原生地或杂交血统
 
 <div class="table-wrapper" markdown="block">
 

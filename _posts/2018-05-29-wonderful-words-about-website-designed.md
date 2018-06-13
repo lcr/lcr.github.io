@@ -1,5 +1,5 @@
 ---
-title: Wonderful words
+title: 建站网站宣传语
 categories: Rants
 ---
 
