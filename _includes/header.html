@@ -27,7 +27,7 @@
     {% else %}
     <h1 class="page-title-item" itemprop="name headline">{{ page.title | escape }}</h1>
     {% assign date_format = site.date_format | default: "%B %d, %Y" %}
-    <div class="page-date">{% include svg/calendar.svg %}<time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: date_format }}</time></div>
+    <div class="page-date">{% include svg/calendar.svg %}{{ page.date | date: date_format }}</div>
     {% endif %}
 
     <div class="header-angled header-angled-left"></div>
