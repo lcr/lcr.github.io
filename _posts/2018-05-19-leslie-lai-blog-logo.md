@@ -1,5 +1,5 @@
 ---
-title: Leslie Lai site logo
+title: Leslie Lai blog logo
 categories: Rants
 ---
 
