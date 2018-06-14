@@ -1,5 +1,5 @@
 ---
-title: "Markdown Notes"
+title: Markdown Notes
 categories: Markdown
 ---
 

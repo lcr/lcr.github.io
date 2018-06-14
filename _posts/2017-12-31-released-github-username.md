@@ -1,5 +1,5 @@
 ---
-title: GitHub用户名被抢注了？
+title: GitHub用户名被抢注了
 categories: GitHub
 ---
 

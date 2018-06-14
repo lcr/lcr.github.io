@@ -1,5 +1,5 @@
 ---
-title: Markdown table 自动修剪溢出并显示滚动条
+title: Markdown table 自动修剪溢出
 categories: Markdown
 ---
 
