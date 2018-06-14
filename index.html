@@ -4,6 +4,7 @@ title: Home
 ---
 
 <ul class="post-list" aria-label="Content">
+
   {% for post in paginator.posts %}
   <li class="post-item">
     <h1 class="post-item-title"><a class="post-item-url" href="{{ post.url | relative_url }}"><span>{{ post.title | escape }}</span></a></h1>
@@ -19,4 +20,5 @@ title: Home
   </li>
   {% endfor %}
 </ul>
+
 {% include pagination.html %}
