@@ -8,7 +8,7 @@ permalink: /archive/
   {% for category in site.categories %}
   <div class="archive-group">
     {% capture category_name %}{{ category | first }}{% endcapture %}
-    <a class="archive-anchor" name="{{ category_name | slugify }}"></a>
+    <a class="archive-anchor" id="{{ category_name | slugify }}"></a>
     <input type="checkbox" id="#{{ category_name | slugify }}">
     <label for="#{{ category_name | slugify }}">{% include svg/arrow.svg %}{{ category_name }}<span class="archive-number">{{ category | last | size }}</span></label>
 
