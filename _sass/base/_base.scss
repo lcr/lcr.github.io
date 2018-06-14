@@ -16,8 +16,8 @@ body {
  * Set `margin-bottom` to maintain vertical rhythm
  */
 h1, h2, h3, h4, h5, h6,
-p, ul, ol, dl, table, blockquote,
-pre, figure, %vertical-rhythm {
+p, ul, ol, dl, table,
+blockquote, pre, figure {
   margin-bottom: $spacing-unit / 3;
 }
 
@@ -110,7 +110,7 @@ blockquote {
  */
 pre,
 code {
-  border-radius: 2px;
+  border-radius: 5px;
   background: $light-grey-color;
 }
 
