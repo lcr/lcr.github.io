@@ -47,6 +47,7 @@ jekyll server
 jekyll serve
 lekyll s
 ```
+
 Preview a draft post
 
 ```
