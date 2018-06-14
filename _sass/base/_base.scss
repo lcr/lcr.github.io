@@ -1,4 +1,23 @@
 /*
+ * Reset some basic elements
+ */
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Set `margin-bottom` to maintain vertical rhythm
+ */
+h1, h2, h3, h4, h5, h6,
+p, ul, ol, dl, table,
+blockquote, pre, figure {
+  margin-bottom: $spacing-unit / 3;
+}
+
+/*
  * Basic styling
  */
 body {
@@ -10,15 +29,6 @@ body {
   // 应用字距调整
   -webkit-font-kerning: normal;
   font-kerning: normal;
-}
-
-/*
- * Set `margin-bottom` to maintain vertical rhythm
- */
-h1, h2, h3, h4, h5, h6,
-p, ul, ol, dl, table,
-blockquote, pre, figure {
-  margin-bottom: $spacing-unit / 3;
 }
 
 /*
@@ -76,8 +86,6 @@ figcaption {
  */
 a {
   text-decoration: none;
-  // Remove the gray background on active links in IE 10.
-  background-color: transparent;
 }
 
 p > a {
