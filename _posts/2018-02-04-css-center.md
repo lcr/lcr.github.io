@@ -1,7 +1,7 @@
 ---
 title: CSS居中的方法
 categories: CSS
-description: 多种CSS水平居中、垂直居中、水平垂直居中方法的笔记
+description: CSS水平居中、垂直居中、水平垂直居中的各种方法
 ---
 
 ## CSS水平居中
