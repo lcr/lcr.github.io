@@ -1,6 +1,7 @@
 ---
 title: CSS3 跳动的心
 categories: CSS
+description: 简单几行CSS制作的动画，css animation 一直跳动的心形
 ---
 
 Pure CSS beat heart

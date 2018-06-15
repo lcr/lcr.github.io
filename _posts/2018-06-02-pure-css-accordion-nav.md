@@ -1,6 +1,7 @@
 ---
 title: 纯CSS手风琴垂直导航
 categories: CSS
+description: 纯css制作的手风琴垂直导航，主要使用input checked,带动画效果
 ---
 
 Pure CSS Accordion Nav

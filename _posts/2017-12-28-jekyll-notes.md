@@ -1,6 +1,7 @@
 ---
 title: Jekyll Notes
 categories: Jekyll
+description: About using Jekyll to build you site
 ---
 
 ## Install Jekyll on Windows7

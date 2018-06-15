@@ -1,6 +1,7 @@
 ---
 title: Leslie Lai logo
 categories: Rants
+description: Leslie Lai site logo,my personal blog's logo
 ---
 
 My personal blog's logo

@@ -1,6 +1,7 @@
 ---
 title: Markdown table 自动修剪溢出
 categories: Markdown
+description: 解决Markdown语法写的表格在Jekyll网站中影响整体布局的问题，自动修剪溢出并显示滚动条
 ---
 
 Jekyll网页中，使用Markdown table会产生一个问题：当table超过一定宽度，会在手机端或窄屏产生整个网页的横向滚动条，打破了整体页面布局，简直不能忍。
