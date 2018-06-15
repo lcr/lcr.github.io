@@ -2,12 +2,15 @@ title: Leslie Lai
 
 author: Leslie Lai
 
-description: I am Leslie Lai,a front-end development engineer living in Guangzhou,writing mostly about CSS and JavaScript.
+description: Leslie Lai,a Front-end developer living in Guangzhou,writing mostly about CSS and JavaScript.
 
 keywords: Frontend development, Leslie Lai
 
 baseurl: ""
 url: "https://lcr.github.io"
+
+plugins:
+  - jekyll-sitemap
 
 permalink: /:title/
 
@@ -40,6 +43,3 @@ algolia:
 
 # Google Analytics
 google_analytics: UA-107157614-1
-
-plugins:
-  - jekyll-sitemap
