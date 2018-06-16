@@ -1,12 +1,7 @@
 /*
  * Header
  */
-.js-headroom {
-  position: fixed;
-  right: 0;
-  left: 0;
-  top: 0;
-  z-index: 9;
+header{
   display: flex;
   justify-content: space-between;
   @include content-width;
@@ -14,6 +9,14 @@
   line-height: $spacing-unit * 2.5;
   background: $deep-grey-color;
   box-shadow: 0 1px 2px rgba(0, 0, 0, .5);
+}
+
+.js-headroom {
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  z-index: 9;
   transition: transform $time ease-in-out;
   &--pinned {
     transform: translateY(0%);
@@ -60,68 +63,5 @@
 .header-nav-hide {
   @include media-query($small) {
     display: none;
-  }
-}
-
-.header-title {
-  position: relative;
-  padding-top: $spacing-unit * 4.5;
-  padding-bottom: $spacing-unit * 4;
-  @include content-width;
-  color: white;
-  line-height: 1;
-  background: $deep-grey-color;
-}
-
-.page-title {
-  font-size: $base-font-size * 4;
-  @include media-query($small) {
-    font-size: $base-font-size * 3;
-  }
-}
-
-.page-title-item {
-  font-size: $base-font-size *3;
-  @include media-query($small) {
-    font-size: $base-font-size * 2;
-  }
-}
-
-.page-date {
-  display: flex;
-  align-items: center;
-  margin-top: $spacing-unit / 2;
-  font-style: italic;
-  svg {
-    margin-right: $spacing-unit / 3;
-    fill: $white-color;
-  }
-}
-
-.header-angled {
-  bottom: 0;
-  z-index: 5;
-  width: 50%;
-  height: 200px;
-  pointer-events: none;
-}
-
-.header-angled-left {
-  @include angled-edge('inside bottom', 'upper right', $white-color, $width: 2000, $height: 200);
-  position: absolute;
-  left: 0;
-  
-  &::after {
-    background-position: right center;
-  }
-}
-
-.header-angled-right {
-  @include angled-edge('inside bottom', 'upper left', $white-color, $width: 2000, $height: 200);
-  position: absolute;
-  right: 0;
-  
-  &::after {
-    background-position: left center;
   }
 }

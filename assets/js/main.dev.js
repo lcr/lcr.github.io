@@ -96,31 +96,6 @@ var myAutocomplete = autocomplete('#searchInput', {hint: false, debug: true}, [
 });
 
 
-/*
- * back to top
- */
-var backTop = document.getElementById("backTop");
-var timer = null;
-var isTop = true;
-window.onscroll = function () {
-  if (!isTop) {
-    clearInterval(timer);
-  }
-  isTop = false;
-};
-backTop.onclick = function () {
-  timer = setInterval(function () {
-    var toTop = document.body.scrollTop || document.documentElement.scrollTop;
-    var speed = Math.ceil(toTop / 10);
-    document.documentElement.scrollTop = document.body.scrollTop = toTop - speed;
-    isTop = true;
-    if (toTop === 0) {
-      clearInterval(timer);
-    }
-  }, 20);
-};
-
-
 /* Archive page Accordion Check */
 var urlHash = window.location.hash;
 if (urlHash.length > 0) {

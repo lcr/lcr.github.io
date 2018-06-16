@@ -1,0 +1,35 @@
+.page-title {
+  position: relative;
+  margin-bottom: $spacing-unit * 2;
+  padding-top: $spacing-unit * 4.5;
+  padding-bottom: $spacing-unit * 4;
+  @include content-width;
+  color: white;
+  line-height: 1;
+  background: $deep-grey-color;
+}
+
+.page-title-home {
+  font-size: $base-font-size * 4;
+  @include media-query($small) {
+    font-size: $base-font-size * 3;
+  }
+}
+
+.page-title-item {
+  font-size: $base-font-size *3;
+  @include media-query($small) {
+    font-size: $base-font-size * 2;
+  }
+}
+
+.page-date {
+  display: flex;
+  align-items: center;
+  margin-top: $spacing-unit / 2;
+  font-style: italic;
+  svg {
+    margin-right: $spacing-unit / 3;
+    fill: $white-color;
+  }
+}
