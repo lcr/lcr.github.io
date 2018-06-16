@@ -5,19 +5,32 @@ permalink: /archive/
 description: The categories of the posts
 ---
 
-<article class="archive">
-  {% for category in site.categories %}
-  <div class="archive-group">
-    {% capture category_name %}{{ category | first }}{% endcapture %}
-    <a class="archive-anchor" id="{{ category_name | slugify }}"></a>
-    <input type="checkbox" id="#{{ category_name | slugify }}">
-    <label for="#{{ category_name | slugify }}">{% include svg/arrow.svg %}{{ category_name }}<span class="archive-number">{{ category | last | size }}</span></label>
+<article>
 
-    <div class="archive-item">
-    {% for post in site.categories[category_name] %}
-      <h2><a class="archive-post-title" href="{{ site.baseurl }}{{ post.url }}"><span>{{post.title}}</span></a></h2>
-    {% endfor %}
-    </div>
+  <div class="header-title">
+    {% if page.title == "Archive" %}
+    <h1 class="page-title-item">{{ site.posts | size }} posts sorted in<br>{{ site.categories | size }} categories</h1>
+    {% endif %}
+
+    <div class="header-angled header-angled-left"></div>
+    <div class="header-angled header-angled-right"></div>
   </div>
-  {% endfor %}
+
+  <div class="archive">
+    {% for category in site.categories %}
+    <div class="archive-group">
+      {% capture category_name %}{{ category | first }}{% endcapture %}
+      <a class="archive-anchor" id="{{ category_name | slugify }}"></a>
+      <input type="checkbox" id="#{{ category_name | slugify }}">
+      <label for="#{{ category_name | slugify }}">{% include svg/arrow.svg %}{{ category_name }}<span class="archive-number">{{ category | last | size }}</span></label>
+
+      <div class="archive-item">
+        {% for post in site.categories[category_name] %}
+        <h2><a class="archive-post-title" href="{{ site.baseurl }}{{ post.url }}"><span>{{post.title}}</span></a></h2>
+        {% endfor %}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+
 </article>

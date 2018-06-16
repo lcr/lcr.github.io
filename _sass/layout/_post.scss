@@ -2,6 +2,7 @@
  * Post Content
  */
 .post {
+  margin-top: $spacing-unit * 2;
   @include content-width;
   
   hr {
