@@ -1,12 +1,12 @@
 ---
 title: Leslie Lai logo
 categories: Rants
-description: Leslie Lai site logo,my personal blog's logo
+description: Leslie Lai site logo,my personal blog's logo,logo L
 ---
 
 My personal blog's logo
 
-![Leslie Lai logo](/assets/img/20180519/leslielai-site-logo.png)
+![Leslie Lai logo,logo L](/assets/img/20180519/leslielai-site-logo.png)
 
 Designed by [Leslie Lai](https://lcr.github.io/)
 

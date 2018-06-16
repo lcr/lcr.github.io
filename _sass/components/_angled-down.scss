@@ -1,4 +1,4 @@
-.header-angled {
+.angled-down {
   bottom: 0;
   z-index: 5;
   width: 50%;
@@ -6,7 +6,7 @@
   pointer-events: none;
 }
 
-.header-angled-left {
+.angled-down-left {
   @include angled-edge('inside bottom', 'upper right', $white-color, $width: 2000, $height: 200);
   position: absolute;
   left: 0;
@@ -16,7 +16,7 @@
   }
 }
 
-.header-angled-right {
+.angled-down-right {
   @include angled-edge('inside bottom', 'upper left', $white-color, $width: 2000, $height: 200);
   position: absolute;
   right: 0;
