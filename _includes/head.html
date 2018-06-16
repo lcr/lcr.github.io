@@ -12,7 +12,6 @@
   <link rel="stylesheet" href="{{'/assets/main.css' | relative_url}}">
   <meta name="description" content="{%- if page.title == 'Home' -%}{{ site.description | normalize_whitespace | truncate: 160 | escape }}{%- elsif page.description -%}{{ page.description | normalize_whitespace | truncate: 160 | escape }}{%- else -%}{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}{%- endif -%}">
   <meta name="keywords" content="{{ site.keywords }}">
-  <meta name="google-site-verification" content="p06ZE5LFStgctmW8iENfnn8B6XdGr4KCJnc0xsxJp74" />
   <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
   <link rel="canonical" href="{{ page.url | replace:'index.html' | absolute_url | prepend: site.url}}">
