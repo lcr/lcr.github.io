@@ -25,7 +25,7 @@
     <h1 class="page-title-item">{{ site.posts | size }} posts sorted in<br>{{ site.categories | size }} categories</h1>
 
     {% else %}
-    <h1 class="page-title-item" itemprop="name headline">{{ page.title | escape }}</h1>
+    <h1 class="page-title-item">{{ page.title | escape }}</h1>
     {% assign date_format = site.date_format | default: "%B %d, %Y" %}
     <div class="page-date">{% include svg/calendar.svg %}{{ page.date | date: date_format }}</div>
     {% endif %}
