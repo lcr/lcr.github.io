@@ -44,8 +44,10 @@
 
 .icon-lighten {
   fill: lighten($black-color, 50%);
-  &:hover {
-    fill: lighten($red-color, 15%)
+  @include media-query($small) {
+    &:hover {
+      fill: lighten($red-color, 15%)
+    }
   }
 }
 

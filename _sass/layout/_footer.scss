@@ -22,8 +22,10 @@ footer {
     fill:$white-color;
     transform: rotate(180deg);
   }
-  &:hover{
-    border: $white-color 1px solid;
+  @include media-query($small){
+    &:hover{
+      border: $white-color 1px solid;
+    }
   }
 }
 
@@ -37,8 +39,10 @@ footer {
     
     a {
       fill: $white-color;
-      &:hover{
-        fill:$grey-color;
+      @include media-query($small){
+        &:hover{
+          fill:$grey-color;
+        }
       }
     }
   }
