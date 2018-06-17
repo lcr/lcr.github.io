@@ -27,7 +27,8 @@ img `![alt](https://example.jpg)`
 
 link [link](https://lcr.github.io/) `[link](https://example.com/)`  or  `[link](https://example.com/){:target="_blank"}`
 
- 
+<!-- more -->
+
 ## code 
 
 `'code'` or `...`
@@ -43,8 +44,6 @@ link [link](https://lcr.github.io/) `[link](https://example.com/)`  or  `[link](
 </html>
 '''
 ```
-
-<!-- more -->
 
 ## Bullet list
 

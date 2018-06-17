@@ -22,6 +22,8 @@ layout: compress
 
 完成。
 
+<!-- more -->
+
 默认情况下是单个空格替换连续的空行，若需自定义，可在`_config.yml`自行配置
 
 ```text

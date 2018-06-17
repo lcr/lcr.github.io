@@ -170,6 +170,7 @@ table {
 h3[id^="html"],
 h3[id^="markdown"],
 h3[id^="css"],
+h3[id^="scss"],
 h3[id^="javascript"],
 h3[id^="jquery"],
 h3[id^="demo"] {
@@ -186,7 +187,8 @@ h3[id^="markdown"] {
   background: linear-gradient(135deg, #ff4c9f, #ff7b74);
 }
 
-h3[id^="css"] {
+h3[id^="css"],
+h3[id^="scss"]{
   background: linear-gradient(135deg, #7983ff, #5f9de9);
 }
 

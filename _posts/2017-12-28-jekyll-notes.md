@@ -34,6 +34,8 @@ change Gemfile and _config.yml，  run
 bundle install
 ```
 
+<!-- more -->
+
 Build your site
 
 ```
