@@ -22,10 +22,13 @@
   }
 }
 
-.post-item-url {
+.post-item-title {
   display: block;
   color: $deep-grey-color;
-  
+  font-size: $base-font-size * 1.75;
+  @include media-query($medium) {
+    font-size: $base-font-size * 2;
+  }
   @include media-query($small) {
     span {
       display: inline-block;
