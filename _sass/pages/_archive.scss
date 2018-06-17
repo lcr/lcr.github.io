@@ -3,6 +3,7 @@
 }
 
 .archive-group {
+  
   &:not(:last-child) {
     border-bottom: 1px solid $grey-color;
   }
@@ -16,10 +17,12 @@
     padding: 16px 0;
     font-size: $base-font-size * 2;
     cursor: pointer;
-    &:hover {
+    
+    @include hover {
       color: $red-color;
       fill: $red-color;
     }
+    
     svg {
       transition: all $time linear;
     }
@@ -36,9 +39,10 @@
   }
   
   input:checked + label {
+    
     svg {
       -webkit-transform: rotate(180deg);
-              transform: rotate(180deg);
+      transform: rotate(180deg);
       fill: $red-color;
     }
   }
@@ -61,11 +65,12 @@
   margin-bottom: $spacing-unit / 2;
   font-size: $base-font-size * 1.5;
   color: $black-color;
+  
   @include media-query($small) {
     span {
       display: inline-block;
       position: relative;
-    
+      
       &::before {
         display: block;
         position: absolute;
@@ -83,12 +88,12 @@
         transform-origin: left center;
         content: '';
       }
+    }
     
-      .archive-item h2:hover & {
-        &::before {
-          -webkit-transform: scaleX(1);
-          transform: scaleX(1);
-        }
+    &:hover span {
+      &::before {
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
       }
     }
   }

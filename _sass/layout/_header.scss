@@ -38,15 +38,6 @@ header{
 }
 
 .header-nav-item {
-  display: inline-flex;
-  align-items: center;
-  &:not(:last-child) {
-    margin-right: 20px;
-  }
-  color: $white-color;
-  font-size: $base-font-size * 1.25;
-  transition: opacity $time;
-  cursor: pointer;
   svg {
     display: inline-flex;
     margin-top: 20px;
@@ -54,11 +45,26 @@ header{
       display: none;
     }
   }
+  
+  @include media-query($small){
+    display: inline-flex;
+    align-items: center;
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+    color: $white-color;
+    font-size: $base-font-size * 1.25;
+    transition: opacity $time;
+    cursor: pointer;
+  }
 }
 
-.header-nav:hover .header-nav-item:not(:hover) {
-  opacity: .5;
+@include media-query($small){
+  .header-nav:hover .header-nav-item:not(:hover) {
+    opacity: .5;
+  }
 }
+
 
 .header-nav-hide {
   display: none;

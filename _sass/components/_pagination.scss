@@ -13,13 +13,14 @@
   height: $spacing-unit * 1.5;
   text-align: center;
   color: $black-color;
-  &:hover {
+  @include hover {
     color: $red-color;
     fill: $red-color;
   }
 }
+
 .pagination-item,
-.pagination-more{
+.pagination-more {
   float: left;
 }
 
@@ -28,7 +29,7 @@
   color: $white-color;
   background: $red-color;
   cursor: default;
-  &:hover{
+  @include hover {
     color: $white-color;
   }
 }
@@ -44,10 +45,8 @@
 
 .icon-lighten {
   fill: lighten($black-color, 50%);
-  @include media-query($small) {
-    &:hover {
-      fill: lighten($red-color, 15%)
-    }
+  @include hover {
+    fill: lighten($red-color, 15%)
   }
 }
 

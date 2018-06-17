@@ -10,7 +10,7 @@ footer {
   background: $deep-grey-color;
 }
 
-.back-top{
+.back-top {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -18,14 +18,12 @@ footer {
   border-radius: 100%;
   width: $spacing-unit * 1.5;
   height: $spacing-unit * 1.5;
-  svg{
-    fill:$white-color;
+  svg {
+    fill: $white-color;
     transform: rotate(180deg);
   }
-  @include media-query($small){
-    &:hover{
-      border: $white-color 1px solid;
-    }
+  @include hover {
+    border: $white-color 1px solid;
   }
 }
 
@@ -39,10 +37,8 @@ footer {
     
     a {
       fill: $white-color;
-      @include media-query($small){
-        &:hover{
-          fill:$grey-color;
-        }
+      @include hover {
+        fill: $grey-color;
       }
     }
   }

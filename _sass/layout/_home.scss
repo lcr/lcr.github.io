@@ -2,7 +2,7 @@
  * Home Page
  */
 
-.post-list{
+.post-list {
   @include content-width;
 }
 
@@ -16,7 +16,7 @@
   padding-bottom: $spacing-unit * 2;
   list-style: none;
   
-  li{
+  li {
     margin-left: 1em;
     list-style: disc;
   }
@@ -25,11 +25,13 @@
 .post-item-url {
   display: block;
   color: $deep-grey-color;
-  @include media-query($small){
+  
+  @include media-query($small) {
     span {
       display: inline-block;
       position: relative;
-      &:after {
+      
+      &::after {
         display: block;
         position: absolute;
         bottom: 0;
@@ -46,11 +48,12 @@
         transform-origin: left center;
         content: '';
       }
-      .post-item-title:hover & {
-        &::after {
-          -webkit-transform: scaleX(1);
-          transform: scaleX(1);
-        }
+    }
+    
+    &:hover span{
+      &::after {
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
       }
     }
   }
@@ -60,10 +63,12 @@
   display: flex;
   align-items: center;
   margin-bottom: $spacing-unit / 2;
+  
   font: {
     style: italic;
     size: $base-font-size * 0.875;
   }
+  
   svg {
     margin-right: 6px;
   }
@@ -87,11 +92,12 @@
     transition: all $time;
   }
   
-  @include media-query($small){
-    &:hover span{
+  @include hover {
+    
+    span {
       background: $red-color;
       color: $white-color;
-      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
   }
 }

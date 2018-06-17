@@ -7,12 +7,10 @@
   font-size: $base-font-size * 2;
   color: darken($grey-color, 25%);
   fill: darken($grey-color, 25%);
-  @include media-query($small) {
-    &:hover {
-      background: darken($light-grey-color, 2%);
-      color: $red-color;
-      fill: $red-color;
-    }
+  @include hover {
+    background: darken($light-grey-color, 2%);
+    color: $red-color;
+    fill: $red-color;
   }
 }
 

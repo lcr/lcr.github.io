@@ -114,9 +114,7 @@
   display: block;
   color: $white-color;
   font-size: $base-font-size * 3;
-  @include media-query($small){
-    &:hover {
-      background: lighten($deep-grey-color, 5%);
-    }
+  @include hover {
+    background: lighten($deep-grey-color, 5%);
   }
 }

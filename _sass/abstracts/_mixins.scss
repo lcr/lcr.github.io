@@ -23,3 +23,12 @@
     clear: both;
   }
 }
+
+// hover
+@mixin hover{
+  @media only screen and (min-width: $small){
+    &:hover{
+      @content;
+    }
+  }
+}

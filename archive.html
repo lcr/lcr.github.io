@@ -26,7 +26,7 @@ description: The categories of the posts
 
       <div class="archive-item">
         {% for post in site.categories[category_name] %}
-        <h2><a class="archive-post-title" href="{{ site.baseurl }}{{ post.url }}"><span>{{post.title}}</span></a></h2>
+        <a class="archive-post-title" href="{{ site.baseurl }}{{ post.url }}"><span>{{post.title}}</span></a>
         {% endfor %}
       </div>
     </div>

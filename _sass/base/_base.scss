@@ -96,7 +96,7 @@ p > a {
     content: url("/assets/img/link.svg");
     margin-left: 6px;
   }
-  &:hover {
+  @include hover{
     border-bottom: 2px solid $red-color;
   }
 }
