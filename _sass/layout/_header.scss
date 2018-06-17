@@ -48,10 +48,10 @@ header{
   transition: opacity $time;
   cursor: pointer;
   svg {
-    display: none;
+    display: inline-flex;
+    margin-top: 20px;
     @include media-query($small) {
-      display: inline-flex;
-      margin-top: 20px;
+      display: none;
     }
   }
 }
@@ -61,7 +61,8 @@ header{
 }
 
 .header-nav-hide {
+  display: none;
   @include media-query($small) {
-    display: none;
+    display: inline-block;
   }
 }

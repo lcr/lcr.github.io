@@ -36,9 +36,9 @@
 .pagination-first,
 .pagination-last,
 .pagination-more {
-  display: block;
+  display: none;
   @include media-query($small) {
-    display: none;
+    display: block;
   }
 }
 
