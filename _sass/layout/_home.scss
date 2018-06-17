@@ -70,14 +70,18 @@
 }
 
 .post-excerpt {
-  display: block;
+  display: flex;
+  justify-content: center;
   margin-top: $spacing-unit;
   
   span {
-    display: inline-block;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     border: $red-color 2px solid;
     border-radius: $spacing-unit;
-    padding: ($spacing-unit / 3) $spacing-unit;
+    width: 90%;
+    height: $spacing-unit * 1.5;
     font-size: $base-font-size * 1.5;
     letter-spacing: -1px;
     color: $red-color;
@@ -85,6 +89,11 @@
   }
   
   @include media-query($small){
+    justify-content: flex-start;
+    span{
+      width: $spacing-unit * 6;
+      height: $spacing-unit * 2;
+    }
     &:hover span{
       background: $red-color;
       color: $white-color;
