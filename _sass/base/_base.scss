@@ -93,10 +93,13 @@ p > a {
   color: inherit;
   transition: all $time ease-in-out;
   &:after {
-    content: url("/assets/img/link.svg");
+    content: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14'>
+<path d='M11.2 7c-0.42 0-0.7 0.28-0.7 0.7v4.2c0 0.42-0.28 0.7-0.7 0.7h-7.7c-0.42 0-0.7-0.28-0.7-0.7v-7.7c0-0.42 0.28-0.7 0.7-0.7h4.2c0.42 0 0.7-0.28 0.7-0.7s-0.28-0.7-0.7-0.7h-4.2c-1.19 0-2.1 0.91-2.1 2.1v7.7c0 1.19 0.91 2.1 2.1 2.1h7.7c1.19 0 2.1-0.91 2.1-2.1v-4.2c0-0.42-0.28-0.7-0.7-0.7z'></path>
+<path d='M13.93 0.42c-0.070-0.14-0.21-0.28-0.35-0.35-0.070-0.070-0.21-0.070-0.28-0.070h-4.2c-0.42 0-0.7 0.28-0.7 0.7s0.28 0.7 0.7 0.7h2.52l-6.51 6.51c-0.28 0.28-0.28 0.7 0 0.98 0.14 0.14 0.28 0.21 0.49 0.21s0.35-0.070 0.49-0.21l6.51-6.51v2.52c0 0.42 0.28 0.7 0.7 0.7s0.7-0.28 0.7-0.7v-4.2c0-0.070 0-0.21-0.070-0.28z'></path>
+</svg>");
     margin-left: 6px;
   }
-  @include hover{
+  @include hover {
     border-bottom: 2px solid $red-color;
   }
 }
@@ -108,7 +111,7 @@ blockquote {
   border-left: 4px solid $grey-color;
   padding: 1rem;
   background: $light-grey-color;
-  p:last-child{
+  p:last-child {
     margin-bottom: 0;
   }
 }
@@ -188,7 +191,7 @@ h3[id^="markdown"] {
 }
 
 h3[id^="css"],
-h3[id^="scss"]{
+h3[id^="scss"] {
   background: linear-gradient(135deg, #7983ff, #5f9de9);
 }
 
