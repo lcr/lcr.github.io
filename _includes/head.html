@@ -9,7 +9,8 @@
     {{ page.title | escape }} - {{ site.title | escape }}
     {%- endif -%}
   </title>
-  <link rel="stylesheet" href="{{'/assets/main.css' | relative_url}}">
+  <!--<link rel="stylesheet" href="{{'/assets/main.css' | relative_url}}">-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lcr/lcr.github.io/assets/main.css">
   <meta name="description" content="{%- if page.title == 'Home' -%}{{ site.description | normalize_whitespace | truncate: 160 | escape }}{%- elsif page.description -%}{{ page.description | normalize_whitespace | truncate: 160 | escape }}{%- else -%}{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}{%- endif -%}">
   <meta name="keywords" content="{{ site.keywords }}">
   <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
