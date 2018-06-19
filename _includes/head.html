@@ -13,7 +13,7 @@
   <meta name="description" content="{%- if page.title == 'Home' -%}{{ site.description | normalize_whitespace | truncate: 160 | escape }}{%- elsif page.description -%}{{ page.description | normalize_whitespace | truncate: 160 | escape }}{%- else -%}{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}{%- endif -%}">
   <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-  <link rel="canonical" href="{{ page.url | replace:'index.html' | absolute_url | prepend: site.url}}">
+  <link rel="canonical" href="{{ page.url | replace:'index.html' | absolute_url }}">
   <script async src="https://cdn.jsdelivr.net/npm/ga-lite@2/dist/ga-lite.min.js"></script>
   <script>
     var galite = galite || {};
