@@ -1,6 +1,7 @@
 ---
 title: Jekyll网站添加谷歌分析
 categories: Jekyll
+description: 介绍谷歌分析添加到Jekyll网站的方法，以及使用cdn加速和缓存脚本来解决中国大陆加载慢的问题
 ---
 
 谷歌分析是谷歌提供的免费网络分析服务，用于跟踪和报告网站流量。将谷歌分析添加到Jekyll网站十分简单。
