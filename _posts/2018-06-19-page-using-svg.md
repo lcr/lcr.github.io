@@ -6,7 +6,7 @@ description: 网页使用svg的实现方式，直接在HTML写入，或者CSS伪
 
 假设想要在超链接后面插入一个名为`link.svg`的小图标，有多少种实现方式呢？Demo：[anchor](https://lcr.github.io/)
 
-## 方式1 `link.svg`放在img文件夹中，在<img>元素内包含svg
+## 方式1 `link.svg`放在img文件夹中，在img元素内包含svg
 
 ```html
 <a>anchor<img src="/img/link.svg"></a>
