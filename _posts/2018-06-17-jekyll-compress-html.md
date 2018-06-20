@@ -38,4 +38,4 @@ compress_html:
   startings: []
 ```
 
-[官方文档](http://jch.penibelst.de/)
+[官方文档](http://jch.penibelst.de/){:target="_blank"}

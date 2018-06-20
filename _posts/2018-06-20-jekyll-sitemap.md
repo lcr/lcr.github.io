@@ -23,6 +23,6 @@ plugins:
 
 此时站点地图已创建，但在根目录是不可见的，查看站点地图可在浏览器输入`yourwebsite.com/sitemap.xml`
 
-[官方文档](https://github.com/jekyll/jekyll-sitemap)
+[官方文档](https://github.com/jekyll/jekyll-sitemap){:target="_blank"}
 
 另外，想要文章马上被谷歌索引，可使用Google抓取工具，主动请求编入索引，几分钟内就会抓取并编入索引。

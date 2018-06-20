@@ -26,7 +26,7 @@ description: 如果你想要注册的GitHub用户名被别人注册了，而他�
 > 
 > You are in luck — we have classified the lcr account as inactive and released the username for you to claim, as per our Name Squatting Policy:
 > 
-> [https://help.github.com/articles/name-squatting-policy](https://help.github.com/articles/name-squatting-policy/)
+> [https://help.github.com/articles/name-squatting-policy](https://help.github.com/articles/name-squatting-policy/){:target="_blank"}
 > 
 > Be quick, as the username is now publicly available!
 > 

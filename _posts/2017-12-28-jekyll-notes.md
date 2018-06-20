@@ -6,7 +6,7 @@ description: About using Jekyll
 
 ## Install Jekyll on Windows7
 
-- Install [Ruby+Devkit 2.5.1-1](https://rubyinstaller.org/downloads/)
+- Install [Ruby+Devkit 2.5.1-1](https://rubyinstaller.org/downloads/){:target="_blank"}
 
 - Install Jekyll and Bundler gems through RubyGems
 
