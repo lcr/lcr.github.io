@@ -1,5 +1,5 @@
 ---
-title: a标签整行可点击
+title: 整行可点击，背景不整行
 categories: CSS
 description: a标签简短且带有边框背景色，同时整行可点击的实现方式，增强网站易用性
 ---

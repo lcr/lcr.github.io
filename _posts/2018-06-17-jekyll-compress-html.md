@@ -1,5 +1,5 @@
 ---
-title: 压缩Jekyll HTML
+title: 压缩Jekyll网站的HTML
 categories: Jekyll
 description: 使用Liquid压缩Jekyll网站的HTML
 ---

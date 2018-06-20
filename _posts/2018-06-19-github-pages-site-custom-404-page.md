@@ -3,7 +3,7 @@ title: GitHub Pages 网站自定义404页面
 categories: GitHub
 ---
 
-首先站点根目录新建名为`404.html`或`404.md`的文件
+首先站点根目录新建名为`404.html`或`404.md`的文件,
 
 然后在文件头部写入
 

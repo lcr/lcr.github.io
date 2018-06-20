@@ -14,7 +14,7 @@ group :jekyll_plugins do
 end
 ```
 
-然后添加以下代码到`_config.yml`并Commit
+然后添加以下代码到`_config.yml`并Commit。
 
 ```text
 plugins: 
@@ -25,4 +25,4 @@ plugins:
 
 [官方文档](https://github.com/jekyll/jekyll-sitemap)
 
-另外，想要文章马上被谷歌索引，可以使用Google抓取工具，主动请求编入索引，几分钟内就会抓取并编入索引。
+另外，想要文章马上被谷歌索引，可使用Google抓取工具，主动请求编入索引，几分钟内就会抓取并编入索引。
