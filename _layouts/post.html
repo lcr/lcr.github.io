@@ -6,7 +6,7 @@ layout: default
 
   <div class="page-title">
     {% if page.date %}
-    <h1 class="page-title-item" itemprop="name">{{ page.title | escape }}</h1>
+    <h1 itemprop="name">{{ page.title | escape }}</h1>
     {% assign date_format = site.date_format | default: "%B %d, %Y" %}
     <div class="page-date">{% include svg/calendar.svg %}{{ page.date | date: date_format }}</div>
     {% endif %}

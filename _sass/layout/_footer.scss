@@ -30,17 +30,18 @@ footer {
 .social {
   margin-top: $spacing-unit * 2;
   margin-bottom: $spacing-unit;
-  
-  li {
-    display: inline-block;
-    margin: 0 10px;
-    
-    a {
-      fill: $white-color;
-      @include hover {
-        fill: $grey-color;
-      }
-    }
+}
+
+.social-item {
+  display: inline-block;
+  margin: 0 10px;
+  fill: $white-color;
+  transition: opacity $time;
+}
+
+@include media-query($small){
+  .social:hover .social-item:not(:hover) {
+    opacity: .5;
   }
 }
 
