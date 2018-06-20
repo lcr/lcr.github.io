@@ -1,7 +1,7 @@
 ---
 title: Markdown Notes
 categories: Markdown
-description: About using Markdown,simple and easy 
+description: About how to writing with Markdown
 ---
 
 ## Headers

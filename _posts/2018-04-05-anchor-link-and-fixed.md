@@ -1,10 +1,10 @@
 ---
-title: Fixed定位元素不遮住锚点
+title: 锚点定位遇上fixed元素
 categories: CSS
-description: 页面header使用fixed定位,锚点定位元素被遮住，纯CSS的解决办法
+description: 页面header使用fixed,锚点定位元素被header遮住，纯CSS的解决办法
 ---
 
-点击锚点链接跳转，锚点元素会滑动到浏览器顶端，可是如果你有一个fixed定位的导航栏，导航栏会把锚点元素遮挡住
+点击锚点链接，锚点定位元素会跳转到浏览器顶端，可是如果你有一个fixed定位的导航栏，导航栏会把锚点元素遮挡住
 
 解决办法：
 

@@ -1,7 +1,7 @@
 ---
 title: Jekyll网站创建站点地图
 categories: Jekyll
-description: 关于使用Jekyll-sitemap创建站点地图的教程，简单两个步骤
+description: 关于使用Jekyll-sitemap创建站点地图的教程
 ---
 
 Jekyll网站默认没有站点地图，但我们可以创建一个。

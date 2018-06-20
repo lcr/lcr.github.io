@@ -1,5 +1,5 @@
 ---
-title: 纯CSS手风琴垂直导航
+title: 纯CSS手风琴导航
 categories: CSS
 description: 纯CSS制作的手风琴垂直导航，主要使用input checked,带动画效果
 ---

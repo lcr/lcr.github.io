@@ -1,7 +1,7 @@
 ---
 title: 多肉于2017年冬
 categories: [Succulents, Photography]
-description: 用照片记录下2017年冬天阳台多肉植物的美艳状态
+description: 照片记录下2017年冬天阳台多肉植物的状态
 ---
 
 乙女心
