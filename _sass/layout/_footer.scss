@@ -38,12 +38,8 @@ footer {
 
 .social-item {
   fill: $white-color;
-  transition: opacity $time;
-}
-
-@include media-query($small){
-  .social:hover .social-item:not(:hover) {
-    opacity: .5;
+  @include hover{
+    fill: $grey-color
   }
 }
 
