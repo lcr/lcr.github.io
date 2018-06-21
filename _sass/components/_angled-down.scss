@@ -1,14 +1,5 @@
-.angled-down {
-  bottom: 0;
-  z-index: 5;
-  width: 50%;
-  height: 200px;
-  pointer-events: none;
-}
-
 .angled-down-left {
   @include angled-edge('inside bottom', 'upper right', $white-color, $width: 2000, $height: 200);
-  position: absolute;
   left: 0;
   
   &::after {
@@ -18,10 +9,18 @@
 
 .angled-down-right {
   @include angled-edge('inside bottom', 'upper left', $white-color, $width: 2000, $height: 200);
-  position: absolute;
   right: 0;
   
   &::after {
     background-position: left center;
   }
+}
+
+.angled-down {
+  position: absolute;
+  bottom: 0;
+  z-index: 5;
+  width: 50%;
+  height: 200px;
+  pointer-events: none;
 }

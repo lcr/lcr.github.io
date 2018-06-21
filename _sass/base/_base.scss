@@ -63,23 +63,21 @@ h3 {
  * Images
  */
 img {
-  padding: 5px;
-  border: 1px solid $grey-color;
-  border-radius: 5px;
+  border-radius: 4px;
   max-width: 100%;
-  vertical-align: middle;
+  //vertical-align: middle;
 }
 
 /*
  * Figures
  */
-figure > img {
-  display: block;
-}
-
-figcaption {
-  font-size: $base-font-size * 0.875;
-}
+//figure > img {
+//  display: block;
+//}
+//
+//figcaption {
+//  font-size: $base-font-size * 0.875;
+//}
 
 /*
  * Links
@@ -125,7 +123,7 @@ code {
 }
 
 code {
-  padding: 3px 6px 4px;
+  padding: 4px;
 }
 
 pre {

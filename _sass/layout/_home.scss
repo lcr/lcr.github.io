@@ -1,7 +1,6 @@
 /*
  * Home Page
  */
-
 .post-list {
   @include content-width;
 }
@@ -63,14 +62,8 @@
   display: flex;
   align-items: center;
   margin-bottom: $spacing-unit / 2;
-  
-  font: {
-    style: italic;
-    size: $base-font-size * 0.875;
-  }
-  
   svg {
-    margin-right: 6px;
+    margin-right: 8px;
   }
 }
 
@@ -93,7 +86,6 @@
   }
   
   @include hover {
-    
     span {
       background: $red-color;
       color: $white-color;
