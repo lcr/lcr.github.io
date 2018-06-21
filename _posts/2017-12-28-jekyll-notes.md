@@ -32,6 +32,7 @@ change Gemfile and _config.yml，  run
 
 ```
 bundle install
+bundle
 ```
 
 <!-- more -->
