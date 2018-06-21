@@ -91,7 +91,7 @@ var myAutocomplete = autocomplete('#searchInput', {hint: false, debug: true}, [
       },
     }
   }
-]).on('autocomplete:selected', function (event, suggestion) {
+]).on('autocomplete:selected', function (event, suggestion, dataset) {
   location.href = suggestion.url;
 });
 
