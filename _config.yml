@@ -7,9 +7,6 @@ description: Leslie Lai,front end developer,writing mostly about CSS and JavaScr
 baseurl: ""
 url: "https://lcr.github.io"
 
-plugins:
-  - jekyll-sitemap
-
 permalink: /:title/
 
 paginate: 5
