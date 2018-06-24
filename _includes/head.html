@@ -4,9 +4,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <title>
     {%- if page.title == "Home" -%}
-    {{ site.title | escape }} - Front end development
+    {{ site.title | escape }}&nbsp;-&nbsp;Front end development
     {%- else -%}
-    {{ page.title | escape }} - {{ site.title | escape }}
+    {{ page.title | escape }}&nbsp;-&nbsp;{{ site.title | escape }}
     {%- endif -%}
   </title>
   <link rel="stylesheet" href="{{'/assets/main.css' | relative_url}}">
