@@ -3,48 +3,44 @@
 }
 
 .archive-group {
-  
   &:not(:last-child) {
     border-bottom: 1px solid $grey-color;
   }
-  
-  input {
-    display: none;
+}
+
+.archive-input {
+  display: none;
+}
+
+.archive-label {
+  display: block;
+  padding: 16px 0;
+  font-size: $base-font-size * 2;
+  cursor: pointer;
+  svg {
+    transition: all $time linear;
   }
-  
-  label {
-    display: block;
-    padding: 16px 0;
-    font-size: $base-font-size * 2;
-    cursor: pointer;
-    
-    @include hover {
-      color: $red-color;
-      fill: $red-color;
-    }
-    
-    svg {
-      transition: all $time linear;
-    }
+  @include hover {
+    color: $red-color;
+    fill: $red-color;
   }
-  
-  input ~ .archive-item {
-    margin-left: $spacing-unit;
-    height: 0;
-    overflow: hidden;
-  }
-  
-  input:checked ~ .archive-item {
-    height: auto;
-  }
-  
-  input:checked + label {
-    
-    svg {
-      -webkit-transform: rotate(180deg);
-      transform: rotate(180deg);
-      fill: $red-color;
-    }
+}
+
+.archive-input ~ .archive-item {
+  margin-left: $spacing-unit;
+  height: 0;
+  overflow: hidden;
+}
+
+.archive-input:checked ~ .archive-item {
+  height: auto;
+}
+
+.archive-input:checked + label {
+  svg {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+    fill: $red-color;
   }
 }
 
