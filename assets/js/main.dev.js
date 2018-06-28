@@ -2,7 +2,7 @@
  * Hide Menu on Scroll
  */
 var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
+window.onscroll = function () {
   var currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
     document.getElementById("navbar").style.top = "0";
@@ -25,7 +25,7 @@ var searchNav = document.querySelector("#searchNav");
 /* Search Open*/
 searchOpen.addEventListener("click", function (event) {
   event.preventDefault();
-  searchPage.style.transform = "translateY(100vh)";
+  searchPage.style.height = "100%";
   searchInput.focus();
   setTimeout(function () {
     document.body.style.overflowY = 'hidden';
@@ -35,7 +35,7 @@ searchOpen.addEventListener("click", function (event) {
 /* Search Close by click */
 document.querySelector("#searchClose").addEventListener("click", function (event) {
   event.preventDefault();
-  searchPage.style.transform = 'translateY(-100vh)';
+  searchPage.style.height = "0";
   document.body.style.overflowY = 'visible';
 });
 
@@ -43,7 +43,7 @@ document.querySelector("#searchClose").addEventListener("click", function (event
 searchPage.addEventListener("keyup", function (event) {
   event.preventDefault();
   if (event.keyCode === 27) {
-    searchPage.style.transform = 'translateY(-100vh)';
+    searchPage.style.height = "0";
     document.body.style.overflowY = 'visible';
   }
 });
