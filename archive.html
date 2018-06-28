@@ -22,7 +22,7 @@ description: The categories of the posts
       {% capture category_name %}{{ category | first }}{% endcapture %}
       <a class="archive-anchor" id="{{ category_name | slugify }}"></a>
       <input class="archive-input" type="checkbox" id="#{{ category_name | slugify }}">
-      <label class="archive-label" for="#{{ category_name | slugify }}">{% include svg/arrow.svg %}{{ category_name }}<span class="archive-number">{{ category | last | size }}</span></label>
+      <label class="archive-label" for="#{{ category_name | slugify }}">{% include svg/arrow-down.svg %}{{ category_name }}<span class="archive-number">{{ category | last | size }}</span></label>
 
       <div class="archive-item">
         {% for post in site.categories[category_name] %}

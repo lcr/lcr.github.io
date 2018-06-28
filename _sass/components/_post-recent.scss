@@ -3,7 +3,9 @@
  */
 .post-newer,
 .post-older {
+  display: block;
   padding: $spacing-unit 0;
+  width: 50%;
   font-size: $base-font-size * 2;
   color: darken($grey-color, 25%);
   fill: darken($grey-color, 25%);
@@ -15,22 +17,10 @@
 }
 
 .post-newer {
-  display: block;
   float: left;
-  width: 50%;
-  svg {
-    -webkit-transform: rotate(90deg);
-    transform: rotate(90deg);
-  }
 }
 
 .post-older {
-  display: block;
   float: right;
-  width: 50%;
   text-align: right;
-  svg {
-    -webkit-transform: rotate(270deg);
-    transform: rotate(270deg);
-  }
 }

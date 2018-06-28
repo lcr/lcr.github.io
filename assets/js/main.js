@@ -12,6 +12,7 @@ window.onscroll = function() {
   prevScrollpos = currentScrollPos;
 };
 
+
 /*
  * search
  */
@@ -24,7 +25,7 @@ var searchNav = document.querySelector("#searchNav");
 /* Search Open*/
 searchOpen.addEventListener("click", function (event) {
   event.preventDefault();
-  searchPage.style.transform = "translateY(100vh)";
+  searchPage.style.height = "100%";
   searchInput.focus();
   setTimeout(function () {
     document.body.style.overflowY = 'hidden';
@@ -34,7 +35,7 @@ searchOpen.addEventListener("click", function (event) {
 /* Search Close by click */
 document.querySelector("#searchClose").addEventListener("click", function (event) {
   event.preventDefault();
-  searchPage.style.transform = 'translateY(-100vh)';
+  searchPage.style.height = "0";
   document.body.style.overflowY = 'visible';
 });
 
@@ -42,7 +43,7 @@ document.querySelector("#searchClose").addEventListener("click", function (event
 searchPage.addEventListener("keyup", function (event) {
   event.preventDefault();
   if (event.keyCode === 27) {
-    searchPage.style.transform = 'translateY(-100vh)';
+    searchPage.style.height = "0";
     document.body.style.overflowY = 'visible';
   }
 });
@@ -100,6 +101,7 @@ if (urlHash.length > 0) {
   var inputCheck = document.getElementById(urlHash);
   inputCheck.checked = true;
 }
+
 
 /*
  * Comment Form

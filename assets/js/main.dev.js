@@ -1,17 +1,16 @@
 /*
- * Headroom
+ * Hide Menu on Scroll
  */
-var Header = document.querySelector('.js-headroom');
-var headroom = new Headroom(Header, {
-  "offset": 50,
-  "tolerance": 5,
-  classes: {
-    initial: "js-headroom",
-    pinned: "js-headroom--pinned",
-    unpinned: "js-headroom--unpinned"
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-75px";
   }
-});
-headroom.init();
+  prevScrollpos = currentScrollPos;
+};
 
 
 /*
@@ -102,6 +101,7 @@ if (urlHash.length > 0) {
   var inputCheck = document.getElementById(urlHash);
   inputCheck.checked = true;
 }
+
 
 /*
  * Comment Form

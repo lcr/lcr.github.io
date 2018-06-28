@@ -20,7 +20,6 @@ footer {
   height: $spacing-unit * 1.5;
   svg {
     fill: $white-color;
-    transform: rotate(180deg);
   }
   @include hover {
     border: $white-color 1px solid;

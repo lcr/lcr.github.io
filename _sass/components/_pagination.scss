@@ -49,13 +49,3 @@
     fill: lighten($red-color, 15%)
   }
 }
-
-.arrow-left svg {
-  -webkit-transform: rotate(90deg);
-  transform: rotate(90deg);
-}
-
-.arrow-right svg {
-  -webkit-transform: rotate(270deg);
-  transform: rotate(270deg);
-}
