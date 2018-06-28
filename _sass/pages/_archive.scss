@@ -75,9 +75,7 @@
         width: 100%;
         height: 1px;
         background: $red-purple-color;
-        transition: -webkit-transform $time;
         transition: transform $time;
-        transition: transform $time, -webkit-transform $time;
         -webkit-transform: scaleX(0);
         transform: scaleX(0);
         -webkit-transform-origin: left center;
