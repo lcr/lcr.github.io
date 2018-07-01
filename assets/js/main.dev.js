@@ -98,7 +98,7 @@ var myAutocomplete = autocomplete('#searchInput', {hint: false, debug: true}, [
 /* Archive page Accordion Check */
 var urlHash = window.location.hash;
 if (urlHash.length > 0) {
-  var inputCheck = document.getElementById(urlHash);
+  var inputCheck = document.getElementById("urlHash");
   inputCheck.checked = true;
 }
 
