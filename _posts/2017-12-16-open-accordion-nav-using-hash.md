@@ -1,7 +1,7 @@
 ---
 title: 锚点跳转并展开手风琴
 categories: JavaScript
-description: 手风琴使用input check方式，使用location.hash获取URL锚部分，然后设置锚部分对应的input为checked
+description: 使用location.hash获取URL锚部分，然后给手风琴对应的项目模拟一个点击事件
 ---
 
 假设文章分类都在同一分类页，分类页有分类名称和文章标题，并且用手风琴菜单把文章标题折叠起来，点击某一分类名称，会展开对应的文章标题。

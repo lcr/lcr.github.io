@@ -1,13 +1,10 @@
 .archive {
-  
   @include content-width;
 }
 
 .accordion {
   border: none;
-  &:not(:first-child) {
-    border-top: 1px solid $grey-color;
-  }
+  border-top: 1px solid $grey-color;
   padding: 16px 0;
   background: none;
   width: 100%;
