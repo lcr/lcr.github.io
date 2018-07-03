@@ -14,15 +14,12 @@ description: 手风琴使用input check方式，使用location.hash获取URL锚�
 
 实现方式也是很简单，由于使用了锚链，可以用`location.hash`获取URL中锚部分，然后给手风琴菜单对应的分类名称模拟一个点击事件。
 
-比如我的手风琴菜单是input check方式制作的，获取了hash之后，就把hash对应的input设为checked。
-
 ### JavaScript
 
 ```javascript
 var urlHash = window.location.hash;
 if (urlHash.length > 0) {
-  var inputCheck = document.getElementById(urlHash);
-  inputCheck.checked = true;
+  document.getElementById(urlHash).click();
 }
 ```
 
