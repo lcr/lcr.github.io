@@ -31,7 +31,6 @@
 }
 
 .panel {
-  margin-left: $spacing-unit;
   max-height: 0;
   overflow: hidden;
   transition: max-height $time ease-out;
