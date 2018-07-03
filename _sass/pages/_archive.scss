@@ -2,23 +2,21 @@
   @include content-width;
 }
 
-.archive-group {
-  &:not(:last-child) {
-    border-bottom: 1px solid $grey-color;
+.accordion {
+  border: none;
+  &:not(:first-child) {
+    border-top: 1px solid $grey-color;
   }
-}
-
-.archive-input {
-  display: none;
-}
-
-.archive-label {
-  display: block;
   padding: 16px 0;
+  background: none;
+  width: 100%;
   font-size: $base-font-size * 2;
   cursor: pointer;
+  text-align: left;
+  outline: none;
+  transition: $time;
   svg {
-    transition: all $time linear;
+    transition: transform $time;
   }
   @include hover {
     color: $red-color;
@@ -26,17 +24,7 @@
   }
 }
 
-.archive-input ~ .archive-item {
-  margin-left: $spacing-unit;
-  height: 0;
-  overflow: hidden;
-}
-
-.archive-input:checked ~ .archive-item {
-  height: auto;
-}
-
-.archive-input:checked + label {
+.active {
   svg {
     -webkit-transform: rotate(180deg);
     transform: rotate(180deg);
@@ -44,12 +32,12 @@
   }
 }
 
-//.archive-anchor {
-//  display: block;
-//  position: relative;
-//  top: -($spacing-unit * 2.5);
-//  visibility: hidden;
-//}
+.panel {
+  margin-left: $spacing-unit;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height $time ease-out;
+}
 
 .archive-number {
   float: right;
