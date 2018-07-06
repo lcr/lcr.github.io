@@ -95,11 +95,26 @@ var myAutocomplete = autocomplete('#searchInput', {hint: false, debug: true}, [
 });
 
 
-/* Archive page Accordion Check */
+
+/*
+ * Archive accordion
+ */
+var acc = document.getElementsByClassName("accordion");
+for (var i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+}
+
 var urlHash = window.location.hash;
 if (urlHash.length > 0) {
-  var inputCheck = document.getElementById("urlHash");
-  inputCheck.checked = true;
+  document.getElementById(urlHash).click();
 }
 
 
