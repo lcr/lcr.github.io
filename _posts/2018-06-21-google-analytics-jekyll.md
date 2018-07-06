@@ -59,7 +59,7 @@ google_analytics: UA—XXXXXXXX-X
 
 上面代码表示只有在生产环境下，才运行谷歌分析，GitHub Pages默认设置是生产环境。
 
-问题来了，天朝不能正常访问谷歌啊，如果添加了谷歌分析，访客打开网页时，加载跟踪代码会导致网页速度下降。
+问题来了，中国大陆不能正常访问谷歌啊，如果添加了谷歌分析，访客打开网页时，加载跟踪代码会导致网页速度下降。
 
 幸运的是 [jsDelivr CDN works in China](https://www.jsdelivr.com/network#china){:target="_blank"}
 
@@ -77,4 +77,4 @@ galite('send', 'pageview');
 </script>
 ```
 
-[ga-lite](https://github.com/jehna/ga-lite){:target="_blank"}不仅解决了谷歌分析跟踪代码在天朝影响加载速度的问题，还解决了官方脚本只缓存2个小时的问题。
+[ga-lite](https://github.com/jehna/ga-lite){:target="_blank"}不仅解决了谷歌分析跟踪代码在中国大陆影响加载速度的问题，还解决了官方脚本只缓存2个小时的问题。

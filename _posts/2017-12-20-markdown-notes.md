@@ -25,7 +25,7 @@ __bold__ `__bold__` or `**bold**`
 
 img `![alt](https://example.jpg)`
 
-link [link](https://lcr.github.io/) `[link](https://example.com/)`  or  `[link](https://example.com/){:target="_blank"}`
+[link](https://lcr.github.io/) `[link](https://example.com/)`  or  `[link](https://example.com/){:target="_blank"}`
 
 <!-- more -->
 
