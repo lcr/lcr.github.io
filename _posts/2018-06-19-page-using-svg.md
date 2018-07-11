@@ -14,15 +14,11 @@ description: 网页使用svg的各种实现方式，直接在HTML写入，或者
 
 ## 方式2 - 直接在HTML写入
 
-### HTML
-
 ```html
 <a>anchor<svg>...</svg></a>
 ```
 
 ## 方式3 - `link.svg`放在img文件夹中，使用CSS伪类
-
-### CSS
 
 ```css
 a:after {
@@ -34,13 +30,10 @@ a:after {
 
 ## 方式4 - 直接在CSS用伪类
 
-### CSS
-
 ```css
 a:after {
   content: url("data:image/svg+xml;utf8,<svg>...</svg>");
 }
 ```
-
 
 由于我的网站是Jekyll生成，`link.svg`只是装饰作用，目前使用第4种方式，可以减少对服务器的资源请求。
