@@ -27,6 +27,11 @@
 
 .category-item {
   color: $red-color;
+  border-bottom: 2px dashed $grey-color;
+  transition: border-bottom $time;
+  @include hover{
+    border-bottom: 2px solid $red-color;
+  }
 }
 
 .container-grey {
