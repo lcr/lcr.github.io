@@ -14,8 +14,6 @@ description: 使用location.hash获取URL锚部分，然后给手风琴对应的
 
 实现方式也是很简单，由于使用了锚链，可以用`location.hash`获取URL中锚部分，然后给手风琴对应的分类名称模拟一个点击事件。
 
-### JavaScript
-
 ```javascript
 var urlHash = window.location.hash;
 if (urlHash.length > 0) {

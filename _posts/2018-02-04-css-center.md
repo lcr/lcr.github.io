@@ -124,17 +124,3 @@ margin-top: -25px;
 height: 50px;
 }
 ```
-
----
-
-## 水平垂直居中
-
-1.flex实现水平垂直居中
-
-```css
-.parent {
-display: flex;
-align-items: center;
-justify-content: center;
-}
-```
