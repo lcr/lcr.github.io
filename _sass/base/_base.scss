@@ -120,6 +120,8 @@ blockquote {
  */
 pre,
 code {
+  font-family: inherit;
+  letter-spacing: 1px;
   background: $light-grey-color;
 }
 
