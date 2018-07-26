@@ -1,6 +1,6 @@
 ---
 title: 多肉植物的学名
-categories: Succulents
+categories: Random
 description: 表格归类下目前阳台多肉植物的学名、科、属、原生地或杂交血统
 ---
 
