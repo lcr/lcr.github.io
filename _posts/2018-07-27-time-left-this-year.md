@@ -27,7 +27,7 @@ customjs:
 }
 </style>
 
-<p id="leftThisYear"></p>
+<p id="leftThisYear">EXPIRED</p>
 
 {% for js in page.customjs %}
 <script src="{{ js }}"></script>
