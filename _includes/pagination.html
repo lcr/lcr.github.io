@@ -23,7 +23,7 @@
   {% if paginator.previous_page %}
   <a class="pagination-item" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" title="Previous">{% include svg/arrow-left.svg %}</a>
   {% else %}
-  <span class="pagination-item icon-lighten">{% include svg/arrow-left.svg %}</span>
+  <span class="pagination-item pagination-not-allowed">{% include svg/arrow-left.svg %}</span>
   {% endif %}
 
   {% if start > 1 %}
@@ -49,7 +49,7 @@
   {% if paginator.next_page %}
   <a class="pagination-item" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" title="Next">{% include svg/arrow-right.svg %}</a>
   {% else %}
-  <span class="pagination-item icon-lighten">{% include svg/arrow-right.svg %}</span>
+  <span class="pagination-item pagination-not-allowed">{% include svg/arrow-right.svg %}</span>
   {% endif %}
 </div>
 {% endif %}

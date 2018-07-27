@@ -16,9 +16,9 @@ description: 如果你想要注册的GitHub用户名被别人注册了，而他�
 
 并附上截图：
 
-![Screenshots-1](/assets/img/20171231/github-account1.jpg)
+![Screenshots-1](/assets/posts-img/20171231/github-account1.jpg)
 
-![Screenshots-2](/assets/img/20171231/github-account2.jpg)
+![Screenshots-2](/assets/posts-img/20171231/github-account2.jpg)
 
 几分钟后，惊喜的收到了GitHub的好消息
 

@@ -28,7 +28,7 @@
   border-radius: 100%;
   color: $white-color;
   background: $red-color;
-  cursor: default;
+  cursor: not-allowed;
   @include hover {
     color: $white-color;
   }
@@ -43,9 +43,10 @@
   }
 }
 
-.icon-lighten {
-  fill: lighten($black-color, 50%);
+.pagination-not-allowed {
+  cursor: not-allowed;
+  fill: lighten($black-color, 60%);
   @include hover {
-    fill: lighten($red-color, 15%)
+    fill: lighten($black-color, 60%);
   }
 }
