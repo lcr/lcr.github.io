@@ -1,6 +1,6 @@
 ---
 title: 多肉于2017年冬
-categories: Random
+categories: Plants
 description: 照片记录下2017年冬天阳台多肉植物的状态
 ---
 

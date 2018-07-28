@@ -1,6 +1,6 @@
 ---
 title: 田野里的紫云英
-categories: Random
+categories: Plants
 description: 田野里面的紫云英不仅好看，而且还是很好的蜜源和肥料。
 ---
 

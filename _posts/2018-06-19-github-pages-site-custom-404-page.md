@@ -1,5 +1,5 @@
 ---
-title: GitHub Pages 网站自定义404页面
+title: GitHub Pages网站自定义404页面
 categories: GitHub
 description: 自定义GitHub Pages 网站404页面的方法
 ---

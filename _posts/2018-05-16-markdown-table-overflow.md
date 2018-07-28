@@ -1,5 +1,5 @@
 ---
-title: Markdown table 自动修剪溢出
+title: Markdown table自动修剪溢出
 categories: [Markdown, Jekyll]
 description: 解决Markdown table在Jekyll网站中影响整体布局的问题，自动修剪溢出并显示滚动条
 ---
