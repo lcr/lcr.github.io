@@ -24,6 +24,7 @@
 .post-item-title {
   display: block;
   color: $deep-grey-color;
+  line-height: 1;
   
   @include media-query($small) {
     span {

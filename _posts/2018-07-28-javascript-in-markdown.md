@@ -1,5 +1,5 @@
 ---
-title: Markdown中使用JavaScript
+title: Markdown中使用JS
 categories: Markdown
 ---
 

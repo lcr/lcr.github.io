@@ -6,6 +6,8 @@ description: 表格归类下目前阳台多肉植物的学名、科、属、原�
 
 归类一下目前阳台多肉植物的学名、科、属、原生地或杂交血统
 
+<!-- more -->
+
 <div class="table-wrapper" markdown="block">
 
 中文名 | 学名Binomial name | 科Family | 属Genus | 原生地Origin | 血统Parentage
