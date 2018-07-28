@@ -1,0 +1,16 @@
+.page-about{
+  @include content-width;
+}
+
+.page-about-p {
+  margin: 1.5rem 0;
+  font-size: $base-font-size * 1.625;
+  color: $deep-grey-color;
+  line-height: 1.2;
+  font-weight: 100;
+}
+
+.page-about-hr {
+  margin: 3rem 0;
+  color: $light-grey-color;
+}
