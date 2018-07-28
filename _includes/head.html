@@ -14,7 +14,6 @@
   <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
   <link rel="canonical" href="{{ page.url | replace:'index.html' | absolute_url }}">
-  {%- if jekyll.environment == 'production' -%}
   <script>
     (function(e,t,n,i,s,a,c){e[n]=e[n]||function(){(e[n].q=e[n].q||[]).push(arguments)}
     ;a=t.createElement(i);c=t.getElementsByTagName(i)[0];a.async=true;a.src=s
@@ -23,5 +22,4 @@
     galite('create', '{{ site.google_analytics }}', 'auto');
     galite('send', 'pageview');
   </script>
-  {%- endif -%}
 </head>
