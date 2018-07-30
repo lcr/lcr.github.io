@@ -1,6 +1,7 @@
 ---
 title: Markdown中使用JS
 categories: Markdown
+description: JavaScript代码在Markdown文件中正常解析的方法
 ---
 
 首先在站点目录创建一个js文件`yourscript.js`
