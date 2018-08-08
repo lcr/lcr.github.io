@@ -99,10 +99,10 @@ var myAutocomplete = autocomplete('#searchInput', {hint: false, debug: true}, [
 /*
  * Archive accordion
  */
-var acc = document.getElementsByClassName("accordion");
+var acc = document.getElementsByClassName("archive-category-name");
 for (var i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
+    this.classList.toggle("archive-category-name-active");
     var panel = this.nextElementSibling;
     if (panel.style.maxHeight){
       panel.style.maxHeight = null;

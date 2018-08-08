@@ -16,7 +16,8 @@
   }
 }
 
-.page-title-archive {
+.page-title-archive,
+.page-title-about{
   font-size: $base-font-size * 2;
   @include media-query($small) {
     font-size: $base-font-size * 3;
