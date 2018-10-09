@@ -28,7 +28,7 @@ Change into your new directory
 cd new-site
 ```
 
-change Gemfile and _config.yml，  run
+Change Gemfile and _config.yml，  run
 
 ```
 bundle install
