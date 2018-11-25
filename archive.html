@@ -16,7 +16,8 @@ description: The categories of the posts
   </div>
 
   <div class="page-archive">
-    {% for category in site.categories %}
+    {% assign categories = site.categories | sort %}
+    {% for category in categories %}
     {% capture category_name %}{{ category | first }}{% endcapture %}
     <a id="{{ category_name | slugify }}"></a>
     <button class="archive-category-name" id="#{{ category_name | slugify }}">{% include svg/arrow-down.svg %}{{ category_name }}<span class="archive-category-size">{{ category | last | size }}</span></button>
