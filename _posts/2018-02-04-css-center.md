@@ -6,7 +6,7 @@ description: CSS水平居中、垂直居中、水平垂直居中的各种方法
 
 ## CSS水平居中
 
-1.行内元素的水平居中 
+### 1.文本水平居中
 
 ```css
 .parent {
@@ -14,18 +14,18 @@ description: CSS水平居中、垂直居中、水平垂直居中的各种方法
 }
 ```
 
-2.定宽块级元素的水平居中
+### 2.定宽块级元素的水平居中
 
 ```css
 .parent {
-    width: 600px;
-    margin: 0 auto;
+    margin: auto;
+    width: 100px; /* <100% */
 }
 ```
 
 <!-- more -->
 
-3.不定宽块级元素的水平居中
+### 3.不定宽块级元素的水平居中
 
 ```css
 .parent {
@@ -37,7 +37,7 @@ description: CSS水平居中、垂直居中、水平垂直居中的各种方法
 }
 ```
 
-4.flex布局实现水平居中
+### 4.flex布局实现水平居中
 
 ```css
 .parent {
@@ -46,7 +46,8 @@ description: CSS水平居中、垂直居中、水平垂直居中的各种方法
 }
 ```
 
-5.一大一小块级元素的水平居中,大容器relative，小容器absolute，沿x轴右移50%，margin-left左移本身高度的50%
+### 5.一大一小块级元素的水平居中  
+大容器relative，小容器absolute，沿x轴右移50%，margin-left左移本身高度的50%
 
 ```css
 .parent {
@@ -61,11 +62,26 @@ description: CSS水平居中、垂直居中、水平垂直居中的各种方法
 }
 ```
 
+### 6.使用transform属性
+
+```css
+.parent {
+    position: relative;
+}
+
+.child {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+```
+
 ---
 
 ## CSS垂直居中
 
-1.行内元素垂直居中,line-height等于height;如有n行文字,line-height为height的n分之一
+### 1.文本垂直居中  
+line-height等于height;
 
 ```css
 .parent {
@@ -74,7 +90,30 @@ description: CSS水平居中、垂直居中、水平垂直居中的各种方法
 }
 ```
 
-2.父元素固定 子元素为多行内联文本的垂直居中
+如有n行文字,line-height为height的n分之一  
+或：
+```css
+.parent {
+  line-height: 100px;
+  height: 100px;
+}
+
+.child {
+  line-height: 1.5;
+  display: inline-block;
+  vertical-align: middle;
+}
+```
+
+### 2.使用padding
+
+```css
+.parent {
+    padding: 100px
+}
+```
+
+### 3.父元素固定,子元素为多行内联文本的垂直居中
 
 ```css
 .parent {
@@ -83,7 +122,7 @@ description: CSS水平居中、垂直居中、水平垂直居中的各种方法
 }
 ```
 
-3.flex布局实现垂直居中
+### 4.flex布局实现垂直居中
 
 ```css
 .parent {
@@ -92,7 +131,7 @@ description: CSS水平居中、垂直居中、水平垂直居中的各种方法
 }
 ```
 
-4.定宽块级元素的垂直居中
+### 5.定宽块级元素的垂直居中
 
 ```css
 .parent {
@@ -101,26 +140,41 @@ description: CSS水平居中、垂直居中、水平垂直居中的各种方法
 
 .child {
 /* position:fixed; */
-position: absolute;
-top: 0;
-left: 0;
-bottom: 0;
-right: 0;
-margin: auto 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto 0;
 }
 ```
 
-5.一大一小块级元素的垂直居中,大容器relative，小容器absolute，沿y轴下移50%，margin-top上移本身高度的50%
+### 6.一大一小块级元素的垂直居中  
+大容器relative，小容器absolute，沿y轴下移50%，margin-top上移本身高度的50%
 
 ```css
 .parent {
-position: relative;
+    position: relative;
 }
 
 .child {
-position: absolute;
-top: 50%;
-margin-top: -25px;
-height: 50px;
+    position: absolute;
+    top: 50%;
+    margin-top: -25px;
+    height: 50px;
+}
+```
+
+### 7.使用transform属性
+
+```css
+.parent {
+    position: relative;
+}
+
+.child {
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
 }
 ```
