@@ -1,7 +1,6 @@
 ---
 title: 马齿苋科的紫米粒
 categories: Plants
-description: 
 ---
 
 紫米粒Portulaca gilliesii，马齿苋科马齿苋属。 
