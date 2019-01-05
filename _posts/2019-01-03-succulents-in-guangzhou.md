@@ -48,7 +48,7 @@ description: 广州阳台党分享养护多肉植物的经验，从叶插到收�
 
 ![广州多肉-1](/assets/posts-img/20190104/DSC00226.jpg)
 
-![广州多肉-2](/assets/posts-img/20190104/DSC00229.jpg)
+![广州多肉-2](https://lcr.github.io/assets/posts-img/20190104/DSC00229.jpg)
 
 2018年元旦，晴空万里的一天，阳光在窗外射进来，很适合拍美美的照片，于是拿起相机给它们拍拍图。
 
