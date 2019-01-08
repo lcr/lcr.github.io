@@ -65,9 +65,9 @@ description: 广州阳台党分享养护多肉植物的经验，从叶插到收�
 
 撰稿日，阴雨沉沉，南阳台又背光，但也勉强拍两张图吧。
 
-![广州多肉-3](/assets/posts-img/20190104/DSC00877.JPG)
+![广州多肉](/assets/posts-img/20190104/DSC00877.JPG)
 
-![广州多肉-4](/assets/posts-img/20190104/DSC00878.JPG)
+![广州多肉](/assets/posts-img/20190104/DSC00878.JPG)
 
 扯了那么多，还是说说怎么养的吧。
 
