@@ -40,6 +40,7 @@ bundle
 Build your site
 
 ```
+bundle exec jekyll build
 jekyll build  
 jekyll b
 ```
@@ -47,6 +48,7 @@ jekyll b
 Serve your site locally
 
 ```
+bundle exec jekyll serve
 jekyll server
 jekyll serve
 lekyll s
