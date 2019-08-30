@@ -54,13 +54,20 @@ SOINLOVE系列：7.5折
 
 ## 选款
 
-周大福官方商城 https://www.ctfmall.com/
+周大福官方商城  
+https://www.ctfmall.com/
 
-周大福官方旗舰店（天猫） https://ctf.tmall.com/
+周大福官方旗舰店（天猫）  
+https://ctf.tmall.com/
 
-周大福京东旗舰店 https://ctf.jd.com/
+周大福京东旗舰店  
+https://ctf.jd.com/
 
 国内外的门店（实体店）
+
+soinlove珠宝旗舰店（天猫）
+
+MONOLOGUE旗舰店（天猫）
 
 
 ## 查货
