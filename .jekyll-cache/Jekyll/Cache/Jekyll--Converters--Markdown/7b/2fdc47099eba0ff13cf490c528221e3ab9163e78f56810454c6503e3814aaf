@@ -1,0 +1,23 @@
+I"œ<h2 id="headers">Headers</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># This is an h1
+## This is an h2  
+### This is an h3
+#### This is an h4
+##### This is an h5
+###### This is an h6
+</code></pre></div></div>
+
+<p>Horizontal line: <code class="highlighter-rouge">---</code></p>
+
+<p>break <code class="highlighter-rouge">2 spaces</code></p>
+
+<p><em>italic</em> <code class="highlighter-rouge">_italic_</code> or <code class="highlighter-rouge">*italic*</code></p>
+
+<p><strong>bold</strong> <code class="highlighter-rouge">__bold__</code> or <code class="highlighter-rouge">**bold**</code></p>
+
+<p>img <code class="highlighter-rouge">![alt](https://example.jpg)</code></p>
+
+<p><a href="https://lcr.github.io/">link</a> <code class="highlighter-rouge">[link](https://example.com/)</code>  or  <code class="highlighter-rouge">[link](https://example.com/){:target="_blank"}</code></p>
+
+:ET

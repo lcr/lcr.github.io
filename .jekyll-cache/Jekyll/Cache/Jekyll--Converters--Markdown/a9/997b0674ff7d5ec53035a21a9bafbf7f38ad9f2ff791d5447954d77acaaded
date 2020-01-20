@@ -1,0 +1,30 @@
+I"�<p>假设想要在超链接后面插入一个名为<code class="highlighter-rouge">link.svg</code>的小图标，有多少种实现方式呢？Demo：<a href="#">anchor</a></p>
+
+<h2 id="方式1---linksvg放在img文件夹中在img元素内包含svg">方式1 - <code class="highlighter-rouge">link.svg</code>放在img文件夹中，在img元素内包含svg</h2>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;a&gt;</span>anchor<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/img/link.svg"</span><span class="nt">&gt;&lt;/a&gt;</span>
+</code></pre></div></div>
+
+<h2 id="方式2---直接在html写入">方式2 - 直接在HTML写入</h2>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;a&gt;</span>anchor<span class="nt">&lt;svg&gt;</span>...<span class="nt">&lt;/svg&gt;&lt;/a&gt;</span>
+</code></pre></div></div>
+
+<h2 id="方式3---linksvg放在img文件夹中使用css伪类">方式3 - <code class="highlighter-rouge">link.svg</code>放在img文件夹中，使用CSS伪类</h2>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">a</span><span class="nd">:after</span> <span class="p">{</span>
+  <span class="nl">content</span><span class="p">:</span> <span class="sx">url("/img/link.svg")</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<!-- more -->
+
+<h2 id="方式4---直接在css用伪类">方式4 - 直接在CSS用伪类</h2>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">a</span><span class="nd">:after</span> <span class="p">{</span>
+  <span class="nl">content</span><span class="p">:</span> <span class="sx">url("data:image/svg+xml;utf8,&lt;svg&gt;...&lt;/svg&gt;")</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>由于我的网站是Jekyll生成，<code class="highlighter-rouge">link.svg</code>只是装饰作用，目前使用第4种方式，可以减少对服务器的资源请求。</p>
+:ET
