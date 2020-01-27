@@ -1,0 +1,179 @@
+I"A<h2 id="headers">Headers</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># This is an h1
+## This is an h2  
+### This is an h3
+#### This is an h4
+##### This is an h5
+###### This is an h6
+</code></pre></div></div>
+
+<p>Horizontal line: <code class="highlighter-rouge">---</code></p>
+
+<p>break <code class="highlighter-rouge">2 spaces</code></p>
+
+<p><em>italic</em> <code class="highlighter-rouge">_italic_</code> or <code class="highlighter-rouge">*italic*</code></p>
+
+<p><strong>bold</strong> <code class="highlighter-rouge">__bold__</code> or <code class="highlighter-rouge">**bold**</code></p>
+
+<p>img <code class="highlighter-rouge">![alt](https://example.jpg)</code></p>
+
+<p><a href="https://lcr.github.io/">link</a> <code class="highlighter-rouge">[link](https://example.com/)</code>  or  <code class="highlighter-rouge">[link](https://example.com/){:target="_blank"}</code></p>
+
+<!-- more -->
+
+<h2 id="code">code</h2>
+
+<p><code class="highlighter-rouge">'code'</code> or <code class="highlighter-rouge">...</code></p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>'''html
+<span class="nt">&lt;html&gt;</span>
+  <span class="nt">&lt;head&gt;</span>
+  <span class="nt">&lt;/head&gt;</span>
+  <span class="nt">&lt;body&gt;</span>
+    <span class="nt">&lt;p&gt;</span>Hello World<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+'''
+</code></pre></div></div>
+
+<h2 id="bullet-list">Bullet list</h2>
+
+<ul>
+  <li>First item</li>
+  <li>Second item</li>
+  <li>Third item</li>
+  <li>Fourth item</li>
+</ul>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- First item
+- Second item
+- Third item
+- Fourth item
+</code></pre></div></div>
+
+<h2 id="numbered-list">Numbered list:</h2>
+
+<ol>
+  <li>First item</li>
+  <li>Second item</li>
+  <li>Third item</li>
+  <li>Fourth item</li>
+</ol>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1. First item
+1. Second item
+1. Third item
+1. Fourth item
+</code></pre></div></div>
+
+<h2 id="tables">Tables</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title 1</th>
+      <th>Title 2</th>
+      <th>Title 3</th>
+      <th>Title 4</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>hello world</td>
+      <td>hello world</td>
+      <td>hello world</td>
+      <td>hello world</td>
+    </tr>
+    <tr>
+      <td>hello world</td>
+      <td>hello world</td>
+      <td>hello world</td>
+      <td>hello world</td>
+    </tr>
+    <tr>
+      <td>hello world</td>
+      <td>hello world</td>
+      <td>hello world</td>
+      <td>hello world</td>
+    </tr>
+    <tr>
+      <td>hello world</td>
+      <td>hello world</td>
+      <td>hello world</td>
+      <td>hello world</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Title 1               | Title 2               | Title 3               | Title 4
+--------------------- | --------------------- | --------------------- | ---------------------
+hello world           | hello world           | hello world           | hello world 
+hello world           | hello world           | hello world           | hello world 
+hello world           | hello world           | hello world           | hello world 
+hello world           | hello world           | hello world           | hello world 
+</code></pre></div></div>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title 1</th>
+      <th>Title 2</th>
+      <th>Title 3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>lorem</td>
+      <td>lorem ipsum</td>
+      <td>lorem ipsum dolor</td>
+    </tr>
+    <tr>
+      <td>lorem ipsum dolor sit amet</td>
+      <td>lorem ipsum dolor sit amet consectetur</td>
+      <td>lorem ipsum dolor sit amet</td>
+    </tr>
+    <tr>
+      <td>lorem ipsum dolor</td>
+      <td>lorem ipsum</td>
+      <td>lorem</td>
+    </tr>
+    <tr>
+      <td>lorem ipsum dolor</td>
+      <td>lorem ipsum dolor sit</td>
+      <td>lorem ipsum dolor sit amet</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Title 1 | Title 2 | Title 3
+--- | --- | --- 
+lorem | lorem ipsum | lorem ipsum dolor 
+lorem ipsum dolor sit amet | lorem ipsum dolor sit amet consectetur | lorem ipsum dolor sit amet 
+lorem ipsum dolor | lorem ipsum | lorem 
+lorem ipsum dolor | lorem ipsum dolor sit | lorem ipsum dolor sit amet 
+</code></pre></div></div>
+
+<h2 id="quotes">Quotes</h2>
+
+<blockquote>
+  <p>春有百花秋有月<br />
+夏有凉风冬有雪<br />
+若无闲事挂心头<br />
+便是人间好时节</p>
+</blockquote>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt; 春有百花秋有月  
+&gt; 夏有凉风冬有雪  
+&gt; 若无闲事挂心头  
+&gt; 便是人间好时节  
+</code></pre></div></div>
+
+<h2 id="indentation">Indentation</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>春有百花秋有月   (more than 4 spaces)
+  夏有凉风冬有雪  
+    若无闲事挂心头  
+      便是人间好时节  
+</code></pre></div></div>
+:ET

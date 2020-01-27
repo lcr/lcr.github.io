@@ -1,0 +1,33 @@
+I"µ<h2 id="install-jekyll-on-windows7">Install Jekyll on Windows7</h2>
+
+<ul>
+  <li>
+    <p>Install <a href="https://rubyinstaller.org/downloads/" target="_blank">Ruby+Devkit</a></p>
+  </li>
+  <li>
+    <p>Install Jekyll and Bundler gems through RubyGems</p>
+  </li>
+</ul>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem install jekyll bundler
+</code></pre></div></div>
+
+<h2 id="command">Command</h2>
+
+<p>Creates a new Jekyll site scaffold in PATH</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>jekyll new
+</code></pre></div></div>
+
+<p>Change into your new directory</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd new-site
+</code></pre></div></div>
+
+<p>Change Gemfile and _config.ymlï¼Œ  run</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bundle install
+bundle
+</code></pre></div></div>
+
+:ET

@@ -1,0 +1,18 @@
+I"^<p>首先在站点目录创建一个js文件<code class="highlighter-rouge">yourscript.js</code></p>
+
+<p>然后在Markdown的yaml头中写入以下代码</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
+title: YourTitle
+customjs:
+ - https://yoursite/yourscript.js
+---
+</code></pre></div></div>
+
+<p>最后在Markdown文件中引入js</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{% for js in page.customjs %}
+&lt;script src="{{ js }}"&gt;&lt;/script&gt;
+{% endfor %}
+</code></pre></div></div>
+:ET

@@ -1,0 +1,70 @@
+I"6<p>谷歌分析是谷歌提供的免费网络分析服务，用于跟踪和报告网站流量。将谷歌分析添加到Jekyll网站十分简单。</p>
+
+<p>登录<a href="https://www.google.com/intl/zh-CN/analytics/" target="_blank">谷歌分析</a>并新建一个媒体资源，以获取网站的跟踪ID。可在<code class="highlighter-rouge">管理 &gt; 媒体资源 &gt; 跟踪信息 &gt; 跟踪代码</code>下找到跟踪ID。</p>
+
+<h2 id="在jekyll网站上部署谷歌分析">在Jekyll网站上部署谷歌分析</h2>
+
+<p>首先在<code class="highlighter-rouge">_includes</code>文件夹新建名为<code class="highlighter-rouge">google-analytics.html</code>的文件,并写入以下代码：</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&lt;</span><span class="nx">script</span><span class="o">&gt;</span>
+<span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="p">(</span><span class="nb">window</span><span class="p">.</span><span class="nx">doNotTrack</span> <span class="o">===</span> <span class="dl">"</span><span class="s2">1</span><span class="dl">"</span> <span class="o">||</span> <span class="nb">navigator</span><span class="p">.</span><span class="nx">doNotTrack</span> <span class="o">===</span> <span class="dl">"</span><span class="s2">1</span><span class="dl">"</span> <span class="o">||</span> <span class="nb">navigator</span><span class="p">.</span><span class="nx">doNotTrack</span> <span class="o">===</span> <span class="dl">"</span><span class="s2">yes</span><span class="dl">"</span> <span class="o">||</span> <span class="nb">navigator</span><span class="p">.</span><span class="nx">msDoNotTrack</span> <span class="o">===</span> <span class="dl">"</span><span class="s2">1</span><span class="dl">"</span><span class="p">))</span> <span class="p">{</span>
+  <span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">i</span><span class="p">,</span><span class="nx">s</span><span class="p">,</span><span class="nx">o</span><span class="p">,</span><span class="nx">g</span><span class="p">,</span><span class="nx">r</span><span class="p">,</span><span class="nx">a</span><span class="p">,</span><span class="nx">m</span><span class="p">){</span><span class="nx">i</span><span class="p">[</span><span class="dl">'</span><span class="s1">GoogleAnalyticsObject</span><span class="dl">'</span><span class="p">]</span><span class="o">=</span><span class="nx">r</span><span class="p">;</span><span class="nx">i</span><span class="p">[</span><span class="nx">r</span><span class="p">]</span><span class="o">=</span><span class="nx">i</span><span class="p">[</span><span class="nx">r</span><span class="p">]</span><span class="o">||</span><span class="kd">function</span><span class="p">(){</span>
+  <span class="p">(</span><span class="nx">i</span><span class="p">[</span><span class="nx">r</span><span class="p">].</span><span class="nx">q</span><span class="o">=</span><span class="nx">i</span><span class="p">[</span><span class="nx">r</span><span class="p">].</span><span class="nx">q</span><span class="o">||</span><span class="p">[]).</span><span class="nx">push</span><span class="p">(</span><span class="nx">arguments</span><span class="p">)},</span><span class="nx">i</span><span class="p">[</span><span class="nx">r</span><span class="p">].</span><span class="nx">l</span><span class="o">=</span><span class="mi">1</span><span class="o">*</span><span class="k">new</span> <span class="nb">Date</span><span class="p">();</span><span class="nx">a</span><span class="o">=</span><span class="nx">s</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="nx">o</span><span class="p">),</span>
+  <span class="nx">m</span><span class="o">=</span><span class="nx">s</span><span class="p">.</span><span class="nx">getElementsByTagName</span><span class="p">(</span><span class="nx">o</span><span class="p">)[</span><span class="mi">0</span><span class="p">];</span><span class="nx">a</span><span class="p">.</span><span class="k">async</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span><span class="nx">a</span><span class="p">.</span><span class="nx">src</span><span class="o">=</span><span class="nx">g</span><span class="p">;</span><span class="nx">m</span><span class="p">.</span><span class="nx">parentNode</span><span class="p">.</span><span class="nx">insertBefore</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span><span class="nx">m</span><span class="p">)</span>
+  <span class="p">})(</span><span class="nb">window</span><span class="p">,</span><span class="nb">document</span><span class="p">,</span><span class="dl">'</span><span class="s1">script</span><span class="dl">'</span><span class="p">,</span><span class="dl">'</span><span class="s1">https://www.google-analytics.com/analytics.js</span><span class="dl">'</span><span class="p">,</span><span class="dl">'</span><span class="s1">ga</span><span class="dl">'</span><span class="p">);</span>
+
+  <span class="nx">ga</span><span class="p">(</span><span class="dl">'</span><span class="s1">create</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">{{ site.google_analytics }}</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">auto</span><span class="dl">'</span><span class="p">);</span>
+  <span class="nx">ga</span><span class="p">(</span><span class="dl">'</span><span class="s1">send</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">pageview</span><span class="dl">'</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="o">&lt;</span><span class="sr">/script</span><span class="err">&gt;
+</span></code></pre></div></div>
+
+<!-- more -->
+
+<p>上面的JavaScript片段是minima主题自带的，用于确保跟踪脚本在所有浏览器上异步加载和执行，但它不允许预加载脚本。</p>
+
+<p>下面的代码片段增加了对预加载的支持，在现代浏览器上提供较小的性能提升，但在IE9和较旧的移动浏览器上可能会同步加载和执行，因为这些浏览器不识别async属性。如果你的网站访客主要使用现代浏览器，请仅使用以下跟踪代码段。</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&lt;</span><span class="nx">script</span><span class="o">&gt;</span>
+<span class="nb">window</span><span class="p">.</span><span class="nx">ga</span><span class="o">=</span><span class="nb">window</span><span class="p">.</span><span class="nx">ga</span><span class="o">||</span><span class="kd">function</span><span class="p">(){(</span><span class="nx">ga</span><span class="p">.</span><span class="nx">q</span><span class="o">=</span><span class="nx">ga</span><span class="p">.</span><span class="nx">q</span><span class="o">||</span><span class="p">[]).</span><span class="nx">push</span><span class="p">(</span><span class="nx">arguments</span><span class="p">)};</span><span class="nx">ga</span><span class="p">.</span><span class="nx">l</span><span class="o">=+</span><span class="k">new</span> <span class="nb">Date</span><span class="p">;</span>
+<span class="nx">ga</span><span class="p">(</span><span class="dl">'</span><span class="s1">create</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">{{ site.google_analytics }}</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">auto</span><span class="dl">'</span><span class="p">);</span>
+<span class="nx">ga</span><span class="p">(</span><span class="dl">'</span><span class="s1">send</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">pageview</span><span class="dl">'</span><span class="p">);</span>
+<span class="o">&lt;</span><span class="sr">/script</span><span class="err">&gt;
+</span><span class="o">&lt;</span><span class="nx">script</span> <span class="k">async</span> <span class="nx">src</span><span class="o">=</span><span class="dl">'</span><span class="s1">https://www.google-analytics.com/analytics.js</span><span class="dl">'</span><span class="o">&gt;&lt;</span><span class="sr">/script</span><span class="err">&gt;
+</span></code></pre></div></div>
+<p>上面Liquid对象<code class="highlighter-rouge">{{ site.google_analytics }}</code>用于通过<code class="highlighter-rouge">_config.yml</code>设置跟踪ID,或者你可以直接把跟踪ID置换进去。</p>
+
+<p>然后在<code class="highlighter-rouge">_config.yml</code>中添加跟踪ID：</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code># Google Analytics
+google_analytics: UA—XXXXXXXX-X
+</code></pre></div></div>
+
+<p>最后添加<code class="highlighter-rouge">google-analytics.html</code>到网页，谷歌建议把跟踪代码放在每个页面的<code class="highlighter-rouge">&lt;head&gt;</code>中，以确保正确跟踪所有访问。</p>
+
+<div class="language-text highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{%- if jekyll.environment == 'production' -%}
+  {%- include google-analytics.html -%}
+{%- endif -%}
+</code></pre></div></div>
+
+<p>上面代码表示只有在生产环境下，才运行谷歌分析，GitHub Pages默认设置是生产环境。</p>
+
+<p>问题来了，中国大陆不能正常访问谷歌啊，如果添加了谷歌分析，访客打开网页时，加载跟踪代码会导致网页速度下降。</p>
+
+<p>幸运的是 <a href="https://www.jsdelivr.com/network#china" target="_blank">jsDelivr CDN works in China</a></p>
+
+<p>如此一来，我们仅仅添加以下代码即可：</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&lt;</span><span class="nx">script</span><span class="o">&gt;</span>
+<span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">e</span><span class="p">,</span><span class="nx">t</span><span class="p">,</span><span class="nx">n</span><span class="p">,</span><span class="nx">i</span><span class="p">,</span><span class="nx">s</span><span class="p">,</span><span class="nx">a</span><span class="p">,</span><span class="nx">c</span><span class="p">){</span><span class="nx">e</span><span class="p">[</span><span class="nx">n</span><span class="p">]</span><span class="o">=</span><span class="nx">e</span><span class="p">[</span><span class="nx">n</span><span class="p">]</span><span class="o">||</span><span class="kd">function</span><span class="p">(){(</span><span class="nx">e</span><span class="p">[</span><span class="nx">n</span><span class="p">].</span><span class="nx">q</span><span class="o">=</span><span class="nx">e</span><span class="p">[</span><span class="nx">n</span><span class="p">].</span><span class="nx">q</span><span class="o">||</span><span class="p">[]).</span><span class="nx">push</span><span class="p">(</span><span class="nx">arguments</span><span class="p">)}</span>
+<span class="p">;</span><span class="nx">a</span><span class="o">=</span><span class="nx">t</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="nx">i</span><span class="p">);</span><span class="nx">c</span><span class="o">=</span><span class="nx">t</span><span class="p">.</span><span class="nx">getElementsByTagName</span><span class="p">(</span><span class="nx">i</span><span class="p">)[</span><span class="mi">0</span><span class="p">];</span><span class="nx">a</span><span class="p">.</span><span class="k">async</span><span class="o">=</span><span class="kc">true</span><span class="p">;</span><span class="nx">a</span><span class="p">.</span><span class="nx">src</span><span class="o">=</span><span class="nx">s</span>
+<span class="p">;</span><span class="nx">c</span><span class="p">.</span><span class="nx">parentNode</span><span class="p">.</span><span class="nx">insertBefore</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span><span class="nx">c</span><span class="p">)</span>
+<span class="p">})(</span><span class="nb">window</span><span class="p">,</span><span class="nb">document</span><span class="p">,</span><span class="dl">"</span><span class="s2">galite</span><span class="dl">"</span><span class="p">,</span><span class="dl">"</span><span class="s2">script</span><span class="dl">"</span><span class="p">,</span><span class="dl">"</span><span class="s2">https://cdn.jsdelivr.net/npm/ga-lite@2/dist/ga-lite.min.js</span><span class="dl">"</span><span class="p">);</span>
+
+<span class="nx">galite</span><span class="p">(</span><span class="dl">'</span><span class="s1">create</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">{{ site.google_analytics }}</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">auto</span><span class="dl">'</span><span class="p">);</span>
+<span class="nx">galite</span><span class="p">(</span><span class="dl">'</span><span class="s1">send</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">pageview</span><span class="dl">'</span><span class="p">);</span>
+<span class="o">&lt;</span><span class="sr">/script</span><span class="err">&gt;
+</span></code></pre></div></div>
+
+<p><a href="https://github.com/jehna/ga-lite" target="_blank">ga-lite</a>不仅解决了谷歌分析跟踪代码在中国大陆影响加载速度的问题，还解决了官方脚本只缓存2个小时的问题。</p>
+:ET
