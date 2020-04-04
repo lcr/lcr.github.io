@@ -51,7 +51,7 @@ Serve your site locally
 bundle exec jekyll serve
 jekyll server
 jekyll serve
-lekyll s
+jekyll s
 ```
 
 Preview a draft post
