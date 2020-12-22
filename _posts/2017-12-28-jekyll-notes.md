@@ -32,7 +32,6 @@ Change Gemfile and _config.yml，  run
 
 ```
 bundle install
-bundle
 ```
 
 <!-- more -->
@@ -41,17 +40,12 @@ Build your site
 
 ```
 bundle exec jekyll build
-jekyll build  
-jekyll b
 ```
 
 Serve your site locally
 
 ```
 bundle exec jekyll serve
-jekyll server
-jekyll serve
-jekyll s
 ```
 
 Preview a draft post
