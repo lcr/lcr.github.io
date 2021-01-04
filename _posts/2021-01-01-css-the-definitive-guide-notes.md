@@ -66,5 +66,3 @@ description: CSS权威指南第四版的读书笔记，由XMind制作思维导�
 - :active 鼠标按下
 
 ### UI状态伪类
-
-more

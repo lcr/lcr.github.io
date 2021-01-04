@@ -4,4 +4,4 @@
 
 # Licensing
 
-&copy;2020. All rights reserved
+&copy;2021. All rights reserved
