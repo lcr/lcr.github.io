@@ -4,16 +4,6 @@ categories: Jekyll
 description: About using Jekyll
 ---
 
-## Install Jekyll on Windows7
-
-- Install [Ruby+Devkit](https://rubyinstaller.org/downloads/){:target="_blank"}
-
-- Install Jekyll and Bundler gems through RubyGems
-
-```
-gem install jekyll bundler
-```  
-
 ## Command
 
 Creates a new Jekyll site scaffold in PATH
