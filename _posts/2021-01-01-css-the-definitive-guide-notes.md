@@ -27,7 +27,7 @@ description: CSS权威指南第四版的读书笔记，由XMind制作思维导�
 ### 属性选择符
 
 - [foo] 属性foo
-- [foo|="bar"] 属性foo，值bar或以bar-开头
+- [foo｜="bar"] 属性foo，值bar或以bar-开头
 - [foo~="bar"] 属性foo，值包含bar的一组词
 - [foo*="bar"] 属性foo，值包含子串bar
 - [foo^="bar"] 属性foo，值bar开头
