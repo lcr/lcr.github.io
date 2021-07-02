@@ -1,12 +1,12 @@
 ---
-title: Markdown中使用JS
+title: JavaScript in Markdown file
 categories: Markdown
-description: JavaScript代码在Markdown文件中正常解析的方法
+description: how to use JavaScript in Markdown documents
 ---
 
-首先在站点目录创建一个js文件`yourscript.js`
+Create a file `yourscript.js` in the site directory.
 
-然后在Markdown的yaml头中写入以下代码
+Then write the following code in the yaml of Markdown.
 
 ```text
 {% raw %}---
@@ -16,7 +16,7 @@ customjs:
 ---{% endraw %}
 ```
 
-最后在Markdown文件中引入js
+Finally, introduce JavaScript in the markdown file.
 
 ```text
 {% raw %}{% for js in page.customjs %}
