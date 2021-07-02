@@ -1,6 +1,6 @@
 ---
 title: GitHub用户名被抢注了
-categories: Random
+categories: GitHub
 description: 如果你想要注册的GitHub用户名被别人注册了，而他好久没有使用，你可以向GitHub申请把这个账号注销然后你就可以去注册了
 ---
 

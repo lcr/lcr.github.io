@@ -1,6 +1,6 @@
 ---
 title: 多肉于2018年冬
-categories: Plants
+categories: Succulent
 description: 照片记录下2018年冬天阳台多肉植物的状态
 ---
 

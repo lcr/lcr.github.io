@@ -1,6 +1,6 @@
 ---
 title: 送出去的叶插苗第二波
-categories: Plants
+categories: Succulent
 ---
 
 时光荏苒，送出上一波多肉感觉还是不久前，但实际上已经快一年了，这期间，

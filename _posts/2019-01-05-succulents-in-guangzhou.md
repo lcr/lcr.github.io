@@ -1,6 +1,6 @@
 ---
 title: 我在广州养多肉
-categories: Plants
+categories: Succulent
 description: 广州阳台党分享养护多肉植物的经验，从叶插到收获老桩，从一无所知到朋友圈集赞连连。
 ---
 
