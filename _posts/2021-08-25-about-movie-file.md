@@ -1,7 +1,7 @@
 ---
 title: 影片资源版本
 categories: Random
-description: 关于下载电影
+description: 电影下载中的资源版本名词介绍
 ---
 
 ## 1.片源：
