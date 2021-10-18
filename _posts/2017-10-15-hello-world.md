@@ -1,7 +1,7 @@
 ---
 title: Hello World
-categories: Random
-description: 人生始于Hello World,博客也是如此!
+categories: Website
+description: 人生始于Hello World,Blog也是如此!
 ---
 
-人生始于Hello World,博客也是如此!
+人生始于Hello World,Blog也是如此!

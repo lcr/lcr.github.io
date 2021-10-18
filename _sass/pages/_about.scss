@@ -1,14 +1,11 @@
 .page-about{
   @include content-width;
+  padding-bottom: 6rem;
 }
 
 .page-about-p {
-  margin: 1.5rem 0;
+  margin: 2rem 0;
   font-size: $base-font-size * 1.625;
   color: $deep-grey-color;
-  line-height: 1.2;
-}
-
-.page-about-p-margin {
-  margin: 5rem 0;
+  line-height: 1.5;
 }

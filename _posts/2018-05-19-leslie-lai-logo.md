@@ -1,6 +1,6 @@
 ---
 title: Leslie Lai logo
-categories: Random
+categories: Website
 description: Leslie Lai logo,logo L
 ---
 

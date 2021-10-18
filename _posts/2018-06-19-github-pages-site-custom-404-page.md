@@ -1,6 +1,6 @@
 ---
-title: GitHub Pages网站自定义404页面
-categories: GitHub
+title: GitHub Pages自定义404页面
+categories: Website
 description: 自定义GitHub Pages网站404页面的方法
 ---
 
