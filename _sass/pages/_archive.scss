@@ -20,6 +20,9 @@
     color: $red-color;
     fill: $red-color;
   }
+  &:first-of-type{
+    border-top: 0;
+  }
 }
 
 .archive-category-name-active {
