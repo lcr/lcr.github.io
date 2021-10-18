@@ -1,7 +1,7 @@
 ---
-title: 纯CSS手风琴
+title: Pure CSS Accordion
 categories: CSS
-description: 纯CSS制作的手风琴，主要使用input checked,带动画效果
+description: Pure CSS Accordion with animation，using input checked
 ---
 
 Pure CSS Accordion

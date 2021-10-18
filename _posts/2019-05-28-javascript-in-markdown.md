@@ -4,9 +4,9 @@ categories: Markdown
 description: how to use JavaScript in Markdown documents
 ---
 
-Create a file `yourscript.js` in the site directory.
+Step1,create a file `yourscript.js` in the site directory.
 
-Then write the following code in the yaml of Markdown.
+Step2,add the following YAML front matter to the beginning of Markdown.
 
 ```text
 {% raw %}---
@@ -16,7 +16,7 @@ customjs:
 ---{% endraw %}
 ```
 
-Finally, introduce JavaScript in the markdown file.
+Step3,introduce JavaScript in the markdown file.
 
 ```text
 {% raw %}{% for js in page.customjs %}

@@ -17,10 +17,10 @@ var x = setInterval(function () {
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
   
   // Output the result in an element with id="demo"
-  document.getElementById("leftThisYear").innerHTML = days + "<span class='left-this-year-small'>天</span> "
-    + ("0" + hours).slice(-2) + "<span class='left-this-year-small'>时</span> "
-    + ("0" + minutes).slice(-2) + "<span class='left-this-year-small'>分</span> "
-    + ("0" + seconds).slice(-2) + "<span class='left-this-year-small'>秒</span>";
+  document.getElementById("leftThisYear").innerHTML = days + "<span class='left-this-year-small'>d</span> "
+    + ("0" + hours).slice(-2) + "<span class='left-this-year-small'>h</span> "
+    + ("0" + minutes).slice(-2) + "<span class='left-this-year-small'>m</span> "
+    + ("0" + seconds).slice(-2) + "<span class='left-this-year-small'>s</span>";
   
   // If the count down is over, write some text
   if (distance < 0) {

@@ -1,7 +1,7 @@
 ---
 title: Jekyll Notes
 categories: Jekyll
-description: About using Jekyll
+description: About using Jekyll in command
 ---
 
 ## Command
