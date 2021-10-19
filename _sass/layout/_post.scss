@@ -17,7 +17,7 @@
 
 .category {
   float: right;
-  padding-top: 10px;
+  margin-top: $spacing-unit * 2;
   font-size: $base-font-size * 1.5;
 }
 
@@ -35,9 +35,11 @@
 }
 
 .container-grey {
+  position: relative;
   @include content-width;
   @include clearfix;
-  padding-top: $spacing-unit * 3;
+  margin-top:  $spacing-unit * 5;
+  padding-top: $spacing-unit * 5;
   color: darken($grey-color, 25%);
-  background: linear-gradient(177deg, transparent 100px, $light-grey-color 0);
+  background: $light-grey-color;
 }

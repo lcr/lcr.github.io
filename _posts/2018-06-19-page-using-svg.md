@@ -6,19 +6,19 @@ description: 网页使用svg的各种实现方式，直接在HTML写入，或者
 
 假设想要在超链接后面插入一个名为`link.svg`的小图标，有多少种实现方式呢？Demo：[anchor](#)
 
-## 方式1 - `link.svg`放在img文件夹中，在img元素内包含svg
+1、`link.svg`放在img文件夹中，在img元素内包含svg
 
 ```html
 <a>anchor<img src="/img/link.svg"></a>
 ```
 
-## 方式2 - 直接在HTML写入
+2、直接在HTML写入
 
 ```html
 <a>anchor<svg>...</svg></a>
 ```
 
-## 方式3 - `link.svg`放在img文件夹中，使用CSS伪类
+3、`link.svg`放在img文件夹中，使用CSS伪类
 
 ```css
 a:after {
@@ -28,7 +28,7 @@ a:after {
 
 <!-- more -->
 
-## 方式4 - 直接在CSS用伪类
+4、直接在CSS用伪类
 
 ```css
 a:after {
