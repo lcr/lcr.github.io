@@ -6,7 +6,7 @@ description: About using Jekyll in command
 
 ## Command
 
-Creates a new Jekyll site scaffold in PATH
+Create a new Jekyll site scaffold in PATH
 
 ```
 jekyll new
