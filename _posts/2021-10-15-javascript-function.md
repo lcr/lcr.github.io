@@ -14,7 +14,6 @@ function factorial(num){
         return num * arguments.callee(num-1);
     }
 }
-alert (factorial(5));//120
 ```
 
 <!-- more -->
@@ -36,7 +35,7 @@ var values = [0,1 ,5, 10,15];
 values.sort(compare);
 alert(values); //0，1，5，10，15
 
-//只要交换比较函数返回的值即可产生降序排序的效果
+//交换比较函数返回的值即可产生降序排序的效果
 function compare(value1,value2){
     if (value1 < value2) {
         return 1;
@@ -50,7 +49,7 @@ var values = [0,1 ,5, 10,15];
 values.sort(compare);
 alert(values);//15,10,5,1,0
 
-//数值类型或其valueOf()方法会返回数值类型的对象类型，只要用第二个值减第一个值即可
+//数值类型或valueOf()会返回数值类型的对象类型，用第二个值减第一个值即可
 function compare(value1, value2){
     return value2 - value1;
 }
@@ -59,4 +58,13 @@ values.sort(compare);
 alert(values);//15,10,5,1,0
 ```
 
+最大值最小值
+```javascript
+//找到一组数值中的最小值和最大值
+var max = Math.max(3,54,32,16);
+var min = Math.min(3,54,32,16);
 
+//找到数组中的最大或最小值
+var values = [1,2,3,4,5,6,7,8];
+var max = Math.max.apply(Math,values);
+```
