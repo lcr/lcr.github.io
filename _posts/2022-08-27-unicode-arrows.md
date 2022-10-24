@@ -1,5 +1,5 @@
 ---
-title: 箭头的十六进制代码
+title: Unicode Arrows
 categories: Random
 description: 箭头相关的十六进制代码
 ---

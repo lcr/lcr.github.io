@@ -4,7 +4,7 @@ categories: Jekyll
 description: 使用Liquid压缩Jekyll网站的HTML
 ---
 
-Jekyll网站的页面中存在很多空行，这是Liquid逻辑代码和Markdown换行本来占据的位置，过多的空行会影响网页加载速度，虽然很细微，可是也不能忍啊。
+Jekyll网站的页面中存在很多空行，这是Liquid逻辑代码和Markdown换行本来占据的位置。
 
 其实要压缩Jekyll中的HTML不需要运行插件，使用Liquid就可以简单做到。
 

@@ -1,5 +1,5 @@
 ---
-title: left this year
+title: 本年倒计时
 categories: JavaScript
 description: Javascript方法实现本年度倒计时，精确到时分秒，年份自动更新
 customjs:
@@ -8,7 +8,7 @@ customjs:
 
 <style>
 #leftThisYear {
-  margin: 4rem 0;
+  padding: 4rem 0;
   text-align: center;
   font-size: 4rem;
 }

@@ -6,7 +6,8 @@ description: 介绍谷歌分析添加到Jekyll网站的方法，以及使用cdn�
 
 谷歌分析是谷歌提供的免费网络分析服务，用于跟踪和报告网站流量。将谷歌分析添加到Jekyll网站十分简单。
 
-登录[谷歌分析](https://www.google.com/intl/zh-CN/analytics/){:target="_blank"}并新建一个媒体资源，以获取网站的跟踪ID。可在`管理 > 媒体资源 > 跟踪信息 > 跟踪代码`下找到跟踪ID。
+登录[谷歌分析](https://www.google.com/intl/zh-CN/analytics/){:target="_blank"}并新建一个媒体资源，
+以获取网站的跟踪ID。可在`管理 > 媒体资源 > 跟踪信息 > 跟踪代码`下找到跟踪ID。
 
 ## 在Jekyll网站上部署谷歌分析
 
@@ -30,7 +31,8 @@ if(!(window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNo
 
 上面的JavaScript片段是minima主题自带的，用于确保跟踪脚本在所有浏览器上异步加载和执行，但它不允许预加载脚本。
 
-下面的代码片段增加了对预加载的支持，在现代浏览器上提供较小的性能提升，但在IE9和较旧的移动浏览器上可能会同步加载和执行，因为这些浏览器不识别async属性。如果你的网站访客主要使用现代浏览器，请仅使用以下跟踪代码段。
+下面的代码片段增加了对预加载的支持，在现代浏览器上提供较小的性能提升，但在IE9和较旧的移动浏览器上可能会同步加载和执行，
+因为这些浏览器不识别async属性。如果你的网站访客主要使用现代浏览器，请仅使用以下跟踪代码段。
 
 ```javascript
 <script>
@@ -77,4 +79,5 @@ galite('send', 'pageview');
 </script>
 ```
 
-[ga-lite](https://github.com/jehna/ga-lite){:target="_blank"}不仅解决了谷歌分析跟踪代码在中国大陆影响加载速度的问题，还解决了官方脚本只缓存2个小时的问题。
+[ga-lite](https://github.com/jehna/ga-lite){:target="_blank"}不仅解决了
+谷歌分析跟踪代码在中国大陆影响加载速度的问题，还解决了官方脚本只缓存2个小时的问题。
