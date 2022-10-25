@@ -39,6 +39,3 @@ algolia:
 
 # Google Analytics
 google_analytics: UA-107157614-1
-
-plugins:
-  - jekyll-sitemap
