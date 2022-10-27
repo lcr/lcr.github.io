@@ -29,6 +29,10 @@ body {
   // 应用字距调整
   -webkit-font-kerning: normal;
   font-kerning: normal;
+  //应用于固定的页脚，撑开内容
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
 
 /*

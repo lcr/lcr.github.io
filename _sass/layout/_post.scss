@@ -1,6 +1,13 @@
 /*
  * Post Content
  */
+
+//应用于固定的页脚，撑开内容
+.site-content{
+  flex: 1;
+}
+
+
 .post {
   @include content-width;
   
