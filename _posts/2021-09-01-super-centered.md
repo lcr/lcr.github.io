@@ -1,7 +1,7 @@
 ---
-title: CSS布局 
+title: 水平垂直居中
 categories: CSS 
-description: CSS layout 布局
+description: CSS布局中的水平垂直居中
 ---
 
 - [水平垂直居中](#水平垂直居中)
@@ -29,7 +29,6 @@ description: CSS layout 布局
 ### <a name="行内元素居中">行内元素居中</a>
 
 ```css
-/*   行内元素居中方法一   */
 .container {
     text-align: center;
     height: 400px;
@@ -41,7 +40,6 @@ description: CSS layout 布局
     height: 400px;
     line-height: 400px;
 }
-
 .child {
     display: inline-block;
 }
@@ -60,7 +58,6 @@ description: CSS layout 布局
     height: 400px;
     line-height: 400px;
 }
-
 .child {
     display: inline-block;
     vertical-align: middle;
@@ -76,7 +73,6 @@ description: CSS layout 布局
     position: relative;
     height: 400px;
 }
-
 .child {
     position: absolute;
     left: 50%;
@@ -155,8 +151,8 @@ description: CSS layout 布局
 
 ```css
 .parent {
-    display: grid;
-    justify-item: center;
-    align-item: center;
+  display: grid;
+  place-content: center;
+  gap: 1ch;
 }
 ```

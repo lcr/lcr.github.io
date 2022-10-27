@@ -1,5 +1,5 @@
 ---
-title: Markdown文档中使用JavaScript
+title: Markdown中使用JavaScript
 categories: Markdown
 description: 如何在Markdown文档中使用JavaScript
 ---
