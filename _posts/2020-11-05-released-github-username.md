@@ -20,7 +20,7 @@ description: 如果你想要注册的GitHub用户名被别人注册了，而他�
 
 ![Screenshots-2](/assets/posts-img/20171231/github-account2.jpg)
 
-几分钟后，惊喜的收到了GitHub的好消息
+几分钟后，惊喜的收到了GitHub的好消息：
 
 > Hey Leslie,
 > 
@@ -36,4 +36,4 @@ description: 如果你想要注册的GitHub用户名被别人注册了，而他�
 
 收到回信后莫名的激动，马上就把用户名修改了。
 
-不得不感叹，GitHub这个做得好赞啊，不仅能多次修改用户名，还能申请把僵尸号回收重新利用。
+GitHub这个做得好赞啊，不仅能多次修改用户名，还能申请把僵尸号回收重新利用。
