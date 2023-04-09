@@ -16,7 +16,7 @@ customjs:
 ---{% endraw %}
 ```
 
-最后把JavaScript 引入 Markdown 就完成了。
+最后把JavaScript 引入 Markdown 就可以了。
 
 ```text
 {% raw %}{% for js in page.customjs %}

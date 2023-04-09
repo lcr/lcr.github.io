@@ -148,5 +148,3 @@ description: 照片记录下2018年冬天阳台多肉植物的状态
 ![冬美人](/assets/posts-img/20190128/DSC01065.JPG)
 
 ![冬美人](/assets/posts-img/20190128/DSC01066.JPG)
-
-END
