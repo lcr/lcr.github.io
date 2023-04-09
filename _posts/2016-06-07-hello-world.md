@@ -1,7 +1,7 @@
 ---
 title: Hello World
 categories: Website
-description: 人生始于Hello World
+description: The blog begins at Hello World
 ---
 
-人生始于Hello World，Blog也是如此。
+Life begins with Hello World, as is the blog.

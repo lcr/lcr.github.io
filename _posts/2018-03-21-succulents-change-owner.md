@@ -1,5 +1,5 @@
 ---
-title: 送出去的叶插苗第一批
+title: 送出去的叶插苗
 categories: Succulent
 description: 记录秋天送出去的多肉叶插苗，希望它们到了新环境能够更加好看
 ---

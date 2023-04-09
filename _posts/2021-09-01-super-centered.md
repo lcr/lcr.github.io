@@ -4,19 +4,9 @@ categories: CSS
 description: CSS布局中的水平垂直居中
 ---
 
-- [水平垂直居中](#水平垂直居中)
-    - [flex居中](#flex居中)
-    - [行内元素居中](#行内元素居中)
-    - [元素定宽高的居中](#元素定宽高的居中)
-    - [transform居中](#transform居中)
-    - [table-cell居中](#table-cell居中)
-    - [gird居中](#gird居中)
+## 水平垂直居中
 
-<!-- more -->
-
-## <a name="水平垂直居中">水平垂直居中</a>
-
-### <a name="flex居中">flex居中</a>
+### flex居中
 
 ```css
 .container {
@@ -26,7 +16,11 @@ description: CSS布局中的水平垂直居中
 }
 ```
 
-### <a name="行内元素居中">行内元素居中</a>
+
+<!-- more -->
+
+
+### 行内元素居中
 
 ```css
 .container {
@@ -65,7 +59,7 @@ description: CSS布局中的水平垂直居中
 }
 ```
 
-### <a name="元素定宽高的居中">元素定宽高的居中</a>
+### 元素定宽高的居中
 
 ```css
 /*   方法一：absolute + 负值margin   */
@@ -117,7 +111,7 @@ description: CSS布局中的水平垂直居中
 }
 ```
 
-### <a name="transform居中">transform居中</a>
+### transform居中
 
 ```css
 .parent {
@@ -133,7 +127,7 @@ description: CSS布局中的水平垂直居中
 }
 ```
 
-### <a name="table-cell居中">table-cell居中</a>
+### table-cell居中
 
 ```css
 .parent {
@@ -147,7 +141,7 @@ description: CSS布局中的水平垂直居中
 }
 ```
 
-### <a name="gird居中">gird居中</a>
+### gird居中
 
 ```css
 .parent {

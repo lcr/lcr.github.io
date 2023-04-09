@@ -1,20 +1,20 @@
 ---
 title: GitHub用户名被抢注了
 categories: Random
-description: 如果你想要注册的GitHub用户名被别人注册了，而他好久没有使用，你可以向GitHub申请把这个账号注销然后你就可以去注册了
+description: 如果你想要的GitHub用户名被抢注了，但他很久没有使用，你可以向GitHub申请把这个账号注销，然后你就可以去注册使用了
 ---
 
-如果你想要的GitHub用户名被抢注了，而那个账号刚好很久没有活动了，那么恭喜你，你可以向GitHub申请先把它注销，然后你就马上可以注册了。
+如果你想要的GitHub用户名被抢注了，但他很久没有使用，你可以向GitHub申请把这个账号注销，然后你就可以去注册使用了。
 
-新加入GitHub时，我的用户名还是`laicanrong`，本想要简短一点的，可是`lcr`已被抢注了。
+新加入GitHub时，我的用户名还是`laicanrong`，本来想要简短一点的，可是`lcr`已经被人注册了。
 
-后来发现`lcr`这账号好几年没动静了，于是给GitHub写了封信，希望能把这用户名给我用，
+后来我发现`lcr`这账号好几年没动态了，于是给GitHub写了封信，希望能把这用户名给我用。
+
+信息内容很简短，并附上截图：
 
 > I found the username(lcr) is not active and I don't want my username(laicanrong) too long.Can you help me change my username to lcr?
 
 <!-- more -->
-
-并附上截图：
 
 ![Screenshots-1](/assets/posts-img/20171231/github-account1.jpg)
 
