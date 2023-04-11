@@ -1,13 +1,13 @@
 {% if paginator.total_pages > 1 %}
 
-  {% assign start = paginator.page | minus: 1 %}
-  {% assign end = paginator.page | plus: 1 %}
+  {% assign start = paginator.page | minus: 2 %}
+  {% assign end = paginator.page | plus: 2 %}
 
   {% if start < 1 %}
   {% assign start = 1 %}
-  {% assign end = start | plus: 3 %}
+  {% assign end = start | plus: 4 %}
   {% elsif end > paginator.total_pages %}
-  {% assign start = paginator.total_pages | minus: 3 %}
+  {% assign start = paginator.total_pages | minus: 4 %}
   {% assign end = paginator.total_pages %}
   {% endif %}
 

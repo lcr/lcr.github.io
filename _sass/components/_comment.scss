@@ -15,14 +15,17 @@
 
 .comments-date {
   margin: ($spacing-unit / 3) 0;
+  padding-right: $spacing-unit * 2;
   font: {
     style: italic;
     size: $base-font-size * 0.875;
   }
+  text-align: right;
+  border-bottom: 1px dashed $grey-color;
 }
 
 .comments-message {
-  border-bottom: 1px dashed $grey-color;
+  text-indent: 1em;
 }
 
 /*
