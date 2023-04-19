@@ -1,12 +1,11 @@
 ---
-title: 自定义GitHub Pages的404页
+title: Custom 404 pages for github pages
 categories: Website
-description: 如何自定义GitHub Pages的404页面
 ---
 
-首先在站点目录创建名为 `404.html` 或 `404.md` 的文件。
+Step 1, create a file named `404.html` or `404.md` in the site directory.
 
-然后在文档的 YAML 头写入以下代码:
+Step 2, write the following code in the yaml header of the HTML document:
 
 ```text
 ---
@@ -14,7 +13,7 @@ permalink: /404.html
 ---
 ```
 
-最后设计并编写 404 页面。
+Step 3, design and write 404 pages.
 
 [Demo](https://github.com/lcr/lcr.github.io/blob/master/404.html){:target="_blank"}
 

@@ -3,9 +3,9 @@ title: JavaScript in Markdown
 categories: Markdown
 ---
 
-Create a new file named `YourScript.js` in the site directory.
+Step 1, create a new file named `YourScript.js` in the site directory.
 
-Then write the following code in the YAML of the Markdown document.
+Step 2, write the following code in the YAML of the Markdown document.
 
 ```text
 {% raw %}---
@@ -15,7 +15,7 @@ customjs:
 ---{% endraw %}
 ```
 
-Finally, you can introduce JavaScript into Markdown.
+Step 3, introduce JavaScript into Markdown.
 
 ```text
 {% raw %}{% for js in page.customjs %}

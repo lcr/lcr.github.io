@@ -4,8 +4,6 @@ categories: Jekyll
 description: About using Jekyll in command
 ---
 
-## Command
-
 Create a new Jekyll site scaffold in PATH
 
 ```
