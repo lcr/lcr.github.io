@@ -1,4 +1,4 @@
-z/*!
+/*!
  * autocomplete.js 0.29.0
  * https://github.com/algolia/autocomplete.js
  * Copyright 2017 Algolia, Inc. and other contributors; Licensed MIT

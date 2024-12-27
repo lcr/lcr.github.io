@@ -75,8 +75,8 @@ searchInput.addEventListener("keyup", function () {
 /*
  * search-autocomplete
  */
-var client = algoliasearch('4X0L5EZUHF', '2c3e03751f5b259ae833fe039896ad2e');
-var index = client.initIndex('jekyll');
+var client = algoliasearch('6KXJVBKWRB', 'a5e4980c38cc70f5bef552832d169b4e');
+var index = client.initIndex('myblog');
 var myAutocomplete = autocomplete('#searchInput', {hint: false, debug: true}, [
   {
     source: autocomplete.sources.hits(index, {hitsPerPage: 100}),
