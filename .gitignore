@@ -1,11 +1,5 @@
-_site
-_drafts
-.sass-cache
-.jekyll-metadata
-_algolia_api_key
-main.css
-main.css.map
 .idea
 .jekyll-cache
+_drafts
+_site
 Gemfile.lock
-test.js
