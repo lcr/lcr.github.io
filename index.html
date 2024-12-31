@@ -1,6 +1,6 @@
 ---
 layout: home
-title: Home
+title: 首页
 ---
 
 <article class="site-content">
@@ -17,12 +17,12 @@ title: Home
     {% for post in paginator.posts %}
     <li class="post-item">
       <h1><a class="post-item-title" href="{{ post.url | relative_url }}"><span>{{ post.title | escape }}</span></a></h1>
-      {% assign date_format = site.date_format | default: "%b %d, %Y" %}
+      {% assign date_format = site.date_format | default: "%Y年 %m月 %d日" %}
       <div class="post-date">{% include svg/calendar.svg %}{{ post.date | date: date_format }}</div>
 
       {% if post.excerpt != post.content %}
       {{ post.excerpt }}
-      <a class="post-excerpt" href="{{ post.url | relative_url }}"><span>Read more</span></a>
+      <a class="post-excerpt" href="{{ post.url | relative_url }}"><span>阅读全文</span></a>
       {% else %}
       {{ post.content }}
       {% endif %}

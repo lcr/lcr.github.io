@@ -86,7 +86,7 @@ var myAutocomplete = autocomplete('#searchInput', {hint: false, debug: true}, [
         return sugTemplate = "<h2>" + suggestion._highlightResult.title.value + "</h2>" + "<p>" + suggestion._highlightResult.content.value + "</p>";
       },
       empty: function (data) {
-        return 'No results for "' + data.query + '"';
+        return '暂无 "' + data.query + '" 的相关内容';
       },
     }
   }

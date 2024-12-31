@@ -7,7 +7,7 @@ layout: default
   <div class="page-title">
     {% if page.date %}
     <h1 itemprop="name">{{ page.title | escape }}</h1>
-    {% assign date_format = site.date_format | default: "%B %d, %Y" %}
+    {% assign date_format = site.date_format | default: "%Y年 %m月 %d日" %}
     <div class="page-date">{% include svg/calendar.svg %}{{ page.date | date: date_format }}</div>
     {% endif %}
 
@@ -19,7 +19,7 @@ layout: default
     {{ content }}
 
     <div class="category">
-      <p class="category-title">Category</p>
+      <p class="category-title">分类</p>
       {% if post %}
       {% assign categories = post.categories %}
       {% else %}
