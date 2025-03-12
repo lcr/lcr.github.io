@@ -33,8 +33,8 @@ header_pages:
   - about.html
 
 algolia:
-  algolia_api_key: a5e4980c38cc70f5bef552832d169b4e
-  application_id:  6KXJVBKWRB
+  algolia_api_key: d8b752b59c77062c10b7d719b83d220b
+  application_id:  7YS9M2IG5U
   index_name:      myblog
 
 # Google Analytics
